@@ -72,6 +72,7 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -129,6 +130,7 @@ items:
     - id: IsGlobalNamespace
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamespaceSymbol.get_IsGlobalNamespace
@@ -177,8 +179,9 @@ items:
     parameters:
     - id: NamespaceKind
       type:
-        id: NamespaceKind
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\NamespaceKind.cs
+        id: Microsoft.CodeAnalysis.NamespaceKind
+        name: NamespaceKind
+        href: api\Microsoft.CodeAnalysis.NamespaceKind
 - id: Microsoft.CodeAnalysis.INamespaceSymbol.get_NamespaceKind
   yaml: api\Microsoft.CodeAnalysis.INamespaceSymbol.yaml
   href: api\Microsoft.CodeAnalysis.INamespaceSymbol
@@ -219,8 +222,9 @@ items:
     parameters:
     - id: ContainingCompilation
       type:
-        id: Compilation
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\Compilation.cs
+        id: Microsoft.CodeAnalysis.Compilation
+        name: Compilation
+        href: api\Microsoft.CodeAnalysis.Compilation
 - id: Microsoft.CodeAnalysis.INamespaceSymbol.get_ContainingCompilation
   yaml: api\Microsoft.CodeAnalysis.INamespaceSymbol.yaml
   href: api\Microsoft.CodeAnalysis.INamespaceSymbol
@@ -268,6 +272,7 @@ items:
     - id: ConstituentNamespaces
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamespaceSymbol}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamespaceSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamespaceSymbol.get_ConstituentNamespaces

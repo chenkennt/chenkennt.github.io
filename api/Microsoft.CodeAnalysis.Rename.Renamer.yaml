@@ -19,6 +19,7 @@ syntax:
     CSharp: public static class Renamer
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -44,24 +45,29 @@ items:
     parameters:
     - id: solution
       type:
-        id: Solution
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Solution.CompilationTracker.cs
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api\Microsoft.CodeAnalysis.Solution
     - id: symbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
     - id: newName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: optionSet
       type:
-        id: OptionSet
-        href: C:\roslyn\src\Workspaces\Core\Portable\Options\OptionSet.cs
+        id: Microsoft.CodeAnalysis.Options.OptionSet
+        name: OptionSet
+        href: api\Microsoft.CodeAnalysis.Options.OptionSet
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:

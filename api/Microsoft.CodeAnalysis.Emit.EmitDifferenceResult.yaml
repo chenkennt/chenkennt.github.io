@@ -19,10 +19,12 @@ syntax:
     CSharp: public sealed class EmitDifferenceResult
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
-- id: EmitResult
-  href: C:\roslyn\src\Compilers\Core\Portable\Compilation\EmitResult.cs
+- id: Microsoft.CodeAnalysis.Emit.EmitResult
+  name: EmitResult
+  href: api\Microsoft.CodeAnalysis.Emit.EmitResult
 items:
 - id: Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.Baseline
   yaml: api\Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.yaml
@@ -46,8 +48,9 @@ items:
     parameters:
     - id: Baseline
       type:
-        id: EmitBaseline
-        href: C:\roslyn\src\Compilers\Core\Portable\Emit\EditAndContinue\EmitBaseline.cs
+        id: Microsoft.CodeAnalysis.Emit.EmitBaseline
+        name: EmitBaseline
+        href: api\Microsoft.CodeAnalysis.Emit.EmitBaseline
 - id: Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.get_Baseline
   yaml: api\Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.yaml
   href: api\Microsoft.CodeAnalysis.Emit.EmitDifferenceResult

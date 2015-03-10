@@ -15,7 +15,7 @@ source:
   path: src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
   startLine: 15
 summary: >+
-  A list of [Microsoft.CodeAnalysis.SyntaxNode](api\Microsoft.CodeAnalysis.SyntaxNode).
+  A list of [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode).
 
 syntax:
   content:
@@ -25,9 +25,11 @@ syntax:
           where TNode : SyntaxNode
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -57,6 +59,7 @@ items:
     - id: Count
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxList`1.get_Count
@@ -133,8 +136,9 @@ items:
     parameters:
     - id: FullSpan
       type:
-        id: TextSpan
-        href: C:\roslyn\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.SyntaxList`1.get_FullSpan
   yaml: api\Microsoft.CodeAnalysis.SyntaxList`1.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxList`1
@@ -175,8 +179,9 @@ items:
     parameters:
     - id: Span
       type:
-        id: TextSpan
-        href: C:\roslyn\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.SyntaxList`1.get_Span
   yaml: api\Microsoft.CodeAnalysis.SyntaxList`1.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxList`1
@@ -274,7 +279,8 @@ items:
     - id: node
       type:
         id: TNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
+        name: TNode
+        href: TNode
       description: The node to add.
     return:
       id: SyntaxList
@@ -304,6 +310,7 @@ items:
     - id: nodes
       type:
         id: System.Collections.Generic.IEnumerable{`0}
+        name: System.Collections.Generic.IEnumerable{`0}
         href: System.Runtime
         isExternal: true
       description: The nodes to add.
@@ -335,13 +342,15 @@ items:
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index to insert at.
     - id: node
       type:
         id: TNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
+        name: TNode
+        href: TNode
       description: The node to insert.
     return:
       id: SyntaxList
@@ -371,12 +380,14 @@ items:
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index to insert at.
     - id: nodes
       type:
         id: System.Collections.Generic.IEnumerable{`0}
+        name: System.Collections.Generic.IEnumerable{`0}
         href: System.Runtime
         isExternal: true
       description: The nodes to insert.
@@ -408,6 +419,7 @@ items:
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index of the element to remove.
@@ -439,7 +451,8 @@ items:
     - id: node
       type:
         id: TNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
+        name: TNode
+        href: TNode
       description: The element to remove.
     return:
       id: SyntaxList
@@ -469,12 +482,14 @@ items:
     - id: nodeInList
       type:
         id: TNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
+        name: TNode
+        href: TNode
       description: The element to replace.
     - id: newNode
       type:
         id: TNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
+        name: TNode
+        href: TNode
       description: The new node.
     return:
       id: SyntaxList
@@ -504,11 +519,13 @@ items:
     - id: nodeInList
       type:
         id: TNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
+        name: TNode
+        href: TNode
       description: The element to replace.
     - id: newNodes
       type:
         id: System.Collections.Generic.IEnumerable{`0}
+        name: System.Collections.Generic.IEnumerable{`0}
         href: System.Runtime
         isExternal: true
       description: The new nodes.
@@ -716,8 +733,9 @@ items:
     parameters:
     - id: other
       type:
-        id: SyntaxList
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
+        id: Microsoft.CodeAnalysis.SyntaxList`1
+        name: SyntaxList
+        href: api\Microsoft.CodeAnalysis.SyntaxList`1
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxList`1.Equals(System.Object)
@@ -743,6 +761,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -825,7 +844,8 @@ items:
     - id: node
       type:
         id: TNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
+        name: TNode
+        href: TNode
     return:
       id: Int32
 - id: Microsoft.CodeAnalysis.SyntaxList`1.IndexOf(System.Func{`0,System.Boolean})
@@ -851,6 +871,7 @@ items:
     - id: predicate
       type:
         id: System.Func{`0,System.Boolean}
+        name: System.Func{`0,System.Boolean}
         href: System.Runtime
         isExternal: true
     return:
@@ -878,7 +899,8 @@ items:
     - id: node
       type:
         id: TNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
+        name: TNode
+        href: TNode
     return:
       id: Int32
 - id: Microsoft.CodeAnalysis.SyntaxList`1.LastIndexOf(System.Func{`0,System.Boolean})
@@ -904,6 +926,7 @@ items:
     - id: predicate
       type:
         id: System.Func{`0,System.Boolean}
+        name: System.Func{`0,System.Boolean}
         href: System.Runtime
         isExternal: true
     return:

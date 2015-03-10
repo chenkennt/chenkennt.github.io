@@ -22,10 +22,12 @@ syntax:
     CSharp: public abstract class PortableExecutableReference
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
-- id: MetadataReference
-  href: C:\roslyn\src\Compilers\Core\Portable\MetadataReference\MetadataReference.cs
+- id: Microsoft.CodeAnalysis.MetadataReference
+  name: MetadataReference
+  href: api\Microsoft.CodeAnalysis.MetadataReference
 items:
 - id: Microsoft.CodeAnalysis.PortableExecutableReference.Display
   yaml: api\Microsoft.CodeAnalysis.PortableExecutableReference.yaml
@@ -53,6 +55,7 @@ items:
     - id: Display
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.PortableExecutableReference.get_Display
@@ -96,6 +99,7 @@ items:
     - id: FilePath
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.PortableExecutableReference.get_FilePath
@@ -139,6 +143,7 @@ items:
     - id: aliases
       type:
         id: System.Collections.Generic.IEnumerable{System.String}
+        name: System.Collections.Generic.IEnumerable{System.String}
         href: System.Runtime
         isExternal: true
       description: The new aliases for the reference.
@@ -170,6 +175,7 @@ items:
     - id: aliases
       type:
         id: System.Collections.Immutable.ImmutableArray{System.String}
+        name: System.Collections.Immutable.ImmutableArray{System.String}
         href: System.Collections.Immutable
         isExternal: true
       description: The new aliases for the reference.
@@ -201,9 +207,10 @@ items:
     - id: value
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
-      description: The new value for [Microsoft.CodeAnalysis.MetadataReferenceProperties.EmbedInteropTypes](api\Microsoft.CodeAnalysis.MetadataReferenceProperties).
+      description: The new value for [Microsoft.CodeAnalysis.MetadataReferenceProperties.EmbedInteropTypes](#/api\Microsoft.CodeAnalysis.MetadataReferenceProperties).
     return:
       id: PortableExecutableReference
 - id: Microsoft.CodeAnalysis.PortableExecutableReference.WithProperties(Microsoft.CodeAnalysis.MetadataReferenceProperties)
@@ -231,8 +238,9 @@ items:
     parameters:
     - id: properties
       type:
-        id: MetadataReferenceProperties
-        href: C:\roslyn\src\Compilers\Core\Portable\MetadataReference\MetadataReferenceProperties.cs
+        id: Microsoft.CodeAnalysis.MetadataReferenceProperties
+        name: MetadataReferenceProperties
+        href: api\Microsoft.CodeAnalysis.MetadataReferenceProperties
       description: The new properties for the reference.
     return:
       id: PortableExecutableReference

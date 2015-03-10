@@ -15,17 +15,19 @@ source:
   path: src\Compilers\Core\Portable\Diagnostic\TriggerDiagnosticDescriptor.cs
   startLine: 11
 summary: >+
-  Provides a description about a [Microsoft.CodeAnalysis.Diagnostic](api\Microsoft.CodeAnalysis.Diagnostic) that is a trigger for some custom behavior for code analyis clients.
+  Provides a description about a [Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic) that is a trigger for some custom behavior for code analyis clients.
 
 syntax:
   content:
     CSharp: public class TriggerDiagnosticDescriptor
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
-- id: DiagnosticDescriptor
-  href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
+- id: Microsoft.CodeAnalysis.DiagnosticDescriptor
+  name: DiagnosticDescriptor
+  href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
 items:
 - id: Microsoft.CodeAnalysis.TriggerDiagnosticDescriptor.#ctor(System.String,System.String[])
   yaml: api\Microsoft.CodeAnalysis.TriggerDiagnosticDescriptor.yaml
@@ -44,7 +46,7 @@ items:
     path: src\Compilers\Core\Portable\Diagnostic\TriggerDiagnosticDescriptor.cs
     startLine: 18
   summary: >+
-    Create a TriggerDiagnosticDescriptor, which provides description about a [Microsoft.CodeAnalysis.Diagnostic](api\Microsoft.CodeAnalysis.Diagnostic) that is a trigger for some custom behavior for code analyis clients.
+    Create a TriggerDiagnosticDescriptor, which provides description about a [Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic) that is a trigger for some custom behavior for code analyis clients.
 
   syntax:
     content:
@@ -53,11 +55,13 @@ items:
     - id: id
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: A unique identifier for the diagnostic. For example, code analysis diagnostic ID "CA1001".
     - id: customTags
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
-      description: Optional custom tags for the diagnostic. See [Microsoft.CodeAnalysis.WellKnownDiagnosticTags](api\Microsoft.CodeAnalysis.WellKnownDiagnosticTags) for some well known tags.
+      description: Optional custom tags for the diagnostic. See [Microsoft.CodeAnalysis.WellKnownDiagnosticTags](#/api\Microsoft.CodeAnalysis.WellKnownDiagnosticTags) for some well known tags.

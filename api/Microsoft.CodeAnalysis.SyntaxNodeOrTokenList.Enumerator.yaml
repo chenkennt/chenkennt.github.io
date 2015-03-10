@@ -22,9 +22,11 @@ syntax:
     CSharp: public struct Enumerator
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -79,8 +81,9 @@ items:
     parameters:
     - id: Current
       type:
-        id: SyntaxNodeOrToken
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeOrToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxNodeOrToken
+        name: SyntaxNodeOrToken
+        href: api\Microsoft.CodeAnalysis.SyntaxNodeOrToken
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.Enumerator.get_Current
   yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.Enumerator.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.Enumerator
@@ -119,6 +122,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:

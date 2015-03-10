@@ -41,12 +41,14 @@ items:
     - id: assemblyName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: options
       type:
-        id: CompilationOptions
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+        id: Microsoft.CodeAnalysis.CompilationOptions
+        name: CompilationOptions
+        href: api\Microsoft.CodeAnalysis.CompilationOptions
     return:
       id: Compilation
 - id: Microsoft.CodeAnalysis.Host.ICompilationFactoryService.CreateSubmissionCompilation(System.String,Microsoft.CodeAnalysis.CompilationOptions,System.Type)
@@ -72,15 +74,18 @@ items:
     - id: assemblyName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: options
       type:
-        id: CompilationOptions
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+        id: Microsoft.CodeAnalysis.CompilationOptions
+        name: CompilationOptions
+        href: api\Microsoft.CodeAnalysis.CompilationOptions
     - id: hostObjectType
       type:
         id: System.Type
+        name: System.Type
         href: System.Runtime
         isExternal: true
     return:
@@ -107,8 +112,9 @@ items:
     parameters:
     - id: reference
       type:
-        id: MetadataReference
-        href: C:\roslyn\src\Compilers\Core\Portable\MetadataReference\MetadataReference.cs
+        id: Microsoft.CodeAnalysis.MetadataReference
+        name: MetadataReference
+        href: api\Microsoft.CodeAnalysis.MetadataReference
     return:
       id: Compilation
 - id: Microsoft.CodeAnalysis.Host.ICompilationFactoryService.IsCompilationReference(Microsoft.CodeAnalysis.MetadataReference)
@@ -133,8 +139,9 @@ items:
     parameters:
     - id: reference
       type:
-        id: MetadataReference
-        href: C:\roslyn\src\Compilers\Core\Portable\MetadataReference\MetadataReference.cs
+        id: Microsoft.CodeAnalysis.MetadataReference
+        name: MetadataReference
+        href: api\Microsoft.CodeAnalysis.MetadataReference
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Host.ICompilationFactoryService.GetDefaultCompilationOptions

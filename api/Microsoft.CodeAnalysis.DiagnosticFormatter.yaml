@@ -15,13 +15,14 @@ source:
   path: src\Compilers\Core\Portable\Diagnostic\DiagnosticFormatter.cs
   startLine: 12
 summary: >+
-  Formats [Microsoft.CodeAnalysis.Diagnostic](api\Microsoft.CodeAnalysis.Diagnostic) messages.
+  Formats [Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic) messages.
 
 syntax:
   content:
     CSharp: public class DiagnosticFormatter
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -42,7 +43,7 @@ items:
     path: src\Compilers\Core\Portable\Diagnostic\DiagnosticFormatter.cs
     startLine: 20
   summary: >+
-    Formats the [Microsoft.CodeAnalysis.Diagnostic](api\Microsoft.CodeAnalysis.Diagnostic) message using the optional @T:System.IFormatProvider-.
+    Formats the [Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic) message using the optional [System.IFormatProvider](#).
 
   syntax:
     content:
@@ -50,12 +51,14 @@ items:
     parameters:
     - id: diagnostic
       type:
-        id: Diagnostic
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\Diagnostic.cs
+        id: Microsoft.CodeAnalysis.Diagnostic
+        name: Diagnostic
+        href: api\Microsoft.CodeAnalysis.Diagnostic
       description: The diagnostic.
     - id: formatter
       type:
         id: System.IFormatProvider
+        name: System.IFormatProvider
         href: System.Runtime
         isExternal: true
       description: The formatter; or null to use the default formatter.

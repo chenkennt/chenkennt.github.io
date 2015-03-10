@@ -17,13 +17,14 @@ source:
 summary: >+
   Provides information about statements which transfer control in and out of a region. This
 
-  information is returned from a call to @M:Microsoft.CodeAnalysis.SemanticModel.AnalyzeControlFlow(Microsoft.CodeAnalysis.SyntaxNode)-.
+  information is returned from a call to [Microsoft.CodeAnalysis.SemanticModel.AnalyzeControlFlow(Microsoft.CodeAnalysis.SyntaxNode)](#).
 
 syntax:
   content:
     CSharp: public abstract class ControlFlowAnalysis
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -55,6 +56,7 @@ items:
     - id: EntryPoints
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.ControlFlowAnalysis.get_EntryPoints
@@ -100,6 +102,7 @@ items:
     - id: ExitPoints
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.ControlFlowAnalysis.get_ExitPoints
@@ -145,6 +148,7 @@ items:
     - id: EndPointIsReachable
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ControlFlowAnalysis.get_EndPointIsReachable
@@ -185,6 +189,7 @@ items:
     - id: StartPointIsReachable
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ControlFlowAnalysis.get_StartPointIsReachable
@@ -228,6 +233,7 @@ items:
     - id: ReturnStatements
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.ControlFlowAnalysis.get_ReturnStatements
@@ -273,6 +279,7 @@ items:
     - id: Succeeded
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ControlFlowAnalysis.get_Succeeded

@@ -26,6 +26,7 @@ syntax:
     CSharp: public abstract class SyntaxGenerator
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -62,7 +63,7 @@ items:
     path: src\Workspaces\Core\Portable\Editing\SyntaxGenerator.cs
     startLine: 27
   summary: >+
-    Gets the [Microsoft.CodeAnalysis.Editing.SyntaxGenerator](api\Microsoft.CodeAnalysis.Editing.SyntaxGenerator) for the specified language.
+    Gets the [Microsoft.CodeAnalysis.Editing.SyntaxGenerator](#/api\Microsoft.CodeAnalysis.Editing.SyntaxGenerator) for the specified language.
 
   syntax:
     content:
@@ -70,11 +71,13 @@ items:
     parameters:
     - id: workspace
       type:
-        id: Workspace
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Workspace.cs
+        id: Microsoft.CodeAnalysis.Workspace
+        name: Workspace
+        href: api\Microsoft.CodeAnalysis.Workspace
     - id: language
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -96,7 +99,7 @@ items:
     path: src\Workspaces\Core\Portable\Editing\SyntaxGenerator.cs
     startLine: 35
   summary: >+
-    Gets the [Microsoft.CodeAnalysis.Editing.SyntaxGenerator](api\Microsoft.CodeAnalysis.Editing.SyntaxGenerator) for the language corresponding to the document.
+    Gets the [Microsoft.CodeAnalysis.Editing.SyntaxGenerator](#/api\Microsoft.CodeAnalysis.Editing.SyntaxGenerator) for the language corresponding to the document.
 
   syntax:
     content:
@@ -104,8 +107,9 @@ items:
     parameters:
     - id: document
       type:
-        id: Document
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Document.cs
+        id: Microsoft.CodeAnalysis.Document
+        name: Document
+        href: api\Microsoft.CodeAnalysis.Document
     return:
       id: SyntaxGenerator
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetDeclaration(Microsoft.CodeAnalysis.SyntaxNode)
@@ -133,8 +137,9 @@ items:
     parameters:
     - id: node
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetDeclaration(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Editing.DeclarationKind)
@@ -162,12 +167,14 @@ items:
     parameters:
     - id: node
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: kind
       type:
-        id: DeclarationKind
-        href: C:\roslyn\src\Workspaces\Core\Portable\Editing\DeclarationKind.cs
+        id: Microsoft.CodeAnalysis.Editing.DeclarationKind
+        name: DeclarationKind
+        href: api\Microsoft.CodeAnalysis.Editing.DeclarationKind
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.FieldDeclaration(System.String,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.SyntaxNode)
@@ -196,24 +203,29 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: type
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: accessibility
       type:
-        id: Accessibility
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\Accessibility.cs
+        id: Microsoft.CodeAnalysis.Accessibility
+        name: Accessibility
+        href: api\Microsoft.CodeAnalysis.Accessibility
     - id: modifiers
       type:
-        id: DeclarationModifiers
-        href: C:\roslyn\src\Workspaces\Core\Portable\Editing\DeclarationModifiers.cs
+        id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+        name: DeclarationModifiers
+        href: api\Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     - id: initializer
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.FieldDeclaration(Microsoft.CodeAnalysis.IFieldSymbol)
@@ -241,8 +253,9 @@ items:
     parameters:
     - id: field
       type:
-        id: IFieldSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\IFieldSymbol.cs
+        id: Microsoft.CodeAnalysis.IFieldSymbol
+        name: IFieldSymbol
+        href: api\Microsoft.CodeAnalysis.IFieldSymbol
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.FieldDeclaration(Microsoft.CodeAnalysis.IFieldSymbol,Microsoft.CodeAnalysis.SyntaxNode)
@@ -270,12 +283,14 @@ items:
     parameters:
     - id: field
       type:
-        id: IFieldSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\IFieldSymbol.cs
+        id: Microsoft.CodeAnalysis.IFieldSymbol
+        name: IFieldSymbol
+        href: api\Microsoft.CodeAnalysis.IFieldSymbol
     - id: initializer
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.MethodDeclaration(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{System.String},Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
@@ -304,33 +319,40 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: parameters
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     - id: typeParameters
       type:
         id: System.Collections.Generic.IEnumerable{System.String}
+        name: System.Collections.Generic.IEnumerable{System.String}
         href: System.Runtime
         isExternal: true
     - id: returnType
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: accessibility
       type:
-        id: Accessibility
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\Accessibility.cs
+        id: Microsoft.CodeAnalysis.Accessibility
+        name: Accessibility
+        href: api\Microsoft.CodeAnalysis.Accessibility
     - id: modifiers
       type:
-        id: DeclarationModifiers
-        href: C:\roslyn\src\Workspaces\Core\Portable\Editing\DeclarationModifiers.cs
+        id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+        name: DeclarationModifiers
+        href: api\Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     - id: statements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -360,11 +382,13 @@ items:
     parameters:
     - id: method
       type:
-        id: IMethodSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
+        id: Microsoft.CodeAnalysis.IMethodSymbol
+        name: IMethodSymbol
+        href: api\Microsoft.CodeAnalysis.IMethodSymbol
     - id: statements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -395,20 +419,24 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: type
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: initializer
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: refKind
       type:
-        id: RefKind
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\RefKind.cs
+        id: Microsoft.CodeAnalysis.RefKind
+        name: RefKind
+        href: api\Microsoft.CodeAnalysis.RefKind
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ParameterDeclaration(Microsoft.CodeAnalysis.IParameterSymbol,Microsoft.CodeAnalysis.SyntaxNode)
@@ -436,12 +464,14 @@ items:
     parameters:
     - id: symbol
       type:
-        id: IParameterSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
+        id: Microsoft.CodeAnalysis.IParameterSymbol
+        name: IParameterSymbol
+        href: api\Microsoft.CodeAnalysis.IParameterSymbol
     - id: initializer
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.PropertyDeclaration(System.String,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
@@ -470,28 +500,34 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: type
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: accessibility
       type:
-        id: Accessibility
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\Accessibility.cs
+        id: Microsoft.CodeAnalysis.Accessibility
+        name: Accessibility
+        href: api\Microsoft.CodeAnalysis.Accessibility
     - id: modifiers
       type:
-        id: DeclarationModifiers
-        href: C:\roslyn\src\Workspaces\Core\Portable\Editing\DeclarationModifiers.cs
+        id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+        name: DeclarationModifiers
+        href: api\Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     - id: getAccessorStatements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     - id: setAccessorStatements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -521,16 +557,19 @@ items:
     parameters:
     - id: property
       type:
-        id: IPropertySymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\IPropertySymbol.cs
+        id: Microsoft.CodeAnalysis.IPropertySymbol
+        name: IPropertySymbol
+        href: api\Microsoft.CodeAnalysis.IPropertySymbol
     - id: getAccessorStatements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     - id: setAccessorStatements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -561,28 +600,34 @@ items:
     - id: parameters
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     - id: type
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: accessibility
       type:
-        id: Accessibility
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\Accessibility.cs
+        id: Microsoft.CodeAnalysis.Accessibility
+        name: Accessibility
+        href: api\Microsoft.CodeAnalysis.Accessibility
     - id: modifiers
       type:
-        id: DeclarationModifiers
-        href: C:\roslyn\src\Workspaces\Core\Portable\Editing\DeclarationModifiers.cs
+        id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+        name: DeclarationModifiers
+        href: api\Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     - id: getAccessorStatements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     - id: setAccessorStatements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -612,16 +657,19 @@ items:
     parameters:
     - id: indexer
       type:
-        id: IPropertySymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\IPropertySymbol.cs
+        id: Microsoft.CodeAnalysis.IPropertySymbol
+        name: IPropertySymbol
+        href: api\Microsoft.CodeAnalysis.IPropertySymbol
     - id: getAccessorStatements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     - id: setAccessorStatements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -652,20 +700,24 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: type
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: accessibility
       type:
-        id: Accessibility
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\Accessibility.cs
+        id: Microsoft.CodeAnalysis.Accessibility
+        name: Accessibility
+        href: api\Microsoft.CodeAnalysis.Accessibility
     - id: modifiers
       type:
-        id: DeclarationModifiers
-        href: C:\roslyn\src\Workspaces\Core\Portable\Editing\DeclarationModifiers.cs
+        id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+        name: DeclarationModifiers
+        href: api\Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.EventDeclaration(Microsoft.CodeAnalysis.IEventSymbol)
@@ -693,8 +745,9 @@ items:
     parameters:
     - id: symbol
       type:
-        id: IEventSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\IEventSymbol.cs
+        id: Microsoft.CodeAnalysis.IEventSymbol
+        name: IEventSymbol
+        href: api\Microsoft.CodeAnalysis.IEventSymbol
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CustomEventDeclaration(System.String,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
@@ -723,33 +776,40 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: type
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: accessibility
       type:
-        id: Accessibility
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\Accessibility.cs
+        id: Microsoft.CodeAnalysis.Accessibility
+        name: Accessibility
+        href: api\Microsoft.CodeAnalysis.Accessibility
     - id: modifiers
       type:
-        id: DeclarationModifiers
-        href: C:\roslyn\src\Workspaces\Core\Portable\Editing\DeclarationModifiers.cs
+        id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+        name: DeclarationModifiers
+        href: api\Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     - id: parameters
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     - id: addAccessorStatements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     - id: removeAccessorStatements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -779,16 +839,19 @@ items:
     parameters:
     - id: symbol
       type:
-        id: IEventSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\IEventSymbol.cs
+        id: Microsoft.CodeAnalysis.IEventSymbol
+        name: IEventSymbol
+        href: api\Microsoft.CodeAnalysis.IEventSymbol
     - id: addAccessorStatements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     - id: removeAccessorStatements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -819,29 +882,35 @@ items:
     - id: containingTypeName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: parameters
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     - id: accessibility
       type:
-        id: Accessibility
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\Accessibility.cs
+        id: Microsoft.CodeAnalysis.Accessibility
+        name: Accessibility
+        href: api\Microsoft.CodeAnalysis.Accessibility
     - id: modifiers
       type:
-        id: DeclarationModifiers
-        href: C:\roslyn\src\Workspaces\Core\Portable\Editing\DeclarationModifiers.cs
+        id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+        name: DeclarationModifiers
+        href: api\Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     - id: baseConstructorArguments
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     - id: statements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -871,16 +940,19 @@ items:
     parameters:
     - id: constructorMethod
       type:
-        id: IMethodSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
+        id: Microsoft.CodeAnalysis.IMethodSymbol
+        name: IMethodSymbol
+        href: api\Microsoft.CodeAnalysis.IMethodSymbol
     - id: baseConstructorArguments
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     - id: statements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -912,12 +984,14 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: interfaceType
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AsPrivateInterfaceImplementation(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -947,12 +1021,14 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: interfaceType
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ClassDeclaration(System.String,System.Collections.Generic.IEnumerable{System.String},Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
@@ -981,33 +1057,40 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: typeParameters
       type:
         id: System.Collections.Generic.IEnumerable{System.String}
+        name: System.Collections.Generic.IEnumerable{System.String}
         href: System.Runtime
         isExternal: true
     - id: accessibility
       type:
-        id: Accessibility
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\Accessibility.cs
+        id: Microsoft.CodeAnalysis.Accessibility
+        name: Accessibility
+        href: api\Microsoft.CodeAnalysis.Accessibility
     - id: modifiers
       type:
-        id: DeclarationModifiers
-        href: C:\roslyn\src\Workspaces\Core\Portable\Editing\DeclarationModifiers.cs
+        id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+        name: DeclarationModifiers
+        href: api\Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     - id: baseType
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: interfaceTypes
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     - id: members
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -1038,29 +1121,35 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: typeParameters
       type:
         id: System.Collections.Generic.IEnumerable{System.String}
+        name: System.Collections.Generic.IEnumerable{System.String}
         href: System.Runtime
         isExternal: true
     - id: accessibility
       type:
-        id: Accessibility
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\Accessibility.cs
+        id: Microsoft.CodeAnalysis.Accessibility
+        name: Accessibility
+        href: api\Microsoft.CodeAnalysis.Accessibility
     - id: modifiers
       type:
-        id: DeclarationModifiers
-        href: C:\roslyn\src\Workspaces\Core\Portable\Editing\DeclarationModifiers.cs
+        id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+        name: DeclarationModifiers
+        href: api\Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     - id: interfaceTypes
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     - id: members
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -1091,25 +1180,30 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: typeParameters
       type:
         id: System.Collections.Generic.IEnumerable{System.String}
+        name: System.Collections.Generic.IEnumerable{System.String}
         href: System.Runtime
         isExternal: true
     - id: accessibility
       type:
-        id: Accessibility
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\Accessibility.cs
+        id: Microsoft.CodeAnalysis.Accessibility
+        name: Accessibility
+        href: api\Microsoft.CodeAnalysis.Accessibility
     - id: interfaceTypes
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     - id: members
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -1140,19 +1234,23 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: accessibility
       type:
-        id: Accessibility
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\Accessibility.cs
+        id: Microsoft.CodeAnalysis.Accessibility
+        name: Accessibility
+        href: api\Microsoft.CodeAnalysis.Accessibility
     - id: modifiers
       type:
-        id: DeclarationModifiers
-        href: C:\roslyn\src\Workspaces\Core\Portable\Editing\DeclarationModifiers.cs
+        id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+        name: DeclarationModifiers
+        href: api\Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     - id: members
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -1183,12 +1281,14 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.DelegateDeclaration(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{System.String},Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
@@ -1217,30 +1317,36 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: parameters
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     - id: typeParameters
       type:
         id: System.Collections.Generic.IEnumerable{System.String}
+        name: System.Collections.Generic.IEnumerable{System.String}
         href: System.Runtime
         isExternal: true
     - id: returnType
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: accessibility
       type:
-        id: Accessibility
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\Accessibility.cs
+        id: Microsoft.CodeAnalysis.Accessibility
+        name: Accessibility
+        href: api\Microsoft.CodeAnalysis.Accessibility
     - id: modifiers
       type:
-        id: DeclarationModifiers
-        href: C:\roslyn\src\Workspaces\Core\Portable\Editing\DeclarationModifiers.cs
+        id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+        name: DeclarationModifiers
+        href: api\Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.Declaration(Microsoft.CodeAnalysis.ISymbol)
@@ -1268,8 +1374,9 @@ items:
     parameters:
     - id: symbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithTypeParameters(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{System.String})
@@ -1297,11 +1404,13 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: typeParameters
       type:
         id: System.Collections.Generic.IEnumerable{System.String}
+        name: System.Collections.Generic.IEnumerable{System.String}
         href: System.Runtime
         isExternal: true
     return:
@@ -1331,11 +1440,13 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: typeParameters
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: SyntaxNode
@@ -1364,20 +1475,24 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: typeParameterName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: kinds
       type:
-        id: SpecialTypeConstraintKind
-        href: C:\roslyn\src\Workspaces\Core\Portable\Editing\TypeConstraintKind.cs
+        id: Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind
+        name: SpecialTypeConstraintKind
+        href: api\Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind
     - id: types
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -1407,20 +1522,24 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: typeParameterName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: kinds
       type:
-        id: SpecialTypeConstraintKind
-        href: C:\roslyn\src\Workspaces\Core\Portable\Editing\TypeConstraintKind.cs
+        id: Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind
+        name: SpecialTypeConstraintKind
+        href: api\Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind
     - id: types
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: SyntaxNode
@@ -1449,16 +1568,19 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: typeParameterName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: types
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: SyntaxNode
@@ -1487,12 +1609,14 @@ items:
     parameters:
     - id: name
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: The name of the namespace.
     - id: declarations
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
       description: Zero or more namespace or type declarations.
@@ -1523,12 +1647,14 @@ items:
     parameters:
     - id: name
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: The name of the namespace.
     - id: declarations
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
       description: Zero or more namespace or type declarations.
     return:
@@ -1559,12 +1685,14 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: The name of the namespace.
     - id: declarations
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
       description: Zero or more namespace or type declarations.
@@ -1596,12 +1724,14 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: The name of the namespace.
     - id: declarations
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
       description: Zero or more namespace or type declarations.
     return:
@@ -1632,6 +1762,7 @@ items:
     - id: declarations
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
       description: Zero or more namespace import, namespace or type declarations.
@@ -1663,6 +1794,7 @@ items:
     - id: declarations
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
       description: Zero or more namespace import, namespace or type declarations.
     return:
@@ -1692,8 +1824,9 @@ items:
     parameters:
     - id: name
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: The name of the namespace being imported.
     return:
       id: SyntaxNode
@@ -1723,6 +1856,7 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: The name of the namespace being imported.
@@ -1753,11 +1887,13 @@ items:
     parameters:
     - id: name
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: attributeArguments
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -1788,11 +1924,13 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: attributeArguments
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -1823,11 +1961,13 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: attributeArguments
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: SyntaxNode
@@ -1856,8 +1996,9 @@ items:
     parameters:
     - id: attribute
       type:
-        id: AttributeData
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\Attributes\CommonAttributeData.cs
+        id: Microsoft.CodeAnalysis.AttributeData
+        name: AttributeData
+        href: api\Microsoft.CodeAnalysis.AttributeData
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AttributeArgument(System.String,Microsoft.CodeAnalysis.SyntaxNode)
@@ -1886,12 +2027,14 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AttributeArgument(Microsoft.CodeAnalysis.SyntaxNode)
@@ -1919,8 +2062,9 @@ items:
     parameters:
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.RemoveAllAttributes(Microsoft.CodeAnalysis.SyntaxNode)
@@ -1948,8 +2092,9 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetAttributes(Microsoft.CodeAnalysis.SyntaxNode)
@@ -1977,8 +2122,9 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: IReadOnlyList
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertAttributes(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
@@ -2006,16 +2152,19 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
     - id: attributes
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -2045,16 +2194,19 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
     - id: attributes
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: SyntaxNode
@@ -2083,11 +2235,13 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: attributes
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -2117,11 +2271,13 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: attributes
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: SyntaxNode
@@ -2150,8 +2306,9 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: IReadOnlyList
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertReturnAttributes(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
@@ -2179,16 +2336,19 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
     - id: attributes
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -2218,16 +2378,19 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
     - id: attributes
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: SyntaxNode
@@ -2256,11 +2419,13 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: attributes
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -2290,11 +2455,13 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: attributes
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: SyntaxNode
@@ -2323,8 +2490,9 @@ items:
     parameters:
     - id: attributeDeclaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: IReadOnlyList
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertAttributeArguments(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
@@ -2352,16 +2520,19 @@ items:
     parameters:
     - id: attributeDeclaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
     - id: attributeArguments
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -2391,11 +2562,13 @@ items:
     parameters:
     - id: attributeDeclaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: attributeArguments
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -2425,8 +2598,9 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: IReadOnlyList
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertNamespaceImports(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
@@ -2454,16 +2628,19 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
     - id: imports
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -2493,16 +2670,19 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
     - id: imports
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: SyntaxNode
@@ -2531,11 +2711,13 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: imports
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -2565,11 +2747,13 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: imports
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: SyntaxNode
@@ -2598,8 +2782,9 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: IReadOnlyList
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertMembers(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
@@ -2627,16 +2812,19 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
     - id: members
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -2666,16 +2854,19 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
     - id: members
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: SyntaxNode
@@ -2704,11 +2895,13 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: members
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -2738,11 +2931,13 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: members
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: SyntaxNode
@@ -2771,8 +2966,9 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: Accessibility
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithAccessibility(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility)
@@ -2800,12 +2996,14 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: accessibility
       type:
-        id: Accessibility
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\Accessibility.cs
+        id: Microsoft.CodeAnalysis.Accessibility
+        name: Accessibility
+        href: api\Microsoft.CodeAnalysis.Accessibility
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetModifiers(Microsoft.CodeAnalysis.SyntaxNode)
@@ -2825,7 +3023,7 @@ items:
     path: src\Workspaces\Core\Portable\Editing\SyntaxGenerator.cs
     startLine: 833
   summary: >+
-    Gets the [Microsoft.CodeAnalysis.Editing.DeclarationModifiers](api\Microsoft.CodeAnalysis.Editing.DeclarationModifiers) for the declaration.
+    Gets the [Microsoft.CodeAnalysis.Editing.DeclarationModifiers](#/api\Microsoft.CodeAnalysis.Editing.DeclarationModifiers) for the declaration.
 
   syntax:
     content:
@@ -2833,8 +3031,9 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithModifiers(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
@@ -2854,7 +3053,7 @@ items:
     path: src\Workspaces\Core\Portable\Editing\SyntaxGenerator.cs
     startLine: 838
   summary: >+
-    Changes the [Microsoft.CodeAnalysis.Editing.DeclarationModifiers](api\Microsoft.CodeAnalysis.Editing.DeclarationModifiers) for the declaration.
+    Changes the [Microsoft.CodeAnalysis.Editing.DeclarationModifiers](#/api\Microsoft.CodeAnalysis.Editing.DeclarationModifiers) for the declaration.
 
   syntax:
     content:
@@ -2862,12 +3061,14 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: modifiers
       type:
-        id: DeclarationModifiers
-        href: C:\roslyn\src\Workspaces\Core\Portable\Editing\DeclarationModifiers.cs
+        id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+        name: DeclarationModifiers
+        href: api\Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetDeclarationKind(Microsoft.CodeAnalysis.SyntaxNode)
@@ -2887,7 +3088,7 @@ items:
     path: src\Workspaces\Core\Portable\Editing\SyntaxGenerator.cs
     startLine: 843
   summary: >+
-    Gets the [Microsoft.CodeAnalysis.Editing.DeclarationKind](api\Microsoft.CodeAnalysis.Editing.DeclarationKind) for the declaration.
+    Gets the [Microsoft.CodeAnalysis.Editing.DeclarationKind](#/api\Microsoft.CodeAnalysis.Editing.DeclarationKind) for the declaration.
 
   syntax:
     content:
@@ -2895,8 +3096,9 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: DeclarationKind
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetName(Microsoft.CodeAnalysis.SyntaxNode)
@@ -2924,8 +3126,9 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: String
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithName(Microsoft.CodeAnalysis.SyntaxNode,System.String)
@@ -2953,11 +3156,13 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -2987,8 +3192,9 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithType(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -3016,12 +3222,14 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: type
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetParameters(Microsoft.CodeAnalysis.SyntaxNode)
@@ -3049,8 +3257,9 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: IReadOnlyList
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertParameters(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
@@ -3078,16 +3287,19 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
     - id: parameters
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -3117,11 +3329,13 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: parameters
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -3151,8 +3365,9 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -3180,12 +3395,14 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetStatements(Microsoft.CodeAnalysis.SyntaxNode)
@@ -3213,8 +3430,9 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: IReadOnlyList
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithStatements(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
@@ -3242,11 +3460,13 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: statements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -3276,8 +3496,9 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: IReadOnlyList
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithGetAccessorStatements(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
@@ -3305,11 +3526,13 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: statements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -3339,8 +3562,9 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: IReadOnlyList
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithSetAccessorStatements(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
@@ -3368,11 +3592,13 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: statements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -3402,8 +3628,9 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: IReadOnlyList
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddBaseType(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -3431,12 +3658,14 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: baseType
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddInterfaceType(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -3464,12 +3693,14 @@ items:
     parameters:
     - id: declaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: interfaceType
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ReplaceNode(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -3497,16 +3728,19 @@ items:
     parameters:
     - id: root
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: node
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: newDeclaration
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertNodesBefore(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
@@ -3534,15 +3768,18 @@ items:
     parameters:
     - id: root
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: node
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: newDeclarations
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -3572,15 +3809,18 @@ items:
     parameters:
     - id: root
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: node
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: newDeclarations
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -3610,12 +3850,14 @@ items:
     parameters:
     - id: root
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: node
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.RemoveNodes(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
@@ -3643,11 +3885,13 @@ items:
     parameters:
     - id: root
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: declarations
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -3679,8 +3923,9 @@ items:
     parameters:
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: The expression that is to be executed. This is usually a method invocation expression.
     return:
       id: SyntaxNode
@@ -3709,8 +3954,9 @@ items:
     parameters:
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: An optional expression that can be returned.
     return:
       id: SyntaxNode
@@ -3739,8 +3985,9 @@ items:
     parameters:
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: An optional expression that can be thrown.
     return:
       id: SyntaxNode
@@ -3769,20 +4016,24 @@ items:
     parameters:
     - id: type
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: identifier
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: initializer
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: isConst
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -3812,20 +4063,24 @@ items:
     parameters:
     - id: type
       type:
-        id: ITypeSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+        id: Microsoft.CodeAnalysis.ITypeSymbol
+        name: ITypeSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeSymbol
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: initializer
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: isConst
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -3856,12 +4111,14 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: initializer
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.IfStatement(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
@@ -3889,18 +4146,21 @@ items:
     parameters:
     - id: condition
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: A condition expression.
     - id: trueStatements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
       description: The statements that are executed if the condition is true.
     - id: falseStatements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
       description: The statements that are executed if the condition is false.
@@ -3931,19 +4191,22 @@ items:
     parameters:
     - id: condition
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: A condition expression.
     - id: trueStatements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
       description: The statements that are executed if the condition is true.
     - id: falseStatement
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: A single statement that is executed if the condition is false.
     return:
       id: SyntaxNode
@@ -3972,11 +4235,13 @@ items:
     parameters:
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: sections
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -4006,11 +4271,13 @@ items:
     parameters:
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: sections
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: SyntaxNode
@@ -4040,11 +4307,13 @@ items:
     - id: caseExpressions
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     - id: statements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -4074,11 +4343,13 @@ items:
     parameters:
     - id: caseExpression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: statements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -4109,6 +4380,7 @@ items:
     - id: statements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -4163,20 +4435,24 @@ items:
     parameters:
     - id: type
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: statements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -4207,15 +4483,18 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: statements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -4245,11 +4524,13 @@ items:
     parameters:
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: statements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -4280,16 +4561,19 @@ items:
     - id: tryStatements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     - id: catchClauses
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     - id: finallyStatements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -4320,11 +4604,13 @@ items:
     - id: tryStatements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     - id: catchClauses
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: SyntaxNode
@@ -4354,11 +4640,13 @@ items:
     - id: tryStatements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     - id: finallyStatements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -4388,16 +4676,19 @@ items:
     parameters:
     - id: type
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: identifier
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: statements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -4427,16 +4718,19 @@ items:
     parameters:
     - id: type
       type:
-        id: ITypeSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+        id: Microsoft.CodeAnalysis.ITypeSymbol
+        name: ITypeSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeSymbol
     - id: identifer
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: statements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -4466,11 +4760,13 @@ items:
     parameters:
     - id: condition
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: statements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -4502,8 +4798,9 @@ items:
     parameters:
     - id: type
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.DefaultExpression(Microsoft.CodeAnalysis.ITypeSymbol)
@@ -4528,8 +4825,9 @@ items:
     parameters:
     - id: type
       type:
-        id: ITypeSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+        id: Microsoft.CodeAnalysis.ITypeSymbol
+        name: ITypeSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeSymbol
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ThisExpression
@@ -4608,6 +4906,7 @@ items:
     - id: value
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -4713,6 +5012,7 @@ items:
     - id: identifier
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -4743,11 +5043,13 @@ items:
     - id: identifier
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: typeArguments
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -4778,11 +5080,13 @@ items:
     - id: identifier
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: typeArguments
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ITypeSymbol}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ITypeSymbol}
         href: System.Runtime
         isExternal: true
     return:
@@ -4813,11 +5117,13 @@ items:
     - id: identifier
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: typeArguments
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: SyntaxNode
@@ -4847,11 +5153,13 @@ items:
     - id: identifier
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: typeArguments
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: SyntaxNode
@@ -4882,11 +5190,13 @@ items:
     parameters:
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: typeArguments
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -4918,11 +5228,13 @@ items:
     parameters:
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: typeArguments
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: SyntaxNode
@@ -4955,12 +5267,14 @@ items:
     parameters:
     - id: left
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: right
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.DottedName(System.String)
@@ -4989,6 +5303,7 @@ items:
     - id: dottedName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -5018,8 +5333,9 @@ items:
     parameters:
     - id: typeSymbol
       type:
-        id: ITypeSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+        id: Microsoft.CodeAnalysis.ITypeSymbol
+        name: ITypeSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeSymbol
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.TypeExpression(Microsoft.CodeAnalysis.SpecialType)
@@ -5047,8 +5363,9 @@ items:
     parameters:
     - id: specialType
       type:
-        id: SpecialType
-        href: C:\roslyn\src\Compilers\Core\Portable\SpecialType.cs
+        id: Microsoft.CodeAnalysis.SpecialType
+        name: SpecialType
+        href: api\Microsoft.CodeAnalysis.SpecialType
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ArrayTypeExpression(Microsoft.CodeAnalysis.SyntaxNode)
@@ -5076,8 +5393,9 @@ items:
     parameters:
     - id: type
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.NullableTypeExpression(Microsoft.CodeAnalysis.SyntaxNode)
@@ -5105,8 +5423,9 @@ items:
     parameters:
     - id: type
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AssignmentStatement(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -5134,12 +5453,14 @@ items:
     parameters:
     - id: left
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: right
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ValueEqualsExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -5167,12 +5488,14 @@ items:
     parameters:
     - id: left
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: right
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ReferenceEqualsExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -5200,12 +5523,14 @@ items:
     parameters:
     - id: left
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: right
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ValueNotEqualsExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -5233,12 +5558,14 @@ items:
     parameters:
     - id: left
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: right
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ReferenceNotEqualsExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -5266,12 +5593,14 @@ items:
     parameters:
     - id: left
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: right
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LessThanExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -5299,12 +5628,14 @@ items:
     parameters:
     - id: left
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: right
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LessThanOrEqualExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -5332,12 +5663,14 @@ items:
     parameters:
     - id: left
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: right
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GreaterThanExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -5365,12 +5698,14 @@ items:
     parameters:
     - id: left
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: right
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GreaterThanOrEqualExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -5398,12 +5733,14 @@ items:
     parameters:
     - id: left
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: right
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.NegateExpression(Microsoft.CodeAnalysis.SyntaxNode)
@@ -5431,8 +5768,9 @@ items:
     parameters:
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -5460,12 +5798,14 @@ items:
     parameters:
     - id: left
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: right
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.SubtractExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -5493,12 +5833,14 @@ items:
     parameters:
     - id: left
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: right
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.MultiplyExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -5526,12 +5868,14 @@ items:
     parameters:
     - id: left
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: right
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.DivideExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -5559,12 +5903,14 @@ items:
     parameters:
     - id: left
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: right
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ModuloExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -5592,12 +5938,14 @@ items:
     parameters:
     - id: left
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: right
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.BitwiseAndExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -5625,12 +5973,14 @@ items:
     parameters:
     - id: left
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: right
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.BitwiseOrExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -5658,12 +6008,14 @@ items:
     parameters:
     - id: left
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: right
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.BitwiseNotExpression(Microsoft.CodeAnalysis.SyntaxNode)
@@ -5691,8 +6043,9 @@ items:
     parameters:
     - id: operand
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LogicalAndExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -5720,12 +6073,14 @@ items:
     parameters:
     - id: left
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: right
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LogicalOrExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -5753,12 +6108,14 @@ items:
     parameters:
     - id: left
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: right
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LogicalNotExpression(Microsoft.CodeAnalysis.SyntaxNode)
@@ -5786,8 +6143,9 @@ items:
     parameters:
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ConditionalExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -5815,16 +6173,19 @@ items:
     parameters:
     - id: condition
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: whenTrue
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: whenFalse
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CoalesceExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -5852,12 +6213,14 @@ items:
     parameters:
     - id: left
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: right
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.MemberAccessExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -5885,12 +6248,14 @@ items:
     parameters:
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: memberName
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.MemberAccessExpression(Microsoft.CodeAnalysis.SyntaxNode,System.String)
@@ -5918,11 +6283,13 @@ items:
     parameters:
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: memberName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -5952,11 +6319,13 @@ items:
     parameters:
     - id: namedType
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: arguments
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -5986,11 +6355,13 @@ items:
     parameters:
     - id: type
       type:
-        id: ITypeSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+        id: Microsoft.CodeAnalysis.ITypeSymbol
+        name: ITypeSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeSymbol
     - id: arguments
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -6020,11 +6391,13 @@ items:
     parameters:
     - id: type
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: arguments
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: SyntaxNode
@@ -6053,11 +6426,13 @@ items:
     parameters:
     - id: type
       type:
-        id: ITypeSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+        id: Microsoft.CodeAnalysis.ITypeSymbol
+        name: ITypeSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeSymbol
     - id: arguments
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: SyntaxNode
@@ -6086,11 +6461,13 @@ items:
     parameters:
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: arguments
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -6120,11 +6497,13 @@ items:
     parameters:
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: arguments
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: SyntaxNode
@@ -6154,16 +6533,19 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: refKind
       type:
-        id: RefKind
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\RefKind.cs
+        id: Microsoft.CodeAnalysis.RefKind
+        name: RefKind
+        href: api\Microsoft.CodeAnalysis.RefKind
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.Argument(Microsoft.CodeAnalysis.RefKind,Microsoft.CodeAnalysis.SyntaxNode)
@@ -6191,12 +6573,14 @@ items:
     parameters:
     - id: refKind
       type:
-        id: RefKind
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\RefKind.cs
+        id: Microsoft.CodeAnalysis.RefKind
+        name: RefKind
+        href: api\Microsoft.CodeAnalysis.RefKind
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.Argument(Microsoft.CodeAnalysis.SyntaxNode)
@@ -6224,8 +6608,9 @@ items:
     parameters:
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ElementAccessExpression(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
@@ -6253,11 +6638,13 @@ items:
     parameters:
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: arguments
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -6287,11 +6674,13 @@ items:
     parameters:
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: arguments
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: SyntaxNode
@@ -6320,12 +6709,14 @@ items:
     parameters:
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: type
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.IsTypeExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.ITypeSymbol)
@@ -6353,12 +6744,14 @@ items:
     parameters:
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: type
       type:
-        id: ITypeSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+        id: Microsoft.CodeAnalysis.ITypeSymbol
+        name: ITypeSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeSymbol
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.TryCastExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -6386,12 +6779,14 @@ items:
     parameters:
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: type
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.TryCastExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.ITypeSymbol)
@@ -6419,12 +6814,14 @@ items:
     parameters:
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: type
       type:
-        id: ITypeSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+        id: Microsoft.CodeAnalysis.ITypeSymbol
+        name: ITypeSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeSymbol
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CastExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -6452,12 +6849,14 @@ items:
     parameters:
     - id: type
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CastExpression(Microsoft.CodeAnalysis.ITypeSymbol,Microsoft.CodeAnalysis.SyntaxNode)
@@ -6485,12 +6884,14 @@ items:
     parameters:
     - id: type
       type:
-        id: ITypeSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+        id: Microsoft.CodeAnalysis.ITypeSymbol
+        name: ITypeSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeSymbol
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ConvertExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -6518,12 +6919,14 @@ items:
     parameters:
     - id: type
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ConvertExpression(Microsoft.CodeAnalysis.ITypeSymbol,Microsoft.CodeAnalysis.SyntaxNode)
@@ -6551,12 +6954,14 @@ items:
     parameters:
     - id: type
       type:
-        id: ITypeSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+        id: Microsoft.CodeAnalysis.ITypeSymbol
+        name: ITypeSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeSymbol
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ValueReturningLambdaExpression(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},Microsoft.CodeAnalysis.SyntaxNode)
@@ -6585,12 +6990,14 @@ items:
     - id: lambdaParameters
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.VoidReturningLambdaExpression(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},Microsoft.CodeAnalysis.SyntaxNode)
@@ -6619,12 +7026,14 @@ items:
     - id: lambdaParameters
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ValueReturningLambdaExpression(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
@@ -6653,11 +7062,13 @@ items:
     - id: lambdaParameters
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     - id: statements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -6688,11 +7099,13 @@ items:
     - id: lambdaParameters
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     - id: statements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -6723,12 +7136,14 @@ items:
     - id: parameterName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.VoidReturningLambdaExpression(System.String,Microsoft.CodeAnalysis.SyntaxNode)
@@ -6757,12 +7172,14 @@ items:
     - id: parameterName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ValueReturningLambdaExpression(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
@@ -6791,11 +7208,13 @@ items:
     - id: parameterName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: statements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -6826,11 +7245,13 @@ items:
     - id: parameterName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: statements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -6860,8 +7281,9 @@ items:
     parameters:
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.VoidReturningLambdaExpression(Microsoft.CodeAnalysis.SyntaxNode)
@@ -6889,8 +7311,9 @@ items:
     parameters:
     - id: expression
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ValueReturningLambdaExpression(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
@@ -6919,6 +7342,7 @@ items:
     - id: statements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -6949,6 +7373,7 @@ items:
     - id: statements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     return:
@@ -6979,12 +7404,14 @@ items:
     - id: identifier
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: type
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LambdaParameter(System.String,Microsoft.CodeAnalysis.ITypeSymbol)
@@ -7013,11 +7440,13 @@ items:
     - id: identifier
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: type
       type:
-        id: ITypeSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+        id: Microsoft.CodeAnalysis.ITypeSymbol
+        name: ITypeSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeSymbol
     return:
       id: SyntaxNode

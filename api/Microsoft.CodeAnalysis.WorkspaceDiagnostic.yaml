@@ -19,6 +19,7 @@ syntax:
     CSharp: public class WorkspaceDiagnostic
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -44,8 +45,9 @@ items:
     parameters:
     - id: Kind
       type:
-        id: WorkspaceDiagnosticKind
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\WorkspaceDiagnosticKind.cs
+        id: Microsoft.CodeAnalysis.WorkspaceDiagnosticKind
+        name: WorkspaceDiagnosticKind
+        href: api\Microsoft.CodeAnalysis.WorkspaceDiagnosticKind
 - id: Microsoft.CodeAnalysis.WorkspaceDiagnostic.get_Kind
   yaml: api\Microsoft.CodeAnalysis.WorkspaceDiagnostic.yaml
   href: api\Microsoft.CodeAnalysis.WorkspaceDiagnostic
@@ -84,6 +86,7 @@ items:
     - id: Message
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.WorkspaceDiagnostic.get_Message
@@ -123,11 +126,13 @@ items:
     parameters:
     - id: kind
       type:
-        id: WorkspaceDiagnosticKind
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\WorkspaceDiagnosticKind.cs
+        id: Microsoft.CodeAnalysis.WorkspaceDiagnosticKind
+        name: WorkspaceDiagnosticKind
+        href: api\Microsoft.CodeAnalysis.WorkspaceDiagnosticKind
     - id: message
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.WorkspaceDiagnostic.ToString

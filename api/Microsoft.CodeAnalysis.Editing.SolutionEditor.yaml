@@ -22,6 +22,7 @@ syntax:
     CSharp: public class SolutionEditor
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -47,8 +48,9 @@ items:
     parameters:
     - id: solution
       type:
-        id: Solution
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Solution.CompilationTracker.cs
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api\Microsoft.CodeAnalysis.Solution
 - id: Microsoft.CodeAnalysis.Editing.SolutionEditor.OriginalSolution
   yaml: api\Microsoft.CodeAnalysis.Editing.SolutionEditor.yaml
   href: api\Microsoft.CodeAnalysis.Editing.SolutionEditor
@@ -66,7 +68,7 @@ items:
     path: src\Workspaces\Core\Portable\Editing\SolutionEditor.cs
     startLine: 28
   summary: >+
-    The [Microsoft.CodeAnalysis.Solution](api\Microsoft.CodeAnalysis.Solution) that was specified when the [Microsoft.CodeAnalysis.Editing.SolutionEditor](api\Microsoft.CodeAnalysis.Editing.SolutionEditor) was constructed.
+    The [Microsoft.CodeAnalysis.Solution](#/api\Microsoft.CodeAnalysis.Solution) that was specified when the [Microsoft.CodeAnalysis.Editing.SolutionEditor](#/api\Microsoft.CodeAnalysis.Editing.SolutionEditor) was constructed.
 
   syntax:
     content:
@@ -74,8 +76,9 @@ items:
     parameters:
     - id: OriginalSolution
       type:
-        id: Solution
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Solution.CompilationTracker.cs
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api\Microsoft.CodeAnalysis.Solution
 - id: Microsoft.CodeAnalysis.Editing.SolutionEditor.get_OriginalSolution
   yaml: api\Microsoft.CodeAnalysis.Editing.SolutionEditor.yaml
   href: api\Microsoft.CodeAnalysis.Editing.SolutionEditor
@@ -108,7 +111,7 @@ items:
     path: src\Workspaces\Core\Portable\Editing\SolutionEditor.cs
     startLine: 36
   summary: >+
-    Gets the [Microsoft.CodeAnalysis.Editing.DocumentEditor](api\Microsoft.CodeAnalysis.Editing.DocumentEditor) for the corresponding [Microsoft.CodeAnalysis.DocumentId](api\Microsoft.CodeAnalysis.DocumentId).
+    Gets the [Microsoft.CodeAnalysis.Editing.DocumentEditor](#/api\Microsoft.CodeAnalysis.Editing.DocumentEditor) for the corresponding [Microsoft.CodeAnalysis.DocumentId](#/api\Microsoft.CodeAnalysis.DocumentId).
 
   syntax:
     content:
@@ -116,11 +119,13 @@ items:
     parameters:
     - id: id
       type:
-        id: DocumentId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+        id: Microsoft.CodeAnalysis.DocumentId
+        name: DocumentId
+        href: api\Microsoft.CodeAnalysis.DocumentId
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -142,7 +147,7 @@ items:
     path: src\Workspaces\Core\Portable\Editing\SolutionEditor.cs
     startLine: 51
   summary: >+
-    Returns the changed [Microsoft.CodeAnalysis.Solution](api\Microsoft.CodeAnalysis.Solution).
+    Returns the changed [Microsoft.CodeAnalysis.Solution](#/api\Microsoft.CodeAnalysis.Solution).
 
   syntax:
     content:

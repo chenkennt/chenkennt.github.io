@@ -40,7 +40,7 @@ items:
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 21
   summary: >+
-    Gets the [Microsoft.CodeAnalysis.SymbolKind](api\Microsoft.CodeAnalysis.SymbolKind) indicating what kind of symbol it is.
+    Gets the [Microsoft.CodeAnalysis.SymbolKind](#/api\Microsoft.CodeAnalysis.SymbolKind) indicating what kind of symbol it is.
 
   syntax:
     content:
@@ -48,8 +48,9 @@ items:
     parameters:
     - id: Kind
       type:
-        id: SymbolKind
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\SymbolKind.cs
+        id: Microsoft.CodeAnalysis.SymbolKind
+        name: SymbolKind
+        href: api\Microsoft.CodeAnalysis.SymbolKind
 - id: Microsoft.CodeAnalysis.ISymbol.get_Kind
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
   href: api\Microsoft.CodeAnalysis.ISymbol
@@ -91,6 +92,7 @@ items:
     - id: Language
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_Language
@@ -134,6 +136,7 @@ items:
     - id: Name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_Name
@@ -191,6 +194,7 @@ items:
     - id: MetadataName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_MetadataName
@@ -225,7 +229,7 @@ items:
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 48
   summary: >+
-    Gets the [Microsoft.CodeAnalysis.ISymbol](api\Microsoft.CodeAnalysis.ISymbol) for the immediately containing symbol.
+    Gets the [Microsoft.CodeAnalysis.ISymbol](#/api\Microsoft.CodeAnalysis.ISymbol) for the immediately containing symbol.
 
   syntax:
     content:
@@ -233,8 +237,9 @@ items:
     parameters:
     - id: ContainingSymbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
 - id: Microsoft.CodeAnalysis.ISymbol.get_ContainingSymbol
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
   href: api\Microsoft.CodeAnalysis.ISymbol
@@ -267,7 +272,7 @@ items:
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 54
   summary: >+
-    Gets the [Microsoft.CodeAnalysis.IAssemblySymbol](api\Microsoft.CodeAnalysis.IAssemblySymbol) for the containing assembly. Returns null if the
+    Gets the [Microsoft.CodeAnalysis.IAssemblySymbol](#/api\Microsoft.CodeAnalysis.IAssemblySymbol) for the containing assembly. Returns null if the
 
     symbol is shared across multiple assemblies.
 
@@ -277,8 +282,9 @@ items:
     parameters:
     - id: ContainingAssembly
       type:
-        id: IAssemblySymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
+        id: Microsoft.CodeAnalysis.IAssemblySymbol
+        name: IAssemblySymbol
+        href: api\Microsoft.CodeAnalysis.IAssemblySymbol
 - id: Microsoft.CodeAnalysis.ISymbol.get_ContainingAssembly
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
   href: api\Microsoft.CodeAnalysis.ISymbol
@@ -311,7 +317,7 @@ items:
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 60
   summary: >+
-    Gets the [Microsoft.CodeAnalysis.IModuleSymbol](api\Microsoft.CodeAnalysis.IModuleSymbol) for the containing module. Returns null if the
+    Gets the [Microsoft.CodeAnalysis.IModuleSymbol](#/api\Microsoft.CodeAnalysis.IModuleSymbol) for the containing module. Returns null if the
 
     symbol is shared across multiple modules.
 
@@ -321,8 +327,9 @@ items:
     parameters:
     - id: ContainingModule
       type:
-        id: IModuleSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\IModuleSymbol.cs
+        id: Microsoft.CodeAnalysis.IModuleSymbol
+        name: IModuleSymbol
+        href: api\Microsoft.CodeAnalysis.IModuleSymbol
 - id: Microsoft.CodeAnalysis.ISymbol.get_ContainingModule
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
   href: api\Microsoft.CodeAnalysis.ISymbol
@@ -355,7 +362,7 @@ items:
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 66
   summary: >+
-    Gets the [Microsoft.CodeAnalysis.INamedTypeSymbol](api\Microsoft.CodeAnalysis.INamedTypeSymbol) for the containing type. Returns null if the
+    Gets the [Microsoft.CodeAnalysis.INamedTypeSymbol](#/api\Microsoft.CodeAnalysis.INamedTypeSymbol) for the containing type. Returns null if the
 
     symbol is not contained within a type.
 
@@ -365,8 +372,9 @@ items:
     parameters:
     - id: ContainingType
       type:
-        id: INamedTypeSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+        id: Microsoft.CodeAnalysis.INamedTypeSymbol
+        name: INamedTypeSymbol
+        href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
 - id: Microsoft.CodeAnalysis.ISymbol.get_ContainingType
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
   href: api\Microsoft.CodeAnalysis.ISymbol
@@ -399,7 +407,7 @@ items:
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 72
   summary: >+
-    Gets the [Microsoft.CodeAnalysis.INamespaceSymbol](api\Microsoft.CodeAnalysis.INamespaceSymbol) for the nearest enclosing namespace. Returns null if the
+    Gets the [Microsoft.CodeAnalysis.INamespaceSymbol](#/api\Microsoft.CodeAnalysis.INamespaceSymbol) for the nearest enclosing namespace. Returns null if the
 
     symbol isn't contained in a namespace.
 
@@ -409,8 +417,9 @@ items:
     parameters:
     - id: ContainingNamespace
       type:
-        id: INamespaceSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\INamespaceSymbol.cs
+        id: Microsoft.CodeAnalysis.INamespaceSymbol
+        name: INamespaceSymbol
+        href: api\Microsoft.CodeAnalysis.INamespaceSymbol
 - id: Microsoft.CodeAnalysis.ISymbol.get_ContainingNamespace
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
   href: api\Microsoft.CodeAnalysis.ISymbol
@@ -454,6 +463,7 @@ items:
     - id: IsDefinition
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsDefinition
@@ -497,6 +507,7 @@ items:
     - id: IsStatic
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsStatic
@@ -540,6 +551,7 @@ items:
     - id: IsVirtual
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsVirtual
@@ -583,6 +595,7 @@ items:
     - id: IsOverride
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsOverride
@@ -626,6 +639,7 @@ items:
     - id: IsAbstract
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsAbstract
@@ -669,6 +683,7 @@ items:
     - id: IsSealed
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsSealed
@@ -712,6 +727,7 @@ items:
     - id: IsExtern
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsExtern
@@ -757,6 +773,7 @@ items:
     - id: IsImplicitlyDeclared
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsImplicitlyDeclared
@@ -800,6 +817,7 @@ items:
     - id: CanBeReferencedByName
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_CanBeReferencedByName
@@ -847,6 +865,7 @@ items:
     - id: Locations
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Location}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Location}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_Locations
@@ -906,6 +925,7 @@ items:
     - id: DeclaringSyntaxReferences
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SyntaxReference}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SyntaxReference}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_DeclaringSyntaxReferences
@@ -940,7 +960,7 @@ items:
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 163
   summary: >+
-    Gets the attributes for the symbol. Returns an empty @T:System.Collections.Generic.IEnumerable`1-
+    Gets the attributes for the symbol. Returns an empty [System.Collections.Generic.IEnumerable`1](#)
 
     if there are no attributes.
 
@@ -967,7 +987,7 @@ items:
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 169
   summary: >+
-    Gets a [Microsoft.CodeAnalysis.Accessibility](api\Microsoft.CodeAnalysis.Accessibility) indicating the declared accessibility for the symbol.
+    Gets a [Microsoft.CodeAnalysis.Accessibility](#/api\Microsoft.CodeAnalysis.Accessibility) indicating the declared accessibility for the symbol.
 
     Returns NotApplicable if no accessibility is declared.
 
@@ -977,8 +997,9 @@ items:
     parameters:
     - id: DeclaredAccessibility
       type:
-        id: Accessibility
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\Accessibility.cs
+        id: Microsoft.CodeAnalysis.Accessibility
+        name: Accessibility
+        href: api\Microsoft.CodeAnalysis.Accessibility
 - id: Microsoft.CodeAnalysis.ISymbol.get_DeclaredAccessibility
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
   href: api\Microsoft.CodeAnalysis.ISymbol
@@ -1011,7 +1032,7 @@ items:
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 176
   summary: >+
-    Gets the [Microsoft.CodeAnalysis.ISymbol](api\Microsoft.CodeAnalysis.ISymbol) for the original definition of the symbol.
+    Gets the [Microsoft.CodeAnalysis.ISymbol](#/api\Microsoft.CodeAnalysis.ISymbol) for the original definition of the symbol.
 
     If this symbol is derived from another symbol, by type substitution for instance,
 
@@ -1023,8 +1044,9 @@ items:
     parameters:
     - id: OriginalDefinition
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
 - id: Microsoft.CodeAnalysis.ISymbol.get_OriginalDefinition
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
   href: api\Microsoft.CodeAnalysis.ISymbol
@@ -1062,8 +1084,9 @@ items:
     parameters:
     - id: visitor
       type:
-        id: SymbolVisitor
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\SymbolVisitor.cs
+        id: Microsoft.CodeAnalysis.SymbolVisitor
+        name: SymbolVisitor
+        href: api\Microsoft.CodeAnalysis.SymbolVisitor
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.ISymbol.Accept``1(Microsoft.CodeAnalysis.SymbolVisitor{``0})
@@ -1088,8 +1111,9 @@ items:
     parameters:
     - id: visitor
       type:
-        id: SymbolVisitor
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\SymbolVisitor`1.cs
+        id: Microsoft.CodeAnalysis.SymbolVisitor{``0}
+        name: SymbolVisitor
+        href: Microsoft.CodeAnalysis.SymbolVisitor{``0}
     return:
       id: TResult
 - id: Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentId
@@ -1145,18 +1169,21 @@ items:
     - id: preferredCulture
       type:
         id: System.Globalization.CultureInfo
+        name: System.Globalization.CultureInfo
         href: System.Globalization
         isExternal: true
       description: Preferred culture or null for the default.
     - id: expandIncludes
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
       description: Optionally, expand <include> elements.  No impact on non-source documentation comments.
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
       description: Token allowing cancellation of request.
@@ -1188,8 +1215,9 @@ items:
     parameters:
     - id: format
       type:
-        id: SymbolDisplayFormat
-        href: C:\roslyn\src\Compilers\Core\Portable\SymbolDisplay\SymbolDisplayFormat.cs
+        id: Microsoft.CodeAnalysis.SymbolDisplayFormat
+        name: SymbolDisplayFormat
+        href: api\Microsoft.CodeAnalysis.SymbolDisplayFormat
       description: Format or null for the default.
     return:
       id: String
@@ -1221,8 +1249,9 @@ items:
     parameters:
     - id: format
       type:
-        id: SymbolDisplayFormat
-        href: C:\roslyn\src\Compilers\Core\Portable\SymbolDisplay\SymbolDisplayFormat.cs
+        id: Microsoft.CodeAnalysis.SymbolDisplayFormat
+        name: SymbolDisplayFormat
+        href: api\Microsoft.CodeAnalysis.SymbolDisplayFormat
       description: >-
         Formatting rules - null implies
 
@@ -1257,8 +1286,9 @@ items:
     parameters:
     - id: semanticModel
       type:
-        id: SemanticModel
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+        id: Microsoft.CodeAnalysis.SemanticModel
+        name: SemanticModel
+        href: api\Microsoft.CodeAnalysis.SemanticModel
       description: >-
         Binding information (for determining names appropriate to
 
@@ -1266,13 +1296,15 @@ items:
     - id: position
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: A position in the source code (context).
     - id: format
       type:
-        id: SymbolDisplayFormat
-        href: C:\roslyn\src\Compilers\Core\Portable\SymbolDisplay\SymbolDisplayFormat.cs
+        id: Microsoft.CodeAnalysis.SymbolDisplayFormat
+        name: SymbolDisplayFormat
+        href: api\Microsoft.CodeAnalysis.SymbolDisplayFormat
       description: >-
         Formatting rules - null implies
 
@@ -1307,8 +1339,9 @@ items:
     parameters:
     - id: semanticModel
       type:
-        id: SemanticModel
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+        id: Microsoft.CodeAnalysis.SemanticModel
+        name: SemanticModel
+        href: api\Microsoft.CodeAnalysis.SemanticModel
       description: >-
         Binding information (for determining names appropriate to
 
@@ -1316,13 +1349,15 @@ items:
     - id: position
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: A position in the source code (context).
     - id: format
       type:
-        id: SymbolDisplayFormat
-        href: C:\roslyn\src\Compilers\Core\Portable\SymbolDisplay\SymbolDisplayFormat.cs
+        id: Microsoft.CodeAnalysis.SymbolDisplayFormat
+        name: SymbolDisplayFormat
+        href: api\Microsoft.CodeAnalysis.SymbolDisplayFormat
       description: >-
         Formatting rules - null implies
 
@@ -1388,6 +1423,7 @@ items:
     - id: HasUnsupportedMetadata
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_HasUnsupportedMetadata

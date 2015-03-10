@@ -19,9 +19,11 @@ syntax:
     CSharp: public partial struct Reversed
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -92,6 +94,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -118,7 +121,8 @@ items:
     parameters:
     - id: other
       type:
-        id: Reversed
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\ChildSyntaxList.Reversed.cs
+        id: Microsoft.CodeAnalysis.ChildSyntaxList.Reversed
+        name: Reversed
+        href: api\Microsoft.CodeAnalysis.ChildSyntaxList.Reversed
     return:
       id: Boolean

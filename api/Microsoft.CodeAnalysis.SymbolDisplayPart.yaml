@@ -24,9 +24,11 @@ syntax:
     CSharp: public struct SymbolDisplayPart
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -55,8 +57,9 @@ items:
     parameters:
     - id: Kind
       type:
-        id: SymbolDisplayPartKind
-        href: C:\roslyn\src\Compilers\Core\Portable\SymbolDisplay\SymbolDisplayPartKind.cs
+        id: Microsoft.CodeAnalysis.SymbolDisplayPartKind
+        name: SymbolDisplayPartKind
+        href: api\Microsoft.CodeAnalysis.SymbolDisplayPartKind
 - id: Microsoft.CodeAnalysis.SymbolDisplayPart.get_Kind
   yaml: api\Microsoft.CodeAnalysis.SymbolDisplayPart.yaml
   href: api\Microsoft.CodeAnalysis.SymbolDisplayPart
@@ -91,7 +94,7 @@ items:
   summary: >+
     Gets the symbol associated with this display part, if there is one.
 
-    For example, the [Microsoft.CodeAnalysis.ITypeSymbol](api\Microsoft.CodeAnalysis.ITypeSymbol) associated with a class name.
+    For example, the [Microsoft.CodeAnalysis.ITypeSymbol](#/api\Microsoft.CodeAnalysis.ITypeSymbol) associated with a class name.
 
   syntax:
     content:
@@ -99,8 +102,9 @@ items:
     parameters:
     - id: Symbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
 - id: Microsoft.CodeAnalysis.SymbolDisplayPart.get_Symbol
   yaml: api\Microsoft.CodeAnalysis.SymbolDisplayPart.yaml
   href: api\Microsoft.CodeAnalysis.SymbolDisplayPart
@@ -133,7 +137,7 @@ items:
     path: src\Compilers\Core\Portable\SymbolDisplay\SymbolDisplayPart.cs
     startLine: 40
   summary: >+
-    Construct a non-formattable [Microsoft.CodeAnalysis.SymbolDisplayPart](api\Microsoft.CodeAnalysis.SymbolDisplayPart) (i.e. with a fixed string value).
+    Construct a non-formattable [Microsoft.CodeAnalysis.SymbolDisplayPart](#/api\Microsoft.CodeAnalysis.SymbolDisplayPart) (i.e. with a fixed string value).
 
   syntax:
     content:
@@ -141,17 +145,20 @@ items:
     parameters:
     - id: kind
       type:
-        id: SymbolDisplayPartKind
-        href: C:\roslyn\src\Compilers\Core\Portable\SymbolDisplay\SymbolDisplayPartKind.cs
+        id: Microsoft.CodeAnalysis.SymbolDisplayPartKind
+        name: SymbolDisplayPartKind
+        href: api\Microsoft.CodeAnalysis.SymbolDisplayPartKind
       description: The kind of the display part.
     - id: symbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
       description: An optional associated symbol.
     - id: text
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: The fixed string value of the part.

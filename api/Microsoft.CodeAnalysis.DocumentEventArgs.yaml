@@ -19,9 +19,11 @@ syntax:
     CSharp: public class DocumentEventArgs
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.EventArgs
+  name: System.EventArgs
   href: System.Runtime
   isExternal: true
 items:
@@ -47,8 +49,9 @@ items:
     parameters:
     - id: Document
       type:
-        id: Document
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Document.cs
+        id: Microsoft.CodeAnalysis.Document
+        name: Document
+        href: api\Microsoft.CodeAnalysis.Document
 - id: Microsoft.CodeAnalysis.DocumentEventArgs.get_Document
   yaml: api\Microsoft.CodeAnalysis.DocumentEventArgs.yaml
   href: api\Microsoft.CodeAnalysis.DocumentEventArgs
@@ -86,5 +89,6 @@ items:
     parameters:
     - id: document
       type:
-        id: Document
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Document.cs
+        id: Microsoft.CodeAnalysis.Document
+        name: Document
+        href: api\Microsoft.CodeAnalysis.Document

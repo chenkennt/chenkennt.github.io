@@ -22,9 +22,11 @@ syntax:
     CSharp: public struct Reversed
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -50,8 +52,9 @@ items:
     parameters:
     - id: list
       type:
-        id: SyntaxTokenList
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTokenList.cs
+        id: Microsoft.CodeAnalysis.SyntaxTokenList
+        name: SyntaxTokenList
+        href: api\Microsoft.CodeAnalysis.SyntaxTokenList
 - id: Microsoft.CodeAnalysis.SyntaxTokenList.Reversed.GetEnumerator
   yaml: api\Microsoft.CodeAnalysis.SyntaxTokenList.Reversed.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxTokenList.Reversed
@@ -97,6 +100,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -123,8 +127,9 @@ items:
     parameters:
     - id: other
       type:
-        id: Reversed
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTokenList.Reversed.cs
+        id: Microsoft.CodeAnalysis.SyntaxTokenList.Reversed
+        name: Reversed
+        href: api\Microsoft.CodeAnalysis.SyntaxTokenList.Reversed
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxTokenList.Reversed.GetHashCode

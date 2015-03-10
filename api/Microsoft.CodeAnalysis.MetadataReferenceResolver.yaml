@@ -22,6 +22,7 @@ syntax:
     CSharp: public abstract class MetadataReferenceResolver
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -48,6 +49,7 @@ items:
     - id: other
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -97,16 +99,19 @@ items:
     - id: reference
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: baseFilePath
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: properties
       type:
-        id: MetadataReferenceProperties
-        href: C:\roslyn\src\Compilers\Core\Portable\MetadataReference\MetadataReferenceProperties.cs
+        id: Microsoft.CodeAnalysis.MetadataReferenceProperties
+        name: MetadataReferenceProperties
+        href: api\Microsoft.CodeAnalysis.MetadataReferenceProperties
     return:
       id: ImmutableArray

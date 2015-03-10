@@ -22,10 +22,12 @@ syntax:
     CSharp: public sealed class OpenDocumentOperation
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
-- id: CodeActionOperation
-  href: C:\roslyn\src\Workspaces\Core\Portable\CodeActions\Operations\CodeActionOperation.cs
+- id: Microsoft.CodeAnalysis.CodeActions.CodeActionOperation
+  name: CodeActionOperation
+  href: api\Microsoft.CodeAnalysis.CodeActions.CodeActionOperation
 items:
 - id: Microsoft.CodeAnalysis.CodeActions.OpenDocumentOperation.#ctor(Microsoft.CodeAnalysis.DocumentId,System.Boolean)
   yaml: api\Microsoft.CodeAnalysis.CodeActions.OpenDocumentOperation.yaml
@@ -49,11 +51,13 @@ items:
     parameters:
     - id: documentId
       type:
-        id: DocumentId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+        id: Microsoft.CodeAnalysis.DocumentId
+        name: DocumentId
+        href: api\Microsoft.CodeAnalysis.DocumentId
     - id: activateIfAlreadyOpen
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CodeActions.OpenDocumentOperation.DocumentId
@@ -78,8 +82,9 @@ items:
     parameters:
     - id: DocumentId
       type:
-        id: DocumentId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+        id: Microsoft.CodeAnalysis.DocumentId
+        name: DocumentId
+        href: api\Microsoft.CodeAnalysis.DocumentId
 - id: Microsoft.CodeAnalysis.CodeActions.OpenDocumentOperation.get_DocumentId
   yaml: api\Microsoft.CodeAnalysis.CodeActions.OpenDocumentOperation.yaml
   href: api\Microsoft.CodeAnalysis.CodeActions.OpenDocumentOperation
@@ -117,11 +122,13 @@ items:
     parameters:
     - id: workspace
       type:
-        id: Workspace
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Workspace.cs
+        id: Microsoft.CodeAnalysis.Workspace
+        name: Workspace
+        href: api\Microsoft.CodeAnalysis.Workspace
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:

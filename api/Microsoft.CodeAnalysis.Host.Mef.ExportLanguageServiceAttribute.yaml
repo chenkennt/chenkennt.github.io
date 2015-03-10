@@ -15,19 +15,22 @@ source:
   path: src\Workspaces\Core\Portable\Workspace\Host\Mef\ExportLanguageServiceAttribute.cs
   startLine: 10
 summary: >+
-  Use this attribute to declare a [Microsoft.CodeAnalysis.Host.ILanguageService](api\Microsoft.CodeAnalysis.Host.ILanguageService) implementation for inclusion in a MEF-based workspace.
+  Use this attribute to declare a [Microsoft.CodeAnalysis.Host.ILanguageService](#/api\Microsoft.CodeAnalysis.Host.ILanguageService) implementation for inclusion in a MEF-based workspace.
 
 syntax:
   content:
     CSharp: public class ExportLanguageServiceAttribute
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.Attribute
+  name: System.Attribute
   href: System.Runtime
   isExternal: true
 - id: System.Composition.ExportAttribute
+  name: System.Composition.ExportAttribute
   href: System.Composition.AttributedModel
   isExternal: true
 items:
@@ -57,6 +60,7 @@ items:
     - id: ServiceType
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Host.Mef.ExportLanguageServiceAttribute.get_ServiceType
@@ -100,6 +104,7 @@ items:
     - id: Language
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Host.Mef.ExportLanguageServiceAttribute.get_Language
@@ -143,6 +148,7 @@ items:
     - id: Layer
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Host.Mef.ExportLanguageServiceAttribute.get_Layer
@@ -177,7 +183,7 @@ items:
     path: src\Workspaces\Core\Portable\Workspace\Host\Mef\ExportLanguageServiceAttribute.cs
     startLine: 35
   summary: >+
-    Declares a [Microsoft.CodeAnalysis.Host.ILanguageService](api\Microsoft.CodeAnalysis.Host.ILanguageService) implementation for inclusion in a MEF-based workspace.
+    Declares a [Microsoft.CodeAnalysis.Host.ILanguageService](#/api\Microsoft.CodeAnalysis.Host.ILanguageService) implementation for inclusion in a MEF-based workspace.
 
   syntax:
     content:
@@ -186,18 +192,21 @@ items:
     - id: type
       type:
         id: System.Type
+        name: System.Type
         href: System.Runtime
         isExternal: true
-      description: The type that will be used to retrieve the service from a [Microsoft.CodeAnalysis.Host.HostLanguageServices](api\Microsoft.CodeAnalysis.Host.HostLanguageServices).
+      description: The type that will be used to retrieve the service from a [Microsoft.CodeAnalysis.Host.HostLanguageServices](#/api\Microsoft.CodeAnalysis.Host.HostLanguageServices).
     - id: language
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: The language that the service is target for; LanguageNames.CSharp, etc.
     - id: layer
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: The layer that the service is specified for; ServiceLayer.Default, etc.

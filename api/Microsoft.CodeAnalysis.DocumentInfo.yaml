@@ -22,6 +22,7 @@ syntax:
     CSharp: public sealed class DocumentInfo
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -50,8 +51,9 @@ items:
     parameters:
     - id: Id
       type:
-        id: DocumentId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+        id: Microsoft.CodeAnalysis.DocumentId
+        name: DocumentId
+        href: api\Microsoft.CodeAnalysis.DocumentId
 - id: Microsoft.CodeAnalysis.DocumentInfo.get_Id
   yaml: api\Microsoft.CodeAnalysis.DocumentInfo.yaml
   href: api\Microsoft.CodeAnalysis.DocumentInfo
@@ -93,6 +95,7 @@ items:
     - id: Name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DocumentInfo.get_Name
@@ -136,6 +139,7 @@ items:
     - id: Folders
       type:
         id: System.Collections.Generic.IReadOnlyList{System.String}
+        name: System.Collections.Generic.IReadOnlyList{System.String}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DocumentInfo.get_Folders
@@ -178,8 +182,9 @@ items:
     parameters:
     - id: SourceCodeKind
       type:
-        id: SourceCodeKind
-        href: C:\roslyn\src\Compilers\Core\Portable\SourceCodeKind.cs
+        id: Microsoft.CodeAnalysis.SourceCodeKind
+        name: SourceCodeKind
+        href: api\Microsoft.CodeAnalysis.SourceCodeKind
 - id: Microsoft.CodeAnalysis.DocumentInfo.get_SourceCodeKind
   yaml: api\Microsoft.CodeAnalysis.DocumentInfo.yaml
   href: api\Microsoft.CodeAnalysis.DocumentInfo
@@ -221,6 +226,7 @@ items:
     - id: FilePath
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DocumentInfo.get_FilePath
@@ -263,8 +269,9 @@ items:
     parameters:
     - id: TextLoader
       type:
-        id: TextLoader
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\TextLoader.cs
+        id: Microsoft.CodeAnalysis.TextLoader
+        name: TextLoader
+        href: api\Microsoft.CodeAnalysis.TextLoader
 - id: Microsoft.CodeAnalysis.DocumentInfo.get_TextLoader
   yaml: api\Microsoft.CodeAnalysis.DocumentInfo.yaml
   href: api\Microsoft.CodeAnalysis.DocumentInfo
@@ -306,6 +313,7 @@ items:
     - id: IsGenerated
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DocumentInfo.get_IsGenerated
@@ -345,34 +353,41 @@ items:
     parameters:
     - id: id
       type:
-        id: DocumentId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+        id: Microsoft.CodeAnalysis.DocumentId
+        name: DocumentId
+        href: api\Microsoft.CodeAnalysis.DocumentId
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: folders
       type:
         id: System.Collections.Generic.IEnumerable{System.String}
+        name: System.Collections.Generic.IEnumerable{System.String}
         href: System.Runtime
         isExternal: true
     - id: sourceCodeKind
       type:
-        id: SourceCodeKind
-        href: C:\roslyn\src\Compilers\Core\Portable\SourceCodeKind.cs
+        id: Microsoft.CodeAnalysis.SourceCodeKind
+        name: SourceCodeKind
+        href: api\Microsoft.CodeAnalysis.SourceCodeKind
     - id: loader
       type:
-        id: TextLoader
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\TextLoader.cs
+        id: Microsoft.CodeAnalysis.TextLoader
+        name: TextLoader
+        href: api\Microsoft.CodeAnalysis.TextLoader
     - id: filePath
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: isGenerated
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -399,8 +414,9 @@ items:
     parameters:
     - id: id
       type:
-        id: DocumentId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+        id: Microsoft.CodeAnalysis.DocumentId
+        name: DocumentId
+        href: api\Microsoft.CodeAnalysis.DocumentId
     return:
       id: DocumentInfo
 - id: Microsoft.CodeAnalysis.DocumentInfo.WithName(System.String)
@@ -426,6 +442,7 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -453,6 +470,7 @@ items:
     - id: folders
       type:
         id: System.Collections.Generic.IEnumerable{System.String}
+        name: System.Collections.Generic.IEnumerable{System.String}
         href: System.Runtime
         isExternal: true
     return:
@@ -479,8 +497,9 @@ items:
     parameters:
     - id: kind
       type:
-        id: SourceCodeKind
-        href: C:\roslyn\src\Compilers\Core\Portable\SourceCodeKind.cs
+        id: Microsoft.CodeAnalysis.SourceCodeKind
+        name: SourceCodeKind
+        href: api\Microsoft.CodeAnalysis.SourceCodeKind
     return:
       id: DocumentInfo
 - id: Microsoft.CodeAnalysis.DocumentInfo.WithTextLoader(Microsoft.CodeAnalysis.TextLoader)
@@ -505,8 +524,9 @@ items:
     parameters:
     - id: loader
       type:
-        id: TextLoader
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\TextLoader.cs
+        id: Microsoft.CodeAnalysis.TextLoader
+        name: TextLoader
+        href: api\Microsoft.CodeAnalysis.TextLoader
     return:
       id: DocumentInfo
 - id: Microsoft.CodeAnalysis.DocumentInfo.WithFilePath(System.String)
@@ -532,6 +552,7 @@ items:
     - id: filePath
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:

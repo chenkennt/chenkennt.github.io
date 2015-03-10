@@ -15,13 +15,14 @@ source:
   path: src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
   startLine: 13
 summary: >+
-  Provides a description about a [Microsoft.CodeAnalysis.Diagnostic](api\Microsoft.CodeAnalysis.Diagnostic)
+  Provides a description about a [Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic)
 
 syntax:
   content:
     CSharp: public class DiagnosticDescriptor
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -51,6 +52,7 @@ items:
     - id: Id
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.get_Id
@@ -93,8 +95,9 @@ items:
     parameters:
     - id: Title
       type:
-        id: LocalizableString
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\LocalizableString.cs
+        id: Microsoft.CodeAnalysis.LocalizableString
+        name: LocalizableString
+        href: Microsoft.CodeAnalysis.LocalizableString
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.get_Title
   yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
   href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
@@ -135,8 +138,9 @@ items:
     parameters:
     - id: Description
       type:
-        id: LocalizableString
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\LocalizableString.cs
+        id: Microsoft.CodeAnalysis.LocalizableString
+        name: LocalizableString
+        href: Microsoft.CodeAnalysis.LocalizableString
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.get_Description
   yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
   href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
@@ -178,6 +182,7 @@ items:
     - id: HelpLinkUri
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.get_HelpLinkUri
@@ -212,7 +217,7 @@ items:
     path: src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
     startLine: 39
   summary: >+
-    A localizable format message string, which can be passed as the first argument to @M:System.String.Format(System.String,System.Object[])- when creating the diagnostic message with this descriptor.
+    A localizable format message string, which can be passed as the first argument to [System.String.Format(System.String,System.Object[])](#) when creating the diagnostic message with this descriptor.
 
   syntax:
     content:
@@ -220,8 +225,9 @@ items:
     parameters:
     - id: MessageFormat
       type:
-        id: LocalizableString
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\LocalizableString.cs
+        id: Microsoft.CodeAnalysis.LocalizableString
+        name: LocalizableString
+        href: Microsoft.CodeAnalysis.LocalizableString
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.get_MessageFormat
   yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
   href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
@@ -263,6 +269,7 @@ items:
     - id: Category
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.get_Category
@@ -305,8 +312,9 @@ items:
     parameters:
     - id: DefaultSeverity
       type:
-        id: DiagnosticSeverity
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\DiagnosticSeverity.cs
+        id: Microsoft.CodeAnalysis.DiagnosticSeverity
+        name: DiagnosticSeverity
+        href: api\Microsoft.CodeAnalysis.DiagnosticSeverity
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.get_DefaultSeverity
   yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
   href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
@@ -348,6 +356,7 @@ items:
     - id: IsEnabledByDefault
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.get_IsEnabledByDefault
@@ -391,6 +400,7 @@ items:
     - id: CustomTags
       type:
         id: System.Collections.Generic.IEnumerable{System.String}
+        name: System.Collections.Generic.IEnumerable{System.String}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.get_CustomTags
@@ -425,11 +435,11 @@ items:
     path: src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
     startLine: 76
   summary: >+
-    Create a DiagnosticDescriptor, which provides description about a [Microsoft.CodeAnalysis.Diagnostic](api\Microsoft.CodeAnalysis.Diagnostic).
+    Create a DiagnosticDescriptor, which provides description about a [Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic).
 
     NOTE: For localizable ,  and/or ,
 
-    use constructor overload [Microsoft.CodeAnalysis.DiagnosticDescriptor.#ctor(System.String,Microsoft.CodeAnalysis.LocalizableString,Microsoft.CodeAnalysis.LocalizableString,System.String,Microsoft.CodeAnalysis.DiagnosticSeverity,System.Boolean,Microsoft.CodeAnalysis.LocalizableString,System.String,System.String[])](api\Microsoft.CodeAnalysis.DiagnosticDescriptor).
+    use constructor overload [Microsoft.CodeAnalysis.DiagnosticDescriptor.#ctor(System.String,Microsoft.CodeAnalysis.LocalizableString,Microsoft.CodeAnalysis.LocalizableString,System.String,Microsoft.CodeAnalysis.DiagnosticSeverity,System.Boolean,Microsoft.CodeAnalysis.LocalizableString,System.String,System.String[])](#/api\Microsoft.CodeAnalysis.DiagnosticDescriptor).
 
   syntax:
     content:
@@ -438,58 +448,67 @@ items:
     - id: id
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: A unique identifier for the diagnostic. For example, code analysis diagnostic ID "CA1001".
     - id: title
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: 'A short title describing the diagnostic. For example, for CA1001: "Types that own disposable fields should be disposable".'
     - id: messageFormat
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: >-
-        A format message string, which can be passed as the first argument to @M:System.String.Format(System.String,System.Object[])- when creating the diagnostic message with this descriptor.
+        A format message string, which can be passed as the first argument to [System.String.Format(System.String,System.Object[])](#) when creating the diagnostic message with this descriptor.
 
             For example, for CA1001: "Implement IDisposable on '{0}' because it creates members of the following IDisposable types: '{1}'."
     - id: category
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: 'The category of the diagnostic (like Design, Naming etc.). For example, for CA1001: "Microsoft.Design".'
     - id: defaultSeverity
       type:
-        id: DiagnosticSeverity
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\DiagnosticSeverity.cs
+        id: Microsoft.CodeAnalysis.DiagnosticSeverity
+        name: DiagnosticSeverity
+        href: api\Microsoft.CodeAnalysis.DiagnosticSeverity
       description: Default severity of the diagnostic.
     - id: isEnabledByDefault
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
       description: True if the diagnostic is enabled by default.
     - id: description
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: An optional longer description of the diagnostic.
     - id: helpLinkUri
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: An optional hyperlink that provides a more detailed description regarding the diagnostic.
     - id: customTags
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
-      description: Optional custom tags for the diagnostic. See [Microsoft.CodeAnalysis.WellKnownDiagnosticTags](api\Microsoft.CodeAnalysis.WellKnownDiagnosticTags) for some well known tags.
+      description: Optional custom tags for the diagnostic. See [Microsoft.CodeAnalysis.WellKnownDiagnosticTags](#/api\Microsoft.CodeAnalysis.WellKnownDiagnosticTags) for some well known tags.
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.#ctor(System.String,Microsoft.CodeAnalysis.LocalizableString,Microsoft.CodeAnalysis.LocalizableString,System.String,Microsoft.CodeAnalysis.DiagnosticSeverity,System.Boolean,Microsoft.CodeAnalysis.LocalizableString,System.String,System.String[])
   yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
   href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
@@ -507,7 +526,7 @@ items:
     path: src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
     startLine: 113
   summary: >+
-    Create a DiagnosticDescriptor, which provides description about a [Microsoft.CodeAnalysis.Diagnostic](api\Microsoft.CodeAnalysis.Diagnostic).
+    Create a DiagnosticDescriptor, which provides description about a [Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic).
 
   syntax:
     content:
@@ -516,55 +535,64 @@ items:
     - id: id
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: A unique identifier for the diagnostic. For example, code analysis diagnostic ID "CA1001".
     - id: title
       type:
-        id: LocalizableString
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\LocalizableString.cs
+        id: Microsoft.CodeAnalysis.LocalizableString
+        name: LocalizableString
+        href: Microsoft.CodeAnalysis.LocalizableString
       description: 'A short localizable title describing the diagnostic. For example, for CA1001: "Types that own disposable fields should be disposable".'
     - id: messageFormat
       type:
-        id: LocalizableString
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\LocalizableString.cs
+        id: Microsoft.CodeAnalysis.LocalizableString
+        name: LocalizableString
+        href: Microsoft.CodeAnalysis.LocalizableString
       description: >-
-        A localizable format message string, which can be passed as the first argument to @M:System.String.Format(System.String,System.Object[])- when creating the diagnostic message with this descriptor.
+        A localizable format message string, which can be passed as the first argument to [System.String.Format(System.String,System.Object[])](#) when creating the diagnostic message with this descriptor.
 
             For example, for CA1001: "Implement IDisposable on '{0}' because it creates members of the following IDisposable types: '{1}'."
     - id: category
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: 'The category of the diagnostic (like Design, Naming etc.). For example, for CA1001: "Microsoft.Design".'
     - id: defaultSeverity
       type:
-        id: DiagnosticSeverity
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\DiagnosticSeverity.cs
+        id: Microsoft.CodeAnalysis.DiagnosticSeverity
+        name: DiagnosticSeverity
+        href: api\Microsoft.CodeAnalysis.DiagnosticSeverity
       description: Default severity of the diagnostic.
     - id: isEnabledByDefault
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
       description: True if the diagnostic is enabled by default.
     - id: description
       type:
-        id: LocalizableString
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\LocalizableString.cs
+        id: Microsoft.CodeAnalysis.LocalizableString
+        name: LocalizableString
+        href: Microsoft.CodeAnalysis.LocalizableString
       description: An optional longer localizable description of the diagnostic.
     - id: helpLinkUri
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: An optional hyperlink that provides a more detailed description regarding the diagnostic.
     - id: customTags
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
-      description: Optional custom tags for the diagnostic. See [Microsoft.CodeAnalysis.WellKnownDiagnosticTags](api\Microsoft.CodeAnalysis.WellKnownDiagnosticTags) for some well known tags.
+      description: Optional custom tags for the diagnostic. See [Microsoft.CodeAnalysis.WellKnownDiagnosticTags](#/api\Microsoft.CodeAnalysis.WellKnownDiagnosticTags) for some well known tags.
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.Equals(Microsoft.CodeAnalysis.DiagnosticDescriptor)
   yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
   href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
@@ -587,8 +615,9 @@ items:
     parameters:
     - id: other
       type:
-        id: DiagnosticDescriptor
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
+        id: Microsoft.CodeAnalysis.DiagnosticDescriptor
+        name: DiagnosticDescriptor
+        href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.Equals(System.Object)
@@ -614,6 +643,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:

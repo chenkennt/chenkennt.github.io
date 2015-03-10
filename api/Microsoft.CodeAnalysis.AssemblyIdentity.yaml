@@ -22,6 +22,7 @@ syntax:
     CSharp: public sealed partial class AssemblyIdentity
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -42,7 +43,7 @@ items:
     path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
     startLine: 68
   summary: >+
-    Constructs an [Microsoft.CodeAnalysis.AssemblyIdentity](api\Microsoft.CodeAnalysis.AssemblyIdentity) from its constituent parts.
+    Constructs an [Microsoft.CodeAnalysis.AssemblyIdentity](#/api\Microsoft.CodeAnalysis.AssemblyIdentity) from its constituent parts.
 
   syntax:
     content:
@@ -51,42 +52,49 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: The simple name of the assembly.
     - id: version
       type:
         id: System.Version
+        name: System.Version
         href: System.Runtime
         isExternal: true
       description: The version of the assembly.
     - id: cultureName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: The name of the culture to associate with the assembly.
     - id: publicKeyOrToken
       type:
         id: System.Collections.Immutable.ImmutableArray{System.Byte}
+        name: System.Collections.Immutable.ImmutableArray{System.Byte}
         href: System.Collections.Immutable
         isExternal: true
       description: The public key or public key token of the assembly.
     - id: hasPublicKey
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
       description: Indicates whether  represents a public key.
     - id: isRetargetable
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
       description: Indicates whether the assembly is retargetable.
     - id: contentType
       type:
         id: System.Reflection.AssemblyContentType
+        name: System.Reflection.AssemblyContentType
         href: System.Reflection
         isExternal: true
       description: Specifies the binding model for how this object will be treated in comparisons.
@@ -116,6 +124,7 @@ items:
     - id: Name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.get_Name
@@ -159,6 +168,7 @@ items:
     - id: Version
       type:
         id: System.Version
+        name: System.Version
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.get_Version
@@ -202,6 +212,7 @@ items:
     - id: CultureName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.get_CultureName
@@ -245,6 +256,7 @@ items:
     - id: Flags
       type:
         id: System.Reflection.AssemblyNameFlags
+        name: System.Reflection.AssemblyNameFlags
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.get_Flags
@@ -290,6 +302,7 @@ items:
     - id: ContentType
       type:
         id: System.Reflection.AssemblyContentType
+        name: System.Reflection.AssemblyContentType
         href: System.Reflection
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.get_ContentType
@@ -333,6 +346,7 @@ items:
     - id: HasPublicKey
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.get_HasPublicKey
@@ -376,6 +390,7 @@ items:
     - id: PublicKey
       type:
         id: System.Collections.Immutable.ImmutableArray{System.Byte}
+        name: System.Collections.Immutable.ImmutableArray{System.Byte}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.get_PublicKey
@@ -419,6 +434,7 @@ items:
     - id: PublicKeyToken
       type:
         id: System.Collections.Immutable.ImmutableArray{System.Byte}
+        name: System.Collections.Immutable.ImmutableArray{System.Byte}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.get_PublicKeyToken
@@ -462,6 +478,7 @@ items:
     - id: IsStrongName
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.get_IsStrongName
@@ -505,6 +522,7 @@ items:
     - id: IsRetargetable
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.get_IsRetargetable
@@ -538,7 +556,7 @@ items:
     path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
     startLine: 322
   summary: >+
-    Determines whether two [Microsoft.CodeAnalysis.AssemblyIdentity](api\Microsoft.CodeAnalysis.AssemblyIdentity) instances are equal.
+    Determines whether two [Microsoft.CodeAnalysis.AssemblyIdentity](#/api\Microsoft.CodeAnalysis.AssemblyIdentity) instances are equal.
 
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.op_Inequality(Microsoft.CodeAnalysis.AssemblyIdentity,Microsoft.CodeAnalysis.AssemblyIdentity)
   yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
@@ -556,7 +574,7 @@ items:
     path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
     startLine: 332
   summary: >+
-    Determines whether two [Microsoft.CodeAnalysis.AssemblyIdentity](api\Microsoft.CodeAnalysis.AssemblyIdentity) instances are not equal.
+    Determines whether two [Microsoft.CodeAnalysis.AssemblyIdentity](#/api\Microsoft.CodeAnalysis.AssemblyIdentity) instances are not equal.
 
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.Equals(Microsoft.CodeAnalysis.AssemblyIdentity)
   yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
@@ -583,8 +601,9 @@ items:
     parameters:
     - id: obj
       type:
-        id: AssemblyIdentity
-        href: C:\roslyn\src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+        id: Microsoft.CodeAnalysis.AssemblyIdentity
+        name: AssemblyIdentity
+        href: api\Microsoft.CodeAnalysis.AssemblyIdentity
       description: The object to be compared with the current instance.
     return:
       id: Boolean
@@ -614,6 +633,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
       description: The object to be compared with the current instance.
@@ -670,6 +690,7 @@ items:
     - id: assembly
       type:
         id: System.Reflection.Assembly
+        name: System.Reflection.Assembly
         href: System.Reflection
         isExternal: true
       description: The runtime assembly.
@@ -702,6 +723,7 @@ items:
     - id: fullKey
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
       description: True if the full public key should be included in the name. Otherwise public key token is used.
@@ -756,12 +778,14 @@ items:
     - id: displayName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: identity
       type:
-        id: AssemblyIdentity
-        href: C:\roslyn\src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+        id: Microsoft.CodeAnalysis.AssemblyIdentity
+        name: AssemblyIdentity
+        href: api\Microsoft.CodeAnalysis.AssemblyIdentity
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.TryParseDisplayName(System.String,Microsoft.CodeAnalysis.AssemblyIdentity@,Microsoft.CodeAnalysis.AssemblyIdentityParts@)
@@ -790,18 +814,21 @@ items:
     - id: displayName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: Display name.
     - id: identity
       type:
-        id: AssemblyIdentity
-        href: C:\roslyn\src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+        id: Microsoft.CodeAnalysis.AssemblyIdentity
+        name: AssemblyIdentity
+        href: api\Microsoft.CodeAnalysis.AssemblyIdentity
       description: A full assembly identity.
     - id: parts
       type:
-        id: AssemblyIdentityParts
-        href: C:\roslyn\src\Compilers\Core\Portable\MetadataReference\AssemblyIdentityParts.cs
+        id: Microsoft.CodeAnalysis.AssemblyIdentityParts
+        name: AssemblyIdentityParts
+        href: api\Microsoft.CodeAnalysis.AssemblyIdentityParts
       description: "Parts of the assembly identity that were specified in the display name, \r\n    or 0 if the parsing failed."
     return:
       id: Boolean

@@ -15,13 +15,14 @@ source:
   path: src\Workspaces\Core\Portable\CodeFixes\FixAllOccurrences\FixAllContext.cs
   startLine: 16
 summary: >+
-  Context for "Fix all occurrences" code fixes provided by an [Microsoft.CodeAnalysis.CodeFixes.FixAllProvider](api\Microsoft.CodeAnalysis.CodeFixes.FixAllProvider).
+  Context for "Fix all occurrences" code fixes provided by an [Microsoft.CodeAnalysis.CodeFixes.FixAllProvider](#/api\Microsoft.CodeAnalysis.CodeFixes.FixAllProvider).
 
 syntax:
   content:
     CSharp: public class FixAllContext
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -50,8 +51,9 @@ items:
     parameters:
     - id: Solution
       type:
-        id: Solution
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Solution.CompilationTracker.cs
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api\Microsoft.CodeAnalysis.Solution
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.get_Solution
   yaml: api\Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
   href: api\Microsoft.CodeAnalysis.CodeFixes.FixAllContext
@@ -92,8 +94,9 @@ items:
     parameters:
     - id: Project
       type:
-        id: Project
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Project.cs
+        id: Microsoft.CodeAnalysis.Project
+        name: Project
+        href: api\Microsoft.CodeAnalysis.Project
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.get_Project
   yaml: api\Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
   href: api\Microsoft.CodeAnalysis.CodeFixes.FixAllContext
@@ -134,8 +137,9 @@ items:
     parameters:
     - id: Document
       type:
-        id: Document
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Document.cs
+        id: Microsoft.CodeAnalysis.Document
+        name: Document
+        href: api\Microsoft.CodeAnalysis.Document
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.get_Document
   yaml: api\Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
   href: api\Microsoft.CodeAnalysis.CodeFixes.FixAllContext
@@ -168,7 +172,7 @@ items:
     path: src\Workspaces\Core\Portable\CodeFixes\FixAllOccurrences\FixAllContext.cs
     startLine: 39
   summary: >+
-    Underlying [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider](api\Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider) which triggered this fix all.
+    Underlying [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider](#/api\Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider) which triggered this fix all.
 
   syntax:
     content:
@@ -176,8 +180,9 @@ items:
     parameters:
     - id: CodeFixProvider
       type:
-        id: CodeFixProvider
-        href: C:\roslyn\src\Workspaces\Core\Portable\CodeFixes\CodeFixProvider.cs
+        id: Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider
+        name: CodeFixProvider
+        href: api\Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.get_CodeFixProvider
   yaml: api\Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
   href: api\Microsoft.CodeAnalysis.CodeFixes.FixAllContext
@@ -218,8 +223,9 @@ items:
     parameters:
     - id: Scope
       type:
-        id: FixAllScope
-        href: C:\roslyn\src\Workspaces\Core\Portable\CodeFixes\FixAllOccurrences\FixAllScope.cs
+        id: Microsoft.CodeAnalysis.CodeFixes.FixAllScope
+        name: FixAllScope
+        href: api\Microsoft.CodeAnalysis.CodeFixes.FixAllScope
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.get_Scope
   yaml: api\Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
   href: api\Microsoft.CodeAnalysis.CodeFixes.FixAllContext
@@ -254,7 +260,7 @@ items:
   summary: >+
     Diagnostic Ids to fix.
 
-    Note that [Microsoft.CodeAnalysis.CodeFixes.FixAllContext.GetDocumentDiagnosticsAsync(Microsoft.CodeAnalysis.Document)](api\Microsoft.CodeAnalysis.CodeFixes.FixAllContext), [Microsoft.CodeAnalysis.CodeFixes.FixAllContext.GetProjectDiagnosticsAsync(Microsoft.CodeAnalysis.Project)](api\Microsoft.CodeAnalysis.CodeFixes.FixAllContext) and [Microsoft.CodeAnalysis.CodeFixes.FixAllContext.GetAllDiagnosticsAsync(Microsoft.CodeAnalysis.Project)](api\Microsoft.CodeAnalysis.CodeFixes.FixAllContext) methods
+    Note that [Microsoft.CodeAnalysis.CodeFixes.FixAllContext.GetDocumentDiagnosticsAsync(Microsoft.CodeAnalysis.Document)](#/api\Microsoft.CodeAnalysis.CodeFixes.FixAllContext), [Microsoft.CodeAnalysis.CodeFixes.FixAllContext.GetProjectDiagnosticsAsync(Microsoft.CodeAnalysis.Project)](#/api\Microsoft.CodeAnalysis.CodeFixes.FixAllContext) and [Microsoft.CodeAnalysis.CodeFixes.FixAllContext.GetAllDiagnosticsAsync(Microsoft.CodeAnalysis.Project)](#/api\Microsoft.CodeAnalysis.CodeFixes.FixAllContext) methods
 
     return only diagnostics whose IDs are contained in this set of Ids.
 
@@ -265,6 +271,7 @@ items:
     - id: DiagnosticIds
       type:
         id: System.Collections.Immutable.ImmutableHashSet{System.String}
+        name: System.Collections.Immutable.ImmutableHashSet{System.String}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.get_DiagnosticIds
@@ -299,7 +306,7 @@ items:
     path: src\Workspaces\Core\Portable\CodeFixes\FixAllOccurrences\FixAllContext.cs
     startLine: 56
   summary: >+
-    The [Microsoft.CodeAnalysis.CodeActions.CodeAction.EquivalenceKey](api\Microsoft.CodeAnalysis.CodeActions.CodeAction) value expected of a [Microsoft.CodeAnalysis.CodeActions.CodeAction](api\Microsoft.CodeAnalysis.CodeActions.CodeAction) participating in this fix all.
+    The [Microsoft.CodeAnalysis.CodeActions.CodeAction.EquivalenceKey](#/api\Microsoft.CodeAnalysis.CodeActions.CodeAction) value expected of a [Microsoft.CodeAnalysis.CodeActions.CodeAction](#/api\Microsoft.CodeAnalysis.CodeActions.CodeAction) participating in this fix all.
 
   syntax:
     content:
@@ -308,6 +315,7 @@ items:
     - id: CodeActionEquivalenceKey
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.get_CodeActionEquivalenceKey
@@ -351,6 +359,7 @@ items:
     - id: CancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.get_CancellationToken
@@ -385,7 +394,7 @@ items:
     path: src\Workspaces\Core\Portable\CodeFixes\FixAllOccurrences\FixAllContext.cs
     startLine: 114
   summary: >+
-    Gets all the diagnostics in the given document filtered by [Microsoft.CodeAnalysis.CodeFixes.FixAllContext.DiagnosticIds](api\Microsoft.CodeAnalysis.CodeFixes.FixAllContext).
+    Gets all the diagnostics in the given document filtered by [Microsoft.CodeAnalysis.CodeFixes.FixAllContext.DiagnosticIds](#/api\Microsoft.CodeAnalysis.CodeFixes.FixAllContext).
 
   syntax:
     content:
@@ -393,8 +402,9 @@ items:
     parameters:
     - id: document
       type:
-        id: Document
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Document.cs
+        id: Microsoft.CodeAnalysis.Document
+        name: Document
+        href: api\Microsoft.CodeAnalysis.Document
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.GetProjectDiagnosticsAsync(Microsoft.CodeAnalysis.Project)
@@ -414,7 +424,7 @@ items:
     path: src\Workspaces\Core\Portable\CodeFixes\FixAllOccurrences\FixAllContext.cs
     startLine: 131
   summary: >+
-    Gets all the project-level diagnostics, i.e. diagnostics with no source location, in the given project filtered by [Microsoft.CodeAnalysis.CodeFixes.FixAllContext.DiagnosticIds](api\Microsoft.CodeAnalysis.CodeFixes.FixAllContext).
+    Gets all the project-level diagnostics, i.e. diagnostics with no source location, in the given project filtered by [Microsoft.CodeAnalysis.CodeFixes.FixAllContext.DiagnosticIds](#/api\Microsoft.CodeAnalysis.CodeFixes.FixAllContext).
 
   syntax:
     content:
@@ -422,8 +432,9 @@ items:
     parameters:
     - id: project
       type:
-        id: Project
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Project.cs
+        id: Microsoft.CodeAnalysis.Project
+        name: Project
+        href: api\Microsoft.CodeAnalysis.Project
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.GetAllDiagnosticsAsync(Microsoft.CodeAnalysis.Project)
@@ -443,7 +454,7 @@ items:
     path: src\Workspaces\Core\Portable\CodeFixes\FixAllOccurrences\FixAllContext.cs
     startLine: 140
   summary: >+
-    Gets all the diagnostics in the given project filtered by [Microsoft.CodeAnalysis.CodeFixes.FixAllContext.DiagnosticIds](api\Microsoft.CodeAnalysis.CodeFixes.FixAllContext).
+    Gets all the diagnostics in the given project filtered by [Microsoft.CodeAnalysis.CodeFixes.FixAllContext.DiagnosticIds](#/api\Microsoft.CodeAnalysis.CodeFixes.FixAllContext).
 
     This includes both document-level diagnostics for all documents in the given project and project-level diagnostics, i.e. diagnostics with no source location, in the given project.
 
@@ -453,8 +464,9 @@ items:
     parameters:
     - id: project
       type:
-        id: Project
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Project.cs
+        id: Microsoft.CodeAnalysis.Project
+        name: Project
+        href: api\Microsoft.CodeAnalysis.Project
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.WithCancellationToken(System.Threading.CancellationToken)
@@ -474,7 +486,7 @@ items:
     path: src\Workspaces\Core\Portable\CodeFixes\FixAllOccurrences\FixAllContext.cs
     startLine: 167
   summary: >+
-    Gets a new [Microsoft.CodeAnalysis.CodeFixes.FixAllContext](api\Microsoft.CodeAnalysis.CodeFixes.FixAllContext) with the given cancellationToken.
+    Gets a new [Microsoft.CodeAnalysis.CodeFixes.FixAllContext](#/api\Microsoft.CodeAnalysis.CodeFixes.FixAllContext) with the given cancellationToken.
 
   syntax:
     content:
@@ -483,6 +495,7 @@ items:
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:

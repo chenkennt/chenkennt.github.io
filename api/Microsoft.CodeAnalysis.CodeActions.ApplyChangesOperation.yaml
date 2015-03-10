@@ -15,17 +15,19 @@ source:
   path: src\Workspaces\Core\Portable\CodeActions\Operations\ApplyChangesOperation.cs
   startLine: 11
 summary: >+
-  A [Microsoft.CodeAnalysis.CodeActions.CodeActionOperation](api\Microsoft.CodeAnalysis.CodeActions.CodeActionOperation) for applying solution changes to a workspace.
+  A [Microsoft.CodeAnalysis.CodeActions.CodeActionOperation](#/api\Microsoft.CodeAnalysis.CodeActions.CodeActionOperation) for applying solution changes to a workspace.
 
 syntax:
   content:
     CSharp: public sealed class ApplyChangesOperation
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
-- id: CodeActionOperation
-  href: C:\roslyn\src\Workspaces\Core\Portable\CodeActions\Operations\CodeActionOperation.cs
+- id: Microsoft.CodeAnalysis.CodeActions.CodeActionOperation
+  name: CodeActionOperation
+  href: api\Microsoft.CodeAnalysis.CodeActions.CodeActionOperation
 items:
 - id: Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation.#ctor(Microsoft.CodeAnalysis.Solution)
   yaml: api\Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation.yaml
@@ -49,8 +51,9 @@ items:
     parameters:
     - id: changedSolution
       type:
-        id: Solution
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Solution.CompilationTracker.cs
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api\Microsoft.CodeAnalysis.Solution
 - id: Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation.ChangedSolution
   yaml: api\Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation.yaml
   href: api\Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation
@@ -73,8 +76,9 @@ items:
     parameters:
     - id: ChangedSolution
       type:
-        id: Solution
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Solution.CompilationTracker.cs
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api\Microsoft.CodeAnalysis.Solution
 - id: Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation.get_ChangedSolution
   yaml: api\Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation.yaml
   href: api\Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation
@@ -112,11 +116,13 @@ items:
     parameters:
     - id: workspace
       type:
-        id: Workspace
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Workspace.cs
+        id: Microsoft.CodeAnalysis.Workspace
+        name: Workspace
+        href: api\Microsoft.CodeAnalysis.Workspace
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:

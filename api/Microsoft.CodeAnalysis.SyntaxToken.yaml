@@ -15,16 +15,18 @@ source:
   path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
   startLine: 17
 summary: >+
-  Represents a token in the syntax tree. This is the language agnostic equivalent of @T:Microsoft.CodeAnalysis.CSharp.SyntaxToken- and @T:Microsoft.CodeAnalysis.VisualBasic.SyntaxToken-.
+  Represents a token in the syntax tree. This is the language agnostic equivalent of [Microsoft.CodeAnalysis.CSharp.SyntaxToken](#) and [Microsoft.CodeAnalysis.VisualBasic.SyntaxToken](#).
 
 syntax:
   content:
     CSharp: public struct SyntaxToken
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -54,6 +56,7 @@ items:
     - id: RawKind
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_RawKind
@@ -97,6 +100,7 @@ items:
     - id: Language
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_Language
@@ -139,8 +143,9 @@ items:
     parameters:
     - id: Parent
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_Parent
   yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxToken
@@ -181,8 +186,9 @@ items:
     parameters:
     - id: Span
       type:
-        id: TextSpan
-        href: C:\roslyn\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_Span
   yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxToken
@@ -215,7 +221,7 @@ items:
     path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
     startLine: 151
   summary: >+
-    Same as accessing @P:Microsoft.CodeAnalysis.Text.TextSpan.Start- on [Microsoft.CodeAnalysis.SyntaxToken.Span](api\Microsoft.CodeAnalysis.SyntaxToken).
+    Same as accessing [Microsoft.CodeAnalysis.Text.TextSpan.Start](#) on [Microsoft.CodeAnalysis.SyntaxToken.Span](#/api\Microsoft.CodeAnalysis.SyntaxToken).
 
   syntax:
     content:
@@ -224,6 +230,7 @@ items:
     - id: SpanStart
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_SpanStart
@@ -266,8 +273,9 @@ items:
     parameters:
     - id: FullSpan
       type:
-        id: TextSpan
-        href: C:\roslyn\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_FullSpan
   yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxToken
@@ -313,6 +321,7 @@ items:
     - id: IsMissing
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_IsMissing
@@ -358,6 +367,7 @@ items:
     - id: Value
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_Value
@@ -403,6 +413,7 @@ items:
     - id: ValueText
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_ValueText
@@ -443,6 +454,7 @@ items:
     - id: Text
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_Text
@@ -538,6 +550,7 @@ items:
     - id: writer
       type:
         id: System.IO.TextWriter
+        name: System.IO.TextWriter
         href: System.IO
         isExternal: true
     return:
@@ -568,6 +581,7 @@ items:
     - id: HasLeadingTrivia
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_HasLeadingTrivia
@@ -611,6 +625,7 @@ items:
     - id: HasTrailingTrivia
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_HasTrailingTrivia
@@ -654,6 +669,7 @@ items:
     - id: ContainsDiagnostics
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_ContainsDiagnostics
@@ -697,6 +713,7 @@ items:
     - id: ContainsDirectives
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_ContainsDirectives
@@ -765,6 +782,7 @@ items:
     - id: HasStructuredTrivia
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_HasStructuredTrivia
@@ -808,6 +826,7 @@ items:
     - id: ContainsAnnotations
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_ContainsAnnotations
@@ -851,6 +870,7 @@ items:
     - id: annotationKind
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -881,6 +901,7 @@ items:
     - id: annotationKinds
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: Boolean
@@ -909,8 +930,9 @@ items:
     parameters:
     - id: annotation
       type:
-        id: SyntaxAnnotation
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxAnnotation.cs
+        id: Microsoft.CodeAnalysis.SyntaxAnnotation
+        name: SyntaxAnnotation
+        href: api\Microsoft.CodeAnalysis.SyntaxAnnotation
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxToken.GetAnnotations(System.String)
@@ -939,6 +961,7 @@ items:
     - id: annotationKind
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -969,6 +992,7 @@ items:
     - id: annotationKinds
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: IEnumerable
@@ -998,6 +1022,7 @@ items:
     - id: annotationKinds
       type:
         id: System.Collections.Generic.IEnumerable{System.String}
+        name: System.Collections.Generic.IEnumerable{System.String}
         href: System.Runtime
         isExternal: true
     return:
@@ -1030,6 +1055,7 @@ items:
     - id: annotations
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: SyntaxToken
@@ -1061,6 +1087,7 @@ items:
     - id: annotations
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxAnnotation}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxAnnotation}
         href: System.Runtime
         isExternal: true
     return:
@@ -1091,6 +1118,7 @@ items:
     - id: annotations
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: SyntaxToken
@@ -1120,6 +1148,7 @@ items:
     - id: annotations
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxAnnotation}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxAnnotation}
         href: System.Runtime
         isExternal: true
     return:
@@ -1150,6 +1179,7 @@ items:
     - id: annotationKind
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -1179,8 +1209,9 @@ items:
     parameters:
     - id: token
       type:
-        id: SyntaxToken
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxToken
+        name: SyntaxToken
+        href: api\Microsoft.CodeAnalysis.SyntaxToken
     return:
       id: SyntaxToken
 - id: Microsoft.CodeAnalysis.SyntaxToken.LeadingTrivia
@@ -1208,8 +1239,9 @@ items:
     parameters:
     - id: LeadingTrivia
       type:
-        id: SyntaxTriviaList
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+        id: Microsoft.CodeAnalysis.SyntaxTriviaList
+        name: SyntaxTriviaList
+        href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_LeadingTrivia
   yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxToken
@@ -1252,8 +1284,9 @@ items:
     parameters:
     - id: TrailingTrivia
       type:
-        id: SyntaxTriviaList
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+        id: Microsoft.CodeAnalysis.SyntaxTriviaList
+        name: SyntaxTriviaList
+        href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_TrailingTrivia
   yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxToken
@@ -1294,8 +1327,9 @@ items:
     parameters:
     - id: token
       type:
-        id: SyntaxToken
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxToken
+        name: SyntaxToken
+        href: api\Microsoft.CodeAnalysis.SyntaxToken
     return:
       id: SyntaxToken
 - id: Microsoft.CodeAnalysis.SyntaxToken.WithLeadingTrivia(Microsoft.CodeAnalysis.SyntaxTriviaList)
@@ -1323,8 +1357,9 @@ items:
     parameters:
     - id: trivia
       type:
-        id: SyntaxTriviaList
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+        id: Microsoft.CodeAnalysis.SyntaxTriviaList
+        name: SyntaxTriviaList
+        href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
     return:
       id: SyntaxToken
 - id: Microsoft.CodeAnalysis.SyntaxToken.WithLeadingTrivia(Microsoft.CodeAnalysis.SyntaxTrivia[])
@@ -1353,6 +1388,7 @@ items:
     - id: trivia
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: SyntaxToken
@@ -1382,6 +1418,7 @@ items:
     - id: trivia
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
         href: System.Runtime
         isExternal: true
     return:
@@ -1411,8 +1448,9 @@ items:
     parameters:
     - id: trivia
       type:
-        id: SyntaxTriviaList
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+        id: Microsoft.CodeAnalysis.SyntaxTriviaList
+        name: SyntaxTriviaList
+        href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
     return:
       id: SyntaxToken
 - id: Microsoft.CodeAnalysis.SyntaxToken.WithTrailingTrivia(Microsoft.CodeAnalysis.SyntaxTrivia[])
@@ -1441,6 +1479,7 @@ items:
     - id: trivia
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: SyntaxToken
@@ -1470,6 +1509,7 @@ items:
     - id: trivia
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
         href: System.Runtime
         isExternal: true
     return:
@@ -1515,7 +1555,7 @@ items:
     path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
     startLine: 616
   summary: >+
-    Determines whether two [Microsoft.CodeAnalysis.SyntaxToken](api\Microsoft.CodeAnalysis.SyntaxToken)s are equal.
+    Determines whether two [Microsoft.CodeAnalysis.SyntaxToken](#/api\Microsoft.CodeAnalysis.SyntaxToken)s are equal.
 
 - id: Microsoft.CodeAnalysis.SyntaxToken.op_Inequality(Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken)
   yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
@@ -1533,7 +1573,7 @@ items:
     path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
     startLine: 624
   summary: >+
-    Determines whether two [Microsoft.CodeAnalysis.SyntaxToken](api\Microsoft.CodeAnalysis.SyntaxToken)s are unequal.
+    Determines whether two [Microsoft.CodeAnalysis.SyntaxToken](#/api\Microsoft.CodeAnalysis.SyntaxToken)s are unequal.
 
 - id: Microsoft.CodeAnalysis.SyntaxToken.Equals(Microsoft.CodeAnalysis.SyntaxToken)
   yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
@@ -1552,9 +1592,9 @@ items:
     path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
     startLine: 633
   summary: >+
-    Determines whether the supplied [Microsoft.CodeAnalysis.SyntaxToken](api\Microsoft.CodeAnalysis.SyntaxToken) is equal to this
+    Determines whether the supplied [Microsoft.CodeAnalysis.SyntaxToken](#/api\Microsoft.CodeAnalysis.SyntaxToken) is equal to this
 
-    [Microsoft.CodeAnalysis.SyntaxToken](api\Microsoft.CodeAnalysis.SyntaxToken).
+    [Microsoft.CodeAnalysis.SyntaxToken](#/api\Microsoft.CodeAnalysis.SyntaxToken).
 
   syntax:
     content:
@@ -1562,8 +1602,9 @@ items:
     parameters:
     - id: other
       type:
-        id: SyntaxToken
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxToken
+        name: SyntaxToken
+        href: api\Microsoft.CodeAnalysis.SyntaxToken
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxToken.Equals(System.Object)
@@ -1583,9 +1624,9 @@ items:
     path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
     startLine: 645
   summary: >+
-    Determines whether the supplied [Microsoft.CodeAnalysis.SyntaxToken](api\Microsoft.CodeAnalysis.SyntaxToken) is equal to this
+    Determines whether the supplied [Microsoft.CodeAnalysis.SyntaxToken](#/api\Microsoft.CodeAnalysis.SyntaxToken) is equal to this
 
-    [Microsoft.CodeAnalysis.SyntaxToken](api\Microsoft.CodeAnalysis.SyntaxToken).
+    [Microsoft.CodeAnalysis.SyntaxToken](#/api\Microsoft.CodeAnalysis.SyntaxToken).
 
   syntax:
     content:
@@ -1594,6 +1635,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -1615,7 +1657,7 @@ items:
     path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
     startLine: 653
   summary: >+
-    Serves as hash function for [Microsoft.CodeAnalysis.SyntaxToken](api\Microsoft.CodeAnalysis.SyntaxToken).
+    Serves as hash function for [Microsoft.CodeAnalysis.SyntaxToken](#/api\Microsoft.CodeAnalysis.SyntaxToken).
 
   syntax:
     content:
@@ -1649,21 +1691,25 @@ items:
     - id: includeZeroWidth
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: includeSkipped
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: includeDirectives
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: includeDocumentationComments
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -1695,21 +1741,25 @@ items:
     - id: includeZeroWidth
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: includeSkipped
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: includeDirectives
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: includeDocumentationComments
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -1740,8 +1790,9 @@ items:
     parameters:
     - id: SyntaxTree
       type:
-        id: SyntaxTree
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+        id: Microsoft.CodeAnalysis.SyntaxTree
+        name: SyntaxTree
+        href: api\Microsoft.CodeAnalysis.SyntaxTree
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_SyntaxTree
   yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxToken
@@ -1836,7 +1887,8 @@ items:
     parameters:
     - id: token
       type:
-        id: SyntaxToken
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxToken
+        name: SyntaxToken
+        href: api\Microsoft.CodeAnalysis.SyntaxToken
     return:
       id: Boolean

@@ -15,16 +15,18 @@ source:
   path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
   startLine: 16
 summary: >+
-  A list of [Microsoft.CodeAnalysis.SyntaxNodeOrToken](api\Microsoft.CodeAnalysis.SyntaxNodeOrToken) structures.
+  A list of [Microsoft.CodeAnalysis.SyntaxNodeOrToken](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrToken) structures.
 
 syntax:
   content:
     CSharp: public struct SyntaxNodeOrTokenList
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -54,6 +56,7 @@ items:
     - id: Count
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.get_Count
@@ -88,7 +91,7 @@ items:
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 81
   summary: >+
-    Gets the [Microsoft.CodeAnalysis.SyntaxNodeOrToken](api\Microsoft.CodeAnalysis.SyntaxNodeOrToken) at the specified index.
+    Gets the [Microsoft.CodeAnalysis.SyntaxNodeOrToken](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrToken) at the specified index.
 
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.get_Item(System.Int32)
   yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
@@ -130,8 +133,9 @@ items:
     parameters:
     - id: FullSpan
       type:
-        id: TextSpan
-        href: C:\roslyn\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.get_FullSpan
   yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
@@ -172,8 +176,9 @@ items:
     parameters:
     - id: Span
       type:
-        id: TextSpan
-        href: C:\roslyn\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.get_Span
   yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
@@ -362,7 +367,7 @@ items:
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 228
   summary: >+
-    Returns the index from the list for the given [Microsoft.CodeAnalysis.SyntaxNodeOrToken](api\Microsoft.CodeAnalysis.SyntaxNodeOrToken).
+    Returns the index from the list for the given [Microsoft.CodeAnalysis.SyntaxNodeOrToken](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrToken).
 
   syntax:
     content:
@@ -370,8 +375,9 @@ items:
     parameters:
     - id: nodeOrToken
       type:
-        id: SyntaxNodeOrToken
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeOrToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxNodeOrToken
+        name: SyntaxNodeOrToken
+        href: api\Microsoft.CodeAnalysis.SyntaxNodeOrToken
       description: The node or token to search for in the list.
     return:
       id: Int32
@@ -419,7 +425,7 @@ items:
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 272
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified node or token added to the end.
+    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified node or token added to the end.
 
   syntax:
     content:
@@ -427,8 +433,9 @@ items:
     parameters:
     - id: nodeOrToken
       type:
-        id: SyntaxNodeOrToken
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeOrToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxNodeOrToken
+        name: SyntaxNodeOrToken
+        href: api\Microsoft.CodeAnalysis.SyntaxNodeOrToken
       description: The node or token to add.
     return:
       id: SyntaxNodeOrTokenList
@@ -449,7 +456,7 @@ items:
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 281
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified nodes or tokens added to the end.
+    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified nodes or tokens added to the end.
 
   syntax:
     content:
@@ -458,6 +465,7 @@ items:
     - id: nodesOrTokens
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNodeOrToken}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNodeOrToken}
         href: System.Runtime
         isExternal: true
       description: The nodes or tokens to add.
@@ -480,7 +488,7 @@ items:
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 291
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified node or token inserted at the index.
+    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified node or token inserted at the index.
 
   syntax:
     content:
@@ -489,13 +497,15 @@ items:
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index to insert at.
     - id: nodeOrToken
       type:
-        id: SyntaxNodeOrToken
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeOrToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxNodeOrToken
+        name: SyntaxNodeOrToken
+        href: api\Microsoft.CodeAnalysis.SyntaxNodeOrToken
       description: The node or token to insert.
     return:
       id: SyntaxNodeOrTokenList
@@ -516,7 +526,7 @@ items:
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 306
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified nodes or tokens inserted at the index.
+    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified nodes or tokens inserted at the index.
 
   syntax:
     content:
@@ -525,12 +535,14 @@ items:
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index to insert at.
     - id: nodesAndTokens
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNodeOrToken}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNodeOrToken}
         href: System.Runtime
         isExternal: true
       description: The nodes or tokens to insert.
@@ -553,7 +565,7 @@ items:
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 348
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the element at the specified index removed.
+    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the element at the specified index removed.
 
   syntax:
     content:
@@ -562,6 +574,7 @@ items:
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index of the element to remove.
@@ -584,7 +597,7 @@ items:
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 365
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified element removed.
+    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified element removed.
 
   syntax:
     content:
@@ -592,8 +605,9 @@ items:
     parameters:
     - id: nodeOrTokenInList
       type:
-        id: SyntaxNodeOrToken
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeOrToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxNodeOrToken
+        name: SyntaxNodeOrToken
+        href: api\Microsoft.CodeAnalysis.SyntaxNodeOrToken
       description: The element to remove.
     return:
       id: SyntaxNodeOrTokenList
@@ -614,7 +628,7 @@ items:
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 383
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified element replaced with a new node or token.
+    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified element replaced with a new node or token.
 
   syntax:
     content:
@@ -622,13 +636,15 @@ items:
     parameters:
     - id: nodeOrTokenInList
       type:
-        id: SyntaxNodeOrToken
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeOrToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxNodeOrToken
+        name: SyntaxNodeOrToken
+        href: api\Microsoft.CodeAnalysis.SyntaxNodeOrToken
       description: The element to replace.
     - id: newNodeOrToken
       type:
-        id: SyntaxNodeOrToken
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeOrToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxNodeOrToken
+        name: SyntaxNodeOrToken
+        href: api\Microsoft.CodeAnalysis.SyntaxNodeOrToken
       description: The new node or token.
     return:
       id: SyntaxNodeOrTokenList
@@ -649,7 +665,7 @@ items:
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 398
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified element replaced with a new nodes and tokens.
+    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified element replaced with a new nodes and tokens.
 
   syntax:
     content:
@@ -657,12 +673,14 @@ items:
     parameters:
     - id: nodeOrTokenInList
       type:
-        id: SyntaxNodeOrToken
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeOrToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxNodeOrToken
+        name: SyntaxNodeOrToken
+        href: api\Microsoft.CodeAnalysis.SyntaxNodeOrToken
       description: The element to replace.
     - id: newNodesAndTokens
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNodeOrToken}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNodeOrToken}
         href: System.Runtime
         isExternal: true
       description: The new nodes and tokens.
@@ -754,8 +772,9 @@ items:
     parameters:
     - id: other
       type:
-        id: SyntaxNodeOrTokenList
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+        id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+        name: SyntaxNodeOrTokenList
+        href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
       description: An object to compare with this object.
     return:
       id: Boolean
@@ -780,7 +799,7 @@ items:
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 496
   summary: >+
-    Determines whether the specified @T:System.Object- is equal to this instance.
+    Determines whether the specified [System.Object](#) is equal to this instance.
 
   syntax:
     content:
@@ -789,12 +808,13 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
-      description: The @T:System.Object- to compare with this instance.
+      description: The [System.Object](#) to compare with this instance.
     return:
       id: Boolean
-      description: true if the specified @T:System.Object- is equal to this instance; otherwise, false.
+      description: true if the specified [System.Object](#) is equal to this instance; otherwise, false.
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.GetHashCode
   yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList

@@ -3,8 +3,8 @@ id: Microsoft.CodeAnalysis.Formatting.Formatter
 ---
 
 This class is used to format the source code text with proper spacing and indent.
-To format a source code text, you need to first get a document of the source code.
-Then use FormatAsync() method to format the code. The formatted result can be get using GetTextAsync() method.
+To format a source code text, you need to first get a [Microsoft.CodeAnalysis.Document](#/api\Microsoft.CodeAnalysis.Document)  of the source code.
+Then use **FormatAsync()** method to format the code. The formatted result can be get using GetTextAsync() method.
 
 ## Example
 

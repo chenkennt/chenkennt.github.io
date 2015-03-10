@@ -19,6 +19,7 @@ syntax:
     CSharp: public static partial class SyntaxNodeExtensions
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -48,17 +49,20 @@ items:
     - id: root
       type:
         id: TRoot
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+        name: TRoot
+        href: TRoot
       description: The root node of the tree of nodes.
     - id: nodes
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
       description: The nodes to be replaced.
     - id: computeReplacementNode
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
       description: >-
@@ -70,12 +74,14 @@ items:
     - id: tokens
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
         href: System.Runtime
         isExternal: true
       description: The tokens to be replaced.
     - id: computeReplacementToken
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken}
+        name: System.Func{Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken}
         href: System.Runtime
         isExternal: true
       description: >-
@@ -87,12 +93,14 @@ items:
     - id: trivia
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
         href: System.Runtime
         isExternal: true
       description: The trivia to be replaced.
     - id: computeReplacementTrivia
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia}
+        name: System.Func{Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia}
         href: System.Runtime
         isExternal: true
       description: >-
@@ -129,17 +137,20 @@ items:
     - id: root
       type:
         id: TRoot
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+        name: TRoot
+        href: TRoot
       description: The root node of the tree of nodes.
     - id: nodes
       type:
         id: System.Collections.Generic.IEnumerable{``1}
+        name: System.Collections.Generic.IEnumerable{``1}
         href: System.Runtime
         isExternal: true
       description: The nodes to be replaced; descendants of the root node.
     - id: computeReplacementNode
       type:
         id: System.Func{``1,``1,Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Func{``1,``1,Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
       description: >-
@@ -176,17 +187,20 @@ items:
     - id: root
       type:
         id: TRoot
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+        name: TRoot
+        href: TRoot
       description: The root node of the tree of nodes.
     - id: oldNode
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: The node to be replaced; a descendant of the root node.
     - id: newNode
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: The new node to use in the new tree in place of the old node.
     return:
       id: TRoot
@@ -216,16 +230,19 @@ items:
     - id: root
       type:
         id: TRoot
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+        name: TRoot
+        href: TRoot
       description: The root of the tree of nodes.
     - id: oldNode
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: The node to be replaced; a descendant of the root node and an element of a list member.
     - id: newNodes
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
       description: A sequence of nodes to use in the tree in place of the old node.
@@ -257,16 +274,19 @@ items:
     - id: root
       type:
         id: TRoot
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+        name: TRoot
+        href: TRoot
       description: The root of the tree of nodes.
     - id: nodeInList
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: The node to insert before; a descendant of the root node an element of a list member.
     - id: newNodes
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
       description: A sequence of nodes to insert into the tree immediately before the specified node.
@@ -298,16 +318,19 @@ items:
     - id: root
       type:
         id: TRoot
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+        name: TRoot
+        href: TRoot
       description: The root of the tree of nodes.
     - id: nodeInList
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: The node to insert after; a descendant of the root node an element of a list member.
     - id: newNodes
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
       description: A sequence of nodes to insert into the tree immediately after the specified node.
@@ -339,16 +362,19 @@ items:
     - id: root
       type:
         id: TRoot
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+        name: TRoot
+        href: TRoot
       description: The root of the tree of nodes.
     - id: tokenInList
       type:
-        id: SyntaxToken
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxToken
+        name: SyntaxToken
+        href: api\Microsoft.CodeAnalysis.SyntaxToken
       description: The token to be replaced; a descendant of the root node and an element of a list member.
     - id: newTokens
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
         href: System.Runtime
         isExternal: true
       description: A sequence of tokens to use in the tree in place of the specified token.
@@ -380,16 +406,19 @@ items:
     - id: root
       type:
         id: TRoot
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+        name: TRoot
+        href: TRoot
       description: The root of the tree of nodes.
     - id: tokenInList
       type:
-        id: SyntaxToken
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxToken
+        name: SyntaxToken
+        href: api\Microsoft.CodeAnalysis.SyntaxToken
       description: The token to insert before; a descendant of the root node and an element of a list member.
     - id: newTokens
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
         href: System.Runtime
         isExternal: true
       description: A sequence of tokens to insert into the tree immediately before the specified token.
@@ -421,16 +450,19 @@ items:
     - id: root
       type:
         id: TRoot
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+        name: TRoot
+        href: TRoot
       description: The root of the tree of nodes.
     - id: tokenInList
       type:
-        id: SyntaxToken
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxToken
+        name: SyntaxToken
+        href: api\Microsoft.CodeAnalysis.SyntaxToken
       description: The token to insert after; a descendant of the root node and an element of a list member.
     - id: newTokens
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
         href: System.Runtime
         isExternal: true
       description: A sequence of tokens to insert into the tree immediately after the specified token.
@@ -462,16 +494,19 @@ items:
     - id: root
       type:
         id: TRoot
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+        name: TRoot
+        href: TRoot
       description: The root of the tree of nodes.
     - id: oldTrivia
       type:
-        id: SyntaxTrivia
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
+        id: Microsoft.CodeAnalysis.SyntaxTrivia
+        name: SyntaxTrivia
+        href: api\Microsoft.CodeAnalysis.SyntaxTrivia
       description: The trivia to be replaced; a descendant of the root node.
     - id: newTrivia
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
         href: System.Runtime
         isExternal: true
       description: A sequence of trivia to use in the tree in place of the specified trivia.
@@ -503,16 +538,19 @@ items:
     - id: root
       type:
         id: TRoot
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+        name: TRoot
+        href: TRoot
       description: The root of the tree of nodes.
     - id: trivia
       type:
-        id: SyntaxTrivia
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
+        id: Microsoft.CodeAnalysis.SyntaxTrivia
+        name: SyntaxTrivia
+        href: api\Microsoft.CodeAnalysis.SyntaxTrivia
       description: The trivia to insert before; a descendant of the root node.
     - id: newTrivia
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
         href: System.Runtime
         isExternal: true
       description: A sequence of trivia to insert into the tree immediately before the specified trivia.
@@ -544,16 +582,19 @@ items:
     - id: root
       type:
         id: TRoot
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+        name: TRoot
+        href: TRoot
       description: The root of the tree of nodes.
     - id: trivia
       type:
-        id: SyntaxTrivia
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
+        id: Microsoft.CodeAnalysis.SyntaxTrivia
+        name: SyntaxTrivia
+        href: api\Microsoft.CodeAnalysis.SyntaxTrivia
       description: The trivia to insert after; a descendant of the root node.
     - id: newTrivia
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
         href: System.Runtime
         isExternal: true
       description: A sequence of trivia to insert into the tree immediately after the specified trivia.
@@ -585,17 +626,20 @@ items:
     - id: root
       type:
         id: TRoot
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+        name: TRoot
+        href: TRoot
       description: The root node of the tree of nodes.
     - id: tokens
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
         href: System.Runtime
         isExternal: true
       description: The token to be replaced; descendants of the root node.
     - id: computeReplacementToken
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken}
+        name: System.Func{Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken}
         href: System.Runtime
         isExternal: true
       description: >-
@@ -632,17 +676,20 @@ items:
     - id: root
       type:
         id: TRoot
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+        name: TRoot
+        href: TRoot
       description: The root node of the tree of nodes.
     - id: oldToken
       type:
-        id: SyntaxToken
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxToken
+        name: SyntaxToken
+        href: api\Microsoft.CodeAnalysis.SyntaxToken
       description: The token to be replaced.
     - id: newToken
       type:
-        id: SyntaxToken
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxToken
+        name: SyntaxToken
+        href: api\Microsoft.CodeAnalysis.SyntaxToken
       description: >-
         The new token to use in the new tree in place of the old
 
@@ -675,17 +722,20 @@ items:
     - id: root
       type:
         id: TRoot
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+        name: TRoot
+        href: TRoot
       description: The root node of the tree of nodes.
     - id: trivia
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
         href: System.Runtime
         isExternal: true
       description: The trivia to be replaced; descendants of the root node.
     - id: computeReplacementTrivia
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia}
+        name: System.Func{Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia}
         href: System.Runtime
         isExternal: true
       description: >-
@@ -722,17 +772,20 @@ items:
     - id: root
       type:
         id: TRoot
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+        name: TRoot
+        href: TRoot
       description: The root node of the tree of nodes.
     - id: trivia
       type:
-        id: SyntaxTrivia
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
+        id: Microsoft.CodeAnalysis.SyntaxTrivia
+        name: SyntaxTrivia
+        href: api\Microsoft.CodeAnalysis.SyntaxTrivia
       description: The trivia to be replaced.
     - id: newTrivia
       type:
-        id: SyntaxTrivia
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
+        id: Microsoft.CodeAnalysis.SyntaxTrivia
+        name: SyntaxTrivia
+        href: api\Microsoft.CodeAnalysis.SyntaxTrivia
       description: The new trivia to use in the new tree in place of the old trivia.
     return:
       id: TRoot
@@ -762,17 +815,20 @@ items:
     - id: root
       type:
         id: TRoot
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+        name: TRoot
+        href: TRoot
       description: The root node from which to remove a descendant node from.
     - id: node
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: The node to remove.
     - id: options
       type:
-        id: SyntaxRemoveOptions
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxRemoveOptions.cs
+        id: Microsoft.CodeAnalysis.SyntaxRemoveOptions
+        name: SyntaxRemoveOptions
+        href: api\Microsoft.CodeAnalysis.SyntaxRemoveOptions
       description: Options that determine how the node's trivia is treated.
     return:
       id: TRoot
@@ -802,18 +858,21 @@ items:
     - id: root
       type:
         id: TRoot
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+        name: TRoot
+        href: TRoot
       description: The root node from which to remove a descendant node from.
     - id: nodes
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
       description: The nodes to remove.
     - id: options
       type:
-        id: SyntaxRemoveOptions
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxRemoveOptions.cs
+        id: Microsoft.CodeAnalysis.SyntaxRemoveOptions
+        name: SyntaxRemoveOptions
+        href: api\Microsoft.CodeAnalysis.SyntaxRemoveOptions
       description: Options that determine how the nodes' trivia is treated.
     return:
       id: TRoot
@@ -845,11 +904,13 @@ items:
     - id: node
       type:
         id: TNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+        name: TNode
+        href: TNode
       description: The node to format.
     - id: indentation
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: >-
@@ -859,6 +920,7 @@ items:
     - id: elasticTrivia
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
       description: If true the replaced trivia is elastic trivia.
@@ -890,11 +952,13 @@ items:
     - id: syntax
       type:
         id: TSyntax
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+        name: TSyntax
+        href: TSyntax
     - id: node
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: TSyntax
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.WithoutTrivia``1(``0)
@@ -923,7 +987,8 @@ items:
     - id: syntax
       type:
         id: TSyntax
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+        name: TSyntax
+        href: TSyntax
     return:
       id: TSyntax
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.WithLeadingTrivia``1(``0,Microsoft.CodeAnalysis.SyntaxTriviaList)
@@ -952,11 +1017,13 @@ items:
     - id: node
       type:
         id: TSyntax
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+        name: TSyntax
+        href: TSyntax
     - id: trivia
       type:
-        id: SyntaxTriviaList
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+        id: Microsoft.CodeAnalysis.SyntaxTriviaList
+        name: SyntaxTriviaList
+        href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
     return:
       id: TSyntax
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.WithLeadingTrivia``1(``0,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia})
@@ -985,10 +1052,12 @@ items:
     - id: node
       type:
         id: TSyntax
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+        name: TSyntax
+        href: TSyntax
     - id: trivia
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
         href: System.Runtime
         isExternal: true
     return:
@@ -1019,7 +1088,8 @@ items:
     - id: node
       type:
         id: TSyntax
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+        name: TSyntax
+        href: TSyntax
     return:
       id: TSyntax
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.WithLeadingTrivia``1(``0,Microsoft.CodeAnalysis.SyntaxTrivia[])
@@ -1048,10 +1118,12 @@ items:
     - id: node
       type:
         id: TSyntax
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+        name: TSyntax
+        href: TSyntax
     - id: trivia
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: TSyntax
@@ -1081,11 +1153,13 @@ items:
     - id: node
       type:
         id: TSyntax
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+        name: TSyntax
+        href: TSyntax
     - id: trivia
       type:
-        id: SyntaxTriviaList
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+        id: Microsoft.CodeAnalysis.SyntaxTriviaList
+        name: SyntaxTriviaList
+        href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
     return:
       id: TSyntax
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.WithTrailingTrivia``1(``0,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia})
@@ -1114,10 +1188,12 @@ items:
     - id: node
       type:
         id: TSyntax
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+        name: TSyntax
+        href: TSyntax
     - id: trivia
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
         href: System.Runtime
         isExternal: true
     return:
@@ -1148,7 +1224,8 @@ items:
     - id: node
       type:
         id: TSyntax
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+        name: TSyntax
+        href: TSyntax
     return:
       id: TSyntax
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.WithTrailingTrivia``1(``0,Microsoft.CodeAnalysis.SyntaxTrivia[])
@@ -1177,10 +1254,12 @@ items:
     - id: node
       type:
         id: TSyntax
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+        name: TSyntax
+        href: TSyntax
     - id: trivia
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: TSyntax
@@ -1216,11 +1295,13 @@ items:
     - id: root
       type:
         id: TRoot
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions_Tracking.cs
+        name: TRoot
+        href: TRoot
       description: The root of the subtree containing the nodes to be tracked.
     - id: nodes
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
       description: One or more nodes that are descendants of the root node.
@@ -1258,11 +1339,13 @@ items:
     - id: root
       type:
         id: TRoot
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions_Tracking.cs
+        name: TRoot
+        href: TRoot
       description: The root of the subtree containing the nodes to be tracked.
     - id: nodes
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
       description: One or more nodes that are descendants of the root node.
     return:
@@ -1294,13 +1377,15 @@ items:
     parameters:
     - id: root
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: The root of the subtree containing the current node corresponding to the original tracked node.
     - id: node
       type:
         id: TNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions_Tracking.cs
+        name: TNode
+        href: TNode
       description: The node instance originally tracked.
     return:
       id: IEnumerable
@@ -1331,13 +1416,15 @@ items:
     parameters:
     - id: root
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: The root of the subtree containing the current node corresponding to the original tracked node.
     - id: node
       type:
         id: TNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions_Tracking.cs
+        name: TNode
+        href: TNode
       description: The node instance originally tracked.
     return:
       id: TNode
@@ -1368,12 +1455,14 @@ items:
     parameters:
     - id: root
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: The root of the subtree containing the current nodes corresponding to the original tracked nodes.
     - id: nodes
       type:
         id: System.Collections.Generic.IEnumerable{``0}
+        name: System.Collections.Generic.IEnumerable{``0}
         href: System.Runtime
         isExternal: true
       description: One or more node instances originally tracked.

@@ -19,9 +19,11 @@ syntax:
     CSharp: public struct Enumerator
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -69,8 +71,9 @@ items:
     parameters:
     - id: Current
       type:
-        id: SyntaxTrivia
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
+        id: Microsoft.CodeAnalysis.SyntaxTrivia
+        name: SyntaxTrivia
+        href: api\Microsoft.CodeAnalysis.SyntaxTrivia
 - id: Microsoft.CodeAnalysis.SyntaxTriviaList.Enumerator.get_Current
   yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.Enumerator.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxTriviaList.Enumerator

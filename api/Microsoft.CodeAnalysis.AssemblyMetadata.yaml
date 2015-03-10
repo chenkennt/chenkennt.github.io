@@ -22,10 +22,12 @@ syntax:
     CSharp: public sealed class AssemblyMetadata
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
-- id: Metadata
-  href: C:\roslyn\src\Compilers\Core\Portable\MetadataReference\Metadata.cs
+- id: Microsoft.CodeAnalysis.Metadata
+  name: Metadata
+  href: api\Microsoft.CodeAnalysis.Metadata
 items:
 - id: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromImage(System.Collections.Immutable.ImmutableArray{System.Byte})
   yaml: api\Microsoft.CodeAnalysis.AssemblyMetadata.yaml
@@ -53,6 +55,7 @@ items:
     - id: peImage
       type:
         id: System.Collections.Immutable.ImmutableArray{System.Byte}
+        name: System.Collections.Immutable.ImmutableArray{System.Byte}
         href: System.Collections.Immutable
         isExternal: true
       description: Manifest module image.
@@ -84,6 +87,7 @@ items:
     - id: peImage
       type:
         id: System.Collections.Generic.IEnumerable{System.Byte}
+        name: System.Collections.Generic.IEnumerable{System.Byte}
         href: System.Runtime
         isExternal: true
       description: Manifest module image.
@@ -115,12 +119,14 @@ items:
     - id: peStream
       type:
         id: System.IO.Stream
+        name: System.IO.Stream
         href: System.IO
         isExternal: true
       description: Manifest module PE image stream.
     - id: leaveOpen
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
       description: False to close the stream upon disposal of the metadata.
@@ -152,12 +158,14 @@ items:
     - id: peStream
       type:
         id: System.IO.Stream
+        name: System.IO.Stream
         href: System.IO
         isExternal: true
       description: Manifest module PE image stream.
     - id: options
       type:
         id: System.Reflection.PortableExecutable.PEStreamOptions
+        name: System.Reflection.PortableExecutable.PEStreamOptions
         href: System.Reflection.Metadata
         isExternal: true
       description: False to close the stream upon disposal of the metadata.
@@ -180,7 +188,7 @@ items:
     path: src\Compilers\Core\Portable\MetadataReference\AssemblyMetadata.cs
     startLine: 154
   summary: >+
-    Finds all modules of an assembly on a specified path and builds an instance of [Microsoft.CodeAnalysis.AssemblyMetadata](api\Microsoft.CodeAnalysis.AssemblyMetadata) that represents them.
+    Finds all modules of an assembly on a specified path and builds an instance of [Microsoft.CodeAnalysis.AssemblyMetadata](#/api\Microsoft.CodeAnalysis.AssemblyMetadata) that represents them.
 
   syntax:
     content:
@@ -189,6 +197,7 @@ items:
     - id: path
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: The full path to the assembly on disk.
@@ -219,8 +228,9 @@ items:
     parameters:
     - id: module
       type:
-        id: ModuleMetadata
-        href: C:\roslyn\src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
+        id: Microsoft.CodeAnalysis.ModuleMetadata
+        name: ModuleMetadata
+        href: api\Microsoft.CodeAnalysis.ModuleMetadata
       description: Manifest module.
     return:
       id: AssemblyMetadata
@@ -250,6 +260,7 @@ items:
     - id: modules
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ModuleMetadata}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ModuleMetadata}
         href: System.Collections.Immutable
         isExternal: true
       description: Modules comprising the assembly. The first module is the manifest module of the assembly.
@@ -281,6 +292,7 @@ items:
     - id: modules
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ModuleMetadata}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ModuleMetadata}
         href: System.Runtime
         isExternal: true
       description: Modules comprising the assembly. The first module is the manifest module of the assembly.
@@ -312,6 +324,7 @@ items:
     - id: modules
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
       description: Modules comprising the assembly. The first module is the manifest module of the assembly.
     return:
@@ -383,7 +396,7 @@ items:
     path: src\Compilers\Core\Portable\MetadataReference\AssemblyMetadata.cs
     startLine: 425
   summary: >+
-    Returns the metadata kind. [Microsoft.CodeAnalysis.MetadataImageKind](api\Microsoft.CodeAnalysis.MetadataImageKind)
+    Returns the metadata kind. [Microsoft.CodeAnalysis.MetadataImageKind](#/api\Microsoft.CodeAnalysis.MetadataImageKind)
 
   syntax:
     content:
@@ -391,8 +404,9 @@ items:
     parameters:
     - id: Kind
       type:
-        id: MetadataImageKind
-        href: C:\roslyn\src\Compilers\Core\Portable\MetadataReference\MetadataImageKind.cs
+        id: Microsoft.CodeAnalysis.MetadataImageKind
+        name: MetadataImageKind
+        href: api\Microsoft.CodeAnalysis.MetadataImageKind
 - id: Microsoft.CodeAnalysis.AssemblyMetadata.get_Kind
   yaml: api\Microsoft.CodeAnalysis.AssemblyMetadata.yaml
   href: api\Microsoft.CodeAnalysis.AssemblyMetadata
@@ -433,30 +447,35 @@ items:
     parameters:
     - id: documentation
       type:
-        id: DocumentationProvider
-        href: C:\roslyn\src\Compilers\Core\Portable\DocumentationComments\DocumentationProvider.cs
+        id: Microsoft.CodeAnalysis.DocumentationProvider
+        name: DocumentationProvider
+        href: api\Microsoft.CodeAnalysis.DocumentationProvider
       description: Provider of XML documentation comments for the metadata symbols contained in the module.
     - id: aliases
       type:
         id: System.Collections.Immutable.ImmutableArray{System.String}
+        name: System.Collections.Immutable.ImmutableArray{System.String}
         href: System.Collections.Immutable
         isExternal: true
       description: Aliases that can be used to refer to the assembly from source code (see "extern alias" directive in C#).
     - id: embedInteropTypes
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
       description: True to embed interop types from the referenced assembly to the referencing compilation. Must be false for a module.
     - id: filePath
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: Path describing the location of the metadata, or null if the metadata have no location.
     - id: display
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: Display string used in error messages to identity the reference.

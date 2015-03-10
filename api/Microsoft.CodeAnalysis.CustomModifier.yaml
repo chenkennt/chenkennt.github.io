@@ -19,6 +19,7 @@ syntax:
     CSharp: public abstract class CustomModifier
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -50,6 +51,7 @@ items:
     - id: IsOptional
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CustomModifier.get_IsOptional
@@ -92,8 +94,9 @@ items:
     parameters:
     - id: Modifier
       type:
-        id: INamedTypeSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+        id: Microsoft.CodeAnalysis.INamedTypeSymbol
+        name: INamedTypeSymbol
+        href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
 - id: Microsoft.CodeAnalysis.CustomModifier.get_Modifier
   yaml: api\Microsoft.CodeAnalysis.CustomModifier.yaml
   href: api\Microsoft.CodeAnalysis.CustomModifier

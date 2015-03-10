@@ -22,9 +22,11 @@ syntax:
     CSharp: public struct ReferenceLocation
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -53,8 +55,9 @@ items:
     parameters:
     - id: Document
       type:
-        id: Document
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Document.cs
+        id: Microsoft.CodeAnalysis.Document
+        name: Document
+        href: api\Microsoft.CodeAnalysis.Document
 - id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.get_Document
   yaml: api\Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
   href: api\Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation
@@ -95,8 +98,9 @@ items:
     parameters:
     - id: Alias
       type:
-        id: IAliasSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\IAliasSymbol.cs
+        id: Microsoft.CodeAnalysis.IAliasSymbol
+        name: IAliasSymbol
+        href: api\Microsoft.CodeAnalysis.IAliasSymbol
 - id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.get_Alias
   yaml: api\Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
   href: api\Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation
@@ -137,8 +141,9 @@ items:
     parameters:
     - id: Location
       type:
-        id: Location
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\Location.cs
+        id: Microsoft.CodeAnalysis.Location
+        name: Location
+        href: api\Microsoft.CodeAnalysis.Location
 - id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.get_Location
   yaml: api\Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
   href: api\Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation
@@ -186,6 +191,7 @@ items:
     - id: IsImplicit
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.get_IsImplicit
@@ -225,8 +231,9 @@ items:
     parameters:
     - id: CandidateReason
       type:
-        id: CandidateReason
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\CandidateReason.cs
+        id: Microsoft.CodeAnalysis.CandidateReason
+        name: CandidateReason
+        href: api\Microsoft.CodeAnalysis.CandidateReason
 - id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.get_CandidateReason
   yaml: api\Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
   href: api\Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation
@@ -274,6 +281,7 @@ items:
     - id: IsCandidateLocation
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.get_IsCandidateLocation
@@ -344,6 +352,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -370,8 +379,9 @@ items:
     parameters:
     - id: other
       type:
-        id: ReferenceLocation
-        href: C:\roslyn\src\Workspaces\Core\Portable\FindSymbols\ReferenceLocation.cs
+        id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation
+        name: ReferenceLocation
+        href: api\Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.GetHashCode
@@ -418,7 +428,8 @@ items:
     parameters:
     - id: other
       type:
-        id: ReferenceLocation
-        href: C:\roslyn\src\Workspaces\Core\Portable\FindSymbols\ReferenceLocation.cs
+        id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation
+        name: ReferenceLocation
+        href: api\Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation
     return:
       id: Int32

@@ -19,9 +19,11 @@ syntax:
     CSharp: public class WorkspaceDiagnosticEventArgs
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.EventArgs
+  name: System.EventArgs
   href: System.Runtime
   isExternal: true
 items:
@@ -47,8 +49,9 @@ items:
     parameters:
     - id: Diagnostic
       type:
-        id: WorkspaceDiagnostic
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\WorkspaceDiagnostic.cs
+        id: Microsoft.CodeAnalysis.WorkspaceDiagnostic
+        name: WorkspaceDiagnostic
+        href: api\Microsoft.CodeAnalysis.WorkspaceDiagnostic
 - id: Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs.get_Diagnostic
   yaml: api\Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs.yaml
   href: api\Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs
@@ -86,5 +89,6 @@ items:
     parameters:
     - id: diagnostic
       type:
-        id: WorkspaceDiagnostic
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\WorkspaceDiagnostic.cs
+        id: Microsoft.CodeAnalysis.WorkspaceDiagnostic
+        name: WorkspaceDiagnostic
+        href: api\Microsoft.CodeAnalysis.WorkspaceDiagnostic

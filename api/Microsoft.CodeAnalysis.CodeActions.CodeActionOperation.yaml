@@ -22,6 +22,7 @@ syntax:
     CSharp: public abstract class CodeActionOperation
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -51,6 +52,7 @@ items:
     - id: Title
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CodeActions.CodeActionOperation.get_Title
@@ -95,11 +97,13 @@ items:
     parameters:
     - id: workspace
       type:
-        id: Workspace
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Workspace.cs
+        id: Microsoft.CodeAnalysis.Workspace
+        name: Workspace
+        href: api\Microsoft.CodeAnalysis.Workspace
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:

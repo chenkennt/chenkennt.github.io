@@ -22,6 +22,7 @@ syntax:
     CSharp: public abstract class HostLanguageServices
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -42,7 +43,7 @@ items:
     path: src\Workspaces\Core\Portable\Workspace\Host\HostLanguageServices.cs
     startLine: 14
   summary: >+
-    The [Microsoft.CodeAnalysis.Host.HostWorkspaceServices](api\Microsoft.CodeAnalysis.Host.HostWorkspaceServices) that originated this language service.
+    The [Microsoft.CodeAnalysis.Host.HostWorkspaceServices](#/api\Microsoft.CodeAnalysis.Host.HostWorkspaceServices) that originated this language service.
 
   syntax:
     content:
@@ -50,8 +51,9 @@ items:
     parameters:
     - id: WorkspaceServices
       type:
-        id: HostWorkspaceServices
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Host\HostWorkspaceServices.cs
+        id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices
+        name: HostWorkspaceServices
+        href: api\Microsoft.CodeAnalysis.Host.HostWorkspaceServices
 - id: Microsoft.CodeAnalysis.Host.HostLanguageServices.get_WorkspaceServices
   yaml: api\Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
   href: api\Microsoft.CodeAnalysis.Host.HostLanguageServices
@@ -93,6 +95,7 @@ items:
     - id: Language
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Host.HostLanguageServices.get_Language
@@ -156,7 +159,7 @@ items:
   summary: >+
     Gets a language specific service provided by the host identified by the service type.
 
-    If the host does not provide the service, this method returns throws @T:System.InvalidOperationException-.
+    If the host does not provide the service, this method returns throws [System.InvalidOperationException](#).
 
   syntax:
     content:
@@ -189,8 +192,9 @@ items:
     parameters:
     - id: CompilationFactory
       type:
-        id: ICompilationFactoryService
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Host\CompilationFactory\ICompilationFactoryService.cs
+        id: Microsoft.CodeAnalysis.Host.ICompilationFactoryService
+        name: ICompilationFactoryService
+        href: api\Microsoft.CodeAnalysis.Host.ICompilationFactoryService
 - id: Microsoft.CodeAnalysis.Host.HostLanguageServices.get_CompilationFactory
   yaml: api\Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
   href: api\Microsoft.CodeAnalysis.Host.HostLanguageServices

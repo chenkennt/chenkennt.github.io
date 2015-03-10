@@ -19,6 +19,7 @@ syntax:
     CSharp: public static class Recommender
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -44,24 +45,29 @@ items:
     parameters:
     - id: semanticModel
       type:
-        id: SemanticModel
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+        id: Microsoft.CodeAnalysis.SemanticModel
+        name: SemanticModel
+        href: api\Microsoft.CodeAnalysis.SemanticModel
     - id: position
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
     - id: workspace
       type:
-        id: Workspace
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Workspace.cs
+        id: Microsoft.CodeAnalysis.Workspace
+        name: Workspace
+        href: api\Microsoft.CodeAnalysis.Workspace
     - id: options
       type:
-        id: OptionSet
-        href: C:\roslyn\src\Workspaces\Core\Portable\Options\OptionSet.cs
+        id: Microsoft.CodeAnalysis.Options.OptionSet
+        name: OptionSet
+        href: api\Microsoft.CodeAnalysis.Options.OptionSet
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:

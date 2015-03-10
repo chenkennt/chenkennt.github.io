@@ -17,13 +17,14 @@ source:
 summary: >+
   Implement this abstract type to provide fix all/multiple occurrences code fixes for source code problems.
 
-  Alternatively, you can use any of the well known fix all providers from [Microsoft.CodeAnalysis.CodeFixes.WellKnownFixAllProviders](api\Microsoft.CodeAnalysis.CodeFixes.WellKnownFixAllProviders).
+  Alternatively, you can use any of the well known fix all providers from [Microsoft.CodeAnalysis.CodeFixes.WellKnownFixAllProviders](#/api\Microsoft.CodeAnalysis.CodeFixes.WellKnownFixAllProviders).
 
 syntax:
   content:
     CSharp: public abstract class FixAllProvider
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -48,11 +49,11 @@ items:
 
     By default, it returns the following scopes:
 
-    (a) [Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Document](api\Microsoft.CodeAnalysis.CodeFixes.FixAllScope)
+    (a) [Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Document](#/api\Microsoft.CodeAnalysis.CodeFixes.FixAllScope)
 
-    (b) [Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Project](api\Microsoft.CodeAnalysis.CodeFixes.FixAllScope) and
+    (b) [Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Project](#/api\Microsoft.CodeAnalysis.CodeFixes.FixAllScope) and
 
-    (c) [Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Solution](api\Microsoft.CodeAnalysis.CodeFixes.FixAllScope)
+    (c) [Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Solution](#/api\Microsoft.CodeAnalysis.CodeFixes.FixAllScope)
 
   syntax:
     content:
@@ -79,7 +80,7 @@ items:
   summary: >+
     Gets the diagnostic IDs for which fix all occurrences is supported.
 
-    By default, it returns [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.FixableDiagnosticIds](api\Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider) for the given .
+    By default, it returns [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.FixableDiagnosticIds](#/api\Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider) for the given .
 
   syntax:
     content:
@@ -87,9 +88,10 @@ items:
     parameters:
     - id: originalCodeFixProvider
       type:
-        id: CodeFixProvider
-        href: C:\roslyn\src\Workspaces\Core\Portable\CodeFixes\CodeFixProvider.cs
-      description: Original code fix provider that returned this fix all provider from [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.GetFixAllProvider](api\Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider) method.
+        id: Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider
+        name: CodeFixProvider
+        href: api\Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider
+      description: Original code fix provider that returned this fix all provider from [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.GetFixAllProvider](#/api\Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider) method.
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllProvider.GetFixAsync(Microsoft.CodeAnalysis.CodeFixes.FixAllContext)
@@ -117,7 +119,8 @@ items:
     parameters:
     - id: fixAllContext
       type:
-        id: FixAllContext
-        href: C:\roslyn\src\Workspaces\Core\Portable\CodeFixes\FixAllOccurrences\FixAllContext.cs
+        id: Microsoft.CodeAnalysis.CodeFixes.FixAllContext
+        name: FixAllContext
+        href: api\Microsoft.CodeAnalysis.CodeFixes.FixAllContext
     return:
       id: Task

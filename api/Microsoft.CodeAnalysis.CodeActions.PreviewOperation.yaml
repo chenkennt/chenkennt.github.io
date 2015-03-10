@@ -22,10 +22,12 @@ syntax:
     CSharp: public abstract class PreviewOperation
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
-- id: CodeActionOperation
-  href: C:\roslyn\src\Workspaces\Core\Portable\CodeActions\Operations\CodeActionOperation.cs
+- id: Microsoft.CodeAnalysis.CodeActions.CodeActionOperation
+  name: CodeActionOperation
+  href: api\Microsoft.CodeAnalysis.CodeActions.CodeActionOperation
 items:
 - id: Microsoft.CodeAnalysis.CodeActions.PreviewOperation.GetPreview
   yaml: api\Microsoft.CodeAnalysis.CodeActions.PreviewOperation.yaml
@@ -46,7 +48,7 @@ items:
   summary: >+
     Gets a custom preview control for the operation.
 
-    If preview is null and [Microsoft.CodeAnalysis.CodeActions.CodeActionOperation.Title](api\Microsoft.CodeAnalysis.CodeActions.CodeActionOperation) is non-null, then [Microsoft.CodeAnalysis.CodeActions.CodeActionOperation.Title](api\Microsoft.CodeAnalysis.CodeActions.CodeActionOperation) is used to generate the preview.
+    If preview is null and [Microsoft.CodeAnalysis.CodeActions.CodeActionOperation.Title](#/api\Microsoft.CodeAnalysis.CodeActions.CodeActionOperation) is non-null, then [Microsoft.CodeAnalysis.CodeActions.CodeActionOperation.Title](#/api\Microsoft.CodeAnalysis.CodeActions.CodeActionOperation) is used to generate the preview.
 
   syntax:
     content:

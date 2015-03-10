@@ -19,6 +19,7 @@ syntax:
     CSharp: public static partial class SymbolFinder
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -47,23 +48,27 @@ items:
     parameters:
     - id: semanticModel
       type:
-        id: SemanticModel
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+        id: Microsoft.CodeAnalysis.SemanticModel
+        name: SemanticModel
+        href: api\Microsoft.CodeAnalysis.SemanticModel
       description: The semantic model associated with the document.
     - id: position
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: The character position within the document.
     - id: workspace
       type:
-        id: Workspace
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Workspace.cs
+        id: Microsoft.CodeAnalysis.Workspace
+        name: Workspace
+        href: api\Microsoft.CodeAnalysis.Workspace
       description: A workspace to provide context.
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
       description: A CancellationToken.
@@ -91,16 +96,19 @@ items:
     parameters:
     - id: document
       type:
-        id: Document
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Document.cs
+        id: Microsoft.CodeAnalysis.Document
+        name: Document
+        href: api\Microsoft.CodeAnalysis.Document
     - id: position
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -132,15 +140,18 @@ items:
     parameters:
     - id: symbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
     - id: solution
       type:
-        id: Solution
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Solution.CompilationTracker.cs
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api\Microsoft.CodeAnalysis.Solution
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -183,16 +194,19 @@ items:
     - id: symbol
       type:
         id: TSymbol
-        href: C:\roslyn\src\Workspaces\Core\Portable\FindSymbols\SymbolFinder.cs
+        name: TSymbol
+        href: TSymbol
       description: The symbol to find corresponding matches for.
     - id: compilation
       type:
-        id: Compilation
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\Compilation.cs
+        id: Microsoft.CodeAnalysis.Compilation
+        name: Compilation
+        href: api\Microsoft.CodeAnalysis.Compilation
       description: A compilation to find the corresponding symbol within. The compilation may or may not be the origin of the symbol.
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
       description: A CancellationToken.
@@ -223,21 +237,25 @@ items:
     parameters:
     - id: project
       type:
-        id: Project
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Project.cs
+        id: Microsoft.CodeAnalysis.Project
+        name: Project
+        href: api\Microsoft.CodeAnalysis.Project
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: ignoreCase
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -267,25 +285,30 @@ items:
     parameters:
     - id: project
       type:
-        id: Project
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Project.cs
+        id: Microsoft.CodeAnalysis.Project
+        name: Project
+        href: api\Microsoft.CodeAnalysis.Project
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: ignoreCase
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: filter
       type:
-        id: SymbolFilter
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\SymbolFilter.cs
+        id: Microsoft.CodeAnalysis.SymbolFilter
+        name: SymbolFilter
+        href: Microsoft.CodeAnalysis.SymbolFilter
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -315,21 +338,25 @@ items:
     parameters:
     - id: solution
       type:
-        id: Solution
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Solution.CompilationTracker.cs
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api\Microsoft.CodeAnalysis.Solution
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: ignoreCase
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -359,25 +386,30 @@ items:
     parameters:
     - id: solution
       type:
-        id: Solution
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Solution.CompilationTracker.cs
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api\Microsoft.CodeAnalysis.Solution
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: ignoreCase
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: filter
       type:
-        id: SymbolFilter
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\SymbolFilter.cs
+        id: Microsoft.CodeAnalysis.SymbolFilter
+        name: SymbolFilter
+        href: Microsoft.CodeAnalysis.SymbolFilter
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -407,21 +439,25 @@ items:
     parameters:
     - id: project
       type:
-        id: Project
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Project.cs
+        id: Microsoft.CodeAnalysis.Project
+        name: Project
+        href: api\Microsoft.CodeAnalysis.Project
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: ignoreCase
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -451,25 +487,30 @@ items:
     parameters:
     - id: project
       type:
-        id: Project
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Project.cs
+        id: Microsoft.CodeAnalysis.Project
+        name: Project
+        href: api\Microsoft.CodeAnalysis.Project
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: ignoreCase
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: filter
       type:
-        id: SymbolFilter
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\SymbolFilter.cs
+        id: Microsoft.CodeAnalysis.SymbolFilter
+        name: SymbolFilter
+        href: Microsoft.CodeAnalysis.SymbolFilter
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -499,16 +540,19 @@ items:
     parameters:
     - id: solution
       type:
-        id: Solution
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Solution.CompilationTracker.cs
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api\Microsoft.CodeAnalysis.Solution
     - id: predicate
       type:
         id: System.Func{System.String,System.Boolean}
+        name: System.Func{System.String,System.Boolean}
         href: System.Runtime
         isExternal: true
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -538,20 +582,24 @@ items:
     parameters:
     - id: solution
       type:
-        id: Solution
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Solution.CompilationTracker.cs
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api\Microsoft.CodeAnalysis.Solution
     - id: predicate
       type:
         id: System.Func{System.String,System.Boolean}
+        name: System.Func{System.String,System.Boolean}
         href: System.Runtime
         isExternal: true
     - id: filter
       type:
-        id: SymbolFilter
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\SymbolFilter.cs
+        id: Microsoft.CodeAnalysis.SymbolFilter
+        name: SymbolFilter
+        href: Microsoft.CodeAnalysis.SymbolFilter
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -581,16 +629,19 @@ items:
     parameters:
     - id: project
       type:
-        id: Project
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Project.cs
+        id: Microsoft.CodeAnalysis.Project
+        name: Project
+        href: api\Microsoft.CodeAnalysis.Project
     - id: predicate
       type:
         id: System.Func{System.String,System.Boolean}
+        name: System.Func{System.String,System.Boolean}
         href: System.Runtime
         isExternal: true
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -620,20 +671,24 @@ items:
     parameters:
     - id: project
       type:
-        id: Project
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Project.cs
+        id: Microsoft.CodeAnalysis.Project
+        name: Project
+        href: api\Microsoft.CodeAnalysis.Project
     - id: predicate
       type:
         id: System.Func{System.String,System.Boolean}
+        name: System.Func{System.String,System.Boolean}
         href: System.Runtime
         isExternal: true
     - id: filter
       type:
-        id: SymbolFilter
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\SymbolFilter.cs
+        id: Microsoft.CodeAnalysis.SymbolFilter
+        name: SymbolFilter
+        href: Microsoft.CodeAnalysis.SymbolFilter
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -663,20 +718,24 @@ items:
     parameters:
     - id: symbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
     - id: solution
       type:
-        id: Solution
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Solution.CompilationTracker.cs
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api\Microsoft.CodeAnalysis.Solution
     - id: projects
       type:
         id: System.Collections.Immutable.IImmutableSet{Microsoft.CodeAnalysis.Project}
+        name: System.Collections.Immutable.IImmutableSet{Microsoft.CodeAnalysis.Project}
         href: System.Collections.Immutable
         isExternal: true
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -706,20 +765,24 @@ items:
     parameters:
     - id: symbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
     - id: solution
       type:
-        id: Solution
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Solution.CompilationTracker.cs
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api\Microsoft.CodeAnalysis.Solution
     - id: projects
       type:
         id: System.Collections.Immutable.IImmutableSet{Microsoft.CodeAnalysis.Project}
+        name: System.Collections.Immutable.IImmutableSet{Microsoft.CodeAnalysis.Project}
         href: System.Collections.Immutable
         isExternal: true
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -749,20 +812,24 @@ items:
     parameters:
     - id: symbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
     - id: solution
       type:
-        id: Solution
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Solution.CompilationTracker.cs
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api\Microsoft.CodeAnalysis.Solution
     - id: projects
       type:
         id: System.Collections.Immutable.IImmutableSet{Microsoft.CodeAnalysis.Project}
+        name: System.Collections.Immutable.IImmutableSet{Microsoft.CodeAnalysis.Project}
         href: System.Collections.Immutable
         isExternal: true
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -792,15 +859,18 @@ items:
     parameters:
     - id: symbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
     - id: solution
       type:
-        id: Solution
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Solution.CompilationTracker.cs
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api\Microsoft.CodeAnalysis.Solution
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -830,20 +900,24 @@ items:
     parameters:
     - id: symbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
     - id: solution
       type:
-        id: Solution
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Solution.CompilationTracker.cs
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api\Microsoft.CodeAnalysis.Solution
     - id: documents
       type:
         id: System.Collections.Immutable.IImmutableSet{Microsoft.CodeAnalysis.Document}
+        name: System.Collections.Immutable.IImmutableSet{Microsoft.CodeAnalysis.Document}
         href: System.Collections.Immutable
         isExternal: true
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -873,17 +947,20 @@ items:
     parameters:
     - id: symbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
       description: The symbol to find references to.
     - id: solution
       type:
-        id: Solution
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Solution.CompilationTracker.cs
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api\Microsoft.CodeAnalysis.Solution
       description: The solution to find references within.
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
       description: A cancellation token.
@@ -914,23 +991,27 @@ items:
     parameters:
     - id: symbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
       description: The symbol to find references to.
     - id: solution
       type:
-        id: Solution
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Solution.CompilationTracker.cs
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api\Microsoft.CodeAnalysis.Solution
       description: The solution to find references within.
     - id: documents
       type:
         id: System.Collections.Immutable.IImmutableSet{Microsoft.CodeAnalysis.Document}
+        name: System.Collections.Immutable.IImmutableSet{Microsoft.CodeAnalysis.Document}
         href: System.Collections.Immutable
         isExternal: true
       description: A set of documents to be searched. If documents is null, then that means "all documents".
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
       description: A cancellation token.
@@ -961,18 +1042,21 @@ items:
     parameters:
     - id: symbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
       description: The symbol to find references to.
     - id: solution
       type:
-        id: Solution
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Solution.CompilationTracker.cs
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api\Microsoft.CodeAnalysis.Solution
       description: The solution to find references within.
     - id: progress
       type:
-        id: IFindReferencesProgress
-        href: C:\roslyn\src\Workspaces\Core\Portable\FindSymbols\IFindReferencesProgress.cs
+        id: Microsoft.CodeAnalysis.FindSymbols.IFindReferencesProgress
+        name: IFindReferencesProgress
+        href: api\Microsoft.CodeAnalysis.FindSymbols.IFindReferencesProgress
       description: >-
         An optional progress object that will receive progress
 
@@ -980,12 +1064,14 @@ items:
     - id: documents
       type:
         id: System.Collections.Immutable.IImmutableSet{Microsoft.CodeAnalysis.Document}
+        name: System.Collections.Immutable.IImmutableSet{Microsoft.CodeAnalysis.Document}
         href: System.Collections.Immutable
         isExternal: true
       description: An optional set of documents to be searched. If documents is null, then that means "all documents".
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
       description: An optional cancellation token.

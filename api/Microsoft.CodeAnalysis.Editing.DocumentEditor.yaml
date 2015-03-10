@@ -22,10 +22,12 @@ syntax:
     CSharp: public class DocumentEditor
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
-- id: SyntaxEditor
-  href: C:\roslyn\src\Workspaces\Core\Portable\Editing\SyntaxEditor.cs
+- id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
+  name: SyntaxEditor
+  href: api\Microsoft.CodeAnalysis.Editing.SyntaxEditor
 items:
 - id: Microsoft.CodeAnalysis.Editing.DocumentEditor.CreateAsync(Microsoft.CodeAnalysis.Document,System.Threading.CancellationToken)
   yaml: api\Microsoft.CodeAnalysis.Editing.DocumentEditor.yaml
@@ -44,7 +46,7 @@ items:
     path: src\Workspaces\Core\Portable\Editing\DocumentEditor.cs
     startLine: 29
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.Editing.DocumentEditor](api\Microsoft.CodeAnalysis.Editing.DocumentEditor) instance.
+    Creates a new [Microsoft.CodeAnalysis.Editing.DocumentEditor](#/api\Microsoft.CodeAnalysis.Editing.DocumentEditor) instance.
 
   syntax:
     content:
@@ -52,11 +54,13 @@ items:
     parameters:
     - id: document
       type:
-        id: Document
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Document.cs
+        id: Microsoft.CodeAnalysis.Document
+        name: Document
+        href: api\Microsoft.CodeAnalysis.Document
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -78,7 +82,7 @@ items:
     path: src\Workspaces\Core\Portable\Editing\DocumentEditor.cs
     startLine: 44
   summary: >+
-    The [Microsoft.CodeAnalysis.Document](api\Microsoft.CodeAnalysis.Document) specified when the editor was first created.
+    The [Microsoft.CodeAnalysis.Document](#/api\Microsoft.CodeAnalysis.Document) specified when the editor was first created.
 
   syntax:
     content:
@@ -86,8 +90,9 @@ items:
     parameters:
     - id: OriginalDocument
       type:
-        id: Document
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Document.cs
+        id: Microsoft.CodeAnalysis.Document
+        name: Document
+        href: api\Microsoft.CodeAnalysis.Document
 - id: Microsoft.CodeAnalysis.Editing.DocumentEditor.get_OriginalDocument
   yaml: api\Microsoft.CodeAnalysis.Editing.DocumentEditor.yaml
   href: api\Microsoft.CodeAnalysis.Editing.DocumentEditor
@@ -120,7 +125,7 @@ items:
     path: src\Workspaces\Core\Portable\Editing\DocumentEditor.cs
     startLine: 52
   summary: >+
-    The [Microsoft.CodeAnalysis.SemanticModel](api\Microsoft.CodeAnalysis.SemanticModel) of the original document.
+    The [Microsoft.CodeAnalysis.SemanticModel](#/api\Microsoft.CodeAnalysis.SemanticModel) of the original document.
 
   syntax:
     content:
@@ -128,8 +133,9 @@ items:
     parameters:
     - id: SemanticModel
       type:
-        id: SemanticModel
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+        id: Microsoft.CodeAnalysis.SemanticModel
+        name: SemanticModel
+        href: api\Microsoft.CodeAnalysis.SemanticModel
 - id: Microsoft.CodeAnalysis.Editing.DocumentEditor.get_SemanticModel
   yaml: api\Microsoft.CodeAnalysis.Editing.DocumentEditor.yaml
   href: api\Microsoft.CodeAnalysis.Editing.DocumentEditor
@@ -162,7 +168,7 @@ items:
     path: src\Workspaces\Core\Portable\Editing\DocumentEditor.cs
     startLine: 60
   summary: >+
-    Returns the changed [Microsoft.CodeAnalysis.Document](api\Microsoft.CodeAnalysis.Document).
+    Returns the changed [Microsoft.CodeAnalysis.Document](#/api\Microsoft.CodeAnalysis.Document).
 
   syntax:
     content:

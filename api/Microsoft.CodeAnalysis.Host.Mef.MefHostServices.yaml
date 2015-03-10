@@ -19,10 +19,12 @@ syntax:
     CSharp: public class MefHostServices
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
-- id: HostServices
-  href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Host\HostServices.cs
+- id: Microsoft.CodeAnalysis.Host.HostServices
+  name: HostServices
+  href: api\Microsoft.CodeAnalysis.Host.HostServices
 items:
 - id: Microsoft.CodeAnalysis.Host.Mef.MefHostServices.#ctor(System.Composition.CompositionContext)
   yaml: api\Microsoft.CodeAnalysis.Host.Mef.MefHostServices.yaml
@@ -47,6 +49,7 @@ items:
     - id: compositionContext
       type:
         id: System.Composition.CompositionContext
+        name: System.Composition.CompositionContext
         href: System.Composition.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Host.Mef.MefHostServices.Create(System.Composition.CompositionContext)
@@ -72,6 +75,7 @@ items:
     - id: compositionContext
       type:
         id: System.Composition.CompositionContext
+        name: System.Composition.CompositionContext
         href: System.Composition.Runtime
         isExternal: true
     return:
@@ -99,6 +103,7 @@ items:
     - id: assemblies
       type:
         id: System.Collections.Generic.IEnumerable{System.Reflection.Assembly}
+        name: System.Collections.Generic.IEnumerable{System.Reflection.Assembly}
         href: System.Runtime
         isExternal: true
     return:
@@ -125,8 +130,9 @@ items:
     parameters:
     - id: DefaultHost
       type:
-        id: MefHostServices
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Host\Mef\MefHostServices.cs
+        id: Microsoft.CodeAnalysis.Host.Mef.MefHostServices
+        name: MefHostServices
+        href: api\Microsoft.CodeAnalysis.Host.Mef.MefHostServices
 - id: Microsoft.CodeAnalysis.Host.Mef.MefHostServices.get_DefaultHost
   yaml: api\Microsoft.CodeAnalysis.Host.Mef.MefHostServices.yaml
   href: api\Microsoft.CodeAnalysis.Host.Mef.MefHostServices
@@ -165,6 +171,7 @@ items:
     - id: DefaultAssemblies
       type:
         id: System.Collections.Immutable.ImmutableArray{System.Reflection.Assembly}
+        name: System.Collections.Immutable.ImmutableArray{System.Reflection.Assembly}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.Host.Mef.MefHostServices.get_DefaultAssemblies

@@ -15,16 +15,18 @@ source:
   path: src\Compilers\Core\Portable\Syntax\SyntaxTokenList.cs
   startLine: 15
 summary: >+
-  Represents a read-only list of [Microsoft.CodeAnalysis.SyntaxToken](api\Microsoft.CodeAnalysis.SyntaxToken).
+  Represents a read-only list of [Microsoft.CodeAnalysis.SyntaxToken](#/api\Microsoft.CodeAnalysis.SyntaxToken).
 
 syntax:
   content:
     CSharp: public partial struct SyntaxTokenList
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -54,6 +56,7 @@ items:
     - id: Count
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxTokenList.get_Count
@@ -130,8 +133,9 @@ items:
     parameters:
     - id: FullSpan
       type:
-        id: TextSpan
-        href: C:\roslyn\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.SyntaxTokenList.get_FullSpan
   yaml: api\Microsoft.CodeAnalysis.SyntaxTokenList.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxTokenList
@@ -172,8 +176,9 @@ items:
     parameters:
     - id: Span
       type:
-        id: TextSpan
-        href: C:\roslyn\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.SyntaxTokenList.get_Span
   yaml: api\Microsoft.CodeAnalysis.SyntaxTokenList.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxTokenList
@@ -340,7 +345,7 @@ items:
     path: src\Compilers\Core\Portable\Syntax\SyntaxTokenList.cs
     startLine: 204
   summary: >+
-    Returns a list which contains all elements of [Microsoft.CodeAnalysis.SyntaxTokenList](api\Microsoft.CodeAnalysis.SyntaxTokenList) in reversed order.
+    Returns a list which contains all elements of [Microsoft.CodeAnalysis.SyntaxTokenList](#/api\Microsoft.CodeAnalysis.SyntaxTokenList) in reversed order.
 
   syntax:
     content:
@@ -348,7 +353,7 @@ items:
     parameters: []
     return:
       id: Reversed
-      description: '[Microsoft.CodeAnalysis.SyntaxTokenList.Reversed](api\Microsoft.CodeAnalysis.SyntaxTokenList.Reversed) which contains all elements of [Microsoft.CodeAnalysis.SyntaxTokenList](api\Microsoft.CodeAnalysis.SyntaxTokenList) in reversed order'
+      description: '[Microsoft.CodeAnalysis.SyntaxTokenList.Reversed](#/api\Microsoft.CodeAnalysis.SyntaxTokenList.Reversed) which contains all elements of [Microsoft.CodeAnalysis.SyntaxTokenList](#/api\Microsoft.CodeAnalysis.SyntaxTokenList) in reversed order'
 - id: Microsoft.CodeAnalysis.SyntaxTokenList.IndexOf(Microsoft.CodeAnalysis.SyntaxToken)
   yaml: api\Microsoft.CodeAnalysis.SyntaxTokenList.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxTokenList
@@ -371,8 +376,9 @@ items:
     parameters:
     - id: tokenInList
       type:
-        id: SyntaxToken
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxToken
+        name: SyntaxToken
+        href: api\Microsoft.CodeAnalysis.SyntaxToken
     return:
       id: Int32
 - id: Microsoft.CodeAnalysis.SyntaxTokenList.Add(Microsoft.CodeAnalysis.SyntaxToken)
@@ -392,7 +398,7 @@ items:
     path: src\Compilers\Core\Portable\Syntax\SyntaxTokenList.cs
     startLine: 267
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.SyntaxTokenList](api\Microsoft.CodeAnalysis.SyntaxTokenList) with the specified token added to the end.
+    Creates a new [Microsoft.CodeAnalysis.SyntaxTokenList](#/api\Microsoft.CodeAnalysis.SyntaxTokenList) with the specified token added to the end.
 
   syntax:
     content:
@@ -400,8 +406,9 @@ items:
     parameters:
     - id: token
       type:
-        id: SyntaxToken
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxToken
+        name: SyntaxToken
+        href: api\Microsoft.CodeAnalysis.SyntaxToken
       description: The token to add.
     return:
       id: SyntaxTokenList
@@ -422,7 +429,7 @@ items:
     path: src\Compilers\Core\Portable\Syntax\SyntaxTokenList.cs
     startLine: 276
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.SyntaxTokenList](api\Microsoft.CodeAnalysis.SyntaxTokenList) with the specified tokens added to the end.
+    Creates a new [Microsoft.CodeAnalysis.SyntaxTokenList](#/api\Microsoft.CodeAnalysis.SyntaxTokenList) with the specified tokens added to the end.
 
   syntax:
     content:
@@ -431,6 +438,7 @@ items:
     - id: tokens
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
         href: System.Runtime
         isExternal: true
       description: The tokens to add.
@@ -453,7 +461,7 @@ items:
     path: src\Compilers\Core\Portable\Syntax\SyntaxTokenList.cs
     startLine: 286
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.SyntaxTokenList](api\Microsoft.CodeAnalysis.SyntaxTokenList) with the specified token insert at the index.
+    Creates a new [Microsoft.CodeAnalysis.SyntaxTokenList](#/api\Microsoft.CodeAnalysis.SyntaxTokenList) with the specified token insert at the index.
 
   syntax:
     content:
@@ -462,13 +470,15 @@ items:
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index to insert the new token.
     - id: token
       type:
-        id: SyntaxToken
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxToken
+        name: SyntaxToken
+        href: api\Microsoft.CodeAnalysis.SyntaxToken
       description: The token to insert.
     return:
       id: SyntaxTokenList
@@ -489,7 +499,7 @@ items:
     path: src\Compilers\Core\Portable\Syntax\SyntaxTokenList.cs
     startLine: 301
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.SyntaxTokenList](api\Microsoft.CodeAnalysis.SyntaxTokenList) with the specified tokens insert at the index.
+    Creates a new [Microsoft.CodeAnalysis.SyntaxTokenList](#/api\Microsoft.CodeAnalysis.SyntaxTokenList) with the specified tokens insert at the index.
 
   syntax:
     content:
@@ -498,12 +508,14 @@ items:
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index to insert the new tokens.
     - id: tokens
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
         href: System.Runtime
         isExternal: true
       description: The tokens to insert.
@@ -526,7 +538,7 @@ items:
     path: src\Compilers\Core\Portable\Syntax\SyntaxTokenList.cs
     startLine: 336
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.SyntaxTokenList](api\Microsoft.CodeAnalysis.SyntaxTokenList) with the token at the specified index removed.
+    Creates a new [Microsoft.CodeAnalysis.SyntaxTokenList](#/api\Microsoft.CodeAnalysis.SyntaxTokenList) with the token at the specified index removed.
 
   syntax:
     content:
@@ -535,6 +547,7 @@ items:
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index of the token to remove.
@@ -557,7 +570,7 @@ items:
     path: src\Compilers\Core\Portable\Syntax\SyntaxTokenList.cs
     startLine: 352
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.SyntaxTokenList](api\Microsoft.CodeAnalysis.SyntaxTokenList) with the specified token removed.
+    Creates a new [Microsoft.CodeAnalysis.SyntaxTokenList](#/api\Microsoft.CodeAnalysis.SyntaxTokenList) with the specified token removed.
 
   syntax:
     content:
@@ -565,8 +578,9 @@ items:
     parameters:
     - id: tokenInList
       type:
-        id: SyntaxToken
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxToken
+        name: SyntaxToken
+        href: api\Microsoft.CodeAnalysis.SyntaxToken
       description: The token to remove.
     return:
       id: SyntaxTokenList
@@ -587,7 +601,7 @@ items:
     path: src\Compilers\Core\Portable\Syntax\SyntaxTokenList.cs
     startLine: 370
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.SyntaxTokenList](api\Microsoft.CodeAnalysis.SyntaxTokenList) with the specified token replaced with a new token.
+    Creates a new [Microsoft.CodeAnalysis.SyntaxTokenList](#/api\Microsoft.CodeAnalysis.SyntaxTokenList) with the specified token replaced with a new token.
 
   syntax:
     content:
@@ -595,13 +609,15 @@ items:
     parameters:
     - id: tokenInList
       type:
-        id: SyntaxToken
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxToken
+        name: SyntaxToken
+        href: api\Microsoft.CodeAnalysis.SyntaxToken
       description: The token to replace.
     - id: newToken
       type:
-        id: SyntaxToken
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxToken
+        name: SyntaxToken
+        href: api\Microsoft.CodeAnalysis.SyntaxToken
       description: The new token.
     return:
       id: SyntaxTokenList
@@ -622,7 +638,7 @@ items:
     path: src\Compilers\Core\Portable\Syntax\SyntaxTokenList.cs
     startLine: 385
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.SyntaxTokenList](api\Microsoft.CodeAnalysis.SyntaxTokenList) with the specified token replaced with new tokens.
+    Creates a new [Microsoft.CodeAnalysis.SyntaxTokenList](#/api\Microsoft.CodeAnalysis.SyntaxTokenList) with the specified token replaced with new tokens.
 
   syntax:
     content:
@@ -630,12 +646,14 @@ items:
     parameters:
     - id: tokenInList
       type:
-        id: SyntaxToken
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxToken
+        name: SyntaxToken
+        href: api\Microsoft.CodeAnalysis.SyntaxToken
       description: The token to replace.
     - id: newTokens
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
         href: System.Runtime
         isExternal: true
       description: The new tokens.
@@ -658,7 +676,7 @@ items:
     path: src\Compilers\Core\Portable\Syntax\SyntaxTokenList.cs
     startLine: 410
   summary: >+
-    Returns an enumerator for the tokens in the [Microsoft.CodeAnalysis.SyntaxTokenList](api\Microsoft.CodeAnalysis.SyntaxTokenList)
+    Returns an enumerator for the tokens in the [Microsoft.CodeAnalysis.SyntaxTokenList](#/api\Microsoft.CodeAnalysis.SyntaxTokenList)
 
   syntax:
     content:
@@ -724,8 +742,9 @@ items:
     parameters:
     - id: other
       type:
-        id: SyntaxTokenList
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTokenList.cs
+        id: Microsoft.CodeAnalysis.SyntaxTokenList
+        name: SyntaxTokenList
+        href: api\Microsoft.CodeAnalysis.SyntaxTokenList
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxTokenList.Equals(System.Object)
@@ -745,7 +764,7 @@ items:
     path: src\Compilers\Core\Portable\Syntax\SyntaxTokenList.cs
     startLine: 466
   summary: >+
-    Compares this [Microsoft.CodeAnalysis.SyntaxTokenList](api\Microsoft.CodeAnalysis.SyntaxTokenList) with the  for equality.
+    Compares this [Microsoft.CodeAnalysis.SyntaxTokenList](#/api\Microsoft.CodeAnalysis.SyntaxTokenList) with the  for equality.
 
   syntax:
     content:
@@ -754,6 +773,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -776,7 +796,7 @@ items:
     path: src\Compilers\Core\Portable\Syntax\SyntaxTokenList.cs
     startLine: 474
   summary: >+
-    Serves as a hash function for the [Microsoft.CodeAnalysis.SyntaxTokenList](api\Microsoft.CodeAnalysis.SyntaxTokenList)
+    Serves as a hash function for the [Microsoft.CodeAnalysis.SyntaxTokenList](#/api\Microsoft.CodeAnalysis.SyntaxTokenList)
 
   syntax:
     content:
@@ -809,8 +829,9 @@ items:
     parameters:
     - id: token
       type:
-        id: SyntaxToken
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxToken
+        name: SyntaxToken
+        href: api\Microsoft.CodeAnalysis.SyntaxToken
       description: Element of the return Token List
     return:
       id: SyntaxTokenList

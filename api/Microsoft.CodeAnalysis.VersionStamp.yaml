@@ -22,9 +22,11 @@ syntax:
     CSharp: public struct VersionStamp
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -79,6 +81,7 @@ items:
     - id: utcIimeLastModified
       type:
         id: System.DateTime
+        name: System.DateTime
         href: System.Runtime
         isExternal: true
     return:
@@ -110,8 +113,9 @@ items:
     parameters:
     - id: version
       type:
-        id: VersionStamp
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\VersionStamp.cs
+        id: Microsoft.CodeAnalysis.VersionStamp
+        name: VersionStamp
+        href: api\Microsoft.CodeAnalysis.VersionStamp
     return:
       id: VersionStamp
 - id: Microsoft.CodeAnalysis.VersionStamp.GetNewerVersion
@@ -211,6 +215,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -237,8 +242,9 @@ items:
     parameters:
     - id: version
       type:
-        id: VersionStamp
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\VersionStamp.cs
+        id: Microsoft.CodeAnalysis.VersionStamp
+        name: VersionStamp
+        href: api\Microsoft.CodeAnalysis.VersionStamp
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.VersionStamp.op_Equality(Microsoft.CodeAnalysis.VersionStamp,Microsoft.CodeAnalysis.VersionStamp)

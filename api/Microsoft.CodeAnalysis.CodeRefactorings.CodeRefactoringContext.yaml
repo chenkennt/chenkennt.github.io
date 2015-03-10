@@ -15,16 +15,18 @@ source:
   path: src\Workspaces\Core\Portable\CodeRefactorings\CodeRefactoringContext.cs
   startLine: 12
 summary: >+
-  Context for code refactorings provided by an [Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider](api\Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider).
+  Context for code refactorings provided by an [Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider](#/api\Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider).
 
 syntax:
   content:
     CSharp: public struct CodeRefactoringContext
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -45,7 +47,7 @@ items:
     path: src\Workspaces\Core\Portable\CodeRefactorings\CodeRefactoringContext.cs
     startLine: 21
   summary: >+
-    Document corresponding to the [Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext.Span](api\Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext) to refactor.
+    Document corresponding to the [Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext.Span](#/api\Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext) to refactor.
 
   syntax:
     content:
@@ -53,8 +55,9 @@ items:
     parameters:
     - id: Document
       type:
-        id: Document
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Document.cs
+        id: Microsoft.CodeAnalysis.Document
+        name: Document
+        href: api\Microsoft.CodeAnalysis.Document
 - id: Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext.get_Document
   yaml: api\Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext.yaml
   href: api\Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext
@@ -87,7 +90,7 @@ items:
     path: src\Workspaces\Core\Portable\CodeRefactorings\CodeRefactoringContext.cs
     startLine: 26
   summary: >+
-    Text span within the [Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext.Document](api\Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext) to refactor.
+    Text span within the [Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext.Document](#/api\Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext) to refactor.
 
   syntax:
     content:
@@ -95,8 +98,9 @@ items:
     parameters:
     - id: Span
       type:
-        id: TextSpan
-        href: C:\roslyn\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext.get_Span
   yaml: api\Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext.yaml
   href: api\Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext
@@ -138,6 +142,7 @@ items:
     - id: CancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
 - id: Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext.get_CancellationToken
@@ -172,7 +177,7 @@ items:
     path: src\Workspaces\Core\Portable\CodeRefactorings\CodeRefactoringContext.cs
     startLine: 38
   summary: >+
-    Creates a code refactoring context to be passed into [Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider.ComputeRefactoringsAsync(Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext)](api\Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider) method.
+    Creates a code refactoring context to be passed into [Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider.ComputeRefactoringsAsync(Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext)](#/api\Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider) method.
 
   syntax:
     content:
@@ -180,20 +185,24 @@ items:
     parameters:
     - id: document
       type:
-        id: Document
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Document.cs
+        id: Microsoft.CodeAnalysis.Document
+        name: Document
+        href: api\Microsoft.CodeAnalysis.Document
     - id: span
       type:
-        id: TextSpan
-        href: C:\roslyn\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: Microsoft.CodeAnalysis.Text.TextSpan
     - id: registerRefactoring
       type:
         id: System.Action{Microsoft.CodeAnalysis.CodeActions.CodeAction}
+        name: System.Action{Microsoft.CodeAnalysis.CodeActions.CodeAction}
         href: System.Runtime
         isExternal: true
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
 - id: Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext.RegisterRefactoring(Microsoft.CodeAnalysis.CodeActions.CodeAction)
@@ -221,8 +230,9 @@ items:
     parameters:
     - id: action
       type:
-        id: CodeAction
-        href: C:\roslyn\src\Workspaces\Core\Portable\CodeActions\CodeAction.cs
-      description: The [Microsoft.CodeAnalysis.CodeActions.CodeAction](api\Microsoft.CodeAnalysis.CodeActions.CodeAction) that will be invoked to apply the refactoring.
+        id: Microsoft.CodeAnalysis.CodeActions.CodeAction
+        name: CodeAction
+        href: api\Microsoft.CodeAnalysis.CodeActions.CodeAction
+      description: The [Microsoft.CodeAnalysis.CodeActions.CodeAction](#/api\Microsoft.CodeAnalysis.CodeActions.CodeAction) that will be invoked to apply the refactoring.
     return:
       id: Void

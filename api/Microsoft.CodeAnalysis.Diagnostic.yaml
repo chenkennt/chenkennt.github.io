@@ -22,6 +22,7 @@ syntax:
     CSharp: public abstract partial class Diagnostic
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -42,7 +43,7 @@ items:
     path: src\Compilers\Core\Portable\Diagnostic\Diagnostic.cs
     startLine: 31
   summary: >+
-    Creates a [Microsoft.CodeAnalysis.Diagnostic](api\Microsoft.CodeAnalysis.Diagnostic) instance.
+    Creates a [Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic) instance.
 
   syntax:
     content:
@@ -50,22 +51,25 @@ items:
     parameters:
     - id: descriptor
       type:
-        id: DiagnosticDescriptor
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
-      description: A [Microsoft.CodeAnalysis.DiagnosticDescriptor](api\Microsoft.CodeAnalysis.DiagnosticDescriptor) describing the diagnostic
+        id: Microsoft.CodeAnalysis.DiagnosticDescriptor
+        name: DiagnosticDescriptor
+        href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
+      description: A [Microsoft.CodeAnalysis.DiagnosticDescriptor](#/api\Microsoft.CodeAnalysis.DiagnosticDescriptor) describing the diagnostic
     - id: location
       type:
-        id: Location
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\Location.cs
-      description: An optional primary location of the diagnostic. If null, [Microsoft.CodeAnalysis.Diagnostic.Location](api\Microsoft.CodeAnalysis.Diagnostic) will return [Microsoft.CodeAnalysis.Location.None](api\Microsoft.CodeAnalysis.Location).
+        id: Microsoft.CodeAnalysis.Location
+        name: Location
+        href: api\Microsoft.CodeAnalysis.Location
+      description: An optional primary location of the diagnostic. If null, [Microsoft.CodeAnalysis.Diagnostic.Location](#/api\Microsoft.CodeAnalysis.Diagnostic) will return [Microsoft.CodeAnalysis.Location.None](#/api\Microsoft.CodeAnalysis.Location).
     - id: messageArgs
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
       description: Arguments to the message of the diagnostic
     return:
       id: Diagnostic
-      description: The [Microsoft.CodeAnalysis.Diagnostic](api\Microsoft.CodeAnalysis.Diagnostic) instance.
+      description: The [Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic) instance.
 - id: Microsoft.CodeAnalysis.Diagnostic.Create(Microsoft.CodeAnalysis.DiagnosticDescriptor,Microsoft.CodeAnalysis.Location,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location},System.Object[])
   yaml: api\Microsoft.CodeAnalysis.Diagnostic.yaml
   href: api\Microsoft.CodeAnalysis.Diagnostic
@@ -83,7 +87,7 @@ items:
     path: src\Compilers\Core\Portable\Diagnostic\Diagnostic.cs
     startLine: 51
   summary: >+
-    Creates a [Microsoft.CodeAnalysis.Diagnostic](api\Microsoft.CodeAnalysis.Diagnostic) instance.
+    Creates a [Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic) instance.
 
   syntax:
     content:
@@ -91,17 +95,20 @@ items:
     parameters:
     - id: descriptor
       type:
-        id: DiagnosticDescriptor
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
-      description: A [Microsoft.CodeAnalysis.DiagnosticDescriptor](api\Microsoft.CodeAnalysis.DiagnosticDescriptor) describing the diagnostic.
+        id: Microsoft.CodeAnalysis.DiagnosticDescriptor
+        name: DiagnosticDescriptor
+        href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
+      description: A [Microsoft.CodeAnalysis.DiagnosticDescriptor](#/api\Microsoft.CodeAnalysis.DiagnosticDescriptor) describing the diagnostic.
     - id: location
       type:
-        id: Location
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\Location.cs
-      description: An optional primary location of the diagnostic. If null, [Microsoft.CodeAnalysis.Diagnostic.Location](api\Microsoft.CodeAnalysis.Diagnostic) will return [Microsoft.CodeAnalysis.Location.None](api\Microsoft.CodeAnalysis.Location).
+        id: Microsoft.CodeAnalysis.Location
+        name: Location
+        href: api\Microsoft.CodeAnalysis.Location
+      description: An optional primary location of the diagnostic. If null, [Microsoft.CodeAnalysis.Diagnostic.Location](#/api\Microsoft.CodeAnalysis.Diagnostic) will return [Microsoft.CodeAnalysis.Location.None](#/api\Microsoft.CodeAnalysis.Location).
     - id: additionalLocations
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location}
         href: System.Runtime
         isExternal: true
       description: >-
@@ -109,15 +116,16 @@ items:
 
             Typically, these are locations of other items referenced in the message.
 
-            If null, [Microsoft.CodeAnalysis.Diagnostic.AdditionalLocations](api\Microsoft.CodeAnalysis.Diagnostic) will return an empty list.
+            If null, [Microsoft.CodeAnalysis.Diagnostic.AdditionalLocations](#/api\Microsoft.CodeAnalysis.Diagnostic) will return an empty list.
     - id: messageArgs
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
       description: Arguments to the message of the diagnostic.
     return:
       id: Diagnostic
-      description: The [Microsoft.CodeAnalysis.Diagnostic](api\Microsoft.CodeAnalysis.Diagnostic) instance.
+      description: The [Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic) instance.
 - id: Microsoft.CodeAnalysis.Diagnostic.Create(System.String,System.String,Microsoft.CodeAnalysis.LocalizableString,Microsoft.CodeAnalysis.DiagnosticSeverity,Microsoft.CodeAnalysis.DiagnosticSeverity,System.Boolean,System.Int32,Microsoft.CodeAnalysis.LocalizableString,Microsoft.CodeAnalysis.LocalizableString,System.String,Microsoft.CodeAnalysis.Location,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location},System.Collections.Generic.IEnumerable{System.String})
   yaml: api\Microsoft.CodeAnalysis.Diagnostic.yaml
   href: api\Microsoft.CodeAnalysis.Diagnostic
@@ -135,7 +143,7 @@ items:
     path: src\Compilers\Core\Portable\Diagnostic\Diagnostic.cs
     startLine: 96
   summary: >+
-    Creates a [Microsoft.CodeAnalysis.Diagnostic](api\Microsoft.CodeAnalysis.Diagnostic) instance which is localizable.
+    Creates a [Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic) instance which is localizable.
 
   syntax:
     content:
@@ -144,66 +152,78 @@ items:
     - id: id
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: An identifier for the diagnostic. For diagnostics generated by the compiler, this will be a numeric code with a prefix such as "CS1001".
     - id: category
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: The category of the diagnostic. For diagnostics generated by the compiler, the category will be "Compiler".
     - id: message
       type:
-        id: LocalizableString
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\LocalizableString.cs
+        id: Microsoft.CodeAnalysis.LocalizableString
+        name: LocalizableString
+        href: Microsoft.CodeAnalysis.LocalizableString
       description: The diagnostic message text.
     - id: severity
       type:
-        id: DiagnosticSeverity
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\DiagnosticSeverity.cs
+        id: Microsoft.CodeAnalysis.DiagnosticSeverity
+        name: DiagnosticSeverity
+        href: api\Microsoft.CodeAnalysis.DiagnosticSeverity
       description: The diagnostic's effective severity.
     - id: defaultSeverity
       type:
-        id: DiagnosticSeverity
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\DiagnosticSeverity.cs
+        id: Microsoft.CodeAnalysis.DiagnosticSeverity
+        name: DiagnosticSeverity
+        href: api\Microsoft.CodeAnalysis.DiagnosticSeverity
       description: The diagnostic's default severity.
     - id: isEnabledByDefault
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
       description: True if the diagnostic is enabled by default
     - id: warningLevel
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
-      description: The warning level, between 1 and 4 if severity is [Microsoft.CodeAnalysis.DiagnosticSeverity.Warning](api\Microsoft.CodeAnalysis.DiagnosticSeverity); otherwise 0.
+      description: The warning level, between 1 and 4 if severity is [Microsoft.CodeAnalysis.DiagnosticSeverity.Warning](#/api\Microsoft.CodeAnalysis.DiagnosticSeverity); otherwise 0.
     - id: title
       type:
-        id: LocalizableString
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\LocalizableString.cs
+        id: Microsoft.CodeAnalysis.LocalizableString
+        name: LocalizableString
+        href: Microsoft.CodeAnalysis.LocalizableString
       description: An optional short localizable title describing the diagnostic.
     - id: description
       type:
-        id: LocalizableString
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\LocalizableString.cs
+        id: Microsoft.CodeAnalysis.LocalizableString
+        name: LocalizableString
+        href: Microsoft.CodeAnalysis.LocalizableString
       description: An optional longer localizable description for the diagnostic.
     - id: helpLink
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: An optional hyperlink that provides more detailed information regarding the diagnostic.
     - id: location
       type:
-        id: Location
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\Location.cs
-      description: An optional primary location of the diagnostic. If null, [Microsoft.CodeAnalysis.Diagnostic.Location](api\Microsoft.CodeAnalysis.Diagnostic) will return [Microsoft.CodeAnalysis.Location.None](api\Microsoft.CodeAnalysis.Location).
+        id: Microsoft.CodeAnalysis.Location
+        name: Location
+        href: api\Microsoft.CodeAnalysis.Location
+      description: An optional primary location of the diagnostic. If null, [Microsoft.CodeAnalysis.Diagnostic.Location](#/api\Microsoft.CodeAnalysis.Diagnostic) will return [Microsoft.CodeAnalysis.Location.None](#/api\Microsoft.CodeAnalysis.Location).
     - id: additionalLocations
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location}
         href: System.Runtime
         isExternal: true
       description: >-
@@ -211,19 +231,20 @@ items:
 
             Typically, these are locations of other items referenced in the message.
 
-            If null, [Microsoft.CodeAnalysis.Diagnostic.AdditionalLocations](api\Microsoft.CodeAnalysis.Diagnostic) will return an empty list.
+            If null, [Microsoft.CodeAnalysis.Diagnostic.AdditionalLocations](#/api\Microsoft.CodeAnalysis.Diagnostic) will return an empty list.
     - id: customTags
       type:
         id: System.Collections.Generic.IEnumerable{System.String}
+        name: System.Collections.Generic.IEnumerable{System.String}
         href: System.Runtime
         isExternal: true
       description: >-
-        An optional set of custom tags for the diagnostic. See [Microsoft.CodeAnalysis.WellKnownDiagnosticTags](api\Microsoft.CodeAnalysis.WellKnownDiagnosticTags) for some well known tags.
+        An optional set of custom tags for the diagnostic. See [Microsoft.CodeAnalysis.WellKnownDiagnosticTags](#/api\Microsoft.CodeAnalysis.WellKnownDiagnosticTags) for some well known tags.
 
-            If null, @P:Microsoft.CodeAnalysis.Diagnostic.CustomTags- will return an empty list.
+            If null, [Microsoft.CodeAnalysis.Diagnostic.CustomTags](#) will return an empty list.
     return:
       id: Diagnostic
-      description: The [Microsoft.CodeAnalysis.Diagnostic](api\Microsoft.CodeAnalysis.Diagnostic) instance.
+      description: The [Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic) instance.
 - id: Microsoft.CodeAnalysis.Diagnostic.Descriptor
   yaml: api\Microsoft.CodeAnalysis.Diagnostic.yaml
   href: api\Microsoft.CodeAnalysis.Diagnostic
@@ -241,7 +262,7 @@ items:
     path: src\Compilers\Core\Portable\Diagnostic\Diagnostic.cs
     startLine: 148
   summary: >+
-    Gets the diagnostic descriptor, which provides a description about a [Microsoft.CodeAnalysis.Diagnostic](api\Microsoft.CodeAnalysis.Diagnostic).
+    Gets the diagnostic descriptor, which provides a description about a [Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic).
 
   syntax:
     content:
@@ -249,8 +270,9 @@ items:
     parameters:
     - id: Descriptor
       type:
-        id: DiagnosticDescriptor
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
+        id: Microsoft.CodeAnalysis.DiagnosticDescriptor
+        name: DiagnosticDescriptor
+        href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
 - id: Microsoft.CodeAnalysis.Diagnostic.get_Descriptor
   yaml: api\Microsoft.CodeAnalysis.Diagnostic.yaml
   href: api\Microsoft.CodeAnalysis.Diagnostic
@@ -292,6 +314,7 @@ items:
     - id: Id
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostic.get_Id
@@ -335,6 +358,7 @@ items:
     - id: formatProvider
       type:
         id: System.IFormatProvider
+        name: System.IFormatProvider
         href: System.Runtime
         isExternal: true
     return:
@@ -356,7 +380,7 @@ items:
     path: src\Compilers\Core\Portable\Diagnostic\Diagnostic.cs
     startLine: 171
   summary: >+
-    Gets the default [Microsoft.CodeAnalysis.DiagnosticSeverity](api\Microsoft.CodeAnalysis.DiagnosticSeverity) of the diagnostic's [Microsoft.CodeAnalysis.DiagnosticDescriptor](api\Microsoft.CodeAnalysis.DiagnosticDescriptor).
+    Gets the default [Microsoft.CodeAnalysis.DiagnosticSeverity](#/api\Microsoft.CodeAnalysis.DiagnosticSeverity) of the diagnostic's [Microsoft.CodeAnalysis.DiagnosticDescriptor](#/api\Microsoft.CodeAnalysis.DiagnosticDescriptor).
 
   syntax:
     content:
@@ -364,8 +388,9 @@ items:
     parameters:
     - id: DefaultSeverity
       type:
-        id: DiagnosticSeverity
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\DiagnosticSeverity.cs
+        id: Microsoft.CodeAnalysis.DiagnosticSeverity
+        name: DiagnosticSeverity
+        href: api\Microsoft.CodeAnalysis.DiagnosticSeverity
 - id: Microsoft.CodeAnalysis.Diagnostic.get_DefaultSeverity
   yaml: api\Microsoft.CodeAnalysis.Diagnostic.yaml
   href: api\Microsoft.CodeAnalysis.Diagnostic
@@ -398,7 +423,7 @@ items:
     path: src\Compilers\Core\Portable\Diagnostic\Diagnostic.cs
     startLine: 180
   summary: >+
-    Gets the effective [Microsoft.CodeAnalysis.DiagnosticSeverity](api\Microsoft.CodeAnalysis.DiagnosticSeverity) of the diagnostic.
+    Gets the effective [Microsoft.CodeAnalysis.DiagnosticSeverity](#/api\Microsoft.CodeAnalysis.DiagnosticSeverity) of the diagnostic.
 
   syntax:
     content:
@@ -406,8 +431,9 @@ items:
     parameters:
     - id: Severity
       type:
-        id: DiagnosticSeverity
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\DiagnosticSeverity.cs
+        id: Microsoft.CodeAnalysis.DiagnosticSeverity
+        name: DiagnosticSeverity
+        href: api\Microsoft.CodeAnalysis.DiagnosticSeverity
 - id: Microsoft.CodeAnalysis.Diagnostic.get_Severity
   yaml: api\Microsoft.CodeAnalysis.Diagnostic.yaml
   href: api\Microsoft.CodeAnalysis.Diagnostic
@@ -440,7 +466,7 @@ items:
     path: src\Compilers\Core\Portable\Diagnostic\Diagnostic.cs
     startLine: 186
   summary: >+
-    Gets the warning level. This is 0 for diagnostics with severity [Microsoft.CodeAnalysis.DiagnosticSeverity.Error](api\Microsoft.CodeAnalysis.DiagnosticSeverity),
+    Gets the warning level. This is 0 for diagnostics with severity [Microsoft.CodeAnalysis.DiagnosticSeverity.Error](#/api\Microsoft.CodeAnalysis.DiagnosticSeverity),
 
     otherwise an integer between 1 and 4.
 
@@ -451,6 +477,7 @@ items:
     - id: WarningLevel
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostic.get_WarningLevel
@@ -494,6 +521,7 @@ items:
     - id: IsWarningAsError
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostic.get_IsWarningAsError
@@ -528,7 +556,7 @@ items:
     path: src\Compilers\Core\Portable\Diagnostic\Diagnostic.cs
     startLine: 212
   summary: >+
-    Gets the primary location of the diagnostic, or [Microsoft.CodeAnalysis.Location.None](api\Microsoft.CodeAnalysis.Location) if no primary location.
+    Gets the primary location of the diagnostic, or [Microsoft.CodeAnalysis.Location.None](#/api\Microsoft.CodeAnalysis.Location) if no primary location.
 
   syntax:
     content:
@@ -536,8 +564,9 @@ items:
     parameters:
     - id: Location
       type:
-        id: Location
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\Location.cs
+        id: Microsoft.CodeAnalysis.Location
+        name: Location
+        href: api\Microsoft.CodeAnalysis.Location
 - id: Microsoft.CodeAnalysis.Diagnostic.get_Location
   yaml: api\Microsoft.CodeAnalysis.Diagnostic.yaml
   href: api\Microsoft.CodeAnalysis.Diagnostic
@@ -581,6 +610,7 @@ items:
     - id: AdditionalLocations
       type:
         id: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.Location}
+        name: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.Location}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostic.get_AdditionalLocations
@@ -643,6 +673,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -691,7 +722,8 @@ items:
     parameters:
     - id: obj
       type:
-        id: Diagnostic
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\Diagnostic.cs
+        id: Microsoft.CodeAnalysis.Diagnostic
+        name: Diagnostic
+        href: api\Microsoft.CodeAnalysis.Diagnostic
     return:
       id: Boolean

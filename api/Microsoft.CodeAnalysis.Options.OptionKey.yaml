@@ -19,9 +19,11 @@ syntax:
     CSharp: public struct OptionKey
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -79,11 +81,13 @@ items:
     parameters:
     - id: option
       type:
-        id: IOption
-        href: C:\roslyn\src\Workspaces\Core\Portable\Options\IOption.cs
+        id: Microsoft.CodeAnalysis.Options.IOption
+        name: IOption
+        href: api\Microsoft.CodeAnalysis.Options.IOption
     - id: language
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Options.OptionKey.Equals(System.Object)
@@ -109,6 +113,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -135,8 +140,9 @@ items:
     parameters:
     - id: other
       type:
-        id: OptionKey
-        href: C:\roslyn\src\Workspaces\Core\Portable\Options\OptionKey.cs
+        id: Microsoft.CodeAnalysis.Options.OptionKey
+        name: OptionKey
+        href: api\Microsoft.CodeAnalysis.Options.OptionKey
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Options.OptionKey.GetHashCode

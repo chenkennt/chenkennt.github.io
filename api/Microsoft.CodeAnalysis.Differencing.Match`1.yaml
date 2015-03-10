@@ -19,6 +19,7 @@ syntax:
     CSharp: public sealed partial class Match<TNode>
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -44,8 +45,9 @@ items:
     parameters:
     - id: Comparer
       type:
-        id: TreeComparer
-        href: C:\roslyn\src\Workspaces\Core\Portable\Differencing\TreeComparer.cs
+        id: Microsoft.CodeAnalysis.Differencing.TreeComparer{`0}
+        name: TreeComparer
+        href: Microsoft.CodeAnalysis.Differencing.TreeComparer{`0}
 - id: Microsoft.CodeAnalysis.Differencing.Match`1.get_Comparer
   yaml: api\Microsoft.CodeAnalysis.Differencing.Match`1.yaml
   href: api\Microsoft.CodeAnalysis.Differencing.Match`1
@@ -84,7 +86,8 @@ items:
     - id: OldRoot
       type:
         id: TNode
-        href: C:\roslyn\src\Workspaces\Core\Portable\Differencing\Match.cs
+        name: TNode
+        href: TNode
 - id: Microsoft.CodeAnalysis.Differencing.Match`1.get_OldRoot
   yaml: api\Microsoft.CodeAnalysis.Differencing.Match`1.yaml
   href: api\Microsoft.CodeAnalysis.Differencing.Match`1
@@ -123,7 +126,8 @@ items:
     - id: NewRoot
       type:
         id: TNode
-        href: C:\roslyn\src\Workspaces\Core\Portable\Differencing\Match.cs
+        name: TNode
+        href: TNode
 - id: Microsoft.CodeAnalysis.Differencing.Match`1.get_NewRoot
   yaml: api\Microsoft.CodeAnalysis.Differencing.Match`1.yaml
   href: api\Microsoft.CodeAnalysis.Differencing.Match`1
@@ -162,6 +166,7 @@ items:
     - id: Matches
       type:
         id: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`0}}
+        name: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`0}}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Differencing.Match`1.get_Matches
@@ -202,11 +207,13 @@ items:
     - id: oldNode
       type:
         id: TNode
-        href: C:\roslyn\src\Workspaces\Core\Portable\Differencing\Match.cs
+        name: TNode
+        href: TNode
     - id: newNode
       type:
         id: TNode
-        href: C:\roslyn\src\Workspaces\Core\Portable\Differencing\Match.cs
+        name: TNode
+        href: TNode
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Differencing.Match`1.TryGetOldNode(`0,`0@)
@@ -232,11 +239,13 @@ items:
     - id: newNode
       type:
         id: TNode
-        href: C:\roslyn\src\Workspaces\Core\Portable\Differencing\Match.cs
+        name: TNode
+        href: TNode
     - id: oldNode
       type:
         id: TNode
-        href: C:\roslyn\src\Workspaces\Core\Portable\Differencing\Match.cs
+        name: TNode
+        href: TNode
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Differencing.Match`1.GetTreeEdits
@@ -256,9 +265,9 @@ items:
     path: src\Workspaces\Core\Portable\Differencing\Match.cs
     startLine: 362
   summary: >+
-    Returns an edit script (a sequence of edits) that transform [Microsoft.CodeAnalysis.Differencing.Match`1.OldRoot](api\Microsoft.CodeAnalysis.Differencing.Match`1) subtree
+    Returns an edit script (a sequence of edits) that transform [Microsoft.CodeAnalysis.Differencing.Match`1.OldRoot](#/api\Microsoft.CodeAnalysis.Differencing.Match`1) subtree
 
-    to [Microsoft.CodeAnalysis.Differencing.Match`1.NewRoot](api\Microsoft.CodeAnalysis.Differencing.Match`1) subtree.
+    to [Microsoft.CodeAnalysis.Differencing.Match`1.NewRoot](#/api\Microsoft.CodeAnalysis.Differencing.Match`1) subtree.
 
   syntax:
     content:
@@ -294,11 +303,13 @@ items:
     - id: oldNodes
       type:
         id: System.Collections.Generic.IEnumerable{`0}
+        name: System.Collections.Generic.IEnumerable{`0}
         href: System.Runtime
         isExternal: true
     - id: newNodes
       type:
         id: System.Collections.Generic.IEnumerable{`0}
+        name: System.Collections.Generic.IEnumerable{`0}
         href: System.Runtime
         isExternal: true
     return:

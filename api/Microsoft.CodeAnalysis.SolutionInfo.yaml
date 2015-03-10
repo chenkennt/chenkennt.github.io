@@ -22,6 +22,7 @@ syntax:
     CSharp: public sealed class SolutionInfo
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -50,8 +51,9 @@ items:
     parameters:
     - id: Id
       type:
-        id: SolutionId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\SolutionId.cs
+        id: Microsoft.CodeAnalysis.SolutionId
+        name: SolutionId
+        href: api\Microsoft.CodeAnalysis.SolutionId
 - id: Microsoft.CodeAnalysis.SolutionInfo.get_Id
   yaml: api\Microsoft.CodeAnalysis.SolutionInfo.yaml
   href: api\Microsoft.CodeAnalysis.SolutionInfo
@@ -92,8 +94,9 @@ items:
     parameters:
     - id: Version
       type:
-        id: VersionStamp
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\VersionStamp.cs
+        id: Microsoft.CodeAnalysis.VersionStamp
+        name: VersionStamp
+        href: api\Microsoft.CodeAnalysis.VersionStamp
 - id: Microsoft.CodeAnalysis.SolutionInfo.get_Version
   yaml: api\Microsoft.CodeAnalysis.SolutionInfo.yaml
   href: api\Microsoft.CodeAnalysis.SolutionInfo
@@ -135,6 +138,7 @@ items:
     - id: FilePath
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SolutionInfo.get_FilePath
@@ -178,6 +182,7 @@ items:
     - id: Projects
       type:
         id: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.ProjectInfo}
+        name: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.ProjectInfo}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SolutionInfo.get_Projects
@@ -220,20 +225,24 @@ items:
     parameters:
     - id: id
       type:
-        id: SolutionId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\SolutionId.cs
+        id: Microsoft.CodeAnalysis.SolutionId
+        name: SolutionId
+        href: api\Microsoft.CodeAnalysis.SolutionId
     - id: version
       type:
-        id: VersionStamp
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\VersionStamp.cs
+        id: Microsoft.CodeAnalysis.VersionStamp
+        name: VersionStamp
+        href: api\Microsoft.CodeAnalysis.VersionStamp
     - id: filePath
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: projects
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ProjectInfo}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ProjectInfo}
         href: System.Runtime
         isExternal: true
     return:

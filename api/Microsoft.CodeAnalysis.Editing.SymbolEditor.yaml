@@ -22,6 +22,7 @@ syntax:
     CSharp: public sealed class SymbolEditor
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -42,7 +43,7 @@ items:
     path: src\Workspaces\Core\Portable\Editing\SymbolEditor.cs
     startLine: 30
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.Editing.SymbolEditor](api\Microsoft.CodeAnalysis.Editing.SymbolEditor) instance.
+    Creates a new [Microsoft.CodeAnalysis.Editing.SymbolEditor](#/api\Microsoft.CodeAnalysis.Editing.SymbolEditor) instance.
 
   syntax:
     content:
@@ -50,8 +51,9 @@ items:
     parameters:
     - id: solution
       type:
-        id: Solution
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Solution.CompilationTracker.cs
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api\Microsoft.CodeAnalysis.Solution
     return:
       id: SymbolEditor
 - id: Microsoft.CodeAnalysis.Editing.SymbolEditor.Create(Microsoft.CodeAnalysis.Document)
@@ -71,7 +73,7 @@ items:
     path: src\Workspaces\Core\Portable\Editing\SymbolEditor.cs
     startLine: 43
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.Editing.SymbolEditor](api\Microsoft.CodeAnalysis.Editing.SymbolEditor) instance.
+    Creates a new [Microsoft.CodeAnalysis.Editing.SymbolEditor](#/api\Microsoft.CodeAnalysis.Editing.SymbolEditor) instance.
 
   syntax:
     content:
@@ -79,8 +81,9 @@ items:
     parameters:
     - id: document
       type:
-        id: Document
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Document.cs
+        id: Microsoft.CodeAnalysis.Document
+        name: Document
+        href: api\Microsoft.CodeAnalysis.Document
     return:
       id: SymbolEditor
 - id: Microsoft.CodeAnalysis.Editing.SymbolEditor.OriginalSolution
@@ -108,8 +111,9 @@ items:
     parameters:
     - id: OriginalSolution
       type:
-        id: Solution
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Solution.CompilationTracker.cs
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api\Microsoft.CodeAnalysis.Solution
 - id: Microsoft.CodeAnalysis.Editing.SymbolEditor.get_OriginalSolution
   yaml: api\Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
   href: api\Microsoft.CodeAnalysis.Editing.SymbolEditor
@@ -150,8 +154,9 @@ items:
     parameters:
     - id: ChangedSolution
       type:
-        id: Solution
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Solution.CompilationTracker.cs
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api\Microsoft.CodeAnalysis.Solution
 - id: Microsoft.CodeAnalysis.Editing.SymbolEditor.get_ChangedSolution
   yaml: api\Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
   href: api\Microsoft.CodeAnalysis.Editing.SymbolEditor
@@ -184,7 +189,7 @@ items:
     path: src\Workspaces\Core\Portable\Editing\SymbolEditor.cs
     startLine: 72
   summary: >+
-    The documents changed since the [Microsoft.CodeAnalysis.Editing.SymbolEditor](api\Microsoft.CodeAnalysis.Editing.SymbolEditor) was constructed.
+    The documents changed since the [Microsoft.CodeAnalysis.Editing.SymbolEditor](#/api\Microsoft.CodeAnalysis.Editing.SymbolEditor) was constructed.
 
   syntax:
     content:
@@ -217,11 +222,13 @@ items:
     parameters:
     - id: symbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -251,11 +258,13 @@ items:
     parameters:
     - id: symbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -287,20 +296,23 @@ items:
     parameters:
     - id: symbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
       description: The symbol to edit.
     - id: editAction
       type:
-        id: AsyncDeclarationEditAction
-        href: C:\roslyn\src\Workspaces\Core\Portable\Editing\SymbolEditor.cs
+        id: Microsoft.CodeAnalysis.Editing.SymbolEditor.AsyncDeclarationEditAction
+        name: AsyncDeclarationEditAction
+        href: api\Microsoft.CodeAnalysis.Editing.SymbolEditor.AsyncDeclarationEditAction
       description: The action that makes edits to the declaration.
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
-      description: An optional @T:System.Threading.CancellationToken-.
+      description: An optional [System.Threading.CancellationToken](#).
     return:
       id: Task
       description: The new symbol including the changes.
@@ -331,20 +343,23 @@ items:
     parameters:
     - id: symbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
       description: The symbol to edit.
     - id: editAction
       type:
-        id: DeclarationEditAction
-        href: C:\roslyn\src\Workspaces\Core\Portable\Editing\SymbolEditor.cs
+        id: Microsoft.CodeAnalysis.Editing.SymbolEditor.DeclarationEditAction
+        name: DeclarationEditAction
+        href: api\Microsoft.CodeAnalysis.Editing.SymbolEditor.DeclarationEditAction
       description: The action that makes edits to the declaration.
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
-      description: An optional @T:System.Threading.CancellationToken-.
+      description: An optional [System.Threading.CancellationToken](#).
     return:
       id: Task
       description: The new symbol including the changes.
@@ -375,25 +390,29 @@ items:
     parameters:
     - id: symbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
       description: The symbol to edit.
     - id: location
       type:
-        id: Location
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\Location.cs
+        id: Microsoft.CodeAnalysis.Location
+        name: Location
+        href: api\Microsoft.CodeAnalysis.Location
       description: A location within one of the symbol's declarations.
     - id: editAction
       type:
-        id: AsyncDeclarationEditAction
-        href: C:\roslyn\src\Workspaces\Core\Portable\Editing\SymbolEditor.cs
+        id: Microsoft.CodeAnalysis.Editing.SymbolEditor.AsyncDeclarationEditAction
+        name: AsyncDeclarationEditAction
+        href: api\Microsoft.CodeAnalysis.Editing.SymbolEditor.AsyncDeclarationEditAction
       description: The action that makes edits to the declaration.
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
-      description: An optional @T:System.Threading.CancellationToken-.
+      description: An optional [System.Threading.CancellationToken](#).
     return:
       id: Task
       description: The new symbol including the changes.
@@ -424,25 +443,29 @@ items:
     parameters:
     - id: symbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
       description: The symbol to edit.
     - id: location
       type:
-        id: Location
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\Location.cs
+        id: Microsoft.CodeAnalysis.Location
+        name: Location
+        href: api\Microsoft.CodeAnalysis.Location
       description: A location within one of the symbol's declarations.
     - id: editAction
       type:
-        id: DeclarationEditAction
-        href: C:\roslyn\src\Workspaces\Core\Portable\Editing\SymbolEditor.cs
+        id: Microsoft.CodeAnalysis.Editing.SymbolEditor.DeclarationEditAction
+        name: DeclarationEditAction
+        href: api\Microsoft.CodeAnalysis.Editing.SymbolEditor.DeclarationEditAction
       description: The action that makes edits to the declaration.
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
-      description: An optional @T:System.Threading.CancellationToken-.
+      description: An optional [System.Threading.CancellationToken](#).
     return:
       id: Task
       description: The new symbol including the changes.
@@ -473,25 +496,29 @@ items:
     parameters:
     - id: symbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
       description: The symbol to edit.
     - id: member
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
       description: A symbol whose declaration is contained within one of the primary symbol's declarations.
     - id: editAction
       type:
-        id: AsyncDeclarationEditAction
-        href: C:\roslyn\src\Workspaces\Core\Portable\Editing\SymbolEditor.cs
+        id: Microsoft.CodeAnalysis.Editing.SymbolEditor.AsyncDeclarationEditAction
+        name: AsyncDeclarationEditAction
+        href: api\Microsoft.CodeAnalysis.Editing.SymbolEditor.AsyncDeclarationEditAction
       description: The action that makes edits to the declaration.
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
-      description: An optional @T:System.Threading.CancellationToken-.
+      description: An optional [System.Threading.CancellationToken](#).
     return:
       id: Task
       description: The new symbol including the changes.
@@ -522,25 +549,29 @@ items:
     parameters:
     - id: symbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
       description: The symbol to edit.
     - id: member
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
       description: A symbol whose declaration is contained within one of the primary symbol's declarations.
     - id: editAction
       type:
-        id: DeclarationEditAction
-        href: C:\roslyn\src\Workspaces\Core\Portable\Editing\SymbolEditor.cs
+        id: Microsoft.CodeAnalysis.Editing.SymbolEditor.DeclarationEditAction
+        name: DeclarationEditAction
+        href: api\Microsoft.CodeAnalysis.Editing.SymbolEditor.DeclarationEditAction
       description: The action that makes edits to the declaration.
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
-      description: An optional @T:System.Threading.CancellationToken-.
+      description: An optional [System.Threading.CancellationToken](#).
     return:
       id: Task
       description: The new symbol including the changes.
@@ -571,20 +602,23 @@ items:
     parameters:
     - id: symbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
       description: The symbol to be editted.
     - id: editAction
       type:
-        id: AsyncDeclarationEditAction
-        href: C:\roslyn\src\Workspaces\Core\Portable\Editing\SymbolEditor.cs
+        id: Microsoft.CodeAnalysis.Editing.SymbolEditor.AsyncDeclarationEditAction
+        name: AsyncDeclarationEditAction
+        href: api\Microsoft.CodeAnalysis.Editing.SymbolEditor.AsyncDeclarationEditAction
       description: The action that makes edits to the declaration.
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
-      description: An optional @T:System.Threading.CancellationToken-.
+      description: An optional [System.Threading.CancellationToken](#).
     return:
       id: Task
       description: The new symbol including the changes.
@@ -615,20 +649,23 @@ items:
     parameters:
     - id: symbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
       description: The symbol to be editted.
     - id: editAction
       type:
-        id: DeclarationEditAction
-        href: C:\roslyn\src\Workspaces\Core\Portable\Editing\SymbolEditor.cs
+        id: Microsoft.CodeAnalysis.Editing.SymbolEditor.DeclarationEditAction
+        name: DeclarationEditAction
+        href: api\Microsoft.CodeAnalysis.Editing.SymbolEditor.DeclarationEditAction
       description: The action that makes edits to the declaration.
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
-      description: An optional @T:System.Threading.CancellationToken-.
+      description: An optional [System.Threading.CancellationToken](#).
     return:
       id: Task
       description: The new symbol including the changes.

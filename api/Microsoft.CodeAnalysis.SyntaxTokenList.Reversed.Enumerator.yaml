@@ -19,9 +19,11 @@ syntax:
     CSharp: public struct Enumerator
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -47,8 +49,9 @@ items:
     parameters:
     - id: list
       type:
-        id: SyntaxTokenList
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTokenList.cs
+        id: Microsoft.CodeAnalysis.SyntaxTokenList
+        name: SyntaxTokenList
+        href: api\Microsoft.CodeAnalysis.SyntaxTokenList
 - id: Microsoft.CodeAnalysis.SyntaxTokenList.Reversed.Enumerator.MoveNext
   yaml: api\Microsoft.CodeAnalysis.SyntaxTokenList.Reversed.Enumerator.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxTokenList.Reversed.Enumerator
@@ -93,8 +96,9 @@ items:
     parameters:
     - id: Current
       type:
-        id: SyntaxToken
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxToken
+        name: SyntaxToken
+        href: api\Microsoft.CodeAnalysis.SyntaxToken
 - id: Microsoft.CodeAnalysis.SyntaxTokenList.Reversed.Enumerator.get_Current
   yaml: api\Microsoft.CodeAnalysis.SyntaxTokenList.Reversed.Enumerator.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxTokenList.Reversed.Enumerator
@@ -133,6 +137,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:

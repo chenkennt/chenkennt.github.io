@@ -24,10 +24,12 @@ syntax:
     CSharp: public partial class Document
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
-- id: TextDocument
-  href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\TextDocument.cs
+- id: Microsoft.CodeAnalysis.TextDocument
+  name: TextDocument
+  href: api\Microsoft.CodeAnalysis.TextDocument
 items:
 - id: Microsoft.CodeAnalysis.Document.SourceCodeKind
   yaml: api\Microsoft.CodeAnalysis.Document.yaml
@@ -54,8 +56,9 @@ items:
     parameters:
     - id: SourceCodeKind
       type:
-        id: SourceCodeKind
-        href: C:\roslyn\src\Compilers\Core\Portable\SourceCodeKind.cs
+        id: Microsoft.CodeAnalysis.SourceCodeKind
+        name: SourceCodeKind
+        href: api\Microsoft.CodeAnalysis.SourceCodeKind
 - id: Microsoft.CodeAnalysis.Document.get_SourceCodeKind
   yaml: api\Microsoft.CodeAnalysis.Document.yaml
   href: api\Microsoft.CodeAnalysis.Document
@@ -98,8 +101,9 @@ items:
     parameters:
     - id: syntaxTree
       type:
-        id: SyntaxTree
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+        id: Microsoft.CodeAnalysis.SyntaxTree
+        name: SyntaxTree
+        href: api\Microsoft.CodeAnalysis.SyntaxTree
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Document.TryGetSyntaxVersion(Microsoft.CodeAnalysis.VersionStamp@)
@@ -129,8 +133,9 @@ items:
     parameters:
     - id: version
       type:
-        id: VersionStamp
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\VersionStamp.cs
+        id: Microsoft.CodeAnalysis.VersionStamp
+        name: VersionStamp
+        href: api\Microsoft.CodeAnalysis.VersionStamp
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Document.GetSyntaxVersionAsync(System.Threading.CancellationToken)
@@ -159,6 +164,7 @@ items:
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -182,7 +188,7 @@ items:
   summary: >+
     true if this Document supports providing data through the
 
-    [Microsoft.CodeAnalysis.Document.GetSyntaxTreeAsync(System.Threading.CancellationToken)](api\Microsoft.CodeAnalysis.Document) and [Microsoft.CodeAnalysis.Document.GetSyntaxRootAsync(System.Threading.CancellationToken)](api\Microsoft.CodeAnalysis.Document) methods.
+    [Microsoft.CodeAnalysis.Document.GetSyntaxTreeAsync(System.Threading.CancellationToken)](#/api\Microsoft.CodeAnalysis.Document) and [Microsoft.CodeAnalysis.Document.GetSyntaxRootAsync(System.Threading.CancellationToken)](#/api\Microsoft.CodeAnalysis.Document) methods.
 
 
 
@@ -195,6 +201,7 @@ items:
     - id: SupportsSyntaxTree
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Document.get_SupportsSyntaxTree
@@ -231,7 +238,7 @@ items:
   summary: >+
     true if this Document supports providing data through the
 
-    [Microsoft.CodeAnalysis.Document.GetSemanticModelAsync(System.Threading.CancellationToken)](api\Microsoft.CodeAnalysis.Document) method.
+    [Microsoft.CodeAnalysis.Document.GetSemanticModelAsync(System.Threading.CancellationToken)](#/api\Microsoft.CodeAnalysis.Document) method.
 
 
 
@@ -244,6 +251,7 @@ items:
     - id: SupportsSemanticModel
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Document.get_SupportsSemanticModel
@@ -278,7 +286,7 @@ items:
     path: src\Workspaces\Core\Portable\Workspace\Solution\Document.cs
     startLine: 157
   summary: >+
-    Gets the [Microsoft.CodeAnalysis.SyntaxTree](api\Microsoft.CodeAnalysis.SyntaxTree) for this document asynchronously.
+    Gets the [Microsoft.CodeAnalysis.SyntaxTree](#/api\Microsoft.CodeAnalysis.SyntaxTree) for this document asynchronously.
 
   syntax:
     content:
@@ -287,6 +295,7 @@ items:
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -316,8 +325,9 @@ items:
     parameters:
     - id: root
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Document.GetSyntaxRootAsync(System.Threading.CancellationToken)
@@ -346,6 +356,7 @@ items:
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -375,8 +386,9 @@ items:
     parameters:
     - id: semanticModel
       type:
-        id: SemanticModel
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+        id: Microsoft.CodeAnalysis.SemanticModel
+        name: SemanticModel
+        href: api\Microsoft.CodeAnalysis.SemanticModel
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Document.GetSemanticModelAsync(System.Threading.CancellationToken)
@@ -405,6 +417,7 @@ items:
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -434,8 +447,9 @@ items:
     parameters:
     - id: kind
       type:
-        id: SourceCodeKind
-        href: C:\roslyn\src\Compilers\Core\Portable\SourceCodeKind.cs
+        id: Microsoft.CodeAnalysis.SourceCodeKind
+        name: SourceCodeKind
+        href: api\Microsoft.CodeAnalysis.SourceCodeKind
     return:
       id: Document
 - id: Microsoft.CodeAnalysis.Document.WithText(Microsoft.CodeAnalysis.Text.SourceText)
@@ -463,8 +477,9 @@ items:
     parameters:
     - id: text
       type:
-        id: SourceText
-        href: C:\roslyn\src\Compilers\Core\Portable\Text\SourceText.cs
+        id: Microsoft.CodeAnalysis.Text.SourceText
+        name: SourceText
+        href: Microsoft.CodeAnalysis.Text.SourceText
     return:
       id: Document
 - id: Microsoft.CodeAnalysis.Document.WithSyntaxRoot(Microsoft.CodeAnalysis.SyntaxNode)
@@ -492,8 +507,9 @@ items:
     parameters:
     - id: root
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: Document
 - id: Microsoft.CodeAnalysis.Document.GetTextChangesAsync(Microsoft.CodeAnalysis.Document,System.Threading.CancellationToken)
@@ -523,11 +539,13 @@ items:
     parameters:
     - id: oldDocument
       type:
-        id: Document
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Document.cs
+        id: Microsoft.CodeAnalysis.Document
+        name: Document
+        href: api\Microsoft.CodeAnalysis.Document
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -549,11 +567,11 @@ items:
     path: src\Workspaces\Core\Portable\Workspace\Solution\Document.cs
     startLine: 379
   summary: >+
-    Gets the list of [Microsoft.CodeAnalysis.DocumentId](api\Microsoft.CodeAnalysis.DocumentId)s that are linked to this
+    Gets the list of [Microsoft.CodeAnalysis.DocumentId](#/api\Microsoft.CodeAnalysis.DocumentId)s that are linked to this
 
-    [Microsoft.CodeAnalysis.Document](api\Microsoft.CodeAnalysis.Document). [Microsoft.CodeAnalysis.Document](api\Microsoft.CodeAnalysis.Document)s are considered to be linked if they
+    [Microsoft.CodeAnalysis.Document](#/api\Microsoft.CodeAnalysis.Document). [Microsoft.CodeAnalysis.Document](#/api\Microsoft.CodeAnalysis.Document)s are considered to be linked if they
 
-    share the same [Microsoft.CodeAnalysis.TextDocument.FilePath](api\Microsoft.CodeAnalysis.TextDocument). This [Microsoft.CodeAnalysis.DocumentId](api\Microsoft.CodeAnalysis.DocumentId) is excluded from the
+    share the same [Microsoft.CodeAnalysis.TextDocument.FilePath](#/api\Microsoft.CodeAnalysis.TextDocument). This [Microsoft.CodeAnalysis.DocumentId](#/api\Microsoft.CodeAnalysis.DocumentId) is excluded from the
 
     result.
 

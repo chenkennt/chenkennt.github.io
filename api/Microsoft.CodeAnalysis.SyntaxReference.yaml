@@ -22,6 +22,7 @@ syntax:
     CSharp: public abstract class SyntaxReference
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -50,8 +51,9 @@ items:
     parameters:
     - id: SyntaxTree
       type:
-        id: SyntaxTree
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+        id: Microsoft.CodeAnalysis.SyntaxTree
+        name: SyntaxTree
+        href: api\Microsoft.CodeAnalysis.SyntaxTree
 - id: Microsoft.CodeAnalysis.SyntaxReference.get_SyntaxTree
   yaml: api\Microsoft.CodeAnalysis.SyntaxReference.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxReference
@@ -92,8 +94,9 @@ items:
     parameters:
     - id: Span
       type:
-        id: TextSpan
-        href: C:\roslyn\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.SyntaxReference.get_Span
   yaml: api\Microsoft.CodeAnalysis.SyntaxReference.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxReference
@@ -137,6 +140,7 @@ items:
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -170,6 +174,7 @@ items:
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:

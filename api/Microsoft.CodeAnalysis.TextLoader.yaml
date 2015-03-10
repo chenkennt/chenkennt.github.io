@@ -22,6 +22,7 @@ syntax:
     CSharp: public abstract class TextLoader
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -50,15 +51,18 @@ items:
     parameters:
     - id: workspace
       type:
-        id: Workspace
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Workspace.cs
+        id: Microsoft.CodeAnalysis.Workspace
+        name: Workspace
+        href: api\Microsoft.CodeAnalysis.Workspace
     - id: documentId
       type:
-        id: DocumentId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+        id: Microsoft.CodeAnalysis.DocumentId
+        name: DocumentId
+        href: api\Microsoft.CodeAnalysis.DocumentId
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -88,8 +92,9 @@ items:
     parameters:
     - id: textAndVersion
       type:
-        id: TextAndVersion
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\TextAndVersion.cs
+        id: Microsoft.CodeAnalysis.TextAndVersion
+        name: TextAndVersion
+        href: api\Microsoft.CodeAnalysis.TextAndVersion
     return:
       id: TextLoader
 - id: Microsoft.CodeAnalysis.TextLoader.From(Microsoft.CodeAnalysis.Text.SourceTextContainer,Microsoft.CodeAnalysis.VersionStamp,System.String)
@@ -123,15 +128,18 @@ items:
     parameters:
     - id: container
       type:
-        id: SourceTextContainer
-        href: C:\roslyn\src\Compilers\Core\Portable\Text\SourceTextContainer.cs
+        id: Microsoft.CodeAnalysis.Text.SourceTextContainer
+        name: SourceTextContainer
+        href: Microsoft.CodeAnalysis.Text.SourceTextContainer
     - id: version
       type:
-        id: VersionStamp
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\VersionStamp.cs
+        id: Microsoft.CodeAnalysis.VersionStamp
+        name: VersionStamp
+        href: api\Microsoft.CodeAnalysis.VersionStamp
     - id: filePath
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:

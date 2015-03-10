@@ -22,10 +22,12 @@ syntax:
     CSharp: public sealed class UnresolvedMetadataReference
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
-- id: MetadataReference
-  href: C:\roslyn\src\Compilers\Core\Portable\MetadataReference\MetadataReference.cs
+- id: Microsoft.CodeAnalysis.MetadataReference
+  name: MetadataReference
+  href: api\Microsoft.CodeAnalysis.MetadataReference
 items:
 - id: Microsoft.CodeAnalysis.UnresolvedMetadataReference.Reference
   yaml: api\Microsoft.CodeAnalysis.UnresolvedMetadataReference.yaml
@@ -50,6 +52,7 @@ items:
     - id: Reference
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.UnresolvedMetadataReference.get_Reference
@@ -90,6 +93,7 @@ items:
     - id: Display
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.UnresolvedMetadataReference.get_Display

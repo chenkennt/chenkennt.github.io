@@ -15,19 +15,22 @@ source:
   path: src\Workspaces\Core\Portable\CodeFixes\ExportCodeFixProviderAttribute.cs
   startLine: 10
 summary: >+
-  Use this attribute to declare a [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider](api\Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider) implementation so that it can be discovered by the host.
+  Use this attribute to declare a [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider](#/api\Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider) implementation so that it can be discovered by the host.
 
 syntax:
   content:
     CSharp: public sealed class ExportCodeFixProviderAttribute
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.Attribute
+  name: System.Attribute
   href: System.Runtime
   isExternal: true
 - id: System.Composition.ExportAttribute
+  name: System.Composition.ExportAttribute
   href: System.Composition.AttributedModel
   isExternal: true
 items:
@@ -48,7 +51,7 @@ items:
     path: src\Workspaces\Core\Portable\CodeFixes\ExportCodeFixProviderAttribute.cs
     startLine: 17
   summary: >+
-    Optional name of the [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider](api\Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider).
+    Optional name of the [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider](#/api\Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider).
 
   syntax:
     content:
@@ -57,6 +60,7 @@ items:
     - id: Name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CodeFixes.ExportCodeFixProviderAttribute.get_Name
@@ -106,7 +110,7 @@ items:
     path: src\Workspaces\Core\Portable\CodeFixes\ExportCodeFixProviderAttribute.cs
     startLine: 22
   summary: >+
-    The source languages this provider can provide fixes for.  See [Microsoft.CodeAnalysis.LanguageNames](api\Microsoft.CodeAnalysis.LanguageNames).
+    The source languages this provider can provide fixes for.  See [Microsoft.CodeAnalysis.LanguageNames](#/api\Microsoft.CodeAnalysis.LanguageNames).
 
   syntax:
     content:
@@ -115,6 +119,7 @@ items:
     - id: Languages
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
 - id: Microsoft.CodeAnalysis.CodeFixes.ExportCodeFixProviderAttribute.get_Languages
   yaml: api\Microsoft.CodeAnalysis.CodeFixes.ExportCodeFixProviderAttribute.yaml
@@ -157,11 +162,13 @@ items:
     - id: firstLanguage
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: One language to which the code fix provider applies.
     - id: additionalLanguages
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
-      description: Additional languages to which the code fix provider applies. See [Microsoft.CodeAnalysis.LanguageNames](api\Microsoft.CodeAnalysis.LanguageNames).
+      description: Additional languages to which the code fix provider applies. See [Microsoft.CodeAnalysis.LanguageNames](#/api\Microsoft.CodeAnalysis.LanguageNames).

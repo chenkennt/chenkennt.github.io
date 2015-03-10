@@ -19,9 +19,11 @@ syntax:
     CSharp: public class WorkspaceChangeEventArgs
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.EventArgs
+  name: System.EventArgs
   href: System.Runtime
   isExternal: true
 items:
@@ -47,8 +49,9 @@ items:
     parameters:
     - id: Kind
       type:
-        id: WorkspaceChangeKind
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\WorkspaceChangeKind.cs
+        id: Microsoft.CodeAnalysis.WorkspaceChangeKind
+        name: WorkspaceChangeKind
+        href: api\Microsoft.CodeAnalysis.WorkspaceChangeKind
 - id: Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.get_Kind
   yaml: api\Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.yaml
   href: api\Microsoft.CodeAnalysis.WorkspaceChangeEventArgs
@@ -86,8 +89,9 @@ items:
     parameters:
     - id: OldSolution
       type:
-        id: Solution
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Solution.CompilationTracker.cs
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api\Microsoft.CodeAnalysis.Solution
 - id: Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.get_OldSolution
   yaml: api\Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.yaml
   href: api\Microsoft.CodeAnalysis.WorkspaceChangeEventArgs
@@ -125,8 +129,9 @@ items:
     parameters:
     - id: NewSolution
       type:
-        id: Solution
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Solution.CompilationTracker.cs
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api\Microsoft.CodeAnalysis.Solution
 - id: Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.get_NewSolution
   yaml: api\Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.yaml
   href: api\Microsoft.CodeAnalysis.WorkspaceChangeEventArgs
@@ -164,8 +169,9 @@ items:
     parameters:
     - id: ProjectId
       type:
-        id: ProjectId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\ProjectId.cs
+        id: Microsoft.CodeAnalysis.ProjectId
+        name: ProjectId
+        href: api\Microsoft.CodeAnalysis.ProjectId
 - id: Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.get_ProjectId
   yaml: api\Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.yaml
   href: api\Microsoft.CodeAnalysis.WorkspaceChangeEventArgs
@@ -203,8 +209,9 @@ items:
     parameters:
     - id: DocumentId
       type:
-        id: DocumentId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+        id: Microsoft.CodeAnalysis.DocumentId
+        name: DocumentId
+        href: api\Microsoft.CodeAnalysis.DocumentId
 - id: Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.get_DocumentId
   yaml: api\Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.yaml
   href: api\Microsoft.CodeAnalysis.WorkspaceChangeEventArgs
@@ -242,21 +249,26 @@ items:
     parameters:
     - id: kind
       type:
-        id: WorkspaceChangeKind
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\WorkspaceChangeKind.cs
+        id: Microsoft.CodeAnalysis.WorkspaceChangeKind
+        name: WorkspaceChangeKind
+        href: api\Microsoft.CodeAnalysis.WorkspaceChangeKind
     - id: oldSolution
       type:
-        id: Solution
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Solution.CompilationTracker.cs
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api\Microsoft.CodeAnalysis.Solution
     - id: newSolution
       type:
-        id: Solution
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Solution.CompilationTracker.cs
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api\Microsoft.CodeAnalysis.Solution
     - id: projectId
       type:
-        id: ProjectId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\ProjectId.cs
+        id: Microsoft.CodeAnalysis.ProjectId
+        name: ProjectId
+        href: api\Microsoft.CodeAnalysis.ProjectId
     - id: documentId
       type:
-        id: DocumentId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+        id: Microsoft.CodeAnalysis.DocumentId
+        name: DocumentId
+        href: api\Microsoft.CodeAnalysis.DocumentId

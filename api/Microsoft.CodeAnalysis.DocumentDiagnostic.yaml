@@ -19,10 +19,12 @@ syntax:
     CSharp: public class DocumentDiagnostic
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
-- id: WorkspaceDiagnostic
-  href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\WorkspaceDiagnostic.cs
+- id: Microsoft.CodeAnalysis.WorkspaceDiagnostic
+  name: WorkspaceDiagnostic
+  href: api\Microsoft.CodeAnalysis.WorkspaceDiagnostic
 items:
 - id: Microsoft.CodeAnalysis.DocumentDiagnostic.DocumentId
   yaml: api\Microsoft.CodeAnalysis.DocumentDiagnostic.yaml
@@ -46,8 +48,9 @@ items:
     parameters:
     - id: DocumentId
       type:
-        id: DocumentId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+        id: Microsoft.CodeAnalysis.DocumentId
+        name: DocumentId
+        href: api\Microsoft.CodeAnalysis.DocumentId
 - id: Microsoft.CodeAnalysis.DocumentDiagnostic.get_DocumentId
   yaml: api\Microsoft.CodeAnalysis.DocumentDiagnostic.yaml
   href: api\Microsoft.CodeAnalysis.DocumentDiagnostic
@@ -85,14 +88,17 @@ items:
     parameters:
     - id: kind
       type:
-        id: WorkspaceDiagnosticKind
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\WorkspaceDiagnosticKind.cs
+        id: Microsoft.CodeAnalysis.WorkspaceDiagnosticKind
+        name: WorkspaceDiagnosticKind
+        href: api\Microsoft.CodeAnalysis.WorkspaceDiagnosticKind
     - id: message
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: documentId
       type:
-        id: DocumentId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+        id: Microsoft.CodeAnalysis.DocumentId
+        name: DocumentId
+        href: api\Microsoft.CodeAnalysis.DocumentId

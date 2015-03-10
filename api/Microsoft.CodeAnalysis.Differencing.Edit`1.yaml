@@ -22,9 +22,11 @@ syntax:
     CSharp: public struct Edit<TNode>
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -50,8 +52,9 @@ items:
     parameters:
     - id: Kind
       type:
-        id: EditKind
-        href: C:\roslyn\src\Workspaces\Core\Portable\Differencing\EditKind.cs
+        id: Microsoft.CodeAnalysis.Differencing.EditKind
+        name: EditKind
+        href: api\Microsoft.CodeAnalysis.Differencing.EditKind
 - id: Microsoft.CodeAnalysis.Differencing.Edit`1.get_Kind
   yaml: api\Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
   href: api\Microsoft.CodeAnalysis.Differencing.Edit`1
@@ -107,7 +110,8 @@ items:
     - id: OldNode
       type:
         id: TNode
-        href: C:\roslyn\src\Workspaces\Core\Portable\Differencing\Edit.cs
+        name: TNode
+        href: TNode
 - id: Microsoft.CodeAnalysis.Differencing.Edit`1.get_OldNode
   yaml: api\Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
   href: api\Microsoft.CodeAnalysis.Differencing.Edit`1
@@ -163,7 +167,8 @@ items:
     - id: NewNode
       type:
         id: TNode
-        href: C:\roslyn\src\Workspaces\Core\Portable\Differencing\Edit.cs
+        name: TNode
+        href: TNode
 - id: Microsoft.CodeAnalysis.Differencing.Edit`1.get_NewNode
   yaml: api\Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
   href: api\Microsoft.CodeAnalysis.Differencing.Edit`1
@@ -202,6 +207,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -228,8 +234,9 @@ items:
     parameters:
     - id: other
       type:
-        id: Edit
-        href: C:\roslyn\src\Workspaces\Core\Portable\Differencing\Edit.cs
+        id: Microsoft.CodeAnalysis.Differencing.Edit`1
+        name: Edit
+        href: api\Microsoft.CodeAnalysis.Differencing.Edit`1
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Differencing.Edit`1.GetHashCode

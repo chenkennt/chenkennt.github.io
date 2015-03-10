@@ -22,6 +22,7 @@ syntax:
     CSharp: public abstract class Location
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -50,8 +51,9 @@ items:
     parameters:
     - id: Kind
       type:
-        id: LocationKind
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\LocationKind.cs
+        id: Microsoft.CodeAnalysis.LocationKind
+        name: LocationKind
+        href: api\Microsoft.CodeAnalysis.LocationKind
 - id: Microsoft.CodeAnalysis.Location.get_Kind
   yaml: api\Microsoft.CodeAnalysis.Location.yaml
   href: api\Microsoft.CodeAnalysis.Location
@@ -93,6 +95,7 @@ items:
     - id: IsInSource
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Location.get_IsInSource
@@ -136,6 +139,7 @@ items:
     - id: IsInMetadata
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Location.get_IsInMetadata
@@ -178,8 +182,9 @@ items:
     parameters:
     - id: SourceTree
       type:
-        id: SyntaxTree
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+        id: Microsoft.CodeAnalysis.SyntaxTree
+        name: SyntaxTree
+        href: api\Microsoft.CodeAnalysis.SyntaxTree
 - id: Microsoft.CodeAnalysis.Location.get_SourceTree
   yaml: api\Microsoft.CodeAnalysis.Location.yaml
   href: api\Microsoft.CodeAnalysis.Location
@@ -220,8 +225,9 @@ items:
     parameters:
     - id: MetadataModule
       type:
-        id: IModuleSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\IModuleSymbol.cs
+        id: Microsoft.CodeAnalysis.IModuleSymbol
+        name: IModuleSymbol
+        href: api\Microsoft.CodeAnalysis.IModuleSymbol
 - id: Microsoft.CodeAnalysis.Location.get_MetadataModule
   yaml: api\Microsoft.CodeAnalysis.Location.yaml
   href: api\Microsoft.CodeAnalysis.Location
@@ -262,8 +268,9 @@ items:
     parameters:
     - id: SourceSpan
       type:
-        id: TextSpan
-        href: C:\roslyn\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.Location.get_SourceSpan
   yaml: api\Microsoft.CodeAnalysis.Location.yaml
   href: api\Microsoft.CodeAnalysis.Location
@@ -304,7 +311,7 @@ items:
     parameters: []
     return:
       id: FileLinePositionSpan
-      description: "[Microsoft.CodeAnalysis.FileLinePositionSpan](api\\Microsoft.CodeAnalysis.FileLinePositionSpan) that contains path, line and column information.\r\n    \r\n    Returns an invalid span (see [Microsoft.CodeAnalysis.FileLinePositionSpan.IsValid](api\\Microsoft.CodeAnalysis.FileLinePositionSpan)) if the information is not available.\r\n    \r\n    The values are not affected by line mapping directives (#line in C# or #ExternalSource in VB)."
+      description: "[Microsoft.CodeAnalysis.FileLinePositionSpan](#/api\\Microsoft.CodeAnalysis.FileLinePositionSpan) that contains path, line and column information.\r\n    \r\n    Returns an invalid span (see [Microsoft.CodeAnalysis.FileLinePositionSpan.IsValid](#/api\\Microsoft.CodeAnalysis.FileLinePositionSpan)) if the information is not available.\r\n    \r\n    The values are not affected by line mapping directives (#line in C# or #ExternalSource in VB)."
 - id: Microsoft.CodeAnalysis.Location.GetMappedLineSpan
   yaml: api\Microsoft.CodeAnalysis.Location.yaml
   href: api\Microsoft.CodeAnalysis.Location
@@ -333,9 +340,9 @@ items:
     return:
       id: FileLinePositionSpan
       description: >-
-        [Microsoft.CodeAnalysis.FileLinePositionSpan](api\Microsoft.CodeAnalysis.FileLinePositionSpan) that contains file, line and column information,
+        [Microsoft.CodeAnalysis.FileLinePositionSpan](#/api\Microsoft.CodeAnalysis.FileLinePositionSpan) that contains file, line and column information,
 
-            or an invalid span (see [Microsoft.CodeAnalysis.FileLinePositionSpan.IsValid](api\Microsoft.CodeAnalysis.FileLinePositionSpan)) if not available.
+            or an invalid span (see [Microsoft.CodeAnalysis.FileLinePositionSpan.IsValid](#/api\Microsoft.CodeAnalysis.FileLinePositionSpan)) if not available.
 - id: Microsoft.CodeAnalysis.Location.Equals(System.Object)
   yaml: api\Microsoft.CodeAnalysis.Location.yaml
   href: api\Microsoft.CodeAnalysis.Location
@@ -359,6 +366,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -462,8 +470,9 @@ items:
     parameters:
     - id: None
       type:
-        id: Location
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\Location.cs
+        id: Microsoft.CodeAnalysis.Location
+        name: Location
+        href: api\Microsoft.CodeAnalysis.Location
 - id: Microsoft.CodeAnalysis.Location.get_None
   yaml: api\Microsoft.CodeAnalysis.Location.yaml
   href: api\Microsoft.CodeAnalysis.Location
@@ -496,7 +505,7 @@ items:
     path: src\Compilers\Core\Portable\Diagnostic\Location.cs
     startLine: 150
   summary: >+
-    Creates an instance of a [Microsoft.CodeAnalysis.Location](api\Microsoft.CodeAnalysis.Location) for a span in a [Microsoft.CodeAnalysis.SyntaxTree](api\Microsoft.CodeAnalysis.SyntaxTree).
+    Creates an instance of a [Microsoft.CodeAnalysis.Location](#/api\Microsoft.CodeAnalysis.Location) for a span in a [Microsoft.CodeAnalysis.SyntaxTree](#/api\Microsoft.CodeAnalysis.SyntaxTree).
 
   syntax:
     content:
@@ -504,12 +513,14 @@ items:
     parameters:
     - id: syntaxTree
       type:
-        id: SyntaxTree
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+        id: Microsoft.CodeAnalysis.SyntaxTree
+        name: SyntaxTree
+        href: api\Microsoft.CodeAnalysis.SyntaxTree
     - id: textSpan
       type:
-        id: TextSpan
-        href: C:\roslyn\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: Microsoft.CodeAnalysis.Text.TextSpan
     return:
       id: Location
 - id: Microsoft.CodeAnalysis.Location.Create(System.String,Microsoft.CodeAnalysis.Text.TextSpan,Microsoft.CodeAnalysis.Text.LinePositionSpan)
@@ -529,7 +540,7 @@ items:
     path: src\Compilers\Core\Portable\Diagnostic\Location.cs
     startLine: 163
   summary: >+
-    Creates an instance of a [Microsoft.CodeAnalysis.Location](api\Microsoft.CodeAnalysis.Location) for a span in a file.
+    Creates an instance of a [Microsoft.CodeAnalysis.Location](#/api\Microsoft.CodeAnalysis.Location) for a span in a file.
 
   syntax:
     content:
@@ -538,15 +549,18 @@ items:
     - id: filePath
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: textSpan
       type:
-        id: TextSpan
-        href: C:\roslyn\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: Microsoft.CodeAnalysis.Text.TextSpan
     - id: lineSpan
       type:
-        id: LinePositionSpan
-        href: C:\roslyn\src\Compilers\Core\Portable\Text\LinePositionSpan.cs
+        id: Microsoft.CodeAnalysis.Text.LinePositionSpan
+        name: LinePositionSpan
+        href: Microsoft.CodeAnalysis.Text.LinePositionSpan
     return:
       id: Location

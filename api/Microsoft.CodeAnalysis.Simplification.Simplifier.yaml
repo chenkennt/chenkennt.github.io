@@ -50,6 +50,7 @@ syntax:
     CSharp: public static partial class Simplifier
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -112,7 +113,7 @@ items:
     path: src\Workspaces\Core\Portable\Simplification\Simplifier.cs
     startLine: 47
   summary: >+
-    Expand qualifying parts of the specified subtree, annotating the parts using the [Microsoft.CodeAnalysis.Simplification.Simplifier.Annotation](api\Microsoft.CodeAnalysis.Simplification.Simplifier) annotation.
+    Expand qualifying parts of the specified subtree, annotating the parts using the [Microsoft.CodeAnalysis.Simplification.Simplifier.Annotation](#/api\Microsoft.CodeAnalysis.Simplification.Simplifier) annotation.
 
   syntax:
     content:
@@ -121,24 +122,29 @@ items:
     - id: node
       type:
         id: TNode
-        href: C:\roslyn\src\Workspaces\Core\Portable\Simplification\Simplifier.cs
+        name: TNode
+        href: TNode
     - id: document
       type:
-        id: Document
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Document.cs
+        id: Microsoft.CodeAnalysis.Document
+        name: Document
+        href: api\Microsoft.CodeAnalysis.Document
     - id: expandInsideNode
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
+        name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
         href: System.Runtime
         isExternal: true
     - id: expandParameter
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -160,7 +166,7 @@ items:
     path: src\Workspaces\Core\Portable\Simplification\Simplifier.cs
     startLine: 56
   summary: >+
-    Expand qualifying parts of the specified subtree, annotating the parts using the [Microsoft.CodeAnalysis.Simplification.Simplifier.Annotation](api\Microsoft.CodeAnalysis.Simplification.Simplifier) annotation.
+    Expand qualifying parts of the specified subtree, annotating the parts using the [Microsoft.CodeAnalysis.Simplification.Simplifier.Annotation](#/api\Microsoft.CodeAnalysis.Simplification.Simplifier) annotation.
 
   syntax:
     content:
@@ -169,28 +175,34 @@ items:
     - id: node
       type:
         id: TNode
-        href: C:\roslyn\src\Workspaces\Core\Portable\Simplification\Simplifier.cs
+        name: TNode
+        href: TNode
     - id: semanticModel
       type:
-        id: SemanticModel
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+        id: Microsoft.CodeAnalysis.SemanticModel
+        name: SemanticModel
+        href: api\Microsoft.CodeAnalysis.SemanticModel
     - id: workspace
       type:
-        id: Workspace
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Workspace.cs
+        id: Microsoft.CodeAnalysis.Workspace
+        name: Workspace
+        href: api\Microsoft.CodeAnalysis.Workspace
     - id: expandInsideNode
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
+        name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
         href: System.Runtime
         isExternal: true
     - id: expandParameter
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -212,7 +224,7 @@ items:
     path: src\Workspaces\Core\Portable\Simplification\Simplifier.cs
     startLine: 67
   summary: >+
-    Expand qualifying parts of the specified subtree, annotating the parts using the [Microsoft.CodeAnalysis.Simplification.Simplifier.Annotation](api\Microsoft.CodeAnalysis.Simplification.Simplifier) annotation.
+    Expand qualifying parts of the specified subtree, annotating the parts using the [Microsoft.CodeAnalysis.Simplification.Simplifier.Annotation](#/api\Microsoft.CodeAnalysis.Simplification.Simplifier) annotation.
 
   syntax:
     content:
@@ -220,20 +232,24 @@ items:
     parameters:
     - id: token
       type:
-        id: SyntaxToken
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxToken
+        name: SyntaxToken
+        href: api\Microsoft.CodeAnalysis.SyntaxToken
     - id: document
       type:
-        id: Document
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Document.cs
+        id: Microsoft.CodeAnalysis.Document
+        name: Document
+        href: api\Microsoft.CodeAnalysis.Document
     - id: expandInsideNode
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
+        name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
         href: System.Runtime
         isExternal: true
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -255,7 +271,7 @@ items:
     path: src\Workspaces\Core\Portable\Simplification\Simplifier.cs
     startLine: 76
   summary: >+
-    Expand qualifying parts of the specified subtree, annotating the parts using the [Microsoft.CodeAnalysis.Simplification.Simplifier.Annotation](api\Microsoft.CodeAnalysis.Simplification.Simplifier) annotation.
+    Expand qualifying parts of the specified subtree, annotating the parts using the [Microsoft.CodeAnalysis.Simplification.Simplifier.Annotation](#/api\Microsoft.CodeAnalysis.Simplification.Simplifier) annotation.
 
   syntax:
     content:
@@ -263,24 +279,29 @@ items:
     parameters:
     - id: token
       type:
-        id: SyntaxToken
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxToken
+        name: SyntaxToken
+        href: api\Microsoft.CodeAnalysis.SyntaxToken
     - id: semanticModel
       type:
-        id: SemanticModel
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+        id: Microsoft.CodeAnalysis.SemanticModel
+        name: SemanticModel
+        href: api\Microsoft.CodeAnalysis.SemanticModel
     - id: workspace
       type:
-        id: Workspace
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Workspace.cs
+        id: Microsoft.CodeAnalysis.Workspace
+        name: Workspace
+        href: api\Microsoft.CodeAnalysis.Workspace
     - id: expandInsideNode
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
+        name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
         href: System.Runtime
         isExternal: true
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -302,7 +323,7 @@ items:
     path: src\Workspaces\Core\Portable\Simplification\Simplifier.cs
     startLine: 85
   summary: >+
-    Reduce all sub-trees annotated with [Microsoft.CodeAnalysis.Simplification.Simplifier.Annotation](api\Microsoft.CodeAnalysis.Simplification.Simplifier) found within the document. The annotated node and all child nodes will be reduced.
+    Reduce all sub-trees annotated with [Microsoft.CodeAnalysis.Simplification.Simplifier.Annotation](#/api\Microsoft.CodeAnalysis.Simplification.Simplifier) found within the document. The annotated node and all child nodes will be reduced.
 
   syntax:
     content:
@@ -310,15 +331,18 @@ items:
     parameters:
     - id: document
       type:
-        id: Document
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Document.cs
+        id: Microsoft.CodeAnalysis.Document
+        name: Document
+        href: api\Microsoft.CodeAnalysis.Document
     - id: optionSet
       type:
-        id: OptionSet
-        href: C:\roslyn\src\Workspaces\Core\Portable\Options\OptionSet.cs
+        id: Microsoft.CodeAnalysis.Options.OptionSet
+        name: OptionSet
+        href: api\Microsoft.CodeAnalysis.Options.OptionSet
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -340,7 +364,7 @@ items:
     path: src\Workspaces\Core\Portable\Simplification\Simplifier.cs
     startLine: 95
   summary: >+
-    Reduce the sub-trees annotated with [Microsoft.CodeAnalysis.Simplification.Simplifier.Annotation](api\Microsoft.CodeAnalysis.Simplification.Simplifier) found within the subtrees identified with the specified .
+    Reduce the sub-trees annotated with [Microsoft.CodeAnalysis.Simplification.Simplifier.Annotation](#/api\Microsoft.CodeAnalysis.Simplification.Simplifier) found within the subtrees identified with the specified .
 
     The annotated node and all child nodes will be reduced.
 
@@ -350,19 +374,23 @@ items:
     parameters:
     - id: document
       type:
-        id: Document
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Document.cs
+        id: Microsoft.CodeAnalysis.Document
+        name: Document
+        href: api\Microsoft.CodeAnalysis.Document
     - id: annotation
       type:
-        id: SyntaxAnnotation
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxAnnotation.cs
+        id: Microsoft.CodeAnalysis.SyntaxAnnotation
+        name: SyntaxAnnotation
+        href: api\Microsoft.CodeAnalysis.SyntaxAnnotation
     - id: optionSet
       type:
-        id: OptionSet
-        href: C:\roslyn\src\Workspaces\Core\Portable\Options\OptionSet.cs
+        id: Microsoft.CodeAnalysis.Options.OptionSet
+        name: OptionSet
+        href: api\Microsoft.CodeAnalysis.Options.OptionSet
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -384,7 +412,7 @@ items:
     path: src\Workspaces\Core\Portable\Simplification\Simplifier.cs
     startLine: 105
   summary: >+
-    Reduce the sub-trees annotated with [Microsoft.CodeAnalysis.Simplification.Simplifier.Annotation](api\Microsoft.CodeAnalysis.Simplification.Simplifier) found within the specified span.
+    Reduce the sub-trees annotated with [Microsoft.CodeAnalysis.Simplification.Simplifier.Annotation](#/api\Microsoft.CodeAnalysis.Simplification.Simplifier) found within the specified span.
 
     The annotated node and all child nodes will be reduced.
 
@@ -394,19 +422,23 @@ items:
     parameters:
     - id: document
       type:
-        id: Document
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Document.cs
+        id: Microsoft.CodeAnalysis.Document
+        name: Document
+        href: api\Microsoft.CodeAnalysis.Document
     - id: span
       type:
-        id: TextSpan
-        href: C:\roslyn\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: Microsoft.CodeAnalysis.Text.TextSpan
     - id: optionSet
       type:
-        id: OptionSet
-        href: C:\roslyn\src\Workspaces\Core\Portable\Options\OptionSet.cs
+        id: Microsoft.CodeAnalysis.Options.OptionSet
+        name: OptionSet
+        href: api\Microsoft.CodeAnalysis.Options.OptionSet
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -428,7 +460,7 @@ items:
     path: src\Workspaces\Core\Portable\Simplification\Simplifier.cs
     startLine: 114
   summary: >+
-    Reduce the sub-trees annotated with [Microsoft.CodeAnalysis.Simplification.Simplifier.Annotation](api\Microsoft.CodeAnalysis.Simplification.Simplifier) found within the specified spans.
+    Reduce the sub-trees annotated with [Microsoft.CodeAnalysis.Simplification.Simplifier.Annotation](#/api\Microsoft.CodeAnalysis.Simplification.Simplifier) found within the specified spans.
 
     The annotated node and all child nodes will be reduced.
 
@@ -438,20 +470,24 @@ items:
     parameters:
     - id: document
       type:
-        id: Document
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Document.cs
+        id: Microsoft.CodeAnalysis.Document
+        name: Document
+        href: api\Microsoft.CodeAnalysis.Document
     - id: spans
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextSpan}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextSpan}
         href: System.Runtime
         isExternal: true
     - id: optionSet
       type:
-        id: OptionSet
-        href: C:\roslyn\src\Workspaces\Core\Portable\Options\OptionSet.cs
+        id: Microsoft.CodeAnalysis.Options.OptionSet
+        name: OptionSet
+        href: api\Microsoft.CodeAnalysis.Options.OptionSet
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:

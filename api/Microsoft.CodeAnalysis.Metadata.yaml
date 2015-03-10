@@ -22,6 +22,7 @@ syntax:
     CSharp: public abstract class Metadata
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -42,7 +43,7 @@ items:
     path: src\Compilers\Core\Portable\MetadataReference\Metadata.cs
     startLine: 22
   summary: >+
-    Retrieves the [Microsoft.CodeAnalysis.MetadataImageKind](api\Microsoft.CodeAnalysis.MetadataImageKind) for this instance.
+    Retrieves the [Microsoft.CodeAnalysis.MetadataImageKind](#/api\Microsoft.CodeAnalysis.MetadataImageKind) for this instance.
 
   syntax:
     content:
@@ -50,8 +51,9 @@ items:
     parameters:
     - id: Kind
       type:
-        id: MetadataImageKind
-        href: C:\roslyn\src\Compilers\Core\Portable\MetadataReference\MetadataImageKind.cs
+        id: Microsoft.CodeAnalysis.MetadataImageKind
+        name: MetadataImageKind
+        href: api\Microsoft.CodeAnalysis.MetadataImageKind
 - id: Microsoft.CodeAnalysis.Metadata.get_Kind
   yaml: api\Microsoft.CodeAnalysis.Metadata.yaml
   href: api\Microsoft.CodeAnalysis.Metadata

@@ -15,19 +15,22 @@ source:
   path: src\Workspaces\Core\Portable\Workspace\Host\Mef\ExportWorkspaceServiceAttribute.cs
   startLine: 10
 summary: >+
-  Use this attribute to declare a [Microsoft.CodeAnalysis.Host.IWorkspaceService](api\Microsoft.CodeAnalysis.Host.IWorkspaceService) implementation for inclusion in a MEF-based workspace.
+  Use this attribute to declare a [Microsoft.CodeAnalysis.Host.IWorkspaceService](#/api\Microsoft.CodeAnalysis.Host.IWorkspaceService) implementation for inclusion in a MEF-based workspace.
 
 syntax:
   content:
     CSharp: public class ExportWorkspaceServiceAttribute
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.Attribute
+  name: System.Attribute
   href: System.Runtime
   isExternal: true
 - id: System.Composition.ExportAttribute
+  name: System.Composition.ExportAttribute
   href: System.Composition.AttributedModel
   isExternal: true
 items:
@@ -57,6 +60,7 @@ items:
     - id: ServiceType
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Host.Mef.ExportWorkspaceServiceAttribute.get_ServiceType
@@ -100,6 +104,7 @@ items:
     - id: Layer
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Host.Mef.ExportWorkspaceServiceAttribute.get_Layer
@@ -134,7 +139,7 @@ items:
     path: src\Workspaces\Core\Portable\Workspace\Host\Mef\ExportWorkspaceServiceAttribute.cs
     startLine: 29
   summary: >+
-    Declares a [Microsoft.CodeAnalysis.Host.IWorkspaceService](api\Microsoft.CodeAnalysis.Host.IWorkspaceService) implementation for inclusion in a MEF-based workspace.
+    Declares a [Microsoft.CodeAnalysis.Host.IWorkspaceService](#/api\Microsoft.CodeAnalysis.Host.IWorkspaceService) implementation for inclusion in a MEF-based workspace.
 
   syntax:
     content:
@@ -143,12 +148,14 @@ items:
     - id: serviceType
       type:
         id: System.Type
+        name: System.Type
         href: System.Runtime
         isExternal: true
-      description: The type that will be used to retrieve the service from a [Microsoft.CodeAnalysis.Host.HostWorkspaceServices](api\Microsoft.CodeAnalysis.Host.HostWorkspaceServices).
+      description: The type that will be used to retrieve the service from a [Microsoft.CodeAnalysis.Host.HostWorkspaceServices](#/api\Microsoft.CodeAnalysis.Host.HostWorkspaceServices).
     - id: layer
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
-      description: The layer that the service is specified for; [Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.Default](api\Microsoft.CodeAnalysis.Host.Mef.ServiceLayer), etc.
+      description: The layer that the service is specified for; [Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.Default](#/api\Microsoft.CodeAnalysis.Host.Mef.ServiceLayer), etc.

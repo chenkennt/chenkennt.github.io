@@ -22,6 +22,7 @@ syntax:
     CSharp: public abstract class ParseOptions
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -50,8 +51,9 @@ items:
     parameters:
     - id: Kind
       type:
-        id: SourceCodeKind
-        href: C:\roslyn\src\Compilers\Core\Portable\SourceCodeKind.cs
+        id: Microsoft.CodeAnalysis.SourceCodeKind
+        name: SourceCodeKind
+        href: api\Microsoft.CodeAnalysis.SourceCodeKind
 - id: Microsoft.CodeAnalysis.ParseOptions.get_Kind
   yaml: api\Microsoft.CodeAnalysis.ParseOptions.yaml
   href: api\Microsoft.CodeAnalysis.ParseOptions
@@ -92,8 +94,9 @@ items:
     parameters:
     - id: DocumentationMode
       type:
-        id: DocumentationMode
-        href: C:\roslyn\src\Compilers\Core\Portable\DocumentationMode.cs
+        id: Microsoft.CodeAnalysis.DocumentationMode
+        name: DocumentationMode
+        href: api\Microsoft.CodeAnalysis.DocumentationMode
 - id: Microsoft.CodeAnalysis.ParseOptions.get_DocumentationMode
   yaml: api\Microsoft.CodeAnalysis.ParseOptions.yaml
   href: api\Microsoft.CodeAnalysis.ParseOptions
@@ -134,8 +137,9 @@ items:
     parameters:
     - id: kind
       type:
-        id: SourceCodeKind
-        href: C:\roslyn\src\Compilers\Core\Portable\SourceCodeKind.cs
+        id: Microsoft.CodeAnalysis.SourceCodeKind
+        name: SourceCodeKind
+        href: api\Microsoft.CodeAnalysis.SourceCodeKind
     return:
       id: ParseOptions
 - id: Microsoft.CodeAnalysis.ParseOptions.WithDocumentationMode(Microsoft.CodeAnalysis.DocumentationMode)
@@ -163,8 +167,9 @@ items:
     parameters:
     - id: documentationMode
       type:
-        id: DocumentationMode
-        href: C:\roslyn\src\Compilers\Core\Portable\DocumentationMode.cs
+        id: Microsoft.CodeAnalysis.DocumentationMode
+        name: DocumentationMode
+        href: api\Microsoft.CodeAnalysis.DocumentationMode
     return:
       id: ParseOptions
 - id: Microsoft.CodeAnalysis.ParseOptions.WithFeatures(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
@@ -193,6 +198,7 @@ items:
     - id: features
       type:
         id: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+        name: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}}
         href: System.Runtime
         isExternal: true
     return:
@@ -223,6 +229,7 @@ items:
     - id: Features
       type:
         id: System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+        name: System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ParseOptions.get_Features
@@ -266,6 +273,7 @@ items:
     - id: PreprocessorSymbolNames
       type:
         id: System.Collections.Generic.IEnumerable{System.String}
+        name: System.Collections.Generic.IEnumerable{System.String}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ParseOptions.get_PreprocessorSymbolNames
@@ -306,6 +314,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:

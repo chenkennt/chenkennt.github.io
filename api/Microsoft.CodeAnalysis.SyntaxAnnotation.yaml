@@ -28,6 +28,7 @@ syntax:
     CSharp: public sealed class SyntaxAnnotation
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -73,6 +74,7 @@ items:
     - id: Kind
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxAnnotation.get_Kind
@@ -113,6 +115,7 @@ items:
     - id: Data
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxAnnotation.get_Data
@@ -173,6 +176,7 @@ items:
     - id: kind
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxAnnotation.#ctor(System.String,System.String)
@@ -198,11 +202,13 @@ items:
     - id: kind
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: data
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxAnnotation.Equals(Microsoft.CodeAnalysis.SyntaxAnnotation)
@@ -227,8 +233,9 @@ items:
     parameters:
     - id: other
       type:
-        id: SyntaxAnnotation
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxAnnotation.cs
+        id: Microsoft.CodeAnalysis.SyntaxAnnotation
+        name: SyntaxAnnotation
+        href: api\Microsoft.CodeAnalysis.SyntaxAnnotation
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxAnnotation.op_Equality(Microsoft.CodeAnalysis.SyntaxAnnotation,Microsoft.CodeAnalysis.SyntaxAnnotation)
@@ -284,6 +291,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:

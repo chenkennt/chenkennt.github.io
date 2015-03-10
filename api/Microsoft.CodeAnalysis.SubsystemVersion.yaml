@@ -42,9 +42,11 @@ syntax:
     CSharp: public struct SubsystemVersion
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -226,13 +228,15 @@ items:
     - id: str
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: String to parse
     - id: version
       type:
-        id: SubsystemVersion
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
+        id: Microsoft.CodeAnalysis.SubsystemVersion
+        name: SubsystemVersion
+        href: api\Microsoft.CodeAnalysis.SubsystemVersion
       description: the value if successfully parsed or None otherwise
     return:
       id: Boolean
@@ -263,12 +267,14 @@ items:
     - id: major
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: major subsystem version
     - id: minor
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: minor subsystem version
@@ -301,6 +307,7 @@ items:
     - id: IsValid
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SubsystemVersion.get_IsValid
@@ -341,6 +348,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -389,8 +397,9 @@ items:
     parameters:
     - id: other
       type:
-        id: SubsystemVersion
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
+        id: Microsoft.CodeAnalysis.SubsystemVersion
+        name: SubsystemVersion
+        href: api\Microsoft.CodeAnalysis.SubsystemVersion
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SubsystemVersion.ToString

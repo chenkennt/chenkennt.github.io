@@ -15,13 +15,14 @@ source:
   path: src\Workspaces\Core\Portable\Workspace\Solution\Project.cs
   startLine: 20
 summary: >+
-  Represents a project that is part of a [Microsoft.CodeAnalysis.Project.Solution](api\Microsoft.CodeAnalysis.Project).
+  Represents a project that is part of a [Microsoft.CodeAnalysis.Project.Solution](#/api\Microsoft.CodeAnalysis.Project).
 
 syntax:
   content:
     CSharp: public partial class Project
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -50,8 +51,9 @@ items:
     parameters:
     - id: Solution
       type:
-        id: Solution
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Solution.CompilationTracker.cs
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api\Microsoft.CodeAnalysis.Solution
 - id: Microsoft.CodeAnalysis.Project.get_Solution
   yaml: api\Microsoft.CodeAnalysis.Project.yaml
   href: api\Microsoft.CodeAnalysis.Project
@@ -84,7 +86,7 @@ items:
     path: src\Workspaces\Core\Portable\Workspace\Solution\Project.cs
     startLine: 57
   summary: >+
-    The ID of the project. Multiple [Microsoft.CodeAnalysis.Project](api\Microsoft.CodeAnalysis.Project) instances may share the same ID. However, only
+    The ID of the project. Multiple [Microsoft.CodeAnalysis.Project](#/api\Microsoft.CodeAnalysis.Project) instances may share the same ID. However, only
 
     one project may have this ID in any given solution.
 
@@ -94,8 +96,9 @@ items:
     parameters:
     - id: Id
       type:
-        id: ProjectId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\ProjectId.cs
+        id: Microsoft.CodeAnalysis.ProjectId
+        name: ProjectId
+        href: api\Microsoft.CodeAnalysis.ProjectId
 - id: Microsoft.CodeAnalysis.Project.get_Id
   yaml: api\Microsoft.CodeAnalysis.Project.yaml
   href: api\Microsoft.CodeAnalysis.Project
@@ -137,6 +140,7 @@ items:
     - id: FilePath
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.get_FilePath
@@ -180,6 +184,7 @@ items:
     - id: OutputFilePath
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.get_OutputFilePath
@@ -214,9 +219,9 @@ items:
     path: src\Workspaces\Core\Portable\Workspace\Solution\Project.cs
     startLine: 93
   summary: >+
-    true if this [Microsoft.CodeAnalysis.Project](api\Microsoft.CodeAnalysis.Project) supports providing data through the
+    true if this [Microsoft.CodeAnalysis.Project](#/api\Microsoft.CodeAnalysis.Project) supports providing data through the
 
-    [Microsoft.CodeAnalysis.Project.GetCompilationAsync(System.Threading.CancellationToken)](api\Microsoft.CodeAnalysis.Project) method.
+    [Microsoft.CodeAnalysis.Project.GetCompilationAsync(System.Threading.CancellationToken)](#/api\Microsoft.CodeAnalysis.Project) method.
 
 
 
@@ -229,6 +234,7 @@ items:
     - id: SupportsCompilation
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.get_SupportsCompilation
@@ -271,8 +277,9 @@ items:
     parameters:
     - id: LanguageServices
       type:
-        id: HostLanguageServices
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Host\HostLanguageServices.cs
+        id: Microsoft.CodeAnalysis.Host.HostLanguageServices
+        name: HostLanguageServices
+        href: api\Microsoft.CodeAnalysis.Host.HostLanguageServices
 - id: Microsoft.CodeAnalysis.Project.get_LanguageServices
   yaml: api\Microsoft.CodeAnalysis.Project.yaml
   href: api\Microsoft.CodeAnalysis.Project
@@ -314,6 +321,7 @@ items:
     - id: Language
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.get_Language
@@ -357,6 +365,7 @@ items:
     - id: AssemblyName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.get_AssemblyName
@@ -400,6 +409,7 @@ items:
     - id: Name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.get_Name
@@ -443,6 +453,7 @@ items:
     - id: MetadataReferences
       type:
         id: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.MetadataReference}
+        name: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.MetadataReference}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.get_MetadataReferences
@@ -486,6 +497,7 @@ items:
     - id: ProjectReferences
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ProjectReference}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ProjectReference}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.get_ProjectReferences
@@ -531,6 +543,7 @@ items:
     - id: AllProjectReferences
       type:
         id: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.ProjectReference}
+        name: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.ProjectReference}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.get_AllProjectReferences
@@ -574,6 +587,7 @@ items:
     - id: AnalyzerReferences
       type:
         id: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference}
+        name: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.get_AnalyzerReferences
@@ -616,8 +630,9 @@ items:
     parameters:
     - id: AnalyzerOptions
       type:
-        id: AnalyzerOptions
-        href: C:\roslyn\src\Compilers\Core\Portable\DiagnosticAnalyzer\AnalyzerOptions.cs
+        id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
+        name: AnalyzerOptions
+        href: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
 - id: Microsoft.CodeAnalysis.Project.get_AnalyzerOptions
   yaml: api\Microsoft.CodeAnalysis.Project.yaml
   href: api\Microsoft.CodeAnalysis.Project
@@ -658,8 +673,9 @@ items:
     parameters:
     - id: CompilationOptions
       type:
-        id: CompilationOptions
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+        id: Microsoft.CodeAnalysis.CompilationOptions
+        name: CompilationOptions
+        href: api\Microsoft.CodeAnalysis.CompilationOptions
 - id: Microsoft.CodeAnalysis.Project.get_CompilationOptions
   yaml: api\Microsoft.CodeAnalysis.Project.yaml
   href: api\Microsoft.CodeAnalysis.Project
@@ -700,8 +716,9 @@ items:
     parameters:
     - id: ParseOptions
       type:
-        id: ParseOptions
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\ParseOptions.cs
+        id: Microsoft.CodeAnalysis.ParseOptions
+        name: ParseOptions
+        href: api\Microsoft.CodeAnalysis.ParseOptions
 - id: Microsoft.CodeAnalysis.Project.get_ParseOptions
   yaml: api\Microsoft.CodeAnalysis.Project.yaml
   href: api\Microsoft.CodeAnalysis.Project
@@ -743,6 +760,7 @@ items:
     - id: IsSubmission
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.get_IsSubmission
@@ -786,6 +804,7 @@ items:
     - id: HasDocuments
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.get_HasDocuments
@@ -829,6 +848,7 @@ items:
     - id: DocumentIds
       type:
         id: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.DocumentId}
+        name: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.DocumentId}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.get_DocumentIds
@@ -872,6 +892,7 @@ items:
     - id: AdditionalDocumentIds
       type:
         id: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.DocumentId}
+        name: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.DocumentId}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.get_AdditionalDocumentIds
@@ -915,6 +936,7 @@ items:
     - id: Documents
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Document}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Document}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.get_Documents
@@ -955,6 +977,7 @@ items:
     - id: AdditionalDocuments
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.TextDocument}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.TextDocument}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.get_AdditionalDocuments
@@ -997,8 +1020,9 @@ items:
     parameters:
     - id: documentId
       type:
-        id: DocumentId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+        id: Microsoft.CodeAnalysis.DocumentId
+        name: DocumentId
+        href: api\Microsoft.CodeAnalysis.DocumentId
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Project.ContainsAdditionalDocument(Microsoft.CodeAnalysis.DocumentId)
@@ -1026,8 +1050,9 @@ items:
     parameters:
     - id: documentId
       type:
-        id: DocumentId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+        id: Microsoft.CodeAnalysis.DocumentId
+        name: DocumentId
+        href: api\Microsoft.CodeAnalysis.DocumentId
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Project.GetDocumentId(Microsoft.CodeAnalysis.SyntaxTree)
@@ -1055,8 +1080,9 @@ items:
     parameters:
     - id: syntaxTree
       type:
-        id: SyntaxTree
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+        id: Microsoft.CodeAnalysis.SyntaxTree
+        name: SyntaxTree
+        href: api\Microsoft.CodeAnalysis.SyntaxTree
     return:
       id: DocumentId
 - id: Microsoft.CodeAnalysis.Project.GetDocument(Microsoft.CodeAnalysis.SyntaxTree)
@@ -1084,8 +1110,9 @@ items:
     parameters:
     - id: syntaxTree
       type:
-        id: SyntaxTree
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+        id: Microsoft.CodeAnalysis.SyntaxTree
+        name: SyntaxTree
+        href: api\Microsoft.CodeAnalysis.SyntaxTree
     return:
       id: Document
 - id: Microsoft.CodeAnalysis.Project.GetDocument(Microsoft.CodeAnalysis.DocumentId)
@@ -1113,8 +1140,9 @@ items:
     parameters:
     - id: documentId
       type:
-        id: DocumentId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+        id: Microsoft.CodeAnalysis.DocumentId
+        name: DocumentId
+        href: api\Microsoft.CodeAnalysis.DocumentId
     return:
       id: Document
 - id: Microsoft.CodeAnalysis.Project.GetAdditionalDocument(Microsoft.CodeAnalysis.DocumentId)
@@ -1142,8 +1170,9 @@ items:
     parameters:
     - id: documentId
       type:
-        id: DocumentId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+        id: Microsoft.CodeAnalysis.DocumentId
+        name: DocumentId
+        href: api\Microsoft.CodeAnalysis.DocumentId
     return:
       id: TextDocument
 - id: Microsoft.CodeAnalysis.Project.TryGetCompilation(Microsoft.CodeAnalysis.Compilation@)
@@ -1163,7 +1192,7 @@ items:
     path: src\Workspaces\Core\Portable\Workspace\Solution\Project.cs
     startLine: 376
   summary: >+
-    Get the [Microsoft.CodeAnalysis.Compilation](api\Microsoft.CodeAnalysis.Compilation) for this project if it is available.
+    Get the [Microsoft.CodeAnalysis.Compilation](#/api\Microsoft.CodeAnalysis.Compilation) for this project if it is available.
 
   syntax:
     content:
@@ -1171,8 +1200,9 @@ items:
     parameters:
     - id: compilation
       type:
-        id: Compilation
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\Compilation.cs
+        id: Microsoft.CodeAnalysis.Compilation
+        name: Compilation
+        href: api\Microsoft.CodeAnalysis.Compilation
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Project.GetCompilationAsync(System.Threading.CancellationToken)
@@ -1192,7 +1222,7 @@ items:
     path: src\Workspaces\Core\Portable\Workspace\Solution\Project.cs
     startLine: 384
   summary: >+
-    Get the [Microsoft.CodeAnalysis.Compilation](api\Microsoft.CodeAnalysis.Compilation) for this project asynchronously.
+    Get the [Microsoft.CodeAnalysis.Compilation](#/api\Microsoft.CodeAnalysis.Compilation) for this project asynchronously.
 
   syntax:
     content:
@@ -1201,6 +1231,7 @@ items:
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -1230,8 +1261,9 @@ items:
     parameters:
     - id: oldProject
       type:
-        id: Project
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Project.cs
+        id: Microsoft.CodeAnalysis.Project
+        name: Project
+        href: api\Microsoft.CodeAnalysis.Project
     return:
       id: ProjectChanges
 - id: Microsoft.CodeAnalysis.Project.Version
@@ -1259,8 +1291,9 @@ items:
     parameters:
     - id: Version
       type:
-        id: VersionStamp
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\VersionStamp.cs
+        id: Microsoft.CodeAnalysis.VersionStamp
+        name: VersionStamp
+        href: api\Microsoft.CodeAnalysis.VersionStamp
 - id: Microsoft.CodeAnalysis.Project.get_Version
   yaml: api\Microsoft.CodeAnalysis.Project.yaml
   href: api\Microsoft.CodeAnalysis.Project
@@ -1302,6 +1335,7 @@ items:
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -1332,6 +1366,7 @@ items:
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -1364,6 +1399,7 @@ items:
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -1396,6 +1432,7 @@ items:
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -1426,6 +1463,7 @@ items:
     - id: assemblyName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -1455,8 +1493,9 @@ items:
     parameters:
     - id: options
       type:
-        id: CompilationOptions
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+        id: Microsoft.CodeAnalysis.CompilationOptions
+        name: CompilationOptions
+        href: api\Microsoft.CodeAnalysis.CompilationOptions
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.WithParseOptions(Microsoft.CodeAnalysis.ParseOptions)
@@ -1484,8 +1523,9 @@ items:
     parameters:
     - id: options
       type:
-        id: ParseOptions
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\ParseOptions.cs
+        id: Microsoft.CodeAnalysis.ParseOptions
+        name: ParseOptions
+        href: api\Microsoft.CodeAnalysis.ParseOptions
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.AddProjectReference(Microsoft.CodeAnalysis.ProjectReference)
@@ -1515,8 +1555,9 @@ items:
     parameters:
     - id: projectReference
       type:
-        id: ProjectReference
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\ProjectReference.cs
+        id: Microsoft.CodeAnalysis.ProjectReference
+        name: ProjectReference
+        href: api\Microsoft.CodeAnalysis.ProjectReference
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.AddProjectReferences(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ProjectReference})
@@ -1547,6 +1588,7 @@ items:
     - id: projectReferences
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ProjectReference}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ProjectReference}
         href: System.Runtime
         isExternal: true
     return:
@@ -1576,8 +1618,9 @@ items:
     parameters:
     - id: projectReference
       type:
-        id: ProjectReference
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\ProjectReference.cs
+        id: Microsoft.CodeAnalysis.ProjectReference
+        name: ProjectReference
+        href: api\Microsoft.CodeAnalysis.ProjectReference
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.WithProjectReferences(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ProjectReference})
@@ -1608,6 +1651,7 @@ items:
     - id: projectReferences
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ProjectReference}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ProjectReference}
         href: System.Runtime
         isExternal: true
     return:
@@ -1639,8 +1683,9 @@ items:
     parameters:
     - id: metadataReference
       type:
-        id: MetadataReference
-        href: C:\roslyn\src\Compilers\Core\Portable\MetadataReference\MetadataReference.cs
+        id: Microsoft.CodeAnalysis.MetadataReference
+        name: MetadataReference
+        href: api\Microsoft.CodeAnalysis.MetadataReference
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.AddMetadataReferences(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference})
@@ -1671,6 +1716,7 @@ items:
     - id: metadataReferences
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference}
         href: System.Runtime
         isExternal: true
     return:
@@ -1700,8 +1746,9 @@ items:
     parameters:
     - id: metadataReference
       type:
-        id: MetadataReference
-        href: C:\roslyn\src\Compilers\Core\Portable\MetadataReference\MetadataReference.cs
+        id: Microsoft.CodeAnalysis.MetadataReference
+        name: MetadataReference
+        href: api\Microsoft.CodeAnalysis.MetadataReference
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.WithMetadataReferences(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference})
@@ -1732,6 +1779,7 @@ items:
     - id: metadataReferences
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference}
         href: System.Runtime
         isExternal: true
     return:
@@ -1763,8 +1811,9 @@ items:
     parameters:
     - id: analyzerReference
       type:
-        id: AnalyzerReference
-        href: C:\roslyn\src\Compilers\Core\Portable\DiagnosticAnalyzer\AnalyzerReference.cs
+        id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
+        name: AnalyzerReference
+        href: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.AddAnalyzerReferences(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference})
@@ -1795,6 +1844,7 @@ items:
     - id: analyzerReferences
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference}
         href: System.Runtime
         isExternal: true
     return:
@@ -1824,8 +1874,9 @@ items:
     parameters:
     - id: analyzerReference
       type:
-        id: AnalyzerReference
-        href: C:\roslyn\src\Compilers\Core\Portable\DiagnosticAnalyzer\AnalyzerReference.cs
+        id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
+        name: AnalyzerReference
+        href: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.WithAnalyzerReferences(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference})
@@ -1856,6 +1907,7 @@ items:
     - id: analyzerReferencs
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference}
         href: System.Runtime
         isExternal: true
     return:
@@ -1886,20 +1938,24 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: syntaxRoot
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: folders
       type:
         id: System.Collections.Generic.IEnumerable{System.String}
+        name: System.Collections.Generic.IEnumerable{System.String}
         href: System.Runtime
         isExternal: true
     - id: filePath
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -1930,20 +1986,24 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: text
       type:
-        id: SourceText
-        href: C:\roslyn\src\Compilers\Core\Portable\Text\SourceText.cs
+        id: Microsoft.CodeAnalysis.Text.SourceText
+        name: SourceText
+        href: Microsoft.CodeAnalysis.Text.SourceText
     - id: folders
       type:
         id: System.Collections.Generic.IEnumerable{System.String}
+        name: System.Collections.Generic.IEnumerable{System.String}
         href: System.Runtime
         isExternal: true
     - id: filePath
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -1974,21 +2034,25 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: text
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: folders
       type:
         id: System.Collections.Generic.IEnumerable{System.String}
+        name: System.Collections.Generic.IEnumerable{System.String}
         href: System.Runtime
         isExternal: true
     - id: filePath
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -2019,20 +2083,24 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: text
       type:
-        id: SourceText
-        href: C:\roslyn\src\Compilers\Core\Portable\Text\SourceText.cs
+        id: Microsoft.CodeAnalysis.Text.SourceText
+        name: SourceText
+        href: Microsoft.CodeAnalysis.Text.SourceText
     - id: folders
       type:
         id: System.Collections.Generic.IEnumerable{System.String}
+        name: System.Collections.Generic.IEnumerable{System.String}
         href: System.Runtime
         isExternal: true
     - id: filePath
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -2063,21 +2131,25 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: text
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: folders
       type:
         id: System.Collections.Generic.IEnumerable{System.String}
+        name: System.Collections.Generic.IEnumerable{System.String}
         href: System.Runtime
         isExternal: true
     - id: filePath
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -2107,8 +2179,9 @@ items:
     parameters:
     - id: documentId
       type:
-        id: DocumentId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+        id: Microsoft.CodeAnalysis.DocumentId
+        name: DocumentId
+        href: api\Microsoft.CodeAnalysis.DocumentId
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.RemoveAdditionalDocument(Microsoft.CodeAnalysis.DocumentId)
@@ -2136,7 +2209,8 @@ items:
     parameters:
     - id: documentId
       type:
-        id: DocumentId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+        id: Microsoft.CodeAnalysis.DocumentId
+        name: DocumentId
+        href: api\Microsoft.CodeAnalysis.DocumentId
     return:
       id: Project

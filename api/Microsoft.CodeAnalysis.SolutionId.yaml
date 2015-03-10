@@ -22,6 +22,7 @@ syntax:
     CSharp: public class SolutionId
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -51,6 +52,7 @@ items:
     - id: Id
       type:
         id: System.Guid
+        name: System.Guid
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SolutionId.get_Id
@@ -94,6 +96,7 @@ items:
     - id: debugName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: An optional name to make this id easier to recognize while debugging.
@@ -122,6 +125,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -148,8 +152,9 @@ items:
     parameters:
     - id: other
       type:
-        id: SolutionId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\SolutionId.cs
+        id: Microsoft.CodeAnalysis.SolutionId
+        name: SolutionId
+        href: api\Microsoft.CodeAnalysis.SolutionId
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SolutionId.op_Equality(Microsoft.CodeAnalysis.SolutionId,Microsoft.CodeAnalysis.SolutionId)

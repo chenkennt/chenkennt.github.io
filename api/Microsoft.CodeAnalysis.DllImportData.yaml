@@ -22,6 +22,7 @@ syntax:
     CSharp: public sealed class DllImportData
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -51,6 +52,7 @@ items:
     - id: ModuleName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_ModuleName
@@ -94,6 +96,7 @@ items:
     - id: EntryPointName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_EntryPointName
@@ -128,7 +131,7 @@ items:
     path: src\Compilers\Core\Portable\Symbols\PlatformInvokeInformation.cs
     startLine: 50
   summary: >+
-    Controls whether the [Microsoft.CodeAnalysis.DllImportData.CharacterSet](api\Microsoft.CodeAnalysis.DllImportData) field causes the common language runtime
+    Controls whether the [Microsoft.CodeAnalysis.DllImportData.CharacterSet](#/api\Microsoft.CodeAnalysis.DllImportData) field causes the common language runtime
 
     to search an unmanaged DLL for entry-point names other than the one specified.
 
@@ -139,6 +142,7 @@ items:
     - id: ExactSpelling
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_ExactSpelling
@@ -182,6 +186,7 @@ items:
     - id: CharacterSet
       type:
         id: System.Runtime.InteropServices.CharSet
+        name: System.Runtime.InteropServices.CharSet
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_CharacterSet
@@ -225,6 +230,7 @@ items:
     - id: SetLastError
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_SetLastError
@@ -268,6 +274,7 @@ items:
     - id: CallingConvention
       type:
         id: System.Runtime.InteropServices.CallingConvention
+        name: System.Runtime.InteropServices.CallingConvention
         href: System.Runtime.InteropServices
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_CallingConvention
@@ -304,7 +311,7 @@ items:
   summary: >+
     Enables or disables best-fit mapping behavior when converting Unicode characters to ANSI characters.
 
-    Null if not specified (the setting for the containing type or assembly should be used, @T:System.Runtime.InteropServices.BestFitMappingAttribute-).
+    Null if not specified (the setting for the containing type or assembly should be used, [System.Runtime.InteropServices.BestFitMappingAttribute](#)).
 
   syntax:
     content:
@@ -313,6 +320,7 @@ items:
     - id: BestFitMapping
       type:
         id: System.Nullable{System.Boolean}
+        name: System.Nullable{System.Boolean}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_BestFitMapping
@@ -358,6 +366,7 @@ items:
     - id: ThrowOnUnmappableCharacter
       type:
         id: System.Nullable{System.Boolean}
+        name: System.Nullable{System.Boolean}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_ThrowOnUnmappableCharacter

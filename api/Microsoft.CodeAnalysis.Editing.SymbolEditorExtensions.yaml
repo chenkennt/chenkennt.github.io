@@ -19,6 +19,7 @@ syntax:
     CSharp: public static class SymbolEditorExtensions
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -47,19 +48,23 @@ items:
     parameters:
     - id: editor
       type:
-        id: SymbolEditor
-        href: C:\roslyn\src\Workspaces\Core\Portable\Editing\SymbolEditor.cs
+        id: Microsoft.CodeAnalysis.Editing.SymbolEditor
+        name: SymbolEditor
+        href: api\Microsoft.CodeAnalysis.Editing.SymbolEditor
     - id: symbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
     - id: baseOrInterfaceType
       type:
-        id: ITypeSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+        id: Microsoft.CodeAnalysis.ITypeSymbol
+        name: ITypeSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeSymbol
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -89,20 +94,24 @@ items:
     parameters:
     - id: editor
       type:
-        id: SymbolEditor
-        href: C:\roslyn\src\Workspaces\Core\Portable\Editing\SymbolEditor.cs
+        id: Microsoft.CodeAnalysis.Editing.SymbolEditor
+        name: SymbolEditor
+        href: api\Microsoft.CodeAnalysis.Editing.SymbolEditor
     - id: symbol
       type:
-        id: INamedTypeSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+        id: Microsoft.CodeAnalysis.INamedTypeSymbol
+        name: INamedTypeSymbol
+        href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
     - id: getNewBaseType
       type:
         id: System.Func{Microsoft.CodeAnalysis.Editing.SyntaxGenerator,Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Func{Microsoft.CodeAnalysis.Editing.SyntaxGenerator,Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -132,19 +141,23 @@ items:
     parameters:
     - id: editor
       type:
-        id: SymbolEditor
-        href: C:\roslyn\src\Workspaces\Core\Portable\Editing\SymbolEditor.cs
+        id: Microsoft.CodeAnalysis.Editing.SymbolEditor
+        name: SymbolEditor
+        href: api\Microsoft.CodeAnalysis.Editing.SymbolEditor
     - id: symbol
       type:
-        id: INamedTypeSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+        id: Microsoft.CodeAnalysis.INamedTypeSymbol
+        name: INamedTypeSymbol
+        href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
     - id: newBaseType
       type:
-        id: ITypeSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+        id: Microsoft.CodeAnalysis.ITypeSymbol
+        name: ITypeSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeSymbol
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:

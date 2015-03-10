@@ -23,13 +23,14 @@ summary: >+
 
   as the workspace is updated either from live interactions in the environment or via call to the
 
-  workspace's [Microsoft.CodeAnalysis.Workspace.TryApplyChanges(Microsoft.CodeAnalysis.Solution)](api\Microsoft.CodeAnalysis.Workspace) method.
+  workspace's [Microsoft.CodeAnalysis.Workspace.TryApplyChanges(Microsoft.CodeAnalysis.Solution)](#/api\Microsoft.CodeAnalysis.Workspace) method.
 
 syntax:
   content:
     CSharp: public abstract partial class Workspace
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -58,8 +59,9 @@ items:
     parameters:
     - id: Services
       type:
-        id: HostWorkspaceServices
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Host\HostWorkspaceServices.cs
+        id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices
+        name: HostWorkspaceServices
+        href: api\Microsoft.CodeAnalysis.Host.HostWorkspaceServices
 - id: Microsoft.CodeAnalysis.Workspace.get_Services
   yaml: api\Microsoft.CodeAnalysis.Workspace.yaml
   href: api\Microsoft.CodeAnalysis.Workspace
@@ -94,7 +96,7 @@ items:
   summary: >+
     The kind of the workspace.
 
-    This is generally [Microsoft.CodeAnalysis.WorkspaceKind.Host](api\Microsoft.CodeAnalysis.WorkspaceKind) if originating from the host environment, but may be
+    This is generally [Microsoft.CodeAnalysis.WorkspaceKind.Host](#/api\Microsoft.CodeAnalysis.WorkspaceKind) if originating from the host environment, but may be
 
     any other name used for a specific kind of workspace.
 
@@ -105,6 +107,7 @@ items:
     - id: Kind
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Workspace.get_Kind
@@ -151,7 +154,7 @@ items:
 
     This property may change as the workspace reacts to changes in the environment or
 
-    after [Microsoft.CodeAnalysis.Workspace.TryApplyChanges(Microsoft.CodeAnalysis.Solution)](api\Microsoft.CodeAnalysis.Workspace) is called.
+    after [Microsoft.CodeAnalysis.Workspace.TryApplyChanges(Microsoft.CodeAnalysis.Solution)](#/api\Microsoft.CodeAnalysis.Workspace) is called.
 
   syntax:
     content:
@@ -159,8 +162,9 @@ items:
     parameters:
     - id: CurrentSolution
       type:
-        id: Solution
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Solution.CompilationTracker.cs
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api\Microsoft.CodeAnalysis.Solution
 - id: Microsoft.CodeAnalysis.Workspace.get_CurrentSolution
   yaml: api\Microsoft.CodeAnalysis.Workspace.yaml
   href: api\Microsoft.CodeAnalysis.Workspace
@@ -201,8 +205,9 @@ items:
     parameters:
     - id: Options
       type:
-        id: OptionSet
-        href: C:\roslyn\src\Workspaces\Core\Portable\Options\OptionSet.cs
+        id: Microsoft.CodeAnalysis.Options.OptionSet
+        name: OptionSet
+        href: api\Microsoft.CodeAnalysis.Options.OptionSet
 - id: Microsoft.CodeAnalysis.Workspace.get_Options
   yaml: api\Microsoft.CodeAnalysis.Workspace.yaml
   href: api\Microsoft.CodeAnalysis.Workspace
@@ -275,7 +280,7 @@ items:
     path: src\Workspaces\Core\Portable\Workspace\Workspace.cs
     startLine: 808
   summary: >+
-    Determines if the specific kind of change is supported by the [Microsoft.CodeAnalysis.Workspace.TryApplyChanges(Microsoft.CodeAnalysis.Solution)](api\Microsoft.CodeAnalysis.Workspace) method.
+    Determines if the specific kind of change is supported by the [Microsoft.CodeAnalysis.Workspace.TryApplyChanges(Microsoft.CodeAnalysis.Solution)](#/api\Microsoft.CodeAnalysis.Workspace) method.
 
   syntax:
     content:
@@ -283,8 +288,9 @@ items:
     parameters:
     - id: feature
       type:
-        id: ApplyChangesKind
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\ApplyChangesKind.cs
+        id: Microsoft.CodeAnalysis.ApplyChangesKind
+        name: ApplyChangesKind
+        href: api\Microsoft.CodeAnalysis.ApplyChangesKind
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Workspace.TryApplyChanges(Microsoft.CodeAnalysis.Solution)
@@ -312,7 +318,7 @@ items:
 
     has been updated since the solution was obtained from the workspace, then this method returns false. This method
 
-    will still throw if the solution contains changes that are not supported according to the [Microsoft.CodeAnalysis.Workspace.CanApplyChange(Microsoft.CodeAnalysis.ApplyChangesKind)](api\Microsoft.CodeAnalysis.Workspace)
+    will still throw if the solution contains changes that are not supported according to the [Microsoft.CodeAnalysis.Workspace.CanApplyChange(Microsoft.CodeAnalysis.ApplyChangesKind)](#/api\Microsoft.CodeAnalysis.Workspace)
 
     method.
 
@@ -322,8 +328,9 @@ items:
     parameters:
     - id: newSolution
       type:
-        id: Solution
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Solution.CompilationTracker.cs
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api\Microsoft.CodeAnalysis.Solution
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Workspace.CanOpenDocuments
@@ -352,6 +359,7 @@ items:
     - id: CanOpenDocuments
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Workspace.get_CanOpenDocuments
@@ -394,11 +402,13 @@ items:
     parameters:
     - id: documentId
       type:
-        id: DocumentId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+        id: Microsoft.CodeAnalysis.DocumentId
+        name: DocumentId
+        href: api\Microsoft.CodeAnalysis.DocumentId
     - id: activate
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -428,8 +438,9 @@ items:
     parameters:
     - id: documentId
       type:
-        id: DocumentId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+        id: Microsoft.CodeAnalysis.DocumentId
+        name: DocumentId
+        href: api\Microsoft.CodeAnalysis.DocumentId
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Workspace.OpenAdditionalDocument(Microsoft.CodeAnalysis.DocumentId,System.Boolean)
@@ -457,11 +468,13 @@ items:
     parameters:
     - id: documentId
       type:
-        id: DocumentId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+        id: Microsoft.CodeAnalysis.DocumentId
+        name: DocumentId
+        href: api\Microsoft.CodeAnalysis.DocumentId
     - id: activate
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -491,8 +504,9 @@ items:
     parameters:
     - id: documentId
       type:
-        id: DocumentId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+        id: Microsoft.CodeAnalysis.DocumentId
+        name: DocumentId
+        href: api\Microsoft.CodeAnalysis.DocumentId
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Workspace.IsDocumentOpen(Microsoft.CodeAnalysis.DocumentId)
@@ -520,8 +534,9 @@ items:
     parameters:
     - id: documentId
       type:
-        id: DocumentId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+        id: Microsoft.CodeAnalysis.DocumentId
+        name: DocumentId
+        href: api\Microsoft.CodeAnalysis.DocumentId
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Workspace.GetOpenDocumentIds(Microsoft.CodeAnalysis.ProjectId)
@@ -549,8 +564,9 @@ items:
     parameters:
     - id: projectId
       type:
-        id: ProjectId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\ProjectId.cs
+        id: Microsoft.CodeAnalysis.ProjectId
+        name: ProjectId
+        href: api\Microsoft.CodeAnalysis.ProjectId
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.Workspace.GetRelatedDocumentIds(Microsoft.CodeAnalysis.Text.SourceTextContainer)
@@ -580,8 +596,9 @@ items:
     parameters:
     - id: container
       type:
-        id: SourceTextContainer
-        href: C:\roslyn\src\Compilers\Core\Portable\Text\SourceTextContainer.cs
+        id: Microsoft.CodeAnalysis.Text.SourceTextContainer
+        name: SourceTextContainer
+        href: Microsoft.CodeAnalysis.Text.SourceTextContainer
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.Workspace.GetDocumentIdInCurrentContext(Microsoft.CodeAnalysis.Text.SourceTextContainer)
@@ -611,8 +628,9 @@ items:
     parameters:
     - id: container
       type:
-        id: SourceTextContainer
-        href: C:\roslyn\src\Compilers\Core\Portable\Text\SourceTextContainer.cs
+        id: Microsoft.CodeAnalysis.Text.SourceTextContainer
+        name: SourceTextContainer
+        href: Microsoft.CodeAnalysis.Text.SourceTextContainer
     return:
       id: DocumentId
 - id: Microsoft.CodeAnalysis.Workspace.WorkspaceChanged
@@ -838,12 +856,14 @@ items:
     parameters:
     - id: textContainer
       type:
-        id: SourceTextContainer
-        href: C:\roslyn\src\Compilers\Core\Portable\Text\SourceTextContainer.cs
+        id: Microsoft.CodeAnalysis.Text.SourceTextContainer
+        name: SourceTextContainer
+        href: Microsoft.CodeAnalysis.Text.SourceTextContainer
     - id: workspace
       type:
-        id: Workspace
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Workspace.cs
+        id: Microsoft.CodeAnalysis.Workspace
+        name: Workspace
+        href: api\Microsoft.CodeAnalysis.Workspace
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Workspace.GetWorkspaceRegistration(Microsoft.CodeAnalysis.Text.SourceTextContainer)
@@ -863,7 +883,7 @@ items:
     path: src\Workspaces\Core\Portable\Workspace\Workspace_Registration.cs
     startLine: 66
   summary: >+
-    Returns a [Microsoft.CodeAnalysis.WorkspaceRegistration](api\Microsoft.CodeAnalysis.WorkspaceRegistration) for a given text container.
+    Returns a [Microsoft.CodeAnalysis.WorkspaceRegistration](#/api\Microsoft.CodeAnalysis.WorkspaceRegistration) for a given text container.
 
   syntax:
     content:
@@ -871,7 +891,8 @@ items:
     parameters:
     - id: textContainer
       type:
-        id: SourceTextContainer
-        href: C:\roslyn\src\Compilers\Core\Portable\Text\SourceTextContainer.cs
+        id: Microsoft.CodeAnalysis.Text.SourceTextContainer
+        name: SourceTextContainer
+        href: Microsoft.CodeAnalysis.Text.SourceTextContainer
     return:
       id: WorkspaceRegistration

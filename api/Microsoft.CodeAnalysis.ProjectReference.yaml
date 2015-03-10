@@ -19,6 +19,7 @@ syntax:
     CSharp: public sealed class ProjectReference
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -44,16 +45,19 @@ items:
     parameters:
     - id: projectId
       type:
-        id: ProjectId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\ProjectId.cs
+        id: Microsoft.CodeAnalysis.ProjectId
+        name: ProjectId
+        href: api\Microsoft.CodeAnalysis.ProjectId
     - id: aliases
       type:
         id: System.Collections.Immutable.ImmutableArray{System.String}
+        name: System.Collections.Immutable.ImmutableArray{System.String}
         href: System.Collections.Immutable
         isExternal: true
     - id: embedInteropTypes
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ProjectReference.ProjectId
@@ -78,8 +82,9 @@ items:
     parameters:
     - id: ProjectId
       type:
-        id: ProjectId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\ProjectId.cs
+        id: Microsoft.CodeAnalysis.ProjectId
+        name: ProjectId
+        href: api\Microsoft.CodeAnalysis.ProjectId
 - id: Microsoft.CodeAnalysis.ProjectReference.get_ProjectId
   yaml: api\Microsoft.CodeAnalysis.ProjectReference.yaml
   href: api\Microsoft.CodeAnalysis.ProjectReference
@@ -121,6 +126,7 @@ items:
     - id: Aliases
       type:
         id: System.Collections.Immutable.ImmutableArray{System.String}
+        name: System.Collections.Immutable.ImmutableArray{System.String}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.ProjectReference.get_Aliases
@@ -164,6 +170,7 @@ items:
     - id: EmbedInteropTypes
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ProjectReference.get_EmbedInteropTypes
@@ -204,6 +211,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -230,8 +238,9 @@ items:
     parameters:
     - id: reference
       type:
-        id: ProjectReference
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\ProjectReference.cs
+        id: Microsoft.CodeAnalysis.ProjectReference
+        name: ProjectReference
+        href: api\Microsoft.CodeAnalysis.ProjectReference
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.ProjectReference.op_Equality(Microsoft.CodeAnalysis.ProjectReference,Microsoft.CodeAnalysis.ProjectReference)

@@ -15,13 +15,14 @@ source:
   path: src\Workspaces\Core\Portable\CodeActions\CodeAction.cs
   startLine: 19
 summary: >+
-  An action produced by a [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider](api\Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider) or a [Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider](api\Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider).
+  An action produced by a [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider](#/api\Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider) or a [Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider](#/api\Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider).
 
 syntax:
   content:
     CSharp: public abstract class CodeAction
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -51,6 +52,7 @@ items:
     - id: Title
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CodeActions.CodeAction.get_Title
@@ -85,9 +87,9 @@ items:
     path: src\Workspaces\Core\Portable\CodeActions\CodeAction.cs
     startLine: 40
   summary: >+
-    Two code actions are treated as equivalent if they have equal non-null [Microsoft.CodeAnalysis.CodeActions.CodeAction.EquivalenceKey](api\Microsoft.CodeAnalysis.CodeActions.CodeAction) values and were generated
+    Two code actions are treated as equivalent if they have equal non-null [Microsoft.CodeAnalysis.CodeActions.CodeAction.EquivalenceKey](#/api\Microsoft.CodeAnalysis.CodeActions.CodeAction) values and were generated
 
-    by the same [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider](api\Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider) or [Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider](api\Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider).
+    by the same [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider](#/api\Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider) or [Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider](#/api\Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider).
 
   syntax:
     content:
@@ -96,6 +98,7 @@ items:
     - id: EquivalenceKey
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CodeActions.CodeAction.get_EquivalenceKey
@@ -139,6 +142,7 @@ items:
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -169,6 +173,7 @@ items:
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -190,7 +195,7 @@ items:
     path: src\Workspaces\Core\Portable\CodeActions\CodeAction.cs
     startLine: 229
   summary: >+
-    Creates a [Microsoft.CodeAnalysis.CodeActions.CodeAction](api\Microsoft.CodeAnalysis.CodeActions.CodeAction) for a change to a single [Microsoft.CodeAnalysis.Document](api\Microsoft.CodeAnalysis.Document).
+    Creates a [Microsoft.CodeAnalysis.CodeActions.CodeAction](#/api\Microsoft.CodeAnalysis.CodeActions.CodeAction) for a change to a single [Microsoft.CodeAnalysis.Document](#/api\Microsoft.CodeAnalysis.Document).
 
     Use this factory when the change is expensive to compute and should be deferred until requested.
 
@@ -201,21 +206,24 @@ items:
     - id: title
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
-      description: Title of the [Microsoft.CodeAnalysis.CodeActions.CodeAction](api\Microsoft.CodeAnalysis.CodeActions.CodeAction).
+      description: Title of the [Microsoft.CodeAnalysis.CodeActions.CodeAction](#/api\Microsoft.CodeAnalysis.CodeActions.CodeAction).
     - id: createChangedDocument
       type:
         id: System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{Microsoft.CodeAnalysis.Document}}
+        name: System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{Microsoft.CodeAnalysis.Document}}
         href: System.Runtime
         isExternal: true
-      description: Function to create the [Microsoft.CodeAnalysis.Document](api\Microsoft.CodeAnalysis.Document).
+      description: Function to create the [Microsoft.CodeAnalysis.Document](#/api\Microsoft.CodeAnalysis.Document).
     - id: equivalenceKey
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
-      description: Optional value used to determine the equivalence of the [Microsoft.CodeAnalysis.CodeActions.CodeAction](api\Microsoft.CodeAnalysis.CodeActions.CodeAction) with other [Microsoft.CodeAnalysis.CodeActions.CodeAction](api\Microsoft.CodeAnalysis.CodeActions.CodeAction)s. See [Microsoft.CodeAnalysis.CodeActions.CodeAction.EquivalenceKey](api\Microsoft.CodeAnalysis.CodeActions.CodeAction).
+      description: Optional value used to determine the equivalence of the [Microsoft.CodeAnalysis.CodeActions.CodeAction](#/api\Microsoft.CodeAnalysis.CodeActions.CodeAction) with other [Microsoft.CodeAnalysis.CodeActions.CodeAction](#/api\Microsoft.CodeAnalysis.CodeActions.CodeAction)s. See [Microsoft.CodeAnalysis.CodeActions.CodeAction.EquivalenceKey](#/api\Microsoft.CodeAnalysis.CodeActions.CodeAction).
     return:
       id: CodeAction
 - id: Microsoft.CodeAnalysis.CodeActions.CodeAction.Create(System.String,System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{Microsoft.CodeAnalysis.Solution}},System.String)
@@ -235,7 +243,7 @@ items:
     path: src\Workspaces\Core\Portable\CodeActions\CodeAction.cs
     startLine: 251
   summary: >+
-    Creates a [Microsoft.CodeAnalysis.CodeActions.CodeAction](api\Microsoft.CodeAnalysis.CodeActions.CodeAction) for a change to more than one [Microsoft.CodeAnalysis.Document](api\Microsoft.CodeAnalysis.Document) within a [Microsoft.CodeAnalysis.Solution](api\Microsoft.CodeAnalysis.Solution).
+    Creates a [Microsoft.CodeAnalysis.CodeActions.CodeAction](#/api\Microsoft.CodeAnalysis.CodeActions.CodeAction) for a change to more than one [Microsoft.CodeAnalysis.Document](#/api\Microsoft.CodeAnalysis.Document) within a [Microsoft.CodeAnalysis.Solution](#/api\Microsoft.CodeAnalysis.Solution).
 
     Use this factory when the change is expensive to compute and should be deferred until requested.
 
@@ -246,20 +254,23 @@ items:
     - id: title
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
-      description: Title of the [Microsoft.CodeAnalysis.CodeActions.CodeAction](api\Microsoft.CodeAnalysis.CodeActions.CodeAction).
+      description: Title of the [Microsoft.CodeAnalysis.CodeActions.CodeAction](#/api\Microsoft.CodeAnalysis.CodeActions.CodeAction).
     - id: createChangedSolution
       type:
         id: System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{Microsoft.CodeAnalysis.Solution}}
+        name: System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{Microsoft.CodeAnalysis.Solution}}
         href: System.Runtime
         isExternal: true
-      description: Function to create the [Microsoft.CodeAnalysis.Solution](api\Microsoft.CodeAnalysis.Solution).
+      description: Function to create the [Microsoft.CodeAnalysis.Solution](#/api\Microsoft.CodeAnalysis.Solution).
     - id: equivalenceKey
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
-      description: Optional value used to determine the equivalence of the [Microsoft.CodeAnalysis.CodeActions.CodeAction](api\Microsoft.CodeAnalysis.CodeActions.CodeAction) with other [Microsoft.CodeAnalysis.CodeActions.CodeAction](api\Microsoft.CodeAnalysis.CodeActions.CodeAction)s. See [Microsoft.CodeAnalysis.CodeActions.CodeAction.EquivalenceKey](api\Microsoft.CodeAnalysis.CodeActions.CodeAction).
+      description: Optional value used to determine the equivalence of the [Microsoft.CodeAnalysis.CodeActions.CodeAction](#/api\Microsoft.CodeAnalysis.CodeActions.CodeAction) with other [Microsoft.CodeAnalysis.CodeActions.CodeAction](#/api\Microsoft.CodeAnalysis.CodeActions.CodeAction)s. See [Microsoft.CodeAnalysis.CodeActions.CodeAction.EquivalenceKey](#/api\Microsoft.CodeAnalysis.CodeActions.CodeAction).
     return:
       id: CodeAction

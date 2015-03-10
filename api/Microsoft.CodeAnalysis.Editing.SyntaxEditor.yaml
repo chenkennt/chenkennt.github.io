@@ -22,6 +22,7 @@ syntax:
     CSharp: public class SyntaxEditor
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -42,7 +43,7 @@ items:
     path: src\Workspaces\Core\Portable\Editing\SyntaxEditor.cs
     startLine: 23
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.Editing.SyntaxEditor](api\Microsoft.CodeAnalysis.Editing.SyntaxEditor) instance.
+    Creates a new [Microsoft.CodeAnalysis.Editing.SyntaxEditor](#/api\Microsoft.CodeAnalysis.Editing.SyntaxEditor) instance.
 
   syntax:
     content:
@@ -50,12 +51,14 @@ items:
     parameters:
     - id: root
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: workspace
       type:
-        id: Workspace
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Workspace.cs
+        id: Microsoft.CodeAnalysis.Workspace
+        name: Workspace
+        href: api\Microsoft.CodeAnalysis.Workspace
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditor.OriginalRoot
   yaml: api\Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
   href: api\Microsoft.CodeAnalysis.Editing.SyntaxEditor
@@ -73,7 +76,7 @@ items:
     path: src\Workspaces\Core\Portable\Editing\SyntaxEditor.cs
     startLine: 43
   summary: >+
-    The [Microsoft.CodeAnalysis.SyntaxNode](api\Microsoft.CodeAnalysis.SyntaxNode) that was specified when the [Microsoft.CodeAnalysis.Editing.SyntaxEditor](api\Microsoft.CodeAnalysis.Editing.SyntaxEditor) was constructed.
+    The [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode) that was specified when the [Microsoft.CodeAnalysis.Editing.SyntaxEditor](#/api\Microsoft.CodeAnalysis.Editing.SyntaxEditor) was constructed.
 
   syntax:
     content:
@@ -81,8 +84,9 @@ items:
     parameters:
     - id: OriginalRoot
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditor.get_OriginalRoot
   yaml: api\Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
   href: api\Microsoft.CodeAnalysis.Editing.SyntaxEditor
@@ -115,7 +119,7 @@ items:
     path: src\Workspaces\Core\Portable\Editing\SyntaxEditor.cs
     startLine: 51
   summary: >+
-    A [Microsoft.CodeAnalysis.Editing.SyntaxGenerator](api\Microsoft.CodeAnalysis.Editing.SyntaxGenerator) to use to create and change [Microsoft.CodeAnalysis.SyntaxNode](api\Microsoft.CodeAnalysis.SyntaxNode)'s.
+    A [Microsoft.CodeAnalysis.Editing.SyntaxGenerator](#/api\Microsoft.CodeAnalysis.Editing.SyntaxGenerator) to use to create and change [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode)'s.
 
   syntax:
     content:
@@ -123,8 +127,9 @@ items:
     parameters:
     - id: Generator
       type:
-        id: SyntaxGenerator
-        href: C:\roslyn\src\Workspaces\Core\Portable\Editing\SyntaxGenerator.cs
+        id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+        name: SyntaxGenerator
+        href: api\Microsoft.CodeAnalysis.Editing.SyntaxGenerator
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditor.get_Generator
   yaml: api\Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
   href: api\Microsoft.CodeAnalysis.Editing.SyntaxEditor
@@ -190,8 +195,9 @@ items:
     parameters:
     - id: node
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditor.RemoveNode(Microsoft.CodeAnalysis.SyntaxNode)
@@ -219,8 +225,9 @@ items:
     parameters:
     - id: node
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: The node to remove that currently exists as part of the tree.
     return:
       id: Void
@@ -249,12 +256,14 @@ items:
     parameters:
     - id: node
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: The node to replace that already exists in the tree.
     - id: computeReplacement
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Editing.SyntaxGenerator,Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Editing.SyntaxGenerator,Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
       description: "A function that computes a replacement node. \r\n    The node passed into the compute function includes changes from prior edits. It will not appear as a descendant of the original root."
@@ -285,13 +294,15 @@ items:
     parameters:
     - id: node
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: The node to replace that already exists in the tree.
     - id: newNode
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: The new node that will be placed into the tree in the existing node's location.
     return:
       id: Void
@@ -320,12 +331,14 @@ items:
     parameters:
     - id: node
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: The node already existing in the tree that the new nodes will be placed before. This must be a node this is contained within a syntax list.
     - id: newNodes
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
       description: The nodes to place before the existing node. These nodes must be of a compatible type to be placed in the same list containing the existing node.
@@ -356,13 +369,15 @@ items:
     parameters:
     - id: node
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: The node already existing in the tree that the new nodes will be placed before. This must be a node this is contained within a syntax list.
     - id: newNode
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: The node to place before the existing node. This node must be of a compatible type to be placed in the same list containing the existing node.
     return:
       id: Void
@@ -391,12 +406,14 @@ items:
     parameters:
     - id: node
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: The node already existing in the tree that the new nodes will be placed after. This must be a node this is contained within a syntax list.
     - id: newNodes
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
       description: The nodes to place after the existing node. These nodes must be of a compatible type to be placed in the same list containing the existing node.
@@ -427,13 +444,15 @@ items:
     parameters:
     - id: node
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: The node already existing in the tree that the new nodes will be placed after. This must be a node this is contained within a syntax list.
     - id: newNode
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: The node to place after the existing node. This node must be of a compatible type to be placed in the same list containing the existing node.
     return:
       id: Void

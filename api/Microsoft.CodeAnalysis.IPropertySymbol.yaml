@@ -47,6 +47,7 @@ items:
     - id: IsIndexer
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IPropertySymbol.get_IsIndexer
@@ -90,6 +91,7 @@ items:
     - id: IsReadOnly
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IPropertySymbol.get_IsReadOnly
@@ -133,6 +135,7 @@ items:
     - id: IsWriteOnly
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IPropertySymbol.get_IsWriteOnly
@@ -178,6 +181,7 @@ items:
     - id: IsWithEvents
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IPropertySymbol.get_IsWithEvents
@@ -220,8 +224,9 @@ items:
     parameters:
     - id: Type
       type:
-        id: ITypeSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+        id: Microsoft.CodeAnalysis.ITypeSymbol
+        name: ITypeSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeSymbol
 - id: Microsoft.CodeAnalysis.IPropertySymbol.get_Type
   yaml: api\Microsoft.CodeAnalysis.IPropertySymbol.yaml
   href: api\Microsoft.CodeAnalysis.IPropertySymbol
@@ -267,6 +272,7 @@ items:
     - id: Parameters
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IParameterSymbol}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IParameterSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IPropertySymbol.get_Parameters
@@ -309,8 +315,9 @@ items:
     parameters:
     - id: GetMethod
       type:
-        id: IMethodSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
+        id: Microsoft.CodeAnalysis.IMethodSymbol
+        name: IMethodSymbol
+        href: api\Microsoft.CodeAnalysis.IMethodSymbol
 - id: Microsoft.CodeAnalysis.IPropertySymbol.get_GetMethod
   yaml: api\Microsoft.CodeAnalysis.IPropertySymbol.yaml
   href: api\Microsoft.CodeAnalysis.IPropertySymbol
@@ -351,8 +358,9 @@ items:
     parameters:
     - id: SetMethod
       type:
-        id: IMethodSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
+        id: Microsoft.CodeAnalysis.IMethodSymbol
+        name: IMethodSymbol
+        href: api\Microsoft.CodeAnalysis.IMethodSymbol
 - id: Microsoft.CodeAnalysis.IPropertySymbol.get_SetMethod
   yaml: api\Microsoft.CodeAnalysis.IPropertySymbol.yaml
   href: api\Microsoft.CodeAnalysis.IPropertySymbol
@@ -397,8 +405,9 @@ items:
     parameters:
     - id: OriginalDefinition
       type:
-        id: IPropertySymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\IPropertySymbol.cs
+        id: Microsoft.CodeAnalysis.IPropertySymbol
+        name: IPropertySymbol
+        href: api\Microsoft.CodeAnalysis.IPropertySymbol
 - id: Microsoft.CodeAnalysis.IPropertySymbol.get_OriginalDefinition
   yaml: api\Microsoft.CodeAnalysis.IPropertySymbol.yaml
   href: api\Microsoft.CodeAnalysis.IPropertySymbol
@@ -439,8 +448,9 @@ items:
     parameters:
     - id: OverriddenProperty
       type:
-        id: IPropertySymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\IPropertySymbol.cs
+        id: Microsoft.CodeAnalysis.IPropertySymbol
+        name: IPropertySymbol
+        href: api\Microsoft.CodeAnalysis.IPropertySymbol
 - id: Microsoft.CodeAnalysis.IPropertySymbol.get_OverriddenProperty
   yaml: api\Microsoft.CodeAnalysis.IPropertySymbol.yaml
   href: api\Microsoft.CodeAnalysis.IPropertySymbol
@@ -482,6 +492,7 @@ items:
     - id: ExplicitInterfaceImplementations
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IPropertySymbol}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IPropertySymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IPropertySymbol.get_ExplicitInterfaceImplementations
@@ -525,6 +536,7 @@ items:
     - id: TypeCustomModifiers
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IPropertySymbol.get_TypeCustomModifiers

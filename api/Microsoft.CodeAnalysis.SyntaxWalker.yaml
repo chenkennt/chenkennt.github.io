@@ -24,6 +24,7 @@ syntax:
     CSharp: public abstract class SyntaxWalker
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -56,8 +57,9 @@ items:
     parameters:
     - id: node
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: The current node that the walker is visiting.
     return:
       id: Void

@@ -22,9 +22,11 @@ syntax:
     CSharp: public struct Reversed
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -50,8 +52,9 @@ items:
     parameters:
     - id: list
       type:
-        id: SyntaxTriviaList
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+        id: Microsoft.CodeAnalysis.SyntaxTriviaList
+        name: SyntaxTriviaList
+        href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
 - id: Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.GetEnumerator
   yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed
@@ -119,6 +122,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -145,7 +149,8 @@ items:
     parameters:
     - id: other
       type:
-        id: Reversed
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.Reversed.cs
+        id: Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed
+        name: Reversed
+        href: api\Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed
     return:
       id: Boolean

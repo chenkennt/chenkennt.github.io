@@ -19,9 +19,11 @@ syntax:
     CSharp: public struct PreprocessingSymbolInfo
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -50,8 +52,9 @@ items:
     parameters:
     - id: Symbol
       type:
-        id: IPreprocessingSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\IPreprocessingSymbol.cs
+        id: Microsoft.CodeAnalysis.IPreprocessingSymbol
+        name: IPreprocessingSymbol
+        href: api\Microsoft.CodeAnalysis.IPreprocessingSymbol
 - id: Microsoft.CodeAnalysis.PreprocessingSymbolInfo.get_Symbol
   yaml: api\Microsoft.CodeAnalysis.PreprocessingSymbolInfo.yaml
   href: api\Microsoft.CodeAnalysis.PreprocessingSymbolInfo
@@ -93,6 +96,7 @@ items:
     - id: IsDefined
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.PreprocessingSymbolInfo.get_IsDefined
@@ -132,8 +136,9 @@ items:
     parameters:
     - id: other
       type:
-        id: PreprocessingSymbolInfo
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\PreprocessingSymbolInfo.cs
+        id: Microsoft.CodeAnalysis.PreprocessingSymbolInfo
+        name: PreprocessingSymbolInfo
+        href: api\Microsoft.CodeAnalysis.PreprocessingSymbolInfo
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.PreprocessingSymbolInfo.Equals(System.Object)
@@ -159,6 +164,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:

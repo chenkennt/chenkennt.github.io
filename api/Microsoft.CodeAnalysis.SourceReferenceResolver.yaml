@@ -22,6 +22,7 @@ syntax:
     CSharp: public abstract class SourceReferenceResolver
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -48,6 +49,7 @@ items:
     - id: other
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -100,12 +102,14 @@ items:
     - id: path
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: The source path to normalize. May be absolute or relative.
     - id: baseFilePath
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: Path of the source file that contains the  (may also be relative), or null if not available.
@@ -138,12 +142,14 @@ items:
     - id: path
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: The path to resolve. May be absolute or relative.
     - id: baseFilePath
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: Path of the source file that contains the  (may also be relative), or null if not available.
@@ -167,7 +173,7 @@ items:
     path: src\Compilers\Core\Portable\Compilation\SourceReferenceResolver.cs
     startLine: 42
   summary: >+
-    Opens a @T:System.IO.Stream- that allows reading the content of the specified file.
+    Opens a [System.IO.Stream](#) that allows reading the content of the specified file.
 
   syntax:
     content:
@@ -176,8 +182,9 @@ items:
     - id: resolvedPath
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
-      description: Path returned by [Microsoft.CodeAnalysis.SourceReferenceResolver.ResolveReference(System.String,System.String)](api\Microsoft.CodeAnalysis.SourceReferenceResolver).
+      description: Path returned by [Microsoft.CodeAnalysis.SourceReferenceResolver.ResolveReference(System.String,System.String)](#/api\Microsoft.CodeAnalysis.SourceReferenceResolver).
     return:
       id: Stream

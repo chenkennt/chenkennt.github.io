@@ -15,11 +15,11 @@ source:
   path: src\Workspaces\Core\Portable\Workspace\Host\Mef\ILanguageServiceFactory.cs
   startLine: 11
 summary: >+
-  A factory that creates instances of a specific [Microsoft.CodeAnalysis.Host.ILanguageService](api\Microsoft.CodeAnalysis.Host.ILanguageService).
+  A factory that creates instances of a specific [Microsoft.CodeAnalysis.Host.ILanguageService](#/api\Microsoft.CodeAnalysis.Host.ILanguageService).
 
 
 
-  Implement a [Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory](api\Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory) when you want to provide [Microsoft.CodeAnalysis.Host.ILanguageService](api\Microsoft.CodeAnalysis.Host.ILanguageService) instances that use other services.
+  Implement a [Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory](#/api\Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory) when you want to provide [Microsoft.CodeAnalysis.Host.ILanguageService](#/api\Microsoft.CodeAnalysis.Host.ILanguageService) instances that use other services.
 
 syntax:
   content:
@@ -42,7 +42,7 @@ items:
     path: src\Workspaces\Core\Portable\Workspace\Host\Mef\ILanguageServiceFactory.cs
     startLine: 17
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.Host.ILanguageService](api\Microsoft.CodeAnalysis.Host.ILanguageService) instance.
+    Creates a new [Microsoft.CodeAnalysis.Host.ILanguageService](#/api\Microsoft.CodeAnalysis.Host.ILanguageService) instance.
 
   syntax:
     content:
@@ -50,8 +50,9 @@ items:
     parameters:
     - id: languageServices
       type:
-        id: HostLanguageServices
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Host\HostLanguageServices.cs
-      description: The [Microsoft.CodeAnalysis.Host.HostLanguageServices](api\Microsoft.CodeAnalysis.Host.HostLanguageServices) that can be used to access other services.
+        id: Microsoft.CodeAnalysis.Host.HostLanguageServices
+        name: HostLanguageServices
+        href: api\Microsoft.CodeAnalysis.Host.HostLanguageServices
+      description: The [Microsoft.CodeAnalysis.Host.HostLanguageServices](#/api\Microsoft.CodeAnalysis.Host.HostLanguageServices) that can be used to access other services.
     return:
       id: ILanguageService

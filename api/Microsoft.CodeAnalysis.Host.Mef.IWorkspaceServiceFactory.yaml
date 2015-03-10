@@ -15,11 +15,11 @@ source:
   path: src\Workspaces\Core\Portable\Workspace\Host\Mef\IWorkspaceServiceFactory.cs
   startLine: 9
 summary: >+
-  A factory that creates instances of a specific [Microsoft.CodeAnalysis.Host.IWorkspaceService](api\Microsoft.CodeAnalysis.Host.IWorkspaceService).
+  A factory that creates instances of a specific [Microsoft.CodeAnalysis.Host.IWorkspaceService](#/api\Microsoft.CodeAnalysis.Host.IWorkspaceService).
 
 
 
-  Implement a [Microsoft.CodeAnalysis.Host.Mef.IWorkspaceServiceFactory](api\Microsoft.CodeAnalysis.Host.Mef.IWorkspaceServiceFactory) when you want to provide [Microsoft.CodeAnalysis.Host.IWorkspaceService](api\Microsoft.CodeAnalysis.Host.IWorkspaceService) instances that use other services.
+  Implement a [Microsoft.CodeAnalysis.Host.Mef.IWorkspaceServiceFactory](#/api\Microsoft.CodeAnalysis.Host.Mef.IWorkspaceServiceFactory) when you want to provide [Microsoft.CodeAnalysis.Host.IWorkspaceService](#/api\Microsoft.CodeAnalysis.Host.IWorkspaceService) instances that use other services.
 
 syntax:
   content:
@@ -42,7 +42,7 @@ items:
     path: src\Workspaces\Core\Portable\Workspace\Host\Mef\IWorkspaceServiceFactory.cs
     startLine: 15
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.Host.IWorkspaceService](api\Microsoft.CodeAnalysis.Host.IWorkspaceService) instance.
+    Creates a new [Microsoft.CodeAnalysis.Host.IWorkspaceService](#/api\Microsoft.CodeAnalysis.Host.IWorkspaceService) instance.
 
   syntax:
     content:
@@ -50,8 +50,9 @@ items:
     parameters:
     - id: workspaceServices
       type:
-        id: HostWorkspaceServices
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Host\HostWorkspaceServices.cs
-      description: The [Microsoft.CodeAnalysis.Host.HostWorkspaceServices](api\Microsoft.CodeAnalysis.Host.HostWorkspaceServices) that can be used to access other services.
+        id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices
+        name: HostWorkspaceServices
+        href: api\Microsoft.CodeAnalysis.Host.HostWorkspaceServices
+      description: The [Microsoft.CodeAnalysis.Host.HostWorkspaceServices](#/api\Microsoft.CodeAnalysis.Host.HostWorkspaceServices) that can be used to access other services.
     return:
       id: IWorkspaceService

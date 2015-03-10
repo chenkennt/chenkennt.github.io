@@ -19,6 +19,7 @@ syntax:
     CSharp: public abstract class AttributeData
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -47,8 +48,9 @@ items:
     parameters:
     - id: AttributeClass
       type:
-        id: INamedTypeSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+        id: Microsoft.CodeAnalysis.INamedTypeSymbol
+        name: INamedTypeSymbol
+        href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
 - id: Microsoft.CodeAnalysis.AttributeData.get_AttributeClass
   yaml: api\Microsoft.CodeAnalysis.AttributeData.yaml
   href: api\Microsoft.CodeAnalysis.AttributeData
@@ -89,8 +91,9 @@ items:
     parameters:
     - id: AttributeConstructor
       type:
-        id: IMethodSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
+        id: Microsoft.CodeAnalysis.IMethodSymbol
+        name: IMethodSymbol
+        href: api\Microsoft.CodeAnalysis.IMethodSymbol
 - id: Microsoft.CodeAnalysis.AttributeData.get_AttributeConstructor
   yaml: api\Microsoft.CodeAnalysis.AttributeData.yaml
   href: api\Microsoft.CodeAnalysis.AttributeData
@@ -128,8 +131,9 @@ items:
     parameters:
     - id: ApplicationSyntaxReference
       type:
-        id: SyntaxReference
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxReference.cs
+        id: Microsoft.CodeAnalysis.SyntaxReference
+        name: SyntaxReference
+        href: api\Microsoft.CodeAnalysis.SyntaxReference
 - id: Microsoft.CodeAnalysis.AttributeData.get_ApplicationSyntaxReference
   yaml: api\Microsoft.CodeAnalysis.AttributeData.yaml
   href: api\Microsoft.CodeAnalysis.AttributeData
@@ -171,6 +175,7 @@ items:
     - id: ConstructorArguments
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.TypedConstant}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.TypedConstant}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.AttributeData.get_ConstructorArguments
@@ -214,6 +219,7 @@ items:
     - id: NamedArguments
       type:
         id: System.Collections.Immutable.ImmutableArray{System.Collections.Generic.KeyValuePair{System.String,Microsoft.CodeAnalysis.TypedConstant}}
+        name: System.Collections.Immutable.ImmutableArray{System.Collections.Generic.KeyValuePair{System.String,Microsoft.CodeAnalysis.TypedConstant}}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.AttributeData.get_NamedArguments

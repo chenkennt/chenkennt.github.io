@@ -89,8 +89,9 @@ items:
     parameters:
     - id: document
       type:
-        id: Document
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Document.cs
+        id: Microsoft.CodeAnalysis.Document
+        name: Document
+        href: api\Microsoft.CodeAnalysis.Document
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.FindSymbols.IFindReferencesProgress.OnFindInDocumentCompleted(Microsoft.CodeAnalysis.Document)
@@ -115,8 +116,9 @@ items:
     parameters:
     - id: document
       type:
-        id: Document
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Document.cs
+        id: Microsoft.CodeAnalysis.Document
+        name: Document
+        href: api\Microsoft.CodeAnalysis.Document
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.FindSymbols.IFindReferencesProgress.OnDefinitionFound(Microsoft.CodeAnalysis.ISymbol)
@@ -141,8 +143,9 @@ items:
     parameters:
     - id: symbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.FindSymbols.IFindReferencesProgress.OnReferenceFound(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation)
@@ -167,12 +170,14 @@ items:
     parameters:
     - id: symbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
     - id: location
       type:
-        id: ReferenceLocation
-        href: C:\roslyn\src\Workspaces\Core\Portable\FindSymbols\ReferenceLocation.cs
+        id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation
+        name: ReferenceLocation
+        href: api\Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.FindSymbols.IFindReferencesProgress.ReportProgress(System.Int32,System.Int32)
@@ -198,11 +203,13 @@ items:
     - id: current
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
     - id: maximum
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
     return:

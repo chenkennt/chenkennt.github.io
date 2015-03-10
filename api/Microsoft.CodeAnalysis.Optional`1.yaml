@@ -22,9 +22,11 @@ syntax:
     CSharp: public struct Optional<T>
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -54,7 +56,8 @@ items:
     - id: value
       type:
         id: T
-        href: C:\roslyn\src\Compilers\Core\Portable\Optional.cs
+        name: T
+        href: T
 - id: Microsoft.CodeAnalysis.Optional`1.HasValue
   yaml: api\Microsoft.CodeAnalysis.Optional`1.yaml
   href: api\Microsoft.CodeAnalysis.Optional`1
@@ -81,6 +84,7 @@ items:
     - id: HasValue
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Optional`1.get_HasValue
@@ -124,7 +128,8 @@ items:
     - id: Value
       type:
         id: T
-        href: C:\roslyn\src\Compilers\Core\Portable\Optional.cs
+        name: T
+        href: T
 - id: Microsoft.CodeAnalysis.Optional`1.get_Value
   yaml: api\Microsoft.CodeAnalysis.Optional`1.yaml
   href: api\Microsoft.CodeAnalysis.Optional`1

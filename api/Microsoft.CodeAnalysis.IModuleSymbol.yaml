@@ -48,8 +48,9 @@ items:
     parameters:
     - id: GlobalNamespace
       type:
-        id: INamespaceSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\INamespaceSymbol.cs
+        id: Microsoft.CodeAnalysis.INamespaceSymbol
+        name: INamespaceSymbol
+        href: api\Microsoft.CodeAnalysis.INamespaceSymbol
 - id: Microsoft.CodeAnalysis.IModuleSymbol.get_GlobalNamespace
   yaml: api\Microsoft.CodeAnalysis.IModuleSymbol.yaml
   href: api\Microsoft.CodeAnalysis.IModuleSymbol
@@ -90,8 +91,9 @@ items:
     parameters:
     - id: namespaceSymbol
       type:
-        id: INamespaceSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\INamespaceSymbol.cs
+        id: Microsoft.CodeAnalysis.INamespaceSymbol
+        name: INamespaceSymbol
+        href: api\Microsoft.CodeAnalysis.INamespaceSymbol
     return:
       id: INamespaceSymbol
 - id: Microsoft.CodeAnalysis.IModuleSymbol.ReferencedAssemblies
@@ -124,6 +126,7 @@ items:
     - id: ReferencedAssemblies
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AssemblyIdentity}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AssemblyIdentity}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IModuleSymbol.get_ReferencedAssemblies
@@ -171,6 +174,7 @@ items:
     - id: ReferencedAssemblySymbols
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IAssemblySymbol}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IAssemblySymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IModuleSymbol.get_ReferencedAssemblySymbols

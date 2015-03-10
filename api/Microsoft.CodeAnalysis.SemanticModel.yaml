@@ -24,6 +24,7 @@ syntax:
     CSharp: public abstract class SemanticModel
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -53,6 +54,7 @@ items:
     - id: Language
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SemanticModel.get_Language
@@ -95,8 +97,9 @@ items:
     parameters:
     - id: Compilation
       type:
-        id: Compilation
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\Compilation.cs
+        id: Microsoft.CodeAnalysis.Compilation
+        name: Compilation
+        href: api\Microsoft.CodeAnalysis.Compilation
 - id: Microsoft.CodeAnalysis.SemanticModel.get_Compilation
   yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
   href: api\Microsoft.CodeAnalysis.SemanticModel
@@ -137,8 +140,9 @@ items:
     parameters:
     - id: SyntaxTree
       type:
-        id: SyntaxTree
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+        id: Microsoft.CodeAnalysis.SyntaxTree
+        name: SyntaxTree
+        href: api\Microsoft.CodeAnalysis.SyntaxTree
 - id: Microsoft.CodeAnalysis.SemanticModel.get_SyntaxTree
   yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
   href: api\Microsoft.CodeAnalysis.SemanticModel
@@ -180,6 +184,7 @@ items:
     - id: IsSpeculativeSemanticModel
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SemanticModel.get_IsSpeculativeSemanticModel
@@ -225,6 +230,7 @@ items:
     - id: OriginalPositionForSpeculation
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SemanticModel.get_OriginalPositionForSpeculation
@@ -269,8 +275,9 @@ items:
     parameters:
     - id: ParentModel
       type:
-        id: SemanticModel
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+        id: Microsoft.CodeAnalysis.SemanticModel
+        name: SemanticModel
+        href: api\Microsoft.CodeAnalysis.SemanticModel
 - id: Microsoft.CodeAnalysis.SemanticModel.get_ParentModel
   yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
   href: api\Microsoft.CodeAnalysis.SemanticModel
@@ -314,6 +321,7 @@ items:
     - id: span
       type:
         id: System.Nullable{Microsoft.CodeAnalysis.Text.TextSpan}
+        name: System.Nullable{Microsoft.CodeAnalysis.Text.TextSpan}
         href: System.Runtime
         isExternal: true
       description: >-
@@ -323,6 +331,7 @@ items:
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
       description: >-
@@ -359,6 +368,7 @@ items:
     - id: span
       type:
         id: System.Nullable{Microsoft.CodeAnalysis.Text.TextSpan}
+        name: System.Nullable{Microsoft.CodeAnalysis.Text.TextSpan}
         href: System.Runtime
         isExternal: true
       description: >-
@@ -368,6 +378,7 @@ items:
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
       description: >-
@@ -404,6 +415,7 @@ items:
     - id: span
       type:
         id: System.Nullable{Microsoft.CodeAnalysis.Text.TextSpan}
+        name: System.Nullable{Microsoft.CodeAnalysis.Text.TextSpan}
         href: System.Runtime
         isExternal: true
       description: >-
@@ -413,6 +425,7 @@ items:
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
       description: >-
@@ -451,6 +464,7 @@ items:
     - id: span
       type:
         id: System.Nullable{Microsoft.CodeAnalysis.Text.TextSpan}
+        name: System.Nullable{Microsoft.CodeAnalysis.Text.TextSpan}
         href: System.Runtime
         isExternal: true
       description: >-
@@ -460,6 +474,7 @@ items:
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
       description: >-
@@ -496,6 +511,7 @@ items:
     - id: position
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: >-
@@ -504,8 +520,9 @@ items:
             accessibility.
     - id: container
       type:
-        id: INamespaceOrTypeSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\INamespaceOrTypeSymbol.cs
+        id: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+        name: INamespaceOrTypeSymbol
+        href: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
       description: >-
         The container to search for symbols within. If null then the enclosing declaration
 
@@ -513,6 +530,7 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: >-
@@ -522,6 +540,7 @@ items:
     - id: includeReducedExtensionMethods
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
       description: Consider (reduced) extension methods.
@@ -547,7 +566,7 @@ items:
   summary: >+
     Gets the available base type members in the context of the specified location.  Akin to
 
-    calling [Microsoft.CodeAnalysis.SemanticModel.LookupSymbols(System.Int32,Microsoft.CodeAnalysis.INamespaceOrTypeSymbol,System.String,System.Boolean)](api\Microsoft.CodeAnalysis.SemanticModel) with the container set to the immediate base type of
+    calling [Microsoft.CodeAnalysis.SemanticModel.LookupSymbols(System.Int32,Microsoft.CodeAnalysis.INamespaceOrTypeSymbol,System.String,System.Boolean)](#/api\Microsoft.CodeAnalysis.SemanticModel) with the container set to the immediate base type of
 
     the type in which  occurs.  However, the accessibility rules
 
@@ -598,6 +617,7 @@ items:
     - id: position
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: >-
@@ -607,6 +627,7 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: >-
@@ -648,6 +669,7 @@ items:
     - id: position
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: >-
@@ -656,8 +678,9 @@ items:
             accessibility.
     - id: container
       type:
-        id: INamespaceOrTypeSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\INamespaceOrTypeSymbol.cs
+        id: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+        name: INamespaceOrTypeSymbol
+        href: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
       description: >-
         The container to search for symbols within. If null then the enclosing declaration
 
@@ -665,6 +688,7 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: >-
@@ -702,6 +726,7 @@ items:
     - id: position
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: >-
@@ -710,8 +735,9 @@ items:
             accessibility.
     - id: container
       type:
-        id: INamespaceOrTypeSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\INamespaceOrTypeSymbol.cs
+        id: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+        name: INamespaceOrTypeSymbol
+        href: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
       description: >-
         The container to search for symbols within. If null then the enclosing declaration
 
@@ -719,6 +745,7 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: >-
@@ -756,6 +783,7 @@ items:
     - id: position
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: >-
@@ -765,6 +793,7 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: >-
@@ -803,11 +832,13 @@ items:
     parameters:
     - id: node
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -840,11 +871,13 @@ items:
     - id: position
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -875,6 +908,7 @@ items:
     - id: position
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: >-
@@ -885,8 +919,9 @@ items:
             node in this SemanticModel.
     - id: symbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
       description: The symbol that we are checking to see if it accessible.
     return:
       id: Boolean
@@ -919,12 +954,14 @@ items:
     - id: position
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
     - id: eventSymbol
       type:
-        id: IEventSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\IEventSymbol.cs
+        id: Microsoft.CodeAnalysis.IEventSymbol
+        name: IEventSymbol
+        href: api\Microsoft.CodeAnalysis.IEventSymbol
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SemanticModel.GetPreprocessingSymbolInfo(Microsoft.CodeAnalysis.SyntaxNode)
@@ -944,7 +981,7 @@ items:
     path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
     startLine: 802
   summary: >+
-    If  is an identifier name syntax node, return the [Microsoft.CodeAnalysis.PreprocessingSymbolInfo](api\Microsoft.CodeAnalysis.PreprocessingSymbolInfo) corresponding
+    If  is an identifier name syntax node, return the [Microsoft.CodeAnalysis.PreprocessingSymbolInfo](#/api\Microsoft.CodeAnalysis.PreprocessingSymbolInfo) corresponding
 
     to it.
 
@@ -954,8 +991,9 @@ items:
     parameters:
     - id: nameSyntax
       type:
-        id: SyntaxNode
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: The nameSyntax node to get semantic information for.
     return:
       id: PreprocessingSymbolInfo

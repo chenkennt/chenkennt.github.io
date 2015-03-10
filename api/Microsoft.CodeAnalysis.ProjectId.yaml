@@ -15,13 +15,14 @@ source:
   path: src\Workspaces\Core\Portable\Workspace\Solution\ProjectId.cs
   startLine: 14
 summary: >+
-  An identifier that can be used to refer to the same [Microsoft.CodeAnalysis.Project](api\Microsoft.CodeAnalysis.Project) across versions.
+  An identifier that can be used to refer to the same [Microsoft.CodeAnalysis.Project](#/api\Microsoft.CodeAnalysis.Project) across versions.
 
 syntax:
   content:
     CSharp: public class ProjectId
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -51,6 +52,7 @@ items:
     - id: Id
       type:
         id: System.Guid
+        name: System.Guid
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ProjectId.get_Id
@@ -94,6 +96,7 @@ items:
     - id: debugName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: An optional name to make this id easier to recognize while debugging.
@@ -144,6 +147,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -170,8 +174,9 @@ items:
     parameters:
     - id: other
       type:
-        id: ProjectId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\ProjectId.cs
+        id: Microsoft.CodeAnalysis.ProjectId
+        name: ProjectId
+        href: api\Microsoft.CodeAnalysis.ProjectId
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.ProjectId.op_Equality(Microsoft.CodeAnalysis.ProjectId,Microsoft.CodeAnalysis.ProjectId)

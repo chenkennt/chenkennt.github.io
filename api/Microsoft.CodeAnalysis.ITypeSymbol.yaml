@@ -43,8 +43,9 @@ items:
     parameters:
     - id: TypeKind
       type:
-        id: TypeKind
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\TypeKind.cs
+        id: Microsoft.CodeAnalysis.TypeKind
+        name: TypeKind
+        href: api\Microsoft.CodeAnalysis.TypeKind
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_TypeKind
   yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
   href: api\Microsoft.CodeAnalysis.ITypeSymbol
@@ -89,8 +90,9 @@ items:
     parameters:
     - id: BaseType
       type:
-        id: INamedTypeSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+        id: Microsoft.CodeAnalysis.INamedTypeSymbol
+        name: INamedTypeSymbol
+        href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_BaseType
   yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
   href: api\Microsoft.CodeAnalysis.ITypeSymbol
@@ -136,6 +138,7 @@ items:
     - id: Interfaces
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamedTypeSymbol}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamedTypeSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_Interfaces
@@ -195,6 +198,7 @@ items:
     - id: AllInterfaces
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamedTypeSymbol}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamedTypeSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_AllInterfaces
@@ -231,9 +235,9 @@ items:
   summary: >+
     True if this type is known to be a reference type. It is never the case that
 
-    [Microsoft.CodeAnalysis.ITypeSymbol.IsReferenceType](api\Microsoft.CodeAnalysis.ITypeSymbol) and [Microsoft.CodeAnalysis.ITypeSymbol.IsValueType](api\Microsoft.CodeAnalysis.ITypeSymbol) both return true. However, for an unconstrained type
+    [Microsoft.CodeAnalysis.ITypeSymbol.IsReferenceType](#/api\Microsoft.CodeAnalysis.ITypeSymbol) and [Microsoft.CodeAnalysis.ITypeSymbol.IsValueType](#/api\Microsoft.CodeAnalysis.ITypeSymbol) both return true. However, for an unconstrained type
 
-    parameter, [Microsoft.CodeAnalysis.ITypeSymbol.IsReferenceType](api\Microsoft.CodeAnalysis.ITypeSymbol) and [Microsoft.CodeAnalysis.ITypeSymbol.IsValueType](api\Microsoft.CodeAnalysis.ITypeSymbol) will both return false.
+    parameter, [Microsoft.CodeAnalysis.ITypeSymbol.IsReferenceType](#/api\Microsoft.CodeAnalysis.ITypeSymbol) and [Microsoft.CodeAnalysis.ITypeSymbol.IsValueType](#/api\Microsoft.CodeAnalysis.ITypeSymbol) will both return false.
 
   syntax:
     content:
@@ -242,6 +246,7 @@ items:
     - id: IsReferenceType
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_IsReferenceType
@@ -278,9 +283,9 @@ items:
   summary: >+
     True if this type is known to be a value type. It is never the case that
 
-    [Microsoft.CodeAnalysis.ITypeSymbol.IsReferenceType](api\Microsoft.CodeAnalysis.ITypeSymbol) and [Microsoft.CodeAnalysis.ITypeSymbol.IsValueType](api\Microsoft.CodeAnalysis.ITypeSymbol) both return true. However, for an unconstrained type
+    [Microsoft.CodeAnalysis.ITypeSymbol.IsReferenceType](#/api\Microsoft.CodeAnalysis.ITypeSymbol) and [Microsoft.CodeAnalysis.ITypeSymbol.IsValueType](#/api\Microsoft.CodeAnalysis.ITypeSymbol) both return true. However, for an unconstrained type
 
-    parameter, [Microsoft.CodeAnalysis.ITypeSymbol.IsReferenceType](api\Microsoft.CodeAnalysis.ITypeSymbol) and [Microsoft.CodeAnalysis.ITypeSymbol.IsValueType](api\Microsoft.CodeAnalysis.ITypeSymbol) will both return false.
+    parameter, [Microsoft.CodeAnalysis.ITypeSymbol.IsReferenceType](#/api\Microsoft.CodeAnalysis.ITypeSymbol) and [Microsoft.CodeAnalysis.ITypeSymbol.IsValueType](#/api\Microsoft.CodeAnalysis.ITypeSymbol) will both return false.
 
   syntax:
     content:
@@ -289,6 +294,7 @@ items:
     - id: IsValueType
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_IsValueType
@@ -332,6 +338,7 @@ items:
     - id: IsAnonymousType
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_IsAnonymousType
@@ -368,7 +375,7 @@ items:
   summary: >+
     The original definition of this symbol. If this symbol is constructed from another
 
-    symbol by type substitution then [Microsoft.CodeAnalysis.ITypeSymbol.OriginalDefinition](api\Microsoft.CodeAnalysis.ITypeSymbol) gets the original symbol as it was defined in
+    symbol by type substitution then [Microsoft.CodeAnalysis.ITypeSymbol.OriginalDefinition](#/api\Microsoft.CodeAnalysis.ITypeSymbol) gets the original symbol as it was defined in
 
     source or metadata.
 
@@ -378,8 +385,9 @@ items:
     parameters:
     - id: OriginalDefinition
       type:
-        id: ITypeSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+        id: Microsoft.CodeAnalysis.ITypeSymbol
+        name: ITypeSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeSymbol
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_OriginalDefinition
   yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
   href: api\Microsoft.CodeAnalysis.ITypeSymbol
@@ -412,9 +420,9 @@ items:
     path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
     startLine: 70
   summary: >+
-    An enumerated value that identifies certain 'special' types such as @T:System.Object-.
+    An enumerated value that identifies certain 'special' types such as [System.Object](#).
 
-    Returns [Microsoft.CodeAnalysis.SpecialType.None](api\Microsoft.CodeAnalysis.SpecialType) if the type is not special.
+    Returns [Microsoft.CodeAnalysis.SpecialType.None](#/api\Microsoft.CodeAnalysis.SpecialType) if the type is not special.
 
   syntax:
     content:
@@ -422,8 +430,9 @@ items:
     parameters:
     - id: SpecialType
       type:
-        id: SpecialType
-        href: C:\roslyn\src\Compilers\Core\Portable\SpecialType.cs
+        id: Microsoft.CodeAnalysis.SpecialType
+        name: SpecialType
+        href: api\Microsoft.CodeAnalysis.SpecialType
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_SpecialType
   yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
   href: api\Microsoft.CodeAnalysis.ITypeSymbol
@@ -472,8 +481,9 @@ items:
     parameters:
     - id: interfaceMember
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
       description: Must be a non-null interface property, method, or event.
     return:
       id: ISymbol

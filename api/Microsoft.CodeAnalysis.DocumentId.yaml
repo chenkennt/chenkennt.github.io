@@ -15,7 +15,7 @@ source:
   path: src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
   startLine: 15
 summary: >+
-  An identifier that can be used to retrieve the same [Microsoft.CodeAnalysis.Document](api\Microsoft.CodeAnalysis.Document) across versions of the
+  An identifier that can be used to retrieve the same [Microsoft.CodeAnalysis.Document](#/api\Microsoft.CodeAnalysis.Document) across versions of the
 
   workspace.
 
@@ -24,6 +24,7 @@ syntax:
     CSharp: public class DocumentId
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -49,8 +50,9 @@ items:
     parameters:
     - id: ProjectId
       type:
-        id: ProjectId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\ProjectId.cs
+        id: Microsoft.CodeAnalysis.ProjectId
+        name: ProjectId
+        href: api\Microsoft.CodeAnalysis.ProjectId
 - id: Microsoft.CodeAnalysis.DocumentId.get_ProjectId
   yaml: api\Microsoft.CodeAnalysis.DocumentId.yaml
   href: api\Microsoft.CodeAnalysis.DocumentId
@@ -89,6 +91,7 @@ items:
     - id: Id
       type:
         id: System.Guid
+        name: System.Guid
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DocumentId.get_Id
@@ -123,7 +126,7 @@ items:
     path: src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
     startLine: 42
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.DocumentId](api\Microsoft.CodeAnalysis.DocumentId) instance.
+    Creates a new [Microsoft.CodeAnalysis.DocumentId](#/api\Microsoft.CodeAnalysis.DocumentId) instance.
 
   syntax:
     content:
@@ -131,12 +134,14 @@ items:
     parameters:
     - id: projectId
       type:
-        id: ProjectId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\ProjectId.cs
+        id: Microsoft.CodeAnalysis.ProjectId
+        name: ProjectId
+        href: api\Microsoft.CodeAnalysis.ProjectId
       description: The project id this document id is relative to.
     - id: debugName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: An optional name to make this id easier to recognize while debugging.
@@ -187,6 +192,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -213,8 +219,9 @@ items:
     parameters:
     - id: other
       type:
-        id: DocumentId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+        id: Microsoft.CodeAnalysis.DocumentId
+        name: DocumentId
+        href: api\Microsoft.CodeAnalysis.DocumentId
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.DocumentId.GetHashCode

@@ -19,9 +19,11 @@ syntax:
     CSharp: public struct SymbolInfo
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -56,8 +58,9 @@ items:
     parameters:
     - id: Symbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
 - id: Microsoft.CodeAnalysis.SymbolInfo.get_Symbol
   yaml: api\Microsoft.CodeAnalysis.SymbolInfo.yaml
   href: api\Microsoft.CodeAnalysis.SymbolInfo
@@ -107,6 +110,7 @@ items:
     - id: CandidateSymbols
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.SymbolInfo.get_CandidateSymbols
@@ -153,8 +157,9 @@ items:
     parameters:
     - id: CandidateReason
       type:
-        id: CandidateReason
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\CandidateReason.cs
+        id: Microsoft.CodeAnalysis.CandidateReason
+        name: CandidateReason
+        href: api\Microsoft.CodeAnalysis.CandidateReason
 - id: Microsoft.CodeAnalysis.SymbolInfo.get_CandidateReason
   yaml: api\Microsoft.CodeAnalysis.SymbolInfo.yaml
   href: api\Microsoft.CodeAnalysis.SymbolInfo
@@ -193,6 +198,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -219,8 +225,9 @@ items:
     parameters:
     - id: other
       type:
-        id: SymbolInfo
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\SymbolInfo.cs
+        id: Microsoft.CodeAnalysis.SymbolInfo
+        name: SymbolInfo
+        href: api\Microsoft.CodeAnalysis.SymbolInfo
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SymbolInfo.GetHashCode

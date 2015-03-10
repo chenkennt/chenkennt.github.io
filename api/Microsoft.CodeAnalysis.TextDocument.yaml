@@ -19,6 +19,7 @@ syntax:
     CSharp: public class TextDocument
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -47,8 +48,9 @@ items:
     parameters:
     - id: Project
       type:
-        id: Project
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Project.cs
+        id: Microsoft.CodeAnalysis.Project
+        name: Project
+        href: api\Microsoft.CodeAnalysis.Project
 - id: Microsoft.CodeAnalysis.TextDocument.get_Project
   yaml: api\Microsoft.CodeAnalysis.TextDocument.yaml
   href: api\Microsoft.CodeAnalysis.TextDocument
@@ -91,8 +93,9 @@ items:
     parameters:
     - id: Id
       type:
-        id: DocumentId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+        id: Microsoft.CodeAnalysis.DocumentId
+        name: DocumentId
+        href: api\Microsoft.CodeAnalysis.DocumentId
 - id: Microsoft.CodeAnalysis.TextDocument.get_Id
   yaml: api\Microsoft.CodeAnalysis.TextDocument.yaml
   href: api\Microsoft.CodeAnalysis.TextDocument
@@ -134,6 +137,7 @@ items:
     - id: FilePath
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.TextDocument.get_FilePath
@@ -177,6 +181,7 @@ items:
     - id: Name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.TextDocument.get_Name
@@ -220,6 +225,7 @@ items:
     - id: Folders
       type:
         id: System.Collections.Generic.IReadOnlyList{System.String}
+        name: System.Collections.Generic.IReadOnlyList{System.String}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.TextDocument.get_Folders
@@ -262,8 +268,9 @@ items:
     parameters:
     - id: text
       type:
-        id: SourceText
-        href: C:\roslyn\src\Compilers\Core\Portable\Text\SourceText.cs
+        id: Microsoft.CodeAnalysis.Text.SourceText
+        name: SourceText
+        href: Microsoft.CodeAnalysis.Text.SourceText
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.TextDocument.TryGetTextVersion(Microsoft.CodeAnalysis.VersionStamp@)
@@ -291,8 +298,9 @@ items:
     parameters:
     - id: version
       type:
-        id: VersionStamp
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\VersionStamp.cs
+        id: Microsoft.CodeAnalysis.VersionStamp
+        name: VersionStamp
+        href: api\Microsoft.CodeAnalysis.VersionStamp
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.TextDocument.GetTextAsync(System.Threading.CancellationToken)
@@ -321,6 +329,7 @@ items:
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -351,6 +360,7 @@ items:
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:

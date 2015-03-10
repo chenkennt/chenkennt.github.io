@@ -19,9 +19,11 @@ syntax:
     CSharp: public struct ProjectChanges
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -47,8 +49,9 @@ items:
     parameters:
     - id: ProjectId
       type:
-        id: ProjectId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\ProjectId.cs
+        id: Microsoft.CodeAnalysis.ProjectId
+        name: ProjectId
+        href: api\Microsoft.CodeAnalysis.ProjectId
 - id: Microsoft.CodeAnalysis.ProjectChanges.get_ProjectId
   yaml: api\Microsoft.CodeAnalysis.ProjectChanges.yaml
   href: api\Microsoft.CodeAnalysis.ProjectChanges
@@ -86,8 +89,9 @@ items:
     parameters:
     - id: OldProject
       type:
-        id: Project
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Project.cs
+        id: Microsoft.CodeAnalysis.Project
+        name: Project
+        href: api\Microsoft.CodeAnalysis.Project
 - id: Microsoft.CodeAnalysis.ProjectChanges.get_OldProject
   yaml: api\Microsoft.CodeAnalysis.ProjectChanges.yaml
   href: api\Microsoft.CodeAnalysis.ProjectChanges
@@ -125,8 +129,9 @@ items:
     parameters:
     - id: NewProject
       type:
-        id: Project
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Project.cs
+        id: Microsoft.CodeAnalysis.Project
+        name: Project
+        href: api\Microsoft.CodeAnalysis.Project
 - id: Microsoft.CodeAnalysis.ProjectChanges.get_NewProject
   yaml: api\Microsoft.CodeAnalysis.ProjectChanges.yaml
   href: api\Microsoft.CodeAnalysis.ProjectChanges

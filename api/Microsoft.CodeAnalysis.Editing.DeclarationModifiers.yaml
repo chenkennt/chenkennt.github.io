@@ -19,9 +19,11 @@ syntax:
     CSharp: public struct DeclarationModifiers
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -47,8 +49,9 @@ items:
     parameters:
     - id: symbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsStatic
@@ -74,6 +77,7 @@ items:
     - id: IsStatic
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.get_IsStatic
@@ -114,6 +118,7 @@ items:
     - id: IsAbstract
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.get_IsAbstract
@@ -154,6 +159,7 @@ items:
     - id: IsNew
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.get_IsNew
@@ -194,6 +200,7 @@ items:
     - id: IsUnsafe
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.get_IsUnsafe
@@ -234,6 +241,7 @@ items:
     - id: IsReadOnly
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.get_IsReadOnly
@@ -274,6 +282,7 @@ items:
     - id: IsVirtual
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.get_IsVirtual
@@ -314,6 +323,7 @@ items:
     - id: IsOverride
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.get_IsOverride
@@ -354,6 +364,7 @@ items:
     - id: IsSealed
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.get_IsSealed
@@ -394,6 +405,7 @@ items:
     - id: IsConst
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.get_IsConst
@@ -434,6 +446,7 @@ items:
     - id: IsWithEvents
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.get_IsWithEvents
@@ -474,6 +487,7 @@ items:
     - id: IsPartial
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.get_IsPartial
@@ -514,6 +528,7 @@ items:
     - id: IsAsync
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.get_IsAsync
@@ -554,6 +569,7 @@ items:
     - id: isStatic
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -581,6 +597,7 @@ items:
     - id: isAbstract
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -608,6 +625,7 @@ items:
     - id: isNew
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -635,6 +653,7 @@ items:
     - id: isUnsafe
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -662,6 +681,7 @@ items:
     - id: isReadOnly
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -689,6 +709,7 @@ items:
     - id: isVirtual
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -716,6 +737,7 @@ items:
     - id: isOverride
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -743,6 +765,7 @@ items:
     - id: isSealed
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -770,6 +793,7 @@ items:
     - id: isConst
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -797,6 +821,7 @@ items:
     - id: withEvents
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -824,6 +849,7 @@ items:
     - id: isPartial
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -851,6 +877,7 @@ items:
     - id: isAsync
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -1145,8 +1172,9 @@ items:
     parameters:
     - id: modifiers
       type:
-        id: DeclarationModifiers
-        href: C:\roslyn\src\Workspaces\Core\Portable\Editing\DeclarationModifiers.cs
+        id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+        name: DeclarationModifiers
+        href: api\Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Equals(System.Object)
@@ -1172,6 +1200,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:

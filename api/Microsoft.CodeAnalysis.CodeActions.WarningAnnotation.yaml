@@ -22,6 +22,7 @@ syntax:
     CSharp: public static class WarningAnnotation
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -64,6 +65,7 @@ items:
     - id: description
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -90,7 +92,8 @@ items:
     parameters:
     - id: annotation
       type:
-        id: SyntaxAnnotation
-        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxAnnotation.cs
+        id: Microsoft.CodeAnalysis.SyntaxAnnotation
+        name: SyntaxAnnotation
+        href: api\Microsoft.CodeAnalysis.SyntaxAnnotation
     return:
       id: String

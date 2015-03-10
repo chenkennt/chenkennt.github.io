@@ -22,6 +22,7 @@ syntax:
     CSharp: public abstract class CompilationOptions
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -50,8 +51,9 @@ items:
     parameters:
     - id: OutputKind
       type:
-        id: OutputKind
-        href: C:\roslyn\src\Compilers\Core\Portable\OutputKind.cs
+        id: Microsoft.CodeAnalysis.OutputKind
+        name: OutputKind
+        href: api\Microsoft.CodeAnalysis.OutputKind
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_OutputKind
   yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
   href: api\Microsoft.CodeAnalysis.CompilationOptions
@@ -93,6 +95,7 @@ items:
     - id: ModuleName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_ModuleName
@@ -138,6 +141,7 @@ items:
     - id: ScriptClassName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_ScriptClassName
@@ -183,6 +187,7 @@ items:
     - id: MainTypeName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_MainTypeName
@@ -226,6 +231,7 @@ items:
     - id: CryptoKeyFile
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_CryptoKeyFile
@@ -269,6 +275,7 @@ items:
     - id: CryptoKeyContainer
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_CryptoKeyContainer
@@ -305,7 +312,7 @@ items:
   summary: >+
     Turn off strong name signing when you have supplied a key either through
 
-    attributes or [Microsoft.CodeAnalysis.CompilationOptions.CryptoKeyContainer](api\Microsoft.CodeAnalysis.CompilationOptions) or [Microsoft.CodeAnalysis.CompilationOptions.CryptoKeyFile](api\Microsoft.CodeAnalysis.CompilationOptions).
+    attributes or [Microsoft.CodeAnalysis.CompilationOptions.CryptoKeyContainer](#/api\Microsoft.CodeAnalysis.CompilationOptions) or [Microsoft.CodeAnalysis.CompilationOptions.CryptoKeyFile](#/api\Microsoft.CodeAnalysis.CompilationOptions).
 
   syntax:
     content:
@@ -314,6 +321,7 @@ items:
     - id: DelaySign
       type:
         id: System.Nullable{System.Boolean}
+        name: System.Nullable{System.Boolean}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_DelaySign
@@ -357,6 +365,7 @@ items:
     - id: CheckOverflow
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_CheckOverflow
@@ -399,8 +408,9 @@ items:
     parameters:
     - id: Platform
       type:
-        id: Platform
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\Platform.cs
+        id: Microsoft.CodeAnalysis.Platform
+        name: Platform
+        href: api\Microsoft.CodeAnalysis.Platform
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_Platform
   yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
   href: api\Microsoft.CodeAnalysis.CompilationOptions
@@ -443,8 +453,9 @@ items:
     parameters:
     - id: OptimizationLevel
       type:
-        id: OptimizationLevel
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\OptimizationLevel.cs
+        id: Microsoft.CodeAnalysis.OptimizationLevel
+        name: OptimizationLevel
+        href: api\Microsoft.CodeAnalysis.OptimizationLevel
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_OptimizationLevel
   yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
   href: api\Microsoft.CodeAnalysis.CompilationOptions
@@ -485,8 +496,9 @@ items:
     parameters:
     - id: GeneralDiagnosticOption
       type:
-        id: ReportDiagnostic
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\ReportDiagnostic.cs
+        id: Microsoft.CodeAnalysis.ReportDiagnostic
+        name: ReportDiagnostic
+        href: api\Microsoft.CodeAnalysis.ReportDiagnostic
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_GeneralDiagnosticOption
   yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
   href: api\Microsoft.CodeAnalysis.CompilationOptions
@@ -528,6 +540,7 @@ items:
     - id: WarningLevel
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_WarningLevel
@@ -571,6 +584,7 @@ items:
     - id: ConcurrentBuild
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_ConcurrentBuild
@@ -614,6 +628,7 @@ items:
     - id: SpecificDiagnosticOptions
       type:
         id: System.Collections.Immutable.ImmutableDictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}
+        name: System.Collections.Immutable.ImmutableDictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_SpecificDiagnosticOptions
@@ -658,8 +673,9 @@ items:
     parameters:
     - id: MetadataReferenceResolver
       type:
-        id: MetadataReferenceResolver
-        href: C:\roslyn\src\Compilers\Core\Portable\MetadataReference\MetadataReferenceResolver.cs
+        id: Microsoft.CodeAnalysis.MetadataReferenceResolver
+        name: MetadataReferenceResolver
+        href: api\Microsoft.CodeAnalysis.MetadataReferenceResolver
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_MetadataReferenceResolver
   yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
   href: api\Microsoft.CodeAnalysis.CompilationOptions
@@ -702,8 +718,9 @@ items:
     parameters:
     - id: XmlReferenceResolver
       type:
-        id: XmlReferenceResolver
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\XmlReferenceResolver.cs
+        id: Microsoft.CodeAnalysis.XmlReferenceResolver
+        name: XmlReferenceResolver
+        href: api\Microsoft.CodeAnalysis.XmlReferenceResolver
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_XmlReferenceResolver
   yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
   href: api\Microsoft.CodeAnalysis.CompilationOptions
@@ -746,8 +763,9 @@ items:
     parameters:
     - id: SourceReferenceResolver
       type:
-        id: SourceReferenceResolver
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\SourceReferenceResolver.cs
+        id: Microsoft.CodeAnalysis.SourceReferenceResolver
+        name: SourceReferenceResolver
+        href: api\Microsoft.CodeAnalysis.SourceReferenceResolver
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_SourceReferenceResolver
   yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
   href: api\Microsoft.CodeAnalysis.CompilationOptions
@@ -790,8 +808,9 @@ items:
     parameters:
     - id: StrongNameProvider
       type:
-        id: StrongNameProvider
-        href: C:\roslyn\src\Compilers\Core\Portable\StrongNameProvider.cs
+        id: Microsoft.CodeAnalysis.StrongNameProvider
+        name: StrongNameProvider
+        href: api\Microsoft.CodeAnalysis.StrongNameProvider
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_StrongNameProvider
   yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
   href: api\Microsoft.CodeAnalysis.CompilationOptions
@@ -826,7 +845,7 @@ items:
   summary: >+
     Used to compare assembly identities. May implement unification and portability policies specific to the target platform.
 
-    [Microsoft.CodeAnalysis.AssemblyIdentityComparer.Default](api\Microsoft.CodeAnalysis.AssemblyIdentityComparer) if not specified.
+    [Microsoft.CodeAnalysis.AssemblyIdentityComparer.Default](#/api\Microsoft.CodeAnalysis.AssemblyIdentityComparer) if not specified.
 
   syntax:
     content:
@@ -834,8 +853,9 @@ items:
     parameters:
     - id: AssemblyIdentityComparer
       type:
-        id: AssemblyIdentityComparer
-        href: C:\roslyn\src\Compilers\Core\Portable\MetadataReference\AssemblyIdentityComparer.cs
+        id: Microsoft.CodeAnalysis.AssemblyIdentityComparer
+        name: AssemblyIdentityComparer
+        href: api\Microsoft.CodeAnalysis.AssemblyIdentityComparer
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_AssemblyIdentityComparer
   yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
   href: api\Microsoft.CodeAnalysis.CompilationOptions
@@ -876,8 +896,9 @@ items:
     parameters:
     - id: value
       type:
-        id: ReportDiagnostic
-        href: C:\roslyn\src\Compilers\Core\Portable\Diagnostic\ReportDiagnostic.cs
+        id: Microsoft.CodeAnalysis.ReportDiagnostic
+        name: ReportDiagnostic
+        href: api\Microsoft.CodeAnalysis.ReportDiagnostic
     return:
       id: CompilationOptions
 - id: Microsoft.CodeAnalysis.CompilationOptions.WithSpecificDiagnosticOptions(System.Collections.Immutable.ImmutableDictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic})
@@ -906,6 +927,7 @@ items:
     - id: value
       type:
         id: System.Collections.Immutable.ImmutableDictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}
+        name: System.Collections.Immutable.ImmutableDictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}
         href: System.Collections.Immutable
         isExternal: true
     return:
@@ -936,6 +958,7 @@ items:
     - id: value
       type:
         id: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}}
+        name: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}}
         href: System.Runtime
         isExternal: true
     return:
@@ -965,8 +988,9 @@ items:
     parameters:
     - id: kind
       type:
-        id: OutputKind
-        href: C:\roslyn\src\Compilers\Core\Portable\OutputKind.cs
+        id: Microsoft.CodeAnalysis.OutputKind
+        name: OutputKind
+        href: api\Microsoft.CodeAnalysis.OutputKind
     return:
       id: CompilationOptions
 - id: Microsoft.CodeAnalysis.CompilationOptions.WithPlatform(Microsoft.CodeAnalysis.Platform)
@@ -994,8 +1018,9 @@ items:
     parameters:
     - id: platform
       type:
-        id: Platform
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\Platform.cs
+        id: Microsoft.CodeAnalysis.Platform
+        name: Platform
+        href: api\Microsoft.CodeAnalysis.Platform
     return:
       id: CompilationOptions
 - id: Microsoft.CodeAnalysis.CompilationOptions.WithOptimizationLevel(Microsoft.CodeAnalysis.OptimizationLevel)
@@ -1023,8 +1048,9 @@ items:
     parameters:
     - id: value
       type:
-        id: OptimizationLevel
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\OptimizationLevel.cs
+        id: Microsoft.CodeAnalysis.OptimizationLevel
+        name: OptimizationLevel
+        href: api\Microsoft.CodeAnalysis.OptimizationLevel
     return:
       id: CompilationOptions
 - id: Microsoft.CodeAnalysis.CompilationOptions.WithXmlReferenceResolver(Microsoft.CodeAnalysis.XmlReferenceResolver)
@@ -1049,8 +1075,9 @@ items:
     parameters:
     - id: resolver
       type:
-        id: XmlReferenceResolver
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\XmlReferenceResolver.cs
+        id: Microsoft.CodeAnalysis.XmlReferenceResolver
+        name: XmlReferenceResolver
+        href: api\Microsoft.CodeAnalysis.XmlReferenceResolver
     return:
       id: CompilationOptions
 - id: Microsoft.CodeAnalysis.CompilationOptions.WithSourceReferenceResolver(Microsoft.CodeAnalysis.SourceReferenceResolver)
@@ -1075,8 +1102,9 @@ items:
     parameters:
     - id: resolver
       type:
-        id: SourceReferenceResolver
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\SourceReferenceResolver.cs
+        id: Microsoft.CodeAnalysis.SourceReferenceResolver
+        name: SourceReferenceResolver
+        href: api\Microsoft.CodeAnalysis.SourceReferenceResolver
     return:
       id: CompilationOptions
 - id: Microsoft.CodeAnalysis.CompilationOptions.WithMetadataReferenceResolver(Microsoft.CodeAnalysis.MetadataReferenceResolver)
@@ -1101,8 +1129,9 @@ items:
     parameters:
     - id: resolver
       type:
-        id: MetadataReferenceResolver
-        href: C:\roslyn\src\Compilers\Core\Portable\MetadataReference\MetadataReferenceResolver.cs
+        id: Microsoft.CodeAnalysis.MetadataReferenceResolver
+        name: MetadataReferenceResolver
+        href: api\Microsoft.CodeAnalysis.MetadataReferenceResolver
     return:
       id: CompilationOptions
 - id: Microsoft.CodeAnalysis.CompilationOptions.WithAssemblyIdentityComparer(Microsoft.CodeAnalysis.AssemblyIdentityComparer)
@@ -1127,8 +1156,9 @@ items:
     parameters:
     - id: comparer
       type:
-        id: AssemblyIdentityComparer
-        href: C:\roslyn\src\Compilers\Core\Portable\MetadataReference\AssemblyIdentityComparer.cs
+        id: Microsoft.CodeAnalysis.AssemblyIdentityComparer
+        name: AssemblyIdentityComparer
+        href: api\Microsoft.CodeAnalysis.AssemblyIdentityComparer
     return:
       id: CompilationOptions
 - id: Microsoft.CodeAnalysis.CompilationOptions.WithStrongNameProvider(Microsoft.CodeAnalysis.StrongNameProvider)
@@ -1153,8 +1183,9 @@ items:
     parameters:
     - id: provider
       type:
-        id: StrongNameProvider
-        href: C:\roslyn\src\Compilers\Core\Portable\StrongNameProvider.cs
+        id: Microsoft.CodeAnalysis.StrongNameProvider
+        name: StrongNameProvider
+        href: api\Microsoft.CodeAnalysis.StrongNameProvider
     return:
       id: CompilationOptions
 - id: Microsoft.CodeAnalysis.CompilationOptions.Errors
@@ -1183,6 +1214,7 @@ items:
     - id: Errors
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostic}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostic}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_Errors
@@ -1223,6 +1255,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:

@@ -22,6 +22,7 @@ syntax:
     CSharp: public sealed partial class EditScript<TNode>
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -48,6 +49,7 @@ items:
     - id: Edits
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Differencing.Edit{`0}}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Differencing.Edit{`0}}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.Differencing.EditScript`1.get_Edits
@@ -87,8 +89,9 @@ items:
     parameters:
     - id: Match
       type:
-        id: Match
-        href: C:\roslyn\src\Workspaces\Core\Portable\Differencing\Match.cs
+        id: Microsoft.CodeAnalysis.Differencing.Match{`0}
+        name: Match
+        href: Microsoft.CodeAnalysis.Differencing.Match{`0}
 - id: Microsoft.CodeAnalysis.Differencing.EditScript`1.get_Match
   yaml: api\Microsoft.CodeAnalysis.Differencing.EditScript`1.yaml
   href: api\Microsoft.CodeAnalysis.Differencing.EditScript`1

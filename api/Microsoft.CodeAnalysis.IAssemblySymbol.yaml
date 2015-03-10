@@ -47,6 +47,7 @@ items:
     - id: IsInteractive
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_IsInteractive
@@ -89,8 +90,9 @@ items:
     parameters:
     - id: Identity
       type:
-        id: AssemblyIdentity
-        href: C:\roslyn\src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+        id: Microsoft.CodeAnalysis.AssemblyIdentity
+        name: AssemblyIdentity
+        href: api\Microsoft.CodeAnalysis.AssemblyIdentity
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_Identity
   yaml: api\Microsoft.CodeAnalysis.IAssemblySymbol.yaml
   href: api\Microsoft.CodeAnalysis.IAssemblySymbol
@@ -135,8 +137,9 @@ items:
     parameters:
     - id: GlobalNamespace
       type:
-        id: INamespaceSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\INamespaceSymbol.cs
+        id: Microsoft.CodeAnalysis.INamespaceSymbol
+        name: INamespaceSymbol
+        href: api\Microsoft.CodeAnalysis.INamespaceSymbol
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_GlobalNamespace
   yaml: api\Microsoft.CodeAnalysis.IAssemblySymbol.yaml
   href: api\Microsoft.CodeAnalysis.IAssemblySymbol
@@ -180,6 +183,7 @@ items:
     - id: Modules
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.IModuleSymbol}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.IModuleSymbol}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_Modules
@@ -223,6 +227,7 @@ items:
     - id: TypeNames
       type:
         id: System.Collections.Generic.ICollection{System.String}
+        name: System.Collections.Generic.ICollection{System.String}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_TypeNames
@@ -266,6 +271,7 @@ items:
     - id: NamespaceNames
       type:
         id: System.Collections.Generic.ICollection{System.String}
+        name: System.Collections.Generic.ICollection{System.String}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_NamespaceNames
@@ -310,8 +316,9 @@ items:
     parameters:
     - id: toAssembly
       type:
-        id: IAssemblySymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
+        id: Microsoft.CodeAnalysis.IAssemblySymbol
+        name: IAssemblySymbol
+        href: api\Microsoft.CodeAnalysis.IAssemblySymbol
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.GetTypeByMetadataName(System.String)
@@ -340,6 +347,7 @@ items:
     - id: fullyQualifiedMetadataName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: Type name.
@@ -374,6 +382,7 @@ items:
     - id: MightContainExtensionMethods
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_MightContainExtensionMethods
@@ -421,6 +430,7 @@ items:
     - id: fullyQualifiedMetadataName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:

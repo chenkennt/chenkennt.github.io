@@ -19,9 +19,11 @@ syntax:
     CSharp: public struct TypeInfo
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -54,8 +56,9 @@ items:
     parameters:
     - id: Type
       type:
-        id: ITypeSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+        id: Microsoft.CodeAnalysis.ITypeSymbol
+        name: ITypeSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeSymbol
 - id: Microsoft.CodeAnalysis.TypeInfo.get_Type
   yaml: api\Microsoft.CodeAnalysis.TypeInfo.yaml
   href: api\Microsoft.CodeAnalysis.TypeInfo
@@ -98,8 +101,9 @@ items:
     parameters:
     - id: ConvertedType
       type:
-        id: ITypeSymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+        id: Microsoft.CodeAnalysis.ITypeSymbol
+        name: ITypeSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeSymbol
 - id: Microsoft.CodeAnalysis.TypeInfo.get_ConvertedType
   yaml: api\Microsoft.CodeAnalysis.TypeInfo.yaml
   href: api\Microsoft.CodeAnalysis.TypeInfo
@@ -137,8 +141,9 @@ items:
     parameters:
     - id: other
       type:
-        id: TypeInfo
-        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\TypeInfo.cs
+        id: Microsoft.CodeAnalysis.TypeInfo
+        name: TypeInfo
+        href: api\Microsoft.CodeAnalysis.TypeInfo
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.TypeInfo.Equals(System.Object)
@@ -164,6 +169,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:

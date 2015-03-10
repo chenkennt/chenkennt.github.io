@@ -34,9 +34,11 @@ syntax:
     CSharp: public struct SymbolCallerInfo
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -65,8 +67,9 @@ items:
     parameters:
     - id: CallingSymbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.get_CallingSymbol
   yaml: api\Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.yaml
   href: api\Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo
@@ -108,6 +111,7 @@ items:
     - id: Locations
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.get_Locations
@@ -150,8 +154,9 @@ items:
     parameters:
     - id: CalledSymbol
       type:
-        id: ISymbol
-        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.get_CalledSymbol
   yaml: api\Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.yaml
   href: api\Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo
@@ -199,6 +204,7 @@ items:
     - id: IsDirect
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.get_IsDirect

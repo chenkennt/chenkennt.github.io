@@ -22,6 +22,7 @@ syntax:
     CSharp: public abstract class HostWorkspaceServices
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -50,8 +51,9 @@ items:
     parameters:
     - id: HostServices
       type:
-        id: HostServices
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Host\HostServices.cs
+        id: Microsoft.CodeAnalysis.Host.HostServices
+        name: HostServices
+        href: api\Microsoft.CodeAnalysis.Host.HostServices
 - id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.get_HostServices
   yaml: api\Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
   href: api\Microsoft.CodeAnalysis.Host.HostWorkspaceServices
@@ -92,8 +94,9 @@ items:
     parameters:
     - id: Workspace
       type:
-        id: Workspace
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Workspace.cs
+        id: Microsoft.CodeAnalysis.Workspace
+        name: Workspace
+        href: api\Microsoft.CodeAnalysis.Workspace
 - id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.get_Workspace
   yaml: api\Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
   href: api\Microsoft.CodeAnalysis.Host.HostWorkspaceServices
@@ -155,7 +158,7 @@ items:
   summary: >+
     Gets a workspace specific service provided by the host identified by the service type.
 
-    If the host does not provide the service, this method returns @T:System.InvalidOperationException-.
+    If the host does not provide the service, this method returns [System.InvalidOperationException](#).
 
   syntax:
     content:
@@ -188,8 +191,9 @@ items:
     parameters:
     - id: PersistentStorage
       type:
-        id: IPersistentStorageService
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Host\PersistentStorage\IPersistentStorageService.cs
+        id: Microsoft.CodeAnalysis.Host.IPersistentStorageService
+        name: IPersistentStorageService
+        href: api\Microsoft.CodeAnalysis.Host.IPersistentStorageService
 - id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.get_PersistentStorage
   yaml: api\Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
   href: api\Microsoft.CodeAnalysis.Host.HostWorkspaceServices
@@ -230,8 +234,9 @@ items:
     parameters:
     - id: TemporaryStorage
       type:
-        id: ITemporaryStorageService
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Host\TemporaryStorage\ITemporaryStorageService.cs
+        id: Microsoft.CodeAnalysis.Host.ITemporaryStorageService
+        name: ITemporaryStorageService
+        href: api\Microsoft.CodeAnalysis.Host.ITemporaryStorageService
 - id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.get_TemporaryStorage
   yaml: api\Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
   href: api\Microsoft.CodeAnalysis.Host.HostWorkspaceServices
@@ -273,6 +278,7 @@ items:
     - id: SupportedLanguages
       type:
         id: System.Collections.Generic.IEnumerable{System.String}
+        name: System.Collections.Generic.IEnumerable{System.String}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.get_SupportedLanguages
@@ -316,6 +322,7 @@ items:
     - id: languageName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -337,7 +344,7 @@ items:
     path: src\Workspaces\Core\Portable\Workspace\Host\HostWorkspaceServices.cs
     startLine: 89
   summary: >+
-    Gets the [Microsoft.CodeAnalysis.Host.HostLanguageServices](api\Microsoft.CodeAnalysis.Host.HostLanguageServices) for the language name.
+    Gets the [Microsoft.CodeAnalysis.Host.HostLanguageServices](#/api\Microsoft.CodeAnalysis.Host.HostLanguageServices) for the language name.
 
   syntax:
     content:
@@ -346,6 +353,7 @@ items:
     - id: languageName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -375,7 +383,8 @@ items:
     parameters:
     - id: filter
       type:
-        id: MetadataFilter
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Host\HostWorkspaceServices.cs
+        id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.MetadataFilter
+        name: MetadataFilter
+        href: api\Microsoft.CodeAnalysis.Host.HostWorkspaceServices.MetadataFilter
     return:
       id: IEnumerable

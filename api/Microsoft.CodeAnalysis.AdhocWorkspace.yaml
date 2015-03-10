@@ -24,10 +24,12 @@ syntax:
     CSharp: public sealed class AdhocWorkspace
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
-- id: Workspace
-  href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Workspace.cs
+- id: Microsoft.CodeAnalysis.Workspace
+  name: Workspace
+  href: api\Microsoft.CodeAnalysis.Workspace
 items:
 - id: Microsoft.CodeAnalysis.AdhocWorkspace.#ctor(Microsoft.CodeAnalysis.Host.HostServices,System.String)
   yaml: api\Microsoft.CodeAnalysis.AdhocWorkspace.yaml
@@ -51,11 +53,13 @@ items:
     parameters:
     - id: host
       type:
-        id: HostServices
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Host\HostServices.cs
+        id: Microsoft.CodeAnalysis.Host.HostServices
+        name: HostServices
+        href: api\Microsoft.CodeAnalysis.Host.HostServices
     - id: workspaceKind
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.AdhocWorkspace.#ctor
@@ -100,8 +104,9 @@ items:
     parameters:
     - id: feature
       type:
-        id: ApplyChangesKind
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\ApplyChangesKind.cs
+        id: Microsoft.CodeAnalysis.ApplyChangesKind
+        name: ApplyChangesKind
+        href: api\Microsoft.CodeAnalysis.ApplyChangesKind
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.AdhocWorkspace.CanOpenDocuments
@@ -127,6 +132,7 @@ items:
     - id: CanOpenDocuments
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.AdhocWorkspace.get_CanOpenDocuments
@@ -194,8 +200,9 @@ items:
     parameters:
     - id: solutionInfo
       type:
-        id: SolutionInfo
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\SolutionInfo.cs
+        id: Microsoft.CodeAnalysis.SolutionInfo
+        name: SolutionInfo
+        href: api\Microsoft.CodeAnalysis.SolutionInfo
     return:
       id: Solution
 - id: Microsoft.CodeAnalysis.AdhocWorkspace.AddProject(System.String,System.String)
@@ -224,11 +231,13 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: language
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -258,8 +267,9 @@ items:
     parameters:
     - id: projectInfo
       type:
-        id: ProjectInfo
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\ProjectInfo.cs
+        id: Microsoft.CodeAnalysis.ProjectInfo
+        name: ProjectInfo
+        href: api\Microsoft.CodeAnalysis.ProjectInfo
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.AdhocWorkspace.AddProjects(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ProjectInfo})
@@ -288,6 +298,7 @@ items:
     - id: projectInfos
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ProjectInfo}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ProjectInfo}
         href: System.Runtime
         isExternal: true
     return:
@@ -317,17 +328,20 @@ items:
     parameters:
     - id: projectId
       type:
-        id: ProjectId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\ProjectId.cs
+        id: Microsoft.CodeAnalysis.ProjectId
+        name: ProjectId
+        href: api\Microsoft.CodeAnalysis.ProjectId
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: text
       type:
-        id: SourceText
-        href: C:\roslyn\src\Compilers\Core\Portable\Text\SourceText.cs
+        id: Microsoft.CodeAnalysis.Text.SourceText
+        name: SourceText
+        href: Microsoft.CodeAnalysis.Text.SourceText
     return:
       id: Document
 - id: Microsoft.CodeAnalysis.AdhocWorkspace.AddDocument(Microsoft.CodeAnalysis.DocumentInfo)
@@ -355,8 +369,9 @@ items:
     parameters:
     - id: documentInfo
       type:
-        id: DocumentInfo
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentInfo.cs
+        id: Microsoft.CodeAnalysis.DocumentInfo
+        name: DocumentInfo
+        href: api\Microsoft.CodeAnalysis.DocumentInfo
     return:
       id: Document
 - id: Microsoft.CodeAnalysis.AdhocWorkspace.OpenDocument(Microsoft.CodeAnalysis.DocumentId,System.Boolean)
@@ -384,11 +399,13 @@ items:
     parameters:
     - id: documentId
       type:
-        id: DocumentId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+        id: Microsoft.CodeAnalysis.DocumentId
+        name: DocumentId
+        href: api\Microsoft.CodeAnalysis.DocumentId
     - id: activate
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -418,8 +435,9 @@ items:
     parameters:
     - id: documentId
       type:
-        id: DocumentId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+        id: Microsoft.CodeAnalysis.DocumentId
+        name: DocumentId
+        href: api\Microsoft.CodeAnalysis.DocumentId
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.AdhocWorkspace.OpenAdditionalDocument(Microsoft.CodeAnalysis.DocumentId,System.Boolean)
@@ -447,11 +465,13 @@ items:
     parameters:
     - id: documentId
       type:
-        id: DocumentId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+        id: Microsoft.CodeAnalysis.DocumentId
+        name: DocumentId
+        href: api\Microsoft.CodeAnalysis.DocumentId
     - id: activate
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -481,7 +501,8 @@ items:
     parameters:
     - id: documentId
       type:
-        id: DocumentId
-        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+        id: Microsoft.CodeAnalysis.DocumentId
+        name: DocumentId
+        href: api\Microsoft.CodeAnalysis.DocumentId
     return:
       id: Void

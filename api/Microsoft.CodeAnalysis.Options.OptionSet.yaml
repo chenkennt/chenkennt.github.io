@@ -19,6 +19,7 @@ syntax:
     CSharp: public sealed class OptionSet
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -47,8 +48,9 @@ items:
     parameters:
     - id: option
       type:
-        id: Option
-        href: C:\roslyn\src\Workspaces\Core\Portable\Options\Option`1.cs
+        id: Microsoft.CodeAnalysis.Options.Option{``0}
+        name: Option
+        href: Microsoft.CodeAnalysis.Options.Option{``0}
     return:
       id: T
 - id: Microsoft.CodeAnalysis.Options.OptionSet.GetOption``1(Microsoft.CodeAnalysis.Options.PerLanguageOption{``0},System.String)
@@ -76,11 +78,13 @@ items:
     parameters:
     - id: option
       type:
-        id: PerLanguageOption
-        href: C:\roslyn\src\Workspaces\Core\Portable\Options\PerLanguageOption.cs
+        id: Microsoft.CodeAnalysis.Options.PerLanguageOption{``0}
+        name: PerLanguageOption
+        href: Microsoft.CodeAnalysis.Options.PerLanguageOption{``0}
     - id: language
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -110,8 +114,9 @@ items:
     parameters:
     - id: optionKey
       type:
-        id: OptionKey
-        href: C:\roslyn\src\Workspaces\Core\Portable\Options\OptionKey.cs
+        id: Microsoft.CodeAnalysis.Options.OptionKey
+        name: OptionKey
+        href: api\Microsoft.CodeAnalysis.Options.OptionKey
     return:
       id: Object
 - id: Microsoft.CodeAnalysis.Options.OptionSet.WithChangedOption``1(Microsoft.CodeAnalysis.Options.Option{``0},``0)
@@ -131,7 +136,7 @@ items:
     path: src\Workspaces\Core\Portable\Options\OptionSet.cs
     startLine: 64
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.Options.OptionSet](api\Microsoft.CodeAnalysis.Options.OptionSet) that contains the changed value.
+    Creates a new [Microsoft.CodeAnalysis.Options.OptionSet](#/api\Microsoft.CodeAnalysis.Options.OptionSet) that contains the changed value.
 
   syntax:
     content:
@@ -139,12 +144,14 @@ items:
     parameters:
     - id: option
       type:
-        id: Option
-        href: C:\roslyn\src\Workspaces\Core\Portable\Options\Option`1.cs
+        id: Microsoft.CodeAnalysis.Options.Option{``0}
+        name: Option
+        href: Microsoft.CodeAnalysis.Options.Option{``0}
     - id: value
       type:
         id: T
-        href: C:\roslyn\src\Workspaces\Core\Portable\Options\OptionSet.cs
+        name: T
+        href: T
     return:
       id: OptionSet
 - id: Microsoft.CodeAnalysis.Options.OptionSet.WithChangedOption``1(Microsoft.CodeAnalysis.Options.PerLanguageOption{``0},System.String,``0)
@@ -164,7 +171,7 @@ items:
     path: src\Workspaces\Core\Portable\Options\OptionSet.cs
     startLine: 72
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.Options.OptionSet](api\Microsoft.CodeAnalysis.Options.OptionSet) that contains the changed value.
+    Creates a new [Microsoft.CodeAnalysis.Options.OptionSet](#/api\Microsoft.CodeAnalysis.Options.OptionSet) that contains the changed value.
 
   syntax:
     content:
@@ -172,17 +179,20 @@ items:
     parameters:
     - id: option
       type:
-        id: PerLanguageOption
-        href: C:\roslyn\src\Workspaces\Core\Portable\Options\PerLanguageOption.cs
+        id: Microsoft.CodeAnalysis.Options.PerLanguageOption{``0}
+        name: PerLanguageOption
+        href: Microsoft.CodeAnalysis.Options.PerLanguageOption{``0}
     - id: language
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: value
       type:
         id: T
-        href: C:\roslyn\src\Workspaces\Core\Portable\Options\OptionSet.cs
+        name: T
+        href: T
     return:
       id: OptionSet
 - id: Microsoft.CodeAnalysis.Options.OptionSet.WithChangedOption(Microsoft.CodeAnalysis.Options.OptionKey,System.Object)
@@ -202,7 +212,7 @@ items:
     path: src\Workspaces\Core\Portable\Options\OptionSet.cs
     startLine: 80
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.Options.OptionSet](api\Microsoft.CodeAnalysis.Options.OptionSet) that contains the changed value.
+    Creates a new [Microsoft.CodeAnalysis.Options.OptionSet](#/api\Microsoft.CodeAnalysis.Options.OptionSet) that contains the changed value.
 
   syntax:
     content:
@@ -210,11 +220,13 @@ items:
     parameters:
     - id: optionAndLanguage
       type:
-        id: OptionKey
-        href: C:\roslyn\src\Workspaces\Core\Portable\Options\OptionKey.cs
+        id: Microsoft.CodeAnalysis.Options.OptionKey
+        name: OptionKey
+        href: api\Microsoft.CodeAnalysis.Options.OptionKey
     - id: value
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
