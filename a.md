@@ -1,7 +1,3 @@
----
-id: Microsoft.CodeAnalysis.Formatting.Formatter
----
-
 ## How to use Formatter to format code
 
 Here is an example of how to use Formatter to format C# source code:
