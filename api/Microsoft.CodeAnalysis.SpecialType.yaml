@@ -1,0 +1,1023 @@
+id: Microsoft.CodeAnalysis.SpecialType
+yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+href: api\Microsoft.CodeAnalysis.SpecialType
+name:
+  CSharp: SpecialType
+qualifiedName:
+  CSharp: SpecialType
+type: Enum
+source:
+  remote:
+    branch: master
+    repo: https://github.com/chenkennt/roslyn.git
+    local: C:\roslyn\
+    sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+  path: src\Compilers\Core\Portable\SpecialType.cs
+  startLine: 20
+summary: >+
+  Specifies the Ids of special runtime types.
+
+syntax:
+  content:
+    CSharp: public enum SpecialType
+inheritance:
+- id: System.Object
+  href: System.Runtime
+  isExternal: true
+- id: System.ValueType
+  href: System.Runtime
+  isExternal: true
+- id: System.Enum
+  href: System.Runtime
+  isExternal: true
+items:
+- id: Microsoft.CodeAnalysis.SpecialType.None
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: None
+  qualifiedName:
+    CSharp: None
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 25
+  summary: >+
+    Indicates a non-special type (default value).
+
+  syntax:
+    content:
+      CSharp: None = 0
+- id: Microsoft.CodeAnalysis.SpecialType.System_Object
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_Object
+  qualifiedName:
+    CSharp: System_Object
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 30
+  summary: >+
+    Indicates that the type is @T:System.Object-.
+
+  syntax:
+    content:
+      CSharp: System_Object = 1
+- id: Microsoft.CodeAnalysis.SpecialType.System_Enum
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_Enum
+  qualifiedName:
+    CSharp: System_Enum
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 35
+  summary: >+
+    Indicates that the type is @T:System.Enum-.
+
+  syntax:
+    content:
+      CSharp: System_Enum = 2
+- id: Microsoft.CodeAnalysis.SpecialType.System_MulticastDelegate
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_MulticastDelegate
+  qualifiedName:
+    CSharp: System_MulticastDelegate
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 40
+  summary: >+
+    Indicates that the type is @T:System.MulticastDelegate-.
+
+  syntax:
+    content:
+      CSharp: System_MulticastDelegate = 3
+- id: Microsoft.CodeAnalysis.SpecialType.System_Delegate
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_Delegate
+  qualifiedName:
+    CSharp: System_Delegate
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 45
+  summary: >+
+    Indicates that the type is @T:System.Delegate-.
+
+  syntax:
+    content:
+      CSharp: System_Delegate = 4
+- id: Microsoft.CodeAnalysis.SpecialType.System_ValueType
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_ValueType
+  qualifiedName:
+    CSharp: System_ValueType
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 50
+  summary: >+
+    Indicates that the type is @T:System.ValueType-.
+
+  syntax:
+    content:
+      CSharp: System_ValueType = 5
+- id: Microsoft.CodeAnalysis.SpecialType.System_Void
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_Void
+  qualifiedName:
+    CSharp: System_Void
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 55
+  summary: >+
+    Indicates that the type is @T:System.Void-.
+
+  syntax:
+    content:
+      CSharp: System_Void = 6
+- id: Microsoft.CodeAnalysis.SpecialType.System_Boolean
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_Boolean
+  qualifiedName:
+    CSharp: System_Boolean
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 60
+  summary: >+
+    Indicates that the type is @T:System.Boolean-.
+
+  syntax:
+    content:
+      CSharp: System_Boolean = 7
+- id: Microsoft.CodeAnalysis.SpecialType.System_Char
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_Char
+  qualifiedName:
+    CSharp: System_Char
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 65
+  summary: >+
+    Indicates that the type is @T:System.Char-.
+
+  syntax:
+    content:
+      CSharp: System_Char = 8
+- id: Microsoft.CodeAnalysis.SpecialType.System_SByte
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_SByte
+  qualifiedName:
+    CSharp: System_SByte
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 70
+  summary: >+
+    Indicates that the type is @T:System.SByte-.
+
+  syntax:
+    content:
+      CSharp: System_SByte = 9
+- id: Microsoft.CodeAnalysis.SpecialType.System_Byte
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_Byte
+  qualifiedName:
+    CSharp: System_Byte
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 75
+  summary: >+
+    Indicates that the type is @T:System.Byte-.
+
+  syntax:
+    content:
+      CSharp: System_Byte = 10
+- id: Microsoft.CodeAnalysis.SpecialType.System_Int16
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_Int16
+  qualifiedName:
+    CSharp: System_Int16
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 80
+  summary: >+
+    Indicates that the type is @T:System.Int16-.
+
+  syntax:
+    content:
+      CSharp: System_Int16 = 11
+- id: Microsoft.CodeAnalysis.SpecialType.System_UInt16
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_UInt16
+  qualifiedName:
+    CSharp: System_UInt16
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 85
+  summary: >+
+    Indicates that the type is @T:System.UInt16-.
+
+  syntax:
+    content:
+      CSharp: System_UInt16 = 12
+- id: Microsoft.CodeAnalysis.SpecialType.System_Int32
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_Int32
+  qualifiedName:
+    CSharp: System_Int32
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 90
+  summary: >+
+    Indicates that the type is @T:System.Int32-.
+
+  syntax:
+    content:
+      CSharp: System_Int32 = 13
+- id: Microsoft.CodeAnalysis.SpecialType.System_UInt32
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_UInt32
+  qualifiedName:
+    CSharp: System_UInt32
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 95
+  summary: >+
+    Indicates that the type is @T:System.UInt32-.
+
+  syntax:
+    content:
+      CSharp: System_UInt32 = 14
+- id: Microsoft.CodeAnalysis.SpecialType.System_Int64
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_Int64
+  qualifiedName:
+    CSharp: System_Int64
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 100
+  summary: >+
+    Indicates that the type is @T:System.Int64-.
+
+  syntax:
+    content:
+      CSharp: System_Int64 = 15
+- id: Microsoft.CodeAnalysis.SpecialType.System_UInt64
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_UInt64
+  qualifiedName:
+    CSharp: System_UInt64
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 105
+  summary: >+
+    Indicates that the type is @T:System.UInt64-.
+
+  syntax:
+    content:
+      CSharp: System_UInt64 = 16
+- id: Microsoft.CodeAnalysis.SpecialType.System_Decimal
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_Decimal
+  qualifiedName:
+    CSharp: System_Decimal
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 110
+  summary: >+
+    Indicates that the type is @T:System.Decimal-.
+
+  syntax:
+    content:
+      CSharp: System_Decimal = 17
+- id: Microsoft.CodeAnalysis.SpecialType.System_Single
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_Single
+  qualifiedName:
+    CSharp: System_Single
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 115
+  summary: >+
+    Indicates that the type is @T:System.Single-.
+
+  syntax:
+    content:
+      CSharp: System_Single = 18
+- id: Microsoft.CodeAnalysis.SpecialType.System_Double
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_Double
+  qualifiedName:
+    CSharp: System_Double
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 120
+  summary: >+
+    Indicates that the type is @T:System.Double-.
+
+  syntax:
+    content:
+      CSharp: System_Double = 19
+- id: Microsoft.CodeAnalysis.SpecialType.System_String
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_String
+  qualifiedName:
+    CSharp: System_String
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 125
+  summary: >+
+    Indicates that the type is @T:System.String-.
+
+  syntax:
+    content:
+      CSharp: System_String = 20
+- id: Microsoft.CodeAnalysis.SpecialType.System_IntPtr
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_IntPtr
+  qualifiedName:
+    CSharp: System_IntPtr
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 130
+  summary: >+
+    Indicates that the type is @T:System.IntPtr-.
+
+  syntax:
+    content:
+      CSharp: System_IntPtr = 21
+- id: Microsoft.CodeAnalysis.SpecialType.System_UIntPtr
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_UIntPtr
+  qualifiedName:
+    CSharp: System_UIntPtr
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 135
+  summary: >+
+    Indicates that the type is @T:System.UIntPtr-.
+
+  syntax:
+    content:
+      CSharp: System_UIntPtr = 22
+- id: Microsoft.CodeAnalysis.SpecialType.System_Array
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_Array
+  qualifiedName:
+    CSharp: System_Array
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 140
+  summary: >+
+    Indicates that the type is @T:System.Array-.
+
+  syntax:
+    content:
+      CSharp: System_Array = 23
+- id: Microsoft.CodeAnalysis.SpecialType.System_Collections_IEnumerable
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_Collections_IEnumerable
+  qualifiedName:
+    CSharp: System_Collections_IEnumerable
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 145
+  summary: >+
+    Indicates that the type is @T:System.Collections.IEnumerable-.
+
+  syntax:
+    content:
+      CSharp: System_Collections_IEnumerable = 24
+- id: Microsoft.CodeAnalysis.SpecialType.System_Collections_Generic_IEnumerable_T
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_Collections_Generic_IEnumerable_T
+  qualifiedName:
+    CSharp: System_Collections_Generic_IEnumerable_T
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 150
+  summary: >+
+    Indicates that the type is @T:System.Collections.Generic.IEnumerable`1-.
+
+  syntax:
+    content:
+      CSharp: System_Collections_Generic_IEnumerable_T = 25
+- id: Microsoft.CodeAnalysis.SpecialType.System_Collections_Generic_IList_T
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_Collections_Generic_IList_T
+  qualifiedName:
+    CSharp: System_Collections_Generic_IList_T
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 155
+  summary: >+
+    Indicates that the type is @T:System.Collections.Generic.IList`1-.
+
+  syntax:
+    content:
+      CSharp: System_Collections_Generic_IList_T = 26
+- id: Microsoft.CodeAnalysis.SpecialType.System_Collections_Generic_ICollection_T
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_Collections_Generic_ICollection_T
+  qualifiedName:
+    CSharp: System_Collections_Generic_ICollection_T
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 160
+  summary: >+
+    Indicates that the type is @T:System.Collections.Generic.ICollection`1-.
+
+  syntax:
+    content:
+      CSharp: System_Collections_Generic_ICollection_T = 27
+- id: Microsoft.CodeAnalysis.SpecialType.System_Collections_IEnumerator
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_Collections_IEnumerator
+  qualifiedName:
+    CSharp: System_Collections_IEnumerator
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 165
+  summary: >+
+    Indicates that the type is @T:System.Collections.IEnumerator-.
+
+  syntax:
+    content:
+      CSharp: System_Collections_IEnumerator = 28
+- id: Microsoft.CodeAnalysis.SpecialType.System_Collections_Generic_IEnumerator_T
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_Collections_Generic_IEnumerator_T
+  qualifiedName:
+    CSharp: System_Collections_Generic_IEnumerator_T
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 170
+  summary: >+
+    Indicates that the type is @T:System.Collections.Generic.IEnumerator`1-.
+
+  syntax:
+    content:
+      CSharp: System_Collections_Generic_IEnumerator_T = 29
+- id: Microsoft.CodeAnalysis.SpecialType.System_Collections_Generic_IReadOnlyList_T
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_Collections_Generic_IReadOnlyList_T
+  qualifiedName:
+    CSharp: System_Collections_Generic_IReadOnlyList_T
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 175
+  summary: >+
+    Indicates that the type is @T:System.Collections.Generic.IReadOnlyList`1-.
+
+  syntax:
+    content:
+      CSharp: System_Collections_Generic_IReadOnlyList_T = 30
+- id: Microsoft.CodeAnalysis.SpecialType.System_Collections_Generic_IReadOnlyCollection_T
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_Collections_Generic_IReadOnlyCollection_T
+  qualifiedName:
+    CSharp: System_Collections_Generic_IReadOnlyCollection_T
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 180
+  summary: >+
+    Indicates that the type is @T:System.Collections.Generic.IReadOnlyCollection`1-.
+
+  syntax:
+    content:
+      CSharp: System_Collections_Generic_IReadOnlyCollection_T = 31
+- id: Microsoft.CodeAnalysis.SpecialType.System_Nullable_T
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_Nullable_T
+  qualifiedName:
+    CSharp: System_Nullable_T
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 185
+  summary: >+
+    Indicates that the type is @T:System.Nullable`1-.
+
+  syntax:
+    content:
+      CSharp: System_Nullable_T = 32
+- id: Microsoft.CodeAnalysis.SpecialType.System_DateTime
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_DateTime
+  qualifiedName:
+    CSharp: System_DateTime
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 190
+  summary: >+
+    Indicates that the type is @T:System.DateTime-.
+
+  syntax:
+    content:
+      CSharp: System_DateTime = 33
+- id: Microsoft.CodeAnalysis.SpecialType.System_Runtime_CompilerServices_IsVolatile
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_Runtime_CompilerServices_IsVolatile
+  qualifiedName:
+    CSharp: System_Runtime_CompilerServices_IsVolatile
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 195
+  summary: >+
+    Indicates that the type is @T:System.Runtime.CompilerServices.IsVolatile-.
+
+  syntax:
+    content:
+      CSharp: System_Runtime_CompilerServices_IsVolatile = 34
+- id: Microsoft.CodeAnalysis.SpecialType.System_IDisposable
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_IDisposable
+  qualifiedName:
+    CSharp: System_IDisposable
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 200
+  summary: >+
+    Indicates that the type is @T:System.IDisposable-.
+
+  syntax:
+    content:
+      CSharp: System_IDisposable = 35
+- id: Microsoft.CodeAnalysis.SpecialType.System_TypedReference
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_TypedReference
+  qualifiedName:
+    CSharp: System_TypedReference
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 207
+  summary: >+
+    Indicates that the type is @T:System.TypedReference-.
+
+  syntax:
+    content:
+      CSharp: System_TypedReference = 36
+- id: Microsoft.CodeAnalysis.SpecialType.System_ArgIterator
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_ArgIterator
+  qualifiedName:
+    CSharp: System_ArgIterator
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 214
+  summary: >+
+    Indicates that the type is @T:System.ArgIterator-.
+
+  syntax:
+    content:
+      CSharp: System_ArgIterator = 37
+- id: Microsoft.CodeAnalysis.SpecialType.System_RuntimeArgumentHandle
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_RuntimeArgumentHandle
+  qualifiedName:
+    CSharp: System_RuntimeArgumentHandle
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 221
+  summary: >+
+    Indicates that the type is @T:System.RuntimeArgumentHandle-.
+
+  syntax:
+    content:
+      CSharp: System_RuntimeArgumentHandle = 38
+- id: Microsoft.CodeAnalysis.SpecialType.System_RuntimeFieldHandle
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_RuntimeFieldHandle
+  qualifiedName:
+    CSharp: System_RuntimeFieldHandle
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 226
+  summary: >+
+    Indicates that the type is @T:System.RuntimeFieldHandle-.
+
+  syntax:
+    content:
+      CSharp: System_RuntimeFieldHandle = 39
+- id: Microsoft.CodeAnalysis.SpecialType.System_RuntimeMethodHandle
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_RuntimeMethodHandle
+  qualifiedName:
+    CSharp: System_RuntimeMethodHandle
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 231
+  summary: >+
+    Indicates that the type is @T:System.RuntimeMethodHandle-.
+
+  syntax:
+    content:
+      CSharp: System_RuntimeMethodHandle = 40
+- id: Microsoft.CodeAnalysis.SpecialType.System_RuntimeTypeHandle
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_RuntimeTypeHandle
+  qualifiedName:
+    CSharp: System_RuntimeTypeHandle
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 236
+  summary: >+
+    Indicates that the type is @T:System.RuntimeTypeHandle-.
+
+  syntax:
+    content:
+      CSharp: System_RuntimeTypeHandle = 41
+- id: Microsoft.CodeAnalysis.SpecialType.System_IAsyncResult
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_IAsyncResult
+  qualifiedName:
+    CSharp: System_IAsyncResult
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 241
+  summary: >+
+    Indicates that the type is @T:System.IAsyncResult-.
+
+  syntax:
+    content:
+      CSharp: System_IAsyncResult = 42
+- id: Microsoft.CodeAnalysis.SpecialType.System_AsyncCallback
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: System_AsyncCallback
+  qualifiedName:
+    CSharp: System_AsyncCallback
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 246
+  summary: >+
+    Indicates that the type is @T:System.AsyncCallback-.
+
+  syntax:
+    content:
+      CSharp: System_AsyncCallback = 43
+- id: Microsoft.CodeAnalysis.SpecialType.Count
+  yaml: api\Microsoft.CodeAnalysis.SpecialType.yaml
+  href: api\Microsoft.CodeAnalysis.SpecialType
+  name:
+    CSharp: Count
+  qualifiedName:
+    CSharp: Count
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SpecialType.cs
+    startLine: 251
+  summary: >+
+    Count of special types. This is not a count of enum members.
+
+  syntax:
+    content:
+      CSharp: Count = System_AsyncCallback

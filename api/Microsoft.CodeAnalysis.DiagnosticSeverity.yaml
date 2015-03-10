@@ -1,0 +1,125 @@
+id: Microsoft.CodeAnalysis.DiagnosticSeverity
+yaml: api\Microsoft.CodeAnalysis.DiagnosticSeverity.yaml
+href: api\Microsoft.CodeAnalysis.DiagnosticSeverity
+name:
+  CSharp: DiagnosticSeverity
+qualifiedName:
+  CSharp: DiagnosticSeverity
+type: Enum
+source:
+  remote:
+    branch: master
+    repo: https://github.com/chenkennt/roslyn.git
+    local: C:\roslyn\
+    sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+  path: src\Compilers\Core\Portable\Diagnostic\DiagnosticSeverity.cs
+  startLine: 7
+summary: >+
+  Describes how severe a diagnostic is.
+
+syntax:
+  content:
+    CSharp: public enum DiagnosticSeverity
+inheritance:
+- id: System.Object
+  href: System.Runtime
+  isExternal: true
+- id: System.ValueType
+  href: System.Runtime
+  isExternal: true
+- id: System.Enum
+  href: System.Runtime
+  isExternal: true
+items:
+- id: Microsoft.CodeAnalysis.DiagnosticSeverity.Hidden
+  yaml: api\Microsoft.CodeAnalysis.DiagnosticSeverity.yaml
+  href: api\Microsoft.CodeAnalysis.DiagnosticSeverity
+  name:
+    CSharp: Hidden
+  qualifiedName:
+    CSharp: Hidden
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Diagnostic\DiagnosticSeverity.cs
+    startLine: 14
+  summary: >+
+    Something that is an issue, as determined by some authority,
+
+    but is not surfaced through normal means.
+
+    There may be different mechanisms that act on these issues.
+
+  syntax:
+    content:
+      CSharp: Hidden = 0
+- id: Microsoft.CodeAnalysis.DiagnosticSeverity.Info
+  yaml: api\Microsoft.CodeAnalysis.DiagnosticSeverity.yaml
+  href: api\Microsoft.CodeAnalysis.DiagnosticSeverity
+  name:
+    CSharp: Info
+  qualifiedName:
+    CSharp: Info
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Diagnostic\DiagnosticSeverity.cs
+    startLine: 19
+  summary: >+
+    Information that does not indicate a problem (i.e. not proscriptive).
+
+  syntax:
+    content:
+      CSharp: Info = 1
+- id: Microsoft.CodeAnalysis.DiagnosticSeverity.Warning
+  yaml: api\Microsoft.CodeAnalysis.DiagnosticSeverity.yaml
+  href: api\Microsoft.CodeAnalysis.DiagnosticSeverity
+  name:
+    CSharp: Warning
+  qualifiedName:
+    CSharp: Warning
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Diagnostic\DiagnosticSeverity.cs
+    startLine: 24
+  summary: >+
+    Something suspicious but allowed.
+
+  syntax:
+    content:
+      CSharp: Warning = 2
+- id: Microsoft.CodeAnalysis.DiagnosticSeverity.Error
+  yaml: api\Microsoft.CodeAnalysis.DiagnosticSeverity.yaml
+  href: api\Microsoft.CodeAnalysis.DiagnosticSeverity
+  name:
+    CSharp: Error
+  qualifiedName:
+    CSharp: Error
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Diagnostic\DiagnosticSeverity.cs
+    startLine: 29
+  summary: >+
+    Something not allowed by the rules of the language or other authority.
+
+  syntax:
+    content:
+      CSharp: Error = 3

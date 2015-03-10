@@ -1,0 +1,460 @@
+id: Microsoft.CodeAnalysis.IParameterSymbol
+yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml
+href: api\Microsoft.CodeAnalysis.IParameterSymbol
+name:
+  CSharp: IParameterSymbol
+qualifiedName:
+  CSharp: IParameterSymbol
+type: Interface
+source:
+  remote:
+    branch: master
+    repo: https://github.com/chenkennt/roslyn.git
+    local: C:\roslyn\
+    sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+  path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
+  startLine: 11
+summary: >+
+  Represents a parameter of a method or property.
+
+syntax:
+  content:
+    CSharp: public interface IParameterSymbol
+items:
+- id: Microsoft.CodeAnalysis.IParameterSymbol.RefKind
+  yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml
+  href: api\Microsoft.CodeAnalysis.IParameterSymbol
+  name:
+    CSharp: RefKind
+  qualifiedName:
+    CSharp: RefKind
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
+    startLine: 16
+  summary: >+
+    Whether the parameter passed by value or by reference.
+
+  syntax:
+    content:
+      CSharp: RefKind RefKind
+    parameters:
+    - id: RefKind
+      type:
+        id: RefKind
+        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\RefKind.cs
+- id: Microsoft.CodeAnalysis.IParameterSymbol.get_RefKind
+  yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml
+  href: api\Microsoft.CodeAnalysis.IParameterSymbol
+  name:
+    CSharp: get_RefKind
+  qualifiedName:
+    CSharp: get_RefKind
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
+    startLine: 16
+- id: Microsoft.CodeAnalysis.IParameterSymbol.IsParams
+  yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml
+  href: api\Microsoft.CodeAnalysis.IParameterSymbol
+  name:
+    CSharp: IsParams
+  qualifiedName:
+    CSharp: IsParams
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
+    startLine: 21
+  summary: >+
+    Returns true if the parameter was declared as a parameter array.
+
+  syntax:
+    content:
+      CSharp: bool IsParams
+    parameters:
+    - id: IsParams
+      type:
+        id: System.Boolean
+        href: System.Runtime
+        isExternal: true
+- id: Microsoft.CodeAnalysis.IParameterSymbol.get_IsParams
+  yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml
+  href: api\Microsoft.CodeAnalysis.IParameterSymbol
+  name:
+    CSharp: get_IsParams
+  qualifiedName:
+    CSharp: get_IsParams
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
+    startLine: 21
+- id: Microsoft.CodeAnalysis.IParameterSymbol.IsOptional
+  yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml
+  href: api\Microsoft.CodeAnalysis.IParameterSymbol
+  name:
+    CSharp: IsOptional
+  qualifiedName:
+    CSharp: IsOptional
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
+    startLine: 26
+  summary: >+
+    Returns true if the parameter is optional.
+
+  syntax:
+    content:
+      CSharp: bool IsOptional
+    parameters:
+    - id: IsOptional
+      type:
+        id: System.Boolean
+        href: System.Runtime
+        isExternal: true
+- id: Microsoft.CodeAnalysis.IParameterSymbol.get_IsOptional
+  yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml
+  href: api\Microsoft.CodeAnalysis.IParameterSymbol
+  name:
+    CSharp: get_IsOptional
+  qualifiedName:
+    CSharp: get_IsOptional
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
+    startLine: 26
+- id: Microsoft.CodeAnalysis.IParameterSymbol.IsThis
+  yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml
+  href: api\Microsoft.CodeAnalysis.IParameterSymbol
+  name:
+    CSharp: IsThis
+  qualifiedName:
+    CSharp: IsThis
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
+    startLine: 31
+  summary: >+
+    Returns true if the parameter is the hidden 'this' ('Me' in Visual Basic) parameter.
+
+  syntax:
+    content:
+      CSharp: bool IsThis
+    parameters:
+    - id: IsThis
+      type:
+        id: System.Boolean
+        href: System.Runtime
+        isExternal: true
+- id: Microsoft.CodeAnalysis.IParameterSymbol.get_IsThis
+  yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml
+  href: api\Microsoft.CodeAnalysis.IParameterSymbol
+  name:
+    CSharp: get_IsThis
+  qualifiedName:
+    CSharp: get_IsThis
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
+    startLine: 31
+- id: Microsoft.CodeAnalysis.IParameterSymbol.Type
+  yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml
+  href: api\Microsoft.CodeAnalysis.IParameterSymbol
+  name:
+    CSharp: Type
+  qualifiedName:
+    CSharp: Type
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
+    startLine: 36
+  summary: >+
+    Gets the type of the parameter.
+
+  syntax:
+    content:
+      CSharp: ITypeSymbol Type
+    parameters:
+    - id: Type
+      type:
+        id: ITypeSymbol
+        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+- id: Microsoft.CodeAnalysis.IParameterSymbol.get_Type
+  yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml
+  href: api\Microsoft.CodeAnalysis.IParameterSymbol
+  name:
+    CSharp: get_Type
+  qualifiedName:
+    CSharp: get_Type
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
+    startLine: 36
+- id: Microsoft.CodeAnalysis.IParameterSymbol.CustomModifiers
+  yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml
+  href: api\Microsoft.CodeAnalysis.IParameterSymbol
+  name:
+    CSharp: CustomModifiers
+  qualifiedName:
+    CSharp: CustomModifiers
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
+    startLine: 41
+  summary: >+
+    The list of custom modifiers, if any, associated with the parameter.
+
+  syntax:
+    content:
+      CSharp: ImmutableArray<CustomModifier> CustomModifiers
+    parameters:
+    - id: CustomModifiers
+      type:
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
+        href: System.Collections.Immutable
+        isExternal: true
+- id: Microsoft.CodeAnalysis.IParameterSymbol.get_CustomModifiers
+  yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml
+  href: api\Microsoft.CodeAnalysis.IParameterSymbol
+  name:
+    CSharp: get_CustomModifiers
+  qualifiedName:
+    CSharp: get_CustomModifiers
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
+    startLine: 41
+- id: Microsoft.CodeAnalysis.IParameterSymbol.Ordinal
+  yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml
+  href: api\Microsoft.CodeAnalysis.IParameterSymbol
+  name:
+    CSharp: Ordinal
+  qualifiedName:
+    CSharp: Ordinal
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
+    startLine: 47
+  summary: >+
+    Gets the ordinal position of the parameter. The first parameter has ordinal zero.
+
+    The 'this' parameter ('Me' in Visual Basic) has ordinal -1.
+
+  syntax:
+    content:
+      CSharp: int Ordinal
+    parameters:
+    - id: Ordinal
+      type:
+        id: System.Int32
+        href: System.Runtime
+        isExternal: true
+- id: Microsoft.CodeAnalysis.IParameterSymbol.get_Ordinal
+  yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml
+  href: api\Microsoft.CodeAnalysis.IParameterSymbol
+  name:
+    CSharp: get_Ordinal
+  qualifiedName:
+    CSharp: get_Ordinal
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
+    startLine: 47
+- id: Microsoft.CodeAnalysis.IParameterSymbol.HasExplicitDefaultValue
+  yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml
+  href: api\Microsoft.CodeAnalysis.IParameterSymbol
+  name:
+    CSharp: HasExplicitDefaultValue
+  qualifiedName:
+    CSharp: HasExplicitDefaultValue
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
+    startLine: 54
+  summary: >+
+    Returns true if the parameter specifies a default value to be passed
+
+    when no value is provided as an argument to a call. The default value
+
+    can be obtained with the DefaultValue property.
+
+  syntax:
+    content:
+      CSharp: bool HasExplicitDefaultValue
+    parameters:
+    - id: HasExplicitDefaultValue
+      type:
+        id: System.Boolean
+        href: System.Runtime
+        isExternal: true
+- id: Microsoft.CodeAnalysis.IParameterSymbol.get_HasExplicitDefaultValue
+  yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml
+  href: api\Microsoft.CodeAnalysis.IParameterSymbol
+  name:
+    CSharp: get_HasExplicitDefaultValue
+  qualifiedName:
+    CSharp: get_HasExplicitDefaultValue
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
+    startLine: 54
+- id: Microsoft.CodeAnalysis.IParameterSymbol.ExplicitDefaultValue
+  yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml
+  href: api\Microsoft.CodeAnalysis.IParameterSymbol
+  name:
+    CSharp: ExplicitDefaultValue
+  qualifiedName:
+    CSharp: ExplicitDefaultValue
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
+    startLine: 64
+  summary: >+
+    Returns the default value of the parameter.
+
+  syntax:
+    content:
+      CSharp: object ExplicitDefaultValue
+    parameters:
+    - id: ExplicitDefaultValue
+      type:
+        id: System.Object
+        href: System.Runtime
+        isExternal: true
+- id: Microsoft.CodeAnalysis.IParameterSymbol.get_ExplicitDefaultValue
+  yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml
+  href: api\Microsoft.CodeAnalysis.IParameterSymbol
+  name:
+    CSharp: get_ExplicitDefaultValue
+  qualifiedName:
+    CSharp: get_ExplicitDefaultValue
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
+    startLine: 64
+- id: Microsoft.CodeAnalysis.IParameterSymbol.OriginalDefinition
+  yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml
+  href: api\Microsoft.CodeAnalysis.IParameterSymbol
+  name:
+    CSharp: OriginalDefinition
+  qualifiedName:
+    CSharp: OriginalDefinition
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
+    startLine: 71
+  summary: >+
+    Get the original definition of this symbol. If this symbol is derived from another
+
+    symbol by (say) type substitution, this gets the original symbol, as it was defined in
+
+    source or metadata.
+
+  syntax:
+    content:
+      CSharp: new IParameterSymbol OriginalDefinition
+    parameters:
+    - id: OriginalDefinition
+      type:
+        id: IParameterSymbol
+        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
+- id: Microsoft.CodeAnalysis.IParameterSymbol.get_OriginalDefinition
+  yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml
+  href: api\Microsoft.CodeAnalysis.IParameterSymbol
+  name:
+    CSharp: get_OriginalDefinition
+  qualifiedName:
+    CSharp: get_OriginalDefinition
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
+    startLine: 71

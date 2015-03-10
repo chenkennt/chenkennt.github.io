@@ -1,0 +1,83 @@
+id: Microsoft.CodeAnalysis.SpeculativeBindingOption
+yaml: api\Microsoft.CodeAnalysis.SpeculativeBindingOption.yaml
+href: api\Microsoft.CodeAnalysis.SpeculativeBindingOption
+name:
+  CSharp: SpeculativeBindingOption
+qualifiedName:
+  CSharp: SpeculativeBindingOption
+type: Enum
+source:
+  remote:
+    branch: master
+    repo: https://github.com/chenkennt/roslyn.git
+    local: C:\roslyn\
+    sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+  path: src\Compilers\Core\Portable\Compilation\SpeculativeBindingOption.cs
+  startLine: 10
+summary: >+
+  Describes the kind of binding to be performed in one of the SemanticModel
+
+  speculative binding methods.
+
+syntax:
+  content:
+    CSharp: public enum SpeculativeBindingOption
+inheritance:
+- id: System.Object
+  href: System.Runtime
+  isExternal: true
+- id: System.ValueType
+  href: System.Runtime
+  isExternal: true
+- id: System.Enum
+  href: System.Runtime
+  isExternal: true
+items:
+- id: Microsoft.CodeAnalysis.SpeculativeBindingOption.BindAsExpression
+  yaml: api\Microsoft.CodeAnalysis.SpeculativeBindingOption.yaml
+  href: api\Microsoft.CodeAnalysis.SpeculativeBindingOption
+  name:
+    CSharp: BindAsExpression
+  qualifiedName:
+    CSharp: BindAsExpression
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Compilation\SpeculativeBindingOption.cs
+    startLine: 16
+  summary: >+
+    Binds the given expression using the normal expression binding rules
+
+    that would occur during normal binding of expressions.
+
+  syntax:
+    content:
+      CSharp: BindAsExpression = 0
+- id: Microsoft.CodeAnalysis.SpeculativeBindingOption.BindAsTypeOrNamespace
+  yaml: api\Microsoft.CodeAnalysis.SpeculativeBindingOption.yaml
+  href: api\Microsoft.CodeAnalysis.SpeculativeBindingOption
+  name:
+    CSharp: BindAsTypeOrNamespace
+  qualifiedName:
+    CSharp: BindAsTypeOrNamespace
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Compilation\SpeculativeBindingOption.cs
+    startLine: 22
+  summary: >+
+    Binds the given expression as a type or namespace only. If this option
+
+    is selected, then the given expression must derive from TypeSyntax.
+
+  syntax:
+    content:
+      CSharp: BindAsTypeOrNamespace = 1

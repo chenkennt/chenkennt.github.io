@@ -1,0 +1,62 @@
+id: Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation
+yaml: api\Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation.yaml
+href: api\Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation
+name:
+  CSharp: EditAndContinueMethodDebugInformation
+qualifiedName:
+  CSharp: EditAndContinueMethodDebugInformation
+type: Struct
+source:
+  remote:
+    branch: master
+    repo: https://github.com/chenkennt/roslyn.git
+    local: C:\roslyn\
+    sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+  path: src\Compilers\Core\Portable\Emit\EditAndContinueMethodDebugInformation.cs
+  startLine: 14
+summary: >+
+  Debugging information associated with the specified method that is emitted by the compiler to support Edit and Continue.
+
+syntax:
+  content:
+    CSharp: public struct EditAndContinueMethodDebugInformation
+inheritance:
+- id: System.Object
+  href: System.Runtime
+  isExternal: true
+- id: System.ValueType
+  href: System.Runtime
+  isExternal: true
+items:
+- id: Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation.Create(System.Collections.Immutable.ImmutableArray{System.Byte},System.Collections.Immutable.ImmutableArray{System.Byte})
+  yaml: api\Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation.yaml
+  href: api\Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation
+  name:
+    CSharp: Create
+  qualifiedName:
+    CSharp: Create
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Emit\EditAndContinueMethodDebugInformation.cs
+    startLine: 31
+  syntax:
+    content:
+      CSharp: public static EditAndContinueMethodDebugInformation Create(ImmutableArray<byte> compressedSlotMap, ImmutableArray<byte> compressedLambdaMap)
+    parameters:
+    - id: compressedSlotMap
+      type:
+        id: System.Collections.Immutable.ImmutableArray{System.Byte}
+        href: System.Collections.Immutable
+        isExternal: true
+    - id: compressedLambdaMap
+      type:
+        id: System.Collections.Immutable.ImmutableArray{System.Byte}
+        href: System.Collections.Immutable
+        isExternal: true
+    return:
+      id: EditAndContinueMethodDebugInformation

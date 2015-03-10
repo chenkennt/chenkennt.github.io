@@ -1,0 +1,487 @@
+id: Microsoft.CodeAnalysis.AdhocWorkspace
+yaml: api\Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+href: api\Microsoft.CodeAnalysis.AdhocWorkspace
+name:
+  CSharp: AdhocWorkspace
+qualifiedName:
+  CSharp: AdhocWorkspace
+type: Class
+source:
+  remote:
+    branch: master
+    repo: https://github.com/chenkennt/roslyn.git
+    local: C:\roslyn\
+    sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+  path: src\Workspaces\Core\Portable\Workspace\AdhocWorkspace.cs
+  startLine: 16
+summary: >+
+  A workspace that allows full manipulation of projects and documents,
+
+  but does not persist changes.
+
+syntax:
+  content:
+    CSharp: public sealed class AdhocWorkspace
+inheritance:
+- id: System.Object
+  href: System.Runtime
+  isExternal: true
+- id: Workspace
+  href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Workspace.cs
+items:
+- id: Microsoft.CodeAnalysis.AdhocWorkspace.#ctor(Microsoft.CodeAnalysis.Host.HostServices,System.String)
+  yaml: api\Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: api\Microsoft.CodeAnalysis.AdhocWorkspace
+  name:
+    CSharp: .ctor
+  qualifiedName:
+    CSharp: .ctor
+  type: Constructor
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Workspaces\Core\Portable\Workspace\AdhocWorkspace.cs
+    startLine: 18
+  syntax:
+    content:
+      CSharp: 'public AdhocWorkspace(HostServices host, string workspaceKind = "Custom"): base (host, workspaceKind)'
+    parameters:
+    - id: host
+      type:
+        id: HostServices
+        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Host\HostServices.cs
+    - id: workspaceKind
+      type:
+        id: System.String
+        href: System.Runtime
+        isExternal: true
+- id: Microsoft.CodeAnalysis.AdhocWorkspace.#ctor
+  yaml: api\Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: api\Microsoft.CodeAnalysis.AdhocWorkspace
+  name:
+    CSharp: .ctor
+  qualifiedName:
+    CSharp: .ctor
+  type: Constructor
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Workspaces\Core\Portable\Workspace\AdhocWorkspace.cs
+    startLine: 23
+  syntax:
+    content:
+      CSharp: 'public AdhocWorkspace(): this (Host.Mef.MefHostServices.DefaultHost)'
+    parameters: []
+- id: Microsoft.CodeAnalysis.AdhocWorkspace.CanApplyChange(Microsoft.CodeAnalysis.ApplyChangesKind)
+  yaml: api\Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: api\Microsoft.CodeAnalysis.AdhocWorkspace
+  name:
+    CSharp: CanApplyChange
+  qualifiedName:
+    CSharp: CanApplyChange
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Workspaces\Core\Portable\Workspace\AdhocWorkspace.cs
+    startLine: 28
+  syntax:
+    content:
+      CSharp: public override bool CanApplyChange(ApplyChangesKind feature)
+    parameters:
+    - id: feature
+      type:
+        id: ApplyChangesKind
+        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\ApplyChangesKind.cs
+    return:
+      id: Boolean
+- id: Microsoft.CodeAnalysis.AdhocWorkspace.CanOpenDocuments
+  yaml: api\Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: api\Microsoft.CodeAnalysis.AdhocWorkspace
+  name:
+    CSharp: CanOpenDocuments
+  qualifiedName:
+    CSharp: CanOpenDocuments
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Workspaces\Core\Portable\Workspace\AdhocWorkspace.cs
+    startLine: 34
+  syntax:
+    content:
+      CSharp: public override bool CanOpenDocuments
+    parameters:
+    - id: CanOpenDocuments
+      type:
+        id: System.Boolean
+        href: System.Runtime
+        isExternal: true
+- id: Microsoft.CodeAnalysis.AdhocWorkspace.get_CanOpenDocuments
+  yaml: api\Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: api\Microsoft.CodeAnalysis.AdhocWorkspace
+  name:
+    CSharp: get_CanOpenDocuments
+  qualifiedName:
+    CSharp: get_CanOpenDocuments
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Workspaces\Core\Portable\Workspace\AdhocWorkspace.cs
+    startLine: 36
+- id: Microsoft.CodeAnalysis.AdhocWorkspace.ClearSolution
+  yaml: api\Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: api\Microsoft.CodeAnalysis.AdhocWorkspace
+  name:
+    CSharp: ClearSolution
+  qualifiedName:
+    CSharp: ClearSolution
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Workspaces\Core\Portable\Workspace\AdhocWorkspace.cs
+    startLine: 46
+  summary: >+
+    Clears all projects and documents from the workspace.
+
+  syntax:
+    content:
+      CSharp: public new void ClearSolution()
+    parameters: []
+    return:
+      id: Void
+- id: Microsoft.CodeAnalysis.AdhocWorkspace.AddSolution(Microsoft.CodeAnalysis.SolutionInfo)
+  yaml: api\Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: api\Microsoft.CodeAnalysis.AdhocWorkspace
+  name:
+    CSharp: AddSolution
+  qualifiedName:
+    CSharp: AddSolution
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Workspaces\Core\Portable\Workspace\AdhocWorkspace.cs
+    startLine: 54
+  summary: >+
+    Adds an entire solution to the workspace, replacing any existing solution.
+
+  syntax:
+    content:
+      CSharp: public Solution AddSolution(SolutionInfo solutionInfo)
+    parameters:
+    - id: solutionInfo
+      type:
+        id: SolutionInfo
+        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\SolutionInfo.cs
+    return:
+      id: Solution
+- id: Microsoft.CodeAnalysis.AdhocWorkspace.AddProject(System.String,System.String)
+  yaml: api\Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: api\Microsoft.CodeAnalysis.AdhocWorkspace
+  name:
+    CSharp: AddProject
+  qualifiedName:
+    CSharp: AddProject
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Workspaces\Core\Portable\Workspace\AdhocWorkspace.cs
+    startLine: 69
+  summary: >+
+    Adds a project to the workspace. All previous projects remain intact.
+
+  syntax:
+    content:
+      CSharp: public Project AddProject(string name, string language)
+    parameters:
+    - id: name
+      type:
+        id: System.String
+        href: System.Runtime
+        isExternal: true
+    - id: language
+      type:
+        id: System.String
+        href: System.Runtime
+        isExternal: true
+    return:
+      id: Project
+- id: Microsoft.CodeAnalysis.AdhocWorkspace.AddProject(Microsoft.CodeAnalysis.ProjectInfo)
+  yaml: api\Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: api\Microsoft.CodeAnalysis.AdhocWorkspace
+  name:
+    CSharp: AddProject
+  qualifiedName:
+    CSharp: AddProject
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Workspaces\Core\Portable\Workspace\AdhocWorkspace.cs
+    startLine: 78
+  summary: >+
+    Adds a project to the workspace. All previous projects remain intact.
+
+  syntax:
+    content:
+      CSharp: public Project AddProject(ProjectInfo projectInfo)
+    parameters:
+    - id: projectInfo
+      type:
+        id: ProjectInfo
+        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\ProjectInfo.cs
+    return:
+      id: Project
+- id: Microsoft.CodeAnalysis.AdhocWorkspace.AddProjects(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ProjectInfo})
+  yaml: api\Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: api\Microsoft.CodeAnalysis.AdhocWorkspace
+  name:
+    CSharp: AddProjects
+  qualifiedName:
+    CSharp: AddProjects
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Workspaces\Core\Portable\Workspace\AdhocWorkspace.cs
+    startLine: 94
+  summary: >+
+    Adds multiple projects to the workspace at once. All existing projects remain intact.
+
+  syntax:
+    content:
+      CSharp: public void AddProjects(IEnumerable<ProjectInfo> projectInfos)
+    parameters:
+    - id: projectInfos
+      type:
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ProjectInfo}
+        href: System.Runtime
+        isExternal: true
+    return:
+      id: Void
+- id: Microsoft.CodeAnalysis.AdhocWorkspace.AddDocument(Microsoft.CodeAnalysis.ProjectId,System.String,Microsoft.CodeAnalysis.Text.SourceText)
+  yaml: api\Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: api\Microsoft.CodeAnalysis.AdhocWorkspace
+  name:
+    CSharp: AddDocument
+  qualifiedName:
+    CSharp: AddDocument
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Workspaces\Core\Portable\Workspace\AdhocWorkspace.cs
+    startLine: 110
+  summary: >+
+    Adds a document to the workspace.
+
+  syntax:
+    content:
+      CSharp: public Document AddDocument(ProjectId projectId, string name, SourceText text)
+    parameters:
+    - id: projectId
+      type:
+        id: ProjectId
+        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\ProjectId.cs
+    - id: name
+      type:
+        id: System.String
+        href: System.Runtime
+        isExternal: true
+    - id: text
+      type:
+        id: SourceText
+        href: C:\roslyn\src\Compilers\Core\Portable\Text\SourceText.cs
+    return:
+      id: Document
+- id: Microsoft.CodeAnalysis.AdhocWorkspace.AddDocument(Microsoft.CodeAnalysis.DocumentInfo)
+  yaml: api\Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: api\Microsoft.CodeAnalysis.AdhocWorkspace
+  name:
+    CSharp: AddDocument
+  qualifiedName:
+    CSharp: AddDocument
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Workspaces\Core\Portable\Workspace\AdhocWorkspace.cs
+    startLine: 136
+  summary: >+
+    Adds a document to the workspace.
+
+  syntax:
+    content:
+      CSharp: public Document AddDocument(DocumentInfo documentInfo)
+    parameters:
+    - id: documentInfo
+      type:
+        id: DocumentInfo
+        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentInfo.cs
+    return:
+      id: Document
+- id: Microsoft.CodeAnalysis.AdhocWorkspace.OpenDocument(Microsoft.CodeAnalysis.DocumentId,System.Boolean)
+  yaml: api\Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: api\Microsoft.CodeAnalysis.AdhocWorkspace
+  name:
+    CSharp: OpenDocument
+  qualifiedName:
+    CSharp: OpenDocument
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Workspaces\Core\Portable\Workspace\AdhocWorkspace.cs
+    startLine: 151
+  summary: >+
+    Puts the specified document into the open state.
+
+  syntax:
+    content:
+      CSharp: public override void OpenDocument(DocumentId documentId, bool activate = true)
+    parameters:
+    - id: documentId
+      type:
+        id: DocumentId
+        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+    - id: activate
+      type:
+        id: System.Boolean
+        href: System.Runtime
+        isExternal: true
+    return:
+      id: Void
+- id: Microsoft.CodeAnalysis.AdhocWorkspace.CloseDocument(Microsoft.CodeAnalysis.DocumentId)
+  yaml: api\Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: api\Microsoft.CodeAnalysis.AdhocWorkspace
+  name:
+    CSharp: CloseDocument
+  qualifiedName:
+    CSharp: CloseDocument
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Workspaces\Core\Portable\Workspace\AdhocWorkspace.cs
+    startLine: 164
+  summary: >+
+    Puts the specified document into the closed state.
+
+  syntax:
+    content:
+      CSharp: public override void CloseDocument(DocumentId documentId)
+    parameters:
+    - id: documentId
+      type:
+        id: DocumentId
+        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+    return:
+      id: Void
+- id: Microsoft.CodeAnalysis.AdhocWorkspace.OpenAdditionalDocument(Microsoft.CodeAnalysis.DocumentId,System.Boolean)
+  yaml: api\Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: api\Microsoft.CodeAnalysis.AdhocWorkspace
+  name:
+    CSharp: OpenAdditionalDocument
+  qualifiedName:
+    CSharp: OpenAdditionalDocument
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Workspaces\Core\Portable\Workspace\AdhocWorkspace.cs
+    startLine: 179
+  summary: >+
+    Puts the specified additional document into the open state.
+
+  syntax:
+    content:
+      CSharp: public override void OpenAdditionalDocument(DocumentId documentId, bool activate = true)
+    parameters:
+    - id: documentId
+      type:
+        id: DocumentId
+        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+    - id: activate
+      type:
+        id: System.Boolean
+        href: System.Runtime
+        isExternal: true
+    return:
+      id: Void
+- id: Microsoft.CodeAnalysis.AdhocWorkspace.CloseAdditionalDocument(Microsoft.CodeAnalysis.DocumentId)
+  yaml: api\Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: api\Microsoft.CodeAnalysis.AdhocWorkspace
+  name:
+    CSharp: CloseAdditionalDocument
+  qualifiedName:
+    CSharp: CloseAdditionalDocument
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Workspaces\Core\Portable\Workspace\AdhocWorkspace.cs
+    startLine: 192
+  summary: >+
+    Puts the specified additional document into the closed state
+
+  syntax:
+    content:
+      CSharp: public override void CloseAdditionalDocument(DocumentId documentId)
+    parameters:
+    - id: documentId
+      type:
+        id: DocumentId
+        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\DocumentId.cs
+    return:
+      id: Void

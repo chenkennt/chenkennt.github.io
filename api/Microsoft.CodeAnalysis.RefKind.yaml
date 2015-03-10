@@ -1,0 +1,99 @@
+id: Microsoft.CodeAnalysis.RefKind
+yaml: api\Microsoft.CodeAnalysis.RefKind.yaml
+href: api\Microsoft.CodeAnalysis.RefKind
+name:
+  CSharp: RefKind
+qualifiedName:
+  CSharp: RefKind
+type: Enum
+source:
+  remote:
+    branch: master
+    repo: https://github.com/chenkennt/roslyn.git
+    local: C:\roslyn\
+    sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+  path: src\Compilers\Core\Portable\Symbols\RefKind.cs
+  startLine: 9
+summary: >+
+  Denotes the kind of reference parameter.
+
+syntax:
+  content:
+    CSharp: public enum RefKind
+inheritance:
+- id: System.Object
+  href: System.Runtime
+  isExternal: true
+- id: System.ValueType
+  href: System.Runtime
+  isExternal: true
+- id: System.Enum
+  href: System.Runtime
+  isExternal: true
+items:
+- id: Microsoft.CodeAnalysis.RefKind.None
+  yaml: api\Microsoft.CodeAnalysis.RefKind.yaml
+  href: api\Microsoft.CodeAnalysis.RefKind
+  name:
+    CSharp: None
+  qualifiedName:
+    CSharp: None
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Symbols\RefKind.cs
+    startLine: 14
+  summary: >+
+    Indicates a "value" parameter.
+
+  syntax:
+    content:
+      CSharp: None = 0
+- id: Microsoft.CodeAnalysis.RefKind.Ref
+  yaml: api\Microsoft.CodeAnalysis.RefKind.yaml
+  href: api\Microsoft.CodeAnalysis.RefKind
+  name:
+    CSharp: Ref
+  qualifiedName:
+    CSharp: Ref
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Symbols\RefKind.cs
+    startLine: 19
+  summary: >+
+    Indicates a "ref" parameter.
+
+  syntax:
+    content:
+      CSharp: Ref = 1
+- id: Microsoft.CodeAnalysis.RefKind.Out
+  yaml: api\Microsoft.CodeAnalysis.RefKind.yaml
+  href: api\Microsoft.CodeAnalysis.RefKind
+  name:
+    CSharp: Out
+  qualifiedName:
+    CSharp: Out
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Symbols\RefKind.cs
+    startLine: 24
+  summary: >+
+    Indicates an "out" parameter.
+
+  syntax:
+    content:
+      CSharp: Out = 2

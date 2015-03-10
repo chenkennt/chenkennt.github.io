@@ -1,0 +1,111 @@
+id: Microsoft.CodeAnalysis.CustomModifier
+yaml: api\Microsoft.CodeAnalysis.CustomModifier.yaml
+href: api\Microsoft.CodeAnalysis.CustomModifier
+name:
+  CSharp: CustomModifier
+qualifiedName:
+  CSharp: CustomModifier
+type: Class
+source:
+  remote:
+    branch: master
+    repo: https://github.com/chenkennt/roslyn.git
+    local: C:\roslyn\
+    sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+  path: src\Compilers\Core\Portable\Symbols\CustomModifer.cs
+  startLine: 7
+syntax:
+  content:
+    CSharp: public abstract class CustomModifier
+inheritance:
+- id: System.Object
+  href: System.Runtime
+  isExternal: true
+items:
+- id: Microsoft.CodeAnalysis.CustomModifier.IsOptional
+  yaml: api\Microsoft.CodeAnalysis.CustomModifier.yaml
+  href: api\Microsoft.CodeAnalysis.CustomModifier
+  name:
+    CSharp: IsOptional
+  qualifiedName:
+    CSharp: IsOptional
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Symbols\CustomModifer.cs
+    startLine: 13
+  summary: >+
+    If true, a language may use the modified storage location without
+
+    being aware of the meaning of the modification, modopt vs. modreq.
+
+  syntax:
+    content:
+      CSharp: public abstract bool IsOptional
+    parameters:
+    - id: IsOptional
+      type:
+        id: System.Boolean
+        href: System.Runtime
+        isExternal: true
+- id: Microsoft.CodeAnalysis.CustomModifier.get_IsOptional
+  yaml: api\Microsoft.CodeAnalysis.CustomModifier.yaml
+  href: api\Microsoft.CodeAnalysis.CustomModifier
+  name:
+    CSharp: get_IsOptional
+  qualifiedName:
+    CSharp: get_IsOptional
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Symbols\CustomModifer.cs
+    startLine: 13
+- id: Microsoft.CodeAnalysis.CustomModifier.Modifier
+  yaml: api\Microsoft.CodeAnalysis.CustomModifier.yaml
+  href: api\Microsoft.CodeAnalysis.CustomModifier
+  name:
+    CSharp: Modifier
+  qualifiedName:
+    CSharp: Modifier
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Symbols\CustomModifer.cs
+    startLine: 18
+  summary: >+
+    A type used as a tag that indicates which type of modification applies.
+
+  syntax:
+    content:
+      CSharp: public abstract INamedTypeSymbol Modifier
+    parameters:
+    - id: Modifier
+      type:
+        id: INamedTypeSymbol
+        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+- id: Microsoft.CodeAnalysis.CustomModifier.get_Modifier
+  yaml: api\Microsoft.CodeAnalysis.CustomModifier.yaml
+  href: api\Microsoft.CodeAnalysis.CustomModifier
+  name:
+    CSharp: get_Modifier
+  qualifiedName:
+    CSharp: get_Modifier
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Symbols\CustomModifer.cs
+    startLine: 18
