@@ -1,0 +1,247 @@
+id: Microsoft.CodeAnalysis.SymbolInfo
+yaml: api\Microsoft.CodeAnalysis.SymbolInfo.yaml
+href: api\Microsoft.CodeAnalysis.SymbolInfo
+name:
+  CSharp: SymbolInfo
+qualifiedName:
+  CSharp: SymbolInfo
+type: Struct
+source:
+  remote:
+    branch: master
+    repo: https://github.com/chenkennt/roslyn.git
+    local: C:\roslyn\
+    sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+  path: src\Compilers\Core\Portable\Compilation\SymbolInfo.cs
+  startLine: 10
+syntax:
+  content:
+    CSharp: public struct SymbolInfo
+inheritance:
+- id: System.Object
+  href: System.Runtime
+  isExternal: true
+- id: System.ValueType
+  href: System.Runtime
+  isExternal: true
+items:
+- id: Microsoft.CodeAnalysis.SymbolInfo.Symbol
+  yaml: api\Microsoft.CodeAnalysis.SymbolInfo.yaml
+  href: api\Microsoft.CodeAnalysis.SymbolInfo
+  name:
+    CSharp: Symbol
+  qualifiedName:
+    CSharp: Symbol
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Compilation\SymbolInfo.cs
+    startLine: 22
+  summary: >+
+    The symbol that was referred to by the syntax node, if any. Returns null if the given
+
+    expression did not bind successfully to a single symbol. If null is returned, it may
+
+    still be that case that we have one or more "best guesses" as to what symbol was
+
+    intended. These best guesses are available via the CandidateSymbols property.
+
+  syntax:
+    content:
+      CSharp: public ISymbol Symbol
+    parameters:
+    - id: Symbol
+      type:
+        id: ISymbol
+        href: C:\roslyn\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+- id: Microsoft.CodeAnalysis.SymbolInfo.get_Symbol
+  yaml: api\Microsoft.CodeAnalysis.SymbolInfo.yaml
+  href: api\Microsoft.CodeAnalysis.SymbolInfo
+  name:
+    CSharp: get_Symbol
+  qualifiedName:
+    CSharp: get_Symbol
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Compilation\SymbolInfo.cs
+    startLine: 22
+- id: Microsoft.CodeAnalysis.SymbolInfo.CandidateSymbols
+  yaml: api\Microsoft.CodeAnalysis.SymbolInfo.yaml
+  href: api\Microsoft.CodeAnalysis.SymbolInfo
+  name:
+    CSharp: CandidateSymbols
+  qualifiedName:
+    CSharp: CandidateSymbols
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Compilation\SymbolInfo.cs
+    startLine: 31
+  summary: >+
+    If the expression did not successfully resolve to a symbol, but there were one or more
+
+    symbols that may have been considered but discarded, this property returns those
+
+    symbols. The reason that the symbols did not successfully resolve to a symbol are
+
+    available in the CandidateReason property. For example, if the symbol was inaccessible,
+
+    ambiguous, or used in the wrong context.
+
+  syntax:
+    content:
+      CSharp: public ImmutableArray<ISymbol> CandidateSymbols
+    parameters:
+    - id: CandidateSymbols
+      type:
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
+        href: System.Collections.Immutable
+        isExternal: true
+- id: Microsoft.CodeAnalysis.SymbolInfo.get_CandidateSymbols
+  yaml: api\Microsoft.CodeAnalysis.SymbolInfo.yaml
+  href: api\Microsoft.CodeAnalysis.SymbolInfo
+  name:
+    CSharp: get_CandidateSymbols
+  qualifiedName:
+    CSharp: get_CandidateSymbols
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Compilation\SymbolInfo.cs
+    startLine: 33
+- id: Microsoft.CodeAnalysis.SymbolInfo.CandidateReason
+  yaml: api\Microsoft.CodeAnalysis.SymbolInfo.yaml
+  href: api\Microsoft.CodeAnalysis.SymbolInfo
+  name:
+    CSharp: CandidateReason
+  qualifiedName:
+    CSharp: CandidateReason
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Compilation\SymbolInfo.cs
+    startLine: 56
+  summary: >+
+    If the expression did not successfully resolve to a symbol, but there were one or more
+
+    symbols that may have been considered but discarded, this property describes why those
+
+    symbol or symbols were not considered suitable.
+
+  syntax:
+    content:
+      CSharp: public CandidateReason CandidateReason
+    parameters:
+    - id: CandidateReason
+      type:
+        id: CandidateReason
+        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\CandidateReason.cs
+- id: Microsoft.CodeAnalysis.SymbolInfo.get_CandidateReason
+  yaml: api\Microsoft.CodeAnalysis.SymbolInfo.yaml
+  href: api\Microsoft.CodeAnalysis.SymbolInfo
+  name:
+    CSharp: get_CandidateReason
+  qualifiedName:
+    CSharp: get_CandidateReason
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Compilation\SymbolInfo.cs
+    startLine: 56
+- id: Microsoft.CodeAnalysis.SymbolInfo.Equals(System.Object)
+  yaml: api\Microsoft.CodeAnalysis.SymbolInfo.yaml
+  href: api\Microsoft.CodeAnalysis.SymbolInfo
+  name:
+    CSharp: Equals
+  qualifiedName:
+    CSharp: Equals
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Compilation\SymbolInfo.cs
+    startLine: 91
+  syntax:
+    content:
+      CSharp: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type:
+        id: System.Object
+        href: System.Runtime
+        isExternal: true
+    return:
+      id: Boolean
+- id: Microsoft.CodeAnalysis.SymbolInfo.Equals(Microsoft.CodeAnalysis.SymbolInfo)
+  yaml: api\Microsoft.CodeAnalysis.SymbolInfo.yaml
+  href: api\Microsoft.CodeAnalysis.SymbolInfo
+  name:
+    CSharp: Equals
+  qualifiedName:
+    CSharp: Equals
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Compilation\SymbolInfo.cs
+    startLine: 96
+  syntax:
+    content:
+      CSharp: public bool Equals(SymbolInfo other)
+    parameters:
+    - id: other
+      type:
+        id: SymbolInfo
+        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\SymbolInfo.cs
+    return:
+      id: Boolean
+- id: Microsoft.CodeAnalysis.SymbolInfo.GetHashCode
+  yaml: api\Microsoft.CodeAnalysis.SymbolInfo.yaml
+  href: api\Microsoft.CodeAnalysis.SymbolInfo
+  name:
+    CSharp: GetHashCode
+  qualifiedName:
+    CSharp: GetHashCode
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Compilation\SymbolInfo.cs
+    startLine: 103
+  syntax:
+    content:
+      CSharp: public override int GetHashCode()
+    parameters: []
+    return:
+      id: Int32

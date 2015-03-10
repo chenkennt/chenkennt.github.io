@@ -1,0 +1,172 @@
+id: Microsoft.CodeAnalysis.Editing.DocumentEditor
+yaml: api\Microsoft.CodeAnalysis.Editing.DocumentEditor.yaml
+href: api\Microsoft.CodeAnalysis.Editing.DocumentEditor
+name:
+  CSharp: DocumentEditor
+qualifiedName:
+  CSharp: DocumentEditor
+type: Class
+source:
+  remote:
+    branch: master
+    repo: https://github.com/chenkennt/roslyn.git
+    local: C:\roslyn\
+    sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+  path: src\Workspaces\Core\Portable\Editing\DocumentEditor.cs
+  startLine: 14
+summary: >+
+  An editor for making changes to a document's syntax tree.
+
+syntax:
+  content:
+    CSharp: public class DocumentEditor
+inheritance:
+- id: System.Object
+  href: System.Runtime
+  isExternal: true
+- id: SyntaxEditor
+  href: C:\roslyn\src\Workspaces\Core\Portable\Editing\SyntaxEditor.cs
+items:
+- id: Microsoft.CodeAnalysis.Editing.DocumentEditor.CreateAsync(Microsoft.CodeAnalysis.Document,System.Threading.CancellationToken)
+  yaml: api\Microsoft.CodeAnalysis.Editing.DocumentEditor.yaml
+  href: api\Microsoft.CodeAnalysis.Editing.DocumentEditor
+  name:
+    CSharp: CreateAsync
+  qualifiedName:
+    CSharp: CreateAsync
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Workspaces\Core\Portable\Editing\DocumentEditor.cs
+    startLine: 29
+  summary: >+
+    Creates a new [Microsoft.CodeAnalysis.Editing.DocumentEditor](api\Microsoft.CodeAnalysis.Editing.DocumentEditor) instance.
+
+  syntax:
+    content:
+      CSharp: public static async Task<DocumentEditor> CreateAsync(Document document, CancellationToken cancellationToken = default (CancellationToken))
+    parameters:
+    - id: document
+      type:
+        id: Document
+        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Document.cs
+    - id: cancellationToken
+      type:
+        id: System.Threading.CancellationToken
+        href: System.Threading.Tasks
+        isExternal: true
+    return:
+      id: Task
+- id: Microsoft.CodeAnalysis.Editing.DocumentEditor.OriginalDocument
+  yaml: api\Microsoft.CodeAnalysis.Editing.DocumentEditor.yaml
+  href: api\Microsoft.CodeAnalysis.Editing.DocumentEditor
+  name:
+    CSharp: OriginalDocument
+  qualifiedName:
+    CSharp: OriginalDocument
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Workspaces\Core\Portable\Editing\DocumentEditor.cs
+    startLine: 44
+  summary: >+
+    The [Microsoft.CodeAnalysis.Document](api\Microsoft.CodeAnalysis.Document) specified when the editor was first created.
+
+  syntax:
+    content:
+      CSharp: public Document OriginalDocument
+    parameters:
+    - id: OriginalDocument
+      type:
+        id: Document
+        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Document.cs
+- id: Microsoft.CodeAnalysis.Editing.DocumentEditor.get_OriginalDocument
+  yaml: api\Microsoft.CodeAnalysis.Editing.DocumentEditor.yaml
+  href: api\Microsoft.CodeAnalysis.Editing.DocumentEditor
+  name:
+    CSharp: get_OriginalDocument
+  qualifiedName:
+    CSharp: get_OriginalDocument
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Workspaces\Core\Portable\Editing\DocumentEditor.cs
+    startLine: 46
+- id: Microsoft.CodeAnalysis.Editing.DocumentEditor.SemanticModel
+  yaml: api\Microsoft.CodeAnalysis.Editing.DocumentEditor.yaml
+  href: api\Microsoft.CodeAnalysis.Editing.DocumentEditor
+  name:
+    CSharp: SemanticModel
+  qualifiedName:
+    CSharp: SemanticModel
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Workspaces\Core\Portable\Editing\DocumentEditor.cs
+    startLine: 52
+  summary: >+
+    The [Microsoft.CodeAnalysis.SemanticModel](api\Microsoft.CodeAnalysis.SemanticModel) of the original document.
+
+  syntax:
+    content:
+      CSharp: public SemanticModel SemanticModel
+    parameters:
+    - id: SemanticModel
+      type:
+        id: SemanticModel
+        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+- id: Microsoft.CodeAnalysis.Editing.DocumentEditor.get_SemanticModel
+  yaml: api\Microsoft.CodeAnalysis.Editing.DocumentEditor.yaml
+  href: api\Microsoft.CodeAnalysis.Editing.DocumentEditor
+  name:
+    CSharp: get_SemanticModel
+  qualifiedName:
+    CSharp: get_SemanticModel
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Workspaces\Core\Portable\Editing\DocumentEditor.cs
+    startLine: 54
+- id: Microsoft.CodeAnalysis.Editing.DocumentEditor.GetChangedDocument
+  yaml: api\Microsoft.CodeAnalysis.Editing.DocumentEditor.yaml
+  href: api\Microsoft.CodeAnalysis.Editing.DocumentEditor
+  name:
+    CSharp: GetChangedDocument
+  qualifiedName:
+    CSharp: GetChangedDocument
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Workspaces\Core\Portable\Editing\DocumentEditor.cs
+    startLine: 60
+  summary: >+
+    Returns the changed [Microsoft.CodeAnalysis.Document](api\Microsoft.CodeAnalysis.Document).
+
+  syntax:
+    content:
+      CSharp: public Document GetChangedDocument()
+    parameters: []
+    return:
+      id: Document

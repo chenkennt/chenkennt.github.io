@@ -1,0 +1,450 @@
+id: Microsoft.CodeAnalysis.MetadataReferenceProperties
+yaml: api\Microsoft.CodeAnalysis.MetadataReferenceProperties.yaml
+href: api\Microsoft.CodeAnalysis.MetadataReferenceProperties
+name:
+  CSharp: MetadataReferenceProperties
+qualifiedName:
+  CSharp: MetadataReferenceProperties
+type: Struct
+source:
+  remote:
+    branch: master
+    repo: https://github.com/chenkennt/roslyn.git
+    local: C:\roslyn\
+    sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+  path: src\Compilers\Core\Portable\MetadataReference\MetadataReferenceProperties.cs
+  startLine: 14
+summary: >+
+  Information about a metadata reference.
+
+syntax:
+  content:
+    CSharp: public struct MetadataReferenceProperties
+inheritance:
+- id: System.Object
+  href: System.Runtime
+  isExternal: true
+- id: System.ValueType
+  href: System.Runtime
+  isExternal: true
+items:
+- id: Microsoft.CodeAnalysis.MetadataReferenceProperties.Module
+  yaml: api\Microsoft.CodeAnalysis.MetadataReferenceProperties.yaml
+  href: api\Microsoft.CodeAnalysis.MetadataReferenceProperties
+  name:
+    CSharp: Module
+  qualifiedName:
+    CSharp: Module
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\MetadataReference\MetadataReferenceProperties.cs
+    startLine: 23
+  summary: >+
+    Default properties for a module reference.
+
+- id: Microsoft.CodeAnalysis.MetadataReferenceProperties.Assembly
+  yaml: api\Microsoft.CodeAnalysis.MetadataReferenceProperties.yaml
+  href: api\Microsoft.CodeAnalysis.MetadataReferenceProperties
+  name:
+    CSharp: Assembly
+  qualifiedName:
+    CSharp: Assembly
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\MetadataReference\MetadataReferenceProperties.cs
+    startLine: 28
+  summary: >+
+    Default properties for an assembly reference.
+
+- id: Microsoft.CodeAnalysis.MetadataReferenceProperties.#ctor(Microsoft.CodeAnalysis.MetadataImageKind,System.Collections.Immutable.ImmutableArray{System.String},System.Boolean)
+  yaml: api\Microsoft.CodeAnalysis.MetadataReferenceProperties.yaml
+  href: api\Microsoft.CodeAnalysis.MetadataReferenceProperties
+  name:
+    CSharp: .ctor
+  qualifiedName:
+    CSharp: .ctor
+  type: Constructor
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\MetadataReference\MetadataReferenceProperties.cs
+    startLine: 36
+  summary: >+
+    Initializes reference properties.
+
+  syntax:
+    content:
+      CSharp: public MetadataReferenceProperties(MetadataImageKind kind = MetadataImageKind.Assembly, ImmutableArray<string> aliases = default (ImmutableArray<string>), bool embedInteropTypes = false)
+    parameters:
+    - id: kind
+      type:
+        id: MetadataImageKind
+        href: C:\roslyn\src\Compilers\Core\Portable\MetadataReference\MetadataImageKind.cs
+      description: The image kind - assembly or module.
+    - id: aliases
+      type:
+        id: System.Collections.Immutable.ImmutableArray{System.String}
+        href: System.Collections.Immutable
+        isExternal: true
+      description: Assembly aliases. Can't be set for a module.
+    - id: embedInteropTypes
+      type:
+        id: System.Boolean
+        href: System.Runtime
+        isExternal: true
+      description: True to embed interop types from the referenced assembly to the referencing compilation. Must be false for a module.
+- id: Microsoft.CodeAnalysis.MetadataReferenceProperties.WithAliases(System.Collections.Generic.IEnumerable{System.String})
+  yaml: api\Microsoft.CodeAnalysis.MetadataReferenceProperties.yaml
+  href: api\Microsoft.CodeAnalysis.MetadataReferenceProperties
+  name:
+    CSharp: WithAliases
+  qualifiedName:
+    CSharp: WithAliases
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\MetadataReference\MetadataReferenceProperties.cs
+    startLine: 78
+  summary: >+
+    Returns [Microsoft.CodeAnalysis.MetadataReferenceProperties](api\Microsoft.CodeAnalysis.MetadataReferenceProperties) with specified aliases.
+
+  syntax:
+    content:
+      CSharp: public MetadataReferenceProperties WithAliases(IEnumerable<string> aliases)
+    parameters:
+    - id: aliases
+      type:
+        id: System.Collections.Generic.IEnumerable{System.String}
+        href: System.Runtime
+        isExternal: true
+    return:
+      id: MetadataReferenceProperties
+- id: Microsoft.CodeAnalysis.MetadataReferenceProperties.WithAliases(System.Collections.Immutable.ImmutableArray{System.String})
+  yaml: api\Microsoft.CodeAnalysis.MetadataReferenceProperties.yaml
+  href: api\Microsoft.CodeAnalysis.MetadataReferenceProperties
+  name:
+    CSharp: WithAliases
+  qualifiedName:
+    CSharp: WithAliases
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\MetadataReference\MetadataReferenceProperties.cs
+    startLine: 89
+  summary: >+
+    Returns [Microsoft.CodeAnalysis.MetadataReferenceProperties](api\Microsoft.CodeAnalysis.MetadataReferenceProperties) with specified aliases.
+
+  syntax:
+    content:
+      CSharp: public MetadataReferenceProperties WithAliases(ImmutableArray<string> aliases)
+    parameters:
+    - id: aliases
+      type:
+        id: System.Collections.Immutable.ImmutableArray{System.String}
+        href: System.Collections.Immutable
+        isExternal: true
+    return:
+      id: MetadataReferenceProperties
+- id: Microsoft.CodeAnalysis.MetadataReferenceProperties.WithEmbedInteropTypes(System.Boolean)
+  yaml: api\Microsoft.CodeAnalysis.MetadataReferenceProperties.yaml
+  href: api\Microsoft.CodeAnalysis.MetadataReferenceProperties
+  name:
+    CSharp: WithEmbedInteropTypes
+  qualifiedName:
+    CSharp: WithEmbedInteropTypes
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\MetadataReference\MetadataReferenceProperties.cs
+    startLine: 98
+  summary: >+
+    Returns [Microsoft.CodeAnalysis.MetadataReferenceProperties](api\Microsoft.CodeAnalysis.MetadataReferenceProperties) with [Microsoft.CodeAnalysis.MetadataReferenceProperties.EmbedInteropTypes](api\Microsoft.CodeAnalysis.MetadataReferenceProperties) set to specified value.
+
+  syntax:
+    content:
+      CSharp: public MetadataReferenceProperties WithEmbedInteropTypes(bool embedInteropTypes)
+    parameters:
+    - id: embedInteropTypes
+      type:
+        id: System.Boolean
+        href: System.Runtime
+        isExternal: true
+    return:
+      id: MetadataReferenceProperties
+- id: Microsoft.CodeAnalysis.MetadataReferenceProperties.Kind
+  yaml: api\Microsoft.CodeAnalysis.MetadataReferenceProperties.yaml
+  href: api\Microsoft.CodeAnalysis.MetadataReferenceProperties
+  name:
+    CSharp: Kind
+  qualifiedName:
+    CSharp: Kind
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\MetadataReference\MetadataReferenceProperties.cs
+    startLine: 106
+  summary: >+
+    The image kind (assembly or module) the reference refers to.
+
+  syntax:
+    content:
+      CSharp: public MetadataImageKind Kind
+    parameters:
+    - id: Kind
+      type:
+        id: MetadataImageKind
+        href: C:\roslyn\src\Compilers\Core\Portable\MetadataReference\MetadataImageKind.cs
+- id: Microsoft.CodeAnalysis.MetadataReferenceProperties.get_Kind
+  yaml: api\Microsoft.CodeAnalysis.MetadataReferenceProperties.yaml
+  href: api\Microsoft.CodeAnalysis.MetadataReferenceProperties
+  name:
+    CSharp: get_Kind
+  qualifiedName:
+    CSharp: get_Kind
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\MetadataReference\MetadataReferenceProperties.cs
+    startLine: 108
+- id: Microsoft.CodeAnalysis.MetadataReferenceProperties.GlobalAlias
+  yaml: api\Microsoft.CodeAnalysis.MetadataReferenceProperties.yaml
+  href: api\Microsoft.CodeAnalysis.MetadataReferenceProperties
+  name:
+    CSharp: GlobalAlias
+  qualifiedName:
+    CSharp: GlobalAlias
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\MetadataReference\MetadataReferenceProperties.cs
+    startLine: 117
+  summary: >+
+    Alias that represents a global declaration space.
+
+- id: Microsoft.CodeAnalysis.MetadataReferenceProperties.Aliases
+  yaml: api\Microsoft.CodeAnalysis.MetadataReferenceProperties.yaml
+  href: api\Microsoft.CodeAnalysis.MetadataReferenceProperties
+  name:
+    CSharp: Aliases
+  qualifiedName:
+    CSharp: Aliases
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\MetadataReference\MetadataReferenceProperties.cs
+    startLine: 125
+  summary: >+
+    Aliases for the metadata reference. Empty if the reference has no aliases.
+
+  syntax:
+    content:
+      CSharp: public ImmutableArray<string> Aliases
+    parameters:
+    - id: Aliases
+      type:
+        id: System.Collections.Immutable.ImmutableArray{System.String}
+        href: System.Collections.Immutable
+        isExternal: true
+- id: Microsoft.CodeAnalysis.MetadataReferenceProperties.get_Aliases
+  yaml: api\Microsoft.CodeAnalysis.MetadataReferenceProperties.yaml
+  href: api\Microsoft.CodeAnalysis.MetadataReferenceProperties
+  name:
+    CSharp: get_Aliases
+  qualifiedName:
+    CSharp: get_Aliases
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\MetadataReference\MetadataReferenceProperties.cs
+    startLine: 127
+- id: Microsoft.CodeAnalysis.MetadataReferenceProperties.EmbedInteropTypes
+  yaml: api\Microsoft.CodeAnalysis.MetadataReferenceProperties.yaml
+  href: api\Microsoft.CodeAnalysis.MetadataReferenceProperties
+  name:
+    CSharp: EmbedInteropTypes
+  qualifiedName:
+    CSharp: EmbedInteropTypes
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\MetadataReference\MetadataReferenceProperties.cs
+    startLine: 137
+  summary: >+
+    True if interop types defined in the referenced metadata should be embedded into the compilation referencing the metadata.
+
+  syntax:
+    content:
+      CSharp: public bool EmbedInteropTypes
+    parameters:
+    - id: EmbedInteropTypes
+      type:
+        id: System.Boolean
+        href: System.Runtime
+        isExternal: true
+- id: Microsoft.CodeAnalysis.MetadataReferenceProperties.get_EmbedInteropTypes
+  yaml: api\Microsoft.CodeAnalysis.MetadataReferenceProperties.yaml
+  href: api\Microsoft.CodeAnalysis.MetadataReferenceProperties
+  name:
+    CSharp: get_EmbedInteropTypes
+  qualifiedName:
+    CSharp: get_EmbedInteropTypes
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\MetadataReference\MetadataReferenceProperties.cs
+    startLine: 139
+- id: Microsoft.CodeAnalysis.MetadataReferenceProperties.Equals(System.Object)
+  yaml: api\Microsoft.CodeAnalysis.MetadataReferenceProperties.yaml
+  href: api\Microsoft.CodeAnalysis.MetadataReferenceProperties
+  name:
+    CSharp: Equals
+  qualifiedName:
+    CSharp: Equals
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\MetadataReference\MetadataReferenceProperties.cs
+    startLine: 142
+  syntax:
+    content:
+      CSharp: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type:
+        id: System.Object
+        href: System.Runtime
+        isExternal: true
+    return:
+      id: Boolean
+- id: Microsoft.CodeAnalysis.MetadataReferenceProperties.Equals(Microsoft.CodeAnalysis.MetadataReferenceProperties)
+  yaml: api\Microsoft.CodeAnalysis.MetadataReferenceProperties.yaml
+  href: api\Microsoft.CodeAnalysis.MetadataReferenceProperties
+  name:
+    CSharp: Equals
+  qualifiedName:
+    CSharp: Equals
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\MetadataReference\MetadataReferenceProperties.cs
+    startLine: 147
+  syntax:
+    content:
+      CSharp: public bool Equals(MetadataReferenceProperties other)
+    parameters:
+    - id: other
+      type:
+        id: MetadataReferenceProperties
+        href: C:\roslyn\src\Compilers\Core\Portable\MetadataReference\MetadataReferenceProperties.cs
+    return:
+      id: Boolean
+- id: Microsoft.CodeAnalysis.MetadataReferenceProperties.GetHashCode
+  yaml: api\Microsoft.CodeAnalysis.MetadataReferenceProperties.yaml
+  href: api\Microsoft.CodeAnalysis.MetadataReferenceProperties
+  name:
+    CSharp: GetHashCode
+  qualifiedName:
+    CSharp: GetHashCode
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\MetadataReference\MetadataReferenceProperties.cs
+    startLine: 154
+  syntax:
+    content:
+      CSharp: public override int GetHashCode()
+    parameters: []
+    return:
+      id: Int32
+- id: Microsoft.CodeAnalysis.MetadataReferenceProperties.op_Equality(Microsoft.CodeAnalysis.MetadataReferenceProperties,Microsoft.CodeAnalysis.MetadataReferenceProperties)
+  yaml: api\Microsoft.CodeAnalysis.MetadataReferenceProperties.yaml
+  href: api\Microsoft.CodeAnalysis.MetadataReferenceProperties
+  name:
+    CSharp: op_Equality
+  qualifiedName:
+    CSharp: op_Equality
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\MetadataReference\MetadataReferenceProperties.cs
+    startLine: 159
+- id: Microsoft.CodeAnalysis.MetadataReferenceProperties.op_Inequality(Microsoft.CodeAnalysis.MetadataReferenceProperties,Microsoft.CodeAnalysis.MetadataReferenceProperties)
+  yaml: api\Microsoft.CodeAnalysis.MetadataReferenceProperties.yaml
+  href: api\Microsoft.CodeAnalysis.MetadataReferenceProperties
+  name:
+    CSharp: op_Inequality
+  qualifiedName:
+    CSharp: op_Inequality
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\MetadataReference\MetadataReferenceProperties.cs
+    startLine: 164

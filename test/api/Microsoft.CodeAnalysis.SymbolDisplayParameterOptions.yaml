@@ -1,0 +1,187 @@
+id: Microsoft.CodeAnalysis.SymbolDisplayParameterOptions
+yaml: api\Microsoft.CodeAnalysis.SymbolDisplayParameterOptions.yaml
+href: api\Microsoft.CodeAnalysis.SymbolDisplayParameterOptions
+name:
+  CSharp: SymbolDisplayParameterOptions
+qualifiedName:
+  CSharp: SymbolDisplayParameterOptions
+type: Enum
+source:
+  remote:
+    branch: master
+    repo: https://github.com/chenkennt/roslyn.git
+    local: C:\roslyn\
+    sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+  path: src\Compilers\Core\Portable\SymbolDisplay\SymbolDisplayParameterOptions.cs
+  startLine: 10
+summary: >+
+  Specifies how parameters are displayed in the description of a (member, property/indexer, or delegate) symbol.
+
+syntax:
+  content:
+    CSharp: public enum SymbolDisplayParameterOptions
+inheritance:
+- id: System.Object
+  href: System.Runtime
+  isExternal: true
+- id: System.ValueType
+  href: System.Runtime
+  isExternal: true
+- id: System.Enum
+  href: System.Runtime
+  isExternal: true
+items:
+- id: Microsoft.CodeAnalysis.SymbolDisplayParameterOptions.None
+  yaml: api\Microsoft.CodeAnalysis.SymbolDisplayParameterOptions.yaml
+  href: api\Microsoft.CodeAnalysis.SymbolDisplayParameterOptions
+  name:
+    CSharp: None
+  qualifiedName:
+    CSharp: None
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SymbolDisplay\SymbolDisplayParameterOptions.cs
+    startLine: 20
+  summary: >+
+    Omits parameters from symbol descriptions.
+
+  syntax:
+    content:
+      CSharp: None = 0
+- id: Microsoft.CodeAnalysis.SymbolDisplayParameterOptions.IncludeExtensionThis
+  yaml: api\Microsoft.CodeAnalysis.SymbolDisplayParameterOptions.yaml
+  href: api\Microsoft.CodeAnalysis.SymbolDisplayParameterOptions
+  name:
+    CSharp: IncludeExtensionThis
+  qualifiedName:
+    CSharp: IncludeExtensionThis
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SymbolDisplay\SymbolDisplayParameterOptions.cs
+    startLine: 28
+  summary: >+
+    Includes the this keyword before the first parameter of an extension method in C#.
+
+  syntax:
+    content:
+      CSharp: IncludeExtensionThis = 1 << 0
+- id: Microsoft.CodeAnalysis.SymbolDisplayParameterOptions.IncludeParamsRefOut
+  yaml: api\Microsoft.CodeAnalysis.SymbolDisplayParameterOptions.yaml
+  href: api\Microsoft.CodeAnalysis.SymbolDisplayParameterOptions
+  name:
+    CSharp: IncludeParamsRefOut
+  qualifiedName:
+    CSharp: IncludeParamsRefOut
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SymbolDisplay\SymbolDisplayParameterOptions.cs
+    startLine: 33
+  summary: >+
+    Includes the params, ref, out, ByRef, ByVal keywords before parameters.
+
+  syntax:
+    content:
+      CSharp: IncludeParamsRefOut = 1 << 1
+- id: Microsoft.CodeAnalysis.SymbolDisplayParameterOptions.IncludeType
+  yaml: api\Microsoft.CodeAnalysis.SymbolDisplayParameterOptions.yaml
+  href: api\Microsoft.CodeAnalysis.SymbolDisplayParameterOptions
+  name:
+    CSharp: IncludeType
+  qualifiedName:
+    CSharp: IncludeType
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SymbolDisplay\SymbolDisplayParameterOptions.cs
+    startLine: 38
+  summary: >+
+    Includes parameter types in symbol descriptions.
+
+  syntax:
+    content:
+      CSharp: IncludeType = 1 << 2
+- id: Microsoft.CodeAnalysis.SymbolDisplayParameterOptions.IncludeName
+  yaml: api\Microsoft.CodeAnalysis.SymbolDisplayParameterOptions.yaml
+  href: api\Microsoft.CodeAnalysis.SymbolDisplayParameterOptions
+  name:
+    CSharp: IncludeName
+  qualifiedName:
+    CSharp: IncludeName
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SymbolDisplay\SymbolDisplayParameterOptions.cs
+    startLine: 43
+  summary: >+
+    Includes parameter names in symbol descriptions.
+
+  syntax:
+    content:
+      CSharp: IncludeName = 1 << 3
+- id: Microsoft.CodeAnalysis.SymbolDisplayParameterOptions.IncludeDefaultValue
+  yaml: api\Microsoft.CodeAnalysis.SymbolDisplayParameterOptions.yaml
+  href: api\Microsoft.CodeAnalysis.SymbolDisplayParameterOptions
+  name:
+    CSharp: IncludeDefaultValue
+  qualifiedName:
+    CSharp: IncludeDefaultValue
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SymbolDisplay\SymbolDisplayParameterOptions.cs
+    startLine: 49
+  summary: >+
+    Includes parameter default values in symbol descriptions.
+
+  syntax:
+    content:
+      CSharp: IncludeDefaultValue = 1 << 4
+- id: Microsoft.CodeAnalysis.SymbolDisplayParameterOptions.IncludeOptionalBrackets
+  yaml: api\Microsoft.CodeAnalysis.SymbolDisplayParameterOptions.yaml
+  href: api\Microsoft.CodeAnalysis.SymbolDisplayParameterOptions
+  name:
+    CSharp: IncludeOptionalBrackets
+  qualifiedName:
+    CSharp: IncludeOptionalBrackets
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\SymbolDisplay\SymbolDisplayParameterOptions.cs
+    startLine: 54
+  summary: >+
+    Includes square brackets around optional parameters.
+
+  syntax:
+    content:
+      CSharp: IncludeOptionalBrackets = 1 << 5

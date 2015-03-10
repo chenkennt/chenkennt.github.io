@@ -1,0 +1,823 @@
+id: Microsoft.CodeAnalysis.SyntaxTriviaList
+yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+name:
+  CSharp: SyntaxTriviaList
+qualifiedName:
+  CSharp: SyntaxTriviaList
+type: Struct
+source:
+  remote:
+    branch: master
+    repo: https://github.com/chenkennt/roslyn.git
+    local: C:\roslyn\
+    sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+  path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+  startLine: 15
+summary: >+
+  Represents a read-only list of [Microsoft.CodeAnalysis.SyntaxTrivia](api\Microsoft.CodeAnalysis.SyntaxTrivia).
+
+syntax:
+  content:
+    CSharp: public partial struct SyntaxTriviaList
+inheritance:
+- id: System.Object
+  href: System.Runtime
+  isExternal: true
+- id: System.ValueType
+  href: System.Runtime
+  isExternal: true
+items:
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.Empty
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: Empty
+  qualifiedName:
+    CSharp: Empty
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 22
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.Count
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: Count
+  qualifiedName:
+    CSharp: Count
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 68
+  syntax:
+    content:
+      CSharp: public int Count
+    parameters:
+    - id: Count
+      type:
+        id: System.Int32
+        href: System.Runtime
+        isExternal: true
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.get_Count
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: get_Count
+  qualifiedName:
+    CSharp: get_Count
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 70
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.ElementAt(System.Int32)
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: ElementAt
+  qualifiedName:
+    CSharp: ElementAt
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 73
+  syntax:
+    content:
+      CSharp: public SyntaxTrivia ElementAt(int index)
+    parameters:
+    - id: index
+      type:
+        id: System.Int32
+        href: System.Runtime
+        isExternal: true
+    return:
+      id: SyntaxTrivia
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.Item(System.Int32)
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: Item
+  qualifiedName:
+    CSharp: Item
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 85
+  summary: >+
+    Gets the trivia at the specified index.
+
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.get_Item(System.Int32)
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: get_Item
+  qualifiedName:
+    CSharp: get_Item
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 87
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.FullSpan
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: FullSpan
+  qualifiedName:
+    CSharp: FullSpan
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 111
+  summary: >+
+    The absolute span of the list elements in characters, including the leading and trailing trivia of the first and last elements.
+
+  syntax:
+    content:
+      CSharp: public TextSpan FullSpan
+    parameters:
+    - id: FullSpan
+      type:
+        id: TextSpan
+        href: C:\roslyn\src\Compilers\Core\Portable\Text\TextSpan.cs
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.get_FullSpan
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: get_FullSpan
+  qualifiedName:
+    CSharp: get_FullSpan
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 113
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.Span
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: Span
+  qualifiedName:
+    CSharp: Span
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 129
+  summary: >+
+    The absolute span of the list elements in characters, not including the leading and trailing trivia of the first and last elements.
+
+  syntax:
+    content:
+      CSharp: public TextSpan Span
+    parameters:
+    - id: Span
+      type:
+        id: TextSpan
+        href: C:\roslyn\src\Compilers\Core\Portable\Text\TextSpan.cs
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.get_Span
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: get_Span
+  qualifiedName:
+    CSharp: get_Span
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 131
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.First
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: First
+  qualifiedName:
+    CSharp: First
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 150
+  summary: >+
+    Returns the first trivia in the list.
+
+  syntax:
+    content:
+      CSharp: public SyntaxTrivia First()
+    parameters: []
+    return:
+      id: SyntaxTrivia
+      description: The first trivia in the list.
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.Last
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: Last
+  qualifiedName:
+    CSharp: Last
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 165
+  summary: >+
+    Returns the last trivia in the list.
+
+  syntax:
+    content:
+      CSharp: public SyntaxTrivia Last()
+    parameters: []
+    return:
+      id: SyntaxTrivia
+      description: The last trivia in the list.
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.Any
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: Any
+  qualifiedName:
+    CSharp: Any
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 179
+  summary: >+
+    Does this list have any items.
+
+  syntax:
+    content:
+      CSharp: public bool Any()
+    parameters: []
+    return:
+      id: Boolean
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.Reverse
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: Reverse
+  qualifiedName:
+    CSharp: Reverse
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 188
+  summary: >+
+    Returns a list which contains all elements of [Microsoft.CodeAnalysis.SyntaxTriviaList](api\Microsoft.CodeAnalysis.SyntaxTriviaList) in reversed order.
+
+  syntax:
+    content:
+      CSharp: public Reversed Reverse()
+    parameters: []
+    return:
+      id: Reversed
+      description: '[Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed](api\Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed) which contains all elements of [Microsoft.CodeAnalysis.SyntaxTriviaList](api\Microsoft.CodeAnalysis.SyntaxTriviaList) in reversed order'
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.GetEnumerator
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: GetEnumerator
+  qualifiedName:
+    CSharp: GetEnumerator
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 193
+  syntax:
+    content:
+      CSharp: public Enumerator GetEnumerator()
+    parameters: []
+    return:
+      id: Enumerator
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.IndexOf(Microsoft.CodeAnalysis.SyntaxTrivia)
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: IndexOf
+  qualifiedName:
+    CSharp: IndexOf
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 198
+  syntax:
+    content:
+      CSharp: public int IndexOf(SyntaxTrivia triviaInList)
+    parameters:
+    - id: triviaInList
+      type:
+        id: SyntaxTrivia
+        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
+    return:
+      id: Int32
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.Add(Microsoft.CodeAnalysis.SyntaxTrivia)
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: Add
+  qualifiedName:
+    CSharp: Add
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 229
+  summary: >+
+    Creates a new [Microsoft.CodeAnalysis.SyntaxTriviaList](api\Microsoft.CodeAnalysis.SyntaxTriviaList) with the specified trivia added to the end.
+
+  syntax:
+    content:
+      CSharp: public SyntaxTriviaList Add(SyntaxTrivia trivia)
+    parameters:
+    - id: trivia
+      type:
+        id: SyntaxTrivia
+        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
+      description: The trivia to add.
+    return:
+      id: SyntaxTriviaList
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.AddRange(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia})
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: AddRange
+  qualifiedName:
+    CSharp: AddRange
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 238
+  summary: >+
+    Creates a new [Microsoft.CodeAnalysis.SyntaxTriviaList](api\Microsoft.CodeAnalysis.SyntaxTriviaList) with the specified trivia added to the end.
+
+  syntax:
+    content:
+      CSharp: public SyntaxTriviaList AddRange(IEnumerable<SyntaxTrivia> trivia)
+    parameters:
+    - id: trivia
+      type:
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
+        href: System.Runtime
+        isExternal: true
+      description: The trivia to add.
+    return:
+      id: SyntaxTriviaList
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.Insert(System.Int32,Microsoft.CodeAnalysis.SyntaxTrivia)
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: Insert
+  qualifiedName:
+    CSharp: Insert
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 248
+  summary: >+
+    Creates a new [Microsoft.CodeAnalysis.SyntaxTriviaList](api\Microsoft.CodeAnalysis.SyntaxTriviaList) with the specified trivia inserted at the index.
+
+  syntax:
+    content:
+      CSharp: public SyntaxTriviaList Insert(int index, SyntaxTrivia trivia)
+    parameters:
+    - id: index
+      type:
+        id: System.Int32
+        href: System.Runtime
+        isExternal: true
+      description: The index in the list to insert the trivia at.
+    - id: trivia
+      type:
+        id: SyntaxTrivia
+        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
+      description: The trivia to insert.
+    return:
+      id: SyntaxTriviaList
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.InsertRange(System.Int32,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia})
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: InsertRange
+  qualifiedName:
+    CSharp: InsertRange
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 263
+  summary: >+
+    Creates a new [Microsoft.CodeAnalysis.SyntaxTriviaList](api\Microsoft.CodeAnalysis.SyntaxTriviaList) with the specified trivia inserted at the index.
+
+  syntax:
+    content:
+      CSharp: public SyntaxTriviaList InsertRange(int index, IEnumerable<SyntaxTrivia> trivia)
+    parameters:
+    - id: index
+      type:
+        id: System.Int32
+        href: System.Runtime
+        isExternal: true
+      description: The index in the list to insert the trivia at.
+    - id: trivia
+      type:
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
+        href: System.Runtime
+        isExternal: true
+      description: The trivia to insert.
+    return:
+      id: SyntaxTriviaList
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.RemoveAt(System.Int32)
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: RemoveAt
+  qualifiedName:
+    CSharp: RemoveAt
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 293
+  summary: >+
+    Creates a new [Microsoft.CodeAnalysis.SyntaxTriviaList](api\Microsoft.CodeAnalysis.SyntaxTriviaList) with the element at the specified index removed.
+
+  syntax:
+    content:
+      CSharp: public SyntaxTriviaList RemoveAt(int index)
+    parameters:
+    - id: index
+      type:
+        id: System.Int32
+        href: System.Runtime
+        isExternal: true
+      description: The index identifying the element to remove.
+    return:
+      id: SyntaxTriviaList
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.Remove(Microsoft.CodeAnalysis.SyntaxTrivia)
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: Remove
+  qualifiedName:
+    CSharp: Remove
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 309
+  summary: >+
+    Creates a new [Microsoft.CodeAnalysis.SyntaxTriviaList](api\Microsoft.CodeAnalysis.SyntaxTriviaList) with the specified element removed.
+
+  syntax:
+    content:
+      CSharp: public SyntaxTriviaList Remove(SyntaxTrivia triviaInList)
+    parameters:
+    - id: triviaInList
+      type:
+        id: SyntaxTrivia
+        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
+      description: The trivia element to remove.
+    return:
+      id: SyntaxTriviaList
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.Replace(Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia)
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: Replace
+  qualifiedName:
+    CSharp: Replace
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 327
+  summary: >+
+    Creates a new [Microsoft.CodeAnalysis.SyntaxTriviaList](api\Microsoft.CodeAnalysis.SyntaxTriviaList) with the specified element replaced with new trivia.
+
+  syntax:
+    content:
+      CSharp: public SyntaxTriviaList Replace(SyntaxTrivia triviaInList, SyntaxTrivia newTrivia)
+    parameters:
+    - id: triviaInList
+      type:
+        id: SyntaxTrivia
+        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
+      description: The trivia element to replace.
+    - id: newTrivia
+      type:
+        id: SyntaxTrivia
+        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
+      description: The trivia to replace the element with.
+    return:
+      id: SyntaxTriviaList
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.ReplaceRange(Microsoft.CodeAnalysis.SyntaxTrivia,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia})
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: ReplaceRange
+  qualifiedName:
+    CSharp: ReplaceRange
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 342
+  summary: >+
+    Creates a new [Microsoft.CodeAnalysis.SyntaxTriviaList](api\Microsoft.CodeAnalysis.SyntaxTriviaList) with the specified element replaced with new trivia.
+
+  syntax:
+    content:
+      CSharp: public SyntaxTriviaList ReplaceRange(SyntaxTrivia triviaInList, IEnumerable<SyntaxTrivia> newTrivia)
+    parameters:
+    - id: triviaInList
+      type:
+        id: SyntaxTrivia
+        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
+      description: The trivia element to replace.
+    - id: newTrivia
+      type:
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
+        href: System.Runtime
+        isExternal: true
+      description: The trivia to replace the element with.
+    return:
+      id: SyntaxTriviaList
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.Equals(Microsoft.CodeAnalysis.SyntaxTriviaList)
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: Equals
+  qualifiedName:
+    CSharp: Equals
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 398
+  syntax:
+    content:
+      CSharp: public bool Equals(SyntaxTriviaList other)
+    parameters:
+    - id: other
+      type:
+        id: SyntaxTriviaList
+        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    return:
+      id: Boolean
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.op_Equality(Microsoft.CodeAnalysis.SyntaxTriviaList,Microsoft.CodeAnalysis.SyntaxTriviaList)
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: op_Equality
+  qualifiedName:
+    CSharp: op_Equality
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 403
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.op_Inequality(Microsoft.CodeAnalysis.SyntaxTriviaList,Microsoft.CodeAnalysis.SyntaxTriviaList)
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: op_Inequality
+  qualifiedName:
+    CSharp: op_Inequality
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 408
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.Equals(System.Object)
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: Equals
+  qualifiedName:
+    CSharp: Equals
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 413
+  syntax:
+    content:
+      CSharp: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type:
+        id: System.Object
+        href: System.Runtime
+        isExternal: true
+    return:
+      id: Boolean
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.GetHashCode
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: GetHashCode
+  qualifiedName:
+    CSharp: GetHashCode
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 418
+  syntax:
+    content:
+      CSharp: public override int GetHashCode()
+    parameters: []
+    return:
+      id: Int32
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.ToString
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: ToString
+  qualifiedName:
+    CSharp: ToString
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 459
+  syntax:
+    content:
+      CSharp: public override string ToString()
+    parameters: []
+    return:
+      id: String
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.ToFullString
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: ToFullString
+  qualifiedName:
+    CSharp: ToFullString
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 464
+  syntax:
+    content:
+      CSharp: public string ToFullString()
+    parameters: []
+    return:
+      id: String
+- id: Microsoft.CodeAnalysis.SyntaxTriviaList.Create(Microsoft.CodeAnalysis.SyntaxTrivia)
+  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
+  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+  name:
+    CSharp: Create
+  qualifiedName:
+    CSharp: Create
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+    startLine: 469
+  syntax:
+    content:
+      CSharp: public static SyntaxTriviaList Create(SyntaxTrivia trivia)
+    parameters:
+    - id: trivia
+      type:
+        id: SyntaxTrivia
+        href: C:\roslyn\src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
+    return:
+      id: SyntaxTriviaList
