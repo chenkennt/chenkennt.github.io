@@ -1,0 +1,49 @@
+id: Microsoft.CodeAnalysis.Host.IPersistentStorageService
+yaml: api\Microsoft.CodeAnalysis.Host.IPersistentStorageService.yaml
+href: api\Microsoft.CodeAnalysis.Host.IPersistentStorageService
+name:
+  CSharp: IPersistentStorageService
+qualifiedName:
+  CSharp: IPersistentStorageService
+type: Interface
+source:
+  remote:
+    branch: master
+    repo: https://github.com/chenkennt/roslyn.git
+    local: C:\roslyn\
+    sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+  path: src\Workspaces\Core\Portable\Workspace\Host\PersistentStorage\IPersistentStorageService.cs
+  startLine: 7
+summary: >+
+  This service allows you to persist information relative to solution, projects and documents.
+
+syntax:
+  content:
+    CSharp: public interface IPersistentStorageService
+items:
+- id: Microsoft.CodeAnalysis.Host.IPersistentStorageService.GetStorage(Microsoft.CodeAnalysis.Solution)
+  yaml: api\Microsoft.CodeAnalysis.Host.IPersistentStorageService.yaml
+  href: api\Microsoft.CodeAnalysis.Host.IPersistentStorageService
+  name:
+    CSharp: GetStorage
+  qualifiedName:
+    CSharp: GetStorage
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Workspaces\Core\Portable\Workspace\Host\PersistentStorage\IPersistentStorageService.cs
+    startLine: 9
+  syntax:
+    content:
+      CSharp: IPersistentStorage GetStorage(Solution solution);
+    parameters:
+    - id: solution
+      type:
+        id: Solution
+        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\Solution.CompilationTracker.cs
+    return:
+      id: IPersistentStorage

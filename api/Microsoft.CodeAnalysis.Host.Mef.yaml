@@ -1,0 +1,154 @@
+id: Microsoft.CodeAnalysis.Host.Mef
+yaml: api\Microsoft.CodeAnalysis.Host.Mef.yaml
+href: api\Microsoft.CodeAnalysis.Host.Mef
+name:
+  CSharp: Mef
+qualifiedName:
+  CSharp: Mef
+type: Namespace
+source:
+  remote:
+    branch: master
+    repo: https://github.com/chenkennt/roslyn.git
+    local: C:\roslyn\
+    sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+  path: src\Workspaces\Core\Portable\Workspace\Host\Mef\ILanguagesMetadata.cs
+  startLine: 6
+items:
+- id: Microsoft.CodeAnalysis.Host.Mef.MefHostServices
+  yaml: api\Microsoft.CodeAnalysis.Host.Mef.MefHostServices.yaml
+  href: api\Microsoft.CodeAnalysis.Host.Mef.MefHostServices
+  type: Class
+- id: Microsoft.CodeAnalysis.Host.Mef.ServiceLayer
+  yaml: api\Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.yaml
+  href: api\Microsoft.CodeAnalysis.Host.Mef.ServiceLayer
+  type: Class
+  summary: >+
+    The layer of an exported service.
+
+
+
+    If there are multiple definitions of a service, the [Microsoft.CodeAnalysis.Host.Mef.ServiceLayer](api\Microsoft.CodeAnalysis.Host.Mef.ServiceLayer) is used to determine which is used.
+
+- id: Microsoft.CodeAnalysis.Host.Mef.ExportLanguageServiceAttribute
+  yaml: api\Microsoft.CodeAnalysis.Host.Mef.ExportLanguageServiceAttribute.yaml
+  href: api\Microsoft.CodeAnalysis.Host.Mef.ExportLanguageServiceAttribute
+  type: Class
+  summary: >+
+    Use this attribute to declare a [Microsoft.CodeAnalysis.Host.ILanguageService](api\Microsoft.CodeAnalysis.Host.ILanguageService) implementation for inclusion in a MEF-based workspace.
+
+- id: Microsoft.CodeAnalysis.Host.Mef.ExportLanguageServiceFactoryAttribute
+  yaml: api\Microsoft.CodeAnalysis.Host.Mef.ExportLanguageServiceFactoryAttribute.yaml
+  href: api\Microsoft.CodeAnalysis.Host.Mef.ExportLanguageServiceFactoryAttribute
+  type: Class
+  summary: >+
+    Use this attribute to declare a [Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory](api\Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory) implementation for inclusion in a MEF-based workspace.
+
+- id: Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory
+  yaml: api\Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory.yaml
+  href: api\Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory
+  type: Interface
+  summary: >+
+    A factory that creates instances of a specific [Microsoft.CodeAnalysis.Host.ILanguageService](api\Microsoft.CodeAnalysis.Host.ILanguageService).
+
+
+
+    Implement a [Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory](api\Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory) when you want to provide [Microsoft.CodeAnalysis.Host.ILanguageService](api\Microsoft.CodeAnalysis.Host.ILanguageService) instances that use other services.
+
+- id: Microsoft.CodeAnalysis.Host.Mef.ExportWorkspaceServiceAttribute
+  yaml: api\Microsoft.CodeAnalysis.Host.Mef.ExportWorkspaceServiceAttribute.yaml
+  href: api\Microsoft.CodeAnalysis.Host.Mef.ExportWorkspaceServiceAttribute
+  type: Class
+  summary: >+
+    Use this attribute to declare a [Microsoft.CodeAnalysis.Host.IWorkspaceService](api\Microsoft.CodeAnalysis.Host.IWorkspaceService) implementation for inclusion in a MEF-based workspace.
+
+- id: Microsoft.CodeAnalysis.Host.Mef.ExportWorkspaceServiceFactoryAttribute
+  yaml: api\Microsoft.CodeAnalysis.Host.Mef.ExportWorkspaceServiceFactoryAttribute.yaml
+  href: api\Microsoft.CodeAnalysis.Host.Mef.ExportWorkspaceServiceFactoryAttribute
+  type: Class
+  summary: >+
+    Use this attribute to declare a [Microsoft.CodeAnalysis.Host.Mef.IWorkspaceServiceFactory](api\Microsoft.CodeAnalysis.Host.Mef.IWorkspaceServiceFactory) implementation for inclusion in a MEF-based workspace.
+
+- id: Microsoft.CodeAnalysis.Host.Mef.IWorkspaceServiceFactory
+  yaml: api\Microsoft.CodeAnalysis.Host.Mef.IWorkspaceServiceFactory.yaml
+  href: api\Microsoft.CodeAnalysis.Host.Mef.IWorkspaceServiceFactory
+  type: Interface
+  summary: >+
+    A factory that creates instances of a specific [Microsoft.CodeAnalysis.Host.IWorkspaceService](api\Microsoft.CodeAnalysis.Host.IWorkspaceService).
+
+
+
+    Implement a [Microsoft.CodeAnalysis.Host.Mef.IWorkspaceServiceFactory](api\Microsoft.CodeAnalysis.Host.Mef.IWorkspaceServiceFactory) when you want to provide [Microsoft.CodeAnalysis.Host.IWorkspaceService](api\Microsoft.CodeAnalysis.Host.IWorkspaceService) instances that use other services.
+
+- id: Microsoft.CodeAnalysis.Host.ICompilationFactoryService
+  yaml: api\Microsoft.CodeAnalysis.Host.ICompilationFactoryService.yaml
+  href: api\Microsoft.CodeAnalysis.Host.ICompilationFactoryService
+  type: Interface
+- id: Microsoft.CodeAnalysis.Host.ILanguageService
+  yaml: api\Microsoft.CodeAnalysis.Host.ILanguageService.yaml
+  href: api\Microsoft.CodeAnalysis.Host.ILanguageService
+  type: Interface
+  summary: >+
+    Empty interface just to mark language services.
+
+- id: Microsoft.CodeAnalysis.Host.HostLanguageServices
+  yaml: api\Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
+  href: api\Microsoft.CodeAnalysis.Host.HostLanguageServices
+  type: Class
+  summary: >+
+    Per language services provided by the host environment.
+
+- id: Microsoft.CodeAnalysis.Host.HostServices
+  yaml: api\Microsoft.CodeAnalysis.Host.HostServices.yaml
+  href: api\Microsoft.CodeAnalysis.Host.HostServices
+  type: Class
+  summary: >+
+    Services provided by the host environment.
+
+- id: Microsoft.CodeAnalysis.Host.IPersistentStorage
+  yaml: api\Microsoft.CodeAnalysis.Host.IPersistentStorage.yaml
+  href: api\Microsoft.CodeAnalysis.Host.IPersistentStorage
+  type: Interface
+- id: Microsoft.CodeAnalysis.Host.IPersistentStorageService
+  yaml: api\Microsoft.CodeAnalysis.Host.IPersistentStorageService.yaml
+  href: api\Microsoft.CodeAnalysis.Host.IPersistentStorageService
+  type: Interface
+  summary: >+
+    This service allows you to persist information relative to solution, projects and documents.
+
+- id: Microsoft.CodeAnalysis.Host.ITemporaryTextStorage
+  yaml: api\Microsoft.CodeAnalysis.Host.ITemporaryTextStorage.yaml
+  href: api\Microsoft.CodeAnalysis.Host.ITemporaryTextStorage
+  type: Interface
+  summary: >+
+    TemporaryStorage can be used to read and write text to a temporary storage location.
+
+- id: Microsoft.CodeAnalysis.Host.ITemporaryStreamStorage
+  yaml: api\Microsoft.CodeAnalysis.Host.ITemporaryStreamStorage.yaml
+  href: api\Microsoft.CodeAnalysis.Host.ITemporaryStreamStorage
+  type: Interface
+- id: Microsoft.CodeAnalysis.Host.ITemporaryStorageService
+  yaml: api\Microsoft.CodeAnalysis.Host.ITemporaryStorageService.yaml
+  href: api\Microsoft.CodeAnalysis.Host.ITemporaryStorageService
+  type: Interface
+  summary: >+
+    This service allows you to access temporary storage.
+
+- id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices
+  yaml: api\Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
+  href: api\Microsoft.CodeAnalysis.Host.HostWorkspaceServices
+  type: Class
+  summary: >+
+    Per workspace services provided by the host environment.
+
+- id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.MetadataFilter
+  yaml: api\Microsoft.CodeAnalysis.Host.HostWorkspaceServices.MetadataFilter.yaml
+  href: api\Microsoft.CodeAnalysis.Host.HostWorkspaceServices.MetadataFilter
+  type: Delegate
+- id: Microsoft.CodeAnalysis.Host.IWorkspaceService
+  yaml: api\Microsoft.CodeAnalysis.Host.IWorkspaceService.yaml
+  href: api\Microsoft.CodeAnalysis.Host.IWorkspaceService
+  type: Interface
+  summary: >+
+    Empty interface just to mark workspace services.
+

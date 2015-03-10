@@ -1,0 +1,68 @@
+id: Microsoft.CodeAnalysis.Recommendations.Recommender
+yaml: api\Microsoft.CodeAnalysis.Recommendations.Recommender.yaml
+href: api\Microsoft.CodeAnalysis.Recommendations.Recommender
+name:
+  CSharp: Recommender
+qualifiedName:
+  CSharp: Recommender
+type: Class
+source:
+  remote:
+    branch: master
+    repo: https://github.com/chenkennt/roslyn.git
+    local: C:\roslyn\
+    sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+  path: src\Workspaces\Core\Portable\Recommendations\Recommender.cs
+  startLine: 10
+syntax:
+  content:
+    CSharp: public static class Recommender
+inheritance:
+- id: System.Object
+  href: System.Runtime
+  isExternal: true
+items:
+- id: Microsoft.CodeAnalysis.Recommendations.Recommender.GetRecommendedSymbolsAtPosition(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.Workspace,Microsoft.CodeAnalysis.Options.OptionSet,System.Threading.CancellationToken)
+  yaml: api\Microsoft.CodeAnalysis.Recommendations.Recommender.yaml
+  href: api\Microsoft.CodeAnalysis.Recommendations.Recommender
+  name:
+    CSharp: GetRecommendedSymbolsAtPosition
+  qualifiedName:
+    CSharp: GetRecommendedSymbolsAtPosition
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Workspaces\Core\Portable\Recommendations\Recommender.cs
+    startLine: 12
+  syntax:
+    content:
+      CSharp: public static IEnumerable<ISymbol> GetRecommendedSymbolsAtPosition(SemanticModel semanticModel, int position, Workspace workspace, OptionSet options = null, CancellationToken cancellationToken = default (CancellationToken))
+    parameters:
+    - id: semanticModel
+      type:
+        id: SemanticModel
+        href: C:\roslyn\src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+    - id: position
+      type:
+        id: System.Int32
+        href: System.Runtime
+        isExternal: true
+    - id: workspace
+      type:
+        id: Workspace
+        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Workspace.cs
+    - id: options
+      type:
+        id: OptionSet
+        href: C:\roslyn\src\Workspaces\Core\Portable\Options\OptionSet.cs
+    - id: cancellationToken
+      type:
+        id: System.Threading.CancellationToken
+        href: System.Threading.Tasks
+        isExternal: true
+    return:
+      id: IEnumerable

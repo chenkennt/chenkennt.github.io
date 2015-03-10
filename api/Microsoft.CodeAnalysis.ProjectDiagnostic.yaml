@@ -1,0 +1,98 @@
+id: Microsoft.CodeAnalysis.ProjectDiagnostic
+yaml: api\Microsoft.CodeAnalysis.ProjectDiagnostic.yaml
+href: api\Microsoft.CodeAnalysis.ProjectDiagnostic
+name:
+  CSharp: ProjectDiagnostic
+qualifiedName:
+  CSharp: ProjectDiagnostic
+type: Class
+source:
+  remote:
+    branch: master
+    repo: https://github.com/chenkennt/roslyn.git
+    local: C:\roslyn\
+    sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+  path: src\Workspaces\Core\Portable\Workspace\Solution\ProjectDiagnostic.cs
+  startLine: 4
+syntax:
+  content:
+    CSharp: public class ProjectDiagnostic
+inheritance:
+- id: System.Object
+  href: System.Runtime
+  isExternal: true
+- id: WorkspaceDiagnostic
+  href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\WorkspaceDiagnostic.cs
+items:
+- id: Microsoft.CodeAnalysis.ProjectDiagnostic.ProjectId
+  yaml: api\Microsoft.CodeAnalysis.ProjectDiagnostic.yaml
+  href: api\Microsoft.CodeAnalysis.ProjectDiagnostic
+  name:
+    CSharp: ProjectId
+  qualifiedName:
+    CSharp: ProjectId
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Workspaces\Core\Portable\Workspace\Solution\ProjectDiagnostic.cs
+    startLine: 6
+  syntax:
+    content:
+      CSharp: public ProjectId ProjectId
+    parameters:
+    - id: ProjectId
+      type:
+        id: ProjectId
+        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\ProjectId.cs
+- id: Microsoft.CodeAnalysis.ProjectDiagnostic.get_ProjectId
+  yaml: api\Microsoft.CodeAnalysis.ProjectDiagnostic.yaml
+  href: api\Microsoft.CodeAnalysis.ProjectDiagnostic
+  name:
+    CSharp: get_ProjectId
+  qualifiedName:
+    CSharp: get_ProjectId
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Workspaces\Core\Portable\Workspace\Solution\ProjectDiagnostic.cs
+    startLine: 6
+- id: Microsoft.CodeAnalysis.ProjectDiagnostic.#ctor(Microsoft.CodeAnalysis.WorkspaceDiagnosticKind,System.String,Microsoft.CodeAnalysis.ProjectId)
+  yaml: api\Microsoft.CodeAnalysis.ProjectDiagnostic.yaml
+  href: api\Microsoft.CodeAnalysis.ProjectDiagnostic
+  name:
+    CSharp: .ctor
+  qualifiedName:
+    CSharp: .ctor
+  type: Constructor
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      local: C:\roslyn\
+      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
+    path: src\Workspaces\Core\Portable\Workspace\Solution\ProjectDiagnostic.cs
+    startLine: 8
+  syntax:
+    content:
+      CSharp: 'public ProjectDiagnostic(WorkspaceDiagnosticKind kind, string message, ProjectId projectId): base (kind, message)'
+    parameters:
+    - id: kind
+      type:
+        id: WorkspaceDiagnosticKind
+        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\WorkspaceDiagnosticKind.cs
+    - id: message
+      type:
+        id: System.String
+        href: System.Runtime
+        isExternal: true
+    - id: projectId
+      type:
+        id: ProjectId
+        href: C:\roslyn\src\Workspaces\Core\Portable\Workspace\Solution\ProjectId.cs
