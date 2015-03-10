@@ -1,3 +1,4 @@
+
 ---
 id: Microsoft.CodeAnalysis.Formatting.Formatter
 ---
