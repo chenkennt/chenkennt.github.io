@@ -2,9 +2,12 @@
 id: Microsoft.CodeAnalysis.Formatting.Formatter
 ---
 
-## How to use Formatter to format code
+This class is used to format the source code text with proper spacing and indent.
+To format a source code text, you need to first get a [Microsoft.CodeAnalysis.Document](api\Microsoft.CodeAnalysis.Document) of the source code, usually you can use 
 
-Here is an example of how to use Formatter to format C# source code:
+## Example
+
+Here is a code example of how to use Formatter to format C# source code:
 
 ```csharp
 // Please reference the following assemblies to make the sample code work:
