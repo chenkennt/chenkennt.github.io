@@ -1,6 +1,9 @@
 hello
 
 
+---
+id: Microsoft.CodeAnalysis.Formatting.Formatter
+---
 
 ## How to use Formatter to format code
 
