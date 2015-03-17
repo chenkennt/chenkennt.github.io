@@ -26,7 +26,7 @@
                             <div class="inheritance-table-line">
                                 <div ng-repeat="inhe in model.inheritance">
     <span wi ng-repeat="i in getNumber($index + 1) track by $index"></span>|--
-                                    <a ng-href={{inhe.href}}>{{inhe.id}}</a>
+                                    <a ng-href=#{{inhe.href}}>{{inhe.id}}</a>
                                 </div>
                                 <div class="inheritance-table-last-line">
     <span ng-repeat="i in getNumber(model.inheritance.length + 1) track by $index"></span>|--
@@ -37,13 +37,13 @@
                 </section>
             </div>
             <section id="article-body">
-                <div class="section" ng-repeat="itemtype in model.itemtypes">
-                    <h3 class="section-name" ng-if="itemtype.show">{{itemtype.description}}</h3>
-                    <ulu class="section-members"  ng-repeat="item in model.items" ng-if="item.type==itemtype.name">
+                <div class="section" ng-repeat="itemtype in itemtypes">
+                    <h3 class="section-name" ng-show="itemtype.show">{{itemtype.description}}</h3>
+                    <ul class="section-members"  ng-repeat="item in model.items" ng-show="item.type==itemtype.name">
                         <li class="section-member" ng-mouseleave="showBtn = false" ng-mouseenter ="showBtn = true" ng-init="showBtn=false">
                             <div class="section-member-header" >
                                 <h3 class="section-member-name">
-                                    {{item.name.CSharp}}
+                                    {{item.name.CSharp.replace(',', ', ')}}
                                 </h3>
                                 <div class="view-source btn" ng-show="showBtn">
                                     <a ng-href="{{ViewSource(item.source.startLine)}}">View Source</a>
@@ -76,9 +76,29 @@
                                         <div class="methodsyntax-section" ng-if="item.syntax">
                                             <div class="declaration">
                                                 <h4>Declaration </h4>
-                                                  {{item.syntax.content.CSharp}}
+                                                <declaration ng-model="item.syntax.content.CSharp">
+                                                </declaration>
                                             </div>
-                                            <div class="parameters" ng-if="item.syntax.parameters" >
+                                            <div class="parameters" ng-if="item.syntax.parameters && item.type == 'Property'" >
+                                                <h4>Property Value</h4>
+                                                <table class="graybox" border="0" cellspacing="0" cellpadding="5">
+                                                    <tbody>
+                                                        <tr ng-repeat="par in item.syntax.parameters">
+                                                            <td scope="row">
+                                                                <a ng-href="#{{par.type.href}}">{{par.type.id}}</a>
+                                                            </td>
+                                                            <td>
+                                                                <div class="definition">
+                                                                    <p class="para">
+                                                                        {{par.description}}
+                                                                    </p>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="parameters" ng-if="item.syntax.parameters && item.type != 'Property'" >
                                                 <h4>Parameters</h4>
                                                 <table class="graybox" border="0" cellspacing="0" cellpadding="5">
                                                     <tbody>
@@ -106,7 +126,7 @@
                                                     <tbody>
                                                         <tr>
                                                             <td scope="row">
-                                                                <a ng-href="{{item.syntax.return.type.href}}">{{item.syntax.return.id}}</a>
+                                                                <a ng-href="#{{item.syntax.return.type.href}}">{{item.syntax.return.id}}</a>
                                                             </td>
                                                             <td>
                                                                 <div class="definition">

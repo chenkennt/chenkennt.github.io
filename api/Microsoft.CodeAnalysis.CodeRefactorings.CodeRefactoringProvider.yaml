@@ -1,23 +1,23 @@
 id: Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider
-yaml: api\Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider.yaml
-href: api\Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider
+yaml: api/Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider.yaml
+href: api/Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider
 name:
   CSharp: CodeRefactoringProvider
 qualifiedName:
-  CSharp: CodeRefactoringProvider
+  CSharp: Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider
 type: Class
 source:
   remote:
     branch: master
     repo: https://github.com/chenkennt/roslyn.git
-    local: C:\roslyn\
-    sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
-  path: src\Workspaces\Core\Portable\CodeRefactorings\CodeRefactoringProvider.cs
+    local: C:/roslyn/
+    sha1: 8c49d3e937ebadb974cebab7db31e1800918265d
+  path: src/Workspaces/Core/Portable/CodeRefactorings/CodeRefactoringProvider.cs
   startLine: 10
 summary: >+
   Inherit this type to provide source code refactorings.
 
-  Remember to use [Microsoft.CodeAnalysis.CodeRefactorings.ExportCodeRefactoringProviderAttribute](#/api\Microsoft.CodeAnalysis.CodeRefactorings.ExportCodeRefactoringProviderAttribute) so the host environment can offer your refactorings in a UI.
+  Remember to use [Microsoft.CodeAnalysis.CodeRefactorings.ExportCodeRefactoringProviderAttribute](#/api/Microsoft.CodeAnalysis.CodeRefactorings.ExportCodeRefactoringProviderAttribute) so the host environment can offer your refactorings in a UI.
 
 syntax:
   content:
@@ -25,27 +25,26 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider.ComputeRefactoringsAsync(Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext)
-  yaml: api\Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider.yaml
-  href: api\Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider
+  yaml: api/Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider.yaml
+  href: api/Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider
   name:
     CSharp: ComputeRefactoringsAsync
   qualifiedName:
-    CSharp: ComputeRefactoringsAsync
+    CSharp: Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider.ComputeRefactoringsAsync(Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext)
   type: Method
   source:
     remote:
       branch: master
       repo: https://github.com/chenkennt/roslyn.git
-      local: C:\roslyn\
-      sha1: e46ffcafeeb87a2d139b531f48416f783d9fe89d
-    path: src\Workspaces\Core\Portable\CodeRefactorings\CodeRefactoringProvider.cs
+      local: C:/roslyn/
+      sha1: 8c49d3e937ebadb974cebab7db31e1800918265d
+    path: src/Workspaces/Core/Portable/CodeRefactorings/CodeRefactoringProvider.cs
     startLine: 15
   summary: >+
-    Computes one or more refactorings for the specified [Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext](#/api\Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext).
+    Computes one or more refactorings for the specified [Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext](#/api/Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext).
 
   syntax:
     content:
@@ -55,6 +54,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext
         name: CodeRefactoringContext
-        href: api\Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext
+        href: api/Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext
     return:
       id: Task

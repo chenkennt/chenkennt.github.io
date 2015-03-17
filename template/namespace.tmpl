@@ -21,23 +21,23 @@
                 </section>
             </div>
             <section id="article-body">
-                <div class="section" ng-repeat="itemtype in model.itemtypes" >
-                    <h3 class="section-name" ng-if="itemtype.show">{{itemtype.description}}</h3>
-                      <table>
-                          <tr ng-repeat="item in model.items" ng-if="item.type==itemtype.name">
-                              <td>
-                                  <a href="#{{item.href}}">
-                                      {{item.id}}
-                                  </a>
-                              </td>
-                              <td>
-                                  <div class="md-section">
-                                    <markdown ng-model="item.summary">
-                                      </markdown>
-                                  </div>
-                              </td>
-                          </tr>
-                    </table>
+                <div class="section" ng-repeat="itemtype in itemtypes" >
+                  <h3 class="section-name" ng-show="itemtype.show">{{itemtype.description}}</h3>
+                  <table ng-show="itemtype.show">
+                      <tr ng-repeat="item in model.items" ng-show="item.type==itemtype.name">
+                          <td>
+                              <a href="#{{item.href}}">
+                                  {{item.id.replace(model.id + '.', '')}}
+                              </a>
+                          </td>
+                          <td>
+                              <div class="md-section">
+                                <markdown ng-model="item.summary">
+                                  </markdown>
+                              </div>
+                          </td>
+                      </tr>
+                </table>
                 </div>
             </section>
         </article>
