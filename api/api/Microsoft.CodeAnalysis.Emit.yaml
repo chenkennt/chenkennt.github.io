@@ -1,0 +1,50 @@
+id: Microsoft.CodeAnalysis.Emit
+href: Microsoft.CodeAnalysis.Emit.yaml
+name:
+  CSharp: Emit
+qualifiedName:
+  CSharp: Microsoft.CodeAnalysis.Emit
+type: Namespace
+source:
+  remote:
+    branch: master
+    repo: https://github.com/chenkennt/roslyn.git
+    description: v1.0-12-gef085ea
+  path: src/Compilers/Core/Portable/Emit/TypeExport.cs
+  startLine: 6
+items:
+- id: Microsoft.CodeAnalysis.Emit.DebugInformationFormat
+  href: Microsoft.CodeAnalysis.Emit.DebugInformationFormat.yaml
+  type: Enum
+- id: Microsoft.CodeAnalysis.Emit.EmitOptions
+  href: Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  type: Class
+  summary: Represents compilation emit options.
+- id: Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation
+  href: Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation.yaml
+  type: Struct
+  summary: Debugging information associated with the specified method that is emitted by the compiler to support Edit and Continue.
+- id: Microsoft.CodeAnalysis.Emit.EmitResult
+  href: Microsoft.CodeAnalysis.Emit.EmitResult.yaml
+  type: Class
+  summary: The result of the Compilation.Emit method.
+- id: Microsoft.CodeAnalysis.Emit.EmitBaseline
+  href: Microsoft.CodeAnalysis.Emit.EmitBaseline.yaml
+  type: Class
+  summary: >-
+    Represents a module from a previous compilation. Used in Edit and Continue
+
+    to emit the differences in a subsequent compilation.
+- id: Microsoft.CodeAnalysis.Emit.EmitDifferenceResult
+  href: Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.yaml
+  type: Class
+- id: Microsoft.CodeAnalysis.Emit.SemanticEditKind
+  href: Microsoft.CodeAnalysis.Emit.SemanticEditKind.yaml
+  type: Enum
+- id: Microsoft.CodeAnalysis.Emit.SemanticEdit
+  href: Microsoft.CodeAnalysis.Emit.SemanticEdit.yaml
+  type: Struct
+  summary: >-
+    Describes a symbol edit between two compilations.
+
+    For example, an addition of a method, an update of a method, removal of a type, etc.
