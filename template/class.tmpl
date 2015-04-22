@@ -8,8 +8,7 @@
       <a class="btn pull-right" ng-href={{::getViewSourceHref()}}>
         <span class="glyphicon glyphicon-eye-open">&nbsp;</span>View Source
       </a>
-      <h1 ng-if="::model.name.CSharp">{{::model.type}} {{::model.name.CSharp}}</h1>
-      <h1 ng-if="::(!model.name.CSharp && model.name.VB)">{{::model.type}} {{::model.name.VB}}</h1>
+      <h1>{{::model.type}} {{::model.name}}</h1>
       <section>
         <markdown ng-model="model.summary"></markdown>
       </section>
@@ -27,15 +26,22 @@
             </div>
             <div class="">
               <span ng-repeat="i in ::getNumber(model.inheritance.length) track by $index"></span>↳
-              <a>{{::model.id}}</a>
+              <a>{{::model.uid}}</a>
             </div>
           </div>
         </div>
       </section>
+
+      <div class="" ng-if="::model.syntax">
+        <div class="declaration">
+          <h5>Syntax</h5>
+            <pre><code class="sudo-pre" ng-model="model.syntax.content"></code></pre>
+        </div>
+      </div>
     </div>
 
     <section id="article-body">
-      <div class="" ng-repeat="itemtype in ::itemtypes">
+      <div class="" ng-repeat="itemtype in ::partialModel.itemtypes">
         <h3 class="" ng-if="::itemtype.show">{{::itemtype.description}}</h3>
         <div class=""  ng-repeat="item in ::model.items" ng-if="::(item.type == itemtype.name)">
           <div class="item-section">
@@ -48,11 +54,8 @@
                 </span>
               </div>
               <a class="item-toggle" ng-init="item.showDetail = false" ng-click="item.showDetail = !item.showDetail">
-                <div class="item-title" ng-if="::item.name.CSharp">
-                  {{::item.name.CSharp.replace(',', ', ').replace(',', ', ').replace(',', ', ')}}
-                </div>
-                <div class="item-title" ng-if="::(!item.name.CSharp && item.name.VB)">
-                  {{::item.name.VB.replace(',', ', ').replace(',', ', ').replace(',', ', ')}}
+                <div class="item-title">
+                  {{item.name}}
                 </div>
               </a>
             </div>

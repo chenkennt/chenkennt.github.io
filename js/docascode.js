@@ -59,7 +59,7 @@
       if (!path) return valueHttpWrapper(null);
       var tempMdIndex;
       var pathInfo = urlService.getPathInfo(path);
-      path = urlService.normalizeUrl((pathInfo.tocPath || '') + '/' + 'md.yaml');
+      path = urlService.normalizeUrl((pathInfo.tocPath || '') + '/' + constants.MdIndexFile);
 
       if (path) {
         tempMdIndex = mdIndexCache.get(path);
@@ -294,8 +294,8 @@
       // seperate toc and content with !
       var index = currentPath.indexOf(docConstants.TocAndFileUrlSeperator);
       if (index < 0) {
-        // If it ends with .md/.yaml, render it without toc
-        if ((/(\.yaml$)|(\.md$)/g).test(currentPath)) {
+        // If it ends with .md/.yml, render it without toc
+        if ((docConstants.MdOrYamlRegexExp).test(currentPath)) {
           return {
             contentPath: currentPath
           };
@@ -446,7 +446,7 @@
     this.getMdContent = function($scope, path, mdIndexCache) {
       if (!path) return;
       var pathInfo = this.getPathInfo(path);
-      var mdPath = normalizeUrl((pathInfo.tocPath || '') + '/' + 'md.yaml');
+      var mdPath = normalizeUrl((pathInfo.tocPath || '') + '/' + docConstants.MdIndexFile);
 
       if (mdPath) {
         var tempMdIndex = mdIndexCache.get(mdPath);
@@ -963,7 +963,13 @@ angular.module('bootstrap', [])
     'use strict';
      /*jshint validthis:true */
     function provider() {
-        this.TocFile = 'toc.yaml'; // docConstants.TocFile
+        this.YamlExtension = '.yml';
+        this.MdExtension = '.md';
+        this.YamlRegexExp = /\.yml$/;
+        this.MdRegexExp = /\.md$/;
+        this.MdOrYamlRegexExp = /(\.yml$)|(\.md$)/;
+        this.MdIndexFile = 'md' + this.YamlExtension;
+        this.TocFile = 'toc' + this.YamlExtension; // docConstants.TocFile
         this.TocAndFileUrlSeperator = '!'; // docConstants.TocAndFileUrlSeperator
     }
 
@@ -974,15 +980,15 @@ angular.module('bootstrap', [])
 (function() {
   'use strict';
 
-  angular.module('docascode.controller', ['docascode.contentService', 'docascode.urlService', 'docascode.directives'])
+  angular.module('docascode.controller', ['docascode.contentService', 'docascode.urlService', 'docascode.directives', 'docascode.constants'])
     .controller('DocsController', [
       '$scope', '$http', '$q', '$rootScope', '$location', '$window', '$cookies', '$timeout',
-      'NG_PAGES', 'NG_VERSION', 'NG_ITEMTYPES', 'contentService', 'urlService',
+      'NG_PAGES', 'NG_VERSION', 'NG_ITEMTYPES', 'contentService', 'urlService', 'docConstants',
       DocsCtrl
     ]);
 
   function DocsCtrl($scope, $http, $q, $rootScope, $location, $window, $cookies, $timeout,
-    NG_PAGES, NG_VERSION, NG_ITEMTYPES, contentService, urlService) {
+    NG_PAGES, NG_VERSION, NG_ITEMTYPES, contentService, urlService, docConstants) {
 
     /**********************************
      Initialize
@@ -1043,8 +1049,9 @@ angular.module('bootstrap', [])
 
     // expand / collapse all logic for model items
     function expandAll(state) {
-      if ($scope.partialModel.items) {
-        $scope.partialModel.items.forEach(function(e) {
+      var partialModel = $scope.partialModel? $scope.partialModel.model : null;
+      if (partialModel && partialModel.items) {
+        partialModel.items.forEach(function(e) {
           e.showDetail = state;
         });
       }
@@ -1083,7 +1090,7 @@ angular.module('bootstrap', [])
           });
     });
 
-    // #a/b/c!d/e/f => a/b/c/toc.yaml as toc, d/e/f as content
+    // #a/b/c!d/e/f => a/b/c/toc.yml as toc, d/e/f as content
     $scope.$watch(function docsPathWatch() {
       return $location.path();
     }, function docsPathWatchAction(path) {
@@ -1106,10 +1113,14 @@ angular.module('bootstrap', [])
           // If end with .md
           if ((/\.md$/g).test(path)) {
             $scope.contentType = 'md';
-            $scope.partialModel = {};
-            $scope.title = path;
-            $scope.partialPath = path;
-          } else if ((/\.yaml$/g).test(path)) {
+
+            var partialModel = {
+              path: path,
+              title: path,
+            };
+
+            $scope.partialModel = partialModel;
+          } else if ((docConstants.YamlRegexExp).test(path)) {
             $scope.contentType = 'yaml';
             // if is yaml
             // 1. try get md.yaml from the same path as toc, or current path if toc is not there
@@ -1118,24 +1129,13 @@ angular.module('bootstrap', [])
             });
 
             contentService.getContent(path).then(function(data) {
-                var model = $scope.partialModel = data;
-                if (model instanceof Array) {
-                  // toc list
-                  $scope.partialPath = 'template' + '/tocpage.tmpl';
-                } else {
-                  $scope.title = model.id;
-                  if (model.type.toLowerCase() === 'namespace') {
-                    $scope.itemtypes = urlService.setItemTypeVisiblity(NG_ITEMTYPES.namespace, model.items);
-                    $scope.partialPath = 'template' + '/namespace.tmpl';
-                  } else {
-                    $scope.itemtypes = urlService.setItemTypeVisiblity(NG_ITEMTYPES.class, model.items);
-                    $scope.partialPath = 'template' + '/class.tmpl';
-                  }
-                }
+                $scope.partialModel = partialModelHandler(data);
               }).catch(
               function() {
+                $scope.partialModel = {
+                  path : 'template/error404.tmpl',
+                };
                 $scope.breadcrumb = [];
-                $scope.partialPath = 'template/error404.tmpl';
               }
             );
           } else {
@@ -1143,14 +1143,60 @@ angular.module('bootstrap', [])
             $scope.partialPath = path;
           }
         }
-
       } else {
         if ($scope.navbar && $scope.navbar.length > 0) {
           $location.url($scope.navbar[0].href);
         }
       }
-
     });
+
+    function partialModelHandler(data) {
+      var partialModel = {
+        model: undefined,
+        path: undefined,
+        title: undefined,
+        itemtypes: undefined,
+      };
+      if (data instanceof Array) {
+        // toc list
+        partialModel.path = 'template' + '/tocpage.tmpl';
+        partialModel.model = data;
+      } else {
+        var items = data.items;
+        var references = data.references || [];
+
+        // TODO: what if items are not in order? what if items are not arranged as expected, e.g. multiple namespaces in one yml?
+        var item = items[0];
+        references = items.slice(1).concat(references || []);
+        if (item.children){
+          var children = [];
+          for(var i = 0, l = item.children.length; i < l; i++) {
+            var matched = references.filter(getItemWithSameUidFunction(item.children[i]))[0] || {};
+            if (matched.uid){
+              children.push(matched);
+            }
+          }
+          item.items = children;
+        }
+
+        partialModel.model = item;
+        partialModel.title = item.name;
+        if (item.type.toLowerCase() === 'namespace') {
+          partialModel.itemtypes = urlService.setItemTypeVisiblity(NG_ITEMTYPES.namespace, item.items);
+          partialModel.path = 'template' + '/namespace.tmpl';
+        } else {
+          partialModel.itemtypes = urlService.setItemTypeVisiblity(NG_ITEMTYPES.class, item.items);
+          partialModel.path = 'template' + '/class.tmpl';
+        }
+      }
+      return partialModel;
+    }
+
+    function getItemWithSameUidFunction(child){
+      return function(x) {
+              return x.uid === child;
+            };
+    }
 
     function getMdItemIndex(item, tocPath, mdPath, mdInitial, mdResolved) {
         var itemHref = (tocPath || '') + '/' + item.href;
@@ -1175,10 +1221,12 @@ angular.module('bootstrap', [])
     // BUG? method's binding works? looks like not
     function mdIndexWatcher(path) {
         if ($scope.mdIndex && $scope.partialModel) {
-            var mdPath = $scope.mdIndex[$scope.partialModel.id];
+          var partialModel = $scope.partialModel.model;
+          if (partialModel){
+            var mdPath = $scope.mdIndex[partialModel.id];
             if (mdPath) {
                 if (mdPath.href) {
-                    $scope.partialModel.mdHref = urlService.getRemoteUrl(mdPath);
+                    partialModel.mdHref = urlService.getRemoteUrl(mdPath);
                     var tocPath = urlService.getPathInfo($location.path()).tocPath;
                     var href = (tocPath || '') + '/' + mdPath.href;
                     var getMdIndex = contentService.getMarkdownContent(href).then(
@@ -1190,14 +1238,17 @@ angular.module('bootstrap', [])
                                   var item = mdPath.items[i];
                                   promise = promise.then(makeThenFunction(item, tocPath, mdPath, md));
                               }
-                              promise.then(function(md){$scope.partialModel.mdContent = md;});
+                              promise.then(function(md){
+                                partialModel.mdContent = md;
+                              });
                           }
                           else{
-                              $scope.partialModel.mdContent = md;
+                              partialModel.mdContent = md;
                           }
                       });
                 }
             }
+          }
         }
     }
 
@@ -1214,21 +1265,21 @@ angular.module('bootstrap', [])
         })[0] || {};
 
         breadcrumb.push({
-          name: navName.id,
+          name: navName.name,
           // use '/#/' to indicate this is a nav link...
           url: '/#/' + currentNav
         });
       }
       if (currentGroup) {
         breadcrumb.push({
-          name: currentGroup.id,
+          name: currentGroup.uid,
           url: currentGroup.href
         });
 
         // If toc does not exist, use navbar's title
         if (currentPage) {
           breadcrumb.push({
-            name: currentPage.id,
+            name: currentPage.name,
             url: currentPage.href
           });
         }

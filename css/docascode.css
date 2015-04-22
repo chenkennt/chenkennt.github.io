@@ -262,6 +262,9 @@ header .navbar {
 header .nav {
   margin-left: -15px;
 }
+.breadcrumb > li + li:before {
+  content: "\00a0/";
+}
 .sidenav {
   position: fixed;
   float: left;
@@ -274,7 +277,7 @@ header .nav {
   margin-right: -15px;
   padding: 15px 15px 100px 15px;
 }
-.sidenav .nav.ng-hide {
+.sidenav-lvl-1.ng-hide {
   display: block!important;
 }
 .sidenav .nav > li > a {
@@ -286,29 +289,49 @@ header .nav {
   background: none;
   text-decoration: inherit;
 }
+.sidenav .nav > li > a.sidenav-expand {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.sidenav-expand > .caret {
+  margin-left: 0px;
+  margin-top: -2px;
+}
+.sidenav-expand > .caret-side {
+  border-left: 4px solid;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  margin-left: 4px;
+  margin-top: -4px;
+}
 .sidenav-heading {
   font-family: 'Segoe UI Semibold', 'Segoe UI', Tahoma, Helvetica, sans-serif;
 }
-.sidenav .sidenav-lvl-1 > li {
-  margin-bottom: 15px;
+.sidenav .nav > li > a {
+  color: #777777;
 }
-/* second lvl navbar grey text */
-.sidenav .sidenav-lvl-2 > li > a {
-  color: #999999;
-}
-.sidenav .sidenav-lvl-2 > li > a:hover,
-.sidenav .sidenav-lvl-2 > li > a:focus {
+.sidenav .nav > li > a:hover,
+.sidenav .nav > li > a:focus {
   color: #000000;
 }
 .sidenav .nav > li.current > a {
   color: #b52e31;
+}
+.sidenav-lvl-1 > li {
+  padding-left: 15px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.sidenav-lvl-2 {
+  margin-top: 5px;
 }
 .toc-toggle {
   display: none;
   margin-bottom: 10px;
 }
 .article {
-  margin-top: 15px;
+  margin-top: 30px;
   margin-bottom: 15px;
 }
 .article.grid-right {
@@ -480,14 +503,14 @@ footer {
     background-color: #efefef;
     padding-bottom: 15px;
   }
-  .sidenav .sidenav-lvl-2 > li {
+  .sidenav-lvl-2 > li {
     display: inline-block;
   }
-  .sidenav .sidenav-lvl-2 > li:after {
+  .sidenav-lvl-2 > li:after {
     margin-left: -3px;
     margin-right: 5px;
     content: ", ";
-    color: #999999;
+    color: #777777;
   }
   .article.grid-right {
     margin-left: 0;
@@ -499,7 +522,7 @@ footer {
   .toc-toggle {
     display: block;
   }
-  .sidenav .nav.ng-hide {
+  .sidenav-lvl-1.ng-hide {
     display: none!important;
   }
 }

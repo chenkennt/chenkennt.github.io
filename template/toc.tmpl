@@ -1,16 +1,17 @@
 <a class="btn toc-toggle" ng-init="tocToggle = false" ng-click="tocToggle = !tocToggle">Show / Hide Table of Contents</a>
 <ul class="nav nav-stacked sidenav-lvl-1" ng-hide="tocToggle">
-  <li ng-repeat="navGroup in model track by navGroup.id" ng-class="tocClass(navGroup)">
-    <a ng-href="{{getTocHref(navGroup.href)}}" class="sidenav-heading">{{ navGroup.id }}</a>
-    <ul class="nav nav-stacked sidenav-lvl-2">
-      <li ng-repeat="navItem in navGroup.items" ng-class="tocClass(navItem)">
-        <a ng-if="navItem.extra.href" ng-class="tocClass(navItem.extra)" ng-href="{{getTocHref(navItem.extra.href)}}">
-          {{navItem.extra.text}}<i ng-if="navItem.extra.icon" class="icon-{{navItem.extra.icon}}"></i>
-        </a>
-        <a tabindex="2" ng-if="navItem.name.CSharp" ng-class="linkClass(navItem)" ng-href="{{getTocHref(navItem.href)}}">{{navItem.name.CSharp}}</a>
-        <a tabindex="2" ng-if="!navItem.name.CSharp && navItem.name.VB" ng-class="linkClass(navItem)" ng-href="{{getTocHref(navItem.href)}}">{{navItem.name.VB}}</a>
-        <a tabindex="2" ng-if="!navItem.name" ng-class="linkClass(navItem)" ng-href="{{getTocHref(navItem.href)}}">{{navItem.id.replace(navGroup.id + '.', '')}}</a>
-      </li>
-    </ul>
+  <li ng-repeat="navGroup in model track by $index" ng-class="tocClass(navGroup)">
+    <a ng-click="isCollapsed = !isCollapsed" class="sidenav-expand" ng-show="navGroup.items">
+      <span ng-hide="isCollapsed" class="caret"></span>
+      <span ng-hide="!isCollapsed" class="caret caret-side"></span>
+    </a>
+    <a ng-href="{{getTocHref(navGroup.href)}}" class="sidenav-heading">{{ navGroup.uid }}</a>
+    <div collapse="isCollapsed">
+      <ul ng-if="navGroup.items" class="nav nav-stacked sidenav-lvl-2">
+        <li ng-repeat="navItem in navGroup.items track by $index" ng-class="tocClass(navItem)">
+          <a tabindex="2" ng-class="linkClass(navItem)" ng-href="{{getTocHref(navItem.href)}}">{{navItem.name}}</a>
+        </li>
+      </ul>
+    </div>
   </li>
 </ul>

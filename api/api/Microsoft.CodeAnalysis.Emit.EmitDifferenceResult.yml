@@ -1,0 +1,45 @@
+items:
+- uid: Microsoft.CodeAnalysis.Emit.EmitDifferenceResult
+  href: Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.yml
+  name: EmitDifferenceResult
+  fullName: Microsoft.CodeAnalysis.Emit.EmitDifferenceResult
+  type: Class
+  source:
+    remote: &o0
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      description: v1.0-12-gef085ea
+    path: src/Compilers/Core/Portable/Emit/EditAndContinue/EmitDifferenceResult.cs
+    startLine: 6
+  syntax:
+    content:
+      CSharp: public sealed class EmitDifferenceResult
+  inheritance:
+  - id: System.Object
+    name: System.Object
+    isExternal: true
+  - id: Microsoft.CodeAnalysis.Emit.EmitResult
+    name: EmitResult
+    href: Microsoft.CodeAnalysis.Emit.EmitResult.yml
+  id: Microsoft.CodeAnalysis.Emit.EmitDifferenceResult
+  children:
+  - Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.Baseline
+- uid: Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.Baseline
+  href: Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.yml
+  name: Baseline
+  fullName: Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.Baseline
+  type: Property
+  source:
+    remote: *o0
+    path: src/Compilers/Core/Portable/Emit/EditAndContinue/EmitDifferenceResult.cs
+    startLine: 16
+  syntax:
+    content:
+      CSharp: public EmitBaseline Baseline { get; }
+    parameters:
+    - id: Baseline
+      type:
+        id: Microsoft.CodeAnalysis.Emit.EmitBaseline
+        name: EmitBaseline
+        href: Microsoft.CodeAnalysis.Emit.EmitBaseline.yml
+  id: Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.Baseline

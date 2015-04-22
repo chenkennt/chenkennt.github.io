@@ -1,0 +1,67 @@
+items:
+- uid: Microsoft.CodeAnalysis.Emit
+  href: Microsoft.CodeAnalysis.Emit.yml
+  name: Emit
+  fullName: Microsoft.CodeAnalysis.Emit
+  type: Namespace
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/chenkennt/roslyn.git
+      description: v1.0-12-gef085ea
+    path: src/Compilers/Core/Portable/Emit/TypeExport.cs
+    startLine: 6
+  id: Microsoft.CodeAnalysis.Emit
+  children:
+  - Microsoft.CodeAnalysis.Emit.DebugInformationFormat
+  - Microsoft.CodeAnalysis.Emit.EmitOptions
+  - Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation
+  - Microsoft.CodeAnalysis.Emit.EmitResult
+  - Microsoft.CodeAnalysis.Emit.EmitBaseline
+  - Microsoft.CodeAnalysis.Emit.EmitDifferenceResult
+  - Microsoft.CodeAnalysis.Emit.SemanticEditKind
+  - Microsoft.CodeAnalysis.Emit.SemanticEdit
+references:
+- uid: Microsoft.CodeAnalysis.Emit.DebugInformationFormat
+  href: Microsoft.CodeAnalysis.Emit.DebugInformationFormat.yml
+  name: DebugInformationFormat
+  type: Enum
+- uid: Microsoft.CodeAnalysis.Emit.EmitOptions
+  href: Microsoft.CodeAnalysis.Emit.EmitOptions.yml
+  name: EmitOptions
+  type: Class
+  summary: Represents compilation emit options.
+- uid: Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation
+  href: Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation.yml
+  name: EditAndContinueMethodDebugInformation
+  type: Struct
+  summary: Debugging information associated with the specified method that is emitted by the compiler to support Edit and Continue.
+- uid: Microsoft.CodeAnalysis.Emit.EmitResult
+  href: Microsoft.CodeAnalysis.Emit.EmitResult.yml
+  name: EmitResult
+  type: Class
+  summary: The result of the Compilation.Emit method.
+- uid: Microsoft.CodeAnalysis.Emit.EmitBaseline
+  href: Microsoft.CodeAnalysis.Emit.EmitBaseline.yml
+  name: EmitBaseline
+  type: Class
+  summary: >-
+    Represents a module from a previous compilation. Used in Edit and Continue
+
+    to emit the differences in a subsequent compilation.
+- uid: Microsoft.CodeAnalysis.Emit.EmitDifferenceResult
+  href: Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.yml
+  name: EmitDifferenceResult
+  type: Class
+- uid: Microsoft.CodeAnalysis.Emit.SemanticEditKind
+  href: Microsoft.CodeAnalysis.Emit.SemanticEditKind.yml
+  name: SemanticEditKind
+  type: Enum
+- uid: Microsoft.CodeAnalysis.Emit.SemanticEdit
+  href: Microsoft.CodeAnalysis.Emit.SemanticEdit.yml
+  name: SemanticEdit
+  type: Struct
+  summary: >-
+    Describes a symbol edit between two compilations.
+
+    For example, an addition of a method, an update of a method, removal of a type, etc.

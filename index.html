@@ -10,7 +10,7 @@
   <meta name="Description"
         content="Docascode with pure client-side JavaScript!">
   <meta name="fragment" content="!">
-  <title ng-bind-template="Docascode: {{ currentArea.name }}: {{ title || currentPage || 'Generating Documentations For You'}}">Docascode</title>
+  <title ng-bind-template="Docascode: {{ currentArea.name }}: {{ partialModel.title || currentPage || 'Generating Documentations For You'}}">Docascode</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css"></link>
@@ -65,7 +65,7 @@
       </div>
       <div class="subnav navbar navbar-default">
         <div class="container">
-            <div ng-if="partialModel.items" class="expand-all pull-right">
+            <div ng-if="partialModel.model.items" class="expand-all pull-right">
               <a ng-click = "expandAll(true);">Expand All</a>
               <span class="divider">|</span>
               <a ng-click = "expandAll(false);">Collapse All</a>
@@ -126,8 +126,8 @@
       </div>
       <div ng-class="{grid: !toc, 'grid-right': toc}" class="article">
         <div id="loading" ng-show="loading">Loading...</div>
-        <div markdown ng-if="contentType === 'md'" ng-hide="loading" ng-repeat="model in [partialModel]" ng-include="partialPath" autoscroll></div>
-          <div ng-if="contentType !== 'md'" ng-hide="loading" ng-repeat="model in [partialModel]" ng-include="partialPath" autoscroll></div>
+        <div markdown ng-if="contentType === 'md'" ng-hide="loading" ng-repeat="model in [partialModel.model]" ng-include="partialModel.path" autoscroll></div>
+          <div ng-if="contentType !== 'md'" ng-hide="loading" ng-repeat="model in [partialModel.model]" ng-include="partialModel.path" autoscroll></div>
       </div>
     </div>
     <footer>
@@ -136,7 +136,7 @@
         <div class="container">
           <span class="pull-right"><a back-to-top>Back to top</a></span>
           <span>
-            Super-powered by Microsoft Visual Studio China  ©2014-2015
+            Super-powered by Microsoft Visual Studio China  ©2014-2015<br />
             Code licensed under the MIT License
           </span>
         </div>
