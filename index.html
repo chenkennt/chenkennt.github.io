@@ -120,7 +120,7 @@
     </header>
 
     <div role="main" class="container">
-      <div class="sidenav" ng-if="toc">
+      <div ng-if="toc" class="grid-left sidenav">
         <div id="tocLoading" ng-show="tocLoading">Loading...</div>
         <div ng-hide="tocLoading" ng-if="toc" ng-repeat="model in [toc.content]" ng-include="'template/toc.tmpl'"></div>
       </div>

@@ -1007,7 +1007,7 @@ angular.module('bootstrap', [])
     $scope.getBreadCrumbHref =getBreadCrumbHref;
     $scope.getNavHref = getNavHref;
     $scope.getLinkHref = getLinkHref;
-
+    $scope.filteredItems = filteredItems;
     $scope.getNumber = function(num) { return new Array(num + 1); };
 
     /****************************************
@@ -1080,6 +1080,37 @@ angular.module('bootstrap', [])
     // Href relative to current file
     function getLinkHref(url) {
       return urlService.getHref($scope, $location.path(), url);
+    }
+
+    function filterNavItem(name, text) {
+      if (!text) return true;
+      if (name.indexOf(text) > -1) return true;
+      return false;
+    }
+
+    function filteredItems(f) {
+      /* jshint validthis: true */
+      var globalVisible = !f;
+      this.model.forEach(function(a, i, o) {
+        // show namespace if any of its child is visible
+        // show all the children if the namespace is visible
+        var firstLevelTocName = a.uid || a.name;
+        var hide = !globalVisible && !filterNavItem(firstLevelTocName, f);
+        var tempHide = hide;
+        if (a.items){
+          a.items.forEach(function(a1, i1, o1){
+            // support firstLevel.lastLevel format seach
+            var lastLevelFullName = firstLevelTocName + '.' + a1.name;
+            a1.hide = tempHide && !filterNavItem(lastLevelFullName, f);
+            if (!a1.hide){
+              // show firstLevel if any of its children is visible
+              hide = false;
+            }
+          });
+        }
+
+        a.hide = hide;
+      });
     }
 
     contentService.getNavBar().then(function(data) {
