@@ -1,0 +1,779 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title> | </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content=" | ">
+  
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:nav" content="toc.html">
+  <meta property="docfx:toc" content="reference/toc.html">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="../toc.html">
+</head>
+<body data-spy="scroll" data-target="#affix">
+  <div id="wrapper">
+    <header>
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img id="logo" class="svg" src="../../logo.svg" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content">
+      <div class="sidenav">
+        <a class="btn toc-toggle collapse">Show / Hide Table of Contents</a>
+        <div class="sidetoggle">
+          <div class="sidetoc">
+            <iframe id="sidetoc" src="../toc.html"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="article row grid-right"><div class="col-md-10">
+        <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/Microsoft.CSharp/src/Microsoft/CSharp/RuntimeBinder/Binder.cs/#L15" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="Binder">Class Binder</h1>
+      <div class="markdown level0 summary"><p>Contains factory methods to create dynamic call site binders for CSharp.</p><br></div>
+      <div class="markdown level0 conceptual"></div>
+      <div class="inheritance">
+        <h5>Inheritance</h5>
+        <div class="level0"><a href="System.Object.html" name="System.Object">Object</a></div>
+        <div class="level1">Microsoft.CSharp.RuntimeBinder.Binder</div>
+      </div>
+      <h6><strong>Namespace</strong>:Microsoft.CSharp.RuntimeBinder</h6>
+      <h6><strong>Assembly</strong>:Microsoft.CSharp.dll</h6>
+      <h5 id="Binder_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public class Binder</code></pre>
+      </div>
+      <h5 id="Binder_remarks">remarks</h5>
+      <div class="markdown level0 remarks"></div>
+<h3 id="methods">Methods</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/Microsoft.CSharp/src/Microsoft/CSharp/RuntimeBinder/Binder.cs/#L28"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="BinaryOperation_CSharpBinderFlags__ExpressionType__Type__IEnumerable_CSharpArgumentInfo__">BinaryOperation(CSharpBinderFlags, ExpressionType, Type, IEnumerable&lt;CSharpArgumentInfo&gt;)</h4>
+<div class="markdown level1 summary"><p>Initializes a new CSharp binary operation binder.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static CallSiteBinder BinaryOperation(CSharpBinderFlags flags, ExpressionType operation, Type context, IEnumerable<csharpargumentinfo> argumentInfo)</csharpargumentinfo></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.html" name="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags">CSharpBinderFlags</a></td>
+      <td><em>flags</em></td>
+      <td><p>The flags with which to initialize the binder.</p>
+</td>
+    </tr>
+    <tr>
+      <td>ExpressionType</td>
+      <td><em>operation</em></td>
+      <td><p>The binary operation kind.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Type.html" name="System.Type">Type</a></td>
+      <td><em>context</em></td>
+      <td><p>The <a href="System.Type.html">System.Type</a> that indicates where this operation is used.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.html" name="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo">CSharpArgumentInfo</a>&gt;</td>
+      <td><em>argumentInfo</em></td>
+      <td><p>The sequence of <a href="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.html">Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo</a> instances for the arguments to this operation.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CallSiteBinder</td>
+      <td><p>Returns a new CSharp binary operation binder.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/Microsoft.CSharp/src/Microsoft/CSharp/RuntimeBinder/Binder.cs/#L56"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Convert_CSharpBinderFlags__Type__Type_">Convert(CSharpBinderFlags, Type, Type)</h4>
+<div class="markdown level1 summary"><p>Initializes a new CSharp convert binder.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static CallSiteBinder Convert(CSharpBinderFlags flags, Type type, Type context)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.html" name="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags">CSharpBinderFlags</a></td>
+      <td><em>flags</em></td>
+      <td><p>The flags with which to initialize the binder.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Type.html" name="System.Type">Type</a></td>
+      <td><em>type</em></td>
+      <td><p>The type to convert to.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Type.html" name="System.Type">Type</a></td>
+      <td><em>context</em></td>
+      <td><p>The <a href="System.Type.html">System.Type</a> that indicates where this operation is used.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CallSiteBinder</td>
+      <td><p>Returns a new CSharp convert binder.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/Microsoft.CSharp/src/Microsoft/CSharp/RuntimeBinder/Binder.cs/#L82"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetIndex_CSharpBinderFlags__Type__IEnumerable_CSharpArgumentInfo__">GetIndex(CSharpBinderFlags, Type, IEnumerable&lt;CSharpArgumentInfo&gt;)</h4>
+<div class="markdown level1 summary"><p>Initializes a new CSharp get index binder.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static CallSiteBinder GetIndex(CSharpBinderFlags flags, Type context, IEnumerable<csharpargumentinfo> argumentInfo)</csharpargumentinfo></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.html" name="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags">CSharpBinderFlags</a></td>
+      <td><em>flags</em></td>
+      <td><p>The flags with which to initialize the binder.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Type.html" name="System.Type">Type</a></td>
+      <td><em>context</em></td>
+      <td><p>The <a href="System.Type.html">System.Type</a> that indicates where this operation is used.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.html" name="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo">CSharpArgumentInfo</a>&gt;</td>
+      <td><em>argumentInfo</em></td>
+      <td><p>The sequence of <a href="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.html">Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo</a> instances for the arguments to this operation.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CallSiteBinder</td>
+      <td><p>Returns a new CSharp get index binder.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/Microsoft.CSharp/src/Microsoft/CSharp/RuntimeBinder/Binder.cs/#L100"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetMember_CSharpBinderFlags__String__Type__IEnumerable_CSharpArgumentInfo__">GetMember(CSharpBinderFlags, String, Type, IEnumerable&lt;CSharpArgumentInfo&gt;)</h4>
+<div class="markdown level1 summary"><p>Initializes a new CSharp get member binder.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static CallSiteBinder GetMember(CSharpBinderFlags flags, string name, Type context, IEnumerable<csharpargumentinfo> argumentInfo)</csharpargumentinfo></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.html" name="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags">CSharpBinderFlags</a></td>
+      <td><em>flags</em></td>
+      <td><p>The flags with which to initialize the binder.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td><em>name</em></td>
+      <td><p>The name of the member to get.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Type.html" name="System.Type">Type</a></td>
+      <td><em>context</em></td>
+      <td><p>The <a href="System.Type.html">System.Type</a> that indicates where this operation is used.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.html" name="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo">CSharpArgumentInfo</a>&gt;</td>
+      <td><em>argumentInfo</em></td>
+      <td><p>The sequence of <a href="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.html">Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo</a> instances for the arguments to this operation.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CallSiteBinder</td>
+      <td><p>Returns a new CSharp get member binder.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/Microsoft.CSharp/src/Microsoft/CSharp/RuntimeBinder/Binder.cs/#L119"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Invoke_CSharpBinderFlags__Type__IEnumerable_CSharpArgumentInfo__">Invoke(CSharpBinderFlags, Type, IEnumerable&lt;CSharpArgumentInfo&gt;)</h4>
+<div class="markdown level1 summary"><p>Initializes a new CSharp invoke binder.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static CallSiteBinder Invoke(CSharpBinderFlags flags, Type context, IEnumerable<csharpargumentinfo> argumentInfo)</csharpargumentinfo></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.html" name="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags">CSharpBinderFlags</a></td>
+      <td><em>flags</em></td>
+      <td><p>The flags with which to initialize the binder.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Type.html" name="System.Type">Type</a></td>
+      <td><em>context</em></td>
+      <td><p>The <a href="System.Type.html">System.Type</a> that indicates where this operation is used.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.html" name="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo">CSharpArgumentInfo</a>&gt;</td>
+      <td><em>argumentInfo</em></td>
+      <td><p>The sequence of <a href="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.html">Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo</a> instances for the arguments to this operation.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CallSiteBinder</td>
+      <td><p>Returns a new CSharp invoke binder.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/Microsoft.CSharp/src/Microsoft/CSharp/RuntimeBinder/Binder.cs/#L183"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="InvokeConstructor_CSharpBinderFlags__Type__IEnumerable_CSharpArgumentInfo__">InvokeConstructor(CSharpBinderFlags, Type, IEnumerable&lt;CSharpArgumentInfo&gt;)</h4>
+<div class="markdown level1 summary"><p>Initializes a new CSharp invoke constructor binder.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static CallSiteBinder InvokeConstructor(CSharpBinderFlags flags, Type context, IEnumerable<csharpargumentinfo> argumentInfo)</csharpargumentinfo></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.html" name="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags">CSharpBinderFlags</a></td>
+      <td><em>flags</em></td>
+      <td><p>The flags with which to initialize the binder.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Type.html" name="System.Type">Type</a></td>
+      <td><em>context</em></td>
+      <td><p>The <a href="System.Type.html">System.Type</a> that indicates where this operation is used.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.html" name="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo">CSharpArgumentInfo</a>&gt;</td>
+      <td><em>argumentInfo</em></td>
+      <td><p>The sequence of <a href="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.html">Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo</a> instances for the arguments to this operation.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CallSiteBinder</td>
+      <td><p>Returns a new CSharp invoke constructor binder.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/Microsoft.CSharp/src/Microsoft/CSharp/RuntimeBinder/Binder.cs/#L146"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="InvokeMember_CSharpBinderFlags__String__IEnumerable_Type___Type__IEnumerable_CSharpArgumentInfo__">InvokeMember(CSharpBinderFlags, String, IEnumerable&lt;Type&gt;, Type, IEnumerable&lt;CSharpArgumentInfo&gt;)</h4>
+<div class="markdown level1 summary"><p>Initializes a new CSharp invoke member binder.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static CallSiteBinder InvokeMember(CSharpBinderFlags flags, string name, IEnumerable<type> typeArguments, Type context, IEnumerable<csharpargumentinfo> argumentInfo)</csharpargumentinfo></type></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.html" name="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags">CSharpBinderFlags</a></td>
+      <td><em>flags</em></td>
+      <td><p>The flags with which to initialize the binder.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td><em>name</em></td>
+      <td><p>The name of the member to invoke.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.Type.html" name="System.Type">Type</a>&gt;</td>
+      <td><em>typeArguments</em></td>
+      <td><p>The list of type arguments specified for this invoke.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Type.html" name="System.Type">Type</a></td>
+      <td><em>context</em></td>
+      <td><p>The <a href="System.Type.html">System.Type</a> that indicates where this operation is used.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.html" name="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo">CSharpArgumentInfo</a>&gt;</td>
+      <td><em>argumentInfo</em></td>
+      <td><p>The sequence of <a href="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.html">Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo</a> instances for the arguments to this operation.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CallSiteBinder</td>
+      <td><p>Returns a new CSharp invoke member binder.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/Microsoft.CSharp/src/Microsoft/CSharp/RuntimeBinder/Binder.cs/#L200"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="IsEvent_CSharpBinderFlags__String__Type_">IsEvent(CSharpBinderFlags, String, Type)</h4>
+<div class="markdown level1 summary"><p>Initializes a new CSharp is event binder.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static CallSiteBinder IsEvent(CSharpBinderFlags flags, string name, Type context)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.html" name="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags">CSharpBinderFlags</a></td>
+      <td><em>flags</em></td>
+      <td><p>The flags with which to initialize the binder.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td><em>name</em></td>
+      <td><p>The name of the event to look for.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Type.html" name="System.Type">Type</a></td>
+      <td><em>context</em></td>
+      <td><p>The <a href="System.Type.html">System.Type</a> that indicates where this operation is used.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CallSiteBinder</td>
+      <td><p>Returns a new CSharp is event binder.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/Microsoft.CSharp/src/Microsoft/CSharp/RuntimeBinder/Binder.cs/#L217"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="SetIndex_CSharpBinderFlags__Type__IEnumerable_CSharpArgumentInfo__">SetIndex(CSharpBinderFlags, Type, IEnumerable&lt;CSharpArgumentInfo&gt;)</h4>
+<div class="markdown level1 summary"><p>Initializes a new CSharp set index binder.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static CallSiteBinder SetIndex(CSharpBinderFlags flags, Type context, IEnumerable<csharpargumentinfo> argumentInfo)</csharpargumentinfo></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.html" name="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags">CSharpBinderFlags</a></td>
+      <td><em>flags</em></td>
+      <td><p>The flags with which to initialize the binder.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Type.html" name="System.Type">Type</a></td>
+      <td><em>context</em></td>
+      <td><p>The <a href="System.Type.html">System.Type</a> that indicates where this operation is used.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.html" name="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo">CSharpArgumentInfo</a>&gt;</td>
+      <td><em>argumentInfo</em></td>
+      <td><p>The sequence of <a href="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.html">Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo</a> instances for the arguments to this operation.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CallSiteBinder</td>
+      <td><p>Returns a new CSharp set index binder.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/Microsoft.CSharp/src/Microsoft/CSharp/RuntimeBinder/Binder.cs/#L237"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="SetMember_CSharpBinderFlags__String__Type__IEnumerable_CSharpArgumentInfo__">SetMember(CSharpBinderFlags, String, Type, IEnumerable&lt;CSharpArgumentInfo&gt;)</h4>
+<div class="markdown level1 summary"><p>Initializes a new CSharp set member binder.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static CallSiteBinder SetMember(CSharpBinderFlags flags, string name, Type context, IEnumerable<csharpargumentinfo> argumentInfo)</csharpargumentinfo></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.html" name="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags">CSharpBinderFlags</a></td>
+      <td><em>flags</em></td>
+      <td><p>The flags with which to initialize the binder.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td><em>name</em></td>
+      <td><p>The name of the member to set.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Type.html" name="System.Type">Type</a></td>
+      <td><em>context</em></td>
+      <td><p>The <a href="System.Type.html">System.Type</a> that indicates where this operation is used.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.html" name="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo">CSharpArgumentInfo</a>&gt;</td>
+      <td><em>argumentInfo</em></td>
+      <td><p>The sequence of <a href="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.html">Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo</a> instances for the arguments to this operation.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CallSiteBinder</td>
+      <td><p>Returns a new CSharp set member binder.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/Microsoft.CSharp/src/Microsoft/CSharp/RuntimeBinder/Binder.cs/#L258"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="UnaryOperation_CSharpBinderFlags__ExpressionType__Type__IEnumerable_CSharpArgumentInfo__">UnaryOperation(CSharpBinderFlags, ExpressionType, Type, IEnumerable&lt;CSharpArgumentInfo&gt;)</h4>
+<div class="markdown level1 summary"><p>Initializes a new CSharp unary operation binder.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static CallSiteBinder UnaryOperation(CSharpBinderFlags flags, ExpressionType operation, Type context, IEnumerable<csharpargumentinfo> argumentInfo)</csharpargumentinfo></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.html" name="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags">CSharpBinderFlags</a></td>
+      <td><em>flags</em></td>
+      <td><p>The flags with which to initialize the binder.</p>
+</td>
+    </tr>
+    <tr>
+      <td>ExpressionType</td>
+      <td><em>operation</em></td>
+      <td><p>The unary operation kind.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Type.html" name="System.Type">Type</a></td>
+      <td><em>context</em></td>
+      <td><p>The <a href="System.Type.html">System.Type</a> that indicates where this operation is used.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.html" name="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo">CSharpArgumentInfo</a>&gt;</td>
+      <td><em>argumentInfo</em></td>
+      <td><p>The sequence of <a href="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.html">Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo</a> instances for the arguments to this operation.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CallSiteBinder</td>
+      <td><p>Returns a new CSharp unary operation binder.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+</article>
+</div>
+<div class="hidden-sm col-md-2" role="complementary">
+  <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+    <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+  </nav>
+</div>
+</div>
+</div>
+<footer>
+  <div class="grad-bottom"></div>
+  <div class="footer">
+    <div class="container">
+      <span class="pull-right">
+        <a href="#top">Back to top</a>
+      </span>
+      <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+    </div>
+  </div>
+</footer>
+</div>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title> | </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content=" | ">
+  
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:nav" content="toc.html">
+  <meta property="docfx:toc" content="reference/toc.html">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="../toc.html">
+</head>
+<body data-spy="scroll" data-target="#affix">
+  <div id="wrapper">
+    <header>
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img id="logo" class="svg" src="../../logo.svg" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content">
+      <div class="sidenav">
+        <a class="btn toc-toggle collapse">Show / Hide Table of Contents</a>
+        <div class="sidetoggle">
+          <div class="sidetoc">
+            <iframe id="sidetoc" src="../toc.html"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="article row grid-right"><div class="col-md-10">
+        <article class="content wrap" id="_content">
+          <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Internal/Threading.cs/#L11" class="btn btn-primary pull-right mobile-hide">View Source</a>
+          <h1 id="System_Threading_Tasks_Dataflow">Namespace System.Threading.Tasks.Dataflow
+          </h1>
+          <div class="markdown level0 summary"></div>
+          <div class="markdown level0 conceptual"></div>
+          <div class="markdown level0 remarks"></div>
+          <h3 id="classes">Classes</h3>
+          <h4><a href="System.Threading.Tasks.Dataflow.ActionBlock`1.html" name="System.Threading.Tasks.Dataflow.ActionBlock">ActionBlock</a>&lt;TInput&gt;</h4>
+          <section>Provides a dataflow block that invokes a provided @'System.Action`1' delegate for every data element received.</section>
+          <h4><a href="System.Threading.Tasks.Dataflow.BatchBlock`1.html" name="System.Threading.Tasks.Dataflow.BatchBlock">BatchBlock</a>&lt;T&gt;</h4>
+          <section>Provides a dataflow block that batches inputs into arrays.</section>
+          <h4><a href="System.Threading.Tasks.Dataflow.BatchedJoinBlock`2.html" name="System.Threading.Tasks.Dataflow.BatchedJoinBlock">BatchedJoinBlock</a>&lt;T1, T2&gt;</h4>
+          <section>Provides a dataflow block that batches a specified number of inputs of potentially differing types<br>provided to one or more of its targets.</section>
+          <h4><a href="System.Threading.Tasks.Dataflow.BatchedJoinBlock`3.html" name="System.Threading.Tasks.Dataflow.BatchedJoinBlock">BatchedJoinBlock</a>&lt;T1, T2, T3&gt;</h4>
+          <section>Provides a dataflow block that batches a specified number of inputs of potentially differing types<br>provided to one or more of its targets.</section>
+          <h4><a href="System.Threading.Tasks.Dataflow.BroadcastBlock`1.html" name="System.Threading.Tasks.Dataflow.BroadcastBlock">BroadcastBlock</a>&lt;T&gt;</h4>
+          <section>Provides a buffer for storing at most one element at time, overwriting each message with the next as it arrives.<br>Messages are broadcast to all linked targets, all of which may consume a clone of the message.</section>
+          <h4><a href="System.Threading.Tasks.Dataflow.BufferBlock`1.html" name="System.Threading.Tasks.Dataflow.BufferBlock">BufferBlock</a>&lt;T&gt;</h4>
+          <section>Provides a buffer for storing data.</section>
+          <h4><a href="System.Threading.Tasks.Dataflow.DataflowBlock.html" name="System.Threading.Tasks.Dataflow.DataflowBlock">DataflowBlock</a></h4>
+          <section>Provides a set of static (Shared in Visual Basic) methods for working with dataflow blocks.</section>
+          <h4><a href="System.Threading.Tasks.Dataflow.DataflowBlockOptions.html" name="System.Threading.Tasks.Dataflow.DataflowBlockOptions">DataflowBlockOptions</a></h4>
+          <section>Provides options used to configure the processing performed by dataflow blocks.</section>
+          <h4><a href="System.Threading.Tasks.Dataflow.DataflowLinkOptions.html" name="System.Threading.Tasks.Dataflow.DataflowLinkOptions">DataflowLinkOptions</a></h4>
+          <section>Provides options used to configure a link between dataflow blocks.</section>
+          <h4><a href="System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions.html" name="System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions">ExecutionDataflowBlockOptions</a></h4>
+          <section>Provides options used to configure the processing performed by dataflow blocks that<br>process each message through the invocation of a user-provided delegate, blocks such</br>as @'System.Threading.Tasks.Dataflow.ActionBlock`1' and @'System.Threading.Tasks.Dataflow.TransformBlock`2'.</section>
+          <h4><a href="System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions.html" name="System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions">GroupingDataflowBlockOptions</a></h4>
+          <section>Provides options used to configure the processing performed by dataflow blocks that<br>group together multiple messages, blocks such as @'System.Threading.Tasks.Dataflow.JoinBlock`2' and</br>@'System.Threading.Tasks.Dataflow.BatchBlock`1'.</section>
+          <h4><a href="System.Threading.Tasks.Dataflow.JoinBlock`2.html" name="System.Threading.Tasks.Dataflow.JoinBlock">JoinBlock</a>&lt;T1, T2&gt;</h4>
+          <section>Provides a dataflow block that joins across multiple dataflow sources, not necessarily of the same type,<br>waiting for one item to arrive for each type before they’re all released together as a tuple of one item per type.</section>
+          <h4><a href="System.Threading.Tasks.Dataflow.JoinBlock`3.html" name="System.Threading.Tasks.Dataflow.JoinBlock">JoinBlock</a>&lt;T1, T2, T3&gt;</h4>
+          <section>Provides a dataflow block that joins across multiple dataflow sources, not necessarily of the same type,<br>waiting for one item to arrive for each type before they’re all released together as a tuple of one item per type.</section>
+          <h4><a href="System.Threading.Tasks.Dataflow.TransformBlock`2.html" name="System.Threading.Tasks.Dataflow.TransformBlock">TransformBlock</a>&lt;TInput, TOutput&gt;</h4>
+          <section>Provides a dataflow block that invokes a provided @'System.Func`2' delegate for every data element received.</section>
+          <h4><a href="System.Threading.Tasks.Dataflow.TransformManyBlock`2.html" name="System.Threading.Tasks.Dataflow.TransformManyBlock">TransformManyBlock</a>&lt;TInput, TOutput&gt;</h4>
+          <section>Provides a dataflow block that invokes a provided @'System.Func`2' delegate for every data element received.</section>
+          <h4><a href="System.Threading.Tasks.Dataflow.WriteOnceBlock`1.html" name="System.Threading.Tasks.Dataflow.WriteOnceBlock">WriteOnceBlock</a>&lt;T&gt;</h4>
+          <section>Provides a buffer for receiving and storing at most one element in a network of dataflow blocks.</section>
+          <h3 id="structs">Structs</h3>
+          <h4><a href="System.Threading.Tasks.Dataflow.DataflowMessageHeader.html" name="System.Threading.Tasks.Dataflow.DataflowMessageHeader">DataflowMessageHeader</a>></h4>
+          <section>Provides a container of data attributes for passing between dataflow blocks.</section>
+          <h3 id="interfaces">Interfaces</h3>
+          <h4><a href="System.Threading.Tasks.Dataflow.IDataflowBlock.html" name="System.Threading.Tasks.Dataflow.IDataflowBlock">IDataflowBlock</a></h4>
+          <section>Represents a dataflow block.</section>
+          <h4><a href="System.Threading.Tasks.Dataflow.IPropagatorBlock`2.html" name="System.Threading.Tasks.Dataflow.IPropagatorBlock">IPropagatorBlock</a>&lt;TInput, TOutput&gt;</h4>
+          <section>Represents a dataflow block that is both a target for data and a source of data.</section>
+          <h4><a href="System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1.html" name="System.Threading.Tasks.Dataflow.IReceivableSourceBlock">IReceivableSourceBlock</a>&lt;TOutput&gt;</h4>
+          <section>Represents a dataflow block that supports receiving of messages without linking.</section>
+          <h4><a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html" name="System.Threading.Tasks.Dataflow.ISourceBlock">ISourceBlock</a>&lt;TOutput&gt;</h4>
+          <section>Represents a dataflow block that is a source of data.</section>
+          <h4><a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html" name="System.Threading.Tasks.Dataflow.ITargetBlock">ITargetBlock</a>&lt;TInput&gt;</h4>
+          <section>Represents a dataflow block that is a target for data.</section>
+          <h3 id="enums">Enums</h3>
+          <h4><a href="System.Threading.Tasks.Dataflow.DataflowMessageStatus.html" name="System.Threading.Tasks.Dataflow.DataflowMessageStatus">DataflowMessageStatus</a></h4>
+          <section>Represents the status of a @'System.Threading.Tasks.Dataflow.DataflowMessageHeader' when passed between dataflow blocks.</section>
+
+</article>
+</div>
+<div class="hidden-sm col-md-2" role="complementary">
+  <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+    <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+  </nav>
+</div>
+</div>
+</div>
+<footer>
+  <div class="grad-bottom"></div>
+  <div class="footer">
+    <div class="container">
+      <span class="pull-right">
+        <a href="#top">Back to top</a>
+      </span>
+      <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+    </div>
+  </div>
+</footer>
+</div>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+</html>

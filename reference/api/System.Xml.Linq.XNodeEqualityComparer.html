@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title> | </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content=" | ">
+  
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:nav" content="toc.html">
+  <meta property="docfx:toc" content="reference/toc.html">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="../toc.html">
+</head>
+<body data-spy="scroll" data-target="#affix">
+  <div id="wrapper">
+    <header>
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img id="logo" class="svg" src="../../logo.svg" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content">
+      <div class="sidenav">
+        <a class="btn toc-toggle collapse">Show / Hide Table of Contents</a>
+        <div class="sidetoggle">
+          <div class="sidetoc">
+            <iframe id="sidetoc" src="../toc.html"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="article row grid-right"><div class="col-md-10">
+        <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNodeEqualityComparer.cs/#L14" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="XNodeEqualityComparer">Class XNodeEqualityComparer</h1>
+      <div class="markdown level0 summary"><p>Contains functionality to compare nodes for value equality.<br>This class cannot be inherited.</p><br></div>
+      <div class="markdown level0 conceptual"></div>
+      <div class="inheritance">
+        <h5>Inheritance</h5>
+        <div class="level0"><a href="System.Object.html" name="System.Object">Object</a></div>
+        <div class="level1">System.Xml.Linq.XNodeEqualityComparer</div>
+      </div>
+      <h6><strong>Namespace</strong>:System.Xml.Linq</h6>
+      <h6><strong>Assembly</strong>:System.Xml.XDocument.dll</h6>
+      <h5 id="XNodeEqualityComparer_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public sealed class XNodeEqualityComparer : IEqualityComparer, IEqualityComparer<xnode></xnode></code></pre>
+      </div>
+      <h5 id="XNodeEqualityComparer_remarks">remarks</h5>
+      <div class="markdown level0 remarks"></div>
+<h3 id="methods">Methods</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNodeEqualityComparer.cs/#L37"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Equals_XNode__XNode_">Equals(XNode, XNode)</h4>
+<div class="markdown level1 summary"><p>Compares the values of two nodes.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>A null node is equal to another null node but unequal to a non-null<br>node. Two <a href="System.Xml.Linq.XNode.html">System.Xml.Linq.XNode</a>s of different types are never equal. Two</br><a href="System.Xml.Linq.XText.html">System.Xml.Linq.XText</a> nodes are equal if they contain the same text. Two<br><a href="System.Xml.Linq.XElement.html">System.Xml.Linq.XElement</a> nodes are equal if they have the same tag name, the same</br>set of attributes with the same values, and, ignoring comments and processing<br>instructions, contain two equal length sequences of pairwise equal content nodes.</br>Two <a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument</a>s are equal if their root nodes are equal. Two<br><a href="System.Xml.Linq.XComment.html">System.Xml.Linq.XComment</a> nodes are equal if they contain the same comment text.</br>Two <a href="System.Xml.Linq.XProcessingInstruction.html">System.Xml.Linq.XProcessingInstruction</a> nodes are equal if they have the same<br>target and data. Two <a href="System.Xml.Linq.XDocumentType.html">System.Xml.Linq.XDocumentType</a> nodes are equal if the have the</br>same name, public id, system id, and internal subset.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool Equals(XNode x, XNode y)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Xml.Linq.XNode.html" name="System.Xml.Linq.XNode">XNode</a></td>
+      <td><em>x</em></td>
+      <td><p>The first node to compare.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Xml.Linq.XNode.html" name="System.Xml.Linq.XNode">XNode</a></td>
+      <td><em>y</em></td>
+      <td><p>The second node to compare.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p>true if the nodes are equal, false otherwise.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNodeEqualityComparer.cs/#L52"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetHashCode_XNode_">GetHashCode(XNode)</h4>
+<div class="markdown level1 summary"><p>Returns a hash code based on an <a href="System.Xml.Linq.XNode.html">System.Xml.Linq.XNode</a> objects value.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>The <see cref="T:System.Xml.Linq.XNode"></see> class&#39;s implementation of <see cref="M:System.Object.GetHashCode"></see><br>is based on the referential identity of the node. This method computes a</br>hash code based on the value of the node.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public int GetHashCode(XNode obj)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Xml.Linq.XNode.html" name="System.Xml.Linq.XNode">XNode</a></td>
+      <td><em>obj</em></td>
+      <td><p>The node to hash.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><p>A value-based hash code for the node.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNodeEqualityComparer.cs/#L76"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="IEqualityComparer_Equals_Object__Object_">IEqualityComparer.Equals(Object, Object)</h4>
+<div class="markdown level1 summary"><p>Compares the values of two nodes.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>A null node is equal to another null node but unequal to a non-null<br>node. Two <a href="System.Xml.Linq.XNode.html">System.Xml.Linq.XNode</a>s of different types are never equal. Two</br><a href="System.Xml.Linq.XText.html">System.Xml.Linq.XText</a> nodes are equal if they contain the same text. Two<br><a href="System.Xml.Linq.XElement.html">System.Xml.Linq.XElement</a> nodes are equal if they have the same tag name, the same</br>set of attributes with the same values, and, ignoring comments and processing<br>instructions, contain two equal length sequences of pairwise equal content nodes.</br>Two <a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument</a>s are equal if their root nodes are equal. Two<br><a href="System.Xml.Linq.XComment.html">System.Xml.Linq.XComment</a> nodes are equal if they contain the same comment text.</br>Two <a href="System.Xml.Linq.XProcessingInstruction.html">System.Xml.Linq.XProcessingInstruction</a> nodes are equal if they have the same<br>target and data. Two <a href="System.Xml.Linq.XDocumentType.html">System.Xml.Linq.XDocumentType</a> nodes are equal if the have the</br>same name, public id, system id, and internal subset.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">bool IEqualityComparer.Equals(object x, object y)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Object.html" name="System.Object">Object</a></td>
+      <td><em>x</em></td>
+      <td><p>The first node to compare.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Object.html" name="System.Object">Object</a></td>
+      <td><em>y</em></td>
+      <td><p>The second node to compare.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p>true if the nodes are equal, false otherwise.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNodeEqualityComparer.cs/#L95"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="IEqualityComparer_GetHashCode_Object_">IEqualityComparer.GetHashCode(Object)</h4>
+<div class="markdown level1 summary"><p>Returns a hash code based on a node&#39;s value.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>The <a href="System.Xml.Linq.XNode.html">System.Xml.Linq.XNode</a> class&#39;s implementation of <a href="System.Object.html">System.Object.GetHashCode</a><br>is based on the referential identity of the node. This method computes a</br>hash code based on the value of the node.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">int IEqualityComparer.GetHashCode(object obj)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Object.html" name="System.Object">Object</a></td>
+      <td><em>obj</em></td>
+      <td><p>The node to hash.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><p>A value-based hash code for the node.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+</article>
+</div>
+<div class="hidden-sm col-md-2" role="complementary">
+  <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+    <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+  </nav>
+</div>
+</div>
+</div>
+<footer>
+  <div class="grad-bottom"></div>
+  <div class="footer">
+    <div class="container">
+      <span class="pull-right">
+        <a href="#top">Back to top</a>
+      </span>
+      <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+    </div>
+  </div>
+</footer>
+</div>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+</html>

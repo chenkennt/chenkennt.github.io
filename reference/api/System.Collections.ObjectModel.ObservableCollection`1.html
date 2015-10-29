@@ -1,0 +1,460 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title> | </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content=" | ">
+  
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:nav" content="toc.html">
+  <meta property="docfx:toc" content="reference/toc.html">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="../toc.html">
+</head>
+<body data-spy="scroll" data-target="#affix">
+  <div id="wrapper">
+    <header>
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img id="logo" class="svg" src="../../logo.svg" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content">
+      <div class="sidenav">
+        <a class="btn toc-toggle collapse">Show / Hide Table of Contents</a>
+        <div class="sidetoggle">
+          <div class="sidetoc">
+            <iframe id="sidetoc" src="../toc.html"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="article row grid-right"><div class="col-md-10">
+        <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ObjectModel/src/System/Collections/ObjectModel/ObservableCollection.cs/#L19" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="ObservableCollection_T_">Class ObservableCollection&lt;T&gt;</h1>
+      <div class="markdown level0 summary"><p>Implementation of a dynamic data collection based on generic Collection&lt;T&gt;,<br>implementing INotifyCollectionChanged to notify listeners</br>when items get added, removed or the whole list is refreshed.</p><br></div>
+      <div class="markdown level0 conceptual"></div>
+      <div class="inheritance">
+        <h5>Inheritance</h5>
+        <div class="level0"><a href="System.Object.html" name="System.Object">Object</a></div>
+        <div class="level1"><a href="System.Collections.ObjectModel.Collection`1.html" name="System.Collections.ObjectModel.Collection">Collection</a>&lt;T&gt;</div>
+        <div class="level2">System.Collections.ObjectModel.ObservableCollection&lt;T&gt;</div>
+      </div>
+      <h6><strong>Namespace</strong>:System.Collections.ObjectModel</h6>
+      <h6><strong>Assembly</strong>:System.ObjectModel.dll</h6>
+      <h5 id="ObservableCollection_T__syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public class ObservableCollection<t> : Collection<t>, IList<t>, ICollection<t>, IList, ICollection, IReadOnlyList<t>, IReadOnlyCollection<t>, IEnumerable<t>, IEnumerable, INotifyCollectionChanged, INotifyPropertyChanged</t></t></t></t></t></t></t></code></pre>
+      </div>
+      <h5 id="ObservableCollection_T__remarks">remarks</h5>
+      <div class="markdown level0 remarks"></div>
+      <h3 id="constructors">Constructors</h3>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ObjectModel/src/System/Collections/ObjectModel/ObservableCollection.cs/#L33"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="ObservableCollection__">ObservableCollection()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of ObservableCollection that is empty and has default initial capacity.</p><br></div>
+  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableCollection()</code></pre>
+  </div>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ObjectModel/src/System/Collections/ObjectModel/ObservableCollection.cs/#L46"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="ObservableCollection_IEnumerable_T__">ObservableCollection(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ObservableCollection class that contains<br>elements copied from the specified collection and has sufficient capacity</br>to accommodate the number of elements copied.</p><br></div>
+  <div class="markdown level1 remarks"><p>The elements are copied onto the ObservableCollection in the<br>same order they are read by the enumerator of the collection.</p><br></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableCollection(IEnumerable<t> collection)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;T&gt;</td>
+        <td><em>collection</em></td>
+        <td><p>The collection whose elements are copied to the new list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+<h3 id="methods">Methods</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ObjectModel/src/System/Collections/ObjectModel/ObservableCollection.cs/#L263"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="BlockReentrancy__">BlockReentrancy()</h4>
+<div class="markdown level1 summary"><p>Disallow reentrant attempts to change this collection. E.g. a event handler<br>of the CollectionChanged event is not allowed to make changes to this collection.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>typical usage is to wrap e.g. a OnCollectionChanged call with a using() scope:<br><code><br>using (BlockReentrancy())</br>{<br>CollectionChanged(this, new NotifyCollectionChangedEventArgs(action, item, index));</br>}<br></code></p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">protected IDisposable BlockReentrancy()</code></pre>
+</div>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.IDisposable.html" name="System.IDisposable">IDisposable</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ObjectModel/src/System/Collections/ObjectModel/ObservableCollection.cs/#L272"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="CheckReentrancy__">CheckReentrancy()</h4>
+<div class="markdown level1 summary"><p>Check and assert for reentrant attempts to change this collection.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">protected void CheckReentrancy()</code></pre>
+</div>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ObjectModel/src/System/Collections/ObjectModel/ObservableCollection.cs/#L143"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ClearItems__">ClearItems()</h4>
+<div class="markdown level1 summary"><p>Called by base class Collection&lt;T&gt; when the list is being cleared;<br>raises a CollectionChanged event to any listeners.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">protected override void ClearItems()</code></pre>
+</div>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ObjectModel/src/System/Collections/ObjectModel/ObservableCollection.cs/#L172"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="InsertItem_Int32__T_">InsertItem(Int32, T)</h4>
+<div class="markdown level1 summary"><p>Called by base class Collection&lt;T&gt; when an item is added to list;<br>raises a CollectionChanged event to any listeners.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">protected override void InsertItem(int index, T item)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>index</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td><em>item</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ObjectModel/src/System/Collections/ObjectModel/ObservableCollection.cs/#L83"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Move_Int32__Int32_">Move(Int32, Int32)</h4>
+<div class="markdown level1 summary"><p>Move item at oldIndex to newIndex.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void Move(int oldIndex, int newIndex)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>oldIndex</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>newIndex</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ObjectModel/src/System/Collections/ObjectModel/ObservableCollection.cs/#L200"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="MoveItem_Int32__Int32_">MoveItem(Int32, Int32)</h4>
+<div class="markdown level1 summary"><p>Called by base class ObservableCollection&lt;T&gt; when an item is to be moved within the list;<br>raises a CollectionChanged event to any listeners.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">protected virtual void MoveItem(int oldIndex, int newIndex)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>oldIndex</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>newIndex</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ObjectModel/src/System/Collections/ObjectModel/ObservableCollection.cs/#L239"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="OnCollectionChanged_NotifyCollectionChangedEventArgs_">OnCollectionChanged(NotifyCollectionChangedEventArgs)</h4>
+<div class="markdown level1 summary"><p>Raise CollectionChanged event to any listeners.<br>Properties/methods modifying this ObservableCollection will raise</br>a collection changed event through this virtual method.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>When overriding this method, either call its base implementation<br>or call <a href="System.Collections.ObjectModel.ObservableCollection`1.html">System.Collections.ObjectModel.ObservableCollection`1.BlockReentrancy</a> to guard against reentrant collection changes.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">protected virtual void OnCollectionChanged(NotifyCollectionChangedEventArgs e)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Specialized.NotifyCollectionChangedEventArgs.html" name="System.Collections.Specialized.NotifyCollectionChangedEventArgs">NotifyCollectionChangedEventArgs</a></td>
+      <td><em>e</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ObjectModel/src/System/Collections/ObjectModel/ObservableCollection.cs/#L217"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="OnPropertyChanged_PropertyChangedEventArgs_">OnPropertyChanged(PropertyChangedEventArgs)</h4>
+<div class="markdown level1 summary"><p>Raises a PropertyChanged event (per <a href="System.ComponentModel.INotifyPropertyChanged.html">System.ComponentModel.INotifyPropertyChanged</a>).</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">protected virtual void OnPropertyChanged(PropertyChangedEventArgs e)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.ComponentModel.PropertyChangedEventArgs.html" name="System.ComponentModel.PropertyChangedEventArgs">PropertyChangedEventArgs</a></td>
+      <td><em>e</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ObjectModel/src/System/Collections/ObjectModel/ObservableCollection.cs/#L156"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="RemoveItem_Int32_">RemoveItem(Int32)</h4>
+<div class="markdown level1 summary"><p>Called by base class Collection&lt;T&gt; when an item is removed from list;<br>raises a CollectionChanged event to any listeners.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">protected override void RemoveItem(int index)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>index</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ObjectModel/src/System/Collections/ObjectModel/ObservableCollection.cs/#L186"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="SetItem_Int32__T_">SetItem(Int32, T)</h4>
+<div class="markdown level1 summary"><p>Called by base class Collection&lt;T&gt; when an item is set in list;<br>raises a CollectionChanged event to any listeners.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">protected override void SetItem(int index, T item)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>index</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td><em>item</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="events">Events</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ObjectModel/src/System/Collections/ObjectModel/ObservableCollection.cs/#L126"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="CollectionChanged">CollectionChanged</h4>
+<div class="markdown level1 summary"><p>Occurs when the collection changes, either by adding or removing an item.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>see <a href="System.Collections.Specialized.INotifyCollectionChanged.html">System.Collections.Specialized.INotifyCollectionChanged</a></p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public virtual event NotifyCollectionChangedEventHandler CollectionChanged</code></pre>
+</div>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ObjectModel/src/System/Collections/ObjectModel/ObservableCollection.cs/#L228"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="PropertyChanged">PropertyChanged</h4>
+<div class="markdown level1 summary"><p>PropertyChanged event (per <a href="System.ComponentModel.INotifyPropertyChanged.html">System.ComponentModel.INotifyPropertyChanged</a>).</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">protected virtual event PropertyChangedEventHandler PropertyChanged</code></pre>
+</div>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ObjectModel/src/System/Collections/ObjectModel/ObservableCollection.cs/#L105"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="INotifyPropertyChanged_PropertyChanged">INotifyPropertyChanged.PropertyChanged</h4>
+<div class="markdown level1 summary"><p>PropertyChanged event (per <a href="System.ComponentModel.INotifyPropertyChanged.html">System.ComponentModel.INotifyPropertyChanged</a>).</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">event PropertyChangedEventHandler INotifyPropertyChanged.PropertyChanged</code></pre>
+</div>
+
+</article>
+</div>
+<div class="hidden-sm col-md-2" role="complementary">
+  <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+    <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+  </nav>
+</div>
+</div>
+</div>
+<footer>
+  <div class="grad-bottom"></div>
+  <div class="footer">
+    <div class="container">
+      <span class="pull-right">
+        <a href="#top">Back to top</a>
+      </span>
+      <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+    </div>
+  </div>
+</footer>
+</div>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+</html>

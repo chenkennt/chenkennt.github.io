@@ -1,0 +1,773 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title> | </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content=" | ">
+  
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:nav" content="toc.html">
+  <meta property="docfx:toc" content="reference/toc.html">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="../toc.html">
+</head>
+<body data-spy="scroll" data-target="#affix">
+  <div id="wrapper">
+    <header>
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img id="logo" class="svg" src="../../logo.svg" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content">
+      <div class="sidenav">
+        <a class="btn toc-toggle collapse">Show / Hide Table of Contents</a>
+        <div class="sidetoggle">
+          <div class="sidetoc">
+            <iframe id="sidetoc" src="../toc.html"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="article row grid-right"><div class="col-md-10">
+        <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L32" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="CountdownEvent">Class CountdownEvent</h1>
+      <div class="markdown level0 summary"><p>Represents a synchronization primitive that is signaled when its count reaches zero.</p><br></div>
+      <div class="markdown level0 conceptual"></div>
+      <div class="inheritance">
+        <h5>Inheritance</h5>
+        <div class="level0"><a href="System.Object.html" name="System.Object">Object</a></div>
+        <div class="level1">System.Threading.CountdownEvent</div>
+      </div>
+      <h6><strong>Namespace</strong>:System.Threading</h6>
+      <h6><strong>Assembly</strong>:mscorlib.dll</h6>
+      <h5 id="CountdownEvent_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public class CountdownEvent : IDisposable</code></pre>
+      </div>
+      <h5 id="CountdownEvent_remarks">remarks</h5>
+      <div class="markdown level0 remarks"><p>All public and protected members of <see cref="T:System.Threading.CountdownEvent"></see> are thread-safe and may be used<br>concurrently from multiple threads, with the exception of Dispose, which</br>must only be used when all other operations on the <see cref="T:System.Threading.CountdownEvent"></see> have<br>completed, and Reset, which should only be used when no other threads are</br>accessing the event.</p><br></div>
+      <h3 id="constructors">Constructors</h3>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L57"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="CountdownEvent_Int32_">CountdownEvent(Int32)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a> class with the<br>specified count.</p><br></div>
+  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CountdownEvent(int initialCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>initialCount</em></td>
+        <td><p>The number of signals required to set the <see cref="T:System.Threading.CountdownEvent"></see>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+<h3 id="properties">Properties</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L83"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="CurrentCount">CurrentCount</h4>
+<div class="markdown level1 summary"><p>Gets the number of remaining signals required to set the event.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public int CurrentCount { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L98"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="InitialCount">InitialCount</h4>
+<div class="markdown level1 summary"><p>Gets the numbers of signals initially required to set the event.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public int InitialCount { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L107"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="IsSet">IsSet</h4>
+<div class="markdown level1 summary"><p>Determines whether the event is set.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool IsSet { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L129"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="WaitHandle">WaitHandle</h4>
+<div class="markdown level1 summary"><p>Gets a <a href="System.Threading.WaitHandle.html">System.Threading.WaitHandle</a> that is used to wait for the event to be set.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p><a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent.WaitHandle</a> should only be used if it&#39;s needed for integration with code bases<br>that rely on having a WaitHandle.  If all that&#39;s needed is to wait for the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a></br>to be set, the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent.Wait</a> method should be preferred.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public WaitHandle WaitHandle { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.WaitHandle.html" name="System.Threading.WaitHandle">WaitHandle</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="methods">Methods</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L283"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="AddCount__">AddCount()</h4>
+<div class="markdown level1 summary"><p>Increments the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a>&#39;s current count by one.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void AddCount()</code></pre>
+</div>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L315"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="AddCount_Int32_">AddCount(Int32)</h4>
+<div class="markdown level1 summary"><p>Increments the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a>&#39;s current count by a specified<br>value.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void AddCount(int signalCount)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>signalCount</em></td>
+      <td><p>The value by which to increase <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent.CurrentCount</a>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L145"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Dispose__">Dispose()</h4>
+<div class="markdown level1 summary"><p>Releases all resources used by the current instance of <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>Unlike most of the members of <see cref="T:System.Threading.CountdownEvent"></see>, <see cref="M:System.Threading.CountdownEvent.Dispose"></see> is not<br>thread-safe and may not be used concurrently with other members of this instance.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+</div>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L166"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Dispose_Boolean_">Dispose(Boolean)</h4>
+<div class="markdown level1 summary"><p>When overridden in a derived class, releases the unmanaged resources used by the<br><a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a>, and optionally releases the managed resources.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>Unlike most of the members of <see cref="T:System.Threading.CountdownEvent"></see>, <see cref="M:System.Threading.CountdownEvent.Dispose"></see> is not<br>thread-safe and may not be used concurrently with other members of this instance.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><em>disposing</em></td>
+      <td><p>true to release both managed and unmanaged resources; false to release
+only unmanaged resources.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L388"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Reset__">Reset()</h4>
+<div class="markdown level1 summary"><p>Resets the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent.CurrentCount</a> to the value of <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent.InitialCount</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>Unlike most of the members of <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a>, Reset is not<br>thread-safe and may not be used concurrently with other members of this instance.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+</div>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L405"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Reset_Int32_">Reset(Int32)</h4>
+<div class="markdown level1 summary"><p>Resets the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent.CurrentCount</a> to a specified value.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>Unlike most of the members of <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a>, Reset is not<br>thread-safe and may not be used concurrently with other members of this instance.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void Reset(int count)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>count</em></td>
+      <td><p>The number of signals required to set the <see cref="T:System.Threading.CountdownEvent"></see>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L185"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Signal__">Signal()</h4>
+<div class="markdown level1 summary"><p>Registers a signal with the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a>, decrementing its<br>count.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool Signal()</code></pre>
+</div>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p>true if the signal caused the count to reach zero and the event was set; otherwise,
+false.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L227"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Signal_Int32_">Signal(Int32)</h4>
+<div class="markdown level1 summary"><p>Registers multiple signals with the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a>,<br>decrementing its count by the specified amount.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool Signal(int signalCount)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>signalCount</em></td>
+      <td><p>The number of signals to register.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p>true if the signals caused the count to reach zero and the event was set; otherwise,
+false.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L297"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryAddCount__">TryAddCount()</h4>
+<div class="markdown level1 summary"><p>Attempts to increment the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a>&#39;s current count by one.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool TryAddCount()</code></pre>
+</div>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p>true if the increment succeeded; otherwise, false. If <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent.CurrentCount</a> is
+already at zero. this will return false.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L338"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryAddCount_Int32_">TryAddCount(Int32)</h4>
+<div class="markdown level1 summary"><p>Attempts to increment the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a>&#39;s current count by a<br>specified value.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool TryAddCount(int signalCount)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>signalCount</em></td>
+      <td><p>The value by which to increase <see cref="P:System.Threading.CountdownEvent.CurrentCount"></see>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p>true if the increment succeeded; otherwise, false. If <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent.CurrentCount</a> is
+already at zero this will return false.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L436"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Wait__">Wait()</h4>
+<div class="markdown level1 summary"><p>Blocks the current thread until the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a> is set.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>The caller of this method blocks indefinitely until the current instance is set. The caller will<br>return immediately if the event is currently in a set state.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void Wait()</code></pre>
+</div>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L531"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Wait_Int32_">Wait(Int32)</h4>
+<div class="markdown level1 summary"><p>Blocks the current thread until the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a> is set, using a<br>32-bit signed integer to measure the time interval.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool Wait(int millisecondsTimeout)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>millisecondsTimeout</em></td>
+      <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a>(-1) to wait indefinitely.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p>true if the <see cref="T:System.Threading.CountdownEvent"></see> was set; otherwise,
+false.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L553"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Wait_Int32__CancellationToken_">Wait(Int32, CancellationToken)</h4>
+<div class="markdown level1 summary"><p>Blocks the current thread until the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a> is set, using a<br>32-bit signed integer to measure the time interval, while observing a</br><a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool Wait(int millisecondsTimeout, CancellationToken cancellationToken)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>millisecondsTimeout</em></td>
+      <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a>(-1) to wait indefinitely.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+      <td><em>cancellationToken</em></td>
+      <td><p>The <see cref="T:System.Threading.CancellationToken"></see> to
+observe.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p>true if the <see cref="T:System.Threading.CountdownEvent"></see> was set; otherwise,
+false.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L459"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Wait_CancellationToken_">Wait(CancellationToken)</h4>
+<div class="markdown level1 summary"><p>Blocks the current thread until the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a> is set, while<br>observing a <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>The caller of this method blocks indefinitely until the current instance is set. The caller will<br>return immediately if the event is currently in a set state.  If the</p><br><p><see cref="T:System.Threading.CancellationToken">CancellationToken</see> being observed</br>is canceled during the wait operation, an <see cref="T:System.OperationCanceledException"></see><br>will be thrown.<p></br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void Wait(CancellationToken cancellationToken)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+      <td><em>cancellationToken</em></td>
+      <td><p>The <see cref="T:System.Threading.CancellationToken"></see> to
+observe.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L478"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Wait_TimeSpan_">Wait(TimeSpan)</h4>
+<div class="markdown level1 summary"><p>Blocks the current thread until the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a> is set, using a<br><a href="System.TimeSpan.html">System.TimeSpan</a> to measure the time interval.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool Wait(TimeSpan timeout)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
+      <td><em>timeout</em></td>
+      <td><p>A <see cref="T:System.TimeSpan"></see> that represents the number of
+milliseconds to wait, or a <see cref="T:System.TimeSpan"></see> that represents -1 milliseconds to
+wait indefinitely.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p>true if the <see cref="T:System.Threading.CountdownEvent"></see> was set; otherwise,
+false.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L508"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Wait_TimeSpan__CancellationToken_">Wait(TimeSpan, CancellationToken)</h4>
+<div class="markdown level1 summary"><p>Blocks the current thread until the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a> is set, using<br>a <a href="System.TimeSpan.html">System.TimeSpan</a> to measure the time interval, while observing a</br><a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool Wait(TimeSpan timeout, CancellationToken cancellationToken)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
+      <td><em>timeout</em></td>
+      <td><p>A <see cref="T:System.TimeSpan"></see> that represents the number of
+milliseconds to wait, or a <see cref="T:System.TimeSpan"></see> that represents -1 milliseconds to
+wait indefinitely.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+      <td><em>cancellationToken</em></td>
+      <td><p>The <see cref="T:System.Threading.CancellationToken"></see> to
+observe.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p>true if the <see cref="T:System.Threading.CountdownEvent"></see> was set; otherwise,
+false.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+</article>
+</div>
+<div class="hidden-sm col-md-2" role="complementary">
+  <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+    <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+  </nav>
+</div>
+</div>
+</div>
+<footer>
+  <div class="grad-bottom"></div>
+  <div class="footer">
+    <div class="container">
+      <span class="pull-right">
+        <a href="#top">Back to top</a>
+      </span>
+      <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+    </div>
+  </div>
+</footer>
+</div>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+</html>

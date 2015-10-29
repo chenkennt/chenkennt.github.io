@@ -1,0 +1,672 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title> | </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content=" | ">
+  
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:nav" content="toc.html">
+  <meta property="docfx:toc" content="reference/toc.html">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="../toc.html">
+</head>
+<body data-spy="scroll" data-target="#affix">
+  <div id="wrapper">
+    <header>
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img id="logo" class="svg" src="../../logo.svg" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content">
+      <div class="sidenav">
+        <a class="btn toc-toggle collapse">Show / Hide Table of Contents</a>
+        <div class="sidetoggle">
+          <div class="sidetoc">
+            <iframe id="sidetoc" src="../toc.html"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="article row grid-right"><div class="col-md-10">
+        <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/BatchBlock.cs/#L25" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="BatchBlock_T_">Class BatchBlock&lt;T&gt;</h1>
+      <div class="markdown level0 summary"><p>Provides a dataflow block that batches inputs into arrays.</p><br></div>
+      <div class="markdown level0 conceptual"></div>
+      <div class="inheritance">
+        <h5>Inheritance</h5>
+        <div class="level0"><a href="System.Object.html" name="System.Object">Object</a></div>
+        <div class="level1">System.Threading.Tasks.Dataflow.BatchBlock&lt;T&gt;</div>
+      </div>
+      <h6><strong>Namespace</strong>:System.Threading.Tasks.Dataflow</h6>
+      <h6><strong>Assembly</strong>:System.Threading.Tasks.Dataflow.dll</h6>
+      <h5 id="BatchBlock_T__syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public sealed class BatchBlock<t> : IPropagatorBlock<t, t[]="">, ITargetBlock<t>, IReceivableSourceBlock<t[]>, ISourceBlock<t[]>, IDataflowBlock, IDebuggerDisplay</t[]></t[]></t></t,></t></code></pre>
+      </div>
+      <h5 id="BatchBlock_T__remarks">remarks</h5>
+      <div class="markdown level0 remarks"></div>
+      <h3 id="constructors">Constructors</h3>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/BatchBlock.cs/#L38"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="BatchBlock_Int32_">BatchBlock(Int32)</h4>
+  <div class="markdown level1 summary"><p>Initializes this <a href="System.Threading.Tasks.Dataflow.BatchBlock`1.html">System.Threading.Tasks.Dataflow.BatchBlock`1</a> with the specified batch size.</p><br></div>
+  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BatchBlock(int batchSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>batchSize</em></td>
+        <td><p>The number of items to group into a batch.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/BatchBlock.cs/#L48"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="BatchBlock_Int32__GroupingDataflowBlockOptions_">BatchBlock(Int32, GroupingDataflowBlockOptions)</h4>
+  <div class="markdown level1 summary"><p>Initializes this <a href="System.Threading.Tasks.Dataflow.BatchBlock`1.html">System.Threading.Tasks.Dataflow.BatchBlock`1</a> with the  specified batch size, declining option, and block options.</p><br></div>
+  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BatchBlock(int batchSize, GroupingDataflowBlockOptions dataflowBlockOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>batchSize</em></td>
+        <td><p>The number of items to group into a batch.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions.html" name="System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions">GroupingDataflowBlockOptions</a></td>
+        <td><em>dataflowBlockOptions</em></td>
+        <td><p>The options with which to configure this <see cref="T:System.Threading.Tasks.Dataflow.BatchBlock`1"></see>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+<h3 id="properties">Properties</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/BatchBlock.cs/#L152"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="BatchSize">BatchSize</h4>
+<div class="markdown level1 summary"><p>Gets the size of the batches generated by this <a href="System.Threading.Tasks.Dataflow.BatchBlock`1.html">System.Threading.Tasks.Dataflow.BatchBlock`1</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>If the number of items provided to the block is not evenly divisible by the batch size provided<br>to the block&#39;s constructor, the block&#39;s final batch may contain fewer than the requested number of items.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public int BatchSize { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/BatchBlock.cs/#L145"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Completion">Completion</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task Completion { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.Tasks.Task.html" name="System.Threading.Tasks.Task">Task</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/BatchBlock.cs/#L142"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="OutputCount">OutputCount</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public int OutputCount { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="methods">Methods</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/BatchBlock.cs/#L104"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Complete__">Complete()</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void Complete()</code></pre>
+</div>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/BatchBlock.cs/#L127"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="LinkTo_ITargetBlock_T_____DataflowLinkOptions_">LinkTo(ITargetBlock&lt;T[]&gt;, DataflowLinkOptions)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public IDisposable LinkTo(ITargetBlock<t[]> target, DataflowLinkOptions linkOptions)</t[]></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html" name="System.Threading.Tasks.Dataflow.ITargetBlock">ITargetBlock</a>&lt;T[]&gt;</td>
+      <td><em>target</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Threading.Tasks.Dataflow.DataflowLinkOptions.html" name="System.Threading.Tasks.Dataflow.DataflowLinkOptions">DataflowLinkOptions</a></td>
+      <td><em>linkOptions</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.IDisposable.html" name="System.IDisposable">IDisposable</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/BatchBlock.cs/#L107"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="IDataflowBlock_Fault_Exception_">IDataflowBlock.Fault(Exception)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">void IDataflowBlock.Fault(Exception exception)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Exception.html" name="System.Exception">Exception</a></td>
+      <td><em>exception</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/BatchBlock.cs/#L161"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ISourceBlock_T____ConsumeMessage_DataflowMessageHeader__ITargetBlock_T_____out_Boolean_">ISourceBlock&lt;T[]&gt;.ConsumeMessage(DataflowMessageHeader, ITargetBlock&lt;T[]&gt;, out Boolean)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">T[] ISourceBlock<t[]>.ConsumeMessage(DataflowMessageHeader messageHeader, ITargetBlock<t[]> target, out bool messageConsumed)</t[]></t[]></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.Tasks.Dataflow.DataflowMessageHeader.html" name="System.Threading.Tasks.Dataflow.DataflowMessageHeader">DataflowMessageHeader</a></td>
+      <td><em>messageHeader</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html" name="System.Threading.Tasks.Dataflow.ITargetBlock">ITargetBlock</a>&lt;T[]&gt;</td>
+      <td><em>target</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><em>messageConsumed</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T[]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/BatchBlock.cs/#L173"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ISourceBlock_T____ReleaseReservation_DataflowMessageHeader__ITargetBlock_T____">ISourceBlock&lt;T[]&gt;.ReleaseReservation(DataflowMessageHeader, ITargetBlock&lt;T[]&gt;)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">void ISourceBlock<t[]>.ReleaseReservation(DataflowMessageHeader messageHeader, ITargetBlock<t[]> target)</t[]></t[]></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.Tasks.Dataflow.DataflowMessageHeader.html" name="System.Threading.Tasks.Dataflow.DataflowMessageHeader">DataflowMessageHeader</a></td>
+      <td><em>messageHeader</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html" name="System.Threading.Tasks.Dataflow.ITargetBlock">ITargetBlock</a>&lt;T[]&gt;</td>
+      <td><em>target</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/BatchBlock.cs/#L167"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ISourceBlock_T____ReserveMessage_DataflowMessageHeader__ITargetBlock_T____">ISourceBlock&lt;T[]&gt;.ReserveMessage(DataflowMessageHeader, ITargetBlock&lt;T[]&gt;)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">bool ISourceBlock<t[]>.ReserveMessage(DataflowMessageHeader messageHeader, ITargetBlock<t[]> target)</t[]></t[]></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.Tasks.Dataflow.DataflowMessageHeader.html" name="System.Threading.Tasks.Dataflow.DataflowMessageHeader">DataflowMessageHeader</a></td>
+      <td><em>messageHeader</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html" name="System.Threading.Tasks.Dataflow.ITargetBlock">ITargetBlock</a>&lt;T[]&gt;</td>
+      <td><em>target</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/BatchBlock.cs/#L155"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ITargetBlock_T__OfferMessage_DataflowMessageHeader__T__ISourceBlock_T___Boolean_">ITargetBlock&lt;T&gt;.OfferMessage(DataflowMessageHeader, T, ISourceBlock&lt;T&gt;, Boolean)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">DataflowMessageStatus ITargetBlock<t>.OfferMessage(DataflowMessageHeader messageHeader, T messageValue, ISourceBlock<t> source, bool consumeToAccept)</t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.Tasks.Dataflow.DataflowMessageHeader.html" name="System.Threading.Tasks.Dataflow.DataflowMessageHeader">DataflowMessageHeader</a></td>
+      <td><em>messageHeader</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td><em>messageValue</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html" name="System.Threading.Tasks.Dataflow.ISourceBlock">ISourceBlock</a>&lt;T&gt;</td>
+      <td><em>source</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><em>consumeToAccept</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.Tasks.Dataflow.DataflowMessageStatus.html" name="System.Threading.Tasks.Dataflow.DataflowMessageStatus">DataflowMessageStatus</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/BatchBlock.cs/#L182"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ToString__">ToString()</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+</div>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/BatchBlock.cs/#L124"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TriggerBatch__">TriggerBatch()</h4>
+<div class="markdown level1 summary"><p>Triggers the <a href="System.Threading.Tasks.Dataflow.BatchBlock`1.html">System.Threading.Tasks.Dataflow.BatchBlock`1</a> to initiate a batching operation even if the number<br>of currently queued or postponed items is less than the <a href="System.Threading.Tasks.Dataflow.BatchBlock`1.html">System.Threading.Tasks.Dataflow.BatchBlock`1.BatchSize</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>In greedy mode, a batch will be generated from queued items even if fewer exist than the batch size.<br>In non-greedy mode, a batch will be generated asynchronously from postponed items even if</br>fewer than the batch size can be consumed.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void TriggerBatch()</code></pre>
+</div>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/BatchBlock.cs/#L133"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryReceive_Predicate_T_____out_T___">TryReceive(Predicate&lt;T[]&gt;, out T[])</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool TryReceive(Predicate<t[]> filter, out T[] item)</t[]></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Predicate`1.html" name="System.Predicate">Predicate</a>&lt;T[]&gt;</td>
+      <td><em>filter</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>T[]</td>
+      <td><em>item</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/BatchBlock.cs/#L139"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryReceiveAll_out_IList_T____">TryReceiveAll(out IList&lt;T[]&gt;)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool TryReceiveAll(out IList<t[]> items)</t[]></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Generic.IList`1.html" name="System.Collections.Generic.IList">IList</a>&lt;T[]&gt;</td>
+      <td><em>items</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+</article>
+</div>
+<div class="hidden-sm col-md-2" role="complementary">
+  <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+    <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+  </nav>
+</div>
+</div>
+</div>
+<footer>
+  <div class="grad-bottom"></div>
+  <div class="footer">
+    <div class="container">
+      <span class="pull-right">
+        <a href="#top">Back to top</a>
+      </span>
+      <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+    </div>
+  </div>
+</footer>
+</div>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+</html>

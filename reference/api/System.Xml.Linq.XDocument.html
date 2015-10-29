@@ -1,0 +1,1028 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title> | </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content=" | ">
+  
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:nav" content="toc.html">
+  <meta property="docfx:toc" content="reference/toc.html">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="../toc.html">
+</head>
+<body data-spy="scroll" data-target="#affix">
+  <div id="wrapper">
+    <header>
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img id="logo" class="svg" src="../../logo.svg" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content">
+      <div class="sidenav">
+        <a class="btn toc-toggle collapse">Show / Hide Table of Contents</a>
+        <div class="sidetoggle">
+          <div class="sidetoc">
+            <iframe id="sidetoc" src="../toc.html"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="article row grid-right"><div class="col-md-10">
+        <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs/#L25" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="XDocument">Class XDocument</h1>
+      <div class="markdown level0 summary"><p>Represents an XML document.</p><br></div>
+      <div class="markdown level0 conceptual"><h3 id="overview-of-the-xdocument-class">Overview of the XDocument class</h3><br><p><a href="System.String.html">String</a></p></br><p>The <a href="System.Xml.Linq.XDocument.html">XDocument</a> class contains the information necessary for a valid XML document.<br>This includes an XML declaration, processing instructions, and comments.</p><br><p>Note that you only have to create <a href="System.Xml.Linq.XDocument.html">XDocument</a> objects if you require the specific functionality provided by the <a href="System.Xml.Linq.XDocument.html">XDocument</a> class.</br>In many circumstances, you can work directly with System.Xml.Linq.XElement.<br>Working directly with <a href="System.Xml.Linq.XElement.html">XElement</a> is a simpler programming model.<p></br><p><a href="System.Xml.Linq.XDocument.html">XDocument</a> derives from <a href="System.Xml.Linq.XContainer.html">XContainer</a>.<br>Therefore, it can contain child nodes.</br>However, <a href="System.Xml.Linq.XDocument.html">XDocument</a> objects can have only one child <a href="System.Xml.Linq.XElement.html">XElement</a> node. This reflects the XML standard that there can be only one root element in an XML document.</p><br><h3 id="components-of-xdocument">Components of XDocument</h3></br><p>An <a href="System.Xml.Linq.XDocument.html">XDocument</a> can contain the following elements:</p><br><ul><br><li>One <a href="System.Xml.Linq.XDeclaration.html">XDeclaration</a> object. <a href="System.Xml.Linq.XDeclaration.html">XDeclaration</a> enables you to specify the pertinent parts of an XML declaration: the XML version, the encoding of the document, and whether the XML document is stand-alone.</li></br><li>One <a href="System.Xml.Linq.XElement.html">XElement</a> object. This is the root node of the XML document.</li><br><li>Any number of <a href="System.Xml.Linq.XProcessingInstruction.html">XProcessingInstruction</a> objects. A processing instruction communicates information to an application that processes the XML.</li></br><li>Any number of <a href="System.Xml.Linq.XComment.html">XComment</a> objects. The comments will be siblings to the root element. The <a href="System.Xml.Linq.XComment.html">XComment</a> object cannot be the first argument in the list, because it is not valid for an XML document to start with a comment.</li><br><li>One <a href="System.Xml.Linq.XDocumentType.html">XDocumentType</a> for the DTD.</li></br></ul></br><p>When you serialize an System.Xml.Linq.XDocument, even if <strong>XDocument.Declaration</strong> is <strong>null</strong>, the output will have an XML declaration if the writer has <strong>Writer.Settings.OmitXmlDeclaration</strong> set to <strong>false</strong> (the default).</p><br><p>By default, LINQ to XML sets the version to &quot;1.0&quot;, and sets the encoding to &quot;utf-8&quot;.</p></br><h3 id="using-xelement-without-xdocument">Using XElement without XDocument</h3><br><p>As previously mentioned, the <a href="System.Xml.Linq.XElement.html">XElement</a> class is the main class in the LINQ to XML programming interface.</br>In many cases, your application will not require that you create a document.<br>By using the <a href="System.Xml.Linq.XElement.html">XElement</a> class, you can create an XML tree, add other XML trees to it, modify the XML tree, and save it.<p></br><h3 id="using-xdocument">Using XDocument</h3><br><p>To construct an System.Xml.Linq.XDocument, use functional construction, just like you do to construct <a href="System.Xml.Linq.XElement.html">XElement</a> objects.</p></br><p>The following code creates an <a href="System.Xml.Linq.XDocument.html">XDocument</a> object and its associated contained objects.</p><br><pre><code class="lang-csharp">{{&#39;../Sample/Program.cs&#39;[10-29]}}<br></code></pre></br></div>
+      <div class="inheritance">
+        <h5>Inheritance</h5>
+        <div class="level0"><a href="System.Object.html" name="System.Object">Object</a></div>
+        <div class="level1"><a href="System.Xml.Linq.XObject.html" name="System.Xml.Linq.XObject">XObject</a></div>
+        <div class="level2"><a href="System.Xml.Linq.XNode.html" name="System.Xml.Linq.XNode">XNode</a></div>
+        <div class="level3"><a href="System.Xml.Linq.XContainer.html" name="System.Xml.Linq.XContainer">XContainer</a></div>
+        <div class="level4">System.Xml.Linq.XDocument</div>
+      </div>
+      <h6><strong>Namespace</strong>:System.Xml.Linq</h6>
+      <h6><strong>Assembly</strong>:System.Xml.XDocument.dll</h6>
+      <h5 id="XDocument_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public class XDocument : XContainer</code></pre>
+      </div>
+      <h5 id="XDocument_remarks">remarks</h5>
+      <div class="markdown level0 remarks"><p>An <a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument</a> can contain:</p><br><list><item><br>A Document Type Declaration (DTD), see <see cref="T:System.Xml.Linq.XDocumentType"></see></item><item>One root element.</item><item>Zero or more <see cref="T:System.Xml.Linq.XComment"></see> objects.</item><item>Zero or more <see cref="T:System.Xml.Linq.XProcessingInstruction"></see> objects.</item></list></div>
+      <h3 id="constructors">Constructors</h3>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs/#L39"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="XDocument__">XDocument()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument</a> class.</p><br></div>
+  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XDocument()</code></pre>
+  </div>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs/#L60"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="XDocument_Object___">XDocument(Object[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument</a> class with the specified content.</p><br></div>
+  <div class="markdown level1 remarks"><p>Valid content includes:</p><br><p><list><item>Zero or one <see cref="T:System.Xml.Linq.XDocumentType"></see> objects</item><item>Zero or one elements</item><item>Zero or more comments</item><item>Zero or more processing instructions</item></list></br>See <a href="System.Xml.Linq.XContainer.html">System.Xml.Linq.XContainer.Add(System.Object)</a> for details about the content that can be added<br>using this method.<p></br></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XDocument(params object[] content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a>[]</td>
+        <td><em>content</em></td>
+        <td><p>A parameter list of content objects to add to this document.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs/#L88"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="XDocument_XDeclaration__Object___">XDocument(XDeclaration, Object[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument</a> class<br>with the specified <a href="System.Xml.Linq.XDeclaration.html">System.Xml.Linq.XDeclaration</a> and content.</p><br></div>
+  <div class="markdown level1 remarks"><p>Valid content includes:</p><br><p><list><item>Zero or one <see cref="T:System.Xml.Linq.XDocumentType"></see> objects</item><item>Zero or one elements</item><item>Zero or more comments</item><item>Zero or more processing instructions</item><item></item></list></br>See <a href="System.Xml.Linq.XContainer.html">System.Xml.Linq.XContainer.Add(System.Object)</a> for details about the content that can be added<br>using this method.<p></br></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XDocument(XDeclaration declaration, params object[] content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Xml.Linq.XDeclaration.html" name="System.Xml.Linq.XDeclaration">XDeclaration</a></td>
+        <td><em>declaration</em></td>
+        <td><p>The XML declaration for the document.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a>[]</td>
+        <td><em>content</em></td>
+        <td><p>The contents of the document.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs/#L101"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="XDocument_XDocument_">XDocument(XDocument)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument</a> class from an<br>existing XDocument object.</p><br></div>
+  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XDocument(XDocument other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Xml.Linq.XDocument.html" name="System.Xml.Linq.XDocument">XDocument</a></td>
+        <td><em>other</em></td>
+        <td><p>The <see cref="T:System.Xml.Linq.XDocument"></see> object that will be copied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+<h3 id="properties">Properties</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs/#L113"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Declaration">Declaration</h4>
+<div class="markdown level1 summary"><p>Gets the XML declaration for this document.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public XDeclaration Declaration { get; set; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Xml.Linq.XDeclaration.html" name="System.Xml.Linq.XDeclaration">XDeclaration</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs/#L122"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="DocumentType">DocumentType</h4>
+<div class="markdown level1 summary"><p>Gets the Document Type Definition (DTD) for this document.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public XDocumentType DocumentType { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Xml.Linq.XDocumentType.html" name="System.Xml.Linq.XDocumentType">XDocumentType</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs/#L136"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="NodeType">NodeType</h4>
+<div class="markdown level1 summary"><p>Gets the node type for this node.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>This property will always return XmlNodeType.Document.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public override XmlNodeType NodeType { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>XmlNodeType</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs/#L147"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Root">Root</h4>
+<div class="markdown level1 summary"><p>Gets the root element of the XML Tree for this document.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public XElement Root { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Xml.Linq.XElement.html" name="System.Xml.Linq.XElement">XElement</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="methods">Methods</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs/#L235"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Load_Stream_">Load(Stream)</h4>
+<div class="markdown level1 summary"><p>Create a new <a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument</a> and initialize its underlying XML tree using<br>the passed <a href="System.IO.Stream.html">System.IO.Stream</a> parameter.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static XDocument Load(Stream stream)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.IO.Stream.html" name="System.IO.Stream">Stream</a></td>
+      <td><em>stream</em></td>
+      <td><p>A <see cref="T:System.IO.Stream"></see> containing the raw XML to read into the newly
+created <see cref="T:System.Xml.Linq.XDocument"></see>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Xml.Linq.XDocument.html" name="System.Xml.Linq.XDocument">XDocument</a></td>
+      <td><p>A new <see cref="T:System.Xml.Linq.XDocument"></see> containing the contents of the passed in</p>
+<p><see cref="T:System.IO.Stream"></see>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs/#L261"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Load_Stream__LoadOptions_">Load(Stream, LoadOptions)</h4>
+<div class="markdown level1 summary"><p>Create a new <a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument</a> and initialize its underlying XML tree using<br>the passed <a href="System.IO.Stream.html">System.IO.Stream</a> parameter.  Optionally whitespace handling</br>can be preserved.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>If LoadOptions.PreserveWhitespace is enabled then<br>the underlying <see cref="!:XmlReaderSettings"></see> property <see cref="!:XmlReaderSettings.IgnoreWhitespace"></see></br>is set to false.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static XDocument Load(Stream stream, LoadOptions options)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.IO.Stream.html" name="System.IO.Stream">Stream</a></td>
+      <td><em>stream</em></td>
+      <td><p>A <see cref="T:System.IO.Stream"></see> containing the raw XML to read into the newly
+created <see cref="T:System.Xml.Linq.XDocument"></see>.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Xml.Linq.LoadOptions.html" name="System.Xml.Linq.LoadOptions">LoadOptions</a></td>
+      <td><em>options</em></td>
+      <td><p>A set of <a href="System.Xml.Linq.LoadOptions.html">System.Xml.Linq.LoadOptions</a>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Xml.Linq.XDocument.html" name="System.Xml.Linq.XDocument">XDocument</a></td>
+      <td><p>A new <see cref="T:System.Xml.Linq.XDocument"></see> containing the contents of the passed in</p>
+<p><see cref="T:System.IO.Stream"></see>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs/#L282"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Load_TextReader_">Load(TextReader)</h4>
+<div class="markdown level1 summary"><p>Create a new <a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument</a> and initialize its underlying XML tree using<br>the passed <a href="System.IO.TextReader.html">System.IO.TextReader</a> parameter.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static XDocument Load(TextReader textReader)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.IO.TextReader.html" name="System.IO.TextReader">TextReader</a></td>
+      <td><em>textReader</em></td>
+      <td><p>A <see cref="T:System.IO.TextReader"></see> containing the raw XML to read into the newly
+created <see cref="T:System.Xml.Linq.XDocument"></see>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Xml.Linq.XDocument.html" name="System.Xml.Linq.XDocument">XDocument</a></td>
+      <td><p>A new <see cref="T:System.Xml.Linq.XDocument"></see> containing the contents of the passed in</p>
+<p><see cref="T:System.IO.TextReader"></see>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs/#L308"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Load_TextReader__LoadOptions_">Load(TextReader, LoadOptions)</h4>
+<div class="markdown level1 summary"><p>Create a new <a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument</a> and initialize its underlying XML tree using<br>the passed <a href="System.IO.TextReader.html">System.IO.TextReader</a> parameter.  Optionally whitespace handling</br>can be preserved.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>If LoadOptions.PreserveWhitespace is enabled then<br>the <see cref="!:XmlReaderSettings"></see> property <see cref="!:XmlReaderSettings.IgnoreWhitespace"></see></br>is set to false.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static XDocument Load(TextReader textReader, LoadOptions options)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.IO.TextReader.html" name="System.IO.TextReader">TextReader</a></td>
+      <td><em>textReader</em></td>
+      <td><p>A <see cref="T:System.IO.TextReader"></see> containing the raw XML to read into the newly
+created <see cref="T:System.Xml.Linq.XDocument"></see>.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Xml.Linq.LoadOptions.html" name="System.Xml.Linq.LoadOptions">LoadOptions</a></td>
+      <td><em>options</em></td>
+      <td><p>A set of <a href="System.Xml.Linq.LoadOptions.html">System.Xml.Linq.LoadOptions</a>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Xml.Linq.XDocument.html" name="System.Xml.Linq.XDocument">XDocument</a></td>
+      <td><p>A new <see cref="T:System.Xml.Linq.XDocument"></see> containing the contents of the passed in</p>
+<p><see cref="T:System.IO.TextReader"></see>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs/#L184"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Load_String_">Load(String)</h4>
+<div class="markdown level1 summary"><p>Create a new <see cref="T:System.Xml.Linq.XDocument"></see> based on the contents of the file<br>referenced by the URI parameter passed in.  Note: Use</p><br><p><see cref="M:System.Xml.Linq.XDocument.Parse(System.String)"></see> to create an <see cref="T:System.Xml.Linq.XDocument"></see> from</br>a string containing XML.<p><br><p><seealso cref="!:XmlReader.Create(string)"></seealso><seealso cref="M:System.Xml.Linq.XDocument.Parse(System.String)"></seealso></p></br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>This method uses the <see cref="!:XmlReader.Create(string)"></see> method to create<br>an <see cref="!:XmlReader"></see> to read the raw XML into the underlying</br>XML tree.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static XDocument Load(string uri)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td><em>uri</em></td>
+      <td><p>A URI string referencing the file to load into a new <see cref="T:System.Xml.Linq.XDocument"></see>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Xml.Linq.XDocument.html" name="System.Xml.Linq.XDocument">XDocument</a></td>
+      <td><p>An <see cref="T:System.Xml.Linq.XDocument"></see> initialized with the contents of the file referenced
+in the passed in uri parameter.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs/#L213"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Load_String__LoadOptions_">Load(String, LoadOptions)</h4>
+<div class="markdown level1 summary"><p>Create a new <a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument</a> based on the contents of the file<br>referenced by the URI parameter passed in.  Optionally, whitespace can be preserved.</p><br><see cref="!:XmlReader.Create(string)"></see></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>This method uses the <see cref="!:XmlReader.Create(string)"></see> method to create<br>an <see cref="!:XmlReader"></see> to read the raw XML into an underlying</br>XML tree.  If LoadOptions.PreserveWhitespace is enabled then<br>the <see cref="!:XmlReaderSettings"></see> property <see cref="!:XmlReaderSettings.IgnoreWhitespace"></see></br>is set to false.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static XDocument Load(string uri, LoadOptions options)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td><em>uri</em></td>
+      <td><p>A string representing the URI of the file to be loaded into a new <see cref="T:System.Xml.Linq.XDocument"></see>.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Xml.Linq.LoadOptions.html" name="System.Xml.Linq.LoadOptions">LoadOptions</a></td>
+      <td><em>options</em></td>
+      <td><p>A set of <a href="System.Xml.Linq.LoadOptions.html">System.Xml.Linq.LoadOptions</a>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Xml.Linq.XDocument.html" name="System.Xml.Linq.XDocument">XDocument</a></td>
+      <td><p>An <see cref="T:System.Xml.Linq.XDocument"></see> initialized with the contents of the file referenced
+in the passed uri parameter.  If LoadOptions.PreserveWhitespace is enabled then
+all whitespace will be preserved.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs/#L329"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Load_XmlReader_">Load(XmlReader)</h4>
+<div class="markdown level1 summary"><p>Create a new <a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument</a> containing the contents of the<br>passed in <see cref="!:XmlReader"></see>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static XDocument Load(XmlReader reader)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>XmlReader</td>
+      <td><em>reader</em></td>
+      <td><p>An <see cref="!:XmlReader"></see> containing the XML to be read into the new</p>
+<p><see cref="T:System.Xml.Linq.XDocument"></see>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Xml.Linq.XDocument.html" name="System.Xml.Linq.XDocument">XDocument</a></td>
+      <td><p>A new <see cref="T:System.Xml.Linq.XDocument"></see> containing the contents of the passed
+in <see cref="!:XmlReader"></see>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs/#L349"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Load_XmlReader__LoadOptions_">Load(XmlReader, LoadOptions)</h4>
+<div class="markdown level1 summary"><p>Create a new <a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument</a> containing the contents of the<br>passed in <see cref="!:XmlReader"></see>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static XDocument Load(XmlReader reader, LoadOptions options)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>XmlReader</td>
+      <td><em>reader</em></td>
+      <td><p>An <see cref="!:XmlReader"></see> containing the XML to be read into the new</p>
+<p><see cref="T:System.Xml.Linq.XDocument"></see>.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Xml.Linq.LoadOptions.html" name="System.Xml.Linq.LoadOptions">LoadOptions</a></td>
+      <td><em>options</em></td>
+      <td><p>A set of <a href="System.Xml.Linq.LoadOptions.html">System.Xml.Linq.LoadOptions</a>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Xml.Linq.XDocument.html" name="System.Xml.Linq.XDocument">XDocument</a></td>
+      <td><p>A new <see cref="T:System.Xml.Linq.XDocument"></see> containing the contents of the passed
+in <see cref="!:XmlReader"></see>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs/#L395"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Parse_String_">Parse(String)</h4>
+<div class="markdown level1 summary"><p>Create a new <a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument</a> from a string containing<br>XML.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static XDocument Parse(string text)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td><em>text</em></td>
+      <td><p>A string containing XML.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Xml.Linq.XDocument.html" name="System.Xml.Linq.XDocument">XDocument</a></td>
+      <td><p>An <see cref="T:System.Xml.Linq.XDocument"></see> containing an XML tree initialized from the
+passed in XML string.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs/#L422"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Parse_String__LoadOptions_">Parse(String, LoadOptions)</h4>
+<div class="markdown level1 summary"><p>Create a new <a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument</a> from a string containing<br>XML.  Optionally whitespace can be preserved.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>This method uses <see cref="!:XmlReader.Create(TextReader, XmlReaderSettings)"></see>,<br>passing it a StringReader constructed from the passed in XML String. If</br><a href="System.Xml.Linq.LoadOptions.html">System.Xml.Linq.LoadOptions.PreserveWhitespace</a> is enabled then</p><br><p><see cref="!:XmlReaderSettings.IgnoreWhitespace"></see> is set to false. See</p></br><p><see cref="!:XmlReaderSettings.IgnoreWhitespace"></see> for more information on<br>whitespace handling.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static XDocument Parse(string text, LoadOptions options)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td><em>text</em></td>
+      <td><p>A string containing XML.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Xml.Linq.LoadOptions.html" name="System.Xml.Linq.LoadOptions">LoadOptions</a></td>
+      <td><em>options</em></td>
+      <td><p>A set of <a href="System.Xml.Linq.LoadOptions.html">System.Xml.Linq.LoadOptions</a>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Xml.Linq.XDocument.html" name="System.Xml.Linq.XDocument">XDocument</a></td>
+      <td><p>An <see cref="T:System.Xml.Linq.XDocument"></see> containing an XML tree initialized from the
+passed in XML string.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs/#L448"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Save_Stream_">Save(Stream)</h4>
+<div class="markdown level1 summary"><p>Output this <a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument</a> to the passed in <a href="System.IO.Stream.html">System.IO.Stream</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>The format will be indented by default.  If you want<br>no indenting then use the SaveOptions version of Save (see</br><a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument.Save(System.IO.Stream,System.Xml.Linq.SaveOptions)</a>) enabling<br>SaveOptions.DisableFormatting</br>There is also an option SaveOptions.OmitDuplicateNamespaces for removing duplicate namespace declarations.<br>Or instead use the SaveOptions as an annotation on this node or its ancestors, then this method will use those options.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void Save(Stream stream)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.IO.Stream.html" name="System.IO.Stream">Stream</a></td>
+      <td><em>stream</em></td>
+      <td><p>The <see cref="T:System.IO.Stream"></see> to output this <see cref="T:System.Xml.Linq.XDocument"></see> to.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs/#L463"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Save_Stream__SaveOptions_">Save(Stream, SaveOptions)</h4>
+<div class="markdown level1 summary"><p>Output this <a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument</a> to a <a href="System.IO.Stream.html">System.IO.Stream</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void Save(Stream stream, SaveOptions options)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.IO.Stream.html" name="System.IO.Stream">Stream</a></td>
+      <td><em>stream</em></td>
+      <td><p>The <see cref="T:System.IO.Stream"></see> to output the XML to.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Xml.Linq.SaveOptions.html" name="System.Xml.Linq.SaveOptions">SaveOptions</a></td>
+      <td><em>options</em></td>
+      <td><p>If SaveOptions.DisableFormatting is enabled the output is not indented.
+If SaveOptions.OmitDuplicateNamespaces is enabled duplicate namespace declarations will be removed.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs/#L496"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Save_TextWriter_">Save(TextWriter)</h4>
+<div class="markdown level1 summary"><p>Output this <a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument</a> to the passed in <a href="System.IO.TextWriter.html">System.IO.TextWriter</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>The format will be indented by default.  If you want<br>no indenting then use the SaveOptions version of Save (see</br><a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument.Save(System.IO.TextWriter,System.Xml.Linq.SaveOptions)</a>) enabling<br>SaveOptions.DisableFormatting</br>There is also an option SaveOptions.OmitDuplicateNamespaces for removing duplicate namespace declarations.<br>Or instead use the SaveOptions as an annotation on this node or its ancestors, then this method will use those options.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void Save(TextWriter textWriter)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.IO.TextWriter.html" name="System.IO.TextWriter">TextWriter</a></td>
+      <td><em>textWriter</em></td>
+      <td><p>The <see cref="T:System.IO.TextWriter"></see> to output this <see cref="T:System.Xml.Linq.XDocument"></see> to.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs/#L511"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Save_TextWriter__SaveOptions_">Save(TextWriter, SaveOptions)</h4>
+<div class="markdown level1 summary"><p>Output this <a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument</a> to a <a href="System.IO.TextWriter.html">System.IO.TextWriter</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void Save(TextWriter textWriter, SaveOptions options)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.IO.TextWriter.html" name="System.IO.TextWriter">TextWriter</a></td>
+      <td><em>textWriter</em></td>
+      <td><p>The <see cref="T:System.IO.TextWriter"></see> to output the XML to.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Xml.Linq.SaveOptions.html" name="System.Xml.Linq.SaveOptions">SaveOptions</a></td>
+      <td><em>options</em></td>
+      <td><p>If SaveOptions.DisableFormatting is enabled the output is not indented.
+If SaveOptions.OmitDuplicateNamespaces is enabled duplicate namespace declarations will be removed.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs/#L526"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Save_XmlWriter_">Save(XmlWriter)</h4>
+<div class="markdown level1 summary"><p>Output this <a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument</a> to an <see cref="!:XmlWriter"></see>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void Save(XmlWriter writer)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>XmlWriter</td>
+      <td><em>writer</em></td>
+      <td><p>The <see cref="!:XmlWriter"></see> to output the XML to.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs/#L541"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="WriteTo_XmlWriter_">WriteTo(XmlWriter)</h4>
+<div class="markdown level1 summary"><p>Output this <a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument</a>&#39;s underlying XML tree to the<br>passed in <see cref="!:XmlWriter"></see>.</br><a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument.Save(XmlWriter)</a></p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public override void WriteTo(XmlWriter writer)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>XmlWriter</td>
+      <td><em>writer</em></td>
+      <td><p>The <see cref="!:XmlWriter"></see> to output the content of this</p>
+<p><see cref="T:System.Xml.Linq.XDocument"></see>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+</article>
+</div>
+<div class="hidden-sm col-md-2" role="complementary">
+  <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+    <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+  </nav>
+</div>
+</div>
+</div>
+<footer>
+  <div class="grad-bottom"></div>
+  <div class="footer">
+    <div class="container">
+      <span class="pull-right">
+        <a href="#top">Back to top</a>
+      </span>
+      <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+    </div>
+  </div>
+</footer>
+</div>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+</html>

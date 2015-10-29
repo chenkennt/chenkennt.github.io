@@ -1,0 +1,477 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title> | </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content=" | ">
+  
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:nav" content="toc.html">
+  <meta property="docfx:toc" content="reference/toc.html">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="../toc.html">
+</head>
+<body data-spy="scroll" data-target="#affix">
+  <div id="wrapper">
+    <header>
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img id="logo" class="svg" src="../../logo.svg" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content">
+      <div class="sidenav">
+        <a class="btn toc-toggle collapse">Show / Hide Table of Contents</a>
+        <div class="sidetoggle">
+          <div class="sidetoc">
+            <iframe id="sidetoc" src="../toc.html"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="article row grid-right"><div class="col-md-10">
+        <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationTokenSource.cs/#L36" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="CancellationTokenSource">Class CancellationTokenSource</h1>
+      <div class="markdown level0 summary"><p>Signals to a <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> that it should be canceled.</p><br></div>
+      <div class="markdown level0 conceptual"></div>
+      <div class="inheritance">
+        <h5>Inheritance</h5>
+        <div class="level0"><a href="System.Object.html" name="System.Object">Object</a></div>
+        <div class="level1">System.Threading.CancellationTokenSource</div>
+      </div>
+      <h6><strong>Namespace</strong>:System.Threading</h6>
+      <h6><strong>Assembly</strong>:mscorlib.dll</h6>
+      <h5 id="CancellationTokenSource_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public class CancellationTokenSource : IDisposable</code></pre>
+      </div>
+      <h5 id="CancellationTokenSource_remarks">remarks</h5>
+      <div class="markdown level0 remarks"><para><br><see cref="T:System.Threading.CancellationTokenSource"></see> is used to instantiate a <see cref="T:System.Threading.CancellationToken"></see></br>(via the source&#39;s <see cref="P:System.Threading.CancellationTokenSource.Token">Token</see> property)<br>that can be handed to operations that wish to be notified of cancellation or that can be used to</br>register asynchronous operations for cancellation. That token may have cancellation requested by<br>calling to the source&#39;s <see cref="M:System.Threading.CancellationTokenSource.Cancel">Cancel</see></br>method.<br></para><br><para><br>All members of this class, except <see cref="M:System.Threading.CancellationTokenSource.Dispose">Dispose</see>, are thread-safe and may be used</br>concurrently from multiple threads.<br></para></div>
+      <h3 id="constructors">Constructors</h3>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationTokenSource.cs/#L251"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="CancellationTokenSource__">CancellationTokenSource()</h4>
+  <div class="markdown level1 summary"><p>Initializes the <a href="System.Threading.CancellationTokenSource.html">System.Threading.CancellationTokenSource</a>.</p><br></div>
+  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CancellationTokenSource()</code></pre>
+  </div>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationTokenSource.cs/#L313"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="CancellationTokenSource_Int32_">CancellationTokenSource(Int32)</h4>
+  <div class="markdown level1 summary"><p>Constructs a <a href="System.Threading.CancellationTokenSource.html">System.Threading.CancellationTokenSource</a> that will be canceled after a specified time span.</p><br></div>
+  <div class="markdown level1 remarks"><para><br>The countdown for the millisecondsDelay starts during the call to the constructor.  When the millisecondsDelay expires,</br>the constructed <see cref="T:System.Threading.CancellationTokenSource"></see> is canceled (if it has<br>not been canceled already).</br></para><br><para><br>Subsequent calls to CancelAfter will reset the millisecondsDelay for the constructed</br><see cref="T:System.Threading.CancellationTokenSource"></see>, if it has not been<br>canceled already.</br></para></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CancellationTokenSource(int millisecondsDelay)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>millisecondsDelay</em></td>
+        <td><p>The time span to wait before canceling this <see cref="T:System.Threading.CancellationTokenSource"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationTokenSource.cs/#L283"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="CancellationTokenSource_TimeSpan_">CancellationTokenSource(TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Constructs a <a href="System.Threading.CancellationTokenSource.html">System.Threading.CancellationTokenSource</a> that will be canceled after a specified time span.</p><br></div>
+  <div class="markdown level1 remarks"><para><br>The countdown for the delay starts during the call to the constructor.  When the delay expires,</br>the constructed <see cref="T:System.Threading.CancellationTokenSource"></see> is canceled, if it has<br>not been canceled already.</br></para><br><para><br>Subsequent calls to CancelAfter will reset the delay for the constructed</br><see cref="T:System.Threading.CancellationTokenSource"></see>, if it has not been<br>canceled already.</br></para></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CancellationTokenSource(TimeSpan delay)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
+        <td><em>delay</em></td>
+        <td><p>The time span to wait before canceling this <see cref="T:System.Threading.CancellationTokenSource"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+<h3 id="properties">Properties</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationTokenSource.cs/#L113"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="IsCancellationRequested">IsCancellationRequested</h4>
+<div class="markdown level1 summary"><p>Gets whether cancellation has been requested for this <a href="System.Threading.CancellationTokenSource.html">System.Threading.CancellationTokenSource</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><para><br>This property indicates whether cancellation has been requested for this token source, such as</br>due to a call to its<br><see cref="M:System.Threading.CancellationTokenSource.Cancel">Cancel</see> method.</br></para><br><para><br>If this property returns true, it only guarantees that cancellation has been requested. It does not</br>guarantee that every handler registered with the corresponding token has finished executing, nor<br>that cancellation requests have finished propagating to all registered handlers. Additional</br>synchronization may be required, particularly in situations where related objects are being<br>canceled concurrently.</br></para></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool IsCancellationRequested { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationTokenSource.cs/#L151"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Token">Token</h4>
+<div class="markdown level1 summary"><p>Gets the <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a><br>associated with this <a href="System.Threading.CancellationTokenSource.html">System.Threading.CancellationTokenSource</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public CancellationToken Token { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="methods">Methods</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationTokenSource.cs/#L357"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Cancel__">Cancel()</h4>
+<div class="markdown level1 summary"><p>Communicates a request for cancellation.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><para><br>The associated <see cref="T:System.Threading.CancellationToken"></see> will be</br>notified of the cancellation and will transition to a state where<br><see cref="P:System.Threading.CancellationToken.IsCancellationRequested">IsCancellationRequested</see> returns true.</br>Any callbacks or cancelable operations<br>registered with the <see cref="T:System.Threading.CancellationToken"></see>  will be executed.</br></para><br><para><br>Cancelable operations and callbacks registered with the token should not throw exceptions.</br>However, this overload of Cancel will aggregate any exceptions thrown into a <see cref="T:System.AggregateException"></see>,<br>such that one callback throwing an exception will not prevent other registered callbacks from being executed.</br></para></br><para><br>The <see cref="T:System.Threading.ExecutionContext"></see> that was captured when each callback was registered</br>will be reestablished when the callback is invoked.<br></para></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void Cancel()</code></pre>
+</div>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationTokenSource.cs/#L391"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Cancel_Boolean_">Cancel(Boolean)</h4>
+<div class="markdown level1 summary"><p>Communicates a request for cancellation.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><para><br>The associated <see cref="T:System.Threading.CancellationToken"></see> will be</br>notified of the cancellation and will transition to a state where<br><see cref="P:System.Threading.CancellationToken.IsCancellationRequested">IsCancellationRequested</see> returns true.</br>Any callbacks or cancelable operations<br>registered with the <see cref="T:System.Threading.CancellationToken"></see>  will be executed.</br></para><br><para><br>Cancelable operations and callbacks registered with the token should not throw exceptions.</br>If <paramref name="throwOnFirstException"></paramref> is true, an exception will immediately propagate out of the<br>call to Cancel, preventing the remaining callbacks and cancelable operations from being processed.</br>If <paramref name="throwOnFirstException"></paramref> is false, this overload will aggregate any<br>exceptions thrown into a <see cref="T:System.AggregateException"></see>,</br>such that one callback throwing an exception will not prevent other registered callbacks from being executed.<br></para></br><para><br>The <see cref="T:System.Threading.ExecutionContext"></see> that was captured when each callback was registered</br>will be reestablished when the callback is invoked.<br></para></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void Cancel(bool throwOnFirstException)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><em>throwOnFirstException</em></td>
+      <td><p>Specifies whether exceptions should immediately propagate.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationTokenSource.cs/#L457"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="CancelAfter_Int32_">CancelAfter(Int32)</h4>
+<div class="markdown level1 summary"><p>Schedules a Cancel operation on this <a href="System.Threading.CancellationTokenSource.html">System.Threading.CancellationTokenSource</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><para><br>The countdown for the millisecondsDelay starts during this call.  When the millisecondsDelay expires,</br>this <see cref="T:System.Threading.CancellationTokenSource"></see> is canceled, if it has<br>not been canceled already.</br></para><br><para><br>Subsequent calls to CancelAfter will reset the millisecondsDelay for this</br><see cref="T:System.Threading.CancellationTokenSource"></see>, if it has not been<br>canceled already.</br></para></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void CancelAfter(int millisecondsDelay)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>millisecondsDelay</em></td>
+      <td><p>The time span to wait before canceling this <see cref="T:System.Threading.CancellationTokenSource"></see>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationTokenSource.cs/#L422"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="CancelAfter_TimeSpan_">CancelAfter(TimeSpan)</h4>
+<div class="markdown level1 summary"><p>Schedules a Cancel operation on this <a href="System.Threading.CancellationTokenSource.html">System.Threading.CancellationTokenSource</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><para><br>The countdown for the delay starts during this call.  When the delay expires,</br>this <see cref="T:System.Threading.CancellationTokenSource"></see> is canceled, if it has<br>not been canceled already.</br></para><br><para><br>Subsequent calls to CancelAfter will reset the delay for this</br><see cref="T:System.Threading.CancellationTokenSource"></see>, if it has not been<br>canceled already.</br></para></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void CancelAfter(TimeSpan delay)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
+      <td><em>delay</em></td>
+      <td><p>The time span to wait before canceling this <see cref="T:System.Threading.CancellationTokenSource"></see>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationTokenSource.cs/#L871"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="CreateLinkedTokenSource_CancellationToken__CancellationToken_">CreateLinkedTokenSource(CancellationToken, CancellationToken)</h4>
+<div class="markdown level1 summary"><p>Creates a <a href="System.Threading.CancellationTokenSource.html">System.Threading.CancellationTokenSource</a> that will be in the canceled state<br>when any of the source tokens are in the canceled state.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static CancellationTokenSource CreateLinkedTokenSource(CancellationToken token1, CancellationToken token2)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+      <td><em>token1</em></td>
+      <td><p>The first <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> to observe.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+      <td><em>token2</em></td>
+      <td><p>The second <see cref="T:System.Threading.CancellationToken">CancellationToken</see> to observe.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.CancellationTokenSource.html" name="System.Threading.CancellationTokenSource">CancellationTokenSource</a></td>
+      <td><p>A <see cref="T:System.Threading.CancellationTokenSource">CancellationTokenSource</see> that is linked
+to the source tokens.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationTokenSource.cs/#L905"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="CreateLinkedTokenSource_CancellationToken___">CreateLinkedTokenSource(CancellationToken[])</h4>
+<div class="markdown level1 summary"><p>Creates a <a href="System.Threading.CancellationTokenSource.html">System.Threading.CancellationTokenSource</a> that will be in the canceled state<br>when any of the source tokens are in the canceled state.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static CancellationTokenSource CreateLinkedTokenSource(params CancellationToken[] tokens)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a>[]</td>
+      <td><em>tokens</em></td>
+      <td><p>The <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> instances to observe.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.CancellationTokenSource.html" name="System.Threading.CancellationTokenSource">CancellationTokenSource</a></td>
+      <td><p>A <see cref="T:System.Threading.CancellationTokenSource">CancellationTokenSource</see> that is linked
+to the source tokens.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationTokenSource.cs/#L539"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Dispose__">Dispose()</h4>
+<div class="markdown level1 summary"><p>Releases the resources used by this <a href="System.Threading.CancellationTokenSource.html">System.Threading.CancellationTokenSource</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>This method is not thread-safe for any other concurrent calls.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+</div>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationTokenSource.cs/#L549"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Dispose_Boolean_">Dispose(Boolean)</h4>
+<div class="markdown level1 summary"><p>Releases the unmanaged resources used by the <a href="System.Threading.CancellationTokenSource.html">System.Threading.CancellationTokenSource</a> class and optionally releases the managed resources.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><em>disposing</em></td>
+      <td><p>true to release both managed and unmanaged resources; false to release only unmanaged resources.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+</article>
+</div>
+<div class="hidden-sm col-md-2" role="complementary">
+  <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+    <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+  </nav>
+</div>
+</div>
+</div>
+<footer>
+  <div class="grad-bottom"></div>
+  <div class="footer">
+    <div class="container">
+      <span class="pull-right">
+        <a href="#top">Back to top</a>
+      </span>
+      <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+    </div>
+  </div>
+</footer>
+</div>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+</html>

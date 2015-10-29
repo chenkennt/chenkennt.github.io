@@ -1,0 +1,2199 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title> | </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content=" | ">
+  
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:nav" content="toc.html">
+  <meta property="docfx:toc" content="reference/toc.html">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="../toc.html">
+</head>
+<body data-spy="scroll" data-target="#affix">
+  <div id="wrapper">
+    <header>
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img id="logo" class="svg" src="../../logo.svg" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content">
+      <div class="sidenav">
+        <a class="btn toc-toggle collapse">Show / Hide Table of Contents</a>
+        <div class="sidetoggle">
+          <div class="sidetoc">
+            <iframe id="sidetoc" src="../toc.html"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="article row grid-right"><div class="col-md-10">
+        <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.WinMD.cs/#L10" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="MetadataReader">Class MetadataReader</h1>
+      <div class="markdown level0 summary"><p>Reads metadata as defined byte the ECMA 335 CLI specification.</p><br></div>
+      <div class="markdown level0 conceptual"></div>
+      <div class="inheritance">
+        <h5>Inheritance</h5>
+        <div class="level0"><a href="System.Object.html" name="System.Object">Object</a></div>
+        <div class="level1">System.Reflection.Metadata.MetadataReader</div>
+      </div>
+      <h6><strong>Namespace</strong>:System.Reflection.Metadata</h6>
+      <h6><strong>Assembly</strong>:System.Reflection.Metadata.dll</h6>
+      <h5 id="MetadataReader_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public sealed class MetadataReader</code></pre>
+      </div>
+      <h5 id="MetadataReader_remarks">remarks</h5>
+      <div class="markdown level0 remarks"></div>
+      <h3 id="constructors">Constructors</h3>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L37"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="MetadataReader_Byte___Int32_">MetadataReader(Byte*, Int32)</h4>
+  <div class="markdown level1 summary"><p>Creates a metadata reader from the metadata stored at the given memory location.</p><br></div>
+  <div class="markdown level1 remarks"><p>The memory is owned by the caller and it must be kept memory alive and unmodified throughout the lifetime of the <a href="System.Reflection.Metadata.MetadataReader.html">System.Reflection.Metadata.MetadataReader</a>.</p><br></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MetadataReader(byte *metadata, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Byte.html" name="System.Byte">Byte</a>*</td>
+        <td><em>metadata</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>length</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L50"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="MetadataReader_Byte___Int32__MetadataReaderOptions_">MetadataReader(Byte*, Int32, MetadataReaderOptions)</h4>
+  <div class="markdown level1 summary"><p>Creates a metadata reader from the metadata stored at the given memory location.</p><br></div>
+  <div class="markdown level1 remarks"><p>The memory is owned by the caller and it must be kept memory alive and unmodified throughout the lifetime of the <a href="System.Reflection.Metadata.MetadataReader.html">System.Reflection.Metadata.MetadataReader</a>.<br>Use <a href="System.Reflection.Metadata.PEReaderExtensions.html">System.Reflection.Metadata.PEReaderExtensions.GetMetadataReader(System.Reflection.PortableExecutable.PEReader,System.Reflection.Metadata.MetadataReaderOptions)</a> to obtain</br>metadata from a PE image.</p><br></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MetadataReader(byte *metadata, int length, MetadataReaderOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Byte.html" name="System.Byte">Byte</a>*</td>
+        <td><em>metadata</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>length</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.Metadata.MetadataReaderOptions.html" name="System.Reflection.Metadata.MetadataReaderOptions">MetadataReaderOptions</a></td>
+        <td><em>options</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L63"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="MetadataReader_Byte___Int32__MetadataReaderOptions__MetadataStringDecoder_">MetadataReader(Byte*, Int32, MetadataReaderOptions, MetadataStringDecoder)</h4>
+  <div class="markdown level1 summary"><p>Creates a metadata reader from the metadata stored at the given memory location.</p><br></div>
+  <div class="markdown level1 remarks"><p>The memory is owned by the caller and it must be kept memory alive and unmodified throughout the lifetime of the <a href="System.Reflection.Metadata.MetadataReader.html">System.Reflection.Metadata.MetadataReader</a>.<br>Use <a href="System.Reflection.Metadata.PEReaderExtensions.html">System.Reflection.Metadata.PEReaderExtensions.GetMetadataReader(System.Reflection.PortableExecutable.PEReader,System.Reflection.Metadata.MetadataReaderOptions,System.Reflection.Metadata.MetadataStringDecoder)</a> to obtain</br>metadata from a PE image.</p><br></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MetadataReader(byte *metadata, int length, MetadataReaderOptions options, MetadataStringDecoder utf8Decoder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Byte.html" name="System.Byte">Byte</a>*</td>
+        <td><em>metadata</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>length</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.Metadata.MetadataReaderOptions.html" name="System.Reflection.Metadata.MetadataReaderOptions">MetadataReaderOptions</a></td>
+        <td><em>options</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.Metadata.MetadataStringDecoder.html" name="System.Reflection.Metadata.MetadataStringDecoder">MetadataStringDecoder</a></td>
+        <td><em>utf8Decoder</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+<h3 id="properties">Properties</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L883"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="AssemblyFiles">AssemblyFiles</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public AssemblyFileHandleCollection AssemblyFiles { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.AssemblyFileHandleCollection.html" name="System.Reflection.Metadata.AssemblyFileHandleCollection">AssemblyFileHandleCollection</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L848"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="AssemblyReferences">AssemblyReferences</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public AssemblyReferenceHandleCollection AssemblyReferences { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.AssemblyReferenceHandleCollection.html" name="System.Reflection.Metadata.AssemblyReferenceHandleCollection">AssemblyReferenceHandleCollection</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L863"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="CustomAttributes">CustomAttributes</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public CustomAttributeHandleCollection CustomAttributes { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.CustomAttributeHandleCollection.html" name="System.Reflection.Metadata.CustomAttributeHandleCollection">CustomAttributeHandleCollection</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L868"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="DeclarativeSecurityAttributes">DeclarativeSecurityAttributes</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public DeclarativeSecurityAttributeHandleCollection DeclarativeSecurityAttributes { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.DeclarativeSecurityAttributeHandleCollection.html" name="System.Reflection.Metadata.DeclarativeSecurityAttributeHandleCollection">DeclarativeSecurityAttributeHandleCollection</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L903"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="EventDefinitions">EventDefinitions</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public EventDefinitionHandleCollection EventDefinitions { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.EventDefinitionHandleCollection.html" name="System.Reflection.Metadata.EventDefinitionHandleCollection">EventDefinitionHandleCollection</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L888"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ExportedTypes">ExportedTypes</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public ExportedTypeHandleCollection ExportedTypes { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.ExportedTypeHandleCollection.html" name="System.Reflection.Metadata.ExportedTypeHandleCollection">ExportedTypeHandleCollection</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L898"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="FieldDefinitions">FieldDefinitions</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public FieldDefinitionHandleCollection FieldDefinitions { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.FieldDefinitionHandleCollection.html" name="System.Reflection.Metadata.FieldDefinitionHandleCollection">FieldDefinitionHandleCollection</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L843"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="IsAssembly">IsAssembly</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool IsAssembly { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L878"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ManifestResources">ManifestResources</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public ManifestResourceHandleCollection ManifestResources { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.ManifestResourceHandleCollection.html" name="System.Reflection.Metadata.ManifestResourceHandleCollection">ManifestResourceHandleCollection</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L873"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="MemberReferences">MemberReferences</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public MemberReferenceHandleCollection MemberReferences { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.MemberReferenceHandleCollection.html" name="System.Reflection.Metadata.MemberReferenceHandleCollection">MemberReferenceHandleCollection</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L833"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="MetadataKind">MetadataKind</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public MetadataKind MetadataKind { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.MetadataKind.html" name="System.Reflection.Metadata.MetadataKind">MetadataKind</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L828"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="MetadataVersion">MetadataVersion</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public string MetadataVersion { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L893"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="MethodDefinitions">MethodDefinitions</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public MethodDefinitionHandleCollection MethodDefinitions { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.MethodDefinitionHandleCollection.html" name="System.Reflection.Metadata.MethodDefinitionHandleCollection">MethodDefinitionHandleCollection</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L823"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Options">Options</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public MetadataReaderOptions Options { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.MetadataReaderOptions.html" name="System.Reflection.Metadata.MetadataReaderOptions">MetadataReaderOptions</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L908"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="PropertyDefinitions">PropertyDefinitions</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public PropertyDefinitionHandleCollection PropertyDefinitions { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.PropertyDefinitionHandleCollection.html" name="System.Reflection.Metadata.PropertyDefinitionHandleCollection">PropertyDefinitionHandleCollection</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L838"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="StringComparer">StringComparer</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public MetadataStringComparer StringComparer { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.MetadataStringComparer.html" name="System.Reflection.Metadata.MetadataStringComparer">MetadataStringComparer</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L853"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TypeDefinitions">TypeDefinitions</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public TypeDefinitionHandleCollection TypeDefinitions { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.TypeDefinitionHandleCollection.html" name="System.Reflection.Metadata.TypeDefinitionHandleCollection">TypeDefinitionHandleCollection</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L858"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TypeReferences">TypeReferences</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public TypeReferenceHandleCollection TypeReferences { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.TypeReferenceHandleCollection.html" name="System.Reflection.Metadata.TypeReferenceHandleCollection">TypeReferenceHandleCollection</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="methods">Methods</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L913"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetAssemblyDefinition__">GetAssemblyDefinition()</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public AssemblyDefinition GetAssemblyDefinition()</code></pre>
+</div>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.AssemblyDefinition.html" name="System.Reflection.Metadata.AssemblyDefinition">AssemblyDefinition</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L1151"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetAssemblyFile_AssemblyFileHandle_">GetAssemblyFile(AssemblyFileHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public AssemblyFile GetAssemblyFile(AssemblyFileHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.AssemblyFileHandle.html" name="System.Reflection.Metadata.AssemblyFileHandle">AssemblyFileHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.AssemblyFile.html" name="System.Reflection.Metadata.AssemblyFile">AssemblyFile</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L970"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetAssemblyReference_AssemblyReferenceHandle_">GetAssemblyReference(AssemblyReferenceHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public AssemblyReference GetAssemblyReference(AssemblyReferenceHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.AssemblyReferenceHandle.html" name="System.Reflection.Metadata.AssemblyReferenceHandle">AssemblyReferenceHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.AssemblyReference.html" name="System.Reflection.Metadata.AssemblyReference">AssemblyReference</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L938"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetBlobBytes_BlobHandle_">GetBlobBytes(BlobHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public byte[] GetBlobBytes(BlobHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.BlobHandle.html" name="System.Reflection.Metadata.BlobHandle">BlobHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Byte.html" name="System.Byte">Byte</a>[]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L943"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetBlobContent_BlobHandle_">GetBlobContent(BlobHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public ImmutableArray<byte> GetBlobContent(BlobHandle handle)</byte></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.BlobHandle.html" name="System.Reflection.Metadata.BlobHandle">BlobHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ImmutableArray&lt;<a href="System.Byte.html" name="System.Byte">Byte</a>&gt;</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L950"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetBlobReader_BlobHandle_">GetBlobReader(BlobHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public BlobReader GetBlobReader(BlobHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.BlobHandle.html" name="System.Reflection.Metadata.BlobHandle">BlobHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.BlobReader.html" name="System.Reflection.Metadata.BlobReader">BlobReader</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L1055"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetConstant_ConstantHandle_">GetConstant(ConstantHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Constant GetConstant(ConstantHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.ConstantHandle.html" name="System.Reflection.Metadata.ConstantHandle">ConstantHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.Constant.html" name="System.Reflection.Metadata.Constant">Constant</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L1032"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetCustomAttribute_CustomAttributeHandle_">GetCustomAttribute(CustomAttributeHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public CustomAttribute GetCustomAttribute(CustomAttributeHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.CustomAttributeHandle.html" name="System.Reflection.Metadata.CustomAttributeHandle">CustomAttributeHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.CustomAttribute.html" name="System.Reflection.Metadata.CustomAttribute">CustomAttribute</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L1026"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetCustomAttributes_EntityHandle_">GetCustomAttributes(EntityHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public CustomAttributeHandleCollection GetCustomAttributes(EntityHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.EntityHandle.html" name="System.Reflection.Metadata.EntityHandle">EntityHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.CustomAttributeHandleCollection.html" name="System.Reflection.Metadata.CustomAttributeHandleCollection">CustomAttributeHandleCollection</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L1049"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetDeclarativeSecurityAttribute_DeclarativeSecurityAttributeHandle_">GetDeclarativeSecurityAttribute(DeclarativeSecurityAttributeHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public DeclarativeSecurityAttribute GetDeclarativeSecurityAttribute(DeclarativeSecurityAttributeHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.DeclarativeSecurityAttributeHandle.html" name="System.Reflection.Metadata.DeclarativeSecurityAttributeHandle">DeclarativeSecurityAttributeHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.DeclarativeSecurityAttribute.html" name="System.Reflection.Metadata.DeclarativeSecurityAttribute">DeclarativeSecurityAttribute</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L1099"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetEventDefinition_EventDefinitionHandle_">GetEventDefinition(EventDefinitionHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public EventDefinition GetEventDefinition(EventDefinitionHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.EventDefinitionHandle.html" name="System.Reflection.Metadata.EventDefinitionHandle">EventDefinitionHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.EventDefinition.html" name="System.Reflection.Metadata.EventDefinition">EventDefinition</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L1021"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetExportedType_ExportedTypeHandle_">GetExportedType(ExportedTypeHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public ExportedType GetExportedType(ExportedTypeHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.ExportedTypeHandle.html" name="System.Reflection.Metadata.ExportedTypeHandle">ExportedTypeHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.ExportedType.html" name="System.Reflection.Metadata.ExportedType">ExportedType</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L1077"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetFieldDefinition_FieldDefinitionHandle_">GetFieldDefinition(FieldDefinitionHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public FieldDefinition GetFieldDefinition(FieldDefinitionHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.FieldDefinitionHandle.html" name="System.Reflection.Metadata.FieldDefinitionHandle">FieldDefinitionHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.FieldDefinition.html" name="System.Reflection.Metadata.FieldDefinition">FieldDefinition</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L1136"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetGenericParameter_GenericParameterHandle_">GetGenericParameter(GenericParameterHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public GenericParameter GetGenericParameter(GenericParameterHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.GenericParameterHandle.html" name="System.Reflection.Metadata.GenericParameterHandle">GenericParameterHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.GenericParameter.html" name="System.Reflection.Metadata.GenericParameter">GenericParameter</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L1141"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetGenericParameterConstraint_GenericParameterConstraintHandle_">GetGenericParameterConstraint(GenericParameterConstraintHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public GenericParameterConstraint GetGenericParameterConstraint(GenericParameterConstraintHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.GenericParameterConstraintHandle.html" name="System.Reflection.Metadata.GenericParameterConstraintHandle">GenericParameterConstraintHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.GenericParameterConstraint.html" name="System.Reflection.Metadata.GenericParameterConstraint">GenericParameterConstraint</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L960"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetGuid_GuidHandle_">GetGuid(GuidHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Guid GetGuid(GuidHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.GuidHandle.html" name="System.Reflection.Metadata.GuidHandle">GuidHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Guid.html" name="System.Guid">Guid</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L1171"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetInterfaceImplementation_InterfaceImplementationHandle_">GetInterfaceImplementation(InterfaceImplementationHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public InterfaceImplementation GetInterfaceImplementation(InterfaceImplementationHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.InterfaceImplementationHandle.html" name="System.Reflection.Metadata.InterfaceImplementationHandle">InterfaceImplementationHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.InterfaceImplementation.html" name="System.Reflection.Metadata.InterfaceImplementation">InterfaceImplementation</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L1146"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetManifestResource_ManifestResourceHandle_">GetManifestResource(ManifestResourceHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public ManifestResource GetManifestResource(ManifestResourceHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.ManifestResourceHandle.html" name="System.Reflection.Metadata.ManifestResourceHandle">ManifestResourceHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.ManifestResource.html" name="System.Reflection.Metadata.ManifestResource">ManifestResource</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L1109"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetMemberReference_MemberReferenceHandle_">GetMemberReference(MemberReferenceHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public MemberReference GetMemberReference(MemberReferenceHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.MemberReferenceHandle.html" name="System.Reflection.Metadata.MemberReferenceHandle">MemberReferenceHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.MemberReference.html" name="System.Reflection.Metadata.MemberReference">MemberReference</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L1060"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetMethodDefinition_MethodDefinitionHandle_">GetMethodDefinition(MethodDefinitionHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public MethodDefinition GetMethodDefinition(MethodDefinitionHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.MethodDefinitionHandle.html" name="System.Reflection.Metadata.MethodDefinitionHandle">MethodDefinitionHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.MethodDefinition.html" name="System.Reflection.Metadata.MethodDefinition">MethodDefinition</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L1104"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetMethodImplementation_MethodImplementationHandle_">GetMethodImplementation(MethodImplementationHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public MethodImplementation GetMethodImplementation(MethodImplementationHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.MethodImplementationHandle.html" name="System.Reflection.Metadata.MethodImplementationHandle">MethodImplementationHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.MethodImplementation.html" name="System.Reflection.Metadata.MethodImplementation">MethodImplementation</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L1126"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetMethodSpecification_MethodSpecificationHandle_">GetMethodSpecification(MethodSpecificationHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public MethodSpecification GetMethodSpecification(MethodSpecificationHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.MethodSpecificationHandle.html" name="System.Reflection.Metadata.MethodSpecificationHandle">MethodSpecificationHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.MethodSpecification.html" name="System.Reflection.Metadata.MethodSpecification">MethodSpecification</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L965"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetModuleDefinition__">GetModuleDefinition()</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public ModuleDefinition GetModuleDefinition()</code></pre>
+</div>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.ModuleDefinition.html" name="System.Reflection.Metadata.ModuleDefinition">ModuleDefinition</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L1166"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetModuleReference_ModuleReferenceHandle_">GetModuleReference(ModuleReferenceHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public ModuleReference GetModuleReference(ModuleReferenceHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.ModuleReferenceHandle.html" name="System.Reflection.Metadata.ModuleReferenceHandle">ModuleReferenceHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.ModuleReference.html" name="System.Reflection.Metadata.ModuleReference">ModuleReference</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L987"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetNamespaceDefinition_NamespaceDefinitionHandle_">GetNamespaceDefinition(NamespaceDefinitionHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public NamespaceDefinition GetNamespaceDefinition(NamespaceDefinitionHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.NamespaceDefinitionHandle.html" name="System.Reflection.Metadata.NamespaceDefinitionHandle">NamespaceDefinitionHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.NamespaceDefinition.html" name="System.Reflection.Metadata.NamespaceDefinition">NamespaceDefinition</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L981"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetNamespaceDefinitionRoot__">GetNamespaceDefinitionRoot()</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public NamespaceDefinition GetNamespaceDefinitionRoot()</code></pre>
+</div>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.NamespaceDefinition.html" name="System.Reflection.Metadata.NamespaceDefinition">NamespaceDefinition</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L1131"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetParameter_ParameterHandle_">GetParameter(ParameterHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Parameter GetParameter(ParameterHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.ParameterHandle.html" name="System.Reflection.Metadata.ParameterHandle">ParameterHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.Parameter.html" name="System.Reflection.Metadata.Parameter">Parameter</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L1094"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetPropertyDefinition_PropertyDefinitionHandle_">GetPropertyDefinition(PropertyDefinitionHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public PropertyDefinition GetPropertyDefinition(PropertyDefinitionHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.PropertyDefinitionHandle.html" name="System.Reflection.Metadata.PropertyDefinitionHandle">PropertyDefinitionHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.PropertyDefinition.html" name="System.Reflection.Metadata.PropertyDefinition">PropertyDefinition</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L1156"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetStandaloneSignature_StandaloneSignatureHandle_">GetStandaloneSignature(StandaloneSignatureHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public StandaloneSignature GetStandaloneSignature(StandaloneSignatureHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.StandaloneSignatureHandle.html" name="System.Reflection.Metadata.StandaloneSignatureHandle">StandaloneSignatureHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.StandaloneSignature.html" name="System.Reflection.Metadata.StandaloneSignature">StandaloneSignature</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L928"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetString_NamespaceDefinitionHandle_">GetString(NamespaceDefinitionHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public string GetString(NamespaceDefinitionHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.NamespaceDefinitionHandle.html" name="System.Reflection.Metadata.NamespaceDefinitionHandle">NamespaceDefinitionHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L923"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetString_StringHandle_">GetString(StringHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public string GetString(StringHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.StringHandle.html" name="System.Reflection.Metadata.StringHandle">StringHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L975"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetTypeDefinition_TypeDefinitionHandle_">GetTypeDefinition(TypeDefinitionHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public TypeDefinition GetTypeDefinition(TypeDefinitionHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.TypeDefinitionHandle.html" name="System.Reflection.Metadata.TypeDefinitionHandle">TypeDefinitionHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.TypeDefinition.html" name="System.Reflection.Metadata.TypeDefinition">TypeDefinition</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L1004"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetTypeReference_TypeReferenceHandle_">GetTypeReference(TypeReferenceHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public TypeReference GetTypeReference(TypeReferenceHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.TypeReferenceHandle.html" name="System.Reflection.Metadata.TypeReferenceHandle">TypeReferenceHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.TypeReference.html" name="System.Reflection.Metadata.TypeReference">TypeReference</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L1161"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetTypeSpecification_TypeSpecificationHandle_">GetTypeSpecification(TypeSpecificationHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public TypeSpecification GetTypeSpecification(TypeSpecificationHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.TypeSpecificationHandle.html" name="System.Reflection.Metadata.TypeSpecificationHandle">TypeSpecificationHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.TypeSpecification.html" name="System.Reflection.Metadata.TypeSpecification">TypeSpecification</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs/#L955"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetUserString_UserStringHandle_">GetUserString(UserStringHandle)</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public string GetUserString(UserStringHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.Metadata.UserStringHandle.html" name="System.Reflection.Metadata.UserStringHandle">UserStringHandle</a></td>
+      <td><em>handle</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+</article>
+</div>
+<div class="hidden-sm col-md-2" role="complementary">
+  <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+    <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+  </nav>
+</div>
+</div>
+</div>
+<footer>
+  <div class="grad-bottom"></div>
+  <div class="footer">
+    <div class="container">
+      <span class="pull-right">
+        <a href="#top">Back to top</a>
+      </span>
+      <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+    </div>
+  </div>
+</footer>
+</div>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+</html>

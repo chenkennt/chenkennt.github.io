@@ -1,0 +1,589 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title> | </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content=" | ">
+  
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:nav" content="toc.html">
+  <meta property="docfx:toc" content="reference/toc.html">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="../toc.html">
+</head>
+<body data-spy="scroll" data-target="#affix">
+  <div id="wrapper">
+    <header>
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img id="logo" class="svg" src="../../logo.svg" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content">
+      <div class="sidenav">
+        <a class="btn toc-toggle collapse">Show / Hide Table of Contents</a>
+        <div class="sidetoggle">
+          <div class="sidetoc">
+            <iframe id="sidetoc" src="../toc.html"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="article row grid-right"><div class="col-md-10">
+        <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationAttribute.cs/#L21" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="ValidationAttribute">Class ValidationAttribute</h1>
+      <div class="markdown level0 summary"><p>Base class for all validation attributes.</p><br><para>Override <see cref="M:System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)"></see> to implement validation logic.</para></div>
+      <div class="markdown level0 conceptual"></div>
+      <div class="inheritance">
+        <h5>Inheritance</h5>
+        <div class="level0"><a href="System.Object.html" name="System.Object">Object</a></div>
+        <div class="level1"><a href="System.Attribute.html" name="System.Attribute">Attribute</a></div>
+        <div class="level2">System.ComponentModel.DataAnnotations.ValidationAttribute</div>
+      </div>
+      <h6><strong>Namespace</strong>:System.ComponentModel.DataAnnotations</h6>
+      <h6><strong>Assembly</strong>:System.ComponentModel.Annotations.dll</h6>
+      <h5 id="ValidationAttribute_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public abstract class ValidationAttribute : Attribute, _Attribute</code></pre>
+      </div>
+      <h5 id="ValidationAttribute_remarks">remarks</h5>
+      <div class="markdown level0 remarks"><p>The properties <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageResourceType</a> and <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageResourceName</a> are used to<br>provide</br>a localized error message, but they cannot be set if <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessage</a> is also used to provide a<br>non-localized</br>error message.</p><br></div>
+      <h3 id="constructors">Constructors</h3>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationAttribute.cs/#L43"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="ValidationAttribute__">ValidationAttribute()</h4>
+  <div class="markdown level1 summary"><p>Default constructor for any validation attribute.</p><br></div>
+  <div class="markdown level1 remarks"><p>This constructor chooses a very generic validation error message.<br>Developers subclassing ValidationAttribute should use other constructors</br>or supply a better message.</p><br></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ValidationAttribute()</code></pre>
+  </div>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationAttribute.cs/#L63"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="ValidationAttribute_Func_String__">ValidationAttribute(Func&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Allows for providing a resource accessor function that will be used by the <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageString</a><br>property to retrieve the error message.  An example would be to have something like</br>CustomAttribute() : base( () =&gt; MyResources.MyErrorMessage ) {}.</p><br></div>
+  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ValidationAttribute(Func<string> errorMessageAccessor)</string></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Func`1.html" name="System.Func">Func</a>&lt;<a href="System.String.html" name="System.String">String</a>&gt;</td>
+        <td><em>errorMessageAccessor</em></td>
+        <td><p>The <a href="System.Func`1.html">System.Func`1</a> that will return an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationAttribute.cs/#L52"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="ValidationAttribute_String_">ValidationAttribute(String)</h4>
+  <div class="markdown level1 summary"><p>Constructor that accepts a fixed validation error message.</p><br></div>
+  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ValidationAttribute(string errorMessage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>errorMessage</em></td>
+        <td><p>A non-localized error message to use in <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageString</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+<h3 id="properties">Properties</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationAttribute.cs/#L137"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ErrorMessage">ErrorMessage</h4>
+<div class="markdown level1 summary"><p>Gets or sets and explicit error message string.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public string ErrorMessage { get; set; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationAttribute.cs/#L167"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ErrorMessageResourceName">ErrorMessageResourceName</h4>
+<div class="markdown level1 summary"><p>Gets or sets the resource name (property name) to use as the key for lookups on the resource type.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public string ErrorMessageResourceName { get; set; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationAttribute.cs/#L188"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ErrorMessageResourceType">ErrorMessageResourceType</h4>
+<div class="markdown level1 summary"><p>Gets or sets the resource type to use for error message lookups.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Type ErrorMessageResourceType { get; set; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Type.html" name="System.Type">Type</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationAttribute.cs/#L101"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ErrorMessageString">ErrorMessageString</h4>
+<div class="markdown level1 summary"><p>Gets the localized error message string, coming either from <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessage</a>, or from evaluating the<br><a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageResourceType</a> and <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageResourceName</a> pair.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">protected string ErrorMessageString { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationAttribute.cs/#L121"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="RequiresValidationContext">RequiresValidationContext</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public virtual bool RequiresValidationContext { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="methods">Methods</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationAttribute.cs/#L327"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="FormatErrorMessage_String_">FormatErrorMessage(String)</h4>
+<div class="markdown level1 summary"><p>Formats the error message to present to the user.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>The error message will be re-evaluated every time this function is called.<br>It applies the <paramref name="name"></paramref> (for example, the name of a field) to the formated error message, resulting</br>in something like &quot;The field &#39;name&#39; has an incorrect value&quot;.</p><br><para><br>Derived classes can override this method to customize how errors are generated.</br></para><para><br>The base class implementation will use <see cref="P:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageString"></see> to obtain a localized</br>error message from properties within the current attribute.  If those have not been set, a generic<br>error message will be provided.</br></para></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public virtual string FormatErrorMessage(string name)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td><em>name</em></td>
+      <td><p>The user-visible name to include in the formatted message.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td><p>The localized string describing the validation error</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationAttribute.cs/#L434"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetValidationResult_Object__ValidationContext_">GetValidationResult(Object, ValidationContext)</h4>
+<div class="markdown level1 summary"><p>Tests whether the given <paramref name="value"></paramref> is valid with respect to the current<br>validation attribute without throwing a <a href="System.ComponentModel.DataAnnotations.ValidationException.html">System.ComponentModel.DataAnnotations.ValidationException</a></p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>If this method returns <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">System.ComponentModel.DataAnnotations.ValidationResult.Success</a>, then validation was successful, otherwise<br>an instance of <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">System.ComponentModel.DataAnnotations.ValidationResult</a> will be returned with a guaranteed non-null</br><a href="System.ComponentModel.DataAnnotations.ValidationResult.html">System.ComponentModel.DataAnnotations.ValidationResult.ErrorMessage</a>.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public ValidationResult GetValidationResult(object value, ValidationContext validationContext)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Object.html" name="System.Object">Object</a></td>
+      <td><em>value</em></td>
+      <td><p>The value to validate</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.ComponentModel.DataAnnotations.ValidationContext.html" name="System.ComponentModel.DataAnnotations.ValidationContext">ValidationContext</a></td>
+      <td><em>validationContext</em></td>
+      <td><p>A <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">System.ComponentModel.DataAnnotations.ValidationContext</a> instance that provides
+context about the validation operation, such as the object and member being validated.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.ComponentModel.DataAnnotations.ValidationResult.html" name="System.ComponentModel.DataAnnotations.ValidationResult">ValidationResult</a></td>
+      <td><p>When validation is valid, <see cref="F:System.ComponentModel.DataAnnotations.ValidationResult.Success"></see>.</p>
+<para>
+When validation is invalid, an instance of <see cref="T:System.ComponentModel.DataAnnotations.ValidationResult"></see>.
+</para></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationAttribute.cs/#L351"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="IsValid_Object_">IsValid(Object)</h4>
+<div class="markdown level1 summary"><p>Gets the value indicating whether or not the specified <paramref name="value"></paramref> is valid<br>with respect to the current validation attribute.</p><br><para><br>Derived classes should not override this method as it is only available for backwards compatibility.</br>Instead, implement <see cref="M:System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)"></see>.<br></para></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>The preferred public entry point for clients requesting validation is the <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute.GetValidationResult(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)</a><br>method.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public virtual bool IsValid(object value)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Object.html" name="System.Object">Object</a></td>
+      <td><em>value</em></td>
+      <td><p>The value to validate</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p><c>true</c> if the <paramref name="value"></paramref> is acceptable, <c>false</c> if it is not acceptable</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationAttribute.cs/#L385"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="IsValid_Object__ValidationContext_">IsValid(Object, ValidationContext)</h4>
+<div class="markdown level1 summary"><p>Protected virtual method to override and implement validation logic.</p><br><para><br>Derived classes should override this method instead of <see cref="M:System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(System.Object)"></see>, which is deprecated.</br></para></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">protected virtual ValidationResult IsValid(object value, ValidationContext validationContext)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Object.html" name="System.Object">Object</a></td>
+      <td><em>value</em></td>
+      <td><p>The value to validate.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.ComponentModel.DataAnnotations.ValidationContext.html" name="System.ComponentModel.DataAnnotations.ValidationContext">ValidationContext</a></td>
+      <td><em>validationContext</em></td>
+      <td><p>A <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">System.ComponentModel.DataAnnotations.ValidationContext</a> instance that provides
+context about the validation operation, such as the object and member being validated.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.ComponentModel.DataAnnotations.ValidationResult.html" name="System.ComponentModel.DataAnnotations.ValidationResult">ValidationResult</a></td>
+      <td><p>When validation is valid, <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">System.ComponentModel.DataAnnotations.ValidationResult.Success</a>.</p>
+<para>
+When validation is invalid, an instance of <see cref="T:System.ComponentModel.DataAnnotations.ValidationResult"></see>.
+</para></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationAttribute.cs/#L504"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Validate_Object__ValidationContext_">Validate(Object, ValidationContext)</h4>
+<div class="markdown level1 summary"><p>Validates the specified <paramref name="value"></paramref> and throws <a href="System.ComponentModel.DataAnnotations.ValidationException.html">System.ComponentModel.DataAnnotations.ValidationException</a> if it is not.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>This method invokes the <see cref="M:System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)"></see> method<br>to determine whether or not the <paramref name="value"></paramref> is acceptable given the</p><br><p><paramref name="validationContext"></paramref>.</br>If that method doesn&#39;t return <see cref="F:System.ComponentModel.DataAnnotations.ValidationResult.Success"></see>, this base method will throw<br>a <see cref="T:System.ComponentModel.DataAnnotations.ValidationException"></see> containing the <see cref="T:System.ComponentModel.DataAnnotations.ValidationResult"></see> describing the problem.<p></br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void Validate(object value, ValidationContext validationContext)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Object.html" name="System.Object">Object</a></td>
+      <td><em>value</em></td>
+      <td><p>The value to validate</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.ComponentModel.DataAnnotations.ValidationContext.html" name="System.ComponentModel.DataAnnotations.ValidationContext">ValidationContext</a></td>
+      <td><em>validationContext</em></td>
+      <td><p>Additional context that may be used for validation.  It cannot be null.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationAttribute.cs/#L475"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Validate_Object__String_">Validate(Object, String)</h4>
+<div class="markdown level1 summary"><p>Validates the specified <paramref name="value"></paramref> and throws <a href="System.ComponentModel.DataAnnotations.ValidationException.html">System.ComponentModel.DataAnnotations.ValidationException</a> if it is not.</p><br><para><br>The overloaded <see cref="M:System.ComponentModel.DataAnnotations.ValidationAttribute.Validate(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)"></see> is the recommended entry point as it</br>can provide additional context to the <see cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute"></see> being validated.<br></para></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>This base method invokes the <see cref="M:System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(System.Object)"></see> method to determine whether or not the</p><br><p><paramref name="value"></paramref> is acceptable.  If <see cref="M:System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(System.Object)"></see> returns <c>false</c>, this base</br>method will invoke the <see cref="M:System.ComponentModel.DataAnnotations.ValidationAttribute.FormatErrorMessage(System.String)"></see> to obtain a localized message describing<br>the problem, and it will throw a <see cref="T:System.ComponentModel.DataAnnotations.ValidationException"></see><p></br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void Validate(object value, string name)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Object.html" name="System.Object">Object</a></td>
+      <td><em>value</em></td>
+      <td><p>The value to validate</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td><em>name</em></td>
+      <td><p>The string to be included in the validation error message if <paramref name="value"></paramref> is not valid</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+</article>
+</div>
+<div class="hidden-sm col-md-2" role="complementary">
+  <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+    <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+  </nav>
+</div>
+</div>
+</div>
+<footer>
+  <div class="grad-bottom"></div>
+  <div class="footer">
+    <div class="container">
+      <span class="pull-right">
+        <a href="#top">Back to top</a>
+      </span>
+      <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+    </div>
+  </div>
+</footer>
+</div>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+</html>

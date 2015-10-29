@@ -1,0 +1,662 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title> | </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content=" | ">
+  
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:nav" content="toc.html">
+  <meta property="docfx:toc" content="reference/toc.html">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="../toc.html">
+</head>
+<body data-spy="scroll" data-target="#affix">
+  <div id="wrapper">
+    <header>
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img id="logo" class="svg" src="../../logo.svg" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content">
+      <div class="sidenav">
+        <a class="btn toc-toggle collapse">Show / Hide Table of Contents</a>
+        <div class="sidetoggle">
+          <div class="sidetoc">
+            <iframe id="sidetoc" src="../toc.html"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="article row grid-right"><div class="col-md-10">
+        <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading/src/System/Threading/Barrier.cs/#L77" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="Barrier">Class Barrier</h1>
+      <div class="markdown level0 summary"><p>Enables multiple tasks to cooperatively work on an algorithm in parallel through multiple phases.</p><br></div>
+      <div class="markdown level0 conceptual"></div>
+      <div class="inheritance">
+        <h5>Inheritance</h5>
+        <div class="level0"><a href="System.Object.html" name="System.Object">Object</a></div>
+        <div class="level1">System.Threading.Barrier</div>
+      </div>
+      <h6><strong>Namespace</strong>:System.Threading</h6>
+      <h6><strong>Assembly</strong>:System.Threading.dll</h6>
+      <h5 id="Barrier_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public class Barrier : IDisposable</code></pre>
+      </div>
+      <h5 id="Barrier_remarks">remarks</h5>
+      <div class="markdown level0 remarks"><para><br>A group of tasks cooperate by moving through a series of phases, where each in the group signals it</br>has arrived at the <see cref="T:System.Threading.Barrier"></see> in a given phase and implicitly waits for all others to<br>arrive. The same <see cref="T:System.Threading.Barrier"></see> can be used for multiple phases.</br></para><br><para><br>All public and protected members of <see cref="T:System.Threading.Barrier"></see> are thread-safe and may be used</br>concurrently from multiple threads, with the exception of Dispose, which<br>must only be used when all other operations on the <see cref="T:System.Threading.Barrier"></see> have</br>completed.<br></para></div>
+      <h3 id="constructors">Constructors</h3>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading/src/System/Threading/Barrier.cs/#L184"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="Barrier_Int32_">Barrier(Int32)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Threading.Barrier.html">System.Threading.Barrier</a> class.</p><br></div>
+  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Barrier(int participantCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>participantCount</em></td>
+        <td><p>The number of participating threads.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading/src/System/Threading/Barrier.cs/#L203"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="Barrier_Int32__Action_Barrier__">Barrier(Int32, Action&lt;Barrier&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Threading.Barrier.html">System.Threading.Barrier</a> class.</p><br></div>
+  <div class="markdown level1 remarks"><p>The <paramref name="postPhaseAction"></paramref> delegate will be executed after<br>all participants have arrived at the barrier in one phase.  The participants</br>will not be released to the next phase until the postPhaseAction delegate<br>has completed execution.</p><br></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Barrier(int participantCount, Action<barrier> postPhaseAction)</barrier></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>participantCount</em></td>
+        <td><p>The number of participating threads.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;<a href="System.Threading.Barrier.html" name="System.Threading.Barrier">Barrier</a>&gt;</td>
+        <td><em>postPhaseAction</em></td>
+        <td><p>The <a href="System.Action`1.html">System.Action`1</a> to be executed after each
+phase.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+<h3 id="properties">Properties</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading/src/System/Threading/Barrier.cs/#L168"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="CurrentPhaseNumber">CurrentPhaseNumber</h4>
+<div class="markdown level1 summary"><p>Gets the number of the barrier&#39;s current phase.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public long CurrentPhaseNumber { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int64.html" name="System.Int64">Int64</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading/src/System/Threading/Barrier.cs/#L160"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ParticipantCount">ParticipantCount</h4>
+<div class="markdown level1 summary"><p>Gets the total number of participants in the barrier.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public int ParticipantCount { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading/src/System/Threading/Barrier.cs/#L146"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ParticipantsRemaining">ParticipantsRemaining</h4>
+<div class="markdown level1 summary"><p>Gets the number of participants in the barrier that haven’t yet signaled<br>in the current phase.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>This could be 0 during a post-phase action delegate execution or if the<br>ParticipantCount is 0.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public int ParticipantsRemaining { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="methods">Methods</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading/src/System/Threading/Barrier.cs/#L276"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="AddParticipant__">AddParticipant()</h4>
+<div class="markdown level1 summary"><p>Notifies the <a href="System.Threading.Barrier.html">System.Threading.Barrier</a> that there will be an additional participant.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public long AddParticipant()</code></pre>
+</div>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int64.html" name="System.Int64">Int64</a></td>
+      <td><p>The phase number of the barrier in which the new participants will first
+participate.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading/src/System/Threading/Barrier.cs/#L304"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="AddParticipants_Int32_">AddParticipants(Int32)</h4>
+<div class="markdown level1 summary"><p>Notifies the <a href="System.Threading.Barrier.html">System.Threading.Barrier</a> that there will be additional participants.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public long AddParticipants(int participantCount)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>participantCount</em></td>
+      <td><p>The number of additional participants to add to the
+barrier.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int64.html" name="System.Int64">Int64</a></td>
+      <td><p>The phase number of the barrier in which the new participants will first
+participate.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading/src/System/Threading/Barrier.cs/#L893"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Dispose__">Dispose()</h4>
+<div class="markdown level1 summary"><p>Releases all resources used by the current instance of <a href="System.Threading.Barrier.html">System.Threading.Barrier</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>Unlike most of the members of <see cref="T:System.Threading.Barrier"></see>, Dispose is not thread-safe and may not be<br>used concurrently with other members of this instance.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+</div>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading/src/System/Threading/Barrier.cs/#L914"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Dispose_Boolean_">Dispose(Boolean)</h4>
+<div class="markdown level1 summary"><p>When overridden in a derived class, releases the unmanaged resources used by the<br><a href="System.Threading.Barrier.html">System.Threading.Barrier</a>, and optionally releases the managed resources.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>Unlike most of the members of <see cref="T:System.Threading.Barrier"></see>, Dispose is not thread-safe and may not be<br>used concurrently with other members of this instance.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><em>disposing</em></td>
+      <td><p>true to release both managed and unmanaged resources; false to release
+only unmanaged resources.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading/src/System/Threading/Barrier.cs/#L392"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="RemoveParticipant__">RemoveParticipant()</h4>
+<div class="markdown level1 summary"><p>Notifies the <a href="System.Threading.Barrier.html">System.Threading.Barrier</a> that there will be one less participant.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void RemoveParticipant()</code></pre>
+</div>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading/src/System/Threading/Barrier.cs/#L409"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="RemoveParticipants_Int32_">RemoveParticipants(Int32)</h4>
+<div class="markdown level1 summary"><p>Notifies the <a href="System.Threading.Barrier.html">System.Threading.Barrier</a> that there will be fewer participants.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void RemoveParticipants(int participantCount)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>participantCount</em></td>
+      <td><p>The number of additional participants to remove from the barrier.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading/src/System/Threading/Barrier.cs/#L476"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="SignalAndWait__">SignalAndWait()</h4>
+<div class="markdown level1 summary"><p>Signals that a participant has reached the <a href="System.Threading.Barrier.html">System.Threading.Barrier</a> and waits for all other<br>participants to reach the barrier as well.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void SignalAndWait()</code></pre>
+</div>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading/src/System/Threading/Barrier.cs/#L579"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="SignalAndWait_Int32_">SignalAndWait(Int32)</h4>
+<div class="markdown level1 summary"><p>Signals that a participant has reached the <a href="System.Threading.Barrier.html">System.Threading.Barrier</a> and waits for all other<br>participants to reach the barrier as well, using a</br>32-bit signed integer to measure the time interval.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool SignalAndWait(int millisecondsTimeout)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>millisecondsTimeout</em></td>
+      <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a>(-1) to wait indefinitely.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p>true if all other participants reached the barrier; otherwise, false.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading/src/System/Threading/Barrier.cs/#L605"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="SignalAndWait_Int32__CancellationToken_">SignalAndWait(Int32, CancellationToken)</h4>
+<div class="markdown level1 summary"><p>Signals that a participant has reached the barrier and waits for all other participants to reach<br>the barrier as well, using a</br>32-bit signed integer to measure the time interval, while observing a <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool SignalAndWait(int millisecondsTimeout, CancellationToken cancellationToken)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>millisecondsTimeout</em></td>
+      <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a>(-1) to wait indefinitely.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+      <td><em>cancellationToken</em></td>
+      <td><p>The <see cref="T:System.Threading.CancellationToken"></see> to
+observe.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p>true if all other participants reached the barrier; otherwise, false.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading/src/System/Threading/Barrier.cs/#L496"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="SignalAndWait_CancellationToken_">SignalAndWait(CancellationToken)</h4>
+<div class="markdown level1 summary"><p>Signals that a participant has reached the <a href="System.Threading.Barrier.html">System.Threading.Barrier</a> and waits for all other<br>participants to reach the barrier, while observing a <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void SignalAndWait(CancellationToken cancellationToken)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+      <td><em>cancellationToken</em></td>
+      <td><p>The <see cref="T:System.Threading.CancellationToken"></see> to
+observe.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading/src/System/Threading/Barrier.cs/#L525"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="SignalAndWait_TimeSpan_">SignalAndWait(TimeSpan)</h4>
+<div class="markdown level1 summary"><p>Signals that a participant has reached the <a href="System.Threading.Barrier.html">System.Threading.Barrier</a> and waits for all other<br>participants to reach the barrier as well, using a</br><a href="System.TimeSpan.html">System.TimeSpan</a> to measure the time interval.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool SignalAndWait(TimeSpan timeout)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
+      <td><em>timeout</em></td>
+      <td><p>A <see cref="T:System.TimeSpan"></see> that represents the number of
+milliseconds to wait, or a <see cref="T:System.TimeSpan"></see> that represents -1 milliseconds to
+wait indefinitely.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p>true if all other participants reached the barrier; otherwise, false.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading/src/System/Threading/Barrier.cs/#L552"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="SignalAndWait_TimeSpan__CancellationToken_">SignalAndWait(TimeSpan, CancellationToken)</h4>
+<div class="markdown level1 summary"><p>Signals that a participant has reached the <a href="System.Threading.Barrier.html">System.Threading.Barrier</a> and waits for all other<br>participants to reach the barrier as well, using a</br><a href="System.TimeSpan.html">System.TimeSpan</a> to measure the time interval, while observing a <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool SignalAndWait(TimeSpan timeout, CancellationToken cancellationToken)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
+      <td><em>timeout</em></td>
+      <td><p>A <see cref="T:System.TimeSpan"></see> that represents the number of
+milliseconds to wait, or a <see cref="T:System.TimeSpan"></see> that represents -1 milliseconds to
+wait indefinitely.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+      <td><em>cancellationToken</em></td>
+      <td><p>The <see cref="T:System.Threading.CancellationToken"></see> to
+observe.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p>true if all other participants reached the barrier; otherwise, false.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+</article>
+</div>
+<div class="hidden-sm col-md-2" role="complementary">
+  <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+    <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+  </nav>
+</div>
+</div>
+</div>
+<footer>
+  <div class="grad-bottom"></div>
+  <div class="footer">
+    <div class="container">
+      <span class="pull-right">
+        <a href="#top">Back to top</a>
+      </span>
+      <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+    </div>
+  </div>
+</footer>
+</div>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+</html>

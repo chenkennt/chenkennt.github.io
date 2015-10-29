@@ -1,0 +1,529 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title> | </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content=" | ">
+  
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:nav" content="toc.html">
+  <meta property="docfx:toc" content="reference/toc.html">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="../toc.html">
+</head>
+<body data-spy="scroll" data-target="#affix">
+  <div id="wrapper">
+    <header>
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img id="logo" class="svg" src="../../logo.svg" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content">
+      <div class="sidenav">
+        <a class="btn toc-toggle collapse">Show / Hide Table of Contents</a>
+        <div class="sidetoggle">
+          <div class="sidetoc">
+            <iframe id="sidetoc" src="../toc.html"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="article row grid-right"><div class="col-md-10">
+        <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/PartitionerStatic.cs/#L73" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="Partitioner">Class Partitioner</h1>
+      <div class="markdown level0 summary"><p>Provides common partitioning strategies for arrays, lists, and enumerables.</p><br></div>
+      <div class="markdown level0 conceptual"></div>
+      <div class="inheritance">
+        <h5>Inheritance</h5>
+        <div class="level0"><a href="System.Object.html" name="System.Object">Object</a></div>
+        <div class="level1">System.Collections.Concurrent.Partitioner</div>
+      </div>
+      <h6><strong>Namespace</strong>:System.Collections.Concurrent</h6>
+      <h6><strong>Assembly</strong>:mscorlib.dll</h6>
+      <h5 id="Partitioner_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public class Partitioner</code></pre>
+      </div>
+      <h5 id="Partitioner_remarks">remarks</h5>
+      <div class="markdown level0 remarks"><para><br>The static methods on <see cref="T:System.Collections.Concurrent.Partitioner"></see> are all thread-safe and may be used concurrently</br>from multiple threads. However, while a created partitioner is in use, the underlying data source<br>should not be modified, whether from the same thread that&#39;s using a partitioner or from a separate</br>thread.<br></para></div>
+<h3 id="methods">Methods</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/PartitionerStatic.cs/#L246"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Create_Int32__Int32_">Create(Int32, Int32)</h4>
+<div class="markdown level1 summary"><p>Creates a partitioner that chunks the user-specified range.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static OrderablePartitioner<><int, int="">> Create(int fromInclusive, int toExclusive)</int,></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>fromInclusive</em></td>
+      <td><p>The lower, inclusive bound of the range.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>toExclusive</em></td>
+      <td><p>The upper, exclusive bound of the range.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Concurrent.OrderablePartitioner`1.html" name="System.Collections.Concurrent.OrderablePartitioner">OrderablePartitioner</a>&lt;<a href="System.Tuple`2.html" name="System.Tuple">Tuple</a>&lt;<a href="System.Int32.html" name="System.Int32">Int32</a>, <a href="System.Int32.html" name="System.Int32">Int32</a>&gt;&gt;</td>
+      <td><p>A partitioner.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/PartitionerStatic.cs/#L269"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Create_Int32__Int32__Int32_">Create(Int32, Int32, Int32)</h4>
+<div class="markdown level1 summary"><p>Creates a partitioner that chunks the user-specified range.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static OrderablePartitioner<><int, int="">> Create(int fromInclusive, int toExclusive, int rangeSize)</int,></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>fromInclusive</em></td>
+      <td><p>The lower, inclusive bound of the range.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>toExclusive</em></td>
+      <td><p>The upper, exclusive bound of the range.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>rangeSize</em></td>
+      <td><p>The size of each subrange.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Concurrent.OrderablePartitioner`1.html" name="System.Collections.Concurrent.OrderablePartitioner">OrderablePartitioner</a>&lt;<a href="System.Tuple`2.html" name="System.Tuple">Tuple</a>&lt;<a href="System.Int32.html" name="System.Int32">Int32</a>, <a href="System.Int32.html" name="System.Int32">Int32</a>&gt;&gt;</td>
+      <td><p>A partitioner.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/PartitionerStatic.cs/#L189"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Create_Int64__Int64_">Create(Int64, Int64)</h4>
+<div class="markdown level1 summary"><p>Creates a partitioner that chunks the user-specified range.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static OrderablePartitioner<><long, long="">> Create(long fromInclusive, long toExclusive)</long,></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int64.html" name="System.Int64">Int64</a></td>
+      <td><em>fromInclusive</em></td>
+      <td><p>The lower, inclusive bound of the range.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Int64.html" name="System.Int64">Int64</a></td>
+      <td><em>toExclusive</em></td>
+      <td><p>The upper, exclusive bound of the range.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Concurrent.OrderablePartitioner`1.html" name="System.Collections.Concurrent.OrderablePartitioner">OrderablePartitioner</a>&lt;<a href="System.Tuple`2.html" name="System.Tuple">Tuple</a>&lt;<a href="System.Int64.html" name="System.Int64">Int64</a>, <a href="System.Int64.html" name="System.Int64">Int64</a>&gt;&gt;</td>
+      <td><p>A partitioner.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/PartitionerStatic.cs/#L212"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Create_Int64__Int64__Int64_">Create(Int64, Int64, Int64)</h4>
+<div class="markdown level1 summary"><p>Creates a partitioner that chunks the user-specified range.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static OrderablePartitioner<><long, long="">> Create(long fromInclusive, long toExclusive, long rangeSize)</long,></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int64.html" name="System.Int64">Int64</a></td>
+      <td><em>fromInclusive</em></td>
+      <td><p>The lower, inclusive bound of the range.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Int64.html" name="System.Int64">Int64</a></td>
+      <td><em>toExclusive</em></td>
+      <td><p>The upper, exclusive bound of the range.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Int64.html" name="System.Int64">Int64</a></td>
+      <td><em>rangeSize</em></td>
+      <td><p>The size of each subrange.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Concurrent.OrderablePartitioner`1.html" name="System.Collections.Concurrent.OrderablePartitioner">OrderablePartitioner</a>&lt;<a href="System.Tuple`2.html" name="System.Tuple">Tuple</a>&lt;<a href="System.Int64.html" name="System.Int64">Int64</a>, <a href="System.Int64.html" name="System.Int64">Int64</a>&gt;&gt;</td>
+      <td><p>A partitioner.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/PartitionerStatic.cs/#L117"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Create_TSource__TSource____Boolean_">Create&lt;TSource&gt;(TSource[], Boolean)</h4>
+<div class="markdown level1 summary"><p>Creates an orderable partitioner from a <a href="System.Array.html">System.Array</a> instance.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static OrderablePartitioner<tsource> Create<tsource>(TSource[] array, bool loadBalance)</tsource></tsource></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TSource[]</td>
+      <td><em>array</em></td>
+      <td><p>The array to be partitioned.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><em>loadBalance</em></td>
+      <td><p>A Boolean value that indicates whether the created partitioner should dynamically load balance
+between partitions rather than statically partition.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Concurrent.OrderablePartitioner`1.html" name="System.Collections.Concurrent.OrderablePartitioner">OrderablePartitioner</a>&lt;TSource&gt;</td>
+      <td><p>An orderable partitioner based on the input array.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/PartitionerStatic.cs/#L148"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Create_TSource__IEnumerable_TSource__">Create&lt;TSource&gt;(IEnumerable&lt;TSource&gt;)</h4>
+<div class="markdown level1 summary"><p>Creates an orderable partitioner from a <a href="System.Collections.Generic.IEnumerable`1.html">System.Collections.Generic.IEnumerable`1</a> instance.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>The ordering used in the created partitioner is determined by the natural order of the elements<br>as retrieved from the source enumerable.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static OrderablePartitioner<tsource> Create<tsource>(IEnumerable<tsource> source)</tsource></tsource></tsource></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;TSource&gt;</td>
+      <td><em>source</em></td>
+      <td><p>The enumerable to be partitioned.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Concurrent.OrderablePartitioner`1.html" name="System.Collections.Concurrent.OrderablePartitioner">OrderablePartitioner</a>&lt;TSource&gt;</td>
+      <td><p>An orderable partitioner based on the input array.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/PartitionerStatic.cs/#L170"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Create_TSource__IEnumerable_TSource___EnumerablePartitionerOptions_">Create&lt;TSource&gt;(IEnumerable&lt;TSource&gt;, EnumerablePartitionerOptions)</h4>
+<div class="markdown level1 summary"><p>Creates an orderable partitioner from a <a href="System.Collections.Generic.IEnumerable`1.html">System.Collections.Generic.IEnumerable`1</a> instance.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>The ordering used in the created partitioner is determined by the natural order of the elements<br>as retrieved from the source enumerable.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static OrderablePartitioner<tsource> Create<tsource>(IEnumerable<tsource> source, EnumerablePartitionerOptions partitionerOptions)</tsource></tsource></tsource></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;TSource&gt;</td>
+      <td><em>source</em></td>
+      <td><p>The enumerable to be partitioned.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Collections.Concurrent.EnumerablePartitionerOptions.html" name="System.Collections.Concurrent.EnumerablePartitionerOptions">EnumerablePartitionerOptions</a></td>
+      <td><em>partitionerOptions</em></td>
+      <td><p>Options to control the buffering behavior of the partitioner.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Concurrent.OrderablePartitioner`1.html" name="System.Collections.Concurrent.OrderablePartitioner">OrderablePartitioner</a>&lt;TSource&gt;</td>
+      <td><p>An orderable partitioner based on the input array.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/PartitionerStatic.cs/#L89"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Create_TSource__IList_TSource___Boolean_">Create&lt;TSource&gt;(IList&lt;TSource&gt;, Boolean)</h4>
+<div class="markdown level1 summary"><p>Creates an orderable partitioner from an <a href="System.Collections.Generic.IList`1.html">System.Collections.Generic.IList`1</a><br>instance.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static OrderablePartitioner<tsource> Create<tsource>(IList<tsource> list, bool loadBalance)</tsource></tsource></tsource></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Generic.IList`1.html" name="System.Collections.Generic.IList">IList</a>&lt;TSource&gt;</td>
+      <td><em>list</em></td>
+      <td><p>The list to be partitioned.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><em>loadBalance</em></td>
+      <td><p>A Boolean value that indicates whether the created partitioner should dynamically
+load balance between partitions rather than statically partition.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Concurrent.OrderablePartitioner`1.html" name="System.Collections.Concurrent.OrderablePartitioner">OrderablePartitioner</a>&lt;TSource&gt;</td>
+      <td><p>An orderable partitioner based on the input list.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+</article>
+</div>
+<div class="hidden-sm col-md-2" role="complementary">
+  <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+    <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+  </nav>
+</div>
+</div>
+</div>
+<footer>
+  <div class="grad-bottom"></div>
+  <div class="footer">
+    <div class="container">
+      <span class="pull-right">
+        <a href="#top">Back to top</a>
+      </span>
+      <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+    </div>
+  </div>
+</footer>
+</div>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+</html>

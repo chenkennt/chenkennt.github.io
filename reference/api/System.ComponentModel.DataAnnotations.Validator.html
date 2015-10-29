@@ -1,0 +1,512 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title> | </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content=" | ">
+  
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:nav" content="toc.html">
+  <meta property="docfx:toc" content="reference/toc.html">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="../toc.html">
+</head>
+<body data-spy="scroll" data-target="#affix">
+  <div id="wrapper">
+    <header>
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img id="logo" class="svg" src="../../logo.svg" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content">
+      <div class="sidenav">
+        <a class="btn toc-toggle collapse">Show / Hide Table of Contents</a>
+        <div class="sidetoggle">
+          <div class="sidetoc">
+            <iframe id="sidetoc" src="../toc.html"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="article row grid-right"><div class="col-md-10">
+        <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/Validator.cs/#L16" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="Validator">Class Validator</h1>
+      <div class="markdown level0 summary"><p>Helper class to validate objects, properties and other values using their associated<br><a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute</a></br>custom attributes.</p><br></div>
+      <div class="markdown level0 conceptual"></div>
+      <div class="inheritance">
+        <h5>Inheritance</h5>
+        <div class="level0"><a href="System.Object.html" name="System.Object">Object</a></div>
+        <div class="level1">System.ComponentModel.DataAnnotations.Validator</div>
+      </div>
+      <h6><strong>Namespace</strong>:System.ComponentModel.DataAnnotations</h6>
+      <h6><strong>Assembly</strong>:System.ComponentModel.Annotations.dll</h6>
+      <h5 id="Validator_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public class Validator</code></pre>
+      </div>
+      <h5 id="Validator_remarks">remarks</h5>
+      <div class="markdown level0 remarks"></div>
+<h3 id="methods">Methods</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/Validator.cs/#L96"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryValidateObject_Object__ValidationContext__ICollection_ValidationResult__">TryValidateObject(Object, ValidationContext, ICollection&lt;ValidationResult&gt;)</h4>
+<div class="markdown level1 summary"><p>Tests whether the given object instance is valid.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>This method evaluates all <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute</a>s attached to the object instance&#39;s type.  It also<br>checks to ensure all properties marked with <a href="System.ComponentModel.DataAnnotations.RequiredAttribute.html">System.ComponentModel.DataAnnotations.RequiredAttribute</a> are set.  It does not validate the</br>property values of the object.</p><br><para><br>If <paramref name="validationResults"></paramref> is null, then execution will abort upon the first validation</br>failure.  If <paramref name="validationResults"></paramref> is non-null, then all validation attributes will be<br>evaluated.</br></para></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static bool TryValidateObject(object instance, ValidationContext validationContext, ICollection<validationresult> validationResults)</validationresult></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Object.html" name="System.Object">Object</a></td>
+      <td><em>instance</em></td>
+      <td><p>The object instance to test.  It cannot be <c>null</c>.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.ComponentModel.DataAnnotations.ValidationContext.html" name="System.ComponentModel.DataAnnotations.ValidationContext">ValidationContext</a></td>
+      <td><em>validationContext</em></td>
+      <td><p>Describes the object to validate and provides services and context for the validators.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Collections.Generic.ICollection`1.html" name="System.Collections.Generic.ICollection">ICollection</a>&lt;<a href="System.ComponentModel.DataAnnotations.ValidationResult.html" name="System.ComponentModel.DataAnnotations.ValidationResult">ValidationResult</a>&gt;</td>
+      <td><em>validationResults</em></td>
+      <td><p>Optional collection to receive <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">System.ComponentModel.DataAnnotations.ValidationResult</a>s for the failures.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p><c>true</c> if the object is valid, <c>false</c> if any validation errors are encountered.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/Validator.cs/#L135"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryValidateObject_Object__ValidationContext__ICollection_ValidationResult___Boolean_">TryValidateObject(Object, ValidationContext, ICollection&lt;ValidationResult&gt;, Boolean)</h4>
+<div class="markdown level1 summary"><p>Tests whether the given object instance is valid.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>This method evaluates all <see cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute"></see>s attached to the object instance&#39;s type.  It also<br>checks to ensure all properties marked with <see cref="T:System.ComponentModel.DataAnnotations.RequiredAttribute"></see> are set.  If</p><br><p><paramref name="validateAllProperties"></paramref></br>is <c>true</c>, this method will also evaluate the <see cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute"></see>s for all the immediate<br>properties</br>of this object.  This process is not recursive.<p><br><para><br>If <paramref name="validationResults"></paramref> is null, then execution will abort upon the first validation</br>failure.  If <paramref name="validationResults"></paramref> is non-null, then all validation attributes will be<br>evaluated.</br></para><para><br>For any given property, if it has a <see cref="T:System.ComponentModel.DataAnnotations.RequiredAttribute"></see> that fails validation, no other validators</br>will be evaluated for that property.<br></para></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static bool TryValidateObject(object instance, ValidationContext validationContext, ICollection<validationresult> validationResults, bool validateAllProperties)</validationresult></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Object.html" name="System.Object">Object</a></td>
+      <td><em>instance</em></td>
+      <td><p>The object instance to test.  It cannot be null.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.ComponentModel.DataAnnotations.ValidationContext.html" name="System.ComponentModel.DataAnnotations.ValidationContext">ValidationContext</a></td>
+      <td><em>validationContext</em></td>
+      <td><p>Describes the object to validate and provides services and context for the validators.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Collections.Generic.ICollection`1.html" name="System.Collections.Generic.ICollection">ICollection</a>&lt;<a href="System.ComponentModel.DataAnnotations.ValidationResult.html" name="System.ComponentModel.DataAnnotations.ValidationResult">ValidationResult</a>&gt;</td>
+      <td><em>validationResults</em></td>
+      <td><p>Optional collection to receive <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">System.ComponentModel.DataAnnotations.ValidationResult</a>s for the failures.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><em>validateAllProperties</em></td>
+      <td><p>If <c>true</c>, also evaluates all properties of the object (this process is not
+recursive over properties of the properties).</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p><c>true</c> if the object is valid, <c>false</c> if any validation errors are encountered.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/Validator.cs/#L48"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryValidateProperty_Object__ValidationContext__ICollection_ValidationResult__">TryValidateProperty(Object, ValidationContext, ICollection&lt;ValidationResult&gt;)</h4>
+<div class="markdown level1 summary"><p>Tests whether the given property value is valid.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>This method will test each <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute</a> associated with the property<br>identified by <paramref name="validationContext"></paramref>.  If <paramref name="validationResults"></paramref> is non-null,</br>this method will add a <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">System.ComponentModel.DataAnnotations.ValidationResult</a> to it for each validation failure.</p><br><para><br>If there is a <see cref="T:System.ComponentModel.DataAnnotations.RequiredAttribute"></see> found on the property, it will be evaluated before all other</br>validation attributes.  If the required validator fails then validation will abort, adding that single<br>failure into the <paramref name="validationResults"></paramref> when applicable, returning a value of <c>false</c>.</br></para><para><br>If <paramref name="validationResults"></paramref> is null and there isn&#39;t a <see cref="T:System.ComponentModel.DataAnnotations.RequiredAttribute"></see> failure,</br>then all validators will be evaluated.<br></para></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static bool TryValidateProperty(object value, ValidationContext validationContext, ICollection<validationresult> validationResults)</validationresult></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Object.html" name="System.Object">Object</a></td>
+      <td><em>value</em></td>
+      <td><p>The value to test.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.ComponentModel.DataAnnotations.ValidationContext.html" name="System.ComponentModel.DataAnnotations.ValidationContext">ValidationContext</a></td>
+      <td><em>validationContext</em></td>
+      <td><p>Describes the property member to validate and provides services and context for the
+validators.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Collections.Generic.ICollection`1.html" name="System.Collections.Generic.ICollection">ICollection</a>&lt;<a href="System.ComponentModel.DataAnnotations.ValidationResult.html" name="System.ComponentModel.DataAnnotations.ValidationResult">ValidationResult</a>&gt;</td>
+      <td><em>validationResults</em></td>
+      <td><p>Optional collection to receive <see cref="T:System.ComponentModel.DataAnnotations.ValidationResult"></see>s for the failures.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p><c>true</c> if the value is valid, <c>false</c> if any validation errors are encountered.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/Validator.cs/#L196"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryValidateValue_Object__ValidationContext__ICollection_ValidationResult___IEnumerable_ValidationAttribute__">TryValidateValue(Object, ValidationContext, ICollection&lt;ValidationResult&gt;, IEnumerable&lt;ValidationAttribute&gt;)</h4>
+<div class="markdown level1 summary"><p>Tests whether the given value is valid against a specified list of <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute</a>s.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>This method will test each <see cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute"></see>s specified .  If</p><br><p><paramref name="validationResults"></paramref> is non-null, this method will add a <see cref="T:System.ComponentModel.DataAnnotations.ValidationResult"></see></br>to it for each validation failure.<p><br><para><br>If there is a <see cref="T:System.ComponentModel.DataAnnotations.RequiredAttribute"></see> within the <paramref name="validationAttributes"></paramref>, it will</br>be evaluated before all other validation attributes.  If the required validator fails then validation will<br>abort, adding that single failure into the <paramref name="validationResults"></paramref> when applicable, returning a</br>value of <c>false</c>.<br></para><para><br>If <paramref name="validationResults"></paramref> is null and there isn&#39;t a <see cref="T:System.ComponentModel.DataAnnotations.RequiredAttribute"></see> failure,</br>then all validators will be evaluated.<br></para></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static bool TryValidateValue(object value, ValidationContext validationContext, ICollection<validationresult> validationResults, IEnumerable<validationattribute> validationAttributes)</validationattribute></validationresult></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Object.html" name="System.Object">Object</a></td>
+      <td><em>value</em></td>
+      <td><p>The value to test.  It cannot be null.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.ComponentModel.DataAnnotations.ValidationContext.html" name="System.ComponentModel.DataAnnotations.ValidationContext">ValidationContext</a></td>
+      <td><em>validationContext</em></td>
+      <td><p>Describes the object being validated and provides services and context for the
+validators.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Collections.Generic.ICollection`1.html" name="System.Collections.Generic.ICollection">ICollection</a>&lt;<a href="System.ComponentModel.DataAnnotations.ValidationResult.html" name="System.ComponentModel.DataAnnotations.ValidationResult">ValidationResult</a>&gt;</td>
+      <td><em>validationResults</em></td>
+      <td><p>Optional collection to receive <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">System.ComponentModel.DataAnnotations.ValidationResult</a>s for the failures.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html" name="System.ComponentModel.DataAnnotations.ValidationAttribute">ValidationAttribute</a>&gt;</td>
+      <td><em>validationAttributes</em></td>
+      <td><p>The list of <see cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute"></see>s to validate this</p>
+<p><paramref name="value"></paramref> against.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p><c>true</c> if the object is valid, <c>false</c> if any validation errors are encountered.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/Validator.cs/#L260"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ValidateObject_Object__ValidationContext_">ValidateObject(Object, ValidationContext)</h4>
+<div class="markdown level1 summary"><p>Throws a <a href="System.ComponentModel.DataAnnotations.ValidationException.html">System.ComponentModel.DataAnnotations.ValidationException</a> if the given <paramref name="instance"></paramref> is not valid.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>This method evaluates all <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute</a>s attached to the object&#39;s type.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static void ValidateObject(object instance, ValidationContext validationContext)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Object.html" name="System.Object">Object</a></td>
+      <td><em>instance</em></td>
+      <td><p>The object instance to test.  It cannot be null.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.ComponentModel.DataAnnotations.ValidationContext.html" name="System.ComponentModel.DataAnnotations.ValidationContext">ValidationContext</a></td>
+      <td><em>validationContext</em></td>
+      <td><p>Describes the object being validated and provides services and context for the
+validators.  It cannot be <c>null</c>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/Validator.cs/#L285"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ValidateObject_Object__ValidationContext__Boolean_">ValidateObject(Object, ValidationContext, Boolean)</h4>
+<div class="markdown level1 summary"><p>Throws a <a href="System.ComponentModel.DataAnnotations.ValidationException.html">System.ComponentModel.DataAnnotations.ValidationException</a> if the given object instance is not valid.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>This method evaluates all <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute</a>s attached to the object&#39;s type.<br>If <paramref name="validateAllProperties"></paramref> is <c>true</c> it also validates all the object&#39;s properties.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static void ValidateObject(object instance, ValidationContext validationContext, bool validateAllProperties)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Object.html" name="System.Object">Object</a></td>
+      <td><em>instance</em></td>
+      <td><p>The object instance to test.  It cannot be null.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.ComponentModel.DataAnnotations.ValidationContext.html" name="System.ComponentModel.DataAnnotations.ValidationContext">ValidationContext</a></td>
+      <td><em>validationContext</em></td>
+      <td><p>Describes the object being validated and provides services and context for the
+validators.  It cannot be <c>null</c>.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><em>validateAllProperties</em></td>
+      <td><p>If <c>true</c>, also validates all the <paramref name="instance"></paramref>&#39;s properties.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/Validator.cs/#L227"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ValidateProperty_Object__ValidationContext_">ValidateProperty(Object, ValidationContext)</h4>
+<div class="markdown level1 summary"><p>Throws a <a href="System.ComponentModel.DataAnnotations.ValidationException.html">System.ComponentModel.DataAnnotations.ValidationException</a> if the given property <paramref name="value"></paramref> is not valid.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static void ValidateProperty(object value, ValidationContext validationContext)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Object.html" name="System.Object">Object</a></td>
+      <td><em>value</em></td>
+      <td><p>The value to test.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.ComponentModel.DataAnnotations.ValidationContext.html" name="System.ComponentModel.DataAnnotations.ValidationContext">ValidationContext</a></td>
+      <td><em>validationContext</em></td>
+      <td><p>Describes the object being validated and provides services and context for the
+validators.  It cannot be <c>null</c>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/Validator.cs/#L327"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ValidateValue_Object__ValidationContext__IEnumerable_ValidationAttribute__">ValidateValue(Object, ValidationContext, IEnumerable&lt;ValidationAttribute&gt;)</h4>
+<div class="markdown level1 summary"><p>Throw a <a href="System.ComponentModel.DataAnnotations.ValidationException.html">System.ComponentModel.DataAnnotations.ValidationException</a> if the given value is not valid for the<br><a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute</a>s.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>This method evaluates the <see cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute"></see>s supplied until a validation error occurs,<br>at which time a <see cref="T:System.ComponentModel.DataAnnotations.ValidationException"></see> is thrown.</p><br><para><br>A <see cref="T:System.ComponentModel.DataAnnotations.RequiredAttribute"></see> within the <paramref name="validationAttributes"></paramref> will always be evaluated</br>first.<br></para></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static void ValidateValue(object value, ValidationContext validationContext, IEnumerable<validationattribute> validationAttributes)</validationattribute></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Object.html" name="System.Object">Object</a></td>
+      <td><em>value</em></td>
+      <td><p>The value to test.  It cannot be null.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.ComponentModel.DataAnnotations.ValidationContext.html" name="System.ComponentModel.DataAnnotations.ValidationContext">ValidationContext</a></td>
+      <td><em>validationContext</em></td>
+      <td><p>Describes the object being tested.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html" name="System.ComponentModel.DataAnnotations.ValidationAttribute">ValidationAttribute</a>&gt;</td>
+      <td><em>validationAttributes</em></td>
+      <td><p>The list of <see cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute"></see>s to validate against this instance.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+</article>
+</div>
+<div class="hidden-sm col-md-2" role="complementary">
+  <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+    <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+  </nav>
+</div>
+</div>
+</div>
+<footer>
+  <div class="grad-bottom"></div>
+  <div class="footer">
+    <div class="container">
+      <span class="pull-right">
+        <a href="#top">Back to top</a>
+      </span>
+      <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+    </div>
+  </div>
+</footer>
+</div>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+</html>

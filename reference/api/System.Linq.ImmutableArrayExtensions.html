@@ -1,0 +1,1884 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title> | </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content=" | ">
+  
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:nav" content="toc.html">
+  <meta property="docfx:toc" content="reference/toc.html">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="../toc.html">
+</head>
+<body data-spy="scroll" data-target="#affix">
+  <div id="wrapper">
+    <header>
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img id="logo" class="svg" src="../../logo.svg" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content">
+      <div class="sidenav">
+        <a class="btn toc-toggle collapse">Show / Hide Table of Contents</a>
+        <div class="sidetoggle">
+          <div class="sidetoc">
+            <iframe id="sidetoc" src="../toc.html"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="article row grid-right"><div class="col-md-10">
+        <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L18" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="ImmutableArrayExtensions">Class ImmutableArrayExtensions</h1>
+      <div class="markdown level0 summary"><p>LINQ extension method overrides that offer greater efficiency for <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a> than the standard LINQ methods</p><br></div>
+      <div class="markdown level0 conceptual"></div>
+      <div class="inheritance">
+        <h5>Inheritance</h5>
+        <div class="level0"><a href="System.Object.html" name="System.Object">Object</a></div>
+        <div class="level1">System.Linq.ImmutableArrayExtensions</div>
+      </div>
+      <h6><strong>Namespace</strong>:System.Linq</h6>
+      <h6><strong>Assembly</strong>:System.Collections.Immutable.dll</h6>
+      <h5 id="ImmutableArrayExtensions_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public class ImmutableArrayExtensions</code></pre>
+      </div>
+      <h5 id="ImmutableArrayExtensions_remarks">remarks</h5>
+      <div class="markdown level0 remarks"></div>
+<h3 id="methods">Methods</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L270"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Aggregate_T__ImmutableArray_T___Func_T__T__T__">Aggregate&lt;T&gt;(ImmutableArray&lt;T&gt;, Func&lt;T, T, T&gt;)</h4>
+<div class="markdown level1 summary"><p>Applies an accumulator function over a sequence.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static T Aggregate<t>(ImmutableArray<t> immutableArray, Func<t, t,="" t=""> func)</t,></t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Func`3.html" name="System.Func">Func</a>&lt;T, T, T&gt;</td>
+      <td><em>func</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L294"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Aggregate_TAccumulate__T__ImmutableArray_T___TAccumulate__Func_TAccumulate__T__TAccumulate__">Aggregate&lt;TAccumulate, T&gt;(ImmutableArray&lt;T&gt;, TAccumulate, Func&lt;TAccumulate, T, TAccumulate&gt;)</h4>
+<div class="markdown level1 summary"><p>Applies an accumulator function over a sequence.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static TAccumulate Aggregate<taccumulate, t="">(ImmutableArray<t> immutableArray, TAccumulate seed, Func<taccumulate, t,="" taccumulate=""> func)</taccumulate,></t></taccumulate,></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TAccumulate</td>
+      <td><em>seed</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Func`3.html" name="System.Func">Func</a>&lt;TAccumulate, T, TAccumulate&gt;</td>
+      <td><em>func</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TAccumulate</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L314"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Aggregate_TAccumulate__TResult__T__ImmutableArray_T___TAccumulate__Func_TAccumulate__T__TAccumulate___Func_TAccumulate__TResult__">Aggregate&lt;TAccumulate, TResult, T&gt;(ImmutableArray&lt;T&gt;, TAccumulate, Func&lt;TAccumulate, T, TAccumulate&gt;, Func&lt;TAccumulate, TResult&gt;)</h4>
+<div class="markdown level1 summary"><p>Applies an accumulator function over a sequence.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static TResult Aggregate<taccumulate, tresult,="" t="">(ImmutableArray<t> immutableArray, TAccumulate seed, Func<taccumulate, t,="" taccumulate=""> func, Func<taccumulate, tresult=""> resultSelector)</taccumulate,></taccumulate,></t></taccumulate,></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TAccumulate</td>
+      <td><em>seed</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Func`3.html" name="System.Func">Func</a>&lt;TAccumulate, T, TAccumulate&gt;</td>
+      <td><em>func</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;TAccumulate, TResult&gt;</td>
+      <td><em>resultSelector</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TResult</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L145"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="All_T__ImmutableArray_T___Func_T__Boolean__">All&lt;T&gt;(ImmutableArray&lt;T&gt;, Func&lt;T, Boolean&gt;)</h4>
+<div class="markdown level1 summary"><p>Gets a value indicating whether all elements in this collection<br>match a given condition.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static bool All<t>(ImmutableArray<t> immutableArray, Func<t, bool=""> predicate)</t,></t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;T, <a href="System.Boolean.html" name="System.Boolean">Boolean</a>&gt;</td>
+      <td><em>predicate</em></td>
+      <td><p>The predicate.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p><c>true</c> if every element of the source sequence passes the test in the specified predicate, or if the sequence is empty; otherwise, <c>false</c>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L105"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Any_T__ImmutableArray_T__">Any&lt;T&gt;(ImmutableArray&lt;T&gt;)</h4>
+<div class="markdown level1 summary"><p>Gets a value indicating whether any elements are in this collection.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static bool Any<t>(ImmutableArray<t> immutableArray)</t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L118"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Any_T__ImmutableArray_T___Func_T__Boolean__">Any&lt;T&gt;(ImmutableArray&lt;T&gt;, Func&lt;T, Boolean&gt;)</h4>
+<div class="markdown level1 summary"><p>Gets a value indicating whether any elements are in this collection<br>that match a given condition.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static bool Any<t>(ImmutableArray<t> immutableArray, Func<t, bool=""> predicate)</t,></t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;T, <a href="System.Boolean.html" name="System.Boolean">Boolean</a>&gt;</td>
+      <td><em>predicate</em></td>
+      <td><p>The predicate.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L727"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Any_T__ImmutableArray_T__Builder_">Any&lt;T&gt;(ImmutableArray&lt;T&gt;.Builder)</h4>
+<div class="markdown level1 summary"><p>Returns a value indicating whether this collection contains any elements.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static bool Any<t>(ImmutableArray<t>.Builder builder)</t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.Builder.html" name="System.Collections.Immutable.ImmutableArray.Builder">ImmutableArray</a>&lt;&gt;</td>
+      <td><em>builder</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L326"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ElementAt_T__ImmutableArray_T___Int32_">ElementAt&lt;T&gt;(ImmutableArray&lt;T&gt;, Int32)</h4>
+<div class="markdown level1 summary"><p>Returns the element at a specified index in a sequence.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static T ElementAt<t>(ImmutableArray<t> immutableArray, int index)</t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>index</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L336"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ElementAtOrDefault_T__ImmutableArray_T___Int32_">ElementAtOrDefault&lt;T&gt;(ImmutableArray&lt;T&gt;, Int32)</h4>
+<div class="markdown level1 summary"><p>Returns the element at a specified index in a sequence or a default value if the index is out of range.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static T ElementAtOrDefault<t>(ImmutableArray<t> immutableArray, int index)</t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>index</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L373"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="First_T__ImmutableArray_T__">First&lt;T&gt;(ImmutableArray&lt;T&gt;)</h4>
+<div class="markdown level1 summary"><p>Returns the first element in a sequence that satisfies a specified condition.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static T First<t>(ImmutableArray<t> immutableArray)</t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L351"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="First_T__ImmutableArray_T___Func_T__Boolean__">First&lt;T&gt;(ImmutableArray&lt;T&gt;, Func&lt;T, Boolean&gt;)</h4>
+<div class="markdown level1 summary"><p>Returns the first element in a sequence that satisfies a specified condition.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static T First<t>(ImmutableArray<t> immutableArray, Func<t, bool=""> predicate)</t,></t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;T, <a href="System.Boolean.html" name="System.Boolean">Boolean</a>&gt;</td>
+      <td><em>predicate</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L672"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="First_T__ImmutableArray_T__Builder_">First&lt;T&gt;(ImmutableArray&lt;T&gt;.Builder)</h4>
+<div class="markdown level1 summary"><p>Returns the first element in the collection.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static T First<t>(ImmutableArray<t>.Builder builder)</t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.Builder.html" name="System.Collections.Immutable.ImmutableArray.Builder">ImmutableArray</a>&lt;&gt;</td>
+      <td><em>builder</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L388"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="FirstOrDefault_T__ImmutableArray_T__">FirstOrDefault&lt;T&gt;(ImmutableArray&lt;T&gt;)</h4>
+<div class="markdown level1 summary"><p>Returns the first element of a sequence, or a default value if the sequence contains no elements.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static T FirstOrDefault<t>(ImmutableArray<t> immutableArray)</t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L398"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="FirstOrDefault_T__ImmutableArray_T___Func_T__Boolean__">FirstOrDefault&lt;T&gt;(ImmutableArray&lt;T&gt;, Func&lt;T, Boolean&gt;)</h4>
+<div class="markdown level1 summary"><p>Returns the first element of the sequence that satisfies a condition or a default value if no such element is found.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static T FirstOrDefault<t>(ImmutableArray<t> immutableArray, Func<t, bool=""> predicate)</t,></t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;T, <a href="System.Boolean.html" name="System.Boolean">Boolean</a>&gt;</td>
+      <td><em>predicate</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L688"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="FirstOrDefault_T__ImmutableArray_T__Builder_">FirstOrDefault&lt;T&gt;(ImmutableArray&lt;T&gt;.Builder)</h4>
+<div class="markdown level1 summary"><p>Returns the first element in the collection, or the default value if the collection is empty.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static T FirstOrDefault<t>(ImmutableArray<t>.Builder builder)</t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.Builder.html" name="System.Collections.Immutable.ImmutableArray.Builder">ImmutableArray</a>&lt;&gt;</td>
+      <td><em>builder</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L419"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Last_T__ImmutableArray_T__">Last&lt;T&gt;(ImmutableArray&lt;T&gt;)</h4>
+<div class="markdown level1 summary"><p>Returns the last element of a sequence.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static T Last<t>(ImmutableArray<t> immutableArray)</t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L433"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Last_T__ImmutableArray_T___Func_T__Boolean__">Last&lt;T&gt;(ImmutableArray&lt;T&gt;, Func&lt;T, Boolean&gt;)</h4>
+<div class="markdown level1 summary"><p>Returns the last element of a sequence that satisfies a specified condition.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static T Last<t>(ImmutableArray<t> immutableArray, Func<t, bool=""> predicate)</t,></t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;T, <a href="System.Boolean.html" name="System.Boolean">Boolean</a>&gt;</td>
+      <td><em>predicate</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L700"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Last_T__ImmutableArray_T__Builder_">Last&lt;T&gt;(ImmutableArray&lt;T&gt;.Builder)</h4>
+<div class="markdown level1 summary"><p>Returns the last element in the collection.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static T Last<t>(ImmutableArray<t>.Builder builder)</t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.Builder.html" name="System.Collections.Immutable.ImmutableArray.Builder">ImmutableArray</a>&lt;&gt;</td>
+      <td><em>builder</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L455"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="LastOrDefault_T__ImmutableArray_T__">LastOrDefault&lt;T&gt;(ImmutableArray&lt;T&gt;)</h4>
+<div class="markdown level1 summary"><p>Returns the last element of a sequence, or a default value if the sequence contains no elements.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static T LastOrDefault<t>(ImmutableArray<t> immutableArray)</t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L466"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="LastOrDefault_T__ImmutableArray_T___Func_T__Boolean__">LastOrDefault&lt;T&gt;(ImmutableArray&lt;T&gt;, Func&lt;T, Boolean&gt;)</h4>
+<div class="markdown level1 summary"><p>Returns the last element of a sequence that satisfies a condition or a default value if no such element is found.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static T LastOrDefault<t>(ImmutableArray<t> immutableArray, Func<t, bool=""> predicate)</t,></t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;T, <a href="System.Boolean.html" name="System.Boolean">Boolean</a>&gt;</td>
+      <td><em>predicate</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L716"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="LastOrDefault_T__ImmutableArray_T__Builder_">LastOrDefault&lt;T&gt;(ImmutableArray&lt;T&gt;.Builder)</h4>
+<div class="markdown level1 summary"><p>Returns the last element in the collection, or the default value if the collection is empty.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static T LastOrDefault<t>(ImmutableArray<t>.Builder builder)</t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.Builder.html" name="System.Collections.Immutable.ImmutableArray.Builder">ImmutableArray</a>&lt;&gt;</td>
+      <td><em>builder</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L29"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Select_T__TResult__ImmutableArray_T___Func_T__TResult__">Select&lt;T, TResult&gt;(ImmutableArray&lt;T&gt;, Func&lt;T, TResult&gt;)</h4>
+<div class="markdown level1 summary"><p>Projects each element of a sequence into a new form.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IEnumerable<tresult> Select<t, tresult="">(ImmutableArray<t> immutableArray, Func<t, tresult=""> selector)</t,></t></t,></tresult></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td><p>The immutable array.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;T, TResult&gt;</td>
+      <td><em>selector</em></td>
+      <td><p>The selector.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;TResult&gt;</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L57"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="SelectMany_TSource__TCollection__TResult__ImmutableArray_TSource___Func_TSource__IEnumerable_TCollection____Func_TSource__TCollection__TResult__">SelectMany&lt;TSource, TCollection, TResult&gt;(ImmutableArray&lt;TSource&gt;, Func&lt;TSource, IEnumerable&lt;TCollection&gt;&gt;, Func&lt;TSource, TCollection, TResult&gt;)</h4>
+<div class="markdown level1 summary"><p>Projects each element of a sequence to an <a href="System.Collections.Generic.IEnumerable`1.html">System.Collections.Generic.IEnumerable`1</a>,<br>flattens the resulting sequences into one sequence, and invokes a result</br>selector function on each element therein.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IEnumerable<tresult> SelectMany<tsource, tcollection,="" tresult="">(ImmutableArray<tsource> immutableArray, Func<tsource,></tsource,><tcollection>> collectionSelector, Func<tsource, tcollection,="" tresult=""> resultSelector)</tsource,></tcollection></tsource></tsource,></tresult></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;TSource&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td><p>The immutable array.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;TSource, <a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;TCollection&gt;&gt;</td>
+      <td><em>collectionSelector</em></td>
+      <td><p>A transform function to apply to each element of the input sequence.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Func`3.html" name="System.Func">Func</a>&lt;TSource, TCollection, TResult&gt;</td>
+      <td><em>resultSelector</em></td>
+      <td><p>A transform function to apply to each element of the intermediate sequence.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;TResult&gt;</td>
+      <td><p>An <see cref="T:System.Collections.Generic.IEnumerable`1"></see> whose elements are the result
+of invoking the one-to-many transform function <paramref name="collectionSelector"></paramref> on each
+element of <paramref name="immutableArray"></paramref> and then mapping each of those sequence elements and their
+corresponding source element to a result element.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L203"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="SequenceEqual_TDerived__TBase__ImmutableArray_TBase___IEnumerable_TDerived___IEqualityComparer_TBase__">SequenceEqual&lt;TDerived, TBase&gt;(ImmutableArray&lt;TBase&gt;, IEnumerable&lt;TDerived&gt;, IEqualityComparer&lt;TBase&gt;)</h4>
+<div class="markdown level1 summary"><p>Determines whether two sequences are equal according to an equality comparer.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static bool SequenceEqual<tderived, tbase="">(ImmutableArray<tbase> immutableArray, IEnumerable<tderived> items, IEqualityComparer<tbase> comparer = null)where TDerived : TBase</tbase></tderived></tbase></tderived,></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;TBase&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;TDerived&gt;</td>
+      <td><em>items</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Collections.Generic.IEqualityComparer`1.html" name="System.Collections.Generic.IEqualityComparer">IEqualityComparer</a>&lt;TBase&gt;</td>
+      <td><em>comparer</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L167"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="SequenceEqual_TDerived__TBase__ImmutableArray_TBase___ImmutableArray_TDerived___IEqualityComparer_TBase__">SequenceEqual&lt;TDerived, TBase&gt;(ImmutableArray&lt;TBase&gt;, ImmutableArray&lt;TDerived&gt;, IEqualityComparer&lt;TBase&gt;)</h4>
+<div class="markdown level1 summary"><p>Determines whether two sequences are equal according to an equality comparer.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static bool SequenceEqual<tderived, tbase="">(ImmutableArray<tbase> immutableArray, ImmutableArray<tderived> items, IEqualityComparer<tbase> comparer = null)where TDerived : TBase</tbase></tderived></tbase></tderived,></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;TBase&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;TDerived&gt;</td>
+      <td><em>items</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Collections.Generic.IEqualityComparer`1.html" name="System.Collections.Generic.IEqualityComparer">IEqualityComparer</a>&lt;TBase&gt;</td>
+      <td><em>comparer</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L238"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="SequenceEqual_TDerived__TBase__ImmutableArray_TBase___ImmutableArray_TDerived___Func_TBase__TBase__Boolean__">SequenceEqual&lt;TDerived, TBase&gt;(ImmutableArray&lt;TBase&gt;, ImmutableArray&lt;TDerived&gt;, Func&lt;TBase, TBase, Boolean&gt;)</h4>
+<div class="markdown level1 summary"><p>Determines whether two sequences are equal according to an equality comparer.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static bool SequenceEqual<tderived, tbase="">(ImmutableArray<tbase> immutableArray, ImmutableArray<tderived> items, Func<tbase, tbase,="" bool=""> predicate)where TDerived : TBase</tbase,></tderived></tbase></tderived,></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;TBase&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;TDerived&gt;</td>
+      <td><em>items</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Func`3.html" name="System.Func">Func</a>&lt;TBase, TBase, <a href="System.Boolean.html" name="System.Boolean">Boolean</a>&gt;</td>
+      <td><em>predicate</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L487"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Single_T__ImmutableArray_T__">Single&lt;T&gt;(ImmutableArray&lt;T&gt;)</h4>
+<div class="markdown level1 summary"><p>Returns the only element of a sequence, and throws an exception if there is not exactly one element in the sequence.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static T Single<t>(ImmutableArray<t> immutableArray)</t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L498"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Single_T__ImmutableArray_T___Func_T__Boolean__">Single&lt;T&gt;(ImmutableArray&lt;T&gt;, Func&lt;T, Boolean&gt;)</h4>
+<div class="markdown level1 summary"><p>Returns the only element of a sequence that satisfies a specified condition, and throws an exception if more than one such element exists.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static T Single<t>(ImmutableArray<t> immutableArray, Func<t, bool=""> predicate)</t,></t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;T, <a href="System.Boolean.html" name="System.Boolean">Boolean</a>&gt;</td>
+      <td><em>predicate</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L532"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="SingleOrDefault_T__ImmutableArray_T__">SingleOrDefault&lt;T&gt;(ImmutableArray&lt;T&gt;)</h4>
+<div class="markdown level1 summary"><p>Returns the only element of a sequence, or a default value if the sequence is empty; this method throws an exception if there is more than one element in the sequence.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static T SingleOrDefault<t>(ImmutableArray<t> immutableArray)</t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L543"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="SingleOrDefault_T__ImmutableArray_T___Func_T__Boolean__">SingleOrDefault&lt;T&gt;(ImmutableArray&lt;T&gt;, Func&lt;T, Boolean&gt;)</h4>
+<div class="markdown level1 summary"><p>Returns the only element of a sequence that satisfies a specified condition or a default value if no such element exists; this method throws an exception if more than one element satisfies the condition.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static T SingleOrDefault<t>(ImmutableArray<t> immutableArray, Func<t, bool=""> predicate)</t,></t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;T, <a href="System.Boolean.html" name="System.Boolean">Boolean</a>&gt;</td>
+      <td><em>predicate</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L652"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ToArray_T__ImmutableArray_T__">ToArray&lt;T&gt;(ImmutableArray&lt;T&gt;)</h4>
+<div class="markdown level1 summary"><p>Copies the contents of this array to a mutable array.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static T[] ToArray<t>(ImmutableArray<t> immutableArray)</t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T[]</td>
+      <td><p>The newly instantiated array.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L575"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ToDictionary_TKey__T__ImmutableArray_T___Func_T__TKey__">ToDictionary&lt;TKey, T&gt;(ImmutableArray&lt;T&gt;, Func&lt;T, TKey&gt;)</h4>
+<div class="markdown level1 summary"><p>Creates a dictionary based on the contents of this array.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Dictionary<tkey, t=""> ToDictionary<tkey, t="">(ImmutableArray<t> immutableArray, Func<t, tkey=""> keySelector)</t,></t></tkey,></tkey,></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;T, TKey&gt;</td>
+      <td><em>keySelector</em></td>
+      <td><p>The key selector.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Generic.Dictionary`2.html" name="System.Collections.Generic.Dictionary">Dictionary</a>&lt;TKey, T&gt;</td>
+      <td><p>The newly initialized dictionary.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L606"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ToDictionary_TKey__T__ImmutableArray_T___Func_T__TKey___IEqualityComparer_TKey__">ToDictionary&lt;TKey, T&gt;(ImmutableArray&lt;T&gt;, Func&lt;T, TKey&gt;, IEqualityComparer&lt;TKey&gt;)</h4>
+<div class="markdown level1 summary"><p>Creates a dictionary based on the contents of this array.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Dictionary<tkey, t=""> ToDictionary<tkey, t="">(ImmutableArray<t> immutableArray, Func<t, tkey=""> keySelector, IEqualityComparer<tkey> comparer)</tkey></t,></t></tkey,></tkey,></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;T, TKey&gt;</td>
+      <td><em>keySelector</em></td>
+      <td><p>The key selector.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Collections.Generic.IEqualityComparer`1.html" name="System.Collections.Generic.IEqualityComparer">IEqualityComparer</a>&lt;TKey&gt;</td>
+      <td><em>comparer</em></td>
+      <td><p>The comparer to initialize the dictionary with.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Generic.Dictionary`2.html" name="System.Collections.Generic.Dictionary">Dictionary</a>&lt;TKey, T&gt;</td>
+      <td><p>The newly initialized dictionary.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L591"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ToDictionary_TKey__TElement__T__ImmutableArray_T___Func_T__TKey___Func_T__TElement__">ToDictionary&lt;TKey, TElement, T&gt;(ImmutableArray&lt;T&gt;, Func&lt;T, TKey&gt;, Func&lt;T, TElement&gt;)</h4>
+<div class="markdown level1 summary"><p>Creates a dictionary based on the contents of this array.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Dictionary<tkey, telement=""> ToDictionary<tkey, telement,="" t="">(ImmutableArray<t> immutableArray, Func<t, tkey=""> keySelector, Func<t, telement=""> elementSelector)</t,></t,></t></tkey,></tkey,></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;T, TKey&gt;</td>
+      <td><em>keySelector</em></td>
+      <td><p>The key selector.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;T, TElement&gt;</td>
+      <td><em>elementSelector</em></td>
+      <td><p>The element selector.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Generic.Dictionary`2.html" name="System.Collections.Generic.Dictionary">Dictionary</a>&lt;TKey, TElement&gt;</td>
+      <td><p>The newly initialized dictionary.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L631"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ToDictionary_TKey__TElement__T__ImmutableArray_T___Func_T__TKey___Func_T__TElement___IEqualityComparer_TKey__">ToDictionary&lt;TKey, TElement, T&gt;(ImmutableArray&lt;T&gt;, Func&lt;T, TKey&gt;, Func&lt;T, TElement&gt;, IEqualityComparer&lt;TKey&gt;)</h4>
+<div class="markdown level1 summary"><p>Creates a dictionary based on the contents of this array.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Dictionary<tkey, telement=""> ToDictionary<tkey, telement,="" t="">(ImmutableArray<t> immutableArray, Func<t, tkey=""> keySelector, Func<t, telement=""> elementSelector, IEqualityComparer<tkey> comparer)</tkey></t,></t,></t></tkey,></tkey,></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;T, TKey&gt;</td>
+      <td><em>keySelector</em></td>
+      <td><p>The key selector.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;T, TElement&gt;</td>
+      <td><em>elementSelector</em></td>
+      <td><p>The element selector.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Collections.Generic.IEqualityComparer`1.html" name="System.Collections.Generic.IEqualityComparer">IEqualityComparer</a>&lt;TKey&gt;</td>
+      <td><em>comparer</em></td>
+      <td><p>The comparer to initialize the dictionary with.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Generic.Dictionary`2.html" name="System.Collections.Generic.Dictionary">Dictionary</a>&lt;TKey, TElement&gt;</td>
+      <td><p>The newly initialized dictionary.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs/#L89"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Where_T__ImmutableArray_T___Func_T__Boolean__">Where&lt;T&gt;(ImmutableArray&lt;T&gt;, Func&lt;T, Boolean&gt;)</h4>
+<div class="markdown level1 summary"><p>Filters a sequence of values based on a predicate.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IEnumerable<t> Where<t>(ImmutableArray<t> immutableArray, Func<t, bool=""> predicate)</t,></t></t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>immutableArray</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;T, <a href="System.Boolean.html" name="System.Boolean">Boolean</a>&gt;</td>
+      <td><em>predicate</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;T&gt;</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+</article>
+</div>
+<div class="hidden-sm col-md-2" role="complementary">
+  <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+    <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+  </nav>
+</div>
+</div>
+</div>
+<footer>
+  <div class="grad-bottom"></div>
+  <div class="footer">
+    <div class="container">
+      <span class="pull-right">
+        <a href="#top">Back to top</a>
+      </span>
+      <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+    </div>
+  </div>
+</footer>
+</div>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+</html>

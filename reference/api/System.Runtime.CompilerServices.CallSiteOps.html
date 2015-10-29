@@ -1,0 +1,582 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title> | </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content=" | ">
+  
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:nav" content="toc.html">
+  <meta property="docfx:toc" content="reference/toc.html">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="../toc.html">
+</head>
+<body data-spy="scroll" data-target="#affix">
+  <div id="wrapper">
+    <header>
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img id="logo" class="svg" src="../../logo.svg" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content">
+      <div class="sidenav">
+        <a class="btn toc-toggle collapse">Show / Hide Table of Contents</a>
+        <div class="sidetoggle">
+          <div class="sidetoc">
+            <iframe id="sidetoc" src="../toc.html"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="article row grid-right"><div class="col-md-10">
+        <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSiteOps.cs/#L17" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="CallSiteOps">Class CallSiteOps</h1>
+      <div class="markdown level0 summary"><p>This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.</p><br></div>
+      <div class="markdown level0 conceptual"></div>
+      <div class="inheritance">
+        <h5>Inheritance</h5>
+        <div class="level0"><a href="System.Object.html" name="System.Object">Object</a></div>
+        <div class="level1">System.Runtime.CompilerServices.CallSiteOps</div>
+      </div>
+      <h6><strong>Namespace</strong>:System.Runtime.CompilerServices</h6>
+      <h6><strong>Assembly</strong>:System.Dynamic.Runtime.dll</h6>
+      <h5 id="CallSiteOps_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public class CallSiteOps</code></pre>
+      </div>
+      <h5 id="CallSiteOps_remarks">remarks</h5>
+      <div class="markdown level0 remarks"></div>
+<h3 id="methods">Methods</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSiteOps.cs/#L74"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="AddRule_T__CallSite_T___T_">AddRule&lt;T&gt;(CallSite&lt;T&gt;, T)</h4>
+<div class="markdown level1 summary"><p>Adds a rule to the cache maintained on the dynamic call site.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static void AddRule<t>(CallSite<t> site, T rule)where T : class</t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Runtime.CompilerServices.CallSite`1.html" name="System.Runtime.CompilerServices.CallSite">CallSite</a>&lt;T&gt;</td>
+      <td><em>site</em></td>
+      <td><p>An instance of the dynamic call site.</p>
+</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td><em>rule</em></td>
+      <td><p>An instance of the call site rule.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSiteOps.cs/#L157"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Bind_T__CallSiteBinder__CallSite_T___Object___">Bind&lt;T&gt;(CallSiteBinder, CallSite&lt;T&gt;, Object[])</h4>
+<div class="markdown level1 summary"><p>Updates the call site target with a new rule based on the arguments.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static T Bind<t>(CallSiteBinder binder, CallSite<t> site, object[] args)where T : class</t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
+      <td><em>binder</em></td>
+      <td><p>The call site binder.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Runtime.CompilerServices.CallSite`1.html" name="System.Runtime.CompilerServices.CallSite">CallSite</a>&lt;T&gt;</td>
+      <td><em>site</em></td>
+      <td><p>An instance of the dynamic call site.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Object.html" name="System.Object">Object</a>[]</td>
+      <td><em>args</em></td>
+      <td><p>Arguments to the call site.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td><p>The new call site target.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSiteOps.cs/#L62"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ClearMatch_CallSite_">ClearMatch(CallSite)</h4>
+<div class="markdown level1 summary"><p>Clears the match flag on the matchmaker call site.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static void ClearMatch(CallSite site)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Runtime.CompilerServices.CallSite.html" name="System.Runtime.CompilerServices.CallSite">CallSite</a></td>
+      <td><em>site</em></td>
+      <td><p>An instance of the dynamic call site.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSiteOps.cs/#L25"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="CreateMatchmaker_T__CallSite_T__">CreateMatchmaker&lt;T&gt;(CallSite&lt;T&gt;)</h4>
+<div class="markdown level1 summary"><p>Creates an instance of a dynamic call site used for cache lookup.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static CallSite<t> CreateMatchmaker<t>(CallSite<t> site)where T : class</t></t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Runtime.CompilerServices.CallSite`1.html" name="System.Runtime.CompilerServices.CallSite">CallSite</a>&lt;T&gt;</td>
+      <td><em>site</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Runtime.CompilerServices.CallSite`1.html" name="System.Runtime.CompilerServices.CallSite">CallSite</a>&lt;T&gt;</td>
+      <td><p>The new call site.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSiteOps.cs/#L143"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetCachedRules_T__RuleCache_T__">GetCachedRules&lt;T&gt;(RuleCache&lt;T&gt;)</h4>
+<div class="markdown level1 summary"><p>Searches the dynamic rule cache for rules applicable to the dynamic operation.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static T[] GetCachedRules<t>(RuleCache<t> cache)where T : class</t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Runtime.CompilerServices.RuleCache`1.html" name="System.Runtime.CompilerServices.RuleCache">RuleCache</a>&lt;T&gt;</td>
+      <td><em>cache</em></td>
+      <td><p>The cache.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T[]</td>
+      <td><p>The collection of applicable rules.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSiteOps.cs/#L52"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetMatch_CallSite_">GetMatch(CallSite)</h4>
+<div class="markdown level1 summary"><p>Checks whether the executed rule matched</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static bool GetMatch(CallSite site)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Runtime.CompilerServices.CallSite.html" name="System.Runtime.CompilerServices.CallSite">CallSite</a></td>
+      <td><em>site</em></td>
+      <td><p>An instance of the dynamic call site.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p>true if rule matched, false otherwise.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSiteOps.cs/#L114"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetRuleCache_T__CallSite_T__">GetRuleCache&lt;T&gt;(CallSite&lt;T&gt;)</h4>
+<div class="markdown level1 summary"><p>Retrieves binding rule cache.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static RuleCache<t> GetRuleCache<t>(CallSite<t> site)where T : class</t></t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Runtime.CompilerServices.CallSite`1.html" name="System.Runtime.CompilerServices.CallSite">CallSite</a>&lt;T&gt;</td>
+      <td><em>site</em></td>
+      <td><p>An instance of the dynamic call site.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Runtime.CompilerServices.RuleCache`1.html" name="System.Runtime.CompilerServices.RuleCache">RuleCache</a>&lt;T&gt;</td>
+      <td><p>The cache.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSiteOps.cs/#L101"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetRules_T__CallSite_T__">GetRules&lt;T&gt;(CallSite&lt;T&gt;)</h4>
+<div class="markdown level1 summary"><p>Gets the dynamic binding rules from the call site.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static T[] GetRules<t>(CallSite<t> site)where T : class</t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Runtime.CompilerServices.CallSite`1.html" name="System.Runtime.CompilerServices.CallSite">CallSite</a>&lt;T&gt;</td>
+      <td><em>site</em></td>
+      <td><p>An instance of the dynamic call site.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T[]</td>
+      <td><p>An array of dynamic binding rules.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSiteOps.cs/#L128"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="MoveRule_T__RuleCache_T___T__Int32_">MoveRule&lt;T&gt;(RuleCache&lt;T&gt;, T, Int32)</h4>
+<div class="markdown level1 summary"><p>Moves the binding rule within the cache.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static void MoveRule<t>(RuleCache<t> cache, T rule, int i)where T : class</t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Runtime.CompilerServices.RuleCache`1.html" name="System.Runtime.CompilerServices.RuleCache">RuleCache</a>&lt;T&gt;</td>
+      <td><em>cache</em></td>
+      <td><p>The call site rule cache.</p>
+</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td><em>rule</em></td>
+      <td><p>An instance of the call site rule.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>i</em></td>
+      <td><p>An index of the call site rule.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSiteOps.cs/#L39"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="SetNotMatched_CallSite_">SetNotMatched(CallSite)</h4>
+<div class="markdown level1 summary"><p>Checks if a dynamic site requires an update.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static bool SetNotMatched(CallSite site)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Runtime.CompilerServices.CallSite.html" name="System.Runtime.CompilerServices.CallSite">CallSite</a></td>
+      <td><em>site</em></td>
+      <td><p>An instance of the dynamic call site.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p>true if rule does not need updating, false otherwise.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSiteOps.cs/#L86"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="UpdateRules_T__CallSite_T___Int32_">UpdateRules&lt;T&gt;(CallSite&lt;T&gt;, Int32)</h4>
+<div class="markdown level1 summary"><p>Updates rules in the cache.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static void UpdateRules<t>(CallSite<t> this, int matched)where T : class</t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Runtime.CompilerServices.CallSite`1.html" name="System.Runtime.CompilerServices.CallSite">CallSite</a>&lt;T&gt;</td>
+      <td><em>this</em></td>
+      <td><p>An instance of the dynamic call site.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>matched</em></td>
+      <td><p>The matched rule index.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+</article>
+</div>
+<div class="hidden-sm col-md-2" role="complementary">
+  <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+    <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+  </nav>
+</div>
+</div>
+</div>
+<footer>
+  <div class="grad-bottom"></div>
+  <div class="footer">
+    <div class="container">
+      <span class="pull-right">
+        <a href="#top">Back to top</a>
+      </span>
+      <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+    </div>
+  </div>
+</footer>
+</div>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+</html>

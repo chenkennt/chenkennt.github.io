@@ -1,0 +1,605 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title> | </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content=" | ">
+  
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:nav" content="toc.html">
+  <meta property="docfx:toc" content="reference/toc.html">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="../toc.html">
+</head>
+<body data-spy="scroll" data-target="#affix">
+  <div id="wrapper">
+    <header>
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img id="logo" class="svg" src="../../logo.svg" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content">
+      <div class="sidenav">
+        <a class="btn toc-toggle collapse">Show / Hide Table of Contents</a>
+        <div class="sidetoggle">
+          <div class="sidetoc">
+            <iframe id="sidetoc" src="../toc.html"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="article row grid-right"><div class="col-md-10">
+        <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/DisplayAttribute.cs/#L13" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="DisplayAttribute">Class DisplayAttribute</h1>
+      <div class="markdown level0 summary"><p>DisplayAttribute is a general-purpose attribute to specify user-visible globalizable strings for types and members.<br>The string properties of this class can be used either as literals or as resource identifiers into a specified</br><a href="System.ComponentModel.DataAnnotations.DisplayAttribute.html">System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType</a></p><br></div>
+      <div class="markdown level0 conceptual"></div>
+      <div class="inheritance">
+        <h5>Inheritance</h5>
+        <div class="level0"><a href="System.Object.html" name="System.Object">Object</a></div>
+        <div class="level1"><a href="System.Attribute.html" name="System.Attribute">Attribute</a></div>
+        <div class="level2">System.ComponentModel.DataAnnotations.DisplayAttribute</div>
+      </div>
+      <h6><strong>Namespace</strong>:System.ComponentModel.DataAnnotations</h6>
+      <h6><strong>Assembly</strong>:System.ComponentModel.Annotations.dll</h6>
+      <h5 id="DisplayAttribute_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public sealed class DisplayAttribute : Attribute, _Attribute</code></pre>
+      </div>
+      <h5 id="DisplayAttribute_remarks">remarks</h5>
+      <div class="markdown level0 remarks"></div>
+<h3 id="properties">Properties</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/DisplayAttribute.cs/#L231"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="AutoGenerateField">AutoGenerateField</h4>
+<div class="markdown level1 summary"><p>Gets or sets whether UI should be generated automatically to display this field. If this property is not<br>set then the presentation layer will automatically determine whether UI should be generated. Setting this</br>property allows an override of the default behavior of the presentation layer.</p><br><para><br>Consumers must use the <see cref="M:System.ComponentModel.DataAnnotations.DisplayAttribute.GetAutoGenerateField"></see> method to retrieve the value, as this property</br>getter will throw<br>an exception if the value has not been set.</br></para></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool AutoGenerateField { get; set; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/DisplayAttribute.cs/#L261"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="AutoGenerateFilter">AutoGenerateFilter</h4>
+<div class="markdown level1 summary"><p>Gets or sets whether UI should be generated automatically to display filtering for this field. If this property is<br>not</br>set then the presentation layer will automatically determine whether filtering UI should be generated. Setting this<br>property allows an override of the default behavior of the presentation layer.</p><br><para><br>Consumers must use the <see cref="M:System.ComponentModel.DataAnnotations.DisplayAttribute.GetAutoGenerateFilter"></see> method to retrieve the value, as this property</br>getter will throw<br>an exception if the value has not been set.</br></para></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool AutoGenerateFilter { get; set; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/DisplayAttribute.cs/#L119"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Description">Description</h4>
+<div class="markdown level1 summary"><p>Gets or sets the Description attribute property, which may be a resource key string.</p><br><para><br>Consumers must use the <see cref="M:System.ComponentModel.DataAnnotations.DisplayAttribute.GetDescription"></see> method to retrieve the UI display string.</br></para></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>The property contains either the literal, non-localized string or the resource key<br>to be used in conjunction with <a href="System.ComponentModel.DataAnnotations.DisplayAttribute.html">System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType</a> to configure a localized</br>description for display.</p><br><para><br>The <see cref="M:System.ComponentModel.DataAnnotations.DisplayAttribute.GetDescription"></see> method will return either the literal, non-localized</br>string or the localized string when <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType"></see> has been specified.<br></para></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public string Description { get; set; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/DisplayAttribute.cs/#L181"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GroupName">GroupName</h4>
+<div class="markdown level1 summary"><p>Gets or sets the GroupName attribute property, which may be a resource key string.</p><br><para><br>Consumers must use the <see cref="M:System.ComponentModel.DataAnnotations.DisplayAttribute.GetGroupName"></see> method to retrieve the UI display string.</br></para></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>The property contains either the literal, non-localized string or the resource key<br>to be used in conjunction with <a href="System.ComponentModel.DataAnnotations.DisplayAttribute.html">System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType</a> to configure a localized</br>group name for display.</p><br><para><br>The <see cref="M:System.ComponentModel.DataAnnotations.DisplayAttribute.GetGroupName"></see> method will return either the literal, non-localized</br>string or the localized string when <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType"></see> has been specified.<br></para></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public string GroupName { get; set; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/DisplayAttribute.cs/#L88"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Name">Name</h4>
+<div class="markdown level1 summary"><p>Gets or sets the Name attribute property, which may be a resource key string.</p><br><para><br>Consumers must use the <see cref="M:System.ComponentModel.DataAnnotations.DisplayAttribute.GetName"></see> method to retrieve the UI display string.</br></para></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>The property contains either the literal, non-localized string or the resource key<br>to be used in conjunction with <a href="System.ComponentModel.DataAnnotations.DisplayAttribute.html">System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType</a> to configure a localized</br>name for display.</p><br><para><br>The <see cref="M:System.ComponentModel.DataAnnotations.DisplayAttribute.GetName"></see> method will return either the literal, non-localized</br>string or the localized string when <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType"></see> has been specified.<br></para></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/DisplayAttribute.cs/#L289"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Order">Order</h4>
+<div class="markdown level1 summary"><p>Gets or sets the order in which this field should be displayed.  If this property is not set then<br>the presentation layer will automatically determine the order.  Setting this property explicitly</br>allows an override of the default behavior of the presentation layer.</p><br><para><br>Consumers must use the <see cref="M:System.ComponentModel.DataAnnotations.DisplayAttribute.GetOrder"></see> method to retrieve the value, as this property getter will throw</br>an exception if the value has not been set.<br></para></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public int Order { get; set; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/DisplayAttribute.cs/#L150"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Prompt">Prompt</h4>
+<div class="markdown level1 summary"><p>Gets or sets the Prompt attribute property, which may be a resource key string.</p><br><para><br>Consumers must use the <see cref="M:System.ComponentModel.DataAnnotations.DisplayAttribute.GetPrompt"></see> method to retrieve the UI display string.</br></para></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>The property contains either the literal, non-localized string or the resource key<br>to be used in conjunction with <a href="System.ComponentModel.DataAnnotations.DisplayAttribute.html">System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType</a> to configure a localized</br>prompt for display.</p><br><para><br>The <see cref="M:System.ComponentModel.DataAnnotations.DisplayAttribute.GetPrompt"></see> method will return either the literal, non-localized</br>string or the localized string when <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType"></see> has been specified.<br></para></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public string Prompt { get; set; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/DisplayAttribute.cs/#L200"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ResourceType">ResourceType</h4>
+<div class="markdown level1 summary"><p>Gets or sets the <a href="System.Type.html">System.Type</a> that contains the resources for <a href="System.ComponentModel.DataAnnotations.DisplayAttribute.html">System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName</a>,<br><a href="System.ComponentModel.DataAnnotations.DisplayAttribute.html">System.ComponentModel.DataAnnotations.DisplayAttribute.Name</a>, <a href="System.ComponentModel.DataAnnotations.DisplayAttribute.html">System.ComponentModel.DataAnnotations.DisplayAttribute.Description</a>, <a href="System.ComponentModel.DataAnnotations.DisplayAttribute.html">System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt</a>, and <a href="System.ComponentModel.DataAnnotations.DisplayAttribute.html">System.ComponentModel.DataAnnotations.DisplayAttribute.GroupName</a>.</br>Using <a href="System.ComponentModel.DataAnnotations.DisplayAttribute.html">System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType</a> along with these Key properties, allows the <a href="System.ComponentModel.DataAnnotations.DisplayAttribute.html">System.ComponentModel.DataAnnotations.DisplayAttribute.GetShortName</a>,<br><a href="System.ComponentModel.DataAnnotations.DisplayAttribute.html">System.ComponentModel.DataAnnotations.DisplayAttribute.GetName</a>, <a href="System.ComponentModel.DataAnnotations.DisplayAttribute.html">System.ComponentModel.DataAnnotations.DisplayAttribute.GetDescription</a>, <a href="System.ComponentModel.DataAnnotations.DisplayAttribute.html">System.ComponentModel.DataAnnotations.DisplayAttribute.GetPrompt</a>, and <a href="System.ComponentModel.DataAnnotations.DisplayAttribute.html">System.ComponentModel.DataAnnotations.DisplayAttribute.GetGroupName</a></br>methods to return localized values.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Type ResourceType { get; set; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Type.html" name="System.Type">Type</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/DisplayAttribute.cs/#L57"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ShortName">ShortName</h4>
+<div class="markdown level1 summary"><p>Gets or sets the ShortName attribute property, which may be a resource key string.</p><br><para><br>Consumers must use the <see cref="M:System.ComponentModel.DataAnnotations.DisplayAttribute.GetShortName"></see> method to retrieve the UI display string.</br></para></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>The property contains either the literal, non-localized string or the resource key<br>to be used in conjunction with <a href="System.ComponentModel.DataAnnotations.DisplayAttribute.html">System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType</a> to configure a localized</br>short name for display.</p><br><para><br>The <see cref="M:System.ComponentModel.DataAnnotations.DisplayAttribute.GetShortName"></see> method will return either the literal, non-localized</br>string or the localized string when <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType"></see> has been specified.<br></para></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public string ShortName { get; set; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="methods">Methods</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/DisplayAttribute.cs/#L454"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetAutoGenerateField__">GetAutoGenerateField()</h4>
+<div class="markdown level1 summary"><p>Gets the value of <a href="System.ComponentModel.DataAnnotations.DisplayAttribute.html">System.ComponentModel.DataAnnotations.DisplayAttribute.AutoGenerateField</a> if it has been set, or <c>null</c>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool ? GetAutoGenerateField()</code></pre>
+</div>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Nullable`1.html" name="System.Nullable">Nullable</a>&lt;<a href="System.Boolean.html" name="System.Boolean">Boolean</a>&gt;</td>
+      <td><p>When <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.AutoGenerateField"></see> has been set returns the value of that property.</p>
+<para>
+When <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.AutoGenerateField"></see> has not been set returns <c>null</c>.
+</para></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/DisplayAttribute.cs/#L468"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetAutoGenerateFilter__">GetAutoGenerateFilter()</h4>
+<div class="markdown level1 summary"><p>Gets the value of <a href="System.ComponentModel.DataAnnotations.DisplayAttribute.html">System.ComponentModel.DataAnnotations.DisplayAttribute.AutoGenerateFilter</a> if it has been set, or <c>null</c>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool ? GetAutoGenerateFilter()</code></pre>
+</div>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Nullable`1.html" name="System.Nullable">Nullable</a>&lt;<a href="System.Boolean.html" name="System.Boolean">Boolean</a>&gt;</td>
+      <td><p>When <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.AutoGenerateFilter"></see> has been set returns the value of that property.</p>
+<para>
+When <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.AutoGenerateFilter"></see> has not been set returns <c>null</c>.
+</para></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/DisplayAttribute.cs/#L388"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetDescription__">GetDescription()</h4>
+<div class="markdown level1 summary"><p>Gets the UI display string for Description.</p><br><para><br>This can be either a literal, non-localized string provided to <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Description"></see> or the</br>localized string found when <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType"></see> has been specified and <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Description"></see><br>represents a resource key within that resource type.</br></para></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public string GetDescription()</code></pre>
+</div>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td><p>When <a href="System.ComponentModel.DataAnnotations.DisplayAttribute.html">System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType</a> has not been specified, the value of
+<a href="System.ComponentModel.DataAnnotations.DisplayAttribute.html">System.ComponentModel.DataAnnotations.DisplayAttribute.Description</a> will be returned.</p>
+<para>
+When <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType"></see> has been specified and <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Description"></see>
+represents a resource key within that resource type, then the localized value will be returned.
+</para></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/DisplayAttribute.cs/#L440"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetGroupName__">GetGroupName()</h4>
+<div class="markdown level1 summary"><p>Gets the UI display string for GroupName.</p><br><para><br>This can be either a literal, non-localized string provided to <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.GroupName"></see> or the</br>localized string found when <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType"></see> has been specified and <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.GroupName"></see><br>represents a resource key within that resource type.</br></para></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public string GetGroupName()</code></pre>
+</div>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td><p>When <a href="System.ComponentModel.DataAnnotations.DisplayAttribute.html">System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType</a> has not been specified, the value of
+<a href="System.ComponentModel.DataAnnotations.DisplayAttribute.html">System.ComponentModel.DataAnnotations.DisplayAttribute.GroupName</a> will be returned.</p>
+<para>
+When <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType"></see> has been specified and <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.GroupName"></see>
+represents a resource key within that resource type, then the localized value will be returned.
+</para></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/DisplayAttribute.cs/#L362"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetName__">GetName()</h4>
+<div class="markdown level1 summary"><p>Gets the UI display string for Name.</p><br><para><br>This can be either a literal, non-localized string provided to <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Name"></see> or the</br>localized string found when <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType"></see> has been specified and <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Name"></see><br>represents a resource key within that resource type.</br></para></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public string GetName()</code></pre>
+</div>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td><p>When <a href="System.ComponentModel.DataAnnotations.DisplayAttribute.html">System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType</a> has not been specified, the value of
+<a href="System.ComponentModel.DataAnnotations.DisplayAttribute.html">System.ComponentModel.DataAnnotations.DisplayAttribute.Name</a> will be returned.</p>
+<para>
+When <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType"></see> has been specified and <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Name"></see>
+represents a resource key within that resource type, then the localized value will be returned.
+</para><para>
+Can return <c>null</c> and will not fall back onto other values, as it&#39;s more likely for the
+consumer to want to fall back onto the property name.
+</para></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/DisplayAttribute.cs/#L487"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetOrder__">GetOrder()</h4>
+<div class="markdown level1 summary"><p>Gets the value of <a href="System.ComponentModel.DataAnnotations.DisplayAttribute.html">System.ComponentModel.DataAnnotations.DisplayAttribute.Order</a> if it has been set, or <c>null</c>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>When an order is not specified, presentation layers should consider using the value<br>of 10000.  This value allows for explicitly-ordered fields to be displayed before</br>and after the fields that don&#39;t specify an order.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public int ? GetOrder()</code></pre>
+</div>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Nullable`1.html" name="System.Nullable">Nullable</a>&lt;<a href="System.Int32.html" name="System.Int32">Int32</a>&gt;</td>
+      <td><p>When <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Order"></see> has been set returns the value of that property.</p>
+<para>
+When <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Order"></see> has not been set returns <c>null</c>.
+</para></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/DisplayAttribute.cs/#L414"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetPrompt__">GetPrompt()</h4>
+<div class="markdown level1 summary"><p>Gets the UI display string for Prompt.</p><br><para><br>This can be either a literal, non-localized string provided to <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt"></see> or the</br>localized string found when <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType"></see> has been specified and <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt"></see><br>represents a resource key within that resource type.</br></para></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public string GetPrompt()</code></pre>
+</div>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td><p>When <a href="System.ComponentModel.DataAnnotations.DisplayAttribute.html">System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType</a> has not been specified, the value of
+<a href="System.ComponentModel.DataAnnotations.DisplayAttribute.html">System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt</a> will be returned.</p>
+<para>
+When <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType"></see> has been specified and <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt"></see>
+represents a resource key within that resource type, then the localized value will be returned.
+</para></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/DisplayAttribute.cs/#L332"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetShortName__">GetShortName()</h4>
+<div class="markdown level1 summary"><p>Gets the UI display string for ShortName.</p><br><para><br>This can be either a literal, non-localized string provided to <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName"></see> or the</br>localized string found when <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType"></see> has been specified and <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName"></see><br>represents a resource key within that resource type.</br></para></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public string GetShortName()</code></pre>
+</div>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td><p>When <a href="System.ComponentModel.DataAnnotations.DisplayAttribute.html">System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType</a> has not been specified, the value of
+<a href="System.ComponentModel.DataAnnotations.DisplayAttribute.html">System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName</a> will be returned.</p>
+<para>
+When <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType"></see> has been specified and <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName"></see>
+represents a resource key within that resource type, then the localized value will be returned.
+</para><para>
+If <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName"></see> is <c>null</c>, the value from <see cref="M:System.ComponentModel.DataAnnotations.DisplayAttribute.GetName"></see> will be returned.
+</para></td>
+    </tr>
+  </tbody>
+</table>
+
+</article>
+</div>
+<div class="hidden-sm col-md-2" role="complementary">
+  <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+    <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+  </nav>
+</div>
+</div>
+</div>
+<footer>
+  <div class="grad-bottom"></div>
+  <div class="footer">
+    <div class="container">
+      <span class="pull-right">
+        <a href="#top">Back to top</a>
+      </span>
+      <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+    </div>
+  </div>
+</footer>
+</div>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+</html>

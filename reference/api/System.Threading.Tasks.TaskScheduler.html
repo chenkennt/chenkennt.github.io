@@ -1,0 +1,478 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title> | </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content=" | ">
+  
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:nav" content="toc.html">
+  <meta property="docfx:toc" content="reference/toc.html">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="../toc.html">
+</head>
+<body data-spy="scroll" data-target="#affix">
+  <div id="wrapper">
+    <header>
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img id="logo" class="svg" src="../../logo.svg" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content">
+      <div class="sidenav">
+        <a class="btn toc-toggle collapse">Show / Hide Table of Contents</a>
+        <div class="sidetoggle">
+          <div class="sidetoc">
+            <iframe id="sidetoc" src="../toc.html"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="article row grid-right"><div class="col-md-10">
+        <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskScheduler.cs/#L41" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="TaskScheduler">Class TaskScheduler</h1>
+      <div class="markdown level0 summary"><p>Represents an abstract scheduler for tasks.</p><br></div>
+      <div class="markdown level0 conceptual"></div>
+      <div class="inheritance">
+        <h5>Inheritance</h5>
+        <div class="level0"><a href="System.Object.html" name="System.Object">Object</a></div>
+        <div class="level1">System.Threading.Tasks.TaskScheduler</div>
+      </div>
+      <h6><strong>Namespace</strong>:System.Threading.Tasks</h6>
+      <h6><strong>Assembly</strong>:mscorlib.dll</h6>
+      <h5 id="TaskScheduler_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public abstract class TaskScheduler</code></pre>
+      </div>
+      <h5 id="TaskScheduler_remarks">remarks</h5>
+      <div class="markdown level0 remarks"><para><br><see cref="T:System.Threading.Tasks.TaskScheduler">TaskScheduler</see> acts as the extension point for all</br>pluggable scheduling logic.  This includes mechanisms such as how to schedule a task for execution, and<br>how scheduled tasks should be exposed to debuggers.</br></para><br><para><br>All members of the abstract <see cref="T:System.Threading.Tasks.TaskScheduler"></see> type are thread-safe</br>and may be used from multiple threads concurrently.<br></para></div>
+      <h3 id="constructors">Constructors</h3>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskScheduler.cs/#L302"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="TaskScheduler__">TaskScheduler()</h4>
+  <div class="markdown level1 summary"><p>Initializes the <a href="System.Threading.Tasks.TaskScheduler.html">System.Threading.Tasks.TaskScheduler</a>.</p><br></div>
+  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TaskScheduler()</code></pre>
+  </div>
+<h3 id="properties">Properties</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskScheduler.cs/#L328"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Current">Current</h4>
+<div class="markdown level1 summary"><p>Gets the <a href="System.Threading.Tasks.TaskScheduler.html">System.Threading.Tasks.TaskScheduler</a><br>associated with the currently executing task.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>When not called from within a task, <a href="System.Threading.Tasks.TaskScheduler.html">System.Threading.Tasks.TaskScheduler.Current</a> will return the <a href="System.Threading.Tasks.TaskScheduler.html">System.Threading.Tasks.TaskScheduler.Default</a> scheduler.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static TaskScheduler Current { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.Tasks.TaskScheduler.html" name="System.Threading.Tasks.TaskScheduler">TaskScheduler</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskScheduler.cs/#L313"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Default">Default</h4>
+<div class="markdown level1 summary"><p>Gets the default <a href="System.Threading.Tasks.TaskScheduler.html">System.Threading.Tasks.TaskScheduler</a> instance.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static TaskScheduler Default { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.Tasks.TaskScheduler.html" name="System.Threading.Tasks.TaskScheduler">TaskScheduler</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskScheduler.cs/#L381"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Id">Id</h4>
+<div class="markdown level1 summary"><p>Gets the unique ID for this <a href="System.Threading.Tasks.TaskScheduler.html">System.Threading.Tasks.TaskScheduler</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public int Id { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskScheduler.cs/#L166"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="MaximumConcurrencyLevel">MaximumConcurrencyLevel</h4>
+<div class="markdown level1 summary"><p>Indicates the maximum concurrency level this<br><a href="System.Threading.Tasks.TaskScheduler.html">System.Threading.Tasks.TaskScheduler</a>  is able to support.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public virtual int MaximumConcurrencyLevel { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="methods">Methods</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskScheduler.cs/#L373"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="FromCurrentSynchronizationContext__">FromCurrentSynchronizationContext()</h4>
+<div class="markdown level1 summary"><p>Creates a <a href="System.Threading.Tasks.TaskScheduler.html">System.Threading.Tasks.TaskScheduler</a><br>associated with the current <a href="System.Threading.SynchronizationContext.html">System.Threading.SynchronizationContext</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>All <a href="System.Threading.Tasks.Task.html">System.Threading.Tasks.Task</a> instances queued to<br>the returned scheduler will be executed through a call to the</br><a href="System.Threading.SynchronizationContext.html">System.Threading.SynchronizationContext.Post(System.Threading.SendOrPostCallback,System.Object)</a> method<br>on that context.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static TaskScheduler FromCurrentSynchronizationContext()</code></pre>
+</div>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.Tasks.TaskScheduler.html" name="System.Threading.Tasks.TaskScheduler">TaskScheduler</a></td>
+      <td><p>A <see cref="T:System.Threading.Tasks.TaskScheduler"></see> associated with
+the current <see cref="T:System.Threading.SynchronizationContext">SynchronizationContext</see>, as
+determined by <see cref="P:System.Threading.SynchronizationContext.Current">SynchronizationContext.Current</see>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskScheduler.cs/#L159"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetScheduledTasks__">GetScheduledTasks()</h4>
+<div class="markdown level1 summary"><p>Generates an enumerable of <a href="System.Threading.Tasks.Task.html">System.Threading.Tasks.Task</a> instances<br>currently queued to the scheduler waiting to be executed.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><para><br>A class derived from <see cref="T:System.Threading.Tasks.TaskScheduler"></see> implements this method in order to support</br>integration with debuggers. This method will only be invoked by the .NET Framework when the<br>debugger requests access to the data. The enumerable returned will be traversed by debugging</br>utilities to access the tasks currently queued to this scheduler, enabling the debugger to<br>provide a representation of this information in the user interface.</br></para><br><para><br>It is important to note that, when this method is called, all other threads in the process will</br>be frozen. Therefore, it&#39;s important to avoid synchronization with other threads that may lead to<br>blocking. If synchronization is necessary, the method should prefer to throw a <see cref="T:System.NotSupportedException"></see></br>than to block, which could cause a debugger to experience delays. Additionally, this method and<br>the enumerable returned must not modify any globally visible state.</br></para></br><para><br>The returned enumerable should never be null. If there are currently no queued tasks, an empty</br>enumerable should be returned instead.<br></para><br><para><br>For developers implementing a custom debugger, this method shouldn&#39;t be called directly, but</br>rather this functionality should be accessed through the internal wrapper method<br>GetScheduledTasksForDebugger:</br><c>internal Task[] GetScheduledTasksForDebugger()</c>. This method returns an array of tasks,<br>rather than an enumerable. In order to retrieve a list of active schedulers, a debugger may use</br>another internal method: <c>internal static TaskScheduler[] GetTaskSchedulersForDebugger()</c>.<br>This static method returns an array of all active TaskScheduler instances.</br>GetScheduledTasksForDebugger then may be used on each of these scheduler instances to retrieve<br>the list of scheduled tasks for each.</br></para></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">protected abstract IEnumerable<task> GetScheduledTasks()</task></code></pre>
+</div>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.Threading.Tasks.Task.html" name="System.Threading.Tasks.Task">Task</a>&gt;</td>
+      <td><p>An enumerable that allows traversal of tasks currently queued to this scheduler.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskScheduler.cs/#L72"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="QueueTask_Task_">QueueTask(Task)</h4>
+<div class="markdown level1 summary"><p>Queues a <a href="System.Threading.Tasks.Task.html">System.Threading.Tasks.Task</a> to the scheduler.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><para><br>A class derived from <see cref="T:System.Threading.Tasks.TaskScheduler">TaskScheduler</see></br>implements this method to accept tasks being scheduled on the scheduler.<br>A typical implementation would store the task in an internal data structure, which would</br>be serviced by threads that would execute those tasks at some time in the future.<br></para><br><para><br>This method is only meant to be called by the .NET Framework and</br>should not be called directly by the derived class. This is necessary<br>for maintaining the consistency of the system.</br></para></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">protected abstract void QueueTask(Task task)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.Tasks.Task.html" name="System.Threading.Tasks.Task">Task</a></td>
+      <td><em>task</em></td>
+      <td><p>The <see cref="T:System.Threading.Tasks.Task">Task</see> to be queued.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskScheduler.cs/#L239"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryDequeue_Task_">TryDequeue(Task)</h4>
+<div class="markdown level1 summary"><p>Attempts to dequeue a <a href="System.Threading.Tasks.Task.html">System.Threading.Tasks.Task</a> that was previously queued to<br>this scheduler.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">protected virtual bool TryDequeue(Task task)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.Tasks.Task.html" name="System.Threading.Tasks.Task">Task</a></td>
+      <td><em>task</em></td>
+      <td><p>The <see cref="T:System.Threading.Tasks.Task">Task</see> to be dequeued.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p>A Boolean denoting whether the <paramref name="task"></paramref> argument was successfully dequeued.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskScheduler.cs/#L430"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryExecuteTask_Task_">TryExecuteTask(Task)</h4>
+<div class="markdown level1 summary"><p>Attempts to execute the provided <a href="System.Threading.Tasks.Task.html">System.Threading.Tasks.Task</a><br>on this scheduler.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><para><br>Scheduler implementations are provided with <see cref="T:System.Threading.Tasks.Task">Task</see></br>instances to be executed through either the <see cref="M:System.Threading.Tasks.TaskScheduler.QueueTask(System.Threading.Tasks.Task)"></see> method or the<br><see cref="M:System.Threading.Tasks.TaskScheduler.TryExecuteTaskInline(System.Threading.Tasks.Task,System.Boolean)"></see> method. When the scheduler deems it appropriate to run the</br>provided task, <see cref="M:System.Threading.Tasks.TaskScheduler.TryExecuteTask(System.Threading.Tasks.Task)"></see> should be used to do so. TryExecuteTask handles all<br>aspects of executing a task, including action invocation, exception handling, state management,</br>and lifecycle control.<br></para><br><para><br><see cref="M:System.Threading.Tasks.TaskScheduler.TryExecuteTask(System.Threading.Tasks.Task)"></see> must only be used for tasks provided to this scheduler by the .NET</br>Framework infrastructure. It should not be used to execute arbitrary tasks obtained through<br>custom mechanisms.</br></para></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">protected bool TryExecuteTask(Task task)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.Tasks.Task.html" name="System.Threading.Tasks.Task">Task</a></td>
+      <td><em>task</em></td>
+      <td><p>A <see cref="T:System.Threading.Tasks.Task">Task</see> object to be executed.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p>A Boolean that is true if <paramref name="task"></paramref> was successfully executed, false if it
+was not. A common reason for execution failure is that the task had previously been executed or
+is in the process of being executed by another thread.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskScheduler.cs/#L115"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryExecuteTaskInline_Task__Boolean_">TryExecuteTaskInline(Task, Boolean)</h4>
+<div class="markdown level1 summary"><p>Determines whether the provided <a href="System.Threading.Tasks.Task.html">System.Threading.Tasks.Task</a><br>can be executed synchronously in this call, and if it can, executes it.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><para><br>A class derived from <see cref="T:System.Threading.Tasks.TaskScheduler">TaskScheduler</see> implements this function to</br>support inline execution of a task on a thread that initiates a wait on that task object. Inline<br>execution is optional, and the request may be rejected by returning false. However, better</br>scalability typically results the more tasks that can be inlined, and in fact a scheduler that<br>inlines too little may be prone to deadlocks. A proper implementation should ensure that a</br>request executing under the policies guaranteed by the scheduler can successfully inline. For<br>example, if a scheduler uses a dedicated thread to execute tasks, any inlining requests from that</br>thread should succeed.<br></para><br><para><br>If a scheduler decides to perform the inline execution, it should do so by calling to the base</br>TaskScheduler&#39;s<br><see cref="M:System.Threading.Tasks.TaskScheduler.TryExecuteTask(System.Threading.Tasks.Task)">TryExecuteTask</see> method with the provided task object, propagating</br>the return value. It may also be appropriate for the scheduler to remove an inlined task from its<br>internal data structures if it decides to honor the inlining request. Note, however, that under</br>some circumstances a scheduler may be asked to inline a task that was not previously provided to<br>it with the <see cref="M:System.Threading.Tasks.TaskScheduler.QueueTask(System.Threading.Tasks.Task)"></see> method.</br></para></br><para><br>The derived scheduler is responsible for making sure that the calling thread is suitable for</br>executing the given task as far as its own scheduling and execution policies are concerned.<br></para></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">protected abstract bool TryExecuteTaskInline(Task task, bool taskWasPreviouslyQueued)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.Tasks.Task.html" name="System.Threading.Tasks.Task">Task</a></td>
+      <td><em>task</em></td>
+      <td><p>The <see cref="T:System.Threading.Tasks.Task">Task</see> to be
+executed.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><em>taskWasPreviouslyQueued</em></td>
+      <td><p>A Boolean denoting whether or not task has previously been
+queued. If this parameter is True, then the task may have been previously queued (scheduled); if
+False, then the task is known not to have been queued, and this call is being made in order to
+execute the task inline without queueing it.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p>A Boolean value indicating whether the task was executed inline.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="events">Events</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskScheduler.cs/#L459"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="UnobservedTaskException">UnobservedTaskException</h4>
+<div class="markdown level1 summary"><p>Occurs when a faulted <a href="System.Threading.Tasks.Task.html">System.Threading.Tasks.Task</a>&#39;s unobserved exception is about to trigger exception escalation<br>policy, which, by default, would terminate the process.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>This AppDomain-wide event provides a mechanism to prevent exception<br>escalation policy (which, by default, terminates the process) from triggering.</br>Each handler is passed a <a href="System.Threading.Tasks.UnobservedTaskExceptionEventArgs.html">System.Threading.Tasks.UnobservedTaskExceptionEventArgs</a><br>instance, which may be used to examine the exception and to mark it as observed.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static event EventHandler<unobservedtaskexceptioneventargs> UnobservedTaskException</unobservedtaskexceptioneventargs></code></pre>
+</div>
+
+</article>
+</div>
+<div class="hidden-sm col-md-2" role="complementary">
+  <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+    <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+  </nav>
+</div>
+</div>
+</div>
+<footer>
+  <div class="grad-bottom"></div>
+  <div class="footer">
+    <div class="container">
+      <span class="pull-right">
+        <a href="#top">Back to top</a>
+      </span>
+      <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+    </div>
+  </div>
+</footer>
+</div>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+</html>

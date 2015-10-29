@@ -1,0 +1,379 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title> | </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content=" | ">
+  
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:nav" content="toc.html">
+  <meta property="docfx:toc" content="reference/toc.html">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="../toc.html">
+</head>
+<body data-spy="scroll" data-target="#affix">
+  <div id="wrapper">
+    <header>
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img id="logo" class="svg" src="../../logo.svg" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content">
+      <div class="sidenav">
+        <a class="btn toc-toggle collapse">Show / Hide Table of Contents</a>
+        <div class="sidetoggle">
+          <div class="sidetoc">
+            <iframe id="sidetoc" src="../toc.html"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="article row grid-right"><div class="col-md-10">
+        <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Overlapped/src/System/Threading/ClrThreadPoolBoundHandle.cs/#L17" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="ThreadPoolBoundHandle">Class ThreadPoolBoundHandle</h1>
+      <div class="markdown level0 summary"><p>Represents an I/O handle that is bound to the system thread pool and enables low-level<br>components to receive notifications for asynchronous I/O operations.</p><br></div>
+      <div class="markdown level0 conceptual"></div>
+      <div class="inheritance">
+        <h5>Inheritance</h5>
+        <div class="level0"><a href="System.Object.html" name="System.Object">Object</a></div>
+        <div class="level1">System.Threading.ThreadPoolBoundHandle</div>
+      </div>
+      <h6><strong>Namespace</strong>:System.Threading</h6>
+      <h6><strong>Assembly</strong>:System.Threading.Overlapped.dll</h6>
+      <h5 id="ThreadPoolBoundHandle_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public sealed class ThreadPoolBoundHandle : IDisposable</code></pre>
+      </div>
+      <h5 id="ThreadPoolBoundHandle_remarks">remarks</h5>
+      <div class="markdown level0 remarks"></div>
+<h3 id="properties">Properties</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Overlapped/src/System/Threading/ClrThreadPoolBoundHandle.cs/#L33"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Handle">Handle</h4>
+<div class="markdown level1 summary"><p>Gets the bound operating system handle.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public SafeHandle Handle { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Runtime.InteropServices.SafeHandle.html" name="System.Runtime.InteropServices.SafeHandle">SafeHandle</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="methods">Methods</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Overlapped/src/System/Threading/ClrThreadPoolBoundHandle.cs/#L150"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="AllocateNativeOverlapped_IOCompletionCallback__Object__Object_">AllocateNativeOverlapped(IOCompletionCallback, Object, Object)</h4>
+<div class="markdown level1 summary"><p>Returns an unmanaged pointer to a <a href="System.Threading.NativeOverlapped.html">System.Threading.NativeOverlapped</a> structure, specifying<br>a delegate that is invoked when the asynchronous I/O operation is complete, a user-provided</br>object providing context, and managed objects that serve as buffers.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p><para><br>The unmanaged pointer returned by this method can be passed to the operating system in</br>overlapped I/O operations. The <see cref="T:System.Threading.NativeOverlapped"></see> structure is fixed in<br>physical memory until <see cref="M:System.Threading.ThreadPoolBoundHandle.FreeNativeOverlapped(System.Threading.NativeOverlapped*)"></see> is called.</br></para></p><br><p><para><br>The buffer or buffers specified in <paramref name="pinData"></paramref> must be the same as those passed</br>to the unmanaged operating system function that performs the asynchronous I/O.<br></para></p></br><note><br>The buffers specified in <paramref name="pinData"></paramref> are pinned for the duration of</br>the I/O operation.<br></note></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public NativeOverlapped*AllocateNativeOverlapped(IOCompletionCallback callback, object state, object pinData)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.IOCompletionCallback.html" name="System.Threading.IOCompletionCallback">IOCompletionCallback</a></td>
+      <td><em>callback</em></td>
+      <td><p>An <a href="System.Threading.IOCompletionCallback.html">System.Threading.IOCompletionCallback</a> delegate that represents the callback method
+invoked when the asynchronous I/O operation completes.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Object.html" name="System.Object">Object</a></td>
+      <td><em>state</em></td>
+      <td><p>A user-provided object that distinguishes this <see cref="T:System.Threading.NativeOverlapped"></see> from other</p>
+<p><see cref="T:System.Threading.NativeOverlapped"></see> instances. Can be <see langword="null"></see>.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Object.html" name="System.Object">Object</a></td>
+      <td><em>pinData</em></td>
+      <td><p>An object or array of objects representing the input or output buffer for the operation. Each
+object represents a buffer, for example an array of bytes.  Can be <see langword="null"></see>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.NativeOverlapped.html" name="System.Threading.NativeOverlapped">NativeOverlapped</a>*</td>
+      <td><p>An unmanaged pointer to a <see cref="T:System.Threading.NativeOverlapped"></see> structure.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Overlapped/src/System/Threading/ClrThreadPoolBoundHandle.cs/#L191"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="AllocateNativeOverlapped_PreAllocatedOverlapped_">AllocateNativeOverlapped(PreAllocatedOverlapped)</h4>
+<div class="markdown level1 summary"><p>Returns an unmanaged pointer to a <a href="System.Threading.NativeOverlapped.html">System.Threading.NativeOverlapped</a> structure, using the callback,<br>state, and buffers associated with the specified <a href="System.Threading.PreAllocatedOverlapped.html">System.Threading.PreAllocatedOverlapped</a> object.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><para><br>The unmanaged pointer returned by this method can be passed to the operating system in</br>overlapped I/O operations. The <see cref="T:System.Threading.NativeOverlapped"></see> structure is fixed in<br>physical memory until <see cref="M:System.Threading.ThreadPoolBoundHandle.FreeNativeOverlapped(System.Threading.NativeOverlapped*)"></see> is called.</br></para></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public NativeOverlapped*AllocateNativeOverlapped(PreAllocatedOverlapped preAllocated)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.PreAllocatedOverlapped.html" name="System.Threading.PreAllocatedOverlapped">PreAllocatedOverlapped</a></td>
+      <td><em>preAllocated</em></td>
+      <td><p>A <see cref="T:System.Threading.PreAllocatedOverlapped"></see> object from which to create the NativeOverlapped pointer.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.NativeOverlapped.html" name="System.Threading.NativeOverlapped">NativeOverlapped</a>*</td>
+      <td><p>An unmanaged pointer to a <see cref="T:System.Threading.NativeOverlapped"></see> structure.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Overlapped/src/System/Threading/ClrThreadPoolBoundHandle.cs/#L77"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="BindHandle_SafeHandle_">BindHandle(SafeHandle)</h4>
+<div class="markdown level1 summary"><p>Returns a <a href="System.Threading.ThreadPoolBoundHandle.html">System.Threading.ThreadPoolBoundHandle</a> for the specific handle,<br>which is bound to the system thread pool.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>This method should be called once per handle.</p><br><p><para><br>-or-</br></para><see cref="T:System.Threading.ThreadPoolBoundHandle"></see> does not take ownership of <paramref name="handle"></paramref>,</br>it remains the responsibility of the caller to call <see cref="M:System.Runtime.InteropServices.SafeHandle.Dispose"></see>.<p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static ThreadPoolBoundHandle BindHandle(SafeHandle handle)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Runtime.InteropServices.SafeHandle.html" name="System.Runtime.InteropServices.SafeHandle">SafeHandle</a></td>
+      <td><em>handle</em></td>
+      <td><p>A <a href="System.Runtime.InteropServices.SafeHandle.html">System.Runtime.InteropServices.SafeHandle</a> object that holds the operating system handle. The
+handle must have been opened for overlapped I/O on the unmanaged side.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.ThreadPoolBoundHandle.html" name="System.Threading.ThreadPoolBoundHandle">ThreadPoolBoundHandle</a></td>
+      <td><p><see cref="T:System.Threading.ThreadPoolBoundHandle"></see> for <paramref name="handle"></paramref>, which
+is bound to the system thread pool.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Overlapped/src/System/Threading/ClrThreadPoolBoundHandle.cs/#L302"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Dispose__">Dispose()</h4>
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+</div>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Overlapped/src/System/Threading/ClrThreadPoolBoundHandle.cs/#L241"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="FreeNativeOverlapped_NativeOverlapped__">FreeNativeOverlapped(NativeOverlapped*)</h4>
+<div class="markdown level1 summary"><p>Frees the unmanaged memory associated with a <a href="System.Threading.NativeOverlapped.html">System.Threading.NativeOverlapped</a> structure<br>allocated by the <a href="System.Threading.ThreadPoolBoundHandle.html">System.Threading.ThreadPoolBoundHandle.AllocateNativeOverlapped(System.Threading.IOCompletionCallback,System.Object,System.Object)</a> method.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><note type="caution"><br>You must call the <see cref="M:System.Threading.ThreadPoolBoundHandle.FreeNativeOverlapped(System.Threading.NativeOverlapped*)"></see> method exactly once</br>on every <see cref="T:System.Threading.NativeOverlapped"></see> unmanaged pointer allocated using the<br><see cref="M:System.Threading.ThreadPoolBoundHandle.AllocateNativeOverlapped(System.Threading.IOCompletionCallback,System.Object,System.Object)"></see> method.</br>If you do not call the <see cref="M:System.Threading.ThreadPoolBoundHandle.FreeNativeOverlapped(System.Threading.NativeOverlapped*)"></see> method, you will<br>leak memory. If you call the <see cref="M:System.Threading.ThreadPoolBoundHandle.FreeNativeOverlapped(System.Threading.NativeOverlapped*)"></see> method more</br>than once on the same <see cref="T:System.Threading.NativeOverlapped"></see> unmanaged pointer, memory will be corrupted.<br></note></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void FreeNativeOverlapped(NativeOverlapped*overlapped)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.NativeOverlapped.html" name="System.Threading.NativeOverlapped">NativeOverlapped</a>*</td>
+      <td><em>overlapped</em></td>
+      <td><p>An unmanaged pointer to the <see cref="T:System.Threading.NativeOverlapped"></see> structure to be freed.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Overlapped/src/System/Threading/ClrThreadPoolBoundHandle.cs/#L276"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetNativeOverlappedState_NativeOverlapped__">GetNativeOverlappedState(NativeOverlapped*)</h4>
+<div class="markdown level1 summary"><p>Returns the user-provided object specified when the <a href="System.Threading.NativeOverlapped.html">System.Threading.NativeOverlapped</a> instance was<br>allocated using the <see cref="!:AllocateNativeOverlapped(IOCompletionCallback, object, byte[])"></see>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static object GetNativeOverlappedState(NativeOverlapped*overlapped)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.NativeOverlapped.html" name="System.Threading.NativeOverlapped">NativeOverlapped</a>*</td>
+      <td><em>overlapped</em></td>
+      <td><p>An unmanaged pointer to the <see cref="T:System.Threading.NativeOverlapped"></see> structure from which to return the
+asscociated user-provided object.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Object.html" name="System.Object">Object</a></td>
+      <td><p>A user-provided object that distinguishes this <see cref="T:System.Threading.NativeOverlapped"></see>
+from other <see cref="T:System.Threading.NativeOverlapped"></see> instances, otherwise, <see langword="null"></see> if one was
+not specified when the instance was allocated using <see cref="M:System.Threading.ThreadPoolBoundHandle.AllocateNativeOverlapped(System.Threading.IOCompletionCallback,System.Object,System.Object)"></see>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+</article>
+</div>
+<div class="hidden-sm col-md-2" role="complementary">
+  <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+    <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+  </nav>
+</div>
+</div>
+</div>
+<footer>
+  <div class="grad-bottom"></div>
+  <div class="footer">
+    <div class="container">
+      <span class="pull-right">
+        <a href="#top">Back to top</a>
+      </span>
+      <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+    </div>
+  </div>
+</footer>
+</div>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+</html>

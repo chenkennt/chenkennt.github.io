@@ -1,0 +1,536 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title> | </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content=" | ">
+  
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:nav" content="toc.html">
+  <meta property="docfx:toc" content="reference/toc.html">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="../toc.html">
+</head>
+<body data-spy="scroll" data-target="#affix">
+  <div id="wrapper">
+    <header>
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img id="logo" class="svg" src="../../logo.svg" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content">
+      <div class="sidenav">
+        <a class="btn toc-toggle collapse">Show / Hide Table of Contents</a>
+        <div class="sidetoggle">
+          <div class="sidetoc">
+            <iframe id="sidetoc" src="../toc.html"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="article row grid-right"><div class="col-md-10">
+        <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/AggregateException.cs/#L30" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="AggregateException">Class AggregateException</h1>
+      <div class="markdown level0 summary"><p>Represents one or more errors that occur during application execution.</p><br></div>
+      <div class="markdown level0 conceptual"></div>
+      <div class="inheritance">
+        <h5>Inheritance</h5>
+        <div class="level0"><a href="System.Object.html" name="System.Object">Object</a></div>
+        <div class="level1"><a href="System.Exception.html" name="System.Exception">Exception</a></div>
+        <div class="level2">System.AggregateException</div>
+      </div>
+      <h6><strong>Namespace</strong>:System</h6>
+      <h6><strong>Assembly</strong>:mscorlib.dll</h6>
+      <h5 id="AggregateException_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public class AggregateException : Exception, ISerializable, _Exception</code></pre>
+      </div>
+      <h5 id="AggregateException_remarks">remarks</h5>
+      <div class="markdown level0 remarks"><p><a href="System.AggregateException.html">System.AggregateException</a> is used to consolidate multiple failures into a single, throwable<br>exception object.</p><br></div>
+      <h3 id="constructors">Constructors</h3>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/AggregateException.cs/#L40"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="AggregateException__">AggregateException()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.AggregateException.html">System.AggregateException</a> class.</p><br></div>
+  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AggregateException()</code></pre>
+  </div>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/AggregateException.cs/#L85"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="AggregateException_IEnumerable_Exception__">AggregateException(IEnumerable&lt;Exception&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.AggregateException.html">System.AggregateException</a> class with<br>references to the inner exceptions that are the cause of this exception.</p><br></div>
+  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AggregateException(IEnumerable<exception> innerExceptions)</exception></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.Exception.html" name="System.Exception">Exception</a>&gt;</td>
+        <td><em>innerExceptions</em></td>
+        <td><p>The exceptions that are the cause of the current exception.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/AggregateException.cs/#L99"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="AggregateException_Exception___">AggregateException(Exception[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.AggregateException.html">System.AggregateException</a> class with<br>references to the inner exceptions that are the cause of this exception.</p><br></div>
+  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AggregateException(params Exception[] innerExceptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Exception.html" name="System.Exception">Exception</a>[]</td>
+        <td><em>innerExceptions</em></td>
+        <td><p>The exceptions that are the cause of the current exception.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/AggregateException.cs/#L259"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="AggregateException_SerializationInfo__StreamingContext_">AggregateException(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.AggregateException.html">System.AggregateException</a> class with serialized data.</p><br></div>
+  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AggregateException(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.Serialization.SerializationInfo.html" name="System.Runtime.Serialization.SerializationInfo">SerializationInfo</a></td>
+        <td><em>info</em></td>
+        <td><p>The <a href="System.Runtime.Serialization.SerializationInfo.html">System.Runtime.Serialization.SerializationInfo</a> that holds
+the serialized object data about the exception being thrown.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.Serialization.StreamingContext.html" name="System.Runtime.Serialization.StreamingContext">StreamingContext</a></td>
+        <td><em>context</em></td>
+        <td><p>The <a href="System.Runtime.Serialization.StreamingContext.html">System.Runtime.Serialization.StreamingContext</a> that
+contains contextual information about the source or destination.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/AggregateException.cs/#L51"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="AggregateException_String_">AggregateException(String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.AggregateException.html">System.AggregateException</a> class with<br>a specified error message.</p><br></div>
+  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AggregateException(string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>message</em></td>
+        <td><p>The error message that explains the reason for the exception.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/AggregateException.cs/#L114"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="AggregateException_String__IEnumerable_Exception__">AggregateException(String, IEnumerable&lt;Exception&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.AggregateException.html">System.AggregateException</a> class with a specified error<br>message and references to the inner exceptions that are the cause of this exception.</p><br></div>
+  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AggregateException(string message, IEnumerable<exception> innerExceptions)</exception></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>message</em></td>
+        <td><p>The error message that explains the reason for the exception.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.Exception.html" name="System.Exception">Exception</a>&gt;</td>
+        <td><em>innerExceptions</em></td>
+        <td><p>The exceptions that are the cause of the current exception.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/AggregateException.cs/#L65"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="AggregateException_String__Exception_">AggregateException(String, Exception)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.AggregateException.html">System.AggregateException</a> class with a specified error<br>message and a reference to the inner exception that is the cause of this exception.</p><br></div>
+  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AggregateException(string message, Exception innerException)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>message</em></td>
+        <td><p>The error message that explains the reason for the exception.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Exception.html" name="System.Exception">Exception</a></td>
+        <td><em>innerException</em></td>
+        <td><p>The exception that is the cause of the current exception.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/AggregateException.cs/#L131"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="AggregateException_String__Exception___">AggregateException(String, Exception[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.AggregateException.html">System.AggregateException</a> class with a specified error<br>message and references to the inner exceptions that are the cause of this exception.</p><br></div>
+  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AggregateException(string message, params Exception[] innerExceptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>message</em></td>
+        <td><p>The error message that explains the reason for the exception.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Exception.html" name="System.Exception">Exception</a>[]</td>
+        <td><em>innerExceptions</em></td>
+        <td><p>The exceptions that are the cause of the current exception.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+<h3 id="properties">Properties</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/AggregateException.cs/#L323"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="InnerExceptions">InnerExceptions</h4>
+<div class="markdown level1 summary"><p>Gets a read-only collection of the <a href="System.Exception.html">System.Exception</a> instances that caused the<br>current exception.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public ReadOnlyCollection<exception> InnerExceptions { get; }</exception></code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.ObjectModel.ReadOnlyCollection`1.html" name="System.Collections.ObjectModel.ReadOnlyCollection">ReadOnlyCollection</a>&lt;<a href="System.Exception.html" name="System.Exception">Exception</a>&gt;</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="methods">Methods</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/AggregateException.cs/#L390"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Flatten__">Flatten()</h4>
+<div class="markdown level1 summary"><p>Flattens an <a href="System.AggregateException.html">System.AggregateException</a> instances into a single, new instance.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>If any inner exceptions are themselves instances of</p><br><p><see cref="T:System.AggregateException"></see>, this method will recursively flatten all of them. The</br>inner exceptions returned in the new <see cref="T:System.AggregateException"></see><br>will be the union of all of the the inner exceptions from exception tree rooted at the provided<p></br><p><see cref="T:System.AggregateException"></see> instance.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public AggregateException Flatten()</code></pre>
+</div>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.AggregateException.html" name="System.AggregateException">AggregateException</a></td>
+      <td><p>A new, flattened <see cref="T:System.AggregateException"></see>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/AggregateException.cs/#L304"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetBaseException__">GetBaseException()</h4>
+<div class="markdown level1 summary"><p>Returns the <a href="System.AggregateException.html">System.AggregateException</a> that is the root cause of this exception.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public override Exception GetBaseException()</code></pre>
+</div>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Exception.html" name="System.Exception">Exception</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/AggregateException.cs/#L286"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetObjectData_SerializationInfo__StreamingContext_">GetObjectData(SerializationInfo, StreamingContext)</h4>
+<div class="markdown level1 summary"><p>Sets the <a href="System.Runtime.Serialization.SerializationInfo.html">System.Runtime.Serialization.SerializationInfo</a> with information about<br>the exception.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public override void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Runtime.Serialization.SerializationInfo.html" name="System.Runtime.Serialization.SerializationInfo">SerializationInfo</a></td>
+      <td><em>info</em></td>
+      <td><p>The <see cref="T:System.Runtime.Serialization.SerializationInfo"></see> that holds
+the serialized object data about the exception being thrown.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Runtime.Serialization.StreamingContext.html" name="System.Runtime.Serialization.StreamingContext">StreamingContext</a></td>
+      <td><em>context</em></td>
+      <td><p>The <a href="System.Runtime.Serialization.StreamingContext.html">System.Runtime.Serialization.StreamingContext</a> that
+contains contextual information about the source or destination.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/AggregateException.cs/#L348"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Handle_Func_Exception__Boolean__">Handle(Func&lt;Exception, Boolean&gt;)</h4>
+<div class="markdown level1 summary"><p>Invokes a handler on each <a href="System.Exception.html">System.Exception</a> contained by this <a href="System.AggregateException.html">System.AggregateException</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>Each invocation of the <paramref name="predicate"></paramref> returns true or false to indicate whether the</p><br><p><see cref="T:System.Exception"></see> was handled. After all invocations, if any exceptions went</br>unhandled, all unhandled exceptions will be put into a new <see cref="T:System.AggregateException"></see><br>which will be thrown. Otherwise, the <see cref="M:System.AggregateException.Handle(System.Func{System.Exception,System.Boolean})"></see> method simply returns. If any</br>invocations of the <paramref name="predicate"></paramref> throws an exception, it will halt the processing<br>of any more exceptions and immediately propagate the thrown exception as-is.<p></br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void Handle(Func<exception, bool=""> predicate)</exception,></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;<a href="System.Exception.html" name="System.Exception">Exception</a>, <a href="System.Boolean.html" name="System.Boolean">Boolean</a>&gt;</td>
+      <td><em>predicate</em></td>
+      <td><p>The predicate to execute for each exception. The predicate accepts as an
+argument the <see cref="T:System.Exception"></see> to be processed and returns a Boolean to indicate
+whether the exception was handled.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/AggregateException.cs/#L438"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ToString__">ToString()</h4>
+<div class="markdown level1 summary"><p>Creates and returns a string representation of the current <a href="System.AggregateException.html">System.AggregateException</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+</div>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td><p>A string representation of the current exception.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+</article>
+</div>
+<div class="hidden-sm col-md-2" role="complementary">
+  <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+    <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+  </nav>
+</div>
+</div>
+</div>
+<footer>
+  <div class="grad-bottom"></div>
+  <div class="footer">
+    <div class="container">
+      <span class="pull-right">
+        <a href="#top">Back to top</a>
+      </span>
+      <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+    </div>
+  </div>
+</footer>
+</div>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+</html>

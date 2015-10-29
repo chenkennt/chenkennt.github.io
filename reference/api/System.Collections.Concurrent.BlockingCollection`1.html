@@ -1,0 +1,1922 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title> | </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content=" | ">
+  
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:nav" content="toc.html">
+  <meta property="docfx:toc" content="reference/toc.html">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="../toc.html">
+</head>
+<body data-spy="scroll" data-target="#affix">
+  <div id="wrapper">
+    <header>
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img id="logo" class="svg" src="../../logo.svg" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content">
+      <div class="sidenav">
+        <a class="btn toc-toggle collapse">Show / Hide Table of Contents</a>
+        <div class="sidetoggle">
+          <div class="sidetoc">
+            <iframe id="sidetoc" src="../toc.html"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="article row grid-right"><div class="col-md-10">
+        <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L41" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="BlockingCollection_T_">Class BlockingCollection&lt;T&gt;</h1>
+      <div class="markdown level0 summary"><p>Provides blocking and bounding capabilities for thread-safe collections that<br>implement <a href="">System.Collections.Concurrent.IProducerConsumerCollection{T}</a>.</p><br></div>
+      <div class="markdown level0 conceptual"></div>
+      <div class="inheritance">
+        <h5>Inheritance</h5>
+        <div class="level0"><a href="System.Object.html" name="System.Object">Object</a></div>
+        <div class="level1">System.Collections.Concurrent.BlockingCollection&lt;T&gt;</div>
+      </div>
+      <h6><strong>Namespace</strong>:System.Collections.Concurrent</h6>
+      <h6><strong>Assembly</strong>:System.Collections.Concurrent.dll</h6>
+      <h5 id="BlockingCollection_T__syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public class BlockingCollection<t> : ICollection, IDisposable, IReadOnlyCollection<t>, IEnumerable<t>, IEnumerable</t></t></t></code></pre>
+      </div>
+      <h5 id="BlockingCollection_T__remarks">remarks</h5>
+      <div class="markdown level0 remarks"><p><see cref="T:System.Collections.Concurrent.IProducerConsumerCollection{T}"></see> represents a collection<br>that allows for thread-safe adding and removing of data.</p><br><p><see cref="T:System.Collections.Concurrent.BlockingCollection{T}"></see> is used as a wrapper</br>for an <see cref="T:System.Collections.Concurrent.IProducerConsumerCollection{T}"></see> instance, allowing<br>removal attempts from the collection to block until data is available to be removed.  Similarly,</br>a <see cref="T:System.Collections.Concurrent.BlockingCollection{T}"></see> can be created to enforce<br>an upper-bound on the number of data elements allowed in the<p></br><p><see cref="T:System.Collections.Concurrent.IProducerConsumerCollection{T}"></see>; addition attempts to the<br>collection may then block until space is available to store the added items.  In this manner,</p><br><p><see cref="T:System.Collections.Concurrent.BlockingCollection{T}"></see> is similar to a traditional</br>blocking queue data structure, except that the underlying data storage mechanism is abstracted<br>away as an <see cref="T:System.Collections.Concurrent.IProducerConsumerCollection{T}"></see>.<p></br></div>
+      <h3 id="constructors">Constructors</h3>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L144"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="BlockingCollection__">BlockingCollection()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the<br><a href="">System.Collections.Concurrent.BlockingCollection{T}</a></br>class without an upper-bound.</p><br></div>
+  <div class="markdown level1 remarks"><p>The default underlying collection is a <a href="System.Collections.Concurrent.ConcurrentQueue`1.html">System.Collections.Concurrent.ConcurrentQueue`1</a>.</p><br></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlockingCollection()</code></pre>
+  </div>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L200"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="BlockingCollection_IProducerConsumerCollection_T__">BlockingCollection(IProducerConsumerCollection&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a><br>class without an upper-bound and using the provided</br><a href="">System.Collections.Concurrent.IProducerConsumerCollection{T}</a> as its underlying data store.</p><br></div>
+  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlockingCollection(IProducerConsumerCollection<t> collection)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Concurrent.IProducerConsumerCollection`1.html" name="System.Collections.Concurrent.IProducerConsumerCollection">IProducerConsumerCollection</a>&lt;T&gt;</td>
+        <td><em>collection</em></td>
+        <td><p>The collection to use as the underlying data store.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L174"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="BlockingCollection_IProducerConsumerCollection_T___Int32_">BlockingCollection(IProducerConsumerCollection&lt;T&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a><br>class with the specified upper-bound and using the provided</br><a href="">System.Collections.Concurrent.IProducerConsumerCollection{T}</a> as its underlying data store.</p><br></div>
+  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlockingCollection(IProducerConsumerCollection<t> collection, int boundedCapacity)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Concurrent.IProducerConsumerCollection`1.html" name="System.Collections.Concurrent.IProducerConsumerCollection">IProducerConsumerCollection</a>&lt;T&gt;</td>
+        <td><em>collection</em></td>
+        <td><p>The collection to use as the underlying data store.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>boundedCapacity</em></td>
+        <td><p>The bounded size of the collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L159"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="BlockingCollection_Int32_">BlockingCollection(Int32)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a><br>class with the specified upper-bound.</p><br></div>
+  <div class="markdown level1 remarks"><p>The default underlying collection is a <a href="System.Collections.Concurrent.ConcurrentQueue`1.html">System.Collections.Concurrent.ConcurrentQueue`1</a>.</p><br></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlockingCollection(int boundedCapacity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>boundedCapacity</em></td>
+        <td><p>The bounded size of the collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+<h3 id="properties">Properties</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L62"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="BoundedCapacity">BoundedCapacity</h4>
+<div class="markdown level1 summary"><p>Gets the bounded capacity of this <a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instance.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public int BoundedCapacity { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L101"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Count">Count</h4>
+<div class="markdown level1 summary"><p>Gets the number of items contained in the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L75"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="IsAddingCompleted">IsAddingCompleted</h4>
+<div class="markdown level1 summary"><p>Gets whether this <a href="">System.Collections.Concurrent.BlockingCollection{T}</a> has been marked as complete for adding.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool IsAddingCompleted { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L88"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="IsCompleted">IsCompleted</h4>
+<div class="markdown level1 summary"><p>Gets whether this <a href="">System.Collections.Concurrent.BlockingCollection{T}</a> has been marked as complete for adding and is empty.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool IsCompleted { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L113"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ICollection_IsSynchronized">ICollection.IsSynchronized</h4>
+<div class="markdown level1 summary"><p>Gets a value indicating whether access to the <a href="System.Collections.ICollection.html">System.Collections.ICollection</a> is synchronized.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">bool ICollection.IsSynchronized { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L127"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ICollection_SyncRoot">ICollection.SyncRoot</h4>
+<div class="markdown level1 summary"><p>Gets an object that can be used to synchronize access to the <a href="System.Collections.ICollection.html">System.Collections.ICollection</a>. This property is not supported.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">object ICollection.SyncRoot { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Object.html" name="System.Object">Object</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="methods">Methods</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L253"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Add_T_">Add(T)</h4>
+<div class="markdown level1 summary"><p>Adds the item to the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>If a bounded capacity was specified when this instance of</p><br><p><see cref="T:System.Collections.Concurrent.BlockingCollection{T}"></see> was initialized,</br>a call to Add may block until space is available to store the provided item.<p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void Add(T item)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td><em>item</em></td>
+      <td><p>The item to be added to the collection. The value can be a null reference.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L283"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Add_T__CancellationToken_">Add(T, CancellationToken)</h4>
+<div class="markdown level1 summary"><p>Adds the item to the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a>.<br>A <a href="System.OperationCanceledException.html">System.OperationCanceledException</a> is thrown if the <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> is</br>canceled.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>If a bounded capacity was specified when this instance of</p><br><p><see cref="T:System.Collections.Concurrent.BlockingCollection{T}"></see> was initialized,</br>a call to <see cref="M:System.Collections.Concurrent.BlockingCollection`1.Add(`0,System.Threading.CancellationToken)"></see> may block until space is available to store the provided item.<p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void Add(T item, CancellationToken cancellationToken)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td><em>item</em></td>
+      <td><p>The item to be added to the collection. The value can be a null reference.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+      <td><em>cancellationToken</em></td>
+      <td><p>A cancellation token to observe.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L793"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="AddToAny_BlockingCollection_T_____T_">AddToAny(BlockingCollection&lt;T&gt;[], T)</h4>
+<div class="markdown level1 summary"><p>Adds the specified item to any one of the specified<br><a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instances.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>If a bounded capacity was specified when all of the</p><br><p><see cref="T:System.Collections.Concurrent.BlockingCollection{T}"></see> instances were initialized,</br>a call to AddToAny may block until space is available in one of the collections<br>to store the provided item.<p></br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static int AddToAny(BlockingCollection<t>[] collections, T item)</t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Concurrent.BlockingCollection`1.html" name="System.Collections.Concurrent.BlockingCollection">BlockingCollection</a>&lt;T&gt;[]</td>
+      <td><em>collections</em></td>
+      <td><p>The array of collections.</p>
+</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td><em>item</em></td>
+      <td><p>The item to be added to one of the collections.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><p>The index of the collection in the <paramref name="collections"></paramref> array to which the item was added.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L835"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="AddToAny_BlockingCollection_T_____T__CancellationToken_">AddToAny(BlockingCollection&lt;T&gt;[], T, CancellationToken)</h4>
+<div class="markdown level1 summary"><p>Adds the specified item to any one of the specified<br><a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instances.</br>A <a href="System.OperationCanceledException.html">System.OperationCanceledException</a> is thrown if the <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> is<br>canceled.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>If a bounded capacity was specified when all of the</p><br><p><see cref="T:System.Collections.Concurrent.BlockingCollection{T}"></see> instances were initialized,</br>a call to AddToAny may block until space is available in one of the collections<br>to store the provided item.<p></br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static int AddToAny(BlockingCollection<t>[] collections, T item, CancellationToken cancellationToken)</t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Concurrent.BlockingCollection`1.html" name="System.Collections.Concurrent.BlockingCollection">BlockingCollection</a>&lt;T&gt;[]</td>
+      <td><em>collections</em></td>
+      <td><p>The array of collections.</p>
+</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td><em>item</em></td>
+      <td><p>The item to be added to one of the collections.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+      <td><em>cancellationToken</em></td>
+      <td><p>A cancellation token to observe.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><p>The index of the collection in the <paramref name="collections"></paramref> array to which the item was added.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L1473"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="CompleteAdding__">CompleteAdding()</h4>
+<div class="markdown level1 summary"><p>Marks the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instances<br>as not accepting any more additions.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>After a collection has been marked as complete for adding, adding to the collection is not permitted<br>and attempts to remove from the collection will not wait when the collection is empty.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void CompleteAdding()</code></pre>
+</div>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L1578"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="CopyTo_T____Int32_">CopyTo(T[], Int32)</h4>
+<div class="markdown level1 summary"><p>Copies all of the items in the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instance<br>to a compatible one-dimensional array, starting at the specified index of the target array.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void CopyTo(T[] array, int index)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T[]</td>
+      <td><em>array</em></td>
+      <td><p>The one-dimensional array that is the destination of the elements copied from
+the <see cref="T:System.Collections.Concurrent.BlockingCollection{T}"></see> instance. The array must have zero-based indexing.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>index</em></td>
+      <td><p>The zero-based index in <paramref name="array"></paramref> at which copying begins.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L1527"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Dispose__">Dispose()</h4>
+<div class="markdown level1 summary"><p>Releases resources used by the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instance.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+</div>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L1537"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Dispose_Boolean_">Dispose(Boolean)</h4>
+<div class="markdown level1 summary"><p>Releases resources used by the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instance.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><em>disposing</em></td>
+      <td><p>Whether being disposed explicitly (true) or due to a finalizer (false).</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L1639"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetConsumingEnumerable__">GetConsumingEnumerable()</h4>
+<div class="markdown level1 summary"><p>Provides a consuming <a href="">System.Collections.Generics.IEnumerable{T}</a> for items in the collection.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public IEnumerable<t> GetConsumingEnumerable()</t></code></pre>
+</div>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;T&gt;</td>
+      <td><p>An <see cref="T:System.Collections.Generics.IEnumerable{T}"></see> that removes and returns items from the collection.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L1653"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetConsumingEnumerable_CancellationToken_">GetConsumingEnumerable(CancellationToken)</h4>
+<div class="markdown level1 summary"><p>Provides a consuming <a href="">System.Collections.Generics.IEnumerable{T}</a> for items in the collection.<br>Calling MoveNext on the returned enumerable will block if there is no data available, or will</br>throw an <a href="System.OperationCanceledException.html">System.OperationCanceledException</a> if the <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> is canceled.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public IEnumerable<t> GetConsumingEnumerable(CancellationToken cancellationToken)</t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+      <td><em>cancellationToken</em></td>
+      <td><p>A cancellation token to observe.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;T&gt;</td>
+      <td><p>An <see cref="T:System.Collections.Generics.IEnumerable{T}"></see> that removes and returns items from the collection.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L1681"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="IEnumerable_T__GetEnumerator__">IEnumerable&lt;T&gt;.GetEnumerator()</h4>
+<div class="markdown level1 summary"><p>Provides an <a href="">System.Collections.Generics.IEnumerator{T}</a> for items in the collection.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">IEnumerator<t> IEnumerable<t>.GetEnumerator()</t></t></code></pre>
+</div>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Generic.IEnumerator`1.html" name="System.Collections.Generic.IEnumerator">IEnumerator</a>&lt;T&gt;</td>
+      <td><p>An <see cref="T:System.Collections.Generics.IEnumerator{T}"></see> for the items in the collection.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L1597"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ICollection_CopyTo_Array__Int32_">ICollection.CopyTo(Array, Int32)</h4>
+<div class="markdown level1 summary"><p>Copies all of the items in the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instance<br>to a compatible one-dimensional array, starting at the specified index of the target array.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">void ICollection.CopyTo(Array array, int index)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Array.html" name="System.Array">Array</a></td>
+      <td><em>array</em></td>
+      <td><p>The one-dimensional array that is the destination of the elements copied from
+the <see cref="T:System.Collections.Concurrent.BlockingCollection{T}"></see> instance. The array must have zero-based indexing.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>index</em></td>
+      <td><p>The zero-based index in <paramref name="array"></paramref> at which copying begins.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L1691"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="IEnumerable_GetEnumerator__">IEnumerable.GetEnumerator()</h4>
+<div class="markdown level1 summary"><p>Provides an <a href="System.Collections.IEnumerator.html">System.Collections.IEnumerator</a> for items in the collection.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">IEnumerator IEnumerable.GetEnumerator()</code></pre>
+</div>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.IEnumerator.html" name="System.Collections.IEnumerator">IEnumerator</a></td>
+      <td><p>An <see cref="T:System.Collections.IEnumerator"></see> for the items in the collection.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L538"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Take__">Take()</h4>
+<div class="markdown level1 summary"><p>Takes an item from the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>A call to <a href="System.Collections.Concurrent.BlockingCollection`1.html">System.Collections.Concurrent.BlockingCollection`1.Take</a> may block until an item is available to be removed.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public T Take()</code></pre>
+</div>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td><p>The item removed from the collection.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L562"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Take_CancellationToken_">Take(CancellationToken)</h4>
+<div class="markdown level1 summary"><p>Takes an item from the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>A call to <a href="System.Collections.Concurrent.BlockingCollection`1.html">System.Collections.Concurrent.BlockingCollection`1.Take(System.Threading.CancellationToken)</a> may block until an item is available to be removed.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public T Take(CancellationToken cancellationToken)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+      <td><em>cancellationToken</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td><p>The item removed from the collection.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L1172"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TakeFromAny_BlockingCollection_T_____out_T_">TakeFromAny(BlockingCollection&lt;T&gt;[], out T)</h4>
+<div class="markdown level1 summary"><p>Takes an item from any one of the specified<br><a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instances.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>A call to TakeFromAny may block until an item is available to be removed.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static int TakeFromAny(BlockingCollection<t>[] collections, out T item)</t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Concurrent.BlockingCollection`1.html" name="System.Collections.Concurrent.BlockingCollection">BlockingCollection</a>&lt;T&gt;[]</td>
+      <td><em>collections</em></td>
+      <td><p>The array of collections.</p>
+</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td><em>item</em></td>
+      <td><p>The item removed from one of the collections.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><p>The index of the collection in the <paramref name="collections"></paramref> array from which
+the item was removed, or -1 if an item could not be removed.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L1201"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TakeFromAny_BlockingCollection_T_____out_T__CancellationToken_">TakeFromAny(BlockingCollection&lt;T&gt;[], out T, CancellationToken)</h4>
+<div class="markdown level1 summary"><p>Takes an item from any one of the specified<br><a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instances.</br>A <a href="System.OperationCanceledException.html">System.OperationCanceledException</a> is thrown if the <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> is<br>canceled.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>A call to TakeFromAny may block until an item is available to be removed.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static int TakeFromAny(BlockingCollection<t>[] collections, out T item, CancellationToken cancellationToken)</t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Concurrent.BlockingCollection`1.html" name="System.Collections.Concurrent.BlockingCollection">BlockingCollection</a>&lt;T&gt;[]</td>
+      <td><em>collections</em></td>
+      <td><p>The array of collections.</p>
+</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td><em>item</em></td>
+      <td><p>The item removed from one of the collections.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+      <td><em>cancellationToken</em></td>
+      <td><p>A cancellation token to observe.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><p>The index of the collection in the <paramref name="collections"></paramref> array from which
+the item was removed, or -1 if an item could not be removed.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L1559"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ToArray__">ToArray()</h4>
+<div class="markdown level1 summary"><p>Copies the items from the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instance into a new array.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>The copied elements are not removed from the collection.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public T[] ToArray()</code></pre>
+</div>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T[]</td>
+      <td><p>An array containing copies of the elements of the collection.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L305"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryAdd_T_">TryAdd(T)</h4>
+<div class="markdown level1 summary"><p>Attempts to add the specified item to the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool TryAdd(T item)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td><em>item</em></td>
+      <td><p>The item to be added to the collection.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p>true if the <paramref name="item"></paramref> could be added; otherwise, false.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L350"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryAdd_T__Int32_">TryAdd(T, Int32)</h4>
+<div class="markdown level1 summary"><p>Attempts to add the specified item to the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool TryAdd(T item, int millisecondsTimeout)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td><em>item</em></td>
+      <td><p>The item to be added to the collection.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>millisecondsTimeout</em></td>
+      <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a> (-1) to wait indefinitely.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p>true if the <paramref name="item"></paramref> could be added to the collection within
+the alloted time; otherwise, false.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L376"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryAdd_T__Int32__CancellationToken_">TryAdd(T, Int32, CancellationToken)</h4>
+<div class="markdown level1 summary"><p>Attempts to add the specified item to the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a>.<br>A <a href="System.OperationCanceledException.html">System.OperationCanceledException</a> is thrown if the <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> is</br>canceled.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool TryAdd(T item, int millisecondsTimeout, CancellationToken cancellationToken)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td><em>item</em></td>
+      <td><p>The item to be added to the collection.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>millisecondsTimeout</em></td>
+      <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a> (-1) to wait indefinitely.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+      <td><em>cancellationToken</em></td>
+      <td><p>A cancellation token to observe.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p>true if the <paramref name="item"></paramref> could be added to the collection within
+the alloted time; otherwise, false.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L328"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryAdd_T__TimeSpan_">TryAdd(T, TimeSpan)</h4>
+<div class="markdown level1 summary"><p>Attempts to add the specified item to the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool TryAdd(T item, TimeSpan timeout)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td><em>item</em></td>
+      <td><p>The item to be added to the collection.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
+      <td><em>timeout</em></td>
+      <td><p>A <see cref="T:System.TimeSpan"></see> that represents the number of milliseconds
+to wait, or a <see cref="T:System.TimeSpan"></see> that represents -1 milliseconds to wait indefinitely.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p>true if the <paramref name="item"></paramref> could be added to the collection within
+the alloted time; otherwise, false.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L868"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryAddToAny_BlockingCollection_T_____T_">TryAddToAny(BlockingCollection&lt;T&gt;[], T)</h4>
+<div class="markdown level1 summary"><p>Attempts to add the specified item to any one of the specified<br><a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instances.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static int TryAddToAny(BlockingCollection<t>[] collections, T item)</t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Concurrent.BlockingCollection`1.html" name="System.Collections.Concurrent.BlockingCollection">BlockingCollection</a>&lt;T&gt;[]</td>
+      <td><em>collections</em></td>
+      <td><p>The array of collections.</p>
+</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td><em>item</em></td>
+      <td><p>The item to be added to one of the collections.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><p>The index of the collection in the <paramref name="collections"></paramref>
+array to which the item was added, or -1 if the item could not be added.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L924"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryAddToAny_BlockingCollection_T_____T__Int32_">TryAddToAny(BlockingCollection&lt;T&gt;[], T, Int32)</h4>
+<div class="markdown level1 summary"><p>Attempts to add the specified item to any one of the specified<br><a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instances.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static int TryAddToAny(BlockingCollection<t>[] collections, T item, int millisecondsTimeout)</t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Concurrent.BlockingCollection`1.html" name="System.Collections.Concurrent.BlockingCollection">BlockingCollection</a>&lt;T&gt;[]</td>
+      <td><em>collections</em></td>
+      <td><p>The array of collections.</p>
+</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td><em>item</em></td>
+      <td><p>The item to be added to one of the collections.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>millisecondsTimeout</em></td>
+      <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a> (-1) to wait indefinitely.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><p>The index of the collection in the <paramref name="collections"></paramref>
+array to which the item was added, or -1 if the item could not be added.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L956"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryAddToAny_BlockingCollection_T_____T__Int32__CancellationToken_">TryAddToAny(BlockingCollection&lt;T&gt;[], T, Int32, CancellationToken)</h4>
+<div class="markdown level1 summary"><p>Attempts to add the specified item to any one of the specified<br><a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instances.</br>A <a href="System.OperationCanceledException.html">System.OperationCanceledException</a> is thrown if the <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> is<br>canceled.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static int TryAddToAny(BlockingCollection<t>[] collections, T item, int millisecondsTimeout, CancellationToken cancellationToken)</t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Concurrent.BlockingCollection`1.html" name="System.Collections.Concurrent.BlockingCollection">BlockingCollection</a>&lt;T&gt;[]</td>
+      <td><em>collections</em></td>
+      <td><p>The array of collections.</p>
+</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td><em>item</em></td>
+      <td><p>The item to be added to one of the collections.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>millisecondsTimeout</em></td>
+      <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a> (-1) to wait indefinitely.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+      <td><em>cancellationToken</em></td>
+      <td><p>A cancellation token to observe.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><p>The index of the collection in the <paramref name="collections"></paramref>
+array to which the item was added, or -1 if the item could not be added.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L897"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryAddToAny_BlockingCollection_T_____T__TimeSpan_">TryAddToAny(BlockingCollection&lt;T&gt;[], T, TimeSpan)</h4>
+<div class="markdown level1 summary"><p>Attempts to add the specified item to any one of the specified<br><a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instances.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static int TryAddToAny(BlockingCollection<t>[] collections, T item, TimeSpan timeout)</t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Concurrent.BlockingCollection`1.html" name="System.Collections.Concurrent.BlockingCollection">BlockingCollection</a>&lt;T&gt;[]</td>
+      <td><em>collections</em></td>
+      <td><p>The array of collections.</p>
+</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td><em>item</em></td>
+      <td><p>The item to be added to one of the collections.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
+      <td><em>timeout</em></td>
+      <td><p>A <see cref="T:System.TimeSpan"></see> that represents the number of milliseconds
+to wait, or a <see cref="T:System.TimeSpan"></see> that represents -1 milliseconds to wait indefinitely.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><p>The index of the collection in the <paramref name="collections"></paramref>
+array to which the item was added, or -1 if the item could not be added.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L584"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryTake_out_T_">TryTake(out T)</h4>
+<div class="markdown level1 summary"><p>Attempts to remove an item from the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool TryTake(out T item)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td><em>item</em></td>
+      <td><p>The item removed from the collection.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p>true if an item could be removed; otherwise, false.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L627"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryTake_out_T__Int32_">TryTake(out T, Int32)</h4>
+<div class="markdown level1 summary"><p>Attempts to remove an item from the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool TryTake(out T item, int millisecondsTimeout)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td><em>item</em></td>
+      <td><p>The item removed from the collection.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>millisecondsTimeout</em></td>
+      <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a> (-1) to wait indefinitely.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p>true if an item could be removed from the collection within
+the alloted time; otherwise, false.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L652"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryTake_out_T__Int32__CancellationToken_">TryTake(out T, Int32, CancellationToken)</h4>
+<div class="markdown level1 summary"><p>Attempts to remove an item from the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a>.<br>A <a href="System.OperationCanceledException.html">System.OperationCanceledException</a> is thrown if the <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> is</br>canceled.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool TryTake(out T item, int millisecondsTimeout, CancellationToken cancellationToken)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td><em>item</em></td>
+      <td><p>The item removed from the collection.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>millisecondsTimeout</em></td>
+      <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a> (-1) to wait indefinitely.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+      <td><em>cancellationToken</em></td>
+      <td><p>A cancellation token to observe.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p>true if an item could be removed from the collection within
+the alloted time; otherwise, false.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L606"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryTake_out_T__TimeSpan_">TryTake(out T, TimeSpan)</h4>
+<div class="markdown level1 summary"><p>Attempts to remove an item from the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a>.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool TryTake(out T item, TimeSpan timeout)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td><em>item</em></td>
+      <td><p>The item removed from the collection.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
+      <td><em>timeout</em></td>
+      <td><p>A <see cref="T:System.TimeSpan"></see> that represents the number of milliseconds
+to wait, or a <see cref="T:System.TimeSpan"></see> that represents -1 milliseconds to wait indefinitely.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p>true if an item could be removed from the collection within
+the alloted time; otherwise, false.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L1229"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryTakeFromAny_BlockingCollection_T_____out_T_">TryTakeFromAny(BlockingCollection&lt;T&gt;[], out T)</h4>
+<div class="markdown level1 summary"><p>Attempts to remove an item from any one of the specified<br><a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instances.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>A call to TryTakeFromAny may block until an item is available to be removed.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static int TryTakeFromAny(BlockingCollection<t>[] collections, out T item)</t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Concurrent.BlockingCollection`1.html" name="System.Collections.Concurrent.BlockingCollection">BlockingCollection</a>&lt;T&gt;[]</td>
+      <td><em>collections</em></td>
+      <td><p>The array of collections.</p>
+</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td><em>item</em></td>
+      <td><p>The item removed from one of the collections.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><p>The index of the collection in the <paramref name="collections"></paramref> array from which
+the item was removed, or -1 if an item could not be removed.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L1290"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryTakeFromAny_BlockingCollection_T_____out_T__Int32_">TryTakeFromAny(BlockingCollection&lt;T&gt;[], out T, Int32)</h4>
+<div class="markdown level1 summary"><p>Attempts to remove an item from any one of the specified<br><a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instances.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>A call to TryTakeFromAny may block until an item is available to be removed.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static int TryTakeFromAny(BlockingCollection<t>[] collections, out T item, int millisecondsTimeout)</t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Concurrent.BlockingCollection`1.html" name="System.Collections.Concurrent.BlockingCollection">BlockingCollection</a>&lt;T&gt;[]</td>
+      <td><em>collections</em></td>
+      <td><p>The array of collections.</p>
+</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td><em>item</em></td>
+      <td><p>The item removed from one of the collections.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>millisecondsTimeout</em></td>
+      <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a> (-1) to wait indefinitely.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><p>The index of the collection in the <paramref name="collections"></paramref> array from which
+the item was removed, or -1 if an item could not be removed.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L1324"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryTakeFromAny_BlockingCollection_T_____out_T__Int32__CancellationToken_">TryTakeFromAny(BlockingCollection&lt;T&gt;[], out T, Int32, CancellationToken)</h4>
+<div class="markdown level1 summary"><p>Attempts to remove an item from any one of the specified<br><a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instances.</br>A <a href="System.OperationCanceledException.html">System.OperationCanceledException</a> is thrown if the <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> is<br>canceled.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>A call to TryTakeFromAny may block until an item is available to be removed.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static int TryTakeFromAny(BlockingCollection<t>[] collections, out T item, int millisecondsTimeout, CancellationToken cancellationToken)</t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Concurrent.BlockingCollection`1.html" name="System.Collections.Concurrent.BlockingCollection">BlockingCollection</a>&lt;T&gt;[]</td>
+      <td><em>collections</em></td>
+      <td><p>The array of collections.</p>
+</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td><em>item</em></td>
+      <td><p>The item removed from one of the collections.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>millisecondsTimeout</em></td>
+      <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a> (-1) to wait indefinitely.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+      <td><em>cancellationToken</em></td>
+      <td><p>A cancellation token to observe.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><p>The index of the collection in the <paramref name="collections"></paramref> array from which
+the item was removed, or -1 if an item could not be removed.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L1260"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryTakeFromAny_BlockingCollection_T_____out_T__TimeSpan_">TryTakeFromAny(BlockingCollection&lt;T&gt;[], out T, TimeSpan)</h4>
+<div class="markdown level1 summary"><p>Attempts to remove an item from any one of the specified<br><a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instances.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>A call to TryTakeFromAny may block until an item is available to be removed.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static int TryTakeFromAny(BlockingCollection<t>[] collections, out T item, TimeSpan timeout)</t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Concurrent.BlockingCollection`1.html" name="System.Collections.Concurrent.BlockingCollection">BlockingCollection</a>&lt;T&gt;[]</td>
+      <td><em>collections</em></td>
+      <td><p>The array of collections.</p>
+</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td><em>item</em></td>
+      <td><p>The item removed from one of the collections.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
+      <td><em>timeout</em></td>
+      <td><p>A <see cref="T:System.TimeSpan"></see> that represents the number of milliseconds
+to wait, or a <see cref="T:System.TimeSpan"></see> that represents -1 milliseconds to wait indefinitely.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><p>The index of the collection in the <paramref name="collections"></paramref> array from which
+the item was removed, or -1 if an item could not be removed.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+</article>
+</div>
+<div class="hidden-sm col-md-2" role="complementary">
+  <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+    <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+  </nav>
+</div>
+</div>
+</div>
+<footer>
+  <div class="grad-bottom"></div>
+  <div class="footer">
+    <div class="container">
+      <span class="pull-right">
+        <a href="#top">Back to top</a>
+      </span>
+      <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+    </div>
+  </div>
+</footer>
+</div>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+</html>

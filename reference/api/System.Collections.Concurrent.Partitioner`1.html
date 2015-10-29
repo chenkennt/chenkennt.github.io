@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title> | </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content=" | ">
+  
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:nav" content="toc.html">
+  <meta property="docfx:toc" content="reference/toc.html">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="../toc.html">
+</head>
+<body data-spy="scroll" data-target="#affix">
+  <div id="wrapper">
+    <header>
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img id="logo" class="svg" src="../../logo.svg" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content">
+      <div class="sidenav">
+        <a class="btn toc-toggle collapse">Show / Hide Table of Contents</a>
+        <div class="sidetoggle">
+          <div class="sidetoc">
+            <iframe id="sidetoc" src="../toc.html"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="article row grid-right"><div class="col-md-10">
+        <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/Partitioner.cs/#L46" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="Partitioner_TSource_">Class Partitioner&lt;TSource&gt;</h1>
+      <div class="markdown level0 summary"><p>Represents a particular manner of splitting a data source into multiple partitions.</p><br></div>
+      <div class="markdown level0 conceptual"></div>
+      <div class="inheritance">
+        <h5>Inheritance</h5>
+        <div class="level0"><a href="System.Object.html" name="System.Object">Object</a></div>
+        <div class="level1">System.Collections.Concurrent.Partitioner&lt;TSource&gt;</div>
+      </div>
+      <h6><strong>Namespace</strong>:System.Collections.Concurrent</h6>
+      <h6><strong>Assembly</strong>:mscorlib.dll</h6>
+      <h5 id="Partitioner_TSource__syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public abstract class Partitioner<tsource></tsource></code></pre>
+      </div>
+      <h5 id="Partitioner_TSource__remarks">remarks</h5>
+      <div class="markdown level0 remarks"><para><br>Inheritors of <see cref="T:System.Collections.Concurrent.Partitioner`1"></see> must adhere to the following rules:</br><ol><li><see cref="M:System.Collections.Concurrent.Partitioner`1.GetPartitions(System.Int32)"></see> should throw a<br><see cref="T:System.ArgumentOutOfRangeException"></see> if the requested partition count is less than or</br>equal to zero.</li><li><see cref="M:System.Collections.Concurrent.Partitioner`1.GetPartitions(System.Int32)"></see> should always return a number of enumerables equal to the requested<br>partition count. If the partitioner runs out of data and cannot create as many partitions as</br>requested, an empty enumerator should be returned for each of the remaining partitions. If this rule<br>is not followed, consumers of the implementation may throw a <see cref="T:System.InvalidOperationException"></see>.</li><li><see cref="M:System.Collections.Concurrent.Partitioner`1.GetPartitions(System.Int32)"></see> and <see cref="M:System.Collections.Concurrent.Partitioner`1.GetDynamicPartitions"></see><br>should never return null. If null is returned, a consumer of the implementation may throw a</br><see cref="T:System.InvalidOperationException"></see>.</li><li><see cref="M:System.Collections.Concurrent.Partitioner`1.GetPartitions(System.Int32)"></see> and <see cref="M:System.Collections.Concurrent.Partitioner`1.GetDynamicPartitions"></see> should always return<br>partitions that can fully and uniquely enumerate the input data source. All of the data and only the</br>data contained in the input source should be enumerated, with no duplication that was not already in<br>the input, unless specifically required by the particular partitioner&#39;s design. If this is not</br>followed, the output ordering may be scrambled.</li></ol></para></div>
+<h3 id="properties">Properties</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/Partitioner.cs/#L71"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="SupportsDynamicPartitions">SupportsDynamicPartitions</h4>
+<div class="markdown level1 summary"><p>Gets whether additional partitions can be created dynamically.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><para><br>If a derived class does not override and implement <see cref="M:System.Collections.Concurrent.Partitioner`1.GetDynamicPartitions"></see>,</br><see cref="P:System.Collections.Concurrent.Partitioner`1.SupportsDynamicPartitions"></see> should return false. The value of <see cref="P:System.Collections.Concurrent.Partitioner`1.SupportsDynamicPartitions"></see> should not vary over the lifetime of this instance.<br></para></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public virtual bool SupportsDynamicPartitions { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p>true if the <see cref="T:System.Collections.Concurrent.Partitioner`1"></see> can create partitions dynamically as they are
+requested; false if the <see cref="T:System.Collections.Concurrent.Partitioner`1"></see> can only allocate
+partitions statically.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="methods">Methods</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/Partitioner.cs/#L96"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetDynamicPartitions__">GetDynamicPartitions()</h4>
+<div class="markdown level1 summary"><p>Creates an object that can partition the underlying collection into a variable number of<br>partitions.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><para><br>The returned object implements the <see cref="T:System.Collections.Generic.IEnumerable{TSource}"></see> interface. Calling <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator">GetEnumerator</see> on the</br>object creates another partition over the sequence.<br></para><br><para><br>The <see cref="M:System.Collections.Concurrent.Partitioner`1.GetDynamicPartitions"></see> method is only supported if the <see cref="P:System.Collections.Concurrent.Partitioner`1.SupportsDynamicPartitions"></see></br>property returns true.<br></para></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public virtual IEnumerable<tsource> GetDynamicPartitions()</tsource></code></pre>
+</div>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;TSource&gt;</td>
+      <td><p>An object that can create partitions over the underlying data source.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/Partitioner.cs/#L54"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetPartitions_Int32_">GetPartitions(Int32)</h4>
+<div class="markdown level1 summary"><p>Partitions the underlying collection into the given number of partitions.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public abstract IList<><tsource>> GetPartitions(int partitionCount)</tsource></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>partitionCount</em></td>
+      <td><p>The number of partitions to create.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Generic.IList`1.html" name="System.Collections.Generic.IList">IList</a>&lt;<a href="System.Collections.Generic.IEnumerator`1.html" name="System.Collections.Generic.IEnumerator">IEnumerator</a>&lt;TSource&gt;&gt;</td>
+      <td><p>A list containing <paramref name="partitionCount"></paramref> enumerators.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+</article>
+</div>
+<div class="hidden-sm col-md-2" role="complementary">
+  <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+    <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+  </nav>
+</div>
+</div>
+</div>
+<footer>
+  <div class="grad-bottom"></div>
+  <div class="footer">
+    <div class="container">
+      <span class="pull-right">
+        <a href="#top">Back to top</a>
+      </span>
+      <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+    </div>
+  </div>
+</footer>
+</div>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+</html>

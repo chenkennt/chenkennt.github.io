@@ -1,0 +1,1050 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title> | </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content=" | ">
+  
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:nav" content="toc.html">
+  <meta property="docfx:toc" content="reference/toc.html">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="../toc.html">
+</head>
+<body data-spy="scroll" data-target="#affix">
+  <div id="wrapper">
+    <header>
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img id="logo" class="svg" src="../../logo.svg" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content">
+      <div class="sidenav">
+        <a class="btn toc-toggle collapse">Show / Hide Table of Contents</a>
+        <div class="sidetoggle">
+          <div class="sidetoc">
+            <iframe id="sidetoc" src="../toc.html"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="article row grid-right"><div class="col-md-10">
+        <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs/#L13" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="ImmutableInterlocked">Class ImmutableInterlocked</h1>
+      <div class="markdown level0 summary"><p>Contains interlocked exchange mechanisms for immutable collections.</p><br></div>
+      <div class="markdown level0 conceptual"></div>
+      <div class="inheritance">
+        <h5>Inheritance</h5>
+        <div class="level0"><a href="System.Object.html" name="System.Object">Object</a></div>
+        <div class="level1">System.Collections.Immutable.ImmutableInterlocked</div>
+      </div>
+      <h6><strong>Namespace</strong>:System.Collections.Immutable</h6>
+      <h6><strong>Assembly</strong>:System.Collections.Immutable.dll</h6>
+      <h5 id="ImmutableInterlocked_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public class ImmutableInterlocked</code></pre>
+      </div>
+      <h5 id="ImmutableInterlocked_remarks">remarks</h5>
+      <div class="markdown level0 remarks"></div>
+<h3 id="methods">Methods</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs/#L291"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="AddOrUpdate_TKey__TValue__ref_ImmutableDictionary_TKey__TValue___TKey__TValue__Func_TKey__TValue__TValue__">AddOrUpdate&lt;TKey, TValue&gt;(ref ImmutableDictionary&lt;TKey, TValue&gt;, TKey, TValue, Func&lt;TKey, TValue, TValue&gt;)</h4>
+<div class="markdown level1 summary"><p>Obtains the value from a dictionary after having added it or updated an existing entry.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static TValue AddOrUpdate<tkey, tvalue="">(ref ImmutableDictionary<tkey, tvalue=""> location, TKey key, TValue addValue, Func<tkey, tvalue,="" tvalue=""> updateValueFactory)</tkey,></tkey,></tkey,></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableDictionary`2.html" name="System.Collections.Immutable.ImmutableDictionary">ImmutableDictionary</a>&lt;TKey, TValue&gt;</td>
+      <td><em>location</em></td>
+      <td><p>The variable or field to atomically update if the specified <paramref name="key"></paramref> is not in the dictionary.</p>
+</td>
+    </tr>
+    <tr>
+      <td>TKey</td>
+      <td><em>key</em></td>
+      <td><p>The key for the value to add or update.</p>
+</td>
+    </tr>
+    <tr>
+      <td>TValue</td>
+      <td><em>addValue</em></td>
+      <td><p>The value to use if no previous value exists.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Func`3.html" name="System.Func">Func</a>&lt;TKey, TValue, TValue&gt;</td>
+      <td><em>updateValueFactory</em></td>
+      <td><p>The function that receives the key and prior value and returns the new value with which to update the dictionary.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TValue</td>
+      <td><p>The added or updated value.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs/#L247"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="AddOrUpdate_TKey__TValue__ref_ImmutableDictionary_TKey__TValue___TKey__Func_TKey__TValue___Func_TKey__TValue__TValue__">AddOrUpdate&lt;TKey, TValue&gt;(ref ImmutableDictionary&lt;TKey, TValue&gt;, TKey, Func&lt;TKey, TValue&gt;, Func&lt;TKey, TValue, TValue&gt;)</h4>
+<div class="markdown level1 summary"><p>Obtains the value from a dictionary after having added it or updated an existing entry.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static TValue AddOrUpdate<tkey, tvalue="">(ref ImmutableDictionary<tkey, tvalue=""> location, TKey key, Func<tkey, tvalue=""> addValueFactory, Func<tkey, tvalue,="" tvalue=""> updateValueFactory)</tkey,></tkey,></tkey,></tkey,></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableDictionary`2.html" name="System.Collections.Immutable.ImmutableDictionary">ImmutableDictionary</a>&lt;TKey, TValue&gt;</td>
+      <td><em>location</em></td>
+      <td><p>The variable or field to atomically update if the specified <paramref name="key"></paramref> is not in the dictionary.</p>
+</td>
+    </tr>
+    <tr>
+      <td>TKey</td>
+      <td><em>key</em></td>
+      <td><p>The key for the value to add or update.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;TKey, TValue&gt;</td>
+      <td><em>addValueFactory</em></td>
+      <td><p>The function that receives the key and returns a new value to add to the dictionary when no value previously exists.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Func`3.html" name="System.Func">Func</a>&lt;TKey, TValue, TValue&gt;</td>
+      <td><em>updateValueFactory</em></td>
+      <td><p>The function that receives the key and prior value and returns the new value with which to update the dictionary.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TValue</td>
+      <td><p>The added or updated value.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs/#L516"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Enqueue_T__ref_ImmutableQueue_T___T_">Enqueue&lt;T&gt;(ref ImmutableQueue&lt;T&gt;, T)</h4>
+<div class="markdown level1 summary"><p>Atomically enqueues an element to the tail of a queue.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static void Enqueue<t>(ref ImmutableQueue<t> location, T value)</t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableQueue`1.html" name="System.Collections.Immutable.ImmutableQueue">ImmutableQueue</a>&lt;T&gt;</td>
+      <td><em>location</em></td>
+      <td><p>The variable or field to atomically update.</p>
+</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td><em>value</em></td>
+      <td><p>The value to enqueue.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs/#L212"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetOrAdd_TKey__TValue__ref_ImmutableDictionary_TKey__TValue___TKey__TValue_">GetOrAdd&lt;TKey, TValue&gt;(ref ImmutableDictionary&lt;TKey, TValue&gt;, TKey, TValue)</h4>
+<div class="markdown level1 summary"><p>Obtains the value for the specified key from a dictionary, or adds a new value to the dictionary where the key did not previously exist.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static TValue GetOrAdd<tkey, tvalue="">(ref ImmutableDictionary<tkey, tvalue=""> location, TKey key, TValue value)</tkey,></tkey,></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableDictionary`2.html" name="System.Collections.Immutable.ImmutableDictionary">ImmutableDictionary</a>&lt;TKey, TValue&gt;</td>
+      <td><em>location</em></td>
+      <td><p>The variable or field to atomically update if the specified <paramref name="key"></paramref> is not in the dictionary.</p>
+</td>
+    </tr>
+    <tr>
+      <td>TKey</td>
+      <td><em>key</em></td>
+      <td><p>The key for the value to retrieve or add.</p>
+</td>
+    </tr>
+    <tr>
+      <td>TValue</td>
+      <td><em>value</em></td>
+      <td><p>The value to add to the dictionary if one is not already present.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TValue</td>
+      <td><p>The value obtained from the dictionary or <paramref name="value"></paramref> if it was not present.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs/#L186"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetOrAdd_TKey__TValue__ref_ImmutableDictionary_TKey__TValue___TKey__Func_TKey__TValue__">GetOrAdd&lt;TKey, TValue&gt;(ref ImmutableDictionary&lt;TKey, TValue&gt;, TKey, Func&lt;TKey, TValue&gt;)</h4>
+<div class="markdown level1 summary"><p>Obtains the value for the specified key from a dictionary, or adds a new value to the dictionary where the key did not previously exist.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static TValue GetOrAdd<tkey, tvalue="">(ref ImmutableDictionary<tkey, tvalue=""> location, TKey key, Func<tkey, tvalue=""> valueFactory)</tkey,></tkey,></tkey,></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableDictionary`2.html" name="System.Collections.Immutable.ImmutableDictionary">ImmutableDictionary</a>&lt;TKey, TValue&gt;</td>
+      <td><em>location</em></td>
+      <td><p>The variable or field to atomically update if the specified <paramref name="key"></paramref> is not in the dictionary.</p>
+</td>
+    </tr>
+    <tr>
+      <td>TKey</td>
+      <td><em>key</em></td>
+      <td><p>The key for the value to retrieve or add.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;TKey, TValue&gt;</td>
+      <td><em>valueFactory</em></td>
+      <td><p>The function to execute to obtain the value to insert into the dictionary if the key is not found.
+This delegate will not be invoked more than once.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TValue</td>
+      <td><p>The value obtained from the dictionary or <paramref name="valueFactory"></paramref> if it was not present.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs/#L157"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetOrAdd_TKey__TValue__TArg__ref_ImmutableDictionary_TKey__TValue___TKey__Func_TKey__TArg__TValue___TArg_">GetOrAdd&lt;TKey, TValue, TArg&gt;(ref ImmutableDictionary&lt;TKey, TValue&gt;, TKey, Func&lt;TKey, TArg, TValue&gt;, TArg)</h4>
+<div class="markdown level1 summary"><p>Obtains the value for the specified key from a dictionary, or adds a new value to the dictionary where the key did not previously exist.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static TValue GetOrAdd<tkey, tvalue,="" targ="">(ref ImmutableDictionary<tkey, tvalue=""> location, TKey key, Func<tkey, targ,="" tvalue=""> valueFactory, TArg factoryArgument)</tkey,></tkey,></tkey,></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableDictionary`2.html" name="System.Collections.Immutable.ImmutableDictionary">ImmutableDictionary</a>&lt;TKey, TValue&gt;</td>
+      <td><em>location</em></td>
+      <td><p>The variable or field to atomically update if the specified <paramref name="key"></paramref> is not in the dictionary.</p>
+</td>
+    </tr>
+    <tr>
+      <td>TKey</td>
+      <td><em>key</em></td>
+      <td><p>The key for the value to retrieve or add.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Func`3.html" name="System.Func">Func</a>&lt;TKey, TArg, TValue&gt;</td>
+      <td><em>valueFactory</em></td>
+      <td><p>The function to execute to obtain the value to insert into the dictionary if the key is not found.</p>
+</td>
+    </tr>
+    <tr>
+      <td>TArg</td>
+      <td><em>factoryArgument</em></td>
+      <td><p>The argument to pass to the value factory.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TValue</td>
+      <td><p>The value obtained from the dictionary or <paramref name="valueFactory"></paramref> if it was not present.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs/#L124"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="InterlockedCompareExchange_T__ref_ImmutableArray_T___ImmutableArray_T___ImmutableArray_T__">InterlockedCompareExchange&lt;T&gt;(ref ImmutableArray&lt;T&gt;, ImmutableArray&lt;T&gt;, ImmutableArray&lt;T&gt;)</h4>
+<div class="markdown level1 summary"><p>Assigns a field or variable containing an immutable array to the specified value<br>if it is currently equal to another specified value. Returns the previous value.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static ImmutableArray<t> InterlockedCompareExchange<t>(ref ImmutableArray<t> location, ImmutableArray<t> value, ImmutableArray<t> comparand)</t></t></t></t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>location</em></td>
+      <td><p>The field or local variable to change.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>value</em></td>
+      <td><p>The new value to assign.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>comparand</em></td>
+      <td><p>The value to check equality for before assigning.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><p>The prior value at the specified <paramref name="location"></paramref>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs/#L110"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="InterlockedExchange_T__ref_ImmutableArray_T___ImmutableArray_T__">InterlockedExchange&lt;T&gt;(ref ImmutableArray&lt;T&gt;, ImmutableArray&lt;T&gt;)</h4>
+<div class="markdown level1 summary"><p>Assigns a field or variable containing an immutable array to the specified value and returns the previous value.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static ImmutableArray<t> InterlockedExchange<t>(ref ImmutableArray<t> location, ImmutableArray<t> value)</t></t></t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>location</em></td>
+      <td><p>The field or local variable to change.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>value</em></td>
+      <td><p>The new value to assign.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><p>The prior value at the specified <paramref name="location"></paramref>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs/#L137"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="InterlockedInitialize_T__ref_ImmutableArray_T___ImmutableArray_T__">InterlockedInitialize&lt;T&gt;(ref ImmutableArray&lt;T&gt;, ImmutableArray&lt;T&gt;)</h4>
+<div class="markdown level1 summary"><p>Assigns a field or variable containing an immutable array to the specified value<br>if it is has not yet been initialized.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static bool InterlockedInitialize<t>(ref ImmutableArray<t> location, ImmutableArray<t> value)</t></t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>location</em></td>
+      <td><p>The field or local variable to change.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
+      <td><em>value</em></td>
+      <td><p>The new value to assign.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p>True if the field was assigned the specified value; <c>false</c> if it was previously initialized.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs/#L461"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Push_T__ref_ImmutableStack_T___T_">Push&lt;T&gt;(ref ImmutableStack&lt;T&gt;, T)</h4>
+<div class="markdown level1 summary"><p>Pushes a new element onto a stack.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static void Push<t>(ref ImmutableStack<t> location, T value)</t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableStack`1.html" name="System.Collections.Immutable.ImmutableStack">ImmutableStack</a>&lt;T&gt;</td>
+      <td><em>location</em></td>
+      <td><p>The variable or field to atomically update.</p>
+</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td><em>value</em></td>
+      <td><p>The value to push.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs/#L333"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryAdd_TKey__TValue__ref_ImmutableDictionary_TKey__TValue___TKey__TValue_">TryAdd&lt;TKey, TValue&gt;(ref ImmutableDictionary&lt;TKey, TValue&gt;, TKey, TValue)</h4>
+<div class="markdown level1 summary"><p>Adds the specified key and value to the dictionary if no colliding key already exists in the dictionary.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static bool TryAdd<tkey, tvalue="">(ref ImmutableDictionary<tkey, tvalue=""> location, TKey key, TValue value)</tkey,></tkey,></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableDictionary`2.html" name="System.Collections.Immutable.ImmutableDictionary">ImmutableDictionary</a>&lt;TKey, TValue&gt;</td>
+      <td><em>location</em></td>
+      <td><p>The variable or field to atomically update if the specified <paramref name="key"></paramref> is not in the dictionary.</p>
+</td>
+    </tr>
+    <tr>
+      <td>TKey</td>
+      <td><em>key</em></td>
+      <td><p>The key to add, if is not already defined in the dictionary.</p>
+</td>
+    </tr>
+    <tr>
+      <td>TValue</td>
+      <td><em>value</em></td>
+      <td><p>The value to add.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p><c>true</c> if the key was not previously set in the dictionary and the value was set; <c>false</c> otherwise.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs/#L487"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryDequeue_T__ref_ImmutableQueue_T___out_T_">TryDequeue&lt;T&gt;(ref ImmutableQueue&lt;T&gt;, out T)</h4>
+<div class="markdown level1 summary"><p>Atomically removes the element at the head of a queue and returns it to the caller, if the queue is not empty.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static bool TryDequeue<t>(ref ImmutableQueue<t> location, out T value)</t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableQueue`1.html" name="System.Collections.Immutable.ImmutableQueue">ImmutableQueue</a>&lt;T&gt;</td>
+      <td><em>location</em></td>
+      <td><p>The variable or field to atomically update.</p>
+</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td><em>value</em></td>
+      <td><p>Receives the value from the head of the queue, if the queue is non-empty.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p><c>true</c> if the queue was not empty and the head element was removed; <c>false</c> otherwise.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs/#L432"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryPop_T__ref_ImmutableStack_T___out_T_">TryPop&lt;T&gt;(ref ImmutableStack&lt;T&gt;, out T)</h4>
+<div class="markdown level1 summary"><p>Pushes a new element onto a stack.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static bool TryPop<t>(ref ImmutableStack<t> location, out T value)</t></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableStack`1.html" name="System.Collections.Immutable.ImmutableStack">ImmutableStack</a>&lt;T&gt;</td>
+      <td><em>location</em></td>
+      <td><p>The variable or field to atomically update.</p>
+</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td><em>value</em></td>
+      <td><p>The value popped from the stack, if it was non-empty.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p><c>true</c> if an element was removed from the stack; <c>false</c> otherwise.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs/#L399"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryRemove_TKey__TValue__ref_ImmutableDictionary_TKey__TValue___TKey__out_TValue_">TryRemove&lt;TKey, TValue&gt;(ref ImmutableDictionary&lt;TKey, TValue&gt;, TKey, out TValue)</h4>
+<div class="markdown level1 summary"><p>Removes an entry from the dictionary with the specified key if it is defined and returns its value.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static bool TryRemove<tkey, tvalue="">(ref ImmutableDictionary<tkey, tvalue=""> location, TKey key, out TValue value)</tkey,></tkey,></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableDictionary`2.html" name="System.Collections.Immutable.ImmutableDictionary">ImmutableDictionary</a>&lt;TKey, TValue&gt;</td>
+      <td><em>location</em></td>
+      <td><p>The variable or field to atomically update if the specified <paramref name="key"></paramref> is not in the dictionary.</p>
+</td>
+    </tr>
+    <tr>
+      <td>TKey</td>
+      <td><em>key</em></td>
+      <td><p>The key to remove.</p>
+</td>
+    </tr>
+    <tr>
+      <td>TValue</td>
+      <td><em>value</em></td>
+      <td><p>Receives the value from the pre-existing entry, if one exists.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p><c>true</c> if the key was found and removed; <c>false</c> otherwise.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs/#L365"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="TryUpdate_TKey__TValue__ref_ImmutableDictionary_TKey__TValue___TKey__TValue__TValue_">TryUpdate&lt;TKey, TValue&gt;(ref ImmutableDictionary&lt;TKey, TValue&gt;, TKey, TValue, TValue)</h4>
+<div class="markdown level1 summary"><p>Sets the specified key to the given value if the key already is set to a specific value.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static bool TryUpdate<tkey, tvalue="">(ref ImmutableDictionary<tkey, tvalue=""> location, TKey key, TValue newValue, TValue comparisonValue)</tkey,></tkey,></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Collections.Immutable.ImmutableDictionary`2.html" name="System.Collections.Immutable.ImmutableDictionary">ImmutableDictionary</a>&lt;TKey, TValue&gt;</td>
+      <td><em>location</em></td>
+      <td><p>The variable or field to atomically update if the specified <paramref name="key"></paramref> is not in the dictionary.</p>
+</td>
+    </tr>
+    <tr>
+      <td>TKey</td>
+      <td><em>key</em></td>
+      <td><p>The key to update.</p>
+</td>
+    </tr>
+    <tr>
+      <td>TValue</td>
+      <td><em>newValue</em></td>
+      <td><p>The new value to set.</p>
+</td>
+    </tr>
+    <tr>
+      <td>TValue</td>
+      <td><em>comparisonValue</em></td>
+      <td><p>The value that must already be set in the dictionary in order for the update to succeed.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p><c>true</c> if the key and comparison value were present in the dictionary and the update was made; <c>false</c> otherwise.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs/#L33"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Update_T__ref_T__Func_T__T__">Update&lt;T&gt;(ref T, Func&lt;T, T&gt;)</h4>
+<div class="markdown level1 summary"><p>Mutates a value in-place with optimistic locking transaction semantics<br>via a specified transformation function.</br>The transformation is retried as many times as necessary to win the optimistic locking race.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static bool Update<t>(ref T location, Func<t, t=""> transformer)where T : class</t,></t></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td><em>location</em></td>
+      <td><p>The variable or field to be changed, which may be accessed by multiple threads.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;T, T&gt;</td>
+      <td><em>transformer</em></td>
+      <td><p>A function that mutates the value. This function should be side-effect free,
+as it may run multiple times when races occur with other threads.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p><c>true</c> if the location&#39;s value is changed by applying the result of the</p>
+<p><paramref name="transformer"></paramref> function;</p>
+<p><c>false</c> if the location&#39;s value remained the same because the last
+invocation of <paramref name="transformer"></paramref> returned the existing value.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs/#L77"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Update_T__TArg__ref_T__Func_T__TArg__T___TArg_">Update&lt;T, TArg&gt;(ref T, Func&lt;T, TArg, T&gt;, TArg)</h4>
+<div class="markdown level1 summary"><p>Mutates a value in-place with optimistic locking transaction semantics<br>via a specified transformation function.</br>The transformation is retried as many times as necessary to win the optimistic locking race.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static bool Update<t, targ="">(ref T location, Func<t, targ,="" t=""> transformer, TArg transformerArgument)where T : class</t,></t,></code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td><em>location</em></td>
+      <td><p>The variable or field to be changed, which may be accessed by multiple threads.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Func`3.html" name="System.Func">Func</a>&lt;T, TArg, T&gt;</td>
+      <td><em>transformer</em></td>
+      <td><p>A function that mutates the value. This function should be side-effect free,
+as it may run multiple times when races occur with other threads.</p>
+</td>
+    </tr>
+    <tr>
+      <td>TArg</td>
+      <td><em>transformerArgument</em></td>
+      <td><p>The argument to pass to <paramref name="transformer"></paramref>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><p><c>true</c> if the location&#39;s value is changed by applying the result of the</p>
+<p><paramref name="transformer"></paramref> function;</p>
+<p><c>false</c> if the location&#39;s value remained the same because the last
+invocation of <paramref name="transformer"></paramref> returned the existing value.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+</article>
+</div>
+<div class="hidden-sm col-md-2" role="complementary">
+  <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+    <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+  </nav>
+</div>
+</div>
+</div>
+<footer>
+  <div class="grad-bottom"></div>
+  <div class="footer">
+    <div class="container">
+      <span class="pull-right">
+        <a href="#top">Back to top</a>
+      </span>
+      <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+    </div>
+  </div>
+</footer>
+</div>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+</html>

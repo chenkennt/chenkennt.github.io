@@ -1,0 +1,492 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title> | </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content=" | ">
+  
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:nav" content="toc.html">
+  <meta property="docfx:toc" content="reference/toc.html">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="../toc.html">
+</head>
+<body data-spy="scroll" data-target="#affix">
+  <div id="wrapper">
+    <header>
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img id="logo" class="svg" src="../../logo.svg" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content">
+      <div class="sidenav">
+        <a class="btn toc-toggle collapse">Show / Hide Table of Contents</a>
+        <div class="sidetoggle">
+          <div class="sidetoc">
+            <iframe id="sidetoc" src="../toc.html"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="article row grid-right"><div class="col-md-10">
+        <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEReader.cs/#L20" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="PEReader">Class PEReader</h1>
+      <div class="markdown level0 summary"><p>Portable Executable format reader.</p><br></div>
+      <div class="markdown level0 conceptual"></div>
+      <div class="inheritance">
+        <h5>Inheritance</h5>
+        <div class="level0"><a href="System.Object.html" name="System.Object">Object</a></div>
+        <div class="level1">System.Reflection.PortableExecutable.PEReader</div>
+      </div>
+      <h6><strong>Namespace</strong>:System.Reflection.PortableExecutable</h6>
+      <h6><strong>Assembly</strong>:System.Reflection.Metadata.dll</h6>
+      <h5 id="PEReader_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public sealed class PEReader : IDisposable</code></pre>
+      </div>
+      <h5 id="PEReader_remarks">remarks</h5>
+      <div class="markdown level0 remarks"><p>The implementation is thread-safe, that is multiple threads can read data from the reader in parallel.<br>Disposal of the reader is not thread-safe (see <a href="System.Reflection.PortableExecutable.PEReader.html">System.Reflection.PortableExecutable.PEReader.Dispose</a>).</p><br></div>
+      <h3 id="constructors">Constructors</h3>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEReader.cs/#L205"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="PEReader_ImmutableArray_Byte__">PEReader(ImmutableArray&lt;Byte&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates a Portable Executable reader over a PE image stored in a byte array.</p><br></div>
+  <div class="markdown level1 remarks"><p>The content of the image is not read during the construction of the <a href="System.Reflection.PortableExecutable.PEReader.html">System.Reflection.PortableExecutable.PEReader</a></p><br></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PEReader(ImmutableArray<byte> peImage)</byte></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ImmutableArray&lt;<a href="System.Byte.html" name="System.Byte">Byte</a>&gt;</td>
+        <td><em>peImage</em></td>
+        <td><p>PE image.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEReader.cs/#L46"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="PEReader_Byte___Int32_">PEReader(Byte*, Int32)</h4>
+  <div class="markdown level1 summary"><p>Creates a Portable Executable reader over a PE image stored in memory.</p><br></div>
+  <div class="markdown level1 remarks"><p>The memory is owned by the caller and not released on disposal of the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see>.<br>The caller is responsible for keeping the memory alive and unmodified throughout the lifetime of the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see>.</br>The content of the image is not read during the construction of the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see></p><br></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PEReader(byte *peImage, int size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Byte.html" name="System.Byte">Byte</a>*</td>
+        <td><em>peImage</em></td>
+        <td><p>Pointer to the start of the PE image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>size</em></td>
+        <td><p>The size of the PE image.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEReader.cs/#L73"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="PEReader_Stream_">PEReader(Stream)</h4>
+  <div class="markdown level1 summary"><p>Creates a Portable Executable reader over a PE image stored in a stream.</p><br></div>
+  <div class="markdown level1 remarks"><p>Ownership of the stream is transferred to the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see> upon successful validation of constructor arguments. It will be<br>disposed by the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see> and the caller must not manipulate it.</p><br></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PEReader(Stream peStream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.IO.Stream.html" name="System.IO.Stream">Stream</a></td>
+        <td><em>peStream</em></td>
+        <td><p>PE image stream.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEReader.cs/#L102"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="PEReader_Stream__PEStreamOptions_">PEReader(Stream, PEStreamOptions)</h4>
+  <div class="markdown level1 summary"><p>Creates a Portable Executable reader over a PE image stored in a stream beginning at its current position and ending at the end of the stream.</p><br></div>
+  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PEReader(Stream peStream, PEStreamOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.IO.Stream.html" name="System.IO.Stream">Stream</a></td>
+        <td><em>peStream</em></td>
+        <td><p>PE image stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.PortableExecutable.PEStreamOptions.html" name="System.Reflection.PortableExecutable.PEStreamOptions">PEStreamOptions</a></td>
+        <td><em>options</em></td>
+        <td><p>Options specifying how sections of the PE image are read from the stream.</p>
+<p>Unless <see cref="F:System.Reflection.PortableExecutable.PEStreamOptions.LeaveOpen"></see> is specified, ownership of the stream is transferred to the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see>
+upon successful argument validation. It will be disposed by the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see> and the caller must not manipulate it.</p>
+<p>Unless <see cref="F:System.Reflection.PortableExecutable.PEStreamOptions.PrefetchMetadata"></see> or <see cref="F:System.Reflection.PortableExecutable.PEStreamOptions.PrefetchEntireImage"></see> is specified no data
+is read from the stream during the construction of the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see>. Furthermore, the stream must not be manipulated
+by caller while the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see> is alive and undisposed.</p>
+<p>If <see cref="F:System.Reflection.PortableExecutable.PEStreamOptions.PrefetchMetadata"></see> or <see cref="F:System.Reflection.PortableExecutable.PEStreamOptions.PrefetchEntireImage"></see>, the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see>
+will have read all of the data requested during construction. As such, if <see cref="F:System.Reflection.PortableExecutable.PEStreamOptions.LeaveOpen"></see> is also
+specified, the caller retains full ownership of the stream and is assured that it will not be manipulated by the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see>
+after construction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+      
+    <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEReader.cs/#L128"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+  </span>
+  <h4 id="PEReader_Stream__PEStreamOptions__Int32_">PEReader(Stream, PEStreamOptions, Int32)</h4>
+  <div class="markdown level1 summary"><p>Creates a Portable Executable reader over a PE image of the given size beginning at the stream&#39;s current position.</p><br></div>
+  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PEReader(Stream peStream, PEStreamOptions options, int size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.IO.Stream.html" name="System.IO.Stream">Stream</a></td>
+        <td><em>peStream</em></td>
+        <td><p>PE image stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.PortableExecutable.PEStreamOptions.html" name="System.Reflection.PortableExecutable.PEStreamOptions">PEStreamOptions</a></td>
+        <td><em>options</em></td>
+        <td><p>Options specifying how sections of the PE image are read from the stream.</p>
+<p>Unless <see cref="F:System.Reflection.PortableExecutable.PEStreamOptions.LeaveOpen"></see> is specified, ownership of the stream is transferred to the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see>
+upon successful argument validation. It will be disposed by the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see> and the caller must not manipulate it.</p>
+<p>Unless <see cref="F:System.Reflection.PortableExecutable.PEStreamOptions.PrefetchMetadata"></see> or <see cref="F:System.Reflection.PortableExecutable.PEStreamOptions.PrefetchEntireImage"></see> is specified no data
+is read from the stream during the construction of the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see>. Furthermore, the stream must not be manipulated
+by caller while the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see> is alive and undisposed.</p>
+<p>If <see cref="F:System.Reflection.PortableExecutable.PEStreamOptions.PrefetchMetadata"></see> or <see cref="F:System.Reflection.PortableExecutable.PEStreamOptions.PrefetchEntireImage"></see>, the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see>
+will have read all of the data requested during construction. As such, if <see cref="F:System.Reflection.PortableExecutable.PEStreamOptions.LeaveOpen"></see> is also
+specified, the caller retains full ownership of the stream and is assured that it will not be manipulated by the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see>
+after construction.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>size</em></td>
+        <td><p>PE image size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+<h3 id="properties">Properties</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEReader.cs/#L401"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="HasMetadata">HasMetadata</h4>
+<div class="markdown level1 summary"><p>Returns true if the PE image contains CLI metadata.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool HasMetadata { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEReader.cs/#L383"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="IsEntireImageAvailable">IsEntireImageAvailable</h4>
+<div class="markdown level1 summary"><p>Return true if the reader can access the entire PE image.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p>Returns false if the <a href="System.Reflection.PortableExecutable.PEReader.html">System.Reflection.PortableExecutable.PEReader</a> is constructed from a stream and only part of it is prefetched into memory.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public bool IsEntireImageAvailable { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEReader.cs/#L265"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="PEHeaders">PEHeaders</h4>
+<div class="markdown level1 summary"><p>Gets the PE headers.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public PEHeaders PEHeaders { get; }</code></pre>
+</div>
+<h5 class="returns">Property Value</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.PortableExecutable.PEHeaders.html" name="System.Reflection.PortableExecutable.PEHeaders">PEHeaders</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="methods">Methods</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEReader.cs/#L223"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="Dispose__">Dispose()</h4>
+<div class="markdown level1 summary"><p>Disposes all memory allocated by the reader.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"><p><see cref="M:System.Reflection.PortableExecutable.PEReader.Dispose"></see>  can be called multiple times (but not in parallel).<br>It is not safe to call <see cref="M:System.Reflection.PortableExecutable.PEReader.Dispose"></see> in parallel with any other operation on the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see></br>or reading from <see cref="T:System.Reflection.PortableExecutable.PEMemoryBlock"></see>s retrieved from the reader.</p><br></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+</div>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEReader.cs/#L392"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetEntireImage__">GetEntireImage()</h4>
+<div class="markdown level1 summary"><p>Gets a pointer to and size of the PE image if available (<a href="System.Reflection.PortableExecutable.PEReader.html">System.Reflection.PortableExecutable.PEReader.IsEntireImageAvailable</a>).</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public PEMemoryBlock GetEntireImage()</code></pre>
+</div>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.PortableExecutable.PEMemoryBlock.html" name="System.Reflection.PortableExecutable.PEMemoryBlock">PEMemoryBlock</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEReader.cs/#L411"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetMetadata__">GetMetadata()</h4>
+<div class="markdown level1 summary"><p>Loads PE section that contains CLI metadata.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public PEMemoryBlock GetMetadata()</code></pre>
+</div>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.PortableExecutable.PEMemoryBlock.html" name="System.Reflection.PortableExecutable.PEMemoryBlock">PEMemoryBlock</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEReader.cs/#L425"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="GetSectionData_Int32_">GetSectionData(Int32)</h4>
+<div class="markdown level1 summary"><p>Loads PE section that contains the specified <paramref name="relativeVirtualAddress"></paramref> into memory<br>and returns a memory block that starts at <paramref name="relativeVirtualAddress"></paramref> and ends at the end of the containing section.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public PEMemoryBlock GetSectionData(int relativeVirtualAddress)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+      <td><em>relativeVirtualAddress</em></td>
+      <td><p>Relative Virtual Address of the data to read.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="System.Reflection.PortableExecutable.PEMemoryBlock.html" name="System.Reflection.PortableExecutable.PEMemoryBlock">PEMemoryBlock</a></td>
+      <td><p>An empty block if <paramref name="relativeVirtualAddress"></paramref> doesn&#39;t represent a location in any of the PE sections of this PE image.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+</article>
+</div>
+<div class="hidden-sm col-md-2" role="complementary">
+  <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+    <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+  </nav>
+</div>
+</div>
+</div>
+<footer>
+  <div class="grad-bottom"></div>
+  <div class="footer">
+    <div class="container">
+      <span class="pull-right">
+        <a href="#top">Back to top</a>
+      </span>
+      <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+    </div>
+  </div>
+</footer>
+</div>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+</html>

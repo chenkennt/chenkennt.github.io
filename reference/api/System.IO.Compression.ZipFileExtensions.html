@@ -1,0 +1,344 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title> | </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content=" | ">
+  
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:nav" content="toc.html">
+  <meta property="docfx:toc" content="reference/toc.html">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="../toc.html">
+</head>
+<body data-spy="scroll" data-target="#affix">
+  <div id="wrapper">
+    <header>
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img id="logo" class="svg" src="../../logo.svg" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content">
+      <div class="sidenav">
+        <a class="btn toc-toggle collapse">Show / Hide Table of Contents</a>
+        <div class="sidetoggle">
+          <div class="sidetoc">
+            <iframe id="sidetoc" src="../toc.html"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="article row grid-right"><div class="col-md-10">
+        <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFileExtensions.cs/#L9" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="ZipFileExtensions">Class ZipFileExtensions</h1>
+      <div class="markdown level0 summary"></div>
+      <div class="markdown level0 conceptual"></div>
+      <div class="inheritance">
+        <h5>Inheritance</h5>
+        <div class="level0"><a href="System.Object.html" name="System.Object">Object</a></div>
+        <div class="level1">System.IO.Compression.ZipFileExtensions</div>
+      </div>
+      <h6><strong>Namespace</strong>:System.IO.Compression</h6>
+      <h6><strong>Assembly</strong>:System.IO.Compression.ZipFile.dll</h6>
+      <h5 id="ZipFileExtensions_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public class ZipFileExtensions</code></pre>
+      </div>
+      <h5 id="ZipFileExtensions_remarks">remarks</h5>
+      <div class="markdown level0 remarks"></div>
+<h3 id="methods">Methods</h3>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFileExtensions.cs/#L47"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="CreateEntryFromFile_ZipArchive__String__String_">CreateEntryFromFile(ZipArchive, String, String)</h4>
+<div class="markdown level1 summary"><p>Adds a file from the file system to the archive under the specified entry name.<br>The new entry in the archive will contain the contents of the file.</br>The last write time of the archive entry is set to the last write time of the file on the file system.<br>If an entry with the specified name already exists in the archive, a second entry will be created that has an identical name.</br>If the specified source file has an invalid last modified time, the first datetime representable in the Zip timestamp format<br>(midnight on January 1, 1980) will be used.</p><br><p>If an entry with the specified name already exists in the archive, a second entry will be created that has an identical name.</p></br><p>Since no <code>CompressionLevel</code> is specified, the default provided by the implementation of the underlying compression<br>algorithm will be used; the <code>ZipArchive</code> will not impose its own default.</br>(Currently, the underlying compression algorithm is provided by the <code>System.IO.Compression.DeflateStream</code> class.)</p></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static ZipArchiveEntry CreateEntryFromFile(ZipArchive destination, string sourceFileName, string entryName)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ZipArchive</td>
+      <td><em>destination</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td><em>sourceFileName</em></td>
+      <td><p>The path to the file on the file system to be copied from. The path is permitted to specify
+relative or absolute path information. Relative path information is interpreted as relative to the current working directory.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td><em>entryName</em></td>
+      <td><p>The name of the entry to be created.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ZipArchiveEntry</td>
+      <td><p>A wrapper for the newly created entry.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFileExtensions.cs/#L83"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="CreateEntryFromFile_ZipArchive__String__String__CompressionLevel_">CreateEntryFromFile(ZipArchive, String, String, CompressionLevel)</h4>
+<div class="markdown level1 summary"><p>Adds a file from the file system to the archive under the specified entry name.<br>The new entry in the archive will contain the contents of the file.</br>The last write time of the archive entry is set to the last write time of the file on the file system.<br>If an entry with the specified name already exists in the archive, a second entry will be created that has an identical name.</br>If the specified source file has an invalid last modified time, the first datetime representable in the Zip timestamp format<br>(midnight on January 1, 1980) will be used.</p><br><p>If an entry with the specified name already exists in the archive, a second entry will be created that has an identical name.</p></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static ZipArchiveEntry CreateEntryFromFile(ZipArchive destination, string sourceFileName, string entryName, CompressionLevel compressionLevel)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ZipArchive</td>
+      <td><em>destination</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td><em>sourceFileName</em></td>
+      <td><p>The path to the file on the file system to be copied from. The path is permitted to specify relative
+or absolute path information. Relative path information is interpreted as relative to the current working directory.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td><em>entryName</em></td>
+      <td><p>The name of the entry to be created.</p>
+</td>
+    </tr>
+    <tr>
+      <td>CompressionLevel</td>
+      <td><em>compressionLevel</em></td>
+      <td><p>The level of the compression (speed/memory vs. compressed size trade-off).</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ZipArchiveEntry</td>
+      <td><p>A wrapper for the newly created entry.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFileExtensions.cs/#L123"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ExtractToDirectory_ZipArchive__String_">ExtractToDirectory(ZipArchive, String)</h4>
+<div class="markdown level1 summary"><p>Extracts all of the files in the archive to a directory on the file system. The specified directory may already exist.<br>This method will create all subdirectories and the specified directory if necessary.</br>If there is an error while extracting the archive, the archive will remain partially extracted.<br>Each entry will be extracted such that the extracted file has the same relative path to destinationDirectoryName as the</br>entry has to the root of the archive. If a file to be archived has an invalid last modified time, the first datetime<br>representable in the Zip timestamp format (midnight on January 1, 1980) will be used.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static void ExtractToDirectory(ZipArchive source, string destinationDirectoryName)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ZipArchive</td>
+      <td><em>source</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td><em>destinationDirectoryName</em></td>
+      <td><p>The path to the directory on the file system.
+The directory specified must not exist. The path is permitted to specify relative or absolute path information.
+Relative path information is interpreted as relative to the current working directory.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFileExtensions.cs/#L238"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ExtractToFile_ZipArchiveEntry__String_">ExtractToFile(ZipArchiveEntry, String)</h4>
+<div class="markdown level1 summary"><p>Creates a file on the file system with the entry’s contents and the specified name. The last write time of the file is set to the<br>entry’s last write time. This method does not allow overwriting of an existing file with the same name. Attempting to extract explicit</br>directories (entries with names that end in directory separator characters) will not result in the creation of a directory.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static void ExtractToFile(ZipArchiveEntry source, string destinationFileName)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ZipArchiveEntry</td>
+      <td><em>source</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td><em>destinationFileName</em></td>
+      <td><p>The name of the file that will hold the contents of the entry.
+The path is permitted to specify relative or absolute path information.
+Relative path information is interpreted as relative to the current working directory.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="small pull-right mobile-hide">
+<a href="https://github.com/chenkennt/corefx/blob/master/src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFileExtensions.cs/#L271"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
+</span>
+<h4 id="ExtractToFile_ZipArchiveEntry__String__Boolean_">ExtractToFile(ZipArchiveEntry, String, Boolean)</h4>
+<div class="markdown level1 summary"><p>Creates a file on the file system with the entry’s contents and the specified name.<br>The last write time of the file is set to the entry’s last write time.</br>This method does allows overwriting of an existing file with the same name.</p><br></div>
+<div class="markdown level1 conceptual"></div>
+<div class="markdown level1 remarks"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static void ExtractToFile(ZipArchiveEntry source, string destinationFileName, bool overwrite)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ZipArchiveEntry</td>
+      <td><em>source</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="System.String.html" name="System.String">String</a></td>
+      <td><em>destinationFileName</em></td>
+      <td><p>The name of the file that will hold the contents of the entry.
+The path is permitted to specify relative or absolute path information.
+Relative path information is interpreted as relative to the current working directory.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+      <td><em>overwrite</em></td>
+      <td><p>True to indicate overwrite.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+</article>
+</div>
+<div class="hidden-sm col-md-2" role="complementary">
+  <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+    <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+  </nav>
+</div>
+</div>
+</div>
+<footer>
+  <div class="grad-bottom"></div>
+  <div class="footer">
+    <div class="container">
+      <span class="pull-right">
+        <a href="#top">Back to top</a>
+      </span>
+      <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+    </div>
+  </div>
+</footer>
+</div>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+</html>
