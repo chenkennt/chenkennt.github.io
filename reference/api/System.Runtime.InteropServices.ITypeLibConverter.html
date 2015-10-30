@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Interface ITypeLibConverter | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Interface ITypeLibConverter | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -55,6 +55,297 @@
       </div>
       <div class="article row grid-right"><div class="col-md-10">
         <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/ITypeLibConverter.cs/#L104" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="ITypeLibConverter">Interface ITypeLibConverter</h1>
+      <div class="markdown level0 summary"></div>
+      <div class="markdown level0 conceptual"></div>
+      <h6><strong>Namespace</strong>:System.Runtime.InteropServices</h6>
+      <h6><strong>Assembly</strong>:mscorlib.dll</h6>
+      <h5 id="ITypeLibConverter_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public interface ITypeLibConverter</code></pre>
+      </div>
+      <h3 id="methods">Methods</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/ITypeLibConverter.cs/#L119">View Source</a>
+      </span>
+  <h4 id="ConvertAssemblyToTypeLib_Assembly__String__TypeLibExporterFlags__ITypeLibExporterNotifySink_">ConvertAssemblyToTypeLib(Assembly, String, TypeLibExporterFlags, ITypeLibExporterNotifySink)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ConvertAssemblyToTypeLib(Assembly assembly, string typeLibName, TypeLibExporterFlags flags, ITypeLibExporterNotifySink notifySink)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Assembly.html" name="System.Reflection.Assembly">Assembly</a></td>
+        <td><em>assembly</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>typeLibName</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.TypeLibExporterFlags.html" name="System.Runtime.InteropServices.TypeLibExporterFlags">TypeLibExporterFlags</a></td>
+        <td><em>flags</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ITypeLibExporterNotifySink.html" name="System.Runtime.InteropServices.ITypeLibExporterNotifySink">ITypeLibExporterNotifySink</a></td>
+        <td><em>notifySink</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/ITypeLibConverter.cs/#L128">View Source</a>
+      </span>
+  <h4 id="ConvertTypeLibToAssembly_Object__String__Int32__ITypeLibImporterNotifySink__Byte____StrongNameKeyPair__Boolean_">ConvertTypeLibToAssembly(Object, String, Int32, ITypeLibImporterNotifySink, Byte[], StrongNameKeyPair, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AssemblyBuilder ConvertTypeLibToAssembly(object typeLib, string asmFileName, int flags, ITypeLibImporterNotifySink notifySink, byte[] publicKey, StrongNameKeyPair keyPair, bool unsafeInterfaces)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>typeLib</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>asmFileName</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>flags</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ITypeLibImporterNotifySink.html" name="System.Runtime.InteropServices.ITypeLibImporterNotifySink">ITypeLibImporterNotifySink</a></td>
+        <td><em>notifySink</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>System.Byte[]</td>
+        <td><em>publicKey</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.StrongNameKeyPair.html" name="System.Reflection.StrongNameKeyPair">StrongNameKeyPair</a></td>
+        <td><em>keyPair</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>unsafeInterfaces</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Emit.AssemblyBuilder.html" name="System.Reflection.Emit.AssemblyBuilder">AssemblyBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/ITypeLibConverter.cs/#L109">View Source</a>
+      </span>
+  <h4 id="ConvertTypeLibToAssembly_Object__String__TypeLibImporterFlags__ITypeLibImporterNotifySink__Byte____StrongNameKeyPair__String__Version_">ConvertTypeLibToAssembly(Object, String, TypeLibImporterFlags, ITypeLibImporterNotifySink, Byte[], StrongNameKeyPair, String, Version)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AssemblyBuilder ConvertTypeLibToAssembly(object typeLib, string asmFileName, TypeLibImporterFlags flags, ITypeLibImporterNotifySink notifySink, byte[] publicKey, StrongNameKeyPair keyPair, string asmNamespace, Version asmVersion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>typeLib</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>asmFileName</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.TypeLibImporterFlags.html" name="System.Runtime.InteropServices.TypeLibImporterFlags">TypeLibImporterFlags</a></td>
+        <td><em>flags</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ITypeLibImporterNotifySink.html" name="System.Runtime.InteropServices.ITypeLibImporterNotifySink">ITypeLibImporterNotifySink</a></td>
+        <td><em>notifySink</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>System.Byte[]</td>
+        <td><em>publicKey</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.StrongNameKeyPair.html" name="System.Reflection.StrongNameKeyPair">StrongNameKeyPair</a></td>
+        <td><em>keyPair</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>asmNamespace</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Version.html" name="System.Version">Version</a></td>
+        <td><em>asmVersion</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Emit.AssemblyBuilder.html" name="System.Reflection.Emit.AssemblyBuilder">AssemblyBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/ITypeLibConverter.cs/#L126">View Source</a>
+      </span>
+  <h4 id="GetPrimaryInteropAssembly_Guid__Int32__Int32__Int32__out_String__out_String_">GetPrimaryInteropAssembly(Guid, Int32, Int32, Int32, out String, out String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool GetPrimaryInteropAssembly(Guid g, int major, int minor, int lcid, out string asmName, out string asmCodeBase)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Guid.html" name="System.Guid">Guid</a></td>
+        <td><em>g</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>major</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>minor</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>lcid</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>asmName</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>asmCodeBase</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

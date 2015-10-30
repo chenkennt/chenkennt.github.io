@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Interface IPermission | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Interface IPermission | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -55,6 +55,186 @@
       </div>
       <div class="article row grid-right"><div class="col-md-10">
         <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Security/IPermission.cs/#L12" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="IPermission">Interface IPermission</h1>
+      <div class="markdown level0 summary"></div>
+      <div class="markdown level0 conceptual"></div>
+      <h6><strong>Namespace</strong>:System.Security</h6>
+      <h6><strong>Assembly</strong>:mscorlib.dll</h6>
+      <h5 id="IPermission_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public interface IPermission : ISecurityEncodable</code></pre>
+      </div>
+      <h3 id="methods">Methods</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Security/IPermission.cs/#L24">View Source</a>
+      </span>
+  <h4 id="Copy__">Copy()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IPermission Copy()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Security.IPermission.html" name="System.Security.IPermission">IPermission</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Security/IPermission.cs/#L79">View Source</a>
+      </span>
+  <h4 id="Demand__">Demand()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Demand()</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Security/IPermission.cs/#L43">View Source</a>
+      </span>
+  <h4 id="Intersect_IPermission_">Intersect(IPermission)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IPermission Intersect(IPermission target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Security.IPermission.html" name="System.Security.IPermission">IPermission</a></td>
+        <td><em>target</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Security.IPermission.html" name="System.Security.IPermission">IPermission</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Security/IPermission.cs/#L68">View Source</a>
+      </span>
+  <h4 id="IsSubsetOf_IPermission_">IsSubsetOf(IPermission)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsSubsetOf(IPermission target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Security.IPermission.html" name="System.Security.IPermission">IPermission</a></td>
+        <td><em>target</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Security/IPermission.cs/#L52">View Source</a>
+      </span>
+  <h4 id="Union_IPermission_">Union(IPermission)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IPermission Union(IPermission target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Security.IPermission.html" name="System.Security.IPermission">IPermission</a></td>
+        <td><em>target</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Security.IPermission.html" name="System.Security.IPermission">IPermission</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

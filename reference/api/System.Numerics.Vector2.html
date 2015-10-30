@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Struct Vector2 | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Struct Vector2 | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -55,6 +55,2339 @@
       </div>
       <div class="article row grid-right"><div class="col-md-10">
         <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs/#L13" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="Vector2">Struct Vector2</h1>
+      <div class="markdown level0 summary"><p>A structure encapsulating two single precision floating point values and provides hardware accelerated methods.</p>
+</div>
+      <div class="markdown level0 conceptual"></div>
+      <h6><strong>Namespace</strong>:System.Numerics</h6>
+      <h6><strong>Assembly</strong>:System.Numerics.Vectors.dll</h6>
+      <h5 id="Vector2_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public struct Vector2 : IEquatable<vector2>, IFormattable</vector2></code></pre>
+      </div>
+      <h3 id="constructors">Constructors</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs/#L29">View Source</a>
+      </span>
+  <h4 id="Vector2_Single_">Vector2(Single)</h4>
+  <div class="markdown level1 summary"><p>Constructs a vector whose elements are all the single specified value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2(float value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Single.html" name="System.Single">Single</a></td>
+        <td><em>value</em></td>
+        <td><p>The element to fill the vector with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs/#L37">View Source</a>
+      </span>
+  <h4 id="Vector2_Single__Single_">Vector2(Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Constructs a vector with the given individual elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2(float x, float y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Single.html" name="System.Single">Single</a></td>
+        <td><em>x</em></td>
+        <td><p>The X component.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Single.html" name="System.Single">Single</a></td>
+        <td><em>y</em></td>
+        <td><p>The Y component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="fields">Fields</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs/#L18">View Source</a>
+      </span>
+  <h4 id="X">X</h4>
+  <div class="markdown level1 summary"><p>The X component of the vector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float X</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs/#L22">View Source</a>
+      </span>
+  <h4 id="Y">Y</h4>
+  <div class="markdown level1 summary"><p>The Y component of the vector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Y</code></pre>
+  </div>
+      <h3 id="properties">Properties</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs/#L23">View Source</a>
+      </span>
+  <h4 id="One">One</h4>
+  <div class="markdown level1 summary"><p>Returns the vector (1,1).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 One { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs/#L27">View Source</a>
+      </span>
+  <h4 id="UnitX">UnitX</h4>
+  <div class="markdown level1 summary"><p>Returns the vector (1,0).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 UnitX { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs/#L31">View Source</a>
+      </span>
+  <h4 id="UnitY">UnitY</h4>
+  <div class="markdown level1 summary"><p>Returns the vector (0,1).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 UnitY { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs/#L19">View Source</a>
+      </span>
+  <h4 id="Zero">Zero</h4>
+  <div class="markdown level1 summary"><p>Returns the vector (0,0).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 Zero { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="methods">Methods</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs/#L145">View Source</a>
+      </span>
+  <h4 id="Abs_Vector2_">Abs(Vector2)</h4>
+  <div class="markdown level1 summary"><p>Returns a vector whose elements are the absolute values of each of the source vector&#39;s elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 Abs(Vector2 value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>value</em></td>
+        <td><p>The source vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><p>The absolute value vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs/#L361">View Source</a>
+      </span>
+  <h4 id="Add_Vector2__Vector2_">Add(Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Adds two vectors together.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 Add(Vector2 left, Vector2 right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>left</em></td>
+        <td><p>The first source vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>right</em></td>
+        <td><p>The second source vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><p>The summed vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs/#L239">View Source</a>
+      </span>
+  <h4 id="Clamp_Vector2__Vector2__Vector2_">Clamp(Vector2, Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Restricts a vector between a min and max value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 Clamp(Vector2 value1, Vector2 min, Vector2 max)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>value1</em></td>
+        <td><p>The source vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>min</em></td>
+        <td><p>The minimum value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>max</em></td>
+        <td><p>The maximum value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs/#L50">View Source</a>
+      </span>
+  <h4 id="CopyTo_Single___">CopyTo(Single[])</h4>
+  <div class="markdown level1 summary"><p>Copies the contents of the vector into the given array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(float[] array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Single[]</td>
+        <td><em>array</em></td>
+        <td><p>The destination array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs/#L64">View Source</a>
+      </span>
+  <h4 id="CopyTo_Single____Int32_">CopyTo(Single[], Int32)</h4>
+  <div class="markdown level1 summary"><p>Copies the contents of the vector into the given array, starting from the given index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(float[] array, int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Single[]</td>
+        <td><em>array</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>index</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs/#L142">View Source</a>
+      </span>
+  <h4 id="Distance_Vector2__Vector2_">Distance(Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Returns the Euclidean distance between the two given points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Distance(Vector2 value1, Vector2 value2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>value1</em></td>
+        <td><p>The first point.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>value2</em></td>
+        <td><p>The second point.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Single.html" name="System.Single">Single</a></td>
+        <td><p>The distance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs/#L168">View Source</a>
+      </span>
+  <h4 id="DistanceSquared_Vector2__Vector2_">DistanceSquared(Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Returns the Euclidean distance squared between the two given points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float DistanceSquared(Vector2 value1, Vector2 value2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>value1</em></td>
+        <td><p>The first point.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>value2</em></td>
+        <td><p>The second point.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Single.html" name="System.Single">Single</a></td>
+        <td><p>The distance squared.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs/#L421">View Source</a>
+      </span>
+  <h4 id="Divide_Vector2__Vector2_">Divide(Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Divides the first vector by the second.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 Divide(Vector2 left, Vector2 right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>left</em></td>
+        <td><p>The first source vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>right</em></td>
+        <td><p>The second source vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><p>The vector resulting from the division.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs/#L433">View Source</a>
+      </span>
+  <h4 id="Divide_Vector2__Single_">Divide(Vector2, Single)</h4>
+  <div class="markdown level1 summary"><p>Divides the vector by the given scalar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 Divide(Vector2 left, float divisor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>left</em></td>
+        <td><p>The source vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Single.html" name="System.Single">Single</a></td>
+        <td><em>divisor</em></td>
+        <td><p>The scalar value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><p>The result of the division.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs/#L102">View Source</a>
+      </span>
+  <h4 id="Dot_Vector2__Vector2_">Dot(Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Returns the dot product of two vectors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Dot(Vector2 value1, Vector2 value2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>value1</em></td>
+        <td><p>The first vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>value2</em></td>
+        <td><p>The second vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Single.html" name="System.Single">Single</a></td>
+        <td><p>The dot product.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs/#L88">View Source</a>
+      </span>
+  <h4 id="Equals_Vector2_">Equals(Vector2)</h4>
+  <div class="markdown level1 summary"><p>Returns a boolean indicating whether the given Vector2 is equal to this Vector2 instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(Vector2 other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>other</em></td>
+        <td><p>The Vector2 to compare this instance to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>True if the other Vector2 is equal to this instance; False otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs/#L51">View Source</a>
+      </span>
+  <h4 id="Equals_Object_">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Returns a boolean indicating whether the given Object is equal to this Vector2 instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>obj</em></td>
+        <td><p>The Object to compare against.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>True if the Object is equal to this Vector2; False otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs/#L39">View Source</a>
+      </span>
+  <h4 id="GetHashCode__">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Returns the hash code for this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><p>The hash code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs/#L102">View Source</a>
+      </span>
+  <h4 id="Length__">Length()</h4>
+  <div class="markdown level1 summary"><p>Returns the length of the vector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Length()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Single.html" name="System.Single">Single</a></td>
+        <td><p>The vector&#39;s length.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs/#L121">View Source</a>
+      </span>
+  <h4 id="LengthSquared__">LengthSquared()</h4>
+  <div class="markdown level1 summary"><p>Returns the length of the vector squared. This operation is cheaper than Length().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LengthSquared()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Single.html" name="System.Single">Single</a></td>
+        <td><p>The vector&#39;s length squared.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs/#L262">View Source</a>
+      </span>
+  <h4 id="Lerp_Vector2__Vector2__Single_">Lerp(Vector2, Vector2, Single)</h4>
+  <div class="markdown level1 summary"><p>Linearly interpolates between two vectors based on the given weighting.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 Lerp(Vector2 value1, Vector2 value2, float amount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>value1</em></td>
+        <td><p>The first source vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>value2</em></td>
+        <td><p>The second source vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Single.html" name="System.Single">Single</a></td>
+        <td><em>amount</em></td>
+        <td><p>Value between 0 and 1 indicating the weight of the second source vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><p>The interpolated vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs/#L131">View Source</a>
+      </span>
+  <h4 id="Max_Vector2__Vector2_">Max(Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Returns a vector whose elements are the maximum of each of the pairs of elements in the two source vectors</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 Max(Vector2 value1, Vector2 value2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>value1</em></td>
+        <td><p>The first source vector</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>value2</em></td>
+        <td><p>The second source vector</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><p>The maximized vector</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs/#L116">View Source</a>
+      </span>
+  <h4 id="Min_Vector2__Vector2_">Min(Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Returns a vector whose elements are the minimum of each of the pairs of elements in the two source vectors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 Min(Vector2 value1, Vector2 value2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>value1</em></td>
+        <td><p>The first source vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>value2</em></td>
+        <td><p>The second source vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><p>The minimized vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs/#L385">View Source</a>
+      </span>
+  <h4 id="Multiply_Vector2__Vector2_">Multiply(Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Multiplies two vectors together.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 Multiply(Vector2 left, Vector2 right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>left</em></td>
+        <td><p>The first source vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>right</em></td>
+        <td><p>The second source vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><p>The product vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs/#L397">View Source</a>
+      </span>
+  <h4 id="Multiply_Vector2__Single_">Multiply(Vector2, Single)</h4>
+  <div class="markdown level1 summary"><p>Multiplies a vector by the given scalar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 Multiply(Vector2 left, float right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>left</em></td>
+        <td><p>The source vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Single.html" name="System.Single">Single</a></td>
+        <td><em>right</em></td>
+        <td><p>The scalar value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><p>The scaled vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs/#L409">View Source</a>
+      </span>
+  <h4 id="Multiply_Single__Vector2_">Multiply(Single, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Multiplies a vector by the given scalar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 Multiply(float left, Vector2 right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Single.html" name="System.Single">Single</a></td>
+        <td><em>left</em></td>
+        <td><p>The scalar value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>right</em></td>
+        <td><p>The source vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><p>The scaled vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs/#L444">View Source</a>
+      </span>
+  <h4 id="Negate_Vector2_">Negate(Vector2)</h4>
+  <div class="markdown level1 summary"><p>Negates a given vector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 Negate(Vector2 value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>value</em></td>
+        <td><p>The source vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><p>The negated vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs/#L190">View Source</a>
+      </span>
+  <h4 id="Normalize_Vector2_">Normalize(Vector2)</h4>
+  <div class="markdown level1 summary"><p>Returns a vector with the same direction as the given vector, but with a length of 1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 Normalize(Vector2 value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>value</em></td>
+        <td><p>The vector to normalize.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><p>The normalized vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs/#L215">View Source</a>
+      </span>
+  <h4 id="Reflect_Vector2__Vector2_">Reflect(Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Returns the reflection of a vector off a surface that has the specified normal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 Reflect(Vector2 vector, Vector2 normal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>vector</em></td>
+        <td><p>The source vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>normal</em></td>
+        <td><p>The normal of the surface being reflected off.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><p>The reflected vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs/#L157">View Source</a>
+      </span>
+  <h4 id="SquareRoot_Vector2_">SquareRoot(Vector2)</h4>
+  <div class="markdown level1 summary"><p>Returns a vector whose elements are the square root of each of the source vector&#39;s elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 SquareRoot(Vector2 value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>value</em></td>
+        <td><p>The source vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><p>The square root vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs/#L373">View Source</a>
+      </span>
+  <h4 id="Subtract_Vector2__Vector2_">Subtract(Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Subtracts the second vector from the first.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 Subtract(Vector2 left, Vector2 right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>left</em></td>
+        <td><p>The first source vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>right</em></td>
+        <td><p>The second source vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><p>The difference vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs/#L63">View Source</a>
+      </span>
+  <h4 id="ToString__">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns a String representing this Vector2 instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><p>The string representation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs/#L73">View Source</a>
+      </span>
+  <h4 id="ToString_String_">ToString(String)</h4>
+  <div class="markdown level1 summary"><p>Returns a String representing this Vector2 instance, using the specified format to format individual elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToString(string format)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>format</em></td>
+        <td><p>The format of individual elements.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><p>The string representation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs/#L85">View Source</a>
+      </span>
+  <h4 id="ToString_String__IFormatProvider_">ToString(String, IFormatProvider)</h4>
+  <div class="markdown level1 summary"><p>Returns a String representing this Vector2 instance, using the specified format to format individual elements
+and the given IFormatProvider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToString(string format, IFormatProvider formatProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>format</em></td>
+        <td><p>The format of individual elements.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.IFormatProvider.html" name="System.IFormatProvider">IFormatProvider</a></td>
+        <td><em>formatProvider</em></td>
+        <td><p>The format provider to use when formatting elements.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><p>The string representation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs/#L276">View Source</a>
+      </span>
+  <h4 id="Transform_Vector2__Matrix3x2_">Transform(Vector2, Matrix3x2)</h4>
+  <div class="markdown level1 summary"><p>Transforms a vector by the given matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 Transform(Vector2 position, Matrix3x2 matrix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>position</em></td>
+        <td><p>The source vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Matrix3x2.html" name="System.Numerics.Matrix3x2">Matrix3x2</a></td>
+        <td><em>matrix</em></td>
+        <td><p>The transformation matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><p>The transformed vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs/#L290">View Source</a>
+      </span>
+  <h4 id="Transform_Vector2__Matrix4x4_">Transform(Vector2, Matrix4x4)</h4>
+  <div class="markdown level1 summary"><p>Transforms a vector by the given matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 Transform(Vector2 position, Matrix4x4 matrix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>position</em></td>
+        <td><p>The source vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Matrix4x4.html" name="System.Numerics.Matrix4x4">Matrix4x4</a></td>
+        <td><em>matrix</em></td>
+        <td><p>The transformation matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><p>The transformed vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs/#L332">View Source</a>
+      </span>
+  <h4 id="Transform_Vector2__Quaternion_">Transform(Vector2, Quaternion)</h4>
+  <div class="markdown level1 summary"><p>Transforms a vector by the given Quaternion rotation value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 Transform(Vector2 value, Quaternion rotation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>value</em></td>
+        <td><p>The source vector to be rotated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Quaternion.html" name="System.Numerics.Quaternion">Quaternion</a></td>
+        <td><em>rotation</em></td>
+        <td><p>The rotation to apply.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><p>The transformed vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs/#L304">View Source</a>
+      </span>
+  <h4 id="TransformNormal_Vector2__Matrix3x2_">TransformNormal(Vector2, Matrix3x2)</h4>
+  <div class="markdown level1 summary"><p>Transforms a vector normal by the given matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 TransformNormal(Vector2 normal, Matrix3x2 matrix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>normal</em></td>
+        <td><p>The source vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Matrix3x2.html" name="System.Numerics.Matrix3x2">Matrix3x2</a></td>
+        <td><em>matrix</em></td>
+        <td><p>The transformation matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><p>The transformed vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs/#L318">View Source</a>
+      </span>
+  <h4 id="TransformNormal_Vector2__Matrix4x4_">TransformNormal(Vector2, Matrix4x4)</h4>
+  <div class="markdown level1 summary"><p>Transforms a vector normal by the given matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 TransformNormal(Vector2 normal, Matrix4x4 matrix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>normal</em></td>
+        <td><p>The source vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Matrix4x4.html" name="System.Numerics.Matrix4x4">Matrix4x4</a></td>
+        <td><em>matrix</em></td>
+        <td><p>The transformation matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><p>The transformed vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="operators">Operators</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs/#L172">View Source</a>
+      </span>
+  <h4 id="Addition_Vector2__Vector2_">Addition(Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Adds two vectors together.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 operator +(Vector2 left, Vector2 right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>left</em></td>
+        <td><p>The first source vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>right</em></td>
+        <td><p>The second source vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><p>The summed vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs/#L237">View Source</a>
+      </span>
+  <h4 id="Division_Vector2__Vector2_">Division(Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Divides the first vector by the second.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 operator /(Vector2 left, Vector2 right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>left</em></td>
+        <td><p>The first source vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>right</em></td>
+        <td><p>The second source vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><p>The vector resulting from the division.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs/#L250">View Source</a>
+      </span>
+  <h4 id="Division_Vector2__Single_">Division(Vector2, Single)</h4>
+  <div class="markdown level1 summary"><p>Divides the vector by the given scalar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 operator /(Vector2 value1, float value2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>value1</em></td>
+        <td><p>The source vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Single.html" name="System.Single">Single</a></td>
+        <td><em>value2</em></td>
+        <td><p>The scalar value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><p>The result of the division.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs/#L277">View Source</a>
+      </span>
+  <h4 id="Equality_Vector2__Vector2_">Equality(Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Returns a boolean indicating whether the two given vectors are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Vector2 left, Vector2 right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>left</em></td>
+        <td><p>The first vector to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>right</em></td>
+        <td><p>The second vector to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>True if the vectors are equal; False otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs/#L289">View Source</a>
+      </span>
+  <h4 id="Inequality_Vector2__Vector2_">Inequality(Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Returns a boolean indicating whether the two given vectors are not equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Vector2 left, Vector2 right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>left</em></td>
+        <td><p>The first vector to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>right</em></td>
+        <td><p>The second vector to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>True if the vectors are not equal; False if they are equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs/#L198">View Source</a>
+      </span>
+  <h4 id="Multiply_Vector2__Vector2_">Multiply(Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Multiplies two vectors together.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 operator *(Vector2 left, Vector2 right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>left</em></td>
+        <td><p>The first source vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>right</em></td>
+        <td><p>The second source vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><p>The product vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs/#L224">View Source</a>
+      </span>
+  <h4 id="Multiply_Vector2__Single_">Multiply(Vector2, Single)</h4>
+  <div class="markdown level1 summary"><p>Multiplies a vector by the given scalar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 operator *(Vector2 left, float right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>left</em></td>
+        <td><p>The source vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Single.html" name="System.Single">Single</a></td>
+        <td><em>right</em></td>
+        <td><p>The scalar value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><p>The scaled vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs/#L211">View Source</a>
+      </span>
+  <h4 id="Multiply_Single__Vector2_">Multiply(Single, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Multiplies a vector by the given scalar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 operator *(float left, Vector2 right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Single.html" name="System.Single">Single</a></td>
+        <td><em>left</em></td>
+        <td><p>The scalar value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>right</em></td>
+        <td><p>The source vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><p>The scaled vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs/#L185">View Source</a>
+      </span>
+  <h4 id="Subtraction_Vector2__Vector2_">Subtraction(Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Subtracts the second vector from the first.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 operator -(Vector2 left, Vector2 right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>left</em></td>
+        <td><p>The first source vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>right</em></td>
+        <td><p>The second source vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><p>The difference vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs/#L265">View Source</a>
+      </span>
+  <h4 id="UnaryNegation_Vector2_">UnaryNegation(Vector2)</h4>
+  <div class="markdown level1 summary"><p>Negates a given vector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 operator -(Vector2 value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><em>value</em></td>
+        <td><p>The source vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector2.html" name="System.Numerics.Vector2">Vector2</a></td>
+        <td><p>The negated vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

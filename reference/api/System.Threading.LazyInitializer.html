@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class LazyInitializer | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class LazyInitializer | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -60,7 +60,8 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="LazyInitializer">Class LazyInitializer</h1>
-      <div class="markdown level0 summary"><p>Provides lazy initialization routines.</p><br></div>
+      <div class="markdown level0 summary"><p>Provides lazy initialization routines.</p>
+</div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
         <h5>Inheritance</h5>
@@ -73,239 +74,270 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public class LazyInitializer</code></pre>
       </div>
-      <h5 id="LazyInitializer_remarks">remarks</h5>
-      <div class="markdown level0 remarks"><p>These routines avoid needing to allocate a dedicated, lazy-initialization instance, instead using<br>references to ensure targets have been initialized as they are accessed.</p><br></div>
-<h3 id="methods">Methods</h3>
-
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/LazyInitializer.cs/#L85"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="EnsureInitialized_T__ref_T_">EnsureInitialized&lt;T&gt;(ref T)</h4>
-<div class="markdown level1 summary"><p>Initializes a target reference type with the type&#39;s default constructor if the target has not<br>already been initialized.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><para><br>This method may only be used on reference types. To ensure initialization of value</br>types, see other overloads of EnsureInitialized.<br></para><br><para><br>This method may be used concurrently by multiple threads to initialize <paramref name="target"></paramref>.</br>In the event that multiple threads access this method concurrently, multiple instances of <typeparamref name="T"></typeparamref><br>may be created, but only one will be stored into <paramref name="target"></paramref>. In such an occurrence, this method will not dispose of the</br>objects that were not stored.  If such objects must be disposed, it is up to the caller to determine<br>if an object was not used and to then dispose of the object appropriately.</br></para></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static T EnsureInitialized<t>(ref T target)where T : class</t></code></pre>
+      <h5 id="LazyInitializer_remarks"><strong>Remarks<strong></strong></strong></h5>
+      <div class="markdown level0 remarks"><p>These routines avoid needing to allocate a dedicated, lazy-initialization instance, instead using
+references to ensure targets have been initialized as they are accessed.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><em>target</em></td>
-      <td><p>A reference of type <typeparamref name="T"></typeparamref> to initialize if it has not
+      <h3 id="methods">Methods</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/LazyInitializer.cs/#L85">View Source</a>
+      </span>
+  <h4 id="EnsureInitialized_T__ref_T_">EnsureInitialized&lt;T&gt;(ref T)</h4>
+  <div class="markdown level1 summary"><p>Initializes a target reference type with the type&#39;s default constructor if the target has not
+already been initialized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="EnsureInitialized_T__ref_T__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><para>
+This method may only be used on reference types. To ensure initialization of value
+types, see other overloads of EnsureInitialized.
+</para>
+<para>
+This method may be used concurrently by multiple threads to initialize <paramref name="target"></paramref>.
+In the event that multiple threads access this method concurrently, multiple instances of <typeparamref name="T"></typeparamref>
+may be created, but only one will be stored into <paramref name="target"></paramref>. In such an occurrence, this method will not dispose of the
+objects that were not stored.  If such objects must be disposed, it is up to the caller to determine
+if an object was not used and to then dispose of the object appropriately.
+</para></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T EnsureInitialized<t>(ref T target)where T : class</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><em>target</em></td>
+        <td><p>A reference of type <typeparamref name="T"></typeparamref> to initialize if it has not
 already been initialized.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><p>The initialized reference of type <typeparamref name="T"></typeparamref>.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><p>The initialized reference of type <typeparamref name="T"></typeparamref>.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/LazyInitializer.cs/#L168"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="EnsureInitialized_T__ref_T__ref_Boolean__ref_Object_">EnsureInitialized&lt;T&gt;(ref T, ref Boolean, ref Object)</h4>
-<div class="markdown level1 summary"><p>Initializes a target reference or value type with its default constructor if it has not already<br>been initialized.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static T EnsureInitialized<t>(ref T target, ref bool initialized, ref object syncLock)</t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/LazyInitializer.cs/#L168">View Source</a>
+      </span>
+  <h4 id="EnsureInitialized_T__ref_T__ref_Boolean__ref_Object_">EnsureInitialized&lt;T&gt;(ref T, ref Boolean, ref Object)</h4>
+  <div class="markdown level1 summary"><p>Initializes a target reference or value type with its default constructor if it has not already
+been initialized.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><em>target</em></td>
-      <td><p>A reference or value of type <typeparamref name="T"></typeparamref> to initialize if it
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T EnsureInitialized<t>(ref T target, ref bool initialized, ref object syncLock)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><em>target</em></td>
+        <td><p>A reference or value of type <typeparamref name="T"></typeparamref> to initialize if it
 has not already been initialized.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><em>initialized</em></td>
-      <td><p>A reference to a boolean that determines whether the target has already
+      </tr>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>initialized</em></td>
+        <td><p>A reference to a boolean that determines whether the target has already
 been initialized.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a></td>
-      <td><em>syncLock</em></td>
-      <td><p>A reference to an object used as the mutually exclusive lock for initializing</p>
+      </tr>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>syncLock</em></td>
+        <td><p>A reference to an object used as the mutually exclusive lock for initializing</p>
 <p><paramref name="target"></paramref>. If <paramref name="syncLock"></paramref> is null, a new object will be instantiated.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><p>The initialized value of type <typeparamref name="T"></typeparamref>.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><p>The initialized value of type <typeparamref name="T"></typeparamref>.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/LazyInitializer.cs/#L193"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="EnsureInitialized_T__ref_T__ref_Boolean__ref_Object__Func_T__">EnsureInitialized&lt;T&gt;(ref T, ref Boolean, ref Object, Func&lt;T&gt;)</h4>
-<div class="markdown level1 summary"><p>Initializes a target reference or value type with a specified function if it has not already been<br>initialized.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static T EnsureInitialized<t>(ref T target, ref bool initialized, ref object syncLock, Func<t> valueFactory)</t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/LazyInitializer.cs/#L193">View Source</a>
+      </span>
+  <h4 id="EnsureInitialized_T__ref_T__ref_Boolean__ref_Object__Func_T__">EnsureInitialized&lt;T&gt;(ref T, ref Boolean, ref Object, Func&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a target reference or value type with a specified function if it has not already been
+initialized.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><em>target</em></td>
-      <td><p>A reference or value of type <typeparamref name="T"></typeparamref> to initialize if it
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T EnsureInitialized<t>(ref T target, ref bool initialized, ref object syncLock, Func<t> valueFactory)</t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><em>target</em></td>
+        <td><p>A reference or value of type <typeparamref name="T"></typeparamref> to initialize if it
 has not already been initialized.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><em>initialized</em></td>
-      <td><p>A reference to a boolean that determines whether the target has already
+      </tr>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>initialized</em></td>
+        <td><p>A reference to a boolean that determines whether the target has already
 been initialized.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a></td>
-      <td><em>syncLock</em></td>
-      <td><p>A reference to an object used as the mutually exclusive lock for initializing</p>
+      </tr>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>syncLock</em></td>
+        <td><p>A reference to an object used as the mutually exclusive lock for initializing</p>
 <p><paramref name="target"></paramref>. If <paramref name="syncLock"></paramref> is null, a new object will be instantiated.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Func`1.html" name="System.Func">Func</a>&lt;T&gt;</td>
-      <td><em>valueFactory</em></td>
-      <td><p>The <a href="">System.Func{T}</a> invoked to initialize the
+      </tr>
+      <tr>
+        <td>System.Func&lt;T&gt;</td>
+        <td><em>valueFactory</em></td>
+        <td><p>The <a href="">System.Func{T}</a> invoked to initialize the
 reference or value.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><p>The initialized value of type <typeparamref name="T"></typeparamref>.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><p>The initialized value of type <typeparamref name="T"></typeparamref>.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/LazyInitializer.cs/#L124"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="EnsureInitialized_T__ref_T__Func_T__">EnsureInitialized&lt;T&gt;(ref T, Func&lt;T&gt;)</h4>
-<div class="markdown level1 summary"><p>Initializes a target reference type using the specified function if it has not already been<br>initialized.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><para><br>This method may only be used on reference types, and <paramref name="valueFactory"></paramref> may</br>not return a null reference (Nothing in Visual Basic). To ensure initialization of value types or<br>to allow null reference types, see other overloads of EnsureInitialized.</br></para><br><para><br>This method may be used concurrently by multiple threads to initialize <paramref name="target"></paramref>.</br>In the event that multiple threads access this method concurrently, multiple instances of <typeparamref name="T"></typeparamref><br>may be created, but only one will be stored into <paramref name="target"></paramref>. In such an occurrence, this method will not dispose of the</br>objects that were not stored.  If such objects must be disposed, it is up to the caller to determine<br>if an object was not used and to then dispose of the object appropriately.</br></para></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static T EnsureInitialized<t>(ref T target, Func<t> valueFactory)where T : class</t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/LazyInitializer.cs/#L124">View Source</a>
+      </span>
+  <h4 id="EnsureInitialized_T__ref_T__Func_T__">EnsureInitialized&lt;T&gt;(ref T, Func&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a target reference type using the specified function if it has not already been
+initialized.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><em>target</em></td>
-      <td><p>The reference of type <typeparamref name="T"></typeparamref> to initialize if it has not
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="EnsureInitialized_T__ref_T__Func_T___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><para>
+This method may only be used on reference types, and <paramref name="valueFactory"></paramref> may
+not return a null reference (Nothing in Visual Basic). To ensure initialization of value types or
+to allow null reference types, see other overloads of EnsureInitialized.
+</para>
+<para>
+This method may be used concurrently by multiple threads to initialize <paramref name="target"></paramref>.
+In the event that multiple threads access this method concurrently, multiple instances of <typeparamref name="T"></typeparamref>
+may be created, but only one will be stored into <paramref name="target"></paramref>. In such an occurrence, this method will not dispose of the
+objects that were not stored.  If such objects must be disposed, it is up to the caller to determine
+if an object was not used and to then dispose of the object appropriately.
+</para></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T EnsureInitialized<t>(ref T target, Func<t> valueFactory)where T : class</t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><em>target</em></td>
+        <td><p>The reference of type <typeparamref name="T"></typeparamref> to initialize if it has not
 already been initialized.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Func`1.html" name="System.Func">Func</a>&lt;T&gt;</td>
-      <td><em>valueFactory</em></td>
-      <td><p>The <a href="">System.Func{T}</a> invoked to initialize the
+      </tr>
+      <tr>
+        <td>System.Func&lt;T&gt;</td>
+        <td><em>valueFactory</em></td>
+        <td><p>The <a href="">System.Func{T}</a> invoked to initialize the
 reference.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><p>The initialized reference of type <typeparamref name="T"></typeparamref>.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><p>The initialized reference of type <typeparamref name="T"></typeparamref>.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

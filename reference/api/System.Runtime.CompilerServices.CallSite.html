@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class CallSite | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class CallSite | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -60,7 +60,10 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="CallSite">Class CallSite</h1>
-      <div class="markdown level0 summary"><p>A Dynamic Call Site base class. This type is used as a parameter type to the<br>dynamic site targets. The first parameter of the delegate (T) below must be</br>of this type.</p><br></div>
+      <div class="markdown level0 summary"><p>A Dynamic Call Site base class. This type is used as a parameter type to the
+dynamic site targets. The first parameter of the delegate (T) below must be
+of this type.</p>
+</div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
         <h5>Inheritance</h5>
@@ -73,89 +76,87 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public class CallSite</code></pre>
       </div>
-      <h5 id="CallSite_remarks">remarks</h5>
-      <div class="markdown level0 remarks"></div>
-<h3 id="properties">Properties</h3>
+      <h3 id="properties">Properties</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSite.cs/#L70"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Binder">Binder</h4>
-<div class="markdown level1 summary"><p>Class responsible for binding dynamic operations on the dynamic site.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public CallSiteBinder Binder { get; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSite.cs/#L70">View Source</a>
+      </span>
+  <h4 id="Binder">Binder</h4>
+  <div class="markdown level1 summary"><p>Class responsible for binding dynamic operations on the dynamic site.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h3 id="methods">Methods</h3>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CallSiteBinder Binder { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="methods">Methods</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSite.cs/#L81"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Create_Type__CallSiteBinder_">Create(Type, CallSiteBinder)</h4>
-<div class="markdown level1 summary"><p>Creates a CallSite with the given delegate type and binder.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static CallSite Create(Type delegateType, CallSiteBinder binder)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSite.cs/#L81">View Source</a>
+      </span>
+  <h4 id="Create_Type__CallSiteBinder_">Create(Type, CallSiteBinder)</h4>
+  <div class="markdown level1 summary"><p>Creates a CallSite with the given delegate type and binder.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Type.html" name="System.Type">Type</a></td>
-      <td><em>delegateType</em></td>
-      <td><p>The CallSite delegate type.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CallSite Create(Type delegateType, CallSiteBinder binder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Type.html" name="System.Type">Type</a></td>
+        <td><em>delegateType</em></td>
+        <td><p>The CallSite delegate type.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
-      <td><em>binder</em></td>
-      <td><p>The CallSite binder.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
+        <td><em>binder</em></td>
+        <td><p>The CallSite binder.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Runtime.CompilerServices.CallSite.html" name="System.Runtime.CompilerServices.CallSite">CallSite</a></td>
-      <td><p>The new CallSite.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.CompilerServices.CallSite.html" name="System.Runtime.CompilerServices.CallSite">CallSite</a></td>
+        <td><p>The new CallSite.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

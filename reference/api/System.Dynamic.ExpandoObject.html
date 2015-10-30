@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class ExpandoObject | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class ExpandoObject | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -60,7 +60,8 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="ExpandoObject">Class ExpandoObject</h1>
-      <div class="markdown level0 summary"><p>Represents an object with members that can be dynamically added and removed at runtime.</p><br></div>
+      <div class="markdown level0 summary"><p>Represents an object with members that can be dynamically added and removed at runtime.</p>
+</div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
         <h5>Inheritance</h5>
@@ -73,607 +74,588 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public sealed class ExpandoObject : IDynamicMetaObjectProvider, IDictionary<string, object="">, ICollection<><string, object="">>, IEnumerable<><string, object="">>, IEnumerable, INotifyPropertyChanged</string,></string,></string,></code></pre>
       </div>
-      <h5 id="ExpandoObject_remarks">remarks</h5>
-      <div class="markdown level0 remarks"></div>
       <h3 id="constructors">Constructors</h3>
-      
-    <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L34"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-  </span>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L34">View Source</a>
+      </span>
   <h4 id="ExpandoObject__">ExpandoObject()</h4>
-  <div class="markdown level1 summary"><p>Creates a new ExpandoObject with no members.</p><br></div>
-  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 summary"><p>Creates a new ExpandoObject with no members.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public ExpandoObject()</code></pre>
   </div>
-<h3 id="properties">Properties</h3>
+      <h3 id="properties">Properties</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L670"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ICollection_KeyValuePair_String__Object___Count">ICollection&lt;KeyValuePair&lt;String, Object&gt;&gt;.Count</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">int ICollection<><string, object="">>.Count { get; }</string,></code></pre>
-</div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L670">View Source</a>
+      </span>
+  <h4 id="ICollection_KeyValuePair_String__Object___Count">ICollection&lt;KeyValuePair&lt;String, Object&gt;&gt;.Count</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int ICollection<><string, object="">>.Count { get; }</string,></code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L678"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ICollection_KeyValuePair_String__Object___IsReadOnly">ICollection&lt;KeyValuePair&lt;String, Object&gt;&gt;.IsReadOnly</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">bool ICollection<><string, object="">>.IsReadOnly { get; }</string,></code></pre>
-</div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L678">View Source</a>
+      </span>
+  <h4 id="ICollection_KeyValuePair_String__Object___IsReadOnly">ICollection&lt;KeyValuePair&lt;String, Object&gt;&gt;.IsReadOnly</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ICollection<><string, object="">>.IsReadOnly { get; }</string,></code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L622"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IDictionary_String__Object__Item_String_">IDictionary&lt;String, Object&gt;.Item[String]</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">object IDictionary<string, object="">.this[string key] { get; set; }</string,></code></pre>
-</div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>key</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L622">View Source</a>
+      </span>
+  <h4 id="IDictionary_String__Object__Item_String_">IDictionary&lt;String, Object&gt;.Item[String]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object IDictionary<string, object="">.this[string key] { get; set; }</string,></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>key</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L606"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IDictionary_String__Object__Keys">IDictionary&lt;String, Object&gt;.Keys</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">ICollection<string> IDictionary<string, object="">.Keys { get; }</string,></string></code></pre>
-</div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.ICollection`1.html" name="System.Collections.Generic.ICollection">ICollection</a>&lt;<a href="System.String.html" name="System.String">String</a>&gt;</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L606">View Source</a>
+      </span>
+  <h4 id="IDictionary_String__Object__Keys">IDictionary&lt;String, Object&gt;.Keys</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ICollection<string> IDictionary<string, object="">.Keys { get; }</string,></string></code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.ICollection&lt;System.String&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L614"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IDictionary_String__Object__Values">IDictionary&lt;String, Object&gt;.Values</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">ICollection<object> IDictionary<string, object="">.Values { get; }</string,></object></code></pre>
-</div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.ICollection`1.html" name="System.Collections.Generic.ICollection">ICollection</a>&lt;<a href="System.Object.html" name="System.Object">Object</a>&gt;</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h3 id="methods">Methods</h3>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L614">View Source</a>
+      </span>
+  <h4 id="IDictionary_String__Object__Values">IDictionary&lt;String, Object&gt;.Values</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ICollection<object> IDictionary<string, object="">.Values { get; }</string,></object></code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.ICollection&lt;System.Object&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="methods">Methods</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L683"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ICollection_KeyValuePair_String__Object___Add_KeyValuePair_String__Object__">ICollection&lt;KeyValuePair&lt;String, Object&gt;&gt;.Add(KeyValuePair&lt;String, Object&gt;)</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">void ICollection<><string, object="">>.Add(KeyValuePair<string, object=""> item)</string,></string,></code></pre>
-</div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.KeyValuePair`2.html" name="System.Collections.Generic.KeyValuePair">KeyValuePair</a>&lt;<a href="System.String.html" name="System.String">String</a>, <a href="System.Object.html" name="System.Object">Object</a>&gt;</td>
-      <td><em>item</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L683">View Source</a>
+      </span>
+  <h4 id="ICollection_KeyValuePair_String__Object___Add_KeyValuePair_String__Object__">ICollection&lt;KeyValuePair&lt;String, Object&gt;&gt;.Add(KeyValuePair&lt;String, Object&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ICollection<><string, object="">>.Add(KeyValuePair<string, object=""> item)</string,></string,></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.KeyValuePair&lt;System.String, System.Object&gt;</td>
+        <td><em>item</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L688"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ICollection_KeyValuePair_String__Object___Clear__">ICollection&lt;KeyValuePair&lt;String, Object&gt;&gt;.Clear()</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">void ICollection<><string, object="">>.Clear()</string,></code></pre>
-</div>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L688">View Source</a>
+      </span>
+  <h4 id="ICollection_KeyValuePair_String__Object___Clear__">ICollection&lt;KeyValuePair&lt;String, Object&gt;&gt;.Clear()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ICollection<><string, object="">>.Clear()</string,></code></pre>
+  </div>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L713"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ICollection_KeyValuePair_String__Object___Contains_KeyValuePair_String__Object__">ICollection&lt;KeyValuePair&lt;String, Object&gt;&gt;.Contains(KeyValuePair&lt;String, Object&gt;)</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">bool ICollection<><string, object="">>.Contains(KeyValuePair<string, object=""> item)</string,></string,></code></pre>
-</div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.KeyValuePair`2.html" name="System.Collections.Generic.KeyValuePair">KeyValuePair</a>&lt;<a href="System.String.html" name="System.String">String</a>, <a href="System.Object.html" name="System.Object">Object</a>&gt;</td>
-      <td><em>item</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L713">View Source</a>
+      </span>
+  <h4 id="ICollection_KeyValuePair_String__Object___Contains_KeyValuePair_String__Object__">ICollection&lt;KeyValuePair&lt;String, Object&gt;&gt;.Contains(KeyValuePair&lt;String, Object&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ICollection<><string, object="">>.Contains(KeyValuePair<string, object=""> item)</string,></string,></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.KeyValuePair&lt;System.String, System.Object&gt;</td>
+        <td><em>item</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L724"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ICollection_KeyValuePair_String__Object___CopyTo_KeyValuePair_String__Object_____Int32_">ICollection&lt;KeyValuePair&lt;String, Object&gt;&gt;.CopyTo(KeyValuePair&lt;String, Object&gt;[], Int32)</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">void ICollection<><string, object="">>.CopyTo(KeyValuePair<string, object="">[] array, int arrayIndex)</string,></string,></code></pre>
-</div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.KeyValuePair`2.html" name="System.Collections.Generic.KeyValuePair">KeyValuePair</a>&lt;<a href="System.String.html" name="System.String">String</a>, <a href="System.Object.html" name="System.Object">Object</a>&gt;[]</td>
-      <td><em>array</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td><em>arrayIndex</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L724">View Source</a>
+      </span>
+  <h4 id="ICollection_KeyValuePair_String__Object___CopyTo_KeyValuePair_String__Object_____Int32_">ICollection&lt;KeyValuePair&lt;String, Object&gt;&gt;.CopyTo(KeyValuePair&lt;String, Object&gt;[], Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ICollection<><string, object="">>.CopyTo(KeyValuePair<string, object="">[] array, int arrayIndex)</string,></string,></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.KeyValuePair&lt;System.String, System.Object&gt;[]</td>
+        <td><em>array</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>arrayIndex</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L739"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ICollection_KeyValuePair_String__Object___Remove_KeyValuePair_String__Object__">ICollection&lt;KeyValuePair&lt;String, Object&gt;&gt;.Remove(KeyValuePair&lt;String, Object&gt;)</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">bool ICollection<><string, object="">>.Remove(KeyValuePair<string, object=""> item)</string,></string,></code></pre>
-</div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.KeyValuePair`2.html" name="System.Collections.Generic.KeyValuePair">KeyValuePair</a>&lt;<a href="System.String.html" name="System.String">String</a>, <a href="System.Object.html" name="System.Object">Object</a>&gt;</td>
-      <td><em>item</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L739">View Source</a>
+      </span>
+  <h4 id="ICollection_KeyValuePair_String__Object___Remove_KeyValuePair_String__Object__">ICollection&lt;KeyValuePair&lt;String, Object&gt;&gt;.Remove(KeyValuePair&lt;String, Object&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ICollection<><string, object="">>.Remove(KeyValuePair<string, object=""> item)</string,></string,></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.KeyValuePair&lt;System.String, System.Object&gt;</td>
+        <td><em>item</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L641"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IDictionary_String__Object__Add_String__Object_">IDictionary&lt;String, Object&gt;.Add(String, Object)</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">void IDictionary<string, object="">.Add(string key, object value)</string,></code></pre>
-</div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>key</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a></td>
-      <td><em>value</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L641">View Source</a>
+      </span>
+  <h4 id="IDictionary_String__Object__Add_String__Object_">IDictionary&lt;String, Object&gt;.Add(String, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IDictionary<string, object="">.Add(string key, object value)</string,></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>key</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>value</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L646"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IDictionary_String__Object__ContainsKey_String_">IDictionary&lt;String, Object&gt;.ContainsKey(String)</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">bool IDictionary<string, object="">.ContainsKey(string key)</string,></code></pre>
-</div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>key</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L646">View Source</a>
+      </span>
+  <h4 id="IDictionary_String__Object__ContainsKey_String_">IDictionary&lt;String, Object&gt;.ContainsKey(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IDictionary<string, object="">.ContainsKey(string key)</string,></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>key</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L655"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IDictionary_String__Object__Remove_String_">IDictionary&lt;String, Object&gt;.Remove(String)</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">bool IDictionary<string, object="">.Remove(string key)</string,></code></pre>
-</div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>key</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L655">View Source</a>
+      </span>
+  <h4 id="IDictionary_String__Object__Remove_String_">IDictionary&lt;String, Object&gt;.Remove(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IDictionary<string, object="">.Remove(string key)</string,></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>key</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L662"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IDictionary_String__Object__TryGetValue_String__out_Object_">IDictionary&lt;String, Object&gt;.TryGetValue(String, out Object)</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">bool IDictionary<string, object="">.TryGetValue(string key, out object value)</string,></code></pre>
-</div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>key</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a></td>
-      <td><em>value</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L662">View Source</a>
+      </span>
+  <h4 id="IDictionary_String__Object__TryGetValue_String__out_Object_">IDictionary&lt;String, Object&gt;.TryGetValue(String, out Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IDictionary<string, object="">.TryGetValue(string key, out object value)</string,></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>key</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>value</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L747"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IEnumerable_KeyValuePair_String__Object___GetEnumerator__">IEnumerable&lt;KeyValuePair&lt;String, Object&gt;&gt;.GetEnumerator()</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">IEnumerator<><string, object="">> IEnumerable<><string, object="">>.GetEnumerator()</string,></string,></code></pre>
-</div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerator`1.html" name="System.Collections.Generic.IEnumerator">IEnumerator</a>&lt;<a href="System.Collections.Generic.KeyValuePair`2.html" name="System.Collections.Generic.KeyValuePair">KeyValuePair</a>&lt;<a href="System.String.html" name="System.String">String</a>, <a href="System.Object.html" name="System.Object">Object</a>&gt;&gt;</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L747">View Source</a>
+      </span>
+  <h4 id="IEnumerable_KeyValuePair_String__Object___GetEnumerator__">IEnumerable&lt;KeyValuePair&lt;String, Object&gt;&gt;.GetEnumerator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator<><string, object="">> IEnumerable<><string, object="">>.GetEnumerator()</string,></string,></code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;System.String, System.Object&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L753"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IEnumerable_GetEnumerator__">IEnumerable.GetEnumerator()</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">IEnumerator IEnumerable.GetEnumerator()</code></pre>
-</div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.IEnumerator.html" name="System.Collections.IEnumerator">IEnumerator</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L753">View Source</a>
+      </span>
+  <h4 id="IEnumerable_GetEnumerator__">IEnumerable.GetEnumerator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator IEnumerable.GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.IEnumerator.html" name="System.Collections.IEnumerator">IEnumerator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L283"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IDynamicMetaObjectProvider_GetMetaObject_Expression_">IDynamicMetaObjectProvider.GetMetaObject(Expression)</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">DynamicMetaObject IDynamicMetaObjectProvider.GetMetaObject(Expression parameter)</code></pre>
-</div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Expression</td>
-      <td><em>parameter</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Dynamic.DynamicMetaObject.html" name="System.Dynamic.DynamicMetaObject">DynamicMetaObject</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs/#L283">View Source</a>
+      </span>
+  <h4 id="IDynamicMetaObjectProvider_GetMetaObject_Expression_">IDynamicMetaObjectProvider.GetMetaObject(Expression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DynamicMetaObject IDynamicMetaObjectProvider.GetMetaObject(Expression parameter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Expression</td>
+        <td><em>parameter</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Dynamic.DynamicMetaObject.html" name="System.Dynamic.DynamicMetaObject">DynamicMetaObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

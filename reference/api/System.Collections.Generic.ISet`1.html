@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Interface ISet&lt;T&gt; | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Interface ISet&lt;T&gt; | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -55,6 +55,436 @@
       </div>
       <div class="article row grid-right"><div class="col-md-10">
         <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Runtime/src/System/Collections/Generic/ISet.cs/#L13" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="ISet_T_">Interface ISet&lt;T&gt;</h1>
+      <div class="markdown level0 summary"><p>Generic collection that guarantees the uniqueness of its elements, as defined
+by some comparer. It also supports basic set operations such as Union, Intersection,
+Complement and Exclusive Complement.</p>
+</div>
+      <div class="markdown level0 conceptual"></div>
+      <h6><strong>Namespace</strong>:System.Collections.Generic</h6>
+      <h6><strong>Assembly</strong>:System.Runtime.dll</h6>
+      <h5 id="ISet_T__syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public interface ISet<t> : ICollection<t>, IEnumerable<t>, IEnumerable</t></t></t></code></pre>
+      </div>
+      <h3 id="methods">Methods</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Runtime/src/System/Collections/Generic/ISet.cs/#L16">View Source</a>
+      </span>
+  <h4 id="Add_T_">Add(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Add(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><em>item</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Runtime/src/System/Collections/Generic/ISet.cs/#L25">View Source</a>
+      </span>
+  <h4 id="ExceptWith_IEnumerable_T__">ExceptWith(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ExceptWith(IEnumerable<t> other)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><em>other</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Runtime/src/System/Collections/Generic/ISet.cs/#L22">View Source</a>
+      </span>
+  <h4 id="IntersectWith_IEnumerable_T__">IntersectWith(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IntersectWith(IEnumerable<t> other)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><em>other</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Runtime/src/System/Collections/Generic/ISet.cs/#L40">View Source</a>
+      </span>
+  <h4 id="IsProperSubsetOf_IEnumerable_T__">IsProperSubsetOf(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsProperSubsetOf(IEnumerable<t> other)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><em>other</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Runtime/src/System/Collections/Generic/ISet.cs/#L37">View Source</a>
+      </span>
+  <h4 id="IsProperSupersetOf_IEnumerable_T__">IsProperSupersetOf(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsProperSupersetOf(IEnumerable<t> other)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><em>other</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Runtime/src/System/Collections/Generic/ISet.cs/#L31">View Source</a>
+      </span>
+  <h4 id="IsSubsetOf_IEnumerable_T__">IsSubsetOf(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsSubsetOf(IEnumerable<t> other)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><em>other</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Runtime/src/System/Collections/Generic/ISet.cs/#L34">View Source</a>
+      </span>
+  <h4 id="IsSupersetOf_IEnumerable_T__">IsSupersetOf(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsSupersetOf(IEnumerable<t> other)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><em>other</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Runtime/src/System/Collections/Generic/ISet.cs/#L43">View Source</a>
+      </span>
+  <h4 id="Overlaps_IEnumerable_T__">Overlaps(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Overlaps(IEnumerable<t> other)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><em>other</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Runtime/src/System/Collections/Generic/ISet.cs/#L46">View Source</a>
+      </span>
+  <h4 id="SetEquals_IEnumerable_T__">SetEquals(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool SetEquals(IEnumerable<t> other)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><em>other</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Runtime/src/System/Collections/Generic/ISet.cs/#L28">View Source</a>
+      </span>
+  <h4 id="SymmetricExceptWith_IEnumerable_T__">SymmetricExceptWith(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SymmetricExceptWith(IEnumerable<t> other)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><em>other</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Runtime/src/System/Collections/Generic/ISet.cs/#L19">View Source</a>
+      </span>
+  <h4 id="UnionWith_IEnumerable_T__">UnionWith(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UnionWith(IEnumerable<t> other)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><em>other</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

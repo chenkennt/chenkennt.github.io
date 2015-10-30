@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class ExpressionVisitor | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class ExpressionVisitor | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -60,7 +60,8 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="ExpressionVisitor">Class ExpressionVisitor</h1>
-      <div class="markdown level0 summary"><p>Represents a visitor or rewriter for expression trees.</p><br></div>
+      <div class="markdown level0 summary"><p>Represents a visitor or rewriter for expression trees.</p>
+</div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
         <h5>Inheritance</h5>
@@ -73,1874 +74,1883 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public abstract class ExpressionVisitor</code></pre>
       </div>
-      <h5 id="ExpressionVisitor_remarks">remarks</h5>
-      <div class="markdown level0 remarks"><p>This class is designed to be inherited to create more specialized<br>classes whose functionality requires traversing, examining or copying</br>an expression tree.</p><br></div>
+      <h5 id="ExpressionVisitor_remarks"><strong>Remarks<strong></strong></strong></h5>
+      <div class="markdown level0 remarks"><p>This class is designed to be inherited to create more specialized
+classes whose functionality requires traversing, examining or copying
+an expression tree.</p>
+</div>
       <h3 id="constructors">Constructors</h3>
-      
-    <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L26"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-  </span>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L26">View Source</a>
+      </span>
   <h4 id="ExpressionVisitor__">ExpressionVisitor()</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of <a href="System.Linq.Expressions.ExpressionVisitor.html">System.Linq.Expressions.ExpressionVisitor</a>.</p><br></div>
-  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of <a href="System.Linq.Expressions.ExpressionVisitor.html">System.Linq.Expressions.ExpressionVisitor</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected ExpressionVisitor()</code></pre>
   </div>
-<h3 id="methods">Methods</h3>
+      <h3 id="methods">Methods</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L51"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Visit_ReadOnlyCollection_Expression__">Visit(ReadOnlyCollection&lt;Expression&gt;)</h4>
-<div class="markdown level1 summary"><p>Dispatches the list of expressions to one of the more specialized visit methods in this class.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public ReadOnlyCollection<expression> Visit(ReadOnlyCollection<expression> nodes)</expression></expression></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L51">View Source</a>
+      </span>
+  <h4 id="Visit_ReadOnlyCollection_Expression__">Visit(ReadOnlyCollection&lt;Expression&gt;)</h4>
+  <div class="markdown level1 summary"><p>Dispatches the list of expressions to one of the more specialized visit methods in this class.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.ObjectModel.ReadOnlyCollection`1.html" name="System.Collections.ObjectModel.ReadOnlyCollection">ReadOnlyCollection</a>&lt;<a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a>&gt;</td>
-      <td><em>nodes</em></td>
-      <td><p>The expressions to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReadOnlyCollection<expression> Visit(ReadOnlyCollection<expression> nodes)</expression></expression></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.Expression&gt;</td>
+        <td><em>nodes</em></td>
+        <td><p>The expressions to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.ObjectModel.ReadOnlyCollection`1.html" name="System.Collections.ObjectModel.ReadOnlyCollection">ReadOnlyCollection</a>&lt;<a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a>&gt;</td>
-      <td><p>The modified expression list, if any of the elements were modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.Expression&gt;</td>
+        <td><p>The modified expression list, if any of the elements were modified;
 otherwise, returns the original expression list.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L36"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Visit_Expression_">Visit(Expression)</h4>
-<div class="markdown level1 summary"><p>Dispatches the expression to one of the more specialized visit methods in this class.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public virtual Expression Visit(Expression node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L36">View Source</a>
+      </span>
+  <h4 id="Visit_Expression_">Visit(Expression)</h4>
+  <div class="markdown level1 summary"><p>Dispatches the expression to one of the more specialized visit methods in this class.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Expression Visit(Expression node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L93"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Visit_T__ReadOnlyCollection_T___Func_T__T__">Visit&lt;T&gt;(ReadOnlyCollection&lt;T&gt;, Func&lt;T, T&gt;)</h4>
-<div class="markdown level1 summary"><p>Visits all nodes in the collection using a specified element visitor.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static ReadOnlyCollection<t> Visit<t>(ReadOnlyCollection<t> nodes, Func<t, t=""> elementVisitor)</t,></t></t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L93">View Source</a>
+      </span>
+  <h4 id="Visit_T__ReadOnlyCollection_T___Func_T__T__">Visit&lt;T&gt;(ReadOnlyCollection&lt;T&gt;, Func&lt;T, T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Visits all nodes in the collection using a specified element visitor.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.ObjectModel.ReadOnlyCollection`1.html" name="System.Collections.ObjectModel.ReadOnlyCollection">ReadOnlyCollection</a>&lt;T&gt;</td>
-      <td><em>nodes</em></td>
-      <td><p>The nodes to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ReadOnlyCollection<t> Visit<t>(ReadOnlyCollection<t> nodes, Func<t, t=""> elementVisitor)</t,></t></t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.ObjectModel.ReadOnlyCollection&lt;T&gt;</td>
+        <td><em>nodes</em></td>
+        <td><p>The nodes to visit.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;T, T&gt;</td>
-      <td><em>elementVisitor</em></td>
-      <td><p>A delegate that visits a single element,
+      </tr>
+      <tr>
+        <td>System.Func&lt;T, T&gt;</td>
+        <td><em>elementVisitor</em></td>
+        <td><p>A delegate that visits a single element,
 optionally replacing it with a new element.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.ObjectModel.ReadOnlyCollection`1.html" name="System.Collections.ObjectModel.ReadOnlyCollection">ReadOnlyCollection</a>&lt;T&gt;</td>
-      <td><p>The modified node list, if any of the elements were modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.ObjectModel.ReadOnlyCollection&lt;T&gt;</td>
+        <td><p>The modified node list, if any of the elements were modified;
 otherwise, returns the original node list.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L129"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitAndConvert_T__T__String_">VisitAndConvert&lt;T&gt;(T, String)</h4>
-<div class="markdown level1 summary"><p>Visits an expression, casting the result back to the original expression type.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public T VisitAndConvert<t>(T node, string callerName)where T : Expression</t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L129">View Source</a>
+      </span>
+  <h4 id="VisitAndConvert_T__T__String_">VisitAndConvert&lt;T&gt;(T, String)</h4>
+  <div class="markdown level1 summary"><p>Visits an expression, casting the result back to the original expression type.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T VisitAndConvert<t>(T node, string callerName)where T : Expression</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>callerName</em></td>
-      <td><p>The name of the calling method; used to report to report a better error message.</p>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>callerName</em></td>
+        <td><p>The name of the calling method; used to report to report a better error message.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L152"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitAndConvert_T__ReadOnlyCollection_T___String_">VisitAndConvert&lt;T&gt;(ReadOnlyCollection&lt;T&gt;, String)</h4>
-<div class="markdown level1 summary"><p>Visits an expression, casting the result back to the original expression type.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public ReadOnlyCollection<t> VisitAndConvert<t>(ReadOnlyCollection<t> nodes, string callerName)where T : Expression</t></t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L152">View Source</a>
+      </span>
+  <h4 id="VisitAndConvert_T__ReadOnlyCollection_T___String_">VisitAndConvert&lt;T&gt;(ReadOnlyCollection&lt;T&gt;, String)</h4>
+  <div class="markdown level1 summary"><p>Visits an expression, casting the result back to the original expression type.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.ObjectModel.ReadOnlyCollection`1.html" name="System.Collections.ObjectModel.ReadOnlyCollection">ReadOnlyCollection</a>&lt;T&gt;</td>
-      <td><em>nodes</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReadOnlyCollection<t> VisitAndConvert<t>(ReadOnlyCollection<t> nodes, string callerName)where T : Expression</t></t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.ObjectModel.ReadOnlyCollection&lt;T&gt;</td>
+        <td><em>nodes</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>callerName</em></td>
-      <td><p>The name of the calling method; used to report to report a better error message.</p>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>callerName</em></td>
+        <td><p>The name of the calling method; used to report to report a better error message.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.ObjectModel.ReadOnlyCollection`1.html" name="System.Collections.ObjectModel.ReadOnlyCollection">ReadOnlyCollection</a>&lt;T&gt;</td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.ObjectModel.ReadOnlyCollection&lt;T&gt;</td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L190"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitBinary_BinaryExpression_">VisitBinary(BinaryExpression)</h4>
-<div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.BinaryExpression.html">System.Linq.Expressions.BinaryExpression</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual Expression VisitBinary(BinaryExpression node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L190">View Source</a>
+      </span>
+  <h4 id="VisitBinary_BinaryExpression_">VisitBinary(BinaryExpression)</h4>
+  <div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.BinaryExpression.html">System.Linq.Expressions.BinaryExpression</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.BinaryExpression.html" name="System.Linq.Expressions.BinaryExpression">BinaryExpression</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Expression VisitBinary(BinaryExpression node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.BinaryExpression.html" name="System.Linq.Expressions.BinaryExpression">BinaryExpression</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L209"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitBlock_BlockExpression_">VisitBlock(BlockExpression)</h4>
-<div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.BlockExpression.html">System.Linq.Expressions.BlockExpression</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual Expression VisitBlock(BlockExpression node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L209">View Source</a>
+      </span>
+  <h4 id="VisitBlock_BlockExpression_">VisitBlock(BlockExpression)</h4>
+  <div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.BlockExpression.html">System.Linq.Expressions.BlockExpression</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.BlockExpression.html" name="System.Linq.Expressions.BlockExpression">BlockExpression</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Expression VisitBlock(BlockExpression node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.BlockExpression.html" name="System.Linq.Expressions.BlockExpression">BlockExpression</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L521"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitCatchBlock_CatchBlock_">VisitCatchBlock(CatchBlock)</h4>
-<div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.CatchBlock.html">System.Linq.Expressions.CatchBlock</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual CatchBlock VisitCatchBlock(CatchBlock node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L521">View Source</a>
+      </span>
+  <h4 id="VisitCatchBlock_CatchBlock_">VisitCatchBlock(CatchBlock)</h4>
+  <div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.CatchBlock.html">System.Linq.Expressions.CatchBlock</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.CatchBlock.html" name="System.Linq.Expressions.CatchBlock">CatchBlock</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual CatchBlock VisitCatchBlock(CatchBlock node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.CatchBlock.html" name="System.Linq.Expressions.CatchBlock">CatchBlock</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.CatchBlock.html" name="System.Linq.Expressions.CatchBlock">CatchBlock</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.CatchBlock.html" name="System.Linq.Expressions.CatchBlock">CatchBlock</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L253"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitConditional_ConditionalExpression_">VisitConditional(ConditionalExpression)</h4>
-<div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.ConditionalExpression.html">System.Linq.Expressions.ConditionalExpression</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual Expression VisitConditional(ConditionalExpression node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L253">View Source</a>
+      </span>
+  <h4 id="VisitConditional_ConditionalExpression_">VisitConditional(ConditionalExpression)</h4>
+  <div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.ConditionalExpression.html">System.Linq.Expressions.ConditionalExpression</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.ConditionalExpression.html" name="System.Linq.Expressions.ConditionalExpression">ConditionalExpression</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Expression VisitConditional(ConditionalExpression node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.ConditionalExpression.html" name="System.Linq.Expressions.ConditionalExpression">ConditionalExpression</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L264"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitConstant_ConstantExpression_">VisitConstant(ConstantExpression)</h4>
-<div class="markdown level1 summary"><p>Visits the <a href="System.Linq.Expressions.ConstantExpression.html">System.Linq.Expressions.ConstantExpression</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual Expression VisitConstant(ConstantExpression node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L264">View Source</a>
+      </span>
+  <h4 id="VisitConstant_ConstantExpression_">VisitConstant(ConstantExpression)</h4>
+  <div class="markdown level1 summary"><p>Visits the <a href="System.Linq.Expressions.ConstantExpression.html">System.Linq.Expressions.ConstantExpression</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.ConstantExpression.html" name="System.Linq.Expressions.ConstantExpression">ConstantExpression</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Expression VisitConstant(ConstantExpression node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.ConstantExpression.html" name="System.Linq.Expressions.ConstantExpression">ConstantExpression</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L275"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitDebugInfo_DebugInfoExpression_">VisitDebugInfo(DebugInfoExpression)</h4>
-<div class="markdown level1 summary"><p>Visits the <a href="System.Linq.Expressions.DebugInfoExpression.html">System.Linq.Expressions.DebugInfoExpression</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual Expression VisitDebugInfo(DebugInfoExpression node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L275">View Source</a>
+      </span>
+  <h4 id="VisitDebugInfo_DebugInfoExpression_">VisitDebugInfo(DebugInfoExpression)</h4>
+  <div class="markdown level1 summary"><p>Visits the <a href="System.Linq.Expressions.DebugInfoExpression.html">System.Linq.Expressions.DebugInfoExpression</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.DebugInfoExpression.html" name="System.Linq.Expressions.DebugInfoExpression">DebugInfoExpression</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Expression VisitDebugInfo(DebugInfoExpression node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.DebugInfoExpression.html" name="System.Linq.Expressions.DebugInfoExpression">DebugInfoExpression</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L286"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitDefault_DefaultExpression_">VisitDefault(DefaultExpression)</h4>
-<div class="markdown level1 summary"><p>Visits the <a href="System.Linq.Expressions.DefaultExpression.html">System.Linq.Expressions.DefaultExpression</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual Expression VisitDefault(DefaultExpression node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L286">View Source</a>
+      </span>
+  <h4 id="VisitDefault_DefaultExpression_">VisitDefault(DefaultExpression)</h4>
+  <div class="markdown level1 summary"><p>Visits the <a href="System.Linq.Expressions.DefaultExpression.html">System.Linq.Expressions.DefaultExpression</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.DefaultExpression.html" name="System.Linq.Expressions.DefaultExpression">DefaultExpression</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Expression VisitDefault(DefaultExpression node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.DefaultExpression.html" name="System.Linq.Expressions.DefaultExpression">DefaultExpression</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L598"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitElementInit_ElementInit_">VisitElementInit(ElementInit)</h4>
-<div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.ElementInit.html">System.Linq.Expressions.ElementInit</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual ElementInit VisitElementInit(ElementInit node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L598">View Source</a>
+      </span>
+  <h4 id="VisitElementInit_ElementInit_">VisitElementInit(ElementInit)</h4>
+  <div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.ElementInit.html">System.Linq.Expressions.ElementInit</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.ElementInit.html" name="System.Linq.Expressions.ElementInit">ElementInit</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ElementInit VisitElementInit(ElementInit node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.ElementInit.html" name="System.Linq.Expressions.ElementInit">ElementInit</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.ElementInit.html" name="System.Linq.Expressions.ElementInit">ElementInit</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.ElementInit.html" name="System.Linq.Expressions.ElementInit">ElementInit</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L303"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitExtension_Expression_">VisitExtension(Expression)</h4>
-<div class="markdown level1 summary"><p>Visits the children of the extension expression.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This can be overridden to visit or rewrite specific extension nodes.<br>If it is not overridden, this method will call <see cref="M:System.Linq.Expressions.Expression.VisitChildren(System.Linq.Expressions.ExpressionVisitor)"></see>,</br>which gives the node a chance to walk its children. By default,</p><br><p><see cref="M:System.Linq.Expressions.Expression.VisitChildren(System.Linq.Expressions.ExpressionVisitor)"></see> will try to reduce the node.</p></br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual Expression VisitExtension(Expression node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L303">View Source</a>
+      </span>
+  <h4 id="VisitExtension_Expression_">VisitExtension(Expression)</h4>
+  <div class="markdown level1 summary"><p>Visits the children of the extension expression.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="VisitExtension_Expression__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This can be overridden to visit or rewrite specific extension nodes.
+If it is not overridden, this method will call <see cref="M:System.Linq.Expressions.Expression.VisitChildren(System.Linq.Expressions.ExpressionVisitor)"></see>,
+which gives the node a chance to walk its children. By default,</p>
+<p><see cref="M:System.Linq.Expressions.Expression.VisitChildren(System.Linq.Expressions.ExpressionVisitor)"></see> will try to reduce the node.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Expression VisitExtension(Expression node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L314"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitGoto_GotoExpression_">VisitGoto(GotoExpression)</h4>
-<div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.GotoExpression.html">System.Linq.Expressions.GotoExpression</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual Expression VisitGoto(GotoExpression node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L314">View Source</a>
+      </span>
+  <h4 id="VisitGoto_GotoExpression_">VisitGoto(GotoExpression)</h4>
+  <div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.GotoExpression.html">System.Linq.Expressions.GotoExpression</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.GotoExpression.html" name="System.Linq.Expressions.GotoExpression">GotoExpression</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Expression VisitGoto(GotoExpression node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.GotoExpression.html" name="System.Linq.Expressions.GotoExpression">GotoExpression</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L411"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitIndex_IndexExpression_">VisitIndex(IndexExpression)</h4>
-<div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.IndexExpression.html">System.Linq.Expressions.IndexExpression</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual Expression VisitIndex(IndexExpression node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L411">View Source</a>
+      </span>
+  <h4 id="VisitIndex_IndexExpression_">VisitIndex(IndexExpression)</h4>
+  <div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.IndexExpression.html">System.Linq.Expressions.IndexExpression</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.IndexExpression.html" name="System.Linq.Expressions.IndexExpression">IndexExpression</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Expression VisitIndex(IndexExpression node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.IndexExpression.html" name="System.Linq.Expressions.IndexExpression">IndexExpression</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L325"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitInvocation_InvocationExpression_">VisitInvocation(InvocationExpression)</h4>
-<div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.InvocationExpression.html">System.Linq.Expressions.InvocationExpression</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual Expression VisitInvocation(InvocationExpression node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L325">View Source</a>
+      </span>
+  <h4 id="VisitInvocation_InvocationExpression_">VisitInvocation(InvocationExpression)</h4>
+  <div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.InvocationExpression.html">System.Linq.Expressions.InvocationExpression</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.InvocationExpression.html" name="System.Linq.Expressions.InvocationExpression">InvocationExpression</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Expression VisitInvocation(InvocationExpression node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.InvocationExpression.html" name="System.Linq.Expressions.InvocationExpression">InvocationExpression</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L354"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitLabel_LabelExpression_">VisitLabel(LabelExpression)</h4>
-<div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.LabelExpression.html">System.Linq.Expressions.LabelExpression</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual Expression VisitLabel(LabelExpression node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L354">View Source</a>
+      </span>
+  <h4 id="VisitLabel_LabelExpression_">VisitLabel(LabelExpression)</h4>
+  <div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.LabelExpression.html">System.Linq.Expressions.LabelExpression</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.LabelExpression.html" name="System.Linq.Expressions.LabelExpression">LabelExpression</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Expression VisitLabel(LabelExpression node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.LabelExpression.html" name="System.Linq.Expressions.LabelExpression">LabelExpression</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L343"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitLabelTarget_LabelTarget_">VisitLabelTarget(LabelTarget)</h4>
-<div class="markdown level1 summary"><p>Visits the <a href="System.Linq.Expressions.LabelTarget.html">System.Linq.Expressions.LabelTarget</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual LabelTarget VisitLabelTarget(LabelTarget node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L343">View Source</a>
+      </span>
+  <h4 id="VisitLabelTarget_LabelTarget_">VisitLabelTarget(LabelTarget)</h4>
+  <div class="markdown level1 summary"><p>Visits the <a href="System.Linq.Expressions.LabelTarget.html">System.Linq.Expressions.LabelTarget</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.LabelTarget.html" name="System.Linq.Expressions.LabelTarget">LabelTarget</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual LabelTarget VisitLabelTarget(LabelTarget node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.LabelTarget.html" name="System.Linq.Expressions.LabelTarget">LabelTarget</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.LabelTarget.html" name="System.Linq.Expressions.LabelTarget">LabelTarget</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.LabelTarget.html" name="System.Linq.Expressions.LabelTarget">LabelTarget</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L378"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitLambda_LambdaExpression_">VisitLambda(LambdaExpression)</h4>
-<div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.LambdaExpression.html">System.Linq.Expressions.LambdaExpression</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual Expression VisitLambda(LambdaExpression node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L378">View Source</a>
+      </span>
+  <h4 id="VisitLambda_LambdaExpression_">VisitLambda(LambdaExpression)</h4>
+  <div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.LambdaExpression.html">System.Linq.Expressions.LambdaExpression</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.LambdaExpression.html" name="System.Linq.Expressions.LambdaExpression">LambdaExpression</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Expression VisitLambda(LambdaExpression node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.LambdaExpression.html" name="System.Linq.Expressions.LambdaExpression">LambdaExpression</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L366"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitLambda_T__Expression_T__">VisitLambda&lt;T&gt;(Expression&lt;T&gt;)</h4>
-<div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.Expression`1.html">System.Linq.Expressions.Expression`1</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual Expression VisitLambda<t>(Expression<t> node)</t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L366">View Source</a>
+      </span>
+  <h4 id="VisitLambda_T__Expression_T__">VisitLambda&lt;T&gt;(Expression&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.Expression`1.html">System.Linq.Expressions.Expression`1</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression`1.html" name="System.Linq.Expressions.Expression">Expression</a>&lt;T&gt;</td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Expression VisitLambda<t>(Expression<t> node)</t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Linq.Expressions.Expression&lt;T&gt;</td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L584"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitListInit_ListInitExpression_">VisitListInit(ListInitExpression)</h4>
-<div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.ListInitExpression.html">System.Linq.Expressions.ListInitExpression</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual Expression VisitListInit(ListInitExpression node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L584">View Source</a>
+      </span>
+  <h4 id="VisitListInit_ListInitExpression_">VisitListInit(ListInitExpression)</h4>
+  <div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.ListInitExpression.html">System.Linq.Expressions.ListInitExpression</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.ListInitExpression.html" name="System.Linq.Expressions.ListInitExpression">ListInitExpression</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Expression VisitListInit(ListInitExpression node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.ListInitExpression.html" name="System.Linq.Expressions.ListInitExpression">ListInitExpression</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L389"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitLoop_LoopExpression_">VisitLoop(LoopExpression)</h4>
-<div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.LoopExpression.html">System.Linq.Expressions.LoopExpression</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual Expression VisitLoop(LoopExpression node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L389">View Source</a>
+      </span>
+  <h4 id="VisitLoop_LoopExpression_">VisitLoop(LoopExpression)</h4>
+  <div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.LoopExpression.html">System.Linq.Expressions.LoopExpression</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.LoopExpression.html" name="System.Linq.Expressions.LoopExpression">LoopExpression</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Expression VisitLoop(LoopExpression node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.LoopExpression.html" name="System.Linq.Expressions.LoopExpression">LoopExpression</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L400"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitMember_MemberExpression_">VisitMember(MemberExpression)</h4>
-<div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.MemberExpression.html">System.Linq.Expressions.MemberExpression</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual Expression VisitMember(MemberExpression node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L400">View Source</a>
+      </span>
+  <h4 id="VisitMember_MemberExpression_">VisitMember(MemberExpression)</h4>
+  <div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.MemberExpression.html">System.Linq.Expressions.MemberExpression</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.MemberExpression.html" name="System.Linq.Expressions.MemberExpression">MemberExpression</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Expression VisitMember(MemberExpression node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.MemberExpression.html" name="System.Linq.Expressions.MemberExpression">MemberExpression</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L630"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitMemberAssignment_MemberAssignment_">VisitMemberAssignment(MemberAssignment)</h4>
-<div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.MemberAssignment.html">System.Linq.Expressions.MemberAssignment</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual MemberAssignment VisitMemberAssignment(MemberAssignment node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L630">View Source</a>
+      </span>
+  <h4 id="VisitMemberAssignment_MemberAssignment_">VisitMemberAssignment(MemberAssignment)</h4>
+  <div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.MemberAssignment.html">System.Linq.Expressions.MemberAssignment</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.MemberAssignment.html" name="System.Linq.Expressions.MemberAssignment">MemberAssignment</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual MemberAssignment VisitMemberAssignment(MemberAssignment node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.MemberAssignment.html" name="System.Linq.Expressions.MemberAssignment">MemberAssignment</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.MemberAssignment.html" name="System.Linq.Expressions.MemberAssignment">MemberAssignment</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.MemberAssignment.html" name="System.Linq.Expressions.MemberAssignment">MemberAssignment</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L609"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitMemberBinding_MemberBinding_">VisitMemberBinding(MemberBinding)</h4>
-<div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.MemberBinding.html">System.Linq.Expressions.MemberBinding</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual MemberBinding VisitMemberBinding(MemberBinding node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L609">View Source</a>
+      </span>
+  <h4 id="VisitMemberBinding_MemberBinding_">VisitMemberBinding(MemberBinding)</h4>
+  <div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.MemberBinding.html">System.Linq.Expressions.MemberBinding</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.MemberBinding.html" name="System.Linq.Expressions.MemberBinding">MemberBinding</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual MemberBinding VisitMemberBinding(MemberBinding node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.MemberBinding.html" name="System.Linq.Expressions.MemberBinding">MemberBinding</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.MemberBinding.html" name="System.Linq.Expressions.MemberBinding">MemberBinding</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.MemberBinding.html" name="System.Linq.Expressions.MemberBinding">MemberBinding</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L570"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitMemberInit_MemberInitExpression_">VisitMemberInit(MemberInitExpression)</h4>
-<div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.MemberInitExpression.html">System.Linq.Expressions.MemberInitExpression</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual Expression VisitMemberInit(MemberInitExpression node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L570">View Source</a>
+      </span>
+  <h4 id="VisitMemberInit_MemberInitExpression_">VisitMemberInit(MemberInitExpression)</h4>
+  <div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.MemberInitExpression.html">System.Linq.Expressions.MemberInitExpression</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.MemberInitExpression.html" name="System.Linq.Expressions.MemberInitExpression">MemberInitExpression</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Expression VisitMemberInit(MemberInitExpression node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.MemberInitExpression.html" name="System.Linq.Expressions.MemberInitExpression">MemberInitExpression</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L652"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitMemberListBinding_MemberListBinding_">VisitMemberListBinding(MemberListBinding)</h4>
-<div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.MemberListBinding.html">System.Linq.Expressions.MemberListBinding</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual MemberListBinding VisitMemberListBinding(MemberListBinding node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L652">View Source</a>
+      </span>
+  <h4 id="VisitMemberListBinding_MemberListBinding_">VisitMemberListBinding(MemberListBinding)</h4>
+  <div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.MemberListBinding.html">System.Linq.Expressions.MemberListBinding</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.MemberListBinding.html" name="System.Linq.Expressions.MemberListBinding">MemberListBinding</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual MemberListBinding VisitMemberListBinding(MemberListBinding node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.MemberListBinding.html" name="System.Linq.Expressions.MemberListBinding">MemberListBinding</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.MemberListBinding.html" name="System.Linq.Expressions.MemberListBinding">MemberListBinding</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.MemberListBinding.html" name="System.Linq.Expressions.MemberListBinding">MemberListBinding</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L641"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitMemberMemberBinding_MemberMemberBinding_">VisitMemberMemberBinding(MemberMemberBinding)</h4>
-<div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.MemberMemberBinding.html">System.Linq.Expressions.MemberMemberBinding</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual MemberMemberBinding VisitMemberMemberBinding(MemberMemberBinding node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L641">View Source</a>
+      </span>
+  <h4 id="VisitMemberMemberBinding_MemberMemberBinding_">VisitMemberMemberBinding(MemberMemberBinding)</h4>
+  <div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.MemberMemberBinding.html">System.Linq.Expressions.MemberMemberBinding</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.MemberMemberBinding.html" name="System.Linq.Expressions.MemberMemberBinding">MemberMemberBinding</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual MemberMemberBinding VisitMemberMemberBinding(MemberMemberBinding node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.MemberMemberBinding.html" name="System.Linq.Expressions.MemberMemberBinding">MemberMemberBinding</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.MemberMemberBinding.html" name="System.Linq.Expressions.MemberMemberBinding">MemberMemberBinding</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.MemberMemberBinding.html" name="System.Linq.Expressions.MemberMemberBinding">MemberMemberBinding</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L429"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitMethodCall_MethodCallExpression_">VisitMethodCall(MethodCallExpression)</h4>
-<div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.MethodCallExpression.html">System.Linq.Expressions.MethodCallExpression</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual Expression VisitMethodCall(MethodCallExpression node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L429">View Source</a>
+      </span>
+  <h4 id="VisitMethodCall_MethodCallExpression_">VisitMethodCall(MethodCallExpression)</h4>
+  <div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.MethodCallExpression.html">System.Linq.Expressions.MethodCallExpression</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.MethodCallExpression.html" name="System.Linq.Expressions.MethodCallExpression">MethodCallExpression</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Expression VisitMethodCall(MethodCallExpression node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.MethodCallExpression.html" name="System.Linq.Expressions.MethodCallExpression">MethodCallExpression</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L458"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitNew_NewExpression_">VisitNew(NewExpression)</h4>
-<div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.NewExpression.html">System.Linq.Expressions.NewExpression</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual Expression VisitNew(NewExpression node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L458">View Source</a>
+      </span>
+  <h4 id="VisitNew_NewExpression_">VisitNew(NewExpression)</h4>
+  <div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.NewExpression.html">System.Linq.Expressions.NewExpression</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.NewExpression.html" name="System.Linq.Expressions.NewExpression">NewExpression</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Expression VisitNew(NewExpression node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.NewExpression.html" name="System.Linq.Expressions.NewExpression">NewExpression</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L447"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitNewArray_NewArrayExpression_">VisitNewArray(NewArrayExpression)</h4>
-<div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.NewArrayExpression.html">System.Linq.Expressions.NewArrayExpression</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual Expression VisitNewArray(NewArrayExpression node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L447">View Source</a>
+      </span>
+  <h4 id="VisitNewArray_NewArrayExpression_">VisitNewArray(NewArrayExpression)</h4>
+  <div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.NewArrayExpression.html">System.Linq.Expressions.NewArrayExpression</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.NewArrayExpression.html" name="System.Linq.Expressions.NewArrayExpression">NewArrayExpression</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Expression VisitNewArray(NewArrayExpression node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.NewArrayExpression.html" name="System.Linq.Expressions.NewArrayExpression">NewArrayExpression</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L470"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitParameter_ParameterExpression_">VisitParameter(ParameterExpression)</h4>
-<div class="markdown level1 summary"><p>Visits the <a href="System.Linq.Expressions.ParameterExpression.html">System.Linq.Expressions.ParameterExpression</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual Expression VisitParameter(ParameterExpression node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L470">View Source</a>
+      </span>
+  <h4 id="VisitParameter_ParameterExpression_">VisitParameter(ParameterExpression)</h4>
+  <div class="markdown level1 summary"><p>Visits the <a href="System.Linq.Expressions.ParameterExpression.html">System.Linq.Expressions.ParameterExpression</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.ParameterExpression.html" name="System.Linq.Expressions.ParameterExpression">ParameterExpression</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Expression VisitParameter(ParameterExpression node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.ParameterExpression.html" name="System.Linq.Expressions.ParameterExpression">ParameterExpression</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L481"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitRuntimeVariables_RuntimeVariablesExpression_">VisitRuntimeVariables(RuntimeVariablesExpression)</h4>
-<div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.RuntimeVariablesExpression.html">System.Linq.Expressions.RuntimeVariablesExpression</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual Expression VisitRuntimeVariables(RuntimeVariablesExpression node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L481">View Source</a>
+      </span>
+  <h4 id="VisitRuntimeVariables_RuntimeVariablesExpression_">VisitRuntimeVariables(RuntimeVariablesExpression)</h4>
+  <div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.RuntimeVariablesExpression.html">System.Linq.Expressions.RuntimeVariablesExpression</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.RuntimeVariablesExpression.html" name="System.Linq.Expressions.RuntimeVariablesExpression">RuntimeVariablesExpression</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Expression VisitRuntimeVariables(RuntimeVariablesExpression node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.RuntimeVariablesExpression.html" name="System.Linq.Expressions.RuntimeVariablesExpression">RuntimeVariablesExpression</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L503"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitSwitch_SwitchExpression_">VisitSwitch(SwitchExpression)</h4>
-<div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.SwitchExpression.html">System.Linq.Expressions.SwitchExpression</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual Expression VisitSwitch(SwitchExpression node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L503">View Source</a>
+      </span>
+  <h4 id="VisitSwitch_SwitchExpression_">VisitSwitch(SwitchExpression)</h4>
+  <div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.SwitchExpression.html">System.Linq.Expressions.SwitchExpression</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.SwitchExpression.html" name="System.Linq.Expressions.SwitchExpression">SwitchExpression</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Expression VisitSwitch(SwitchExpression node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.SwitchExpression.html" name="System.Linq.Expressions.SwitchExpression">SwitchExpression</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L492"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitSwitchCase_SwitchCase_">VisitSwitchCase(SwitchCase)</h4>
-<div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.SwitchCase.html">System.Linq.Expressions.SwitchCase</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual SwitchCase VisitSwitchCase(SwitchCase node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L492">View Source</a>
+      </span>
+  <h4 id="VisitSwitchCase_SwitchCase_">VisitSwitchCase(SwitchCase)</h4>
+  <div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.SwitchCase.html">System.Linq.Expressions.SwitchCase</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.SwitchCase.html" name="System.Linq.Expressions.SwitchCase">SwitchCase</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual SwitchCase VisitSwitchCase(SwitchCase node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.SwitchCase.html" name="System.Linq.Expressions.SwitchCase">SwitchCase</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.SwitchCase.html" name="System.Linq.Expressions.SwitchCase">SwitchCase</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.SwitchCase.html" name="System.Linq.Expressions.SwitchCase">SwitchCase</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L532"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitTry_TryExpression_">VisitTry(TryExpression)</h4>
-<div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.TryExpression.html">System.Linq.Expressions.TryExpression</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual Expression VisitTry(TryExpression node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L532">View Source</a>
+      </span>
+  <h4 id="VisitTry_TryExpression_">VisitTry(TryExpression)</h4>
+  <div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.TryExpression.html">System.Linq.Expressions.TryExpression</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.TryExpression.html" name="System.Linq.Expressions.TryExpression">TryExpression</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Expression VisitTry(TryExpression node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.TryExpression.html" name="System.Linq.Expressions.TryExpression">TryExpression</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L548"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitTypeBinary_TypeBinaryExpression_">VisitTypeBinary(TypeBinaryExpression)</h4>
-<div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.TypeBinaryExpression.html">System.Linq.Expressions.TypeBinaryExpression</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual Expression VisitTypeBinary(TypeBinaryExpression node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L548">View Source</a>
+      </span>
+  <h4 id="VisitTypeBinary_TypeBinaryExpression_">VisitTypeBinary(TypeBinaryExpression)</h4>
+  <div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.TypeBinaryExpression.html">System.Linq.Expressions.TypeBinaryExpression</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.TypeBinaryExpression.html" name="System.Linq.Expressions.TypeBinaryExpression">TypeBinaryExpression</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Expression VisitTypeBinary(TypeBinaryExpression node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.TypeBinaryExpression.html" name="System.Linq.Expressions.TypeBinaryExpression">TypeBinaryExpression</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L559"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="VisitUnary_UnaryExpression_">VisitUnary(UnaryExpression)</h4>
-<div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.UnaryExpression.html">System.Linq.Expressions.UnaryExpression</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected virtual Expression VisitUnary(UnaryExpression node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/ExpressionVisitor.cs/#L559">View Source</a>
+      </span>
+  <h4 id="VisitUnary_UnaryExpression_">VisitUnary(UnaryExpression)</h4>
+  <div class="markdown level1 summary"><p>Visits the children of the <a href="System.Linq.Expressions.UnaryExpression.html">System.Linq.Expressions.UnaryExpression</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.UnaryExpression.html" name="System.Linq.Expressions.UnaryExpression">UnaryExpression</a></td>
-      <td><em>node</em></td>
-      <td><p>The expression to visit.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Expression VisitUnary(UnaryExpression node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.UnaryExpression.html" name="System.Linq.Expressions.UnaryExpression">UnaryExpression</a></td>
+        <td><em>node</em></td>
+        <td><p>The expression to visit.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td><p>The modified expression, if it or any subexpression was modified;
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td><p>The modified expression, if it or any subexpression was modified;
 otherwise, returns the original expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

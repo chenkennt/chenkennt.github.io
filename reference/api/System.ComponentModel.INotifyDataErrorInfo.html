@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Interface INotifyDataErrorInfo | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Interface INotifyDataErrorInfo | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -55,6 +55,102 @@
       </div>
       <div class="article row grid-right"><div class="col-md-10">
         <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ObjectModel/src/System/ComponentModel/INotifyDataErrorInfo.cs/#L9" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="INotifyDataErrorInfo">Interface INotifyDataErrorInfo</h1>
+      <div class="markdown level0 summary"></div>
+      <div class="markdown level0 conceptual"></div>
+      <h6><strong>Namespace</strong>:System.ComponentModel</h6>
+      <h6><strong>Assembly</strong>:System.ObjectModel.dll</h6>
+      <h5 id="INotifyDataErrorInfo_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public interface INotifyDataErrorInfo</code></pre>
+      </div>
+      <h3 id="properties">Properties</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ObjectModel/src/System/ComponentModel/INotifyDataErrorInfo.cs/#L11">View Source</a>
+      </span>
+  <h4 id="HasErrors">HasErrors</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasErrors { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="methods">Methods</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ObjectModel/src/System/ComponentModel/INotifyDataErrorInfo.cs/#L13">View Source</a>
+      </span>
+  <h4 id="GetErrors_String_">GetErrors(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable GetErrors(string propertyName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>propertyName</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.IEnumerable.html" name="System.Collections.IEnumerable">IEnumerable</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="events">Events</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ObjectModel/src/System/ComponentModel/INotifyDataErrorInfo.cs/#L15">View Source</a>
+      </span>
+  <h4 id="ErrorsChanged">ErrorsChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler<dataerrorschangedeventargs> ErrorsChanged</dataerrorschangedeventargs></code></pre>
+  </div>
 
 </article>
 </div>

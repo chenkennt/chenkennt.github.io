@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Interface IReflect | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Interface IReflect | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -55,6 +55,620 @@
       </div>
       <div class="article row grid-right"><div class="col-md-10">
         <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Reflection/IReflect.cs/#L21" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="IReflect">Interface IReflect</h1>
+      <div class="markdown level0 summary"></div>
+      <div class="markdown level0 conceptual"></div>
+      <h6><strong>Namespace</strong>:System.Reflection</h6>
+      <h6><strong>Assembly</strong>:mscorlib.dll</h6>
+      <h5 id="IReflect_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public interface IReflect</code></pre>
+      </div>
+      <h3 id="properties">Properties</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Reflection/IReflect.cs/#L112">View Source</a>
+      </span>
+  <h4 id="UnderlyingSystemType">UnderlyingSystemType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Type UnderlyingSystemType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Type.html" name="System.Type">Type</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="methods">Methods</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Reflection/IReflect.cs/#L41">View Source</a>
+      </span>
+  <h4 id="GetField_String__BindingFlags_">GetField(String, BindingFlags)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FieldInfo GetField(string name, BindingFlags bindingAttr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>name</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.BindingFlags.html" name="System.Reflection.BindingFlags">BindingFlags</a></td>
+        <td><em>bindingAttr</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.FieldInfo.html" name="System.Reflection.FieldInfo">FieldInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Reflection/IReflect.cs/#L45">View Source</a>
+      </span>
+  <h4 id="GetFields_BindingFlags_">GetFields(BindingFlags)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FieldInfo[] GetFields(BindingFlags bindingAttr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.BindingFlags.html" name="System.Reflection.BindingFlags">BindingFlags</a></td>
+        <td><em>bindingAttr</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Reflection.FieldInfo[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Reflection/IReflect.cs/#L71">View Source</a>
+      </span>
+  <h4 id="GetMember_String__BindingFlags_">GetMember(String, BindingFlags)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">MemberInfo[] GetMember(string name, BindingFlags bindingAttr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>name</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.BindingFlags.html" name="System.Reflection.BindingFlags">BindingFlags</a></td>
+        <td><em>bindingAttr</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Reflection.MemberInfo[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Reflection/IReflect.cs/#L76">View Source</a>
+      </span>
+  <h4 id="GetMembers_BindingFlags_">GetMembers(BindingFlags)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">MemberInfo[] GetMembers(BindingFlags bindingAttr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.BindingFlags.html" name="System.Reflection.BindingFlags">BindingFlags</a></td>
+        <td><em>bindingAttr</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Reflection.MemberInfo[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Reflection/IReflect.cs/#L34">View Source</a>
+      </span>
+  <h4 id="GetMethod_String__BindingFlags_">GetMethod(String, BindingFlags)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">MethodInfo GetMethod(string name, BindingFlags bindingAttr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>name</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.BindingFlags.html" name="System.Reflection.BindingFlags">BindingFlags</a></td>
+        <td><em>bindingAttr</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.MethodInfo.html" name="System.Reflection.MethodInfo">MethodInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Reflection/IReflect.cs/#L28">View Source</a>
+      </span>
+  <h4 id="GetMethod_String__BindingFlags__Binder__Type____ParameterModifier___">GetMethod(String, BindingFlags, Binder, Type[], ParameterModifier[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">MethodInfo GetMethod(string name, BindingFlags bindingAttr, Binder binder, Type[] types, ParameterModifier[] modifiers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>name</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.BindingFlags.html" name="System.Reflection.BindingFlags">BindingFlags</a></td>
+        <td><em>bindingAttr</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.Binder.html" name="System.Reflection.Binder">Binder</a></td>
+        <td><em>binder</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>System.Type[]</td>
+        <td><em>types</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>System.Reflection.ParameterModifier[]</td>
+        <td><em>modifiers</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.MethodInfo.html" name="System.Reflection.MethodInfo">MethodInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Reflection/IReflect.cs/#L36">View Source</a>
+      </span>
+  <h4 id="GetMethods_BindingFlags_">GetMethods(BindingFlags)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">MethodInfo[] GetMethods(BindingFlags bindingAttr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.BindingFlags.html" name="System.Reflection.BindingFlags">BindingFlags</a></td>
+        <td><em>bindingAttr</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Reflection.MethodInfo[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Reflection/IReflect.cs/#L67">View Source</a>
+      </span>
+  <h4 id="GetProperties_BindingFlags_">GetProperties(BindingFlags)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PropertyInfo[] GetProperties(BindingFlags bindingAttr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.BindingFlags.html" name="System.Reflection.BindingFlags">BindingFlags</a></td>
+        <td><em>bindingAttr</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Reflection.PropertyInfo[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Reflection/IReflect.cs/#L51">View Source</a>
+      </span>
+  <h4 id="GetProperty_String__BindingFlags_">GetProperty(String, BindingFlags)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PropertyInfo GetProperty(string name, BindingFlags bindingAttr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>name</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.BindingFlags.html" name="System.Reflection.BindingFlags">BindingFlags</a></td>
+        <td><em>bindingAttr</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.PropertyInfo.html" name="System.Reflection.PropertyInfo">PropertyInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Reflection/IReflect.cs/#L57">View Source</a>
+      </span>
+  <h4 id="GetProperty_String__BindingFlags__Binder__Type__Type____ParameterModifier___">GetProperty(String, BindingFlags, Binder, Type, Type[], ParameterModifier[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PropertyInfo GetProperty(string name, BindingFlags bindingAttr, Binder binder, Type returnType, Type[] types, ParameterModifier[] modifiers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>name</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.BindingFlags.html" name="System.Reflection.BindingFlags">BindingFlags</a></td>
+        <td><em>bindingAttr</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.Binder.html" name="System.Reflection.Binder">Binder</a></td>
+        <td><em>binder</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Type.html" name="System.Type">Type</a></td>
+        <td><em>returnType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>System.Type[]</td>
+        <td><em>types</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>System.Reflection.ParameterModifier[]</td>
+        <td><em>modifiers</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.PropertyInfo.html" name="System.Reflection.PropertyInfo">PropertyInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Reflection/IReflect.cs/#L100">View Source</a>
+      </span>
+  <h4 id="InvokeMember_String__BindingFlags__Binder__Object__Object____ParameterModifier____CultureInfo__String___">InvokeMember(String, BindingFlags, Binder, Object, Object[], ParameterModifier[], CultureInfo, String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object InvokeMember(string name, BindingFlags invokeAttr, Binder binder, object target, object[] args, ParameterModifier[] modifiers, CultureInfo culture, string[] namedParameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>name</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.BindingFlags.html" name="System.Reflection.BindingFlags">BindingFlags</a></td>
+        <td><em>invokeAttr</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.Binder.html" name="System.Reflection.Binder">Binder</a></td>
+        <td><em>binder</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>target</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>System.Object[]</td>
+        <td><em>args</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>System.Reflection.ParameterModifier[]</td>
+        <td><em>modifiers</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Globalization.CultureInfo.html" name="System.Globalization.CultureInfo">CultureInfo</a></td>
+        <td><em>culture</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>System.String[]</td>
+        <td><em>namedParameters</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

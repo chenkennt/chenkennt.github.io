@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class PEReaderExtensions | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class PEReaderExtensions | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -73,205 +73,212 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public class PEReaderExtensions</code></pre>
       </div>
-      <h5 id="PEReaderExtensions_remarks">remarks</h5>
-      <div class="markdown level0 remarks"></div>
-<h3 id="methods">Methods</h3>
+      <h3 id="methods">Methods</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/PEReaderExtensions.cs/#L45"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="GetMetadataReader_PEReader_">GetMetadataReader(PEReader)</h4>
-<div class="markdown level1 summary"><p>Gets a <a href="System.Reflection.Metadata.MetadataReader.html">System.Reflection.Metadata.MetadataReader</a> from a <a href="System.Reflection.PortableExecutable.PEReader.html">System.Reflection.PortableExecutable.PEReader</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>The caller must keep the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see> alive and undisposed throughout the lifetime of the metadata reader.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static MetadataReader GetMetadataReader(PEReader peReader)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/PEReaderExtensions.cs/#L45">View Source</a>
+      </span>
+  <h4 id="GetMetadataReader_PEReader_">GetMetadataReader(PEReader)</h4>
+  <div class="markdown level1 summary"><p>Gets a <a href="System.Reflection.Metadata.MetadataReader.html">System.Reflection.Metadata.MetadataReader</a> from a <a href="System.Reflection.PortableExecutable.PEReader.html">System.Reflection.PortableExecutable.PEReader</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Reflection.PortableExecutable.PEReader.html" name="System.Reflection.PortableExecutable.PEReader">PEReader</a></td>
-      <td><em>peReader</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Reflection.Metadata.MetadataReader.html" name="System.Reflection.Metadata.MetadataReader">MetadataReader</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="GetMetadataReader_PEReader__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The caller must keep the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see> alive and undisposed throughout the lifetime of the metadata reader.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MetadataReader GetMetadataReader(PEReader peReader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.PortableExecutable.PEReader.html" name="System.Reflection.PortableExecutable.PEReader">PEReader</a></td>
+        <td><em>peReader</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.MetadataReader.html" name="System.Reflection.Metadata.MetadataReader">MetadataReader</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/PEReaderExtensions.cs/#L57"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="GetMetadataReader_PEReader__MetadataReaderOptions_">GetMetadataReader(PEReader, MetadataReaderOptions)</h4>
-<div class="markdown level1 summary"><p>Gets a <a href="System.Reflection.Metadata.MetadataReader.html">System.Reflection.Metadata.MetadataReader</a> from a <a href="System.Reflection.PortableExecutable.PEReader.html">System.Reflection.PortableExecutable.PEReader</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>The caller must keep the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see> alive and undisposed throughout the lifetime of the metadata reader.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static MetadataReader GetMetadataReader(PEReader peReader, MetadataReaderOptions options)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/PEReaderExtensions.cs/#L57">View Source</a>
+      </span>
+  <h4 id="GetMetadataReader_PEReader__MetadataReaderOptions_">GetMetadataReader(PEReader, MetadataReaderOptions)</h4>
+  <div class="markdown level1 summary"><p>Gets a <a href="System.Reflection.Metadata.MetadataReader.html">System.Reflection.Metadata.MetadataReader</a> from a <a href="System.Reflection.PortableExecutable.PEReader.html">System.Reflection.PortableExecutable.PEReader</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Reflection.PortableExecutable.PEReader.html" name="System.Reflection.PortableExecutable.PEReader">PEReader</a></td>
-      <td><em>peReader</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.Reflection.Metadata.MetadataReaderOptions.html" name="System.Reflection.Metadata.MetadataReaderOptions">MetadataReaderOptions</a></td>
-      <td><em>options</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Reflection.Metadata.MetadataReader.html" name="System.Reflection.Metadata.MetadataReader">MetadataReader</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="GetMetadataReader_PEReader__MetadataReaderOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The caller must keep the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see> alive and undisposed throughout the lifetime of the metadata reader.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MetadataReader GetMetadataReader(PEReader peReader, MetadataReaderOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.PortableExecutable.PEReader.html" name="System.Reflection.PortableExecutable.PEReader">PEReader</a></td>
+        <td><em>peReader</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.Metadata.MetadataReaderOptions.html" name="System.Reflection.Metadata.MetadataReaderOptions">MetadataReaderOptions</a></td>
+        <td><em>options</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.MetadataReader.html" name="System.Reflection.Metadata.MetadataReader">MetadataReader</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/PEReaderExtensions.cs/#L68"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="GetMetadataReader_PEReader__MetadataReaderOptions__MetadataStringDecoder_">GetMetadataReader(PEReader, MetadataReaderOptions, MetadataStringDecoder)</h4>
-<div class="markdown level1 summary"><p>Gets a <a href="System.Reflection.Metadata.MetadataReader.html">System.Reflection.Metadata.MetadataReader</a> from a <a href="System.Reflection.PortableExecutable.PEReader.html">System.Reflection.PortableExecutable.PEReader</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>The caller must keep the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see> alive and undisposed throughout the lifetime of the metadata reader.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static MetadataReader GetMetadataReader(PEReader peReader, MetadataReaderOptions options, MetadataStringDecoder utf8Decoder)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/PEReaderExtensions.cs/#L68">View Source</a>
+      </span>
+  <h4 id="GetMetadataReader_PEReader__MetadataReaderOptions__MetadataStringDecoder_">GetMetadataReader(PEReader, MetadataReaderOptions, MetadataStringDecoder)</h4>
+  <div class="markdown level1 summary"><p>Gets a <a href="System.Reflection.Metadata.MetadataReader.html">System.Reflection.Metadata.MetadataReader</a> from a <a href="System.Reflection.PortableExecutable.PEReader.html">System.Reflection.PortableExecutable.PEReader</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Reflection.PortableExecutable.PEReader.html" name="System.Reflection.PortableExecutable.PEReader">PEReader</a></td>
-      <td><em>peReader</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.Reflection.Metadata.MetadataReaderOptions.html" name="System.Reflection.Metadata.MetadataReaderOptions">MetadataReaderOptions</a></td>
-      <td><em>options</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.Reflection.Metadata.MetadataStringDecoder.html" name="System.Reflection.Metadata.MetadataStringDecoder">MetadataStringDecoder</a></td>
-      <td><em>utf8Decoder</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Reflection.Metadata.MetadataReader.html" name="System.Reflection.Metadata.MetadataReader">MetadataReader</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="GetMetadataReader_PEReader__MetadataReaderOptions__MetadataStringDecoder__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The caller must keep the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see> alive and undisposed throughout the lifetime of the metadata reader.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MetadataReader GetMetadataReader(PEReader peReader, MetadataReaderOptions options, MetadataStringDecoder utf8Decoder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.PortableExecutable.PEReader.html" name="System.Reflection.PortableExecutable.PEReader">PEReader</a></td>
+        <td><em>peReader</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.Metadata.MetadataReaderOptions.html" name="System.Reflection.Metadata.MetadataReaderOptions">MetadataReaderOptions</a></td>
+        <td><em>options</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.Metadata.MetadataStringDecoder.html" name="System.Reflection.Metadata.MetadataStringDecoder">MetadataStringDecoder</a></td>
+        <td><em>utf8Decoder</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.MetadataReader.html" name="System.Reflection.Metadata.MetadataReader">MetadataReader</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/PEReaderExtensions.cs/#L21"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="GetMethodBody_PEReader__Int32_">GetMethodBody(PEReader, Int32)</h4>
-<div class="markdown level1 summary"><p>Returns a body block of a method with specified Relative Virtual Address (RVA);</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static MethodBodyBlock GetMethodBody(PEReader peReader, int relativeVirtualAddress)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/PEReaderExtensions.cs/#L21">View Source</a>
+      </span>
+  <h4 id="GetMethodBody_PEReader__Int32_">GetMethodBody(PEReader, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns a body block of a method with specified Relative Virtual Address (RVA);</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Reflection.PortableExecutable.PEReader.html" name="System.Reflection.PortableExecutable.PEReader">PEReader</a></td>
-      <td><em>peReader</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td><em>relativeVirtualAddress</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Reflection.Metadata.MethodBodyBlock.html" name="System.Reflection.Metadata.MethodBodyBlock">MethodBodyBlock</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MethodBodyBlock GetMethodBody(PEReader peReader, int relativeVirtualAddress)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.PortableExecutable.PEReader.html" name="System.Reflection.PortableExecutable.PEReader">PEReader</a></td>
+        <td><em>peReader</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>relativeVirtualAddress</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.MethodBodyBlock.html" name="System.Reflection.Metadata.MethodBodyBlock">MethodBodyBlock</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

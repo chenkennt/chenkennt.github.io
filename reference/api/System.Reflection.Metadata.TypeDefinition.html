@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Struct TypeDefinition | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Struct TypeDefinition | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -55,6 +55,470 @@
       </div>
       <div class="article row grid-right"><div class="col-md-10">
         <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs/#L10" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="TypeDefinition">Struct TypeDefinition</h1>
+      <div class="markdown level0 summary"></div>
+      <div class="markdown level0 conceptual"></div>
+      <h6><strong>Namespace</strong>:System.Reflection.Metadata</h6>
+      <h6><strong>Assembly</strong>:System.Reflection.Metadata.dll</h6>
+      <h5 id="TypeDefinition_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public struct TypeDefinition</code></pre>
+      </div>
+      <h3 id="properties">Properties</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs/#L41">View Source</a>
+      </span>
+  <h4 id="Attributes">Attributes</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TypeAttributes Attributes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.TypeAttributes.html" name="System.Reflection.TypeAttributes">TypeAttributes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs/#L106">View Source</a>
+      </span>
+  <h4 id="BaseType">BaseType</h4>
+  <div class="markdown level1 summary"><p>The base type of the type definition: either
+<a href="System.Reflection.Metadata.TypeSpecificationHandle.html">System.Reflection.Metadata.TypeSpecificationHandle</a>, <a href="System.Reflection.Metadata.TypeReferenceHandle.html">System.Reflection.Metadata.TypeReferenceHandle</a> or <a href="System.Reflection.Metadata.TypeDefinitionHandle.html">System.Reflection.Metadata.TypeDefinitionHandle</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EntityHandle BaseType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.EntityHandle.html" name="System.Reflection.Metadata.EntityHandle">EntityHandle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs/#L57">View Source</a>
+      </span>
+  <h4 id="Name">Name</h4>
+  <div class="markdown level1 summary"><p>Name of the type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringHandle Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.StringHandle.html" name="System.Reflection.Metadata.StringHandle">StringHandle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs/#L73">View Source</a>
+      </span>
+  <h4 id="Namespace">Namespace</h4>
+  <div class="markdown level1 summary"><p>Full name of the namespace where the type is defined, or nil if the type is nested or defined in a root namespace.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringHandle Namespace { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.StringHandle.html" name="System.Reflection.Metadata.StringHandle">StringHandle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs/#L89">View Source</a>
+      </span>
+  <h4 id="NamespaceDefinition">NamespaceDefinition</h4>
+  <div class="markdown level1 summary"><p>The definition handle of the namespace where the type is defined, or nil if the type is nested or defined in a root namespace.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NamespaceDefinitionHandle NamespaceDefinition { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.NamespaceDefinitionHandle.html" name="System.Reflection.Metadata.NamespaceDefinitionHandle">NamespaceDefinitionHandle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="methods">Methods</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs/#L203">View Source</a>
+      </span>
+  <h4 id="GetCustomAttributes__">GetCustomAttributes()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CustomAttributeHandleCollection GetCustomAttributes()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.CustomAttributeHandleCollection.html" name="System.Reflection.Metadata.CustomAttributeHandleCollection">CustomAttributeHandleCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs/#L208">View Source</a>
+      </span>
+  <h4 id="GetDeclarativeSecurityAttributes__">GetDeclarativeSecurityAttributes()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DeclarativeSecurityAttributeHandleCollection GetDeclarativeSecurityAttributes()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.DeclarativeSecurityAttributeHandleCollection.html" name="System.Reflection.Metadata.DeclarativeSecurityAttributeHandleCollection">DeclarativeSecurityAttributeHandleCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs/#L155">View Source</a>
+      </span>
+  <h4 id="GetDeclaringType__">GetDeclaringType()</h4>
+  <div class="markdown level1 summary"><p>Returns the enclosing type of a specified nested type or nil handle if the type is not nested.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TypeDefinitionHandle GetDeclaringType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.TypeDefinitionHandle.html" name="System.Reflection.Metadata.TypeDefinitionHandle">TypeDefinitionHandle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs/#L180">View Source</a>
+      </span>
+  <h4 id="GetEvents__">GetEvents()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventDefinitionHandleCollection GetEvents()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.EventDefinitionHandleCollection.html" name="System.Reflection.Metadata.EventDefinitionHandleCollection">EventDefinitionHandleCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs/#L170">View Source</a>
+      </span>
+  <h4 id="GetFields__">GetFields()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FieldDefinitionHandleCollection GetFields()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.FieldDefinitionHandleCollection.html" name="System.Reflection.Metadata.FieldDefinitionHandleCollection">FieldDefinitionHandleCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs/#L160">View Source</a>
+      </span>
+  <h4 id="GetGenericParameters__">GetGenericParameters()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GenericParameterHandleCollection GetGenericParameters()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.GenericParameterHandleCollection.html" name="System.Reflection.Metadata.GenericParameterHandleCollection">GenericParameterHandleCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs/#L198">View Source</a>
+      </span>
+  <h4 id="GetInterfaceImplementations__">GetInterfaceImplementations()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InterfaceImplementationHandleCollection GetInterfaceImplementations()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.InterfaceImplementationHandleCollection.html" name="System.Reflection.Metadata.InterfaceImplementationHandleCollection">InterfaceImplementationHandleCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs/#L119">View Source</a>
+      </span>
+  <h4 id="GetLayout__">GetLayout()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TypeLayout GetLayout()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.TypeLayout.html" name="System.Reflection.Metadata.TypeLayout">TypeLayout</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs/#L193">View Source</a>
+      </span>
+  <h4 id="GetMethodImplementations__">GetMethodImplementations()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MethodImplementationHandleCollection GetMethodImplementations()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.MethodImplementationHandleCollection.html" name="System.Reflection.Metadata.MethodImplementationHandleCollection">MethodImplementationHandleCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs/#L165">View Source</a>
+      </span>
+  <h4 id="GetMethods__">GetMethods()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MethodDefinitionHandleCollection GetMethods()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.MethodDefinitionHandleCollection.html" name="System.Reflection.Metadata.MethodDefinitionHandleCollection">MethodDefinitionHandleCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs/#L188">View Source</a>
+      </span>
+  <h4 id="GetNestedTypes__">GetNestedTypes()</h4>
+  <div class="markdown level1 summary"><p>Returns an array of types nested in the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableArray<typedefinitionhandle> GetNestedTypes()</typedefinitionhandle></code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ImmutableArray&lt;System.Reflection.Metadata.TypeDefinitionHandle&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs/#L175">View Source</a>
+      </span>
+  <h4 id="GetProperties__">GetProperties()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PropertyDefinitionHandleCollection GetProperties()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.PropertyDefinitionHandleCollection.html" name="System.Reflection.Metadata.PropertyDefinitionHandleCollection">PropertyDefinitionHandleCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

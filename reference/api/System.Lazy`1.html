@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class Lazy&lt;T&gt; | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class Lazy&lt;T&gt; | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -60,7 +60,8 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="Lazy_T_">Class Lazy&lt;T&gt;</h1>
-      <div class="markdown level0 summary"><p>Provides support for lazy initialization.</p><br></div>
+      <div class="markdown level0 summary"><p>Provides support for lazy initialization.</p>
+</div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
         <h5>Inheritance</h5>
@@ -73,28 +74,37 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public class Lazy<t></t></code></pre>
       </div>
-      <h5 id="Lazy_T__remarks">remarks</h5>
-      <div class="markdown level0 remarks"><para><br>By default, all public and protected members of <see cref="T:System.Lazy`1"></see> are thread-safe and may be used</br>concurrently from multiple threads.  These thread-safety guarantees may be removed optionally and per instance<br>using parameters to the type&#39;s constructors.</br></para></div>
+      <h5 id="Lazy_T__remarks"><strong>Remarks<strong></strong></strong></h5>
+      <div class="markdown level0 remarks"><para>
+By default, all public and protected members of <see cref="T:System.Lazy`1"></see> are thread-safe and may be used
+concurrently from multiple threads.  These thread-safety guarantees may be removed optionally and per instance
+using parameters to the type&#39;s constructors.
+</para></div>
       <h3 id="constructors">Constructors</h3>
-      
-    <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Lazy.cs/#L120"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-  </span>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Lazy.cs/#L120">View Source</a>
+      </span>
   <h4 id="Lazy__">Lazy()</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="">System.Threading.Lazy{T}</a> class that<br>uses <typeparamref name="T"></typeparamref>&#39;s default constructor for lazy initialization.</p><br></div>
-  <div class="markdown level1 remarks"><p>An instance created with this constructor may be used concurrently from multiple threads.</p><br></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="">System.Threading.Lazy{T}</a> class that
+uses <typeparamref name="T"></typeparamref>&#39;s default constructor for lazy initialization.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
+  <h5 id="Lazy___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>An instance created with this constructor may be used concurrently from multiple threads.</p>
+</div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Lazy()</code></pre>
   </div>
-      
-    <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Lazy.cs/#L149"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-  </span>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Lazy.cs/#L149">View Source</a>
+      </span>
   <h4 id="Lazy_Boolean_">Lazy(Boolean)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="">System.Threading.Lazy{T}</a><br>class that uses <typeparamref name="T"></typeparamref>&#39;s default constructor and a specified thread-safety mode.</p><br></div>
-  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="">System.Threading.Lazy{T}</a>
+class that uses <typeparamref name="T"></typeparamref>&#39;s default constructor and a specified thread-safety mode.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -118,14 +128,18 @@
       </tr>
     </tbody>
   </table>
-      
-    <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Lazy.cs/#L138"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-  </span>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Lazy.cs/#L138">View Source</a>
+      </span>
   <h4 id="Lazy_Func_T__">Lazy(Func&lt;T&gt;)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="">System.Threading.Lazy{T}</a> class that uses a<br>specified initialization function.</p><br></div>
-  <div class="markdown level1 remarks"><p>An instance created with this constructor may be used concurrently from multiple threads.</p><br></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="">System.Threading.Lazy{T}</a> class that uses a
+specified initialization function.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
+  <h5 id="Lazy_Func_T___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>An instance created with this constructor may be used concurrently from multiple threads.</p>
+</div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Lazy(Func<t> valueFactory)</t></code></pre>
@@ -141,7 +155,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="System.Func`1.html" name="System.Func">Func</a>&lt;T&gt;</td>
+        <td>System.Func&lt;T&gt;</td>
         <td><em>valueFactory</em></td>
         <td><p>The <a href="">System.Func{T}</a> invoked to produce the lazily-initialized value when it is
 needed.</p>
@@ -149,13 +163,14 @@ needed.</p>
       </tr>
     </tbody>
   </table>
-      
-    <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Lazy.cs/#L177"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-  </span>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Lazy.cs/#L177">View Source</a>
+      </span>
   <h4 id="Lazy_Func_T___Boolean_">Lazy(Func&lt;T&gt;, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="">System.Threading.Lazy{T}</a> class<br>that uses a specified initialization function and a specified thread-safety mode.</p><br></div>
-  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="">System.Threading.Lazy{T}</a> class
+that uses a specified initialization function and a specified thread-safety mode.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -172,7 +187,7 @@ needed.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a href="System.Func`1.html" name="System.Func">Func</a>&lt;T&gt;</td>
+        <td>System.Func&lt;T&gt;</td>
         <td><em>valueFactory</em></td>
         <td><p>The <a href="">System.Func{T}</a> invoked to produce the lazily-initialized value when it is needed.</p>
 </td>
@@ -185,13 +200,14 @@ needed.</p>
       </tr>
     </tbody>
   </table>
-      
-    <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Lazy.cs/#L193"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-  </span>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Lazy.cs/#L193">View Source</a>
+      </span>
   <h4 id="Lazy_Func_T___LazyThreadSafetyMode_">Lazy(Func&lt;T&gt;, LazyThreadSafetyMode)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="">System.Threading.Lazy{T}</a> class<br>that uses a specified initialization function and a specified thread-safety mode.</p><br></div>
-  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="">System.Threading.Lazy{T}</a> class
+that uses a specified initialization function and a specified thread-safety mode.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -208,7 +224,7 @@ needed.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a href="System.Func`1.html" name="System.Func">Func</a>&lt;T&gt;</td>
+        <td>System.Func&lt;T&gt;</td>
         <td><em>valueFactory</em></td>
         <td><p>The <a href="">System.Func{T}</a> invoked to produce the lazily-initialized value when it is needed.</p>
 </td>
@@ -221,13 +237,14 @@ needed.</p>
       </tr>
     </tbody>
   </table>
-      
-    <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Lazy.cs/#L160"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-  </span>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Lazy.cs/#L160">View Source</a>
+      </span>
   <h4 id="Lazy_LazyThreadSafetyMode_">Lazy(LazyThreadSafetyMode)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="">System.Threading.Lazy{T}</a><br>class that uses <typeparamref name="T"></typeparamref>&#39;s default constructor and a specified thread-safety mode.</p><br></div>
-  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="">System.Threading.Lazy{T}</a>
+class that uses <typeparamref name="T"></typeparamref>&#39;s default constructor and a specified thread-safety mode.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -251,90 +268,94 @@ needed.</p>
       </tr>
     </tbody>
   </table>
-<h3 id="properties">Properties</h3>
+      <h3 id="properties">Properties</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Lazy.cs/#L280"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IsValueCreated">IsValueCreated</h4>
-<div class="markdown level1 summary"><p>Gets a value indicating whether the <a href="">System.Lazy{T}</a> has been initialized.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>The initialization of a <see cref="T:System.Lazy{T}"></see> instance may result in either<br>a value being produced or an exception being thrown.  If an exception goes unhandled during initialization,</p><br><p><see cref="P:System.Lazy`1.IsValueCreated"></see> will return false.</p></br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public bool IsValueCreated { get; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Lazy.cs/#L280">View Source</a>
+      </span>
+  <h4 id="IsValueCreated">IsValueCreated</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the <a href="">System.Lazy{T}</a> has been initialized.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="IsValueCreated_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The initialization of a <see cref="T:System.Lazy{T}"></see> instance may result in either
+a value being produced or an exception being thrown.  If an exception goes unhandled during initialization,</p>
+<p><see cref="P:System.Lazy`1.IsValueCreated"></see> will return false.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsValueCreated { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Lazy.cs/#L309"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Value">Value</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public T Value { get; }</code></pre>
-</div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h3 id="methods">Methods</h3>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Lazy.cs/#L309">View Source</a>
+      </span>
+  <h4 id="Value">Value</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Value { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="methods">Methods</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Lazy.cs/#L232"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ToString__">ToString()</h4>
-<div class="markdown level1 summary"><p>Creates and returns a string representation of this instance.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Lazy.cs/#L232">View Source</a>
+      </span>
+  <h4 id="ToString__">ToString()</h4>
+  <div class="markdown level1 summary"><p>Creates and returns a string representation of this instance.</p>
 </div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><p>The result of calling <a href="System.Object.html">System.Object.ToString</a> on the <a href="System.Lazy`1.html">System.Lazy`1.Value</a>.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><p>The result of calling <a href="System.Object.html">System.Object.ToString</a> on the <a href="System.Lazy`1.html">System.Lazy`1.Value</a>.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

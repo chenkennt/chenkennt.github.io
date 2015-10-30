@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Struct SectionHeader | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Struct SectionHeader | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -55,6 +55,307 @@
       </div>
       <div class="article row grid-right"><div class="col-md-10">
         <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/SectionHeader.cs/#L6" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="SectionHeader">Struct SectionHeader</h1>
+      <div class="markdown level0 summary"></div>
+      <div class="markdown level0 conceptual"></div>
+      <h6><strong>Namespace</strong>:System.Reflection.PortableExecutable</h6>
+      <h6><strong>Assembly</strong>:System.Reflection.Metadata.dll</h6>
+      <h5 id="SectionHeader_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public struct SectionHeader</code></pre>
+      </div>
+      <h3 id="properties">Properties</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/SectionHeader.cs/#L22">View Source</a>
+      </span>
+  <h4 id="Name">Name</h4>
+  <div class="markdown level1 summary"><p>The name of the section.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/SectionHeader.cs/#L79">View Source</a>
+      </span>
+  <h4 id="NumberOfLineNumbers">NumberOfLineNumbers</h4>
+  <div class="markdown level1 summary"><p>The number of line-number entries for the section.
+This value should be zero for an image because COFF debugging information is deprecated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort NumberOfLineNumbers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.UInt16.html" name="System.UInt16">UInt16</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/SectionHeader.cs/#L73">View Source</a>
+      </span>
+  <h4 id="NumberOfRelocations">NumberOfRelocations</h4>
+  <div class="markdown level1 summary"><p>The number of relocation entries for the section. This is set to zero for PE images.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort NumberOfRelocations { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.UInt16.html" name="System.UInt16">UInt16</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/SectionHeader.cs/#L68">View Source</a>
+      </span>
+  <h4 id="PointerToLineNumbers">PointerToLineNumbers</h4>
+  <div class="markdown level1 summary"><p>The file pointer to the beginning of line-number entries for the section.
+This is set to zero if there are no COFF line numbers.
+This value should be zero for an image because COFF debugging information is deprecated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PointerToLineNumbers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/SectionHeader.cs/#L55">View Source</a>
+      </span>
+  <h4 id="PointerToRawData">PointerToRawData</h4>
+  <div class="markdown level1 summary"><p>The file pointer to the first page of the section within the COFF file.
+For PE images, this must be a multiple of <a href="System.Reflection.PortableExecutable.PEHeader.html">System.Reflection.PortableExecutable.PEHeader.FileAlignment</a>.
+For object files, the value should be aligned on a 4 byte boundary for best performance.
+When a section contains only uninitialized data, this field should be zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PointerToRawData { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/SectionHeader.cs/#L61">View Source</a>
+      </span>
+  <h4 id="PointerToRelocations">PointerToRelocations</h4>
+  <div class="markdown level1 summary"><p>The file pointer to the beginning of relocation entries for the section.
+This is set to zero for PE images or if there are no relocations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PointerToRelocations { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/SectionHeader.cs/#L84">View Source</a>
+      </span>
+  <h4 id="SectionCharacteristics">SectionCharacteristics</h4>
+  <div class="markdown level1 summary"><p>The flags that describe the characteristics of the section.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SectionCharacteristics SectionCharacteristics { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.PortableExecutable.SectionCharacteristics.html" name="System.Reflection.PortableExecutable.SectionCharacteristics">SectionCharacteristics</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/SectionHeader.cs/#L47">View Source</a>
+      </span>
+  <h4 id="SizeOfRawData">SizeOfRawData</h4>
+  <div class="markdown level1 summary"><p>The size of the section (for object files) or the size of the initialized data on disk (for image files).
+For PE images, this must be a multiple of <see cref="P:System.Reflection.PortableExecutable.PEHeader.FileAlignment"></see>.
+If this is less than <see cref="P:System.Reflection.PortableExecutable.SectionHeader.VirtualSize"></see>, the remainder of the section is zero-filled.
+Because the <see cref="P:System.Reflection.PortableExecutable.SectionHeader.SizeOfRawData"></see> field is rounded but the <see cref="P:System.Reflection.PortableExecutable.SectionHeader.VirtualSize"></see> field is not,
+it is possible for <see cref="P:System.Reflection.PortableExecutable.SectionHeader.SizeOfRawData"></see> to be greater than <see cref="P:System.Reflection.PortableExecutable.SectionHeader.VirtualSize"></see> as well.
+When a section contains only uninitialized data, this field should be zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SizeOfRawData { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/SectionHeader.cs/#L37">View Source</a>
+      </span>
+  <h4 id="VirtualAddress">VirtualAddress</h4>
+  <div class="markdown level1 summary"><p>For PE images, the address of the first byte of the section relative to the image base when the
+section is loaded into memory. For object files, this field is the address of the first byte before
+relocation is applied; for simplicity, compilers should set this to zero. Otherwise,
+it is an arbitrary value that is subtracted from offsets during relocation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int VirtualAddress { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/SectionHeader.cs/#L29">View Source</a>
+      </span>
+  <h4 id="VirtualSize">VirtualSize</h4>
+  <div class="markdown level1 summary"><p>The total size of the section when loaded into memory.
+If this value is greater than <a href="System.Reflection.PortableExecutable.SectionHeader.html">System.Reflection.PortableExecutable.SectionHeader.SizeOfRawData</a>, the section is zero-padded.
+This field is valid only for PE images and should be set to zero for object files.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int VirtualSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

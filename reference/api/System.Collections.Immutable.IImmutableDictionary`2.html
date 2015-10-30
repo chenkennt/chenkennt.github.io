@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Interface IImmutableDictionary&lt;TKey, TValue&gt; | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Interface IImmutableDictionary&lt;TKey, TValue&gt; | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -55,6 +55,447 @@
       </div>
       <div class="article row grid-right"><div class="col-md-10">
         <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableDictionary.cs/#L15" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="IImmutableDictionary_TKey__TValue_">Interface IImmutableDictionary&lt;TKey, TValue&gt;</h1>
+      <div class="markdown level0 summary"><p>An immutable key-value dictionary.</p>
+</div>
+      <div class="markdown level0 conceptual"></div>
+      <h6><strong>Namespace</strong>:System.Collections.Immutable</h6>
+      <h6><strong>Assembly</strong>:System.Collections.Immutable.dll</h6>
+      <h5 id="IImmutableDictionary_TKey__TValue__syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public interface IImmutableDictionary<tkey, tvalue=""> : IReadOnlyDictionary<tkey, tvalue="">, IReadOnlyCollection<><tkey, tvalue="">>, IEnumerable<><tkey, tvalue="">>, IEnumerable</tkey,></tkey,></tkey,></tkey,></code></pre>
+      </div>
+      <h3 id="methods">Methods</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableDictionary.cs/#L35">View Source</a>
+      </span>
+  <h4 id="Add_TKey__TValue_">Add(TKey, TValue)</h4>
+  <div class="markdown level1 summary"><p>Adds the specified key and value to the dictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Add_TKey__TValue__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the given key-value pair are already in the dictionary, the existing instance is returned.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IImmutableDictionary<tkey, tvalue=""> Add(TKey key, TValue value)</tkey,></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TKey</td>
+        <td><em>key</em></td>
+        <td><p>The key of the entry to add.</p>
+</td>
+      </tr>
+      <tr>
+        <td>TValue</td>
+        <td><em>value</em></td>
+        <td><p>The value of the entry to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Immutable.IImmutableDictionary`2.html" name="System.Collections.Immutable.IImmutableDictionary&lt;TKey, TValue&gt;">IImmutableDictionary</a></td>
+        <td><p>The new dictionary containing the additional key-value pair.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableDictionary.cs/#L44">View Source</a>
+      </span>
+  <h4 id="AddRange_IEnumerable_KeyValuePair_TKey__TValue___">AddRange(IEnumerable&lt;KeyValuePair&lt;TKey, TValue&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds the specified key-value pairs to the dictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IImmutableDictionary<tkey, tvalue=""> AddRange(IEnumerable<><tkey, tvalue="">> pairs)</tkey,></tkey,></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;TKey, TValue&gt;&gt;</td>
+        <td><em>pairs</em></td>
+        <td><p>The pairs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Immutable.IImmutableDictionary`2.html" name="System.Collections.Immutable.IImmutableDictionary&lt;TKey, TValue&gt;">IImmutableDictionary</a></td>
+        <td><p>The new dictionary containing the additional key-value pairs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableDictionary.cs/#L22">View Source</a>
+      </span>
+  <h4 id="Clear__">Clear()</h4>
+  <div class="markdown level1 summary"><p>Gets an empty dictionary with equivalent ordering and key/value comparison rules.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IImmutableDictionary<tkey, tvalue=""> Clear()</tkey,></code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Immutable.IImmutableDictionary`2.html" name="System.Collections.Immutable.IImmutableDictionary&lt;TKey, TValue&gt;">IImmutableDictionary</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableDictionary.cs/#L93">View Source</a>
+      </span>
+  <h4 id="Contains_KeyValuePair_TKey__TValue__">Contains(KeyValuePair&lt;TKey, TValue&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether this dictionary contains the specified key-value pair.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Contains(KeyValuePair<tkey, tvalue=""> pair)</tkey,></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.KeyValuePair&lt;TKey, TValue&gt;</td>
+        <td><em>pair</em></td>
+        <td><p>The key value pair.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p><c>true</c> if this dictionary contains the key-value pair; otherwise, <c>false</c>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableDictionary.cs/#L83">View Source</a>
+      </span>
+  <h4 id="Remove_TKey_">Remove(TKey)</h4>
+  <div class="markdown level1 summary"><p>Removes the specified key from the dictionary with its associated value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IImmutableDictionary<tkey, tvalue=""> Remove(TKey key)</tkey,></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TKey</td>
+        <td><em>key</em></td>
+        <td><p>The key to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Immutable.IImmutableDictionary`2.html" name="System.Collections.Immutable.IImmutableDictionary&lt;TKey, TValue&gt;">IImmutableDictionary</a></td>
+        <td><p>A new dictionary with the matching entry removed; or this instance if the key is not in the dictionary.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableDictionary.cs/#L75">View Source</a>
+      </span>
+  <h4 id="RemoveRange_IEnumerable_TKey__">RemoveRange(IEnumerable&lt;TKey&gt;)</h4>
+  <div class="markdown level1 summary"><p>Removes the specified keys from the dictionary with their associated values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IImmutableDictionary<tkey, tvalue=""> RemoveRange(IEnumerable<tkey> keys)</tkey></tkey,></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;TKey&gt;</td>
+        <td><em>keys</em></td>
+        <td><p>The keys to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Immutable.IImmutableDictionary`2.html" name="System.Collections.Immutable.IImmutableDictionary&lt;TKey, TValue&gt;">IImmutableDictionary</a></td>
+        <td><p>A new dictionary with those keys removed; or this instance if those keys are not in the dictionary.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableDictionary.cs/#L58">View Source</a>
+      </span>
+  <h4 id="SetItem_TKey__TValue_">SetItem(TKey, TValue)</h4>
+  <div class="markdown level1 summary"><p>Sets the specified key and value to the dictionary, possibly overwriting an existing value for the given key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="SetItem_TKey__TValue__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the given key-value pair are already in the dictionary, the existing instance is returned.
+If the key already exists but with a different value, a new instance with the overwritten value will be returned.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IImmutableDictionary<tkey, tvalue=""> SetItem(TKey key, TValue value)</tkey,></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TKey</td>
+        <td><em>key</em></td>
+        <td><p>The key of the entry to add.</p>
+</td>
+      </tr>
+      <tr>
+        <td>TValue</td>
+        <td><em>value</em></td>
+        <td><p>The value of the entry to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Immutable.IImmutableDictionary`2.html" name="System.Collections.Immutable.IImmutableDictionary&lt;TKey, TValue&gt;">IImmutableDictionary</a></td>
+        <td><p>The new dictionary containing the additional key-value pair.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableDictionary.cs/#L66">View Source</a>
+      </span>
+  <h4 id="SetItems_IEnumerable_KeyValuePair_TKey__TValue___">SetItems(IEnumerable&lt;KeyValuePair&lt;TKey, TValue&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Applies a given set of key=value pairs to an immutable dictionary, replacing any conflicting keys in the resulting dictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IImmutableDictionary<tkey, tvalue=""> SetItems(IEnumerable<><tkey, tvalue="">> items)</tkey,></tkey,></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;TKey, TValue&gt;&gt;</td>
+        <td><em>items</em></td>
+        <td><p>The key=value pairs to set on the dictionary.  Any keys that conflict with existing keys will overwrite the previous values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Immutable.IImmutableDictionary`2.html" name="System.Collections.Immutable.IImmutableDictionary&lt;TKey, TValue&gt;">IImmutableDictionary</a></td>
+        <td><p>An immutable dictionary.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableDictionary.cs/#L108">View Source</a>
+      </span>
+  <h4 id="TryGetKey_TKey__out_TKey_">TryGetKey(TKey, out TKey)</h4>
+  <div class="markdown level1 summary"><p>Searches the dictionary for a given key and returns the equal key it finds, if any.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="TryGetKey_TKey__out_TKey__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This can be useful when you want to reuse a previously stored reference instead of
+a newly constructed one (so that more sharing of references can occur) or to look up
+the canonical value, or a value that has more complete data than the value you currently have,
+although their comparer functions indicate they are equal.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryGetKey(TKey equalKey, out TKey actualKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TKey</td>
+        <td><em>equalKey</em></td>
+        <td><p>The key to search for.</p>
+</td>
+      </tr>
+      <tr>
+        <td>TKey</td>
+        <td><em>actualKey</em></td>
+        <td><p>The key from the dictionary that the search found, or <paramref name="equalKey"></paramref> if the search yielded no match.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>A value indicating whether the search was successful.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

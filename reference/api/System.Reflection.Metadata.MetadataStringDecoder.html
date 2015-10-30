@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class MetadataStringDecoder | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class MetadataStringDecoder | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -60,7 +60,9 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="MetadataStringDecoder">Class MetadataStringDecoder</h1>
-      <div class="markdown level0 summary"><p>Provides the <a href="System.Reflection.Metadata.MetadataReader.html">System.Reflection.Metadata.MetadataReader</a> with a custom mechanism for decoding<br>byte sequences in metadata that represent text.</p><br></div>
+      <div class="markdown level0 summary"><p>Provides the <a href="System.Reflection.Metadata.MetadataReader.html">System.Reflection.Metadata.MetadataReader</a> with a custom mechanism for decoding
+byte sequences in metadata that represent text.</p>
+</div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
         <h5>Inheritance</h5>
@@ -73,17 +75,26 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public class MetadataStringDecoder</code></pre>
       </div>
-      <h5 id="MetadataStringDecoder_remarks">remarks</h5>
-      <div class="markdown level0 remarks"><p>This can be used for the following purposes:</p><br><p>1) To customize the treatment of invalid input. When no decoder is provided,</br>the <see cref="T:System.Reflection.Metadata.MetadataReader"></see> uses the default fallback replacement<br>with \uFFFD)<p></br><p>2) To reuse existing strings instead of allocating a new one for each decoding<br>operation.</p><br></div>
+      <h5 id="MetadataStringDecoder_remarks"><strong>Remarks<strong></strong></strong></h5>
+      <div class="markdown level0 remarks"><p>This can be used for the following purposes:</p>
+<p>1) To customize the treatment of invalid input. When no decoder is provided,
+the <see cref="T:System.Reflection.Metadata.MetadataReader"></see> uses the default fallback replacement
+with \uFFFD)</p>
+<p>2) To reuse existing strings instead of allocating a new one for each decoding
+operation.</p>
+</div>
       <h3 id="constructors">Constructors</h3>
-      
-    <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataStringDecoder.cs/#L45"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-  </span>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataStringDecoder.cs/#L45">View Source</a>
+      </span>
   <h4 id="MetadataStringDecoder_Encoding_">MetadataStringDecoder(Encoding)</h4>
-  <div class="markdown level1 summary"><p>Creates a <a href="System.Reflection.Metadata.MetadataStringDecoder.html">System.Reflection.Metadata.MetadataStringDecoder</a> for the given encoding.</p><br></div>
-  <div class="markdown level1 remarks"><p>To cache and reuse existing strings. Create a derived class and override <a href="System.Reflection.Metadata.MetadataStringDecoder.html">System.Reflection.Metadata.MetadataStringDecoder.GetString(System.Byte*,System.Int32)</a></p><br></div>
+  <div class="markdown level1 summary"><p>Creates a <a href="System.Reflection.Metadata.MetadataStringDecoder.html">System.Reflection.Metadata.MetadataStringDecoder</a> for the given encoding.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
+  <h5 id="MetadataStringDecoder_Encoding__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>To cache and reuse existing strings. Create a derived class and override <a href="System.Reflection.Metadata.MetadataStringDecoder.html">System.Reflection.Metadata.MetadataStringDecoder.GetString(System.Byte*,System.Int32)</a></p>
+</div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public MetadataStringDecoder(Encoding encoding)</code></pre>
@@ -106,114 +117,118 @@
       </tr>
     </tbody>
   </table>
-<h3 id="properties">Properties</h3>
+      <h3 id="properties">Properties</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataStringDecoder.cs/#L33"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="DefaultUTF8">DefaultUTF8</h4>
-<div class="markdown level1 summary"><p>The default decoder used by <a href="System.Reflection.Metadata.MetadataReader.html">System.Reflection.Metadata.MetadataReader</a> to decode UTF-8 when<br>no decoder is provided to the constructor.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static MetadataStringDecoder DefaultUTF8 { get; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataStringDecoder.cs/#L33">View Source</a>
+      </span>
+  <h4 id="DefaultUTF8">DefaultUTF8</h4>
+  <div class="markdown level1 summary"><p>The default decoder used by <a href="System.Reflection.Metadata.MetadataReader.html">System.Reflection.Metadata.MetadataReader</a> to decode UTF-8 when
+no decoder is provided to the constructor.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Reflection.Metadata.MetadataStringDecoder.html" name="System.Reflection.Metadata.MetadataStringDecoder">MetadataStringDecoder</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MetadataStringDecoder DefaultUTF8 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.MetadataStringDecoder.html" name="System.Reflection.Metadata.MetadataStringDecoder">MetadataStringDecoder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataStringDecoder.cs/#L68"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Encoding">Encoding</h4>
-<div class="markdown level1 summary"><p>Gets the encoding used by this instance.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public Encoding Encoding { get; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataStringDecoder.cs/#L68">View Source</a>
+      </span>
+  <h4 id="Encoding">Encoding</h4>
+  <div class="markdown level1 summary"><p>Gets the encoding used by this instance.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Text.Encoding.html" name="System.Text.Encoding">Encoding</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h3 id="methods">Methods</h3>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Encoding Encoding { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Text.Encoding.html" name="System.Text.Encoding">Encoding</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="methods">Methods</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataStringDecoder.cs/#L82"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="GetString_Byte___Int32_">GetString(Byte*, Int32)</h4>
-<div class="markdown level1 summary"><p>The mechanism through which the <a href="System.Reflection.Metadata.MetadataReader.html">System.Reflection.Metadata.MetadataReader</a> obtains strings<br>for byte sequences in metadata. Override this to cache strings if required.</br>Otherwise, it is implemented by forwarding straight to <a href="System.Reflection.Metadata.MetadataStringDecoder.html">System.Reflection.Metadata.MetadataStringDecoder.Encoding</a><br>and every call will allocate a new string.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public virtual string GetString(byte *bytes, int byteCount)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataStringDecoder.cs/#L82">View Source</a>
+      </span>
+  <h4 id="GetString_Byte___Int32_">GetString(Byte*, Int32)</h4>
+  <div class="markdown level1 summary"><p>The mechanism through which the <a href="System.Reflection.Metadata.MetadataReader.html">System.Reflection.Metadata.MetadataReader</a> obtains strings
+for byte sequences in metadata. Override this to cache strings if required.
+Otherwise, it is implemented by forwarding straight to <a href="System.Reflection.Metadata.MetadataStringDecoder.html">System.Reflection.Metadata.MetadataStringDecoder.Encoding</a>
+and every call will allocate a new string.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Byte.html" name="System.Byte">Byte</a>*</td>
-      <td><em>bytes</em></td>
-      <td><p>Pointer to bytes to decode.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GetString(byte *bytes, int byteCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Byte*</td>
+        <td><em>bytes</em></td>
+        <td><p>Pointer to bytes to decode.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td><em>byteCount</em></td>
-      <td><p>Number of bytes to decode.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>byteCount</em></td>
+        <td><p>Number of bytes to decode.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><p>The decoded string.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><p>The decoded string.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

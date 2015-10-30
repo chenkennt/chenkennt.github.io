@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Namespace System.Diagnostics.Contracts | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Namespace System.Diagnostics.Contracts | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -61,36 +61,46 @@
           <div class="markdown level0 summary"></div>
           <div class="markdown level0 conceptual"></div>
           <div class="markdown level0 remarks"></div>
-          <h3 id="classes">Classes</h3>
-          <h4><a href="System.Diagnostics.Contracts.Contract.html" name="System.Diagnostics.Contracts.Contract">Contract</a></h4>
-          <section>Contains static methods for representing program contracts such as preconditions, postconditions, and invariants.</section>
-          <h4><a href="System.Diagnostics.Contracts.ContractAbbreviatorAttribute.html" name="System.Diagnostics.Contracts.ContractAbbreviatorAttribute">ContractAbbreviatorAttribute</a></h4>
-          <section>Enables writing abbreviations for contracts that get copied to other methods</section>
-          <h4><a href="System.Diagnostics.Contracts.ContractArgumentValidatorAttribute.html" name="System.Diagnostics.Contracts.ContractArgumentValidatorAttribute">ContractArgumentValidatorAttribute</a></h4>
-          <section>Enables factoring legacy if-then-throw into separate methods for reuse and full control over<br>thrown exception and arguments</section>
-          <h4><a href="System.Diagnostics.Contracts.ContractClassAttribute.html" name="System.Diagnostics.Contracts.ContractClassAttribute">ContractClassAttribute</a></h4>
-          <section>Types marked with this attribute specify that a separate type contains the contracts for this type.</section>
-          <h4><a href="System.Diagnostics.Contracts.ContractClassForAttribute.html" name="System.Diagnostics.Contracts.ContractClassForAttribute">ContractClassForAttribute</a></h4>
-          <section>Types marked with this attribute specify that they are a contract for the type that is the argument of the constructor.</section>
-          <h4><a href="System.Diagnostics.Contracts.ContractFailedEventArgs.html" name="System.Diagnostics.Contracts.ContractFailedEventArgs">ContractFailedEventArgs</a></h4>
-          <section></section>
-          <h4><a href="System.Diagnostics.Contracts.ContractInvariantMethodAttribute.html" name="System.Diagnostics.Contracts.ContractInvariantMethodAttribute">ContractInvariantMethodAttribute</a></h4>
-          <section>This attribute is used to mark a method as being the invariant<br>method for a class. The method can have any name, but it must</br>return "void" and take no parameters. The body of the method<br>must consist solely of one or more calls to the method</br>Contract.Invariant. A suggested name for the method is<br>"ObjectInvariant".</section>
-          <h4><a href="System.Diagnostics.Contracts.ContractOptionAttribute.html" name="System.Diagnostics.Contracts.ContractOptionAttribute">ContractOptionAttribute</a></h4>
-          <section>Allows setting contract and tool options at assembly, type, or method granularity.</section>
-          <h4><a href="System.Diagnostics.Contracts.ContractPublicPropertyNameAttribute.html" name="System.Diagnostics.Contracts.ContractPublicPropertyNameAttribute">ContractPublicPropertyNameAttribute</a></h4>
-          <section>Allows a field f to be used in the method contracts for a method m when f has less visibility than m.<br>For instance, if the method is public, but the field is private.</section>
-          <h4><a href="System.Diagnostics.Contracts.ContractReferenceAssemblyAttribute.html" name="System.Diagnostics.Contracts.ContractReferenceAssemblyAttribute">ContractReferenceAssemblyAttribute</a></h4>
-          <section>Attribute that specifies that an assembly is a reference assembly with contracts.</section>
-          <h4><a href="System.Diagnostics.Contracts.ContractRuntimeIgnoredAttribute.html" name="System.Diagnostics.Contracts.ContractRuntimeIgnoredAttribute">ContractRuntimeIgnoredAttribute</a></h4>
-          <section>Methods (and properties) marked with this attribute can be used within calls to Contract methods, but have no runtime behavior associated with them.</section>
-          <h4><a href="System.Diagnostics.Contracts.ContractVerificationAttribute.html" name="System.Diagnostics.Contracts.ContractVerificationAttribute">ContractVerificationAttribute</a></h4>
-          <section>Instructs downstream tools whether to assume the correctness of this assembly, type or member without performing any verification or not.<br>Can use [ContractVerification(false)] to explicitly mark assembly, type or member as one to *not* have verification performed on it.</br>Most specific element found (member, type, then assembly) takes precedence.<br>(That is useful if downstream tools allow a user to decide which polarity is the default, unmarked case.)</section>
-          <h4><a href="System.Diagnostics.Contracts.PureAttribute.html" name="System.Diagnostics.Contracts.PureAttribute">PureAttribute</a></h4>
-          <section>Methods and classes marked with this attribute can be used within calls to Contract methods. Such methods not make any visible state changes.</section>
-          <h3 id="enums">Enums</h3>
-          <h4><a href="System.Diagnostics.Contracts.ContractFailureKind.html" name="System.Diagnostics.Contracts.ContractFailureKind">ContractFailureKind</a></h4>
-          <section></section>
+            <h3 id="classes">Classes</h3>
+              <h4><a href="System.Diagnostics.Contracts.Contract.html" name="System.Diagnostics.Contracts.Contract">Contract</a></h4>
+              <section>Contains static methods for representing program contracts such as preconditions, postconditions, and invariants.</section>
+              <h4><a href="System.Diagnostics.Contracts.ContractAbbreviatorAttribute.html" name="System.Diagnostics.Contracts.ContractAbbreviatorAttribute">ContractAbbreviatorAttribute</a></h4>
+              <section>Enables writing abbreviations for contracts that get copied to other methods</section>
+              <h4><a href="System.Diagnostics.Contracts.ContractArgumentValidatorAttribute.html" name="System.Diagnostics.Contracts.ContractArgumentValidatorAttribute">ContractArgumentValidatorAttribute</a></h4>
+              <section>Enables factoring legacy if-then-throw into separate methods for reuse and full control over
+thrown exception and arguments</section>
+              <h4><a href="System.Diagnostics.Contracts.ContractClassAttribute.html" name="System.Diagnostics.Contracts.ContractClassAttribute">ContractClassAttribute</a></h4>
+              <section>Types marked with this attribute specify that a separate type contains the contracts for this type.</section>
+              <h4><a href="System.Diagnostics.Contracts.ContractClassForAttribute.html" name="System.Diagnostics.Contracts.ContractClassForAttribute">ContractClassForAttribute</a></h4>
+              <section>Types marked with this attribute specify that they are a contract for the type that is the argument of the constructor.</section>
+              <h4><a href="System.Diagnostics.Contracts.ContractFailedEventArgs.html" name="System.Diagnostics.Contracts.ContractFailedEventArgs">ContractFailedEventArgs</a></h4>
+              <section></section>
+              <h4><a href="System.Diagnostics.Contracts.ContractInvariantMethodAttribute.html" name="System.Diagnostics.Contracts.ContractInvariantMethodAttribute">ContractInvariantMethodAttribute</a></h4>
+              <section>This attribute is used to mark a method as being the invariant
+method for a class. The method can have any name, but it must
+return "void" and take no parameters. The body of the method
+must consist solely of one or more calls to the method
+Contract.Invariant. A suggested name for the method is
+"ObjectInvariant".</section>
+              <h4><a href="System.Diagnostics.Contracts.ContractOptionAttribute.html" name="System.Diagnostics.Contracts.ContractOptionAttribute">ContractOptionAttribute</a></h4>
+              <section>Allows setting contract and tool options at assembly, type, or method granularity.</section>
+              <h4><a href="System.Diagnostics.Contracts.ContractPublicPropertyNameAttribute.html" name="System.Diagnostics.Contracts.ContractPublicPropertyNameAttribute">ContractPublicPropertyNameAttribute</a></h4>
+              <section>Allows a field f to be used in the method contracts for a method m when f has less visibility than m.
+For instance, if the method is public, but the field is private.</section>
+              <h4><a href="System.Diagnostics.Contracts.ContractReferenceAssemblyAttribute.html" name="System.Diagnostics.Contracts.ContractReferenceAssemblyAttribute">ContractReferenceAssemblyAttribute</a></h4>
+              <section>Attribute that specifies that an assembly is a reference assembly with contracts.</section>
+              <h4><a href="System.Diagnostics.Contracts.ContractRuntimeIgnoredAttribute.html" name="System.Diagnostics.Contracts.ContractRuntimeIgnoredAttribute">ContractRuntimeIgnoredAttribute</a></h4>
+              <section>Methods (and properties) marked with this attribute can be used within calls to Contract methods, but have no runtime behavior associated with them.</section>
+              <h4><a href="System.Diagnostics.Contracts.ContractVerificationAttribute.html" name="System.Diagnostics.Contracts.ContractVerificationAttribute">ContractVerificationAttribute</a></h4>
+              <section>Instructs downstream tools whether to assume the correctness of this assembly, type or member without performing any verification or not.
+Can use [ContractVerification(false)] to explicitly mark assembly, type or member as one to *not* have verification performed on it.
+Most specific element found (member, type, then assembly) takes precedence.
+(That is useful if downstream tools allow a user to decide which polarity is the default, unmarked case.)</section>
+              <h4><a href="System.Diagnostics.Contracts.PureAttribute.html" name="System.Diagnostics.Contracts.PureAttribute">PureAttribute</a></h4>
+              <section>Methods and classes marked with this attribute can be used within calls to Contract methods. Such methods not make any visible state changes.</section>
+            <h3 id="enums">Enums</h3>
+              <h4><a href="System.Diagnostics.Contracts.ContractFailureKind.html" name="System.Diagnostics.Contracts.ContractFailureKind">ContractFailureKind</a></h4>
+              <section></section>
 
 </article>
 </div>

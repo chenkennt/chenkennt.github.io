@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class DynamicExpression | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class DynamicExpression | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -60,7 +60,8 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="DynamicExpression">Class DynamicExpression</h1>
-      <div class="markdown level0 summary"><p>Represents a dynamic operation.</p><br></div>
+      <div class="markdown level0 summary"><p>Represents a dynamic operation.</p>
+</div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
         <h5>Inheritance</h5>
@@ -73,1101 +74,1125 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public class DynamicExpression : Expression, IDynamicExpression</code></pre>
       </div>
-      <h5 id="DynamicExpression_remarks">remarks</h5>
-      <div class="markdown level0 remarks"></div>
-<h3 id="properties">Properties</h3>
+      <h3 id="properties">Properties</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L150"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Arguments">Arguments</h4>
-<div class="markdown level1 summary"><p>Gets the arguments to the dynamic operation.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public ReadOnlyCollection<expression> Arguments { get; }</expression></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L150">View Source</a>
+      </span>
+  <h4 id="Arguments">Arguments</h4>
+  <div class="markdown level1 summary"><p>Gets the arguments to the dynamic operation.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.ObjectModel.ReadOnlyCollection`1.html" name="System.Collections.ObjectModel.ReadOnlyCollection">ReadOnlyCollection</a>&lt;Expression&gt;</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReadOnlyCollection<expression> Arguments { get; }</expression></code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.ObjectModel.ReadOnlyCollection&lt;Expression&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L134"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Binder">Binder</h4>
-<div class="markdown level1 summary"><p>Gets the <a href="System.Runtime.CompilerServices.CallSiteBinder.html">System.Runtime.CompilerServices.CallSiteBinder</a>, which determines the runtime behavior of the<br>dynamic site.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public CallSiteBinder Binder { get; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L134">View Source</a>
+      </span>
+  <h4 id="Binder">Binder</h4>
+  <div class="markdown level1 summary"><p>Gets the <a href="System.Runtime.CompilerServices.CallSiteBinder.html">System.Runtime.CompilerServices.CallSiteBinder</a>, which determines the runtime behavior of the
+dynamic site.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CallSiteBinder Binder { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L33"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="CanReduce">CanReduce</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public override bool CanReduce { get; }</code></pre>
-</div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L33">View Source</a>
+      </span>
+  <h4 id="CanReduce">CanReduce</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool CanReduce { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L142"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="DelegateType">DelegateType</h4>
-<div class="markdown level1 summary"><p>Gets the type of the delegate used by the <a href="System.Runtime.CompilerServices.CallSite.html">System.Runtime.CompilerServices.CallSite</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public Type DelegateType { get; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L142">View Source</a>
+      </span>
+  <h4 id="DelegateType">DelegateType</h4>
+  <div class="markdown level1 summary"><p>Gets the type of the delegate used by the <a href="System.Runtime.CompilerServices.CallSite.html">System.Runtime.CompilerServices.CallSite</a>.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Type.html" name="System.Type">Type</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type DelegateType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Type.html" name="System.Type">Type</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L125"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="NodeType">NodeType</h4>
-<div class="markdown level1 summary"><p>Returns the node type of this Expression. Extension nodes should return<br>ExpressionType.Extension when overriding this method.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public override sealed ExpressionType NodeType { get; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L125">View Source</a>
+      </span>
+  <h4 id="NodeType">NodeType</h4>
+  <div class="markdown level1 summary"><p>Returns the node type of this Expression. Extension nodes should return
+ExpressionType.Extension when overriding this method.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>ExpressionType</td>
-      <td><p>The <see cref="!:ExpressionType"></see> of the expression.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed ExpressionType NodeType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ExpressionType</td>
+        <td><p>The <see cref="!:ExpressionType"></see> of the expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L115"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Type">Type</h4>
-<div class="markdown level1 summary"><p>Gets the static type of the expression that this <see cref="!:Expression"></see> represents.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public override Type Type { get; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L115">View Source</a>
+      </span>
+  <h4 id="Type">Type</h4>
+  <div class="markdown level1 summary"><p>Gets the static type of the expression that this <see cref="!:Expression"></see> represents.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Type.html" name="System.Type">Type</a></td>
-      <td><p>The <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression.Type</a> that represents the static type of the expression.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Type Type { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Type.html" name="System.Type">Type</a></td>
+        <td><p>The <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression.Type</a> that represents the static type of the expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h3 id="methods">Methods</h3>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="methods">Methods</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L163"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Accept_ExpressionVisitor_">Accept(ExpressionVisitor)</h4>
-<div class="markdown level1 summary"><p>Dispatches to the specific visit method for this node type.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected override Expression Accept(ExpressionVisitor visitor)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L163">View Source</a>
+      </span>
+  <h4 id="Accept_ExpressionVisitor_">Accept(ExpressionVisitor)</h4>
+  <div class="markdown level1 summary"><p>Dispatches to the specific visit method for this node type.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>ExpressionVisitor</td>
-      <td><em>visitor</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Expression</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Expression Accept(ExpressionVisitor visitor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ExpressionVisitor</td>
+        <td><em>visitor</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Expression</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L276"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Dynamic_CallSiteBinder__Type__Expression_">Dynamic(CallSiteBinder, Type, Expression)</h4>
-<div class="markdown level1 summary"><p>Creates a <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression</a> that represents a dynamic operation bound by the provided <a href="System.Runtime.CompilerServices.CallSiteBinder.html">System.Runtime.CompilerServices.CallSiteBinder</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>The <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression.DelegateType</a> property of the<br>result will be inferred from the types of the arguments and the specified return type.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static DynamicExpression Dynamic(CallSiteBinder binder, Type returnType, Expression arg0)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L276">View Source</a>
+      </span>
+  <h4 id="Dynamic_CallSiteBinder__Type__Expression_">Dynamic(CallSiteBinder, Type, Expression)</h4>
+  <div class="markdown level1 summary"><p>Creates a <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression</a> that represents a dynamic operation bound by the provided <a href="System.Runtime.CompilerServices.CallSiteBinder.html">System.Runtime.CompilerServices.CallSiteBinder</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
-      <td><em>binder</em></td>
-      <td><p>The runtime binder for the dynamic operation.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Dynamic_CallSiteBinder__Type__Expression__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression.DelegateType</a> property of the
+result will be inferred from the types of the arguments and the specified return type.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynamicExpression Dynamic(CallSiteBinder binder, Type returnType, Expression arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
+        <td><em>binder</em></td>
+        <td><p>The runtime binder for the dynamic operation.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Type.html" name="System.Type">Type</a></td>
-      <td><em>returnType</em></td>
-      <td><p>The result type of the dynamic expression.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Type.html" name="System.Type">Type</a></td>
+        <td><em>returnType</em></td>
+        <td><p>The result type of the dynamic expression.</p>
 </td>
-    </tr>
-    <tr>
-      <td>Expression</td>
-      <td><em>arg0</em></td>
-      <td><p>The first argument to the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td>Expression</td>
+        <td><em>arg0</em></td>
+        <td><p>The first argument to the dynamic operation.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.DynamicExpression.html" name="System.Linq.Expressions.DynamicExpression">DynamicExpression</a></td>
-      <td><p>A <see cref="T:System.Linq.Expressions.DynamicExpression"></see> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType"></see> equal to</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.DynamicExpression.html" name="System.Linq.Expressions.DynamicExpression">DynamicExpression</a></td>
+        <td><p>A <see cref="T:System.Linq.Expressions.DynamicExpression"></see> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType"></see> equal to</p>
 <p><see cref="!:ExpressionType.Dynamic">Dynamic</see> and has the</p>
 <p><see cref="P:System.Linq.Expressions.DynamicExpression.Binder">Binder</see> and</p>
 <p><see cref="P:System.Linq.Expressions.DynamicExpression.Arguments">Arguments</see> set to the specified values.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L298"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Dynamic_CallSiteBinder__Type__Expression__Expression_">Dynamic(CallSiteBinder, Type, Expression, Expression)</h4>
-<div class="markdown level1 summary"><p>Creates a <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression</a> that represents a dynamic operation bound by the provided <a href="System.Runtime.CompilerServices.CallSiteBinder.html">System.Runtime.CompilerServices.CallSiteBinder</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>The <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression.DelegateType</a> property of the<br>result will be inferred from the types of the arguments and the specified return type.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static DynamicExpression Dynamic(CallSiteBinder binder, Type returnType, Expression arg0, Expression arg1)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L298">View Source</a>
+      </span>
+  <h4 id="Dynamic_CallSiteBinder__Type__Expression__Expression_">Dynamic(CallSiteBinder, Type, Expression, Expression)</h4>
+  <div class="markdown level1 summary"><p>Creates a <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression</a> that represents a dynamic operation bound by the provided <a href="System.Runtime.CompilerServices.CallSiteBinder.html">System.Runtime.CompilerServices.CallSiteBinder</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
-      <td><em>binder</em></td>
-      <td><p>The runtime binder for the dynamic operation.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Dynamic_CallSiteBinder__Type__Expression__Expression__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression.DelegateType</a> property of the
+result will be inferred from the types of the arguments and the specified return type.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynamicExpression Dynamic(CallSiteBinder binder, Type returnType, Expression arg0, Expression arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
+        <td><em>binder</em></td>
+        <td><p>The runtime binder for the dynamic operation.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Type.html" name="System.Type">Type</a></td>
-      <td><em>returnType</em></td>
-      <td><p>The result type of the dynamic expression.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Type.html" name="System.Type">Type</a></td>
+        <td><em>returnType</em></td>
+        <td><p>The result type of the dynamic expression.</p>
 </td>
-    </tr>
-    <tr>
-      <td>Expression</td>
-      <td><em>arg0</em></td>
-      <td><p>The first argument to the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td>Expression</td>
+        <td><em>arg0</em></td>
+        <td><p>The first argument to the dynamic operation.</p>
 </td>
-    </tr>
-    <tr>
-      <td>Expression</td>
-      <td><em>arg1</em></td>
-      <td><p>The second argument to the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td>Expression</td>
+        <td><em>arg1</em></td>
+        <td><p>The second argument to the dynamic operation.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.DynamicExpression.html" name="System.Linq.Expressions.DynamicExpression">DynamicExpression</a></td>
-      <td><p>A <see cref="T:System.Linq.Expressions.DynamicExpression"></see> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType"></see> equal to</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.DynamicExpression.html" name="System.Linq.Expressions.DynamicExpression">DynamicExpression</a></td>
+        <td><p>A <see cref="T:System.Linq.Expressions.DynamicExpression"></see> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType"></see> equal to</p>
 <p><see cref="!:ExpressionType.Dynamic">Dynamic</see> and has the</p>
 <p><see cref="P:System.Linq.Expressions.DynamicExpression.Binder">Binder</see> and</p>
 <p><see cref="P:System.Linq.Expressions.DynamicExpression.Arguments">Arguments</see> set to the specified values.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L321"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Dynamic_CallSiteBinder__Type__Expression__Expression__Expression_">Dynamic(CallSiteBinder, Type, Expression, Expression, Expression)</h4>
-<div class="markdown level1 summary"><p>Creates a <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression</a> that represents a dynamic operation bound by the provided <a href="System.Runtime.CompilerServices.CallSiteBinder.html">System.Runtime.CompilerServices.CallSiteBinder</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>The <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression.DelegateType</a> property of the<br>result will be inferred from the types of the arguments and the specified return type.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static DynamicExpression Dynamic(CallSiteBinder binder, Type returnType, Expression arg0, Expression arg1, Expression arg2)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L321">View Source</a>
+      </span>
+  <h4 id="Dynamic_CallSiteBinder__Type__Expression__Expression__Expression_">Dynamic(CallSiteBinder, Type, Expression, Expression, Expression)</h4>
+  <div class="markdown level1 summary"><p>Creates a <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression</a> that represents a dynamic operation bound by the provided <a href="System.Runtime.CompilerServices.CallSiteBinder.html">System.Runtime.CompilerServices.CallSiteBinder</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
-      <td><em>binder</em></td>
-      <td><p>The runtime binder for the dynamic operation.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Dynamic_CallSiteBinder__Type__Expression__Expression__Expression__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression.DelegateType</a> property of the
+result will be inferred from the types of the arguments and the specified return type.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynamicExpression Dynamic(CallSiteBinder binder, Type returnType, Expression arg0, Expression arg1, Expression arg2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
+        <td><em>binder</em></td>
+        <td><p>The runtime binder for the dynamic operation.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Type.html" name="System.Type">Type</a></td>
-      <td><em>returnType</em></td>
-      <td><p>The result type of the dynamic expression.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Type.html" name="System.Type">Type</a></td>
+        <td><em>returnType</em></td>
+        <td><p>The result type of the dynamic expression.</p>
 </td>
-    </tr>
-    <tr>
-      <td>Expression</td>
-      <td><em>arg0</em></td>
-      <td><p>The first argument to the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td>Expression</td>
+        <td><em>arg0</em></td>
+        <td><p>The first argument to the dynamic operation.</p>
 </td>
-    </tr>
-    <tr>
-      <td>Expression</td>
-      <td><em>arg1</em></td>
-      <td><p>The second argument to the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td>Expression</td>
+        <td><em>arg1</em></td>
+        <td><p>The second argument to the dynamic operation.</p>
 </td>
-    </tr>
-    <tr>
-      <td>Expression</td>
-      <td><em>arg2</em></td>
-      <td><p>The third argument to the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td>Expression</td>
+        <td><em>arg2</em></td>
+        <td><p>The third argument to the dynamic operation.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.DynamicExpression.html" name="System.Linq.Expressions.DynamicExpression">DynamicExpression</a></td>
-      <td><p>A <see cref="T:System.Linq.Expressions.DynamicExpression"></see> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType"></see> equal to</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.DynamicExpression.html" name="System.Linq.Expressions.DynamicExpression">DynamicExpression</a></td>
+        <td><p>A <see cref="T:System.Linq.Expressions.DynamicExpression"></see> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType"></see> equal to</p>
 <p><see cref="!:ExpressionType.Dynamic">Dynamic</see> and has the</p>
 <p><see cref="P:System.Linq.Expressions.DynamicExpression.Binder">Binder</see> and</p>
 <p><see cref="P:System.Linq.Expressions.DynamicExpression.Arguments">Arguments</see> set to the specified values.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L345"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Dynamic_CallSiteBinder__Type__Expression__Expression__Expression__Expression_">Dynamic(CallSiteBinder, Type, Expression, Expression, Expression, Expression)</h4>
-<div class="markdown level1 summary"><p>Creates a <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression</a> that represents a dynamic operation bound by the provided <a href="System.Runtime.CompilerServices.CallSiteBinder.html">System.Runtime.CompilerServices.CallSiteBinder</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>The <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression.DelegateType</a> property of the<br>result will be inferred from the types of the arguments and the specified return type.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static DynamicExpression Dynamic(CallSiteBinder binder, Type returnType, Expression arg0, Expression arg1, Expression arg2, Expression arg3)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L345">View Source</a>
+      </span>
+  <h4 id="Dynamic_CallSiteBinder__Type__Expression__Expression__Expression__Expression_">Dynamic(CallSiteBinder, Type, Expression, Expression, Expression, Expression)</h4>
+  <div class="markdown level1 summary"><p>Creates a <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression</a> that represents a dynamic operation bound by the provided <a href="System.Runtime.CompilerServices.CallSiteBinder.html">System.Runtime.CompilerServices.CallSiteBinder</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
-      <td><em>binder</em></td>
-      <td><p>The runtime binder for the dynamic operation.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Dynamic_CallSiteBinder__Type__Expression__Expression__Expression__Expression__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression.DelegateType</a> property of the
+result will be inferred from the types of the arguments and the specified return type.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynamicExpression Dynamic(CallSiteBinder binder, Type returnType, Expression arg0, Expression arg1, Expression arg2, Expression arg3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
+        <td><em>binder</em></td>
+        <td><p>The runtime binder for the dynamic operation.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Type.html" name="System.Type">Type</a></td>
-      <td><em>returnType</em></td>
-      <td><p>The result type of the dynamic expression.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Type.html" name="System.Type">Type</a></td>
+        <td><em>returnType</em></td>
+        <td><p>The result type of the dynamic expression.</p>
 </td>
-    </tr>
-    <tr>
-      <td>Expression</td>
-      <td><em>arg0</em></td>
-      <td><p>The first argument to the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td>Expression</td>
+        <td><em>arg0</em></td>
+        <td><p>The first argument to the dynamic operation.</p>
 </td>
-    </tr>
-    <tr>
-      <td>Expression</td>
-      <td><em>arg1</em></td>
-      <td><p>The second argument to the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td>Expression</td>
+        <td><em>arg1</em></td>
+        <td><p>The second argument to the dynamic operation.</p>
 </td>
-    </tr>
-    <tr>
-      <td>Expression</td>
-      <td><em>arg2</em></td>
-      <td><p>The third argument to the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td>Expression</td>
+        <td><em>arg2</em></td>
+        <td><p>The third argument to the dynamic operation.</p>
 </td>
-    </tr>
-    <tr>
-      <td>Expression</td>
-      <td><em>arg3</em></td>
-      <td><p>The fourth argument to the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td>Expression</td>
+        <td><em>arg3</em></td>
+        <td><p>The fourth argument to the dynamic operation.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.DynamicExpression.html" name="System.Linq.Expressions.DynamicExpression">DynamicExpression</a></td>
-      <td><p>A <see cref="T:System.Linq.Expressions.DynamicExpression"></see> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType"></see> equal to</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.DynamicExpression.html" name="System.Linq.Expressions.DynamicExpression">DynamicExpression</a></td>
+        <td><p>A <see cref="T:System.Linq.Expressions.DynamicExpression"></see> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType"></see> equal to</p>
 <p><see cref="!:ExpressionType.Dynamic">Dynamic</see> and has the</p>
 <p><see cref="P:System.Linq.Expressions.DynamicExpression.Binder">Binder</see> and</p>
 <p><see cref="P:System.Linq.Expressions.DynamicExpression.Arguments">Arguments</see> set to the specified values.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L234"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Dynamic_CallSiteBinder__Type__Expression___">Dynamic(CallSiteBinder, Type, Expression[])</h4>
-<div class="markdown level1 summary"><p>Creates a <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression</a> that represents a dynamic operation bound by the provided <a href="System.Runtime.CompilerServices.CallSiteBinder.html">System.Runtime.CompilerServices.CallSiteBinder</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>The <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression.DelegateType</a> property of the<br>result will be inferred from the types of the arguments and the specified return type.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static DynamicExpression Dynamic(CallSiteBinder binder, Type returnType, params Expression[] arguments)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L234">View Source</a>
+      </span>
+  <h4 id="Dynamic_CallSiteBinder__Type__Expression___">Dynamic(CallSiteBinder, Type, Expression[])</h4>
+  <div class="markdown level1 summary"><p>Creates a <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression</a> that represents a dynamic operation bound by the provided <a href="System.Runtime.CompilerServices.CallSiteBinder.html">System.Runtime.CompilerServices.CallSiteBinder</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
-      <td><em>binder</em></td>
-      <td><p>The runtime binder for the dynamic operation.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Dynamic_CallSiteBinder__Type__Expression____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression.DelegateType</a> property of the
+result will be inferred from the types of the arguments and the specified return type.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynamicExpression Dynamic(CallSiteBinder binder, Type returnType, params Expression[] arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
+        <td><em>binder</em></td>
+        <td><p>The runtime binder for the dynamic operation.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Type.html" name="System.Type">Type</a></td>
-      <td><em>returnType</em></td>
-      <td><p>The result type of the dynamic expression.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Type.html" name="System.Type">Type</a></td>
+        <td><em>returnType</em></td>
+        <td><p>The result type of the dynamic expression.</p>
 </td>
-    </tr>
-    <tr>
-      <td>Expression[]</td>
-      <td><em>arguments</em></td>
-      <td><p>The arguments to the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td>Expression[]</td>
+        <td><em>arguments</em></td>
+        <td><p>The arguments to the dynamic operation.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.DynamicExpression.html" name="System.Linq.Expressions.DynamicExpression">DynamicExpression</a></td>
-      <td><p>A <see cref="T:System.Linq.Expressions.DynamicExpression"></see> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType"></see> equal to</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.DynamicExpression.html" name="System.Linq.Expressions.DynamicExpression">DynamicExpression</a></td>
+        <td><p>A <see cref="T:System.Linq.Expressions.DynamicExpression"></see> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType"></see> equal to</p>
 <p><see cref="!:ExpressionType.Dynamic">Dynamic</see> and has the</p>
 <p><see cref="P:System.Linq.Expressions.DynamicExpression.Binder">Binder</see> and</p>
 <p><see cref="P:System.Linq.Expressions.DynamicExpression.Arguments">Arguments</see> set to the specified values.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L255"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Dynamic_CallSiteBinder__Type__IEnumerable_Expression__">Dynamic(CallSiteBinder, Type, IEnumerable&lt;Expression&gt;)</h4>
-<div class="markdown level1 summary"><p>Creates a <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression</a> that represents a dynamic operation bound by the provided <a href="System.Runtime.CompilerServices.CallSiteBinder.html">System.Runtime.CompilerServices.CallSiteBinder</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>The <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression.DelegateType</a> property of the<br>result will be inferred from the types of the arguments and the specified return type.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static DynamicExpression Dynamic(CallSiteBinder binder, Type returnType, IEnumerable<expression> arguments)</expression></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L255">View Source</a>
+      </span>
+  <h4 id="Dynamic_CallSiteBinder__Type__IEnumerable_Expression__">Dynamic(CallSiteBinder, Type, IEnumerable&lt;Expression&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates a <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression</a> that represents a dynamic operation bound by the provided <a href="System.Runtime.CompilerServices.CallSiteBinder.html">System.Runtime.CompilerServices.CallSiteBinder</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
-      <td><em>binder</em></td>
-      <td><p>The runtime binder for the dynamic operation.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Dynamic_CallSiteBinder__Type__IEnumerable_Expression___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression.DelegateType</a> property of the
+result will be inferred from the types of the arguments and the specified return type.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynamicExpression Dynamic(CallSiteBinder binder, Type returnType, IEnumerable<expression> arguments)</expression></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
+        <td><em>binder</em></td>
+        <td><p>The runtime binder for the dynamic operation.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Type.html" name="System.Type">Type</a></td>
-      <td><em>returnType</em></td>
-      <td><p>The result type of the dynamic expression.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Type.html" name="System.Type">Type</a></td>
+        <td><em>returnType</em></td>
+        <td><p>The result type of the dynamic expression.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;Expression&gt;</td>
-      <td><em>arguments</em></td>
-      <td><p>The arguments to the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;Expression&gt;</td>
+        <td><em>arguments</em></td>
+        <td><p>The arguments to the dynamic operation.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.DynamicExpression.html" name="System.Linq.Expressions.DynamicExpression">DynamicExpression</a></td>
-      <td><p>A <see cref="T:System.Linq.Expressions.DynamicExpression"></see> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType"></see> equal to</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.DynamicExpression.html" name="System.Linq.Expressions.DynamicExpression">DynamicExpression</a></td>
+        <td><p>A <see cref="T:System.Linq.Expressions.DynamicExpression"></see> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType"></see> equal to</p>
 <p><see cref="!:ExpressionType.Dynamic">Dynamic</see> and has the</p>
 <p><see cref="P:System.Linq.Expressions.DynamicExpression.Binder">Binder</see> and</p>
 <p><see cref="P:System.Linq.Expressions.DynamicExpression.Arguments">Arguments</see> set to the specified values.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L399"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="MakeDynamic_Type__CallSiteBinder__Expression_">MakeDynamic(Type, CallSiteBinder, Expression)</h4>
-<div class="markdown level1 summary"><p>Creates a <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression</a> that represents a dynamic operation bound by the provided <a href="System.Runtime.CompilerServices.CallSiteBinder.html">System.Runtime.CompilerServices.CallSiteBinder</a> and one argument.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static DynamicExpression MakeDynamic(Type delegateType, CallSiteBinder binder, Expression arg0)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L399">View Source</a>
+      </span>
+  <h4 id="MakeDynamic_Type__CallSiteBinder__Expression_">MakeDynamic(Type, CallSiteBinder, Expression)</h4>
+  <div class="markdown level1 summary"><p>Creates a <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression</a> that represents a dynamic operation bound by the provided <a href="System.Runtime.CompilerServices.CallSiteBinder.html">System.Runtime.CompilerServices.CallSiteBinder</a> and one argument.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Type.html" name="System.Type">Type</a></td>
-      <td><em>delegateType</em></td>
-      <td><p>The type of the delegate used by the <a href="System.Runtime.CompilerServices.CallSite.html">System.Runtime.CompilerServices.CallSite</a>.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynamicExpression MakeDynamic(Type delegateType, CallSiteBinder binder, Expression arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Type.html" name="System.Type">Type</a></td>
+        <td><em>delegateType</em></td>
+        <td><p>The type of the delegate used by the <a href="System.Runtime.CompilerServices.CallSite.html">System.Runtime.CompilerServices.CallSite</a>.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
-      <td><em>binder</em></td>
-      <td><p>The runtime binder for the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
+        <td><em>binder</em></td>
+        <td><p>The runtime binder for the dynamic operation.</p>
 </td>
-    </tr>
-    <tr>
-      <td>Expression</td>
-      <td><em>arg0</em></td>
-      <td><p>The argument to the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td>Expression</td>
+        <td><em>arg0</em></td>
+        <td><p>The argument to the dynamic operation.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.DynamicExpression.html" name="System.Linq.Expressions.DynamicExpression">DynamicExpression</a></td>
-      <td><p>A <see cref="T:System.Linq.Expressions.DynamicExpression"></see> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType"></see> equal to</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.DynamicExpression.html" name="System.Linq.Expressions.DynamicExpression">DynamicExpression</a></td>
+        <td><p>A <see cref="T:System.Linq.Expressions.DynamicExpression"></see> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType"></see> equal to</p>
 <p><see cref="!:ExpressionType.Dynamic">Dynamic</see> and has the</p>
 <p><see cref="P:System.Linq.Expressions.DynamicExpression.DelegateType">DelegateType</see>,</p>
 <p><see cref="P:System.Linq.Expressions.DynamicExpression.Binder">Binder</see>, and</p>
 <p><see cref="P:System.Linq.Expressions.DynamicExpression.Arguments">Arguments</see> set to the specified values.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L418"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="MakeDynamic_Type__CallSiteBinder__Expression__Expression_">MakeDynamic(Type, CallSiteBinder, Expression, Expression)</h4>
-<div class="markdown level1 summary"><p>Creates a <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression</a> that represents a dynamic operation bound by the provided <a href="System.Runtime.CompilerServices.CallSiteBinder.html">System.Runtime.CompilerServices.CallSiteBinder</a> and two arguments.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static DynamicExpression MakeDynamic(Type delegateType, CallSiteBinder binder, Expression arg0, Expression arg1)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L418">View Source</a>
+      </span>
+  <h4 id="MakeDynamic_Type__CallSiteBinder__Expression__Expression_">MakeDynamic(Type, CallSiteBinder, Expression, Expression)</h4>
+  <div class="markdown level1 summary"><p>Creates a <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression</a> that represents a dynamic operation bound by the provided <a href="System.Runtime.CompilerServices.CallSiteBinder.html">System.Runtime.CompilerServices.CallSiteBinder</a> and two arguments.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Type.html" name="System.Type">Type</a></td>
-      <td><em>delegateType</em></td>
-      <td><p>The type of the delegate used by the <a href="System.Runtime.CompilerServices.CallSite.html">System.Runtime.CompilerServices.CallSite</a>.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynamicExpression MakeDynamic(Type delegateType, CallSiteBinder binder, Expression arg0, Expression arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Type.html" name="System.Type">Type</a></td>
+        <td><em>delegateType</em></td>
+        <td><p>The type of the delegate used by the <a href="System.Runtime.CompilerServices.CallSite.html">System.Runtime.CompilerServices.CallSite</a>.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
-      <td><em>binder</em></td>
-      <td><p>The runtime binder for the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
+        <td><em>binder</em></td>
+        <td><p>The runtime binder for the dynamic operation.</p>
 </td>
-    </tr>
-    <tr>
-      <td>Expression</td>
-      <td><em>arg0</em></td>
-      <td><p>The first argument to the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td>Expression</td>
+        <td><em>arg0</em></td>
+        <td><p>The first argument to the dynamic operation.</p>
 </td>
-    </tr>
-    <tr>
-      <td>Expression</td>
-      <td><em>arg1</em></td>
-      <td><p>The second argument to the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td>Expression</td>
+        <td><em>arg1</em></td>
+        <td><p>The second argument to the dynamic operation.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.DynamicExpression.html" name="System.Linq.Expressions.DynamicExpression">DynamicExpression</a></td>
-      <td><p>A <see cref="T:System.Linq.Expressions.DynamicExpression"></see> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType"></see> equal to</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.DynamicExpression.html" name="System.Linq.Expressions.DynamicExpression">DynamicExpression</a></td>
+        <td><p>A <see cref="T:System.Linq.Expressions.DynamicExpression"></see> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType"></see> equal to</p>
 <p><see cref="!:ExpressionType.Dynamic">Dynamic</see> and has the</p>
 <p><see cref="P:System.Linq.Expressions.DynamicExpression.DelegateType">DelegateType</see>,</p>
 <p><see cref="P:System.Linq.Expressions.DynamicExpression.Binder">Binder</see>, and</p>
 <p><see cref="P:System.Linq.Expressions.DynamicExpression.Arguments">Arguments</see> set to the specified values.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L438"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="MakeDynamic_Type__CallSiteBinder__Expression__Expression__Expression_">MakeDynamic(Type, CallSiteBinder, Expression, Expression, Expression)</h4>
-<div class="markdown level1 summary"><p>Creates a <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression</a> that represents a dynamic operation bound by the provided <a href="System.Runtime.CompilerServices.CallSiteBinder.html">System.Runtime.CompilerServices.CallSiteBinder</a> and three arguments.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static DynamicExpression MakeDynamic(Type delegateType, CallSiteBinder binder, Expression arg0, Expression arg1, Expression arg2)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L438">View Source</a>
+      </span>
+  <h4 id="MakeDynamic_Type__CallSiteBinder__Expression__Expression__Expression_">MakeDynamic(Type, CallSiteBinder, Expression, Expression, Expression)</h4>
+  <div class="markdown level1 summary"><p>Creates a <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression</a> that represents a dynamic operation bound by the provided <a href="System.Runtime.CompilerServices.CallSiteBinder.html">System.Runtime.CompilerServices.CallSiteBinder</a> and three arguments.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Type.html" name="System.Type">Type</a></td>
-      <td><em>delegateType</em></td>
-      <td><p>The type of the delegate used by the <a href="System.Runtime.CompilerServices.CallSite.html">System.Runtime.CompilerServices.CallSite</a>.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynamicExpression MakeDynamic(Type delegateType, CallSiteBinder binder, Expression arg0, Expression arg1, Expression arg2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Type.html" name="System.Type">Type</a></td>
+        <td><em>delegateType</em></td>
+        <td><p>The type of the delegate used by the <a href="System.Runtime.CompilerServices.CallSite.html">System.Runtime.CompilerServices.CallSite</a>.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
-      <td><em>binder</em></td>
-      <td><p>The runtime binder for the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
+        <td><em>binder</em></td>
+        <td><p>The runtime binder for the dynamic operation.</p>
 </td>
-    </tr>
-    <tr>
-      <td>Expression</td>
-      <td><em>arg0</em></td>
-      <td><p>The first argument to the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td>Expression</td>
+        <td><em>arg0</em></td>
+        <td><p>The first argument to the dynamic operation.</p>
 </td>
-    </tr>
-    <tr>
-      <td>Expression</td>
-      <td><em>arg1</em></td>
-      <td><p>The second argument to the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td>Expression</td>
+        <td><em>arg1</em></td>
+        <td><p>The second argument to the dynamic operation.</p>
 </td>
-    </tr>
-    <tr>
-      <td>Expression</td>
-      <td><em>arg2</em></td>
-      <td><p>The third argument to the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td>Expression</td>
+        <td><em>arg2</em></td>
+        <td><p>The third argument to the dynamic operation.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.DynamicExpression.html" name="System.Linq.Expressions.DynamicExpression">DynamicExpression</a></td>
-      <td><p>A <see cref="T:System.Linq.Expressions.DynamicExpression"></see> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType"></see> equal to</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.DynamicExpression.html" name="System.Linq.Expressions.DynamicExpression">DynamicExpression</a></td>
+        <td><p>A <see cref="T:System.Linq.Expressions.DynamicExpression"></see> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType"></see> equal to</p>
 <p><see cref="!:ExpressionType.Dynamic">Dynamic</see> and has the</p>
 <p><see cref="P:System.Linq.Expressions.DynamicExpression.DelegateType">DelegateType</see>,</p>
 <p><see cref="P:System.Linq.Expressions.DynamicExpression.Binder">Binder</see>, and</p>
 <p><see cref="P:System.Linq.Expressions.DynamicExpression.Arguments">Arguments</see> set to the specified values.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L459"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="MakeDynamic_Type__CallSiteBinder__Expression__Expression__Expression__Expression_">MakeDynamic(Type, CallSiteBinder, Expression, Expression, Expression, Expression)</h4>
-<div class="markdown level1 summary"><p>Creates a <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression</a> that represents a dynamic operation bound by the provided <a href="System.Runtime.CompilerServices.CallSiteBinder.html">System.Runtime.CompilerServices.CallSiteBinder</a> and four arguments.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static DynamicExpression MakeDynamic(Type delegateType, CallSiteBinder binder, Expression arg0, Expression arg1, Expression arg2, Expression arg3)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L459">View Source</a>
+      </span>
+  <h4 id="MakeDynamic_Type__CallSiteBinder__Expression__Expression__Expression__Expression_">MakeDynamic(Type, CallSiteBinder, Expression, Expression, Expression, Expression)</h4>
+  <div class="markdown level1 summary"><p>Creates a <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression</a> that represents a dynamic operation bound by the provided <a href="System.Runtime.CompilerServices.CallSiteBinder.html">System.Runtime.CompilerServices.CallSiteBinder</a> and four arguments.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Type.html" name="System.Type">Type</a></td>
-      <td><em>delegateType</em></td>
-      <td><p>The type of the delegate used by the <a href="System.Runtime.CompilerServices.CallSite.html">System.Runtime.CompilerServices.CallSite</a>.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynamicExpression MakeDynamic(Type delegateType, CallSiteBinder binder, Expression arg0, Expression arg1, Expression arg2, Expression arg3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Type.html" name="System.Type">Type</a></td>
+        <td><em>delegateType</em></td>
+        <td><p>The type of the delegate used by the <a href="System.Runtime.CompilerServices.CallSite.html">System.Runtime.CompilerServices.CallSite</a>.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
-      <td><em>binder</em></td>
-      <td><p>The runtime binder for the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
+        <td><em>binder</em></td>
+        <td><p>The runtime binder for the dynamic operation.</p>
 </td>
-    </tr>
-    <tr>
-      <td>Expression</td>
-      <td><em>arg0</em></td>
-      <td><p>The first argument to the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td>Expression</td>
+        <td><em>arg0</em></td>
+        <td><p>The first argument to the dynamic operation.</p>
 </td>
-    </tr>
-    <tr>
-      <td>Expression</td>
-      <td><em>arg1</em></td>
-      <td><p>The second argument to the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td>Expression</td>
+        <td><em>arg1</em></td>
+        <td><p>The second argument to the dynamic operation.</p>
 </td>
-    </tr>
-    <tr>
-      <td>Expression</td>
-      <td><em>arg2</em></td>
-      <td><p>The third argument to the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td>Expression</td>
+        <td><em>arg2</em></td>
+        <td><p>The third argument to the dynamic operation.</p>
 </td>
-    </tr>
-    <tr>
-      <td>Expression</td>
-      <td><em>arg3</em></td>
-      <td><p>The fourth argument to the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td>Expression</td>
+        <td><em>arg3</em></td>
+        <td><p>The fourth argument to the dynamic operation.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.DynamicExpression.html" name="System.Linq.Expressions.DynamicExpression">DynamicExpression</a></td>
-      <td><p>A <see cref="T:System.Linq.Expressions.DynamicExpression"></see> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType"></see> equal to</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.DynamicExpression.html" name="System.Linq.Expressions.DynamicExpression">DynamicExpression</a></td>
+        <td><p>A <see cref="T:System.Linq.Expressions.DynamicExpression"></see> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType"></see> equal to</p>
 <p><see cref="!:ExpressionType.Dynamic">Dynamic</see> and has the</p>
 <p><see cref="P:System.Linq.Expressions.DynamicExpression.DelegateType">DelegateType</see>,</p>
 <p><see cref="P:System.Linq.Expressions.DynamicExpression.Binder">Binder</see>, and</p>
 <p><see cref="P:System.Linq.Expressions.DynamicExpression.Arguments">Arguments</see> set to the specified values.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L381"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="MakeDynamic_Type__CallSiteBinder__Expression___">MakeDynamic(Type, CallSiteBinder, Expression[])</h4>
-<div class="markdown level1 summary"><p>Creates a <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression</a> that represents a dynamic operation bound by the provided <a href="System.Runtime.CompilerServices.CallSiteBinder.html">System.Runtime.CompilerServices.CallSiteBinder</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static DynamicExpression MakeDynamic(Type delegateType, CallSiteBinder binder, params Expression[] arguments)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L381">View Source</a>
+      </span>
+  <h4 id="MakeDynamic_Type__CallSiteBinder__Expression___">MakeDynamic(Type, CallSiteBinder, Expression[])</h4>
+  <div class="markdown level1 summary"><p>Creates a <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression</a> that represents a dynamic operation bound by the provided <a href="System.Runtime.CompilerServices.CallSiteBinder.html">System.Runtime.CompilerServices.CallSiteBinder</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Type.html" name="System.Type">Type</a></td>
-      <td><em>delegateType</em></td>
-      <td><p>The type of the delegate used by the <a href="System.Runtime.CompilerServices.CallSite.html">System.Runtime.CompilerServices.CallSite</a>.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynamicExpression MakeDynamic(Type delegateType, CallSiteBinder binder, params Expression[] arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Type.html" name="System.Type">Type</a></td>
+        <td><em>delegateType</em></td>
+        <td><p>The type of the delegate used by the <a href="System.Runtime.CompilerServices.CallSite.html">System.Runtime.CompilerServices.CallSite</a>.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
-      <td><em>binder</em></td>
-      <td><p>The runtime binder for the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
+        <td><em>binder</em></td>
+        <td><p>The runtime binder for the dynamic operation.</p>
 </td>
-    </tr>
-    <tr>
-      <td>Expression[]</td>
-      <td><em>arguments</em></td>
-      <td><p>The arguments to the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td>Expression[]</td>
+        <td><em>arguments</em></td>
+        <td><p>The arguments to the dynamic operation.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.DynamicExpression.html" name="System.Linq.Expressions.DynamicExpression">DynamicExpression</a></td>
-      <td><p>A <see cref="T:System.Linq.Expressions.DynamicExpression"></see> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType"></see> equal to</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.DynamicExpression.html" name="System.Linq.Expressions.DynamicExpression">DynamicExpression</a></td>
+        <td><p>A <see cref="T:System.Linq.Expressions.DynamicExpression"></see> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType"></see> equal to</p>
 <p><see cref="!:ExpressionType.Dynamic">Dynamic</see> and has the</p>
 <p><see cref="P:System.Linq.Expressions.DynamicExpression.DelegateType">DelegateType</see>,</p>
 <p><see cref="P:System.Linq.Expressions.DynamicExpression.Binder">Binder</see>, and</p>
 <p><see cref="P:System.Linq.Expressions.DynamicExpression.Arguments">Arguments</see> set to the specified values.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L363"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="MakeDynamic_Type__CallSiteBinder__IEnumerable_Expression__">MakeDynamic(Type, CallSiteBinder, IEnumerable&lt;Expression&gt;)</h4>
-<div class="markdown level1 summary"><p>Creates a <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression</a> that represents a dynamic operation bound by the provided <a href="System.Runtime.CompilerServices.CallSiteBinder.html">System.Runtime.CompilerServices.CallSiteBinder</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static DynamicExpression MakeDynamic(Type delegateType, CallSiteBinder binder, IEnumerable<expression> arguments)</expression></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L363">View Source</a>
+      </span>
+  <h4 id="MakeDynamic_Type__CallSiteBinder__IEnumerable_Expression__">MakeDynamic(Type, CallSiteBinder, IEnumerable&lt;Expression&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates a <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression</a> that represents a dynamic operation bound by the provided <a href="System.Runtime.CompilerServices.CallSiteBinder.html">System.Runtime.CompilerServices.CallSiteBinder</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Type.html" name="System.Type">Type</a></td>
-      <td><em>delegateType</em></td>
-      <td><p>The type of the delegate used by the <a href="System.Runtime.CompilerServices.CallSite.html">System.Runtime.CompilerServices.CallSite</a>.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynamicExpression MakeDynamic(Type delegateType, CallSiteBinder binder, IEnumerable<expression> arguments)</expression></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Type.html" name="System.Type">Type</a></td>
+        <td><em>delegateType</em></td>
+        <td><p>The type of the delegate used by the <a href="System.Runtime.CompilerServices.CallSite.html">System.Runtime.CompilerServices.CallSite</a>.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
-      <td><em>binder</em></td>
-      <td><p>The runtime binder for the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.CompilerServices.CallSiteBinder.html" name="System.Runtime.CompilerServices.CallSiteBinder">CallSiteBinder</a></td>
+        <td><em>binder</em></td>
+        <td><p>The runtime binder for the dynamic operation.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;Expression&gt;</td>
-      <td><em>arguments</em></td>
-      <td><p>The arguments to the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;Expression&gt;</td>
+        <td><em>arguments</em></td>
+        <td><p>The arguments to the dynamic operation.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.DynamicExpression.html" name="System.Linq.Expressions.DynamicExpression">DynamicExpression</a></td>
-      <td><p>A <see cref="T:System.Linq.Expressions.DynamicExpression"></see> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType"></see> equal to</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.DynamicExpression.html" name="System.Linq.Expressions.DynamicExpression">DynamicExpression</a></td>
+        <td><p>A <see cref="T:System.Linq.Expressions.DynamicExpression"></see> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType"></see> equal to</p>
 <p><see cref="!:ExpressionType.Dynamic">Dynamic</see> and has the</p>
 <p><see cref="P:System.Linq.Expressions.DynamicExpression.DelegateType">DelegateType</see>,</p>
 <p><see cref="P:System.Linq.Expressions.DynamicExpression.Binder">Binder</see>, and</p>
 <p><see cref="P:System.Linq.Expressions.DynamicExpression.Arguments">Arguments</see> set to the specified values.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L41"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Reduce__">Reduce()</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public override Expression Reduce()</code></pre>
-</div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Expression</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L41">View Source</a>
+      </span>
+  <h4 id="Reduce__">Reduce()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Expression Reduce()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Expression</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L193"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Update_IEnumerable_Expression__">Update(IEnumerable&lt;Expression&gt;)</h4>
-<div class="markdown level1 summary"><p>Creates a new expression that is like this one, but using the<br>supplied children. If all of the children are the same, it will</br>return this expression.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public DynamicExpression Update(IEnumerable<expression> arguments)</expression></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Linq/Expressions/DynamicExpression.cs/#L193">View Source</a>
+      </span>
+  <h4 id="Update_IEnumerable_Expression__">Update(IEnumerable&lt;Expression&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates a new expression that is like this one, but using the
+supplied children. If all of the children are the same, it will
+return this expression.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;Expression&gt;</td>
-      <td><em>arguments</em></td>
-      <td><p>The <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression.Arguments</a> property of the result.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamicExpression Update(IEnumerable<expression> arguments)</expression></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;Expression&gt;</td>
+        <td><em>arguments</em></td>
+        <td><p>The <a href="System.Linq.Expressions.DynamicExpression.html">System.Linq.Expressions.DynamicExpression.Arguments</a> property of the result.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.DynamicExpression.html" name="System.Linq.Expressions.DynamicExpression">DynamicExpression</a></td>
-      <td><p>This expression if no children changed, or an expression with the updated children.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.DynamicExpression.html" name="System.Linq.Expressions.DynamicExpression">DynamicExpression</a></td>
+        <td><p>This expression if no children changed, or an expression with the updated children.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

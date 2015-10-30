@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Interface ISymbolWriter | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Interface ISymbolWriter | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -55,6 +55,789 @@
       </div>
       <div class="article row grid-right"><div class="col-md-10">
         <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs/#L22" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="ISymbolWriter">Interface ISymbolWriter</h1>
+      <div class="markdown level0 summary"></div>
+      <div class="markdown level0 conceptual"></div>
+      <h6><strong>Namespace</strong>:System.Diagnostics.SymbolStore</h6>
+      <h6><strong>Assembly</strong>:mscorlib.dll</h6>
+      <h5 id="ISymbolWriter_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public interface ISymbolWriter</code></pre>
+      </div>
+      <h3 id="methods">Methods</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs/#L175">View Source</a>
+      </span>
+  <h4 id="Close__">Close()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Close()</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs/#L65">View Source</a>
+      </span>
+  <h4 id="CloseMethod__">CloseMethod()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CloseMethod()</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs/#L190">View Source</a>
+      </span>
+  <h4 id="CloseNamespace__">CloseNamespace()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CloseNamespace()</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs/#L107">View Source</a>
+      </span>
+  <h4 id="CloseScope_Int32_">CloseScope(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CloseScope(int endOffset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>endOffset</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs/#L34">View Source</a>
+      </span>
+  <h4 id="DefineDocument_String__Guid__Guid__Guid_">DefineDocument(String, Guid, Guid, Guid)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ISymbolDocumentWriter DefineDocument(string url, Guid language, Guid languageVendor, Guid documentType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>url</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Guid.html" name="System.Guid">Guid</a></td>
+        <td><em>language</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Guid.html" name="System.Guid">Guid</a></td>
+        <td><em>languageVendor</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Guid.html" name="System.Guid">Guid</a></td>
+        <td><em>documentType</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Diagnostics.SymbolStore.ISymbolDocumentWriter.html" name="System.Diagnostics.SymbolStore.ISymbolDocumentWriter">ISymbolDocumentWriter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs/#L154">View Source</a>
+      </span>
+  <h4 id="DefineField_SymbolToken__String__FieldAttributes__Byte____SymAddressKind__Int32__Int32__Int32_">DefineField(SymbolToken, String, FieldAttributes, Byte[], SymAddressKind, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DefineField(SymbolToken parent, string name, FieldAttributes attributes, byte[] signature, SymAddressKind addrKind, int addr1, int addr2, int addr3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Diagnostics.SymbolStore.SymbolToken.html" name="System.Diagnostics.SymbolStore.SymbolToken">SymbolToken</a></td>
+        <td><em>parent</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>name</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.FieldAttributes.html" name="System.Reflection.FieldAttributes">FieldAttributes</a></td>
+        <td><em>attributes</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>System.Byte[]</td>
+        <td><em>signature</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Diagnostics.SymbolStore.SymAddressKind.html" name="System.Diagnostics.SymbolStore.SymAddressKind">SymAddressKind</a></td>
+        <td><em>addrKind</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>addr1</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>addr2</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>addr3</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs/#L164">View Source</a>
+      </span>
+  <h4 id="DefineGlobalVariable_String__FieldAttributes__Byte____SymAddressKind__Int32__Int32__Int32_">DefineGlobalVariable(String, FieldAttributes, Byte[], SymAddressKind, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DefineGlobalVariable(string name, FieldAttributes attributes, byte[] signature, SymAddressKind addrKind, int addr1, int addr2, int addr3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>name</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.FieldAttributes.html" name="System.Reflection.FieldAttributes">FieldAttributes</a></td>
+        <td><em>attributes</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>System.Byte[]</td>
+        <td><em>signature</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Diagnostics.SymbolStore.SymAddressKind.html" name="System.Diagnostics.SymbolStore.SymAddressKind">SymAddressKind</a></td>
+        <td><em>addrKind</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>addr1</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>addr2</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>addr3</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs/#L123">View Source</a>
+      </span>
+  <h4 id="DefineLocalVariable_String__FieldAttributes__Byte____SymAddressKind__Int32__Int32__Int32__Int32__Int32_">DefineLocalVariable(String, FieldAttributes, Byte[], SymAddressKind, Int32, Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DefineLocalVariable(string name, FieldAttributes attributes, byte[] signature, SymAddressKind addrKind, int addr1, int addr2, int addr3, int startOffset, int endOffset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>name</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.FieldAttributes.html" name="System.Reflection.FieldAttributes">FieldAttributes</a></td>
+        <td><em>attributes</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>System.Byte[]</td>
+        <td><em>signature</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Diagnostics.SymbolStore.SymAddressKind.html" name="System.Diagnostics.SymbolStore.SymAddressKind">SymAddressKind</a></td>
+        <td><em>addrKind</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>addr1</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>addr2</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>addr3</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>startOffset</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>endOffset</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs/#L144">View Source</a>
+      </span>
+  <h4 id="DefineParameter_String__ParameterAttributes__Int32__SymAddressKind__Int32__Int32__Int32_">DefineParameter(String, ParameterAttributes, Int32, SymAddressKind, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DefineParameter(string name, ParameterAttributes attributes, int sequence, SymAddressKind addrKind, int addr1, int addr2, int addr3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>name</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.ParameterAttributes.html" name="System.Reflection.ParameterAttributes">ParameterAttributes</a></td>
+        <td><em>attributes</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>sequence</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Diagnostics.SymbolStore.SymAddressKind.html" name="System.Diagnostics.SymbolStore.SymAddressKind">SymAddressKind</a></td>
+        <td><em>addrKind</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>addr1</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>addr2</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>addr3</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs/#L74">View Source</a>
+      </span>
+  <h4 id="DefineSequencePoints_ISymbolDocumentWriter__Int32____Int32____Int32____Int32____Int32___">DefineSequencePoints(ISymbolDocumentWriter, Int32[], Int32[], Int32[], Int32[], Int32[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DefineSequencePoints(ISymbolDocumentWriter document, int[] offsets, int[] lines, int[] columns, int[] endLines, int[] endColumns)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Diagnostics.SymbolStore.ISymbolDocumentWriter.html" name="System.Diagnostics.SymbolStore.ISymbolDocumentWriter">ISymbolDocumentWriter</a></td>
+        <td><em>document</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>System.Int32[]</td>
+        <td><em>offsets</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>System.Int32[]</td>
+        <td><em>lines</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>System.Int32[]</td>
+        <td><em>columns</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>System.Int32[]</td>
+        <td><em>endLines</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>System.Int32[]</td>
+        <td><em>endColumns</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs/#L28">View Source</a>
+      </span>
+  <h4 id="Initialize_IntPtr__String__Boolean_">Initialize(IntPtr, String, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Initialize(IntPtr emitter, string filename, bool fFullBuild)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.IntPtr.html" name="System.IntPtr">IntPtr</a></td>
+        <td><em>emitter</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>filename</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>fFullBuild</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs/#L58">View Source</a>
+      </span>
+  <h4 id="OpenMethod_SymbolToken_">OpenMethod(SymbolToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OpenMethod(SymbolToken method)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Diagnostics.SymbolStore.SymbolToken.html" name="System.Diagnostics.SymbolStore.SymbolToken">SymbolToken</a></td>
+        <td><em>method</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs/#L187">View Source</a>
+      </span>
+  <h4 id="OpenNamespace_String_">OpenNamespace(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OpenNamespace(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>name</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs/#L99">View Source</a>
+      </span>
+  <h4 id="OpenScope_Int32_">OpenScope(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int OpenScope(int startOffset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>startOffset</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs/#L205">View Source</a>
+      </span>
+  <h4 id="SetMethodSourceRange_ISymbolDocumentWriter__Int32__Int32__ISymbolDocumentWriter__Int32__Int32_">SetMethodSourceRange(ISymbolDocumentWriter, Int32, Int32, ISymbolDocumentWriter, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetMethodSourceRange(ISymbolDocumentWriter startDoc, int startLine, int startColumn, ISymbolDocumentWriter endDoc, int endLine, int endColumn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Diagnostics.SymbolStore.ISymbolDocumentWriter.html" name="System.Diagnostics.SymbolStore.ISymbolDocumentWriter">ISymbolDocumentWriter</a></td>
+        <td><em>startDoc</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>startLine</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>startColumn</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Diagnostics.SymbolStore.ISymbolDocumentWriter.html" name="System.Diagnostics.SymbolStore.ISymbolDocumentWriter">ISymbolDocumentWriter</a></td>
+        <td><em>endDoc</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>endLine</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>endColumn</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs/#L112">View Source</a>
+      </span>
+  <h4 id="SetScopeRange_Int32__Int32__Int32_">SetScopeRange(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetScopeRange(int scopeID, int startOffset, int endOffset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>scopeID</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>startOffset</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>endOffset</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs/#L181">View Source</a>
+      </span>
+  <h4 id="SetSymAttribute_SymbolToken__String__Byte___">SetSymAttribute(SymbolToken, String, Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetSymAttribute(SymbolToken parent, string name, byte[] data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Diagnostics.SymbolStore.SymbolToken.html" name="System.Diagnostics.SymbolStore.SymbolToken">SymbolToken</a></td>
+        <td><em>parent</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>name</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>System.Byte[]</td>
+        <td><em>data</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs/#L214">View Source</a>
+      </span>
+  <h4 id="SetUnderlyingWriter_IntPtr_">SetUnderlyingWriter(IntPtr)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetUnderlyingWriter(IntPtr underlyingWriter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.IntPtr.html" name="System.IntPtr">IntPtr</a></td>
+        <td><em>underlyingWriter</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs/#L45">View Source</a>
+      </span>
+  <h4 id="SetUserEntryPoint_SymbolToken_">SetUserEntryPoint(SymbolToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetUserEntryPoint(SymbolToken entryMethod)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Diagnostics.SymbolStore.SymbolToken.html" name="System.Diagnostics.SymbolStore.SymbolToken">SymbolToken</a></td>
+        <td><em>entryMethod</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs/#L198">View Source</a>
+      </span>
+  <h4 id="UsingNamespace_String_">UsingNamespace(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UsingNamespace(string fullName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>fullName</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

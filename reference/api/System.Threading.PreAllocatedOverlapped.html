@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class PreAllocatedOverlapped | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class PreAllocatedOverlapped | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -60,7 +60,8 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="PreAllocatedOverlapped">Class PreAllocatedOverlapped</h1>
-      <div class="markdown level0 summary"><p>Represents pre-allocated state for native overlapped I/O operations.</p><br></div>
+      <div class="markdown level0 summary"><p>Represents pre-allocated state for native overlapped I/O operations.</p>
+</div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
         <h5>Inheritance</h5>
@@ -73,17 +74,27 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public sealed class PreAllocatedOverlapped : IDisposable, IDeferredDisposable</code></pre>
       </div>
-      <h5 id="PreAllocatedOverlapped_remarks">remarks</h5>
-      <div class="markdown level0 remarks"></div>
       <h3 id="constructors">Constructors</h3>
-      
-    <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Overlapped/src/System/Threading/ClrThreadPoolPreAllocatedOverlapped.cs/#L49"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-  </span>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Overlapped/src/System/Threading/ClrThreadPoolPreAllocatedOverlapped.cs/#L49">View Source</a>
+      </span>
   <h4 id="PreAllocatedOverlapped_IOCompletionCallback__Object__Object_">PreAllocatedOverlapped(IOCompletionCallback, Object, Object)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Threading.PreAllocatedOverlapped.html">System.Threading.PreAllocatedOverlapped</a> class, specifying<br>a delegate that is invoked when each asynchronous I/O operation is complete, a user-provided</br>object providing context, and managed objects that serve as buffers.</p><br></div>
-  <div class="markdown level1 remarks"><p>The new <see cref="T:System.Threading.PreAllocatedOverlapped"></see> instance can be passed to</p><br><p><see cref="M:System.Threading.ThreadPoolBoundHandle.AllocateNativeOverlapped(System.Threading.PreAllocatedOverlapped)"></see>, to produce</br>a <see cref="T:System.Threading.NativeOverlapped"></see> instance that can be passed to the operating system in overlapped<br>I/O operations.  A single <see cref="T:System.Threading.PreAllocatedOverlapped"></see> instance can only be used for</br>a single native I/O operation at a time.  However, the state stored in the <see cref="T:System.Threading.PreAllocatedOverlapped"></see><br>instance can be reused for subsequent native operations.<p></br><note><br>The buffers specified in <paramref name="pinData"></paramref> are pinned until <see cref="M:System.Threading.PreAllocatedOverlapped.Dispose"></see> is called.</br></note></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Threading.PreAllocatedOverlapped.html">System.Threading.PreAllocatedOverlapped</a> class, specifying
+a delegate that is invoked when each asynchronous I/O operation is complete, a user-provided
+object providing context, and managed objects that serve as buffers.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
+  <h5 id="PreAllocatedOverlapped_IOCompletionCallback__Object__Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The new <see cref="T:System.Threading.PreAllocatedOverlapped"></see> instance can be passed to</p>
+<p><see cref="M:System.Threading.ThreadPoolBoundHandle.AllocateNativeOverlapped(System.Threading.PreAllocatedOverlapped)"></see>, to produce
+a <see cref="T:System.Threading.NativeOverlapped"></see> instance that can be passed to the operating system in overlapped
+I/O operations.  A single <see cref="T:System.Threading.PreAllocatedOverlapped"></see> instance can only be used for
+a single native I/O operation at a time.  However, the state stored in the <see cref="T:System.Threading.PreAllocatedOverlapped"></see>
+instance can be reused for subsequent native operations.</p>
+<note>
+The buffers specified in <paramref name="pinData"></paramref> are pinned until <see cref="M:System.Threading.PreAllocatedOverlapped.Dispose"></see> is called.
+</note></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PreAllocatedOverlapped(IOCompletionCallback callback, object state, object pinData)</code></pre>
@@ -121,31 +132,30 @@ object represents a buffer, for example an array of bytes.  Can be <see langword
       </tr>
     </tbody>
   </table>
-<h3 id="methods">Methods</h3>
+      <h3 id="methods">Methods</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Overlapped/src/System/Threading/ClrThreadPoolPreAllocatedOverlapped.cs/#L71"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Dispose__">Dispose()</h4>
-<div class="markdown level1 summary"><p>Frees the resources associated with this <a href="System.Threading.PreAllocatedOverlapped.html">System.Threading.PreAllocatedOverlapped</a> instance.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Overlapped/src/System/Threading/ClrThreadPoolPreAllocatedOverlapped.cs/#L71">View Source</a>
+      </span>
+  <h4 id="Dispose__">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Frees the resources associated with this <a href="System.Threading.PreAllocatedOverlapped.html">System.Threading.PreAllocatedOverlapped</a> instance.</p>
 </div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Overlapped/src/System/Threading/ClrThreadPoolPreAllocatedOverlapped.cs/#L77"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Finalize__">Finalize()</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
-</div>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Overlapped/src/System/Threading/ClrThreadPoolPreAllocatedOverlapped.cs/#L77">View Source</a>
+      </span>
+  <h4 id="Finalize__">Finalize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
 
 </article>
 </div>

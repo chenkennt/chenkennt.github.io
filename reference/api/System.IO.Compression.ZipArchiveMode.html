@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Enum ZipArchiveMode | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Enum ZipArchiveMode | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -55,6 +55,66 @@
       </div>
       <div class="article row grid-right"><div class="col-md-10">
         <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.IO.Compression/src/System/IO/Compression/ZipArchiveMode.cs/#L6" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="ZipArchiveMode">Enum ZipArchiveMode</h1>
+      <div class="markdown level0 summary"></div>
+      <div class="markdown level0 conceptual"></div>
+      <h6><strong>Namespace</strong>:System.IO.Compression</h6>
+      <h6><strong>Assembly</strong>:System.IO.Compression.dll</h6>
+      <h5 id="ZipArchiveMode_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public enum ZipArchiveMode</code></pre>
+      </div>
+      <h3 id="fields">Fields</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.IO.Compression/src/System/IO/Compression/ZipArchiveMode.cs/#L22">View Source</a>
+      </span>
+  <h4 id="Create">Create</h4>
+  <div class="markdown level1 summary"><p>Only supports the creation of new archives.
+Only writing to newly created entries in the archive is permitted.
+Each entry in the archive can only be opened for writing once.
+If only one entry is written to at a time, data will be written to the underlying stream or file as soon as it is available.
+The underlying stream must be writeable, but need not be seekable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Create = 1</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.IO.Compression/src/System/IO/Compression/ZipArchiveMode.cs/#L14">View Source</a>
+      </span>
+  <h4 id="Read">Read</h4>
+  <div class="markdown level1 summary"><p>Only reading entries from the archive is permitted.
+If the underlying file or stream is seekable, then files will be read from the archive on-demand as they are requested.
+If the underlying file or stream is not seekable, the entire archive will be held in memory.
+Requires that the underlying file or stream is readable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Read = 0</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.IO.Compression/src/System/IO/Compression/ZipArchiveMode.cs/#L29">View Source</a>
+      </span>
+  <h4 id="Update">Update</h4>
+  <div class="markdown level1 summary"><p>Reading and writing from entries in the archive is permitted.
+Requires that the contents of the entire archive be held in memory.
+The underlying file or stream must be readable, writeable and seekable.
+No data will be written to the underlying file or stream until the archive is disposed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Update = 2</code></pre>
+  </div>
 
 </article>
 </div>

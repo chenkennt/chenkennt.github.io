@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Enum EventManifestOptions | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Enum EventManifestOptions | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -55,6 +55,85 @@
       </div>
       <div class="article row grid-right"><div class="col-md-10">
         <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs/#L5784" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="EventManifestOptions">Enum EventManifestOptions</h1>
+      <div class="markdown level0 summary"><p>Flags that can be used with EventSource.GenerateManifest to control how the ETW manifest for the EventSource is
+generated.</p>
+</div>
+      <div class="markdown level0 conceptual"></div>
+      <h6><strong>Namespace</strong>:System.Diagnostics.Tracing</h6>
+      <h6><strong>Assembly</strong>:mscorlib.dll</h6>
+      <h5 id="EventManifestOptions_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public enum EventManifestOptions</code></pre>
+      </div>
+      <h3 id="fields">Fields</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs/#L5798">View Source</a>
+      </span>
+  <h4 id="AllCultures">AllCultures</h4>
+  <div class="markdown level1 summary"><p>Generate a &quot;resources&quot; node under &quot;localization&quot; for every satellite assembly provided</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AllCultures = 2</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs/#L5809">View Source</a>
+      </span>
+  <h4 id="AllowEventSourceOverride">AllowEventSourceOverride</h4>
+  <div class="markdown level1 summary"><p>When generating the manifest do <em>not</em> enforce the rule that the current EventSource class
+must be the base class for the user-defined type passed in. This allows validation of .net
+event sources using the new validation code</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AllowEventSourceOverride = 8</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs/#L5790">View Source</a>
+      </span>
+  <h4 id="None">None</h4>
+  <div class="markdown level1 summary"><p>Only the resources associated with current UI culture are included in the  manifest</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">None = 0</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs/#L5803">View Source</a>
+      </span>
+  <h4 id="OnlyIfNeededForRegistration">OnlyIfNeededForRegistration</h4>
+  <div class="markdown level1 summary"><p>Generate the manifest only if the event source needs to be registered on the machine,
+otherwise return null (but still perform validation if Strict is specified)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">OnlyIfNeededForRegistration = 4</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs/#L5794">View Source</a>
+      </span>
+  <h4 id="Strict">Strict</h4>
+  <div class="markdown level1 summary"><p>Throw exceptions for any inconsistency encountered</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Strict = 1</code></pre>
+  </div>
 
 </article>
 </div>

@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Interface UCOMIRunningObjectTable | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Interface UCOMIRunningObjectTable | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -55,6 +55,246 @@
       </div>
       <div class="article row grid-right"><div class="col-md-10">
         <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/UCOMIRunningObjectTable.cs/#L17" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="UCOMIRunningObjectTable">Interface UCOMIRunningObjectTable</h1>
+      <div class="markdown level0 summary"></div>
+      <div class="markdown level0 conceptual"></div>
+      <h6><strong>Namespace</strong>:System.Runtime.InteropServices</h6>
+      <h6><strong>Assembly</strong>:mscorlib.dll</h6>
+      <h5 id="UCOMIRunningObjectTable_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public interface UCOMIRunningObjectTable</code></pre>
+      </div>
+      <h3 id="methods">Methods</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/UCOMIRunningObjectTable.cs/#L29">View Source</a>
+      </span>
+  <h4 id="EnumRunning_out_UCOMIEnumMoniker_">EnumRunning(out UCOMIEnumMoniker)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void EnumRunning(out UCOMIEnumMoniker ppenumMoniker)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIEnumMoniker.html" name="System.Runtime.InteropServices.UCOMIEnumMoniker">UCOMIEnumMoniker</a></td>
+        <td><em>ppenumMoniker</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/UCOMIRunningObjectTable.cs/#L26">View Source</a>
+      </span>
+  <h4 id="GetObject_UCOMIMoniker__out_Object_">GetObject(UCOMIMoniker, out Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GetObject(UCOMIMoniker pmkObjectName, out object ppunkObject)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIMoniker.html" name="System.Runtime.InteropServices.UCOMIMoniker">UCOMIMoniker</a></td>
+        <td><em>pmkObjectName</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>ppunkObject</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/UCOMIRunningObjectTable.cs/#L28">View Source</a>
+      </span>
+  <h4 id="GetTimeOfLastChange_UCOMIMoniker__out_FILETIME_">GetTimeOfLastChange(UCOMIMoniker, out FILETIME)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GetTimeOfLastChange(UCOMIMoniker pmkObjectName, out FILETIME pfiletime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIMoniker.html" name="System.Runtime.InteropServices.UCOMIMoniker">UCOMIMoniker</a></td>
+        <td><em>pmkObjectName</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.FILETIME.html" name="System.Runtime.InteropServices.FILETIME">FILETIME</a></td>
+        <td><em>pfiletime</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/UCOMIRunningObjectTable.cs/#L25">View Source</a>
+      </span>
+  <h4 id="IsRunning_UCOMIMoniker_">IsRunning(UCOMIMoniker)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IsRunning(UCOMIMoniker pmkObjectName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIMoniker.html" name="System.Runtime.InteropServices.UCOMIMoniker">UCOMIMoniker</a></td>
+        <td><em>pmkObjectName</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/UCOMIRunningObjectTable.cs/#L27">View Source</a>
+      </span>
+  <h4 id="NoteChangeTime_Int32__ref_FILETIME_">NoteChangeTime(Int32, ref FILETIME)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void NoteChangeTime(int dwRegister, ref FILETIME pfiletime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>dwRegister</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.FILETIME.html" name="System.Runtime.InteropServices.FILETIME">FILETIME</a></td>
+        <td><em>pfiletime</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/UCOMIRunningObjectTable.cs/#L23">View Source</a>
+      </span>
+  <h4 id="Register_Int32__Object__UCOMIMoniker__out_Int32_">Register(Int32, Object, UCOMIMoniker, out Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Register(int grfFlags, object punkObject, UCOMIMoniker pmkObjectName, out int pdwRegister)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>grfFlags</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>punkObject</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIMoniker.html" name="System.Runtime.InteropServices.UCOMIMoniker">UCOMIMoniker</a></td>
+        <td><em>pmkObjectName</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>pdwRegister</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/UCOMIRunningObjectTable.cs/#L24">View Source</a>
+      </span>
+  <h4 id="Revoke_Int32_">Revoke(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Revoke(int dwRegister)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>dwRegister</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

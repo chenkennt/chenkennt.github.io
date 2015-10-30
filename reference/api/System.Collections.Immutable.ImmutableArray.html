@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class ImmutableArray | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class ImmutableArray | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -60,7 +60,8 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="ImmutableArray">Class ImmutableArray</h1>
-      <div class="markdown level0 summary"><p>A set of initialization methods for instances of <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a>.</p><br></div>
+      <div class="markdown level0 summary"><p>A set of initialization methods for instances of <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a>.</p>
+</div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
         <h5>Inheritance</h5>
@@ -73,1092 +74,1125 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public class ImmutableArray</code></pre>
       </div>
-      <h5 id="ImmutableArray_remarks">remarks</h5>
-      <div class="markdown level0 remarks"></div>
-<h3 id="methods">Methods</h3>
+      <h3 id="methods">Methods</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L423"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="BinarySearch_T__ImmutableArray_T___T_">BinarySearch&lt;T&gt;(ImmutableArray&lt;T&gt;, T)</h4>
-<div class="markdown level1 summary"><p>Searches an entire one-dimensional sorted <see cref="T:System.Collections.Immutable.ImmutableArray`1"></see> for a specific element,<br>using the <see cref="T:System.IComparable`1"></see> generic interface implemented by each element</br>of the <see cref="T:System.Collections.Immutable.ImmutableArray`1"></see> and by the specified object.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static int BinarySearch<t>(ImmutableArray<t> array, T value)</t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L423">View Source</a>
+      </span>
+  <h4 id="BinarySearch_T__ImmutableArray_T___T_">BinarySearch&lt;T&gt;(ImmutableArray&lt;T&gt;, T)</h4>
+  <div class="markdown level1 summary"><p>Searches an entire one-dimensional sorted <see cref="T:System.Collections.Immutable.ImmutableArray`1"></see> for a specific element,
+using the <see cref="T:System.IComparable`1"></see> generic interface implemented by each element
+of the <see cref="T:System.Collections.Immutable.ImmutableArray`1"></see> and by the specified object.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
-      <td><em>array</em></td>
-      <td><p>The sorted, one-dimensional array to search.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BinarySearch<t>(ImmutableArray<t> array, T value)</t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.ImmutableArray&lt;T&gt;</td>
+        <td><em>array</em></td>
+        <td><p>The sorted, one-dimensional array to search.</p>
 </td>
-    </tr>
-    <tr>
-      <td>T</td>
-      <td><em>value</em></td>
-      <td><p>The object to search for.</p>
+      </tr>
+      <tr>
+        <td>T</td>
+        <td><em>value</em></td>
+        <td><p>The object to search for.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td><p>The index of the specified <paramref name="value"></paramref> in the specified array, if <paramref name="value"></paramref> is found.
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><p>The index of the specified <paramref name="value"></paramref> in the specified array, if <paramref name="value"></paramref> is found.
 If <paramref name="value"></paramref> is not found and <paramref name="value"></paramref> is less than one or more elements in array,
 a negative number which is the bitwise complement of the index of the first
 element that is larger than <paramref name="value"></paramref>. If <paramref name="value"></paramref> is not found and <paramref name="value"></paramref> is greater
 than any of the elements in array, a negative number which is the bitwise
 complement of (the index of the last element plus 1).</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L454"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="BinarySearch_T__ImmutableArray_T___T__IComparer_T__">BinarySearch&lt;T&gt;(ImmutableArray&lt;T&gt;, T, IComparer&lt;T&gt;)</h4>
-<div class="markdown level1 summary"><p>Searches an entire one-dimensional sorted <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a> for a value using<br>the specified <a href="System.Collections.Generic.IComparer`1.html">System.Collections.Generic.IComparer`1</a> generic interface.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static int BinarySearch<t>(ImmutableArray<t> array, T value, IComparer<t> comparer)</t></t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L454">View Source</a>
+      </span>
+  <h4 id="BinarySearch_T__ImmutableArray_T___T__IComparer_T__">BinarySearch&lt;T&gt;(ImmutableArray&lt;T&gt;, T, IComparer&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Searches an entire one-dimensional sorted <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a> for a value using
+the specified <a href="System.Collections.Generic.IComparer`1.html">System.Collections.Generic.IComparer`1</a> generic interface.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
-      <td><em>array</em></td>
-      <td><p>The sorted, one-dimensional array to search.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BinarySearch<t>(ImmutableArray<t> array, T value, IComparer<t> comparer)</t></t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.ImmutableArray&lt;T&gt;</td>
+        <td><em>array</em></td>
+        <td><p>The sorted, one-dimensional array to search.</p>
 </td>
-    </tr>
-    <tr>
-      <td>T</td>
-      <td><em>value</em></td>
-      <td><p>The object to search for.</p>
+      </tr>
+      <tr>
+        <td>T</td>
+        <td><em>value</em></td>
+        <td><p>The object to search for.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Collections.Generic.IComparer`1.html" name="System.Collections.Generic.IComparer">IComparer</a>&lt;T&gt;</td>
-      <td><em>comparer</em></td>
-      <td><p>The <see cref="T:System.Collections.Generic.IComparer`1"></see> implementation to use when comparing
+      </tr>
+      <tr>
+        <td>System.Collections.Generic.IComparer&lt;T&gt;</td>
+        <td><em>comparer</em></td>
+        <td><p>The <see cref="T:System.Collections.Generic.IComparer`1"></see> implementation to use when comparing
 elements; or null to use the <see cref="T:System.IComparable`1"></see> implementation of each
 element.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td><p>The index of the specified <paramref name="value"></paramref> in the specified array, if <paramref name="value"></paramref> is found.
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><p>The index of the specified <paramref name="value"></paramref> in the specified array, if <paramref name="value"></paramref> is found.
 If <paramref name="value"></paramref> is not found and <paramref name="value"></paramref> is less than one or more elements in array,
 a negative number which is the bitwise complement of the index of the first
 element that is larger than <paramref name="value"></paramref>. If <paramref name="value"></paramref> is not found and <paramref name="value"></paramref> is greater
 than any of the elements in array, a negative number which is the bitwise
 complement of (the index of the last element plus 1).</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L489"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="BinarySearch_T__ImmutableArray_T___Int32__Int32__T_">BinarySearch&lt;T&gt;(ImmutableArray&lt;T&gt;, Int32, Int32, T)</h4>
-<div class="markdown level1 summary"><p>Searches a range of elements in a one-dimensional sorted <see cref="T:System.Collections.Immutable.ImmutableArray`1"></see> for<br>a value, using the <see cref="T:System.IComparable`1"></see> generic interface implemented by</br>each element of the <see cref="T:System.Collections.Immutable.ImmutableArray`1"></see> and by the specified value.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static int BinarySearch<t>(ImmutableArray<t> array, int index, int length, T value)</t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L489">View Source</a>
+      </span>
+  <h4 id="BinarySearch_T__ImmutableArray_T___Int32__Int32__T_">BinarySearch&lt;T&gt;(ImmutableArray&lt;T&gt;, Int32, Int32, T)</h4>
+  <div class="markdown level1 summary"><p>Searches a range of elements in a one-dimensional sorted <see cref="T:System.Collections.Immutable.ImmutableArray`1"></see> for
+a value, using the <see cref="T:System.IComparable`1"></see> generic interface implemented by
+each element of the <see cref="T:System.Collections.Immutable.ImmutableArray`1"></see> and by the specified value.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
-      <td><em>array</em></td>
-      <td><p>The sorted, one-dimensional array to search.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BinarySearch<t>(ImmutableArray<t> array, int index, int length, T value)</t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.ImmutableArray&lt;T&gt;</td>
+        <td><em>array</em></td>
+        <td><p>The sorted, one-dimensional array to search.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td><em>index</em></td>
-      <td><p>The starting index of the range to search.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>index</em></td>
+        <td><p>The starting index of the range to search.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td><em>length</em></td>
-      <td><p>The length of the range to search.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>length</em></td>
+        <td><p>The length of the range to search.</p>
 </td>
-    </tr>
-    <tr>
-      <td>T</td>
-      <td><em>value</em></td>
-      <td><p>The object to search for.</p>
+      </tr>
+      <tr>
+        <td>T</td>
+        <td><em>value</em></td>
+        <td><p>The object to search for.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td><p>The index of the specified <paramref name="value"></paramref> in the specified <paramref name="array"></paramref>, if <paramref name="value"></paramref> is found.
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><p>The index of the specified <paramref name="value"></paramref> in the specified <paramref name="array"></paramref>, if <paramref name="value"></paramref> is found.
 If <paramref name="value"></paramref> is not found and <paramref name="value"></paramref> is less than one or more elements in <paramref name="array"></paramref>,
 a negative number which is the bitwise complement of the index of the first
 element that is larger than <paramref name="value"></paramref>. If <paramref name="value"></paramref> is not found and <paramref name="value"></paramref> is greater
 than any of the elements in <paramref name="array"></paramref>, a negative number which is the bitwise
 complement of (the index of the last element plus 1).</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L530"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="BinarySearch_T__ImmutableArray_T___Int32__Int32__T__IComparer_T__">BinarySearch&lt;T&gt;(ImmutableArray&lt;T&gt;, Int32, Int32, T, IComparer&lt;T&gt;)</h4>
-<div class="markdown level1 summary"><p>Searches a range of elements in a one-dimensional sorted <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a> for<br>a value, using the specified <a href="System.Collections.Generic.IComparer`1.html">System.Collections.Generic.IComparer`1</a> generic</br>interface.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static int BinarySearch<t>(ImmutableArray<t> array, int index, int length, T value, IComparer<t> comparer)</t></t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L530">View Source</a>
+      </span>
+  <h4 id="BinarySearch_T__ImmutableArray_T___Int32__Int32__T__IComparer_T__">BinarySearch&lt;T&gt;(ImmutableArray&lt;T&gt;, Int32, Int32, T, IComparer&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Searches a range of elements in a one-dimensional sorted <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a> for
+a value, using the specified <a href="System.Collections.Generic.IComparer`1.html">System.Collections.Generic.IComparer`1</a> generic
+interface.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
-      <td><em>array</em></td>
-      <td><p>The sorted, one-dimensional array to search.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BinarySearch<t>(ImmutableArray<t> array, int index, int length, T value, IComparer<t> comparer)</t></t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.ImmutableArray&lt;T&gt;</td>
+        <td><em>array</em></td>
+        <td><p>The sorted, one-dimensional array to search.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td><em>index</em></td>
-      <td><p>The starting index of the range to search.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>index</em></td>
+        <td><p>The starting index of the range to search.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td><em>length</em></td>
-      <td><p>The length of the range to search.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>length</em></td>
+        <td><p>The length of the range to search.</p>
 </td>
-    </tr>
-    <tr>
-      <td>T</td>
-      <td><em>value</em></td>
-      <td><p>The object to search for.</p>
+      </tr>
+      <tr>
+        <td>T</td>
+        <td><em>value</em></td>
+        <td><p>The object to search for.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Collections.Generic.IComparer`1.html" name="System.Collections.Generic.IComparer">IComparer</a>&lt;T&gt;</td>
-      <td><em>comparer</em></td>
-      <td><p>The <see cref="T:System.Collections.Generic.IComparer`1"></see> implementation to use when comparing
+      </tr>
+      <tr>
+        <td>System.Collections.Generic.IComparer&lt;T&gt;</td>
+        <td><em>comparer</em></td>
+        <td><p>The <see cref="T:System.Collections.Generic.IComparer`1"></see> implementation to use when comparing
 elements; or null to use the <see cref="T:System.IComparable`1"></see> implementation of each
 element.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td><p>The index of the specified <paramref name="value"></paramref> in the specified <paramref name="array"></paramref>, if <paramref name="value"></paramref> is found.
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><p>The index of the specified <paramref name="value"></paramref> in the specified <paramref name="array"></paramref>, if <paramref name="value"></paramref> is found.
 If <paramref name="value"></paramref> is not found and <paramref name="value"></paramref> is less than one or more elements in <paramref name="array"></paramref>,
 a negative number which is the bitwise complement of the index of the first
 element that is larger than <paramref name="value"></paramref>. If <paramref name="value"></paramref> is not found and <paramref name="value"></paramref> is greater
 than any of the elements in <paramref name="array"></paramref>, a negative number which is the bitwise
 complement of (the index of the last element plus 1).</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L27"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Create_T___">Create&lt;T&gt;()</h4>
-<div class="markdown level1 summary"><p>Creates an empty <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static ImmutableArray<t> Create<t>()</t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L27">View Source</a>
+      </span>
+  <h4 id="Create_T___">Create&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Creates an empty <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a>.</p>
 </div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
-      <td><p>An empty array.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImmutableArray<t> Create<t>()</t></t></code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.ImmutableArray&lt;T&gt;</td>
+        <td><p>An empty array.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L39"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Create_T__T_">Create&lt;T&gt;(T)</h4>
-<div class="markdown level1 summary"><p>Creates an <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a> with the specified element as its only member.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static ImmutableArray<t> Create<t>(T item)</t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L39">View Source</a>
+      </span>
+  <h4 id="Create_T__T_">Create&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"><p>Creates an <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a> with the specified element as its only member.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><em>item</em></td>
-      <td><p>The element to store in the array.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImmutableArray<t> Create<t>(T item)</t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><em>item</em></td>
+        <td><p>The element to store in the array.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
-      <td><p>A 1-element array.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.ImmutableArray&lt;T&gt;</td>
+        <td><p>A 1-element array.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L53"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Create_T__T__T_">Create&lt;T&gt;(T, T)</h4>
-<div class="markdown level1 summary"><p>Creates an <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a> with the specified elements.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static ImmutableArray<t> Create<t>(T item1, T item2)</t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L53">View Source</a>
+      </span>
+  <h4 id="Create_T__T__T_">Create&lt;T&gt;(T, T)</h4>
+  <div class="markdown level1 summary"><p>Creates an <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a> with the specified elements.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><em>item1</em></td>
-      <td><p>The first element to store in the array.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImmutableArray<t> Create<t>(T item1, T item2)</t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><em>item1</em></td>
+        <td><p>The first element to store in the array.</p>
 </td>
-    </tr>
-    <tr>
-      <td>T</td>
-      <td><em>item2</em></td>
-      <td><p>The second element to store in the array.</p>
+      </tr>
+      <tr>
+        <td>T</td>
+        <td><em>item2</em></td>
+        <td><p>The second element to store in the array.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
-      <td><p>A 2-element array.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.ImmutableArray&lt;T&gt;</td>
+        <td><p>A 2-element array.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L68"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Create_T__T__T__T_">Create&lt;T&gt;(T, T, T)</h4>
-<div class="markdown level1 summary"><p>Creates an <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a> with the specified elements.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static ImmutableArray<t> Create<t>(T item1, T item2, T item3)</t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L68">View Source</a>
+      </span>
+  <h4 id="Create_T__T__T__T_">Create&lt;T&gt;(T, T, T)</h4>
+  <div class="markdown level1 summary"><p>Creates an <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a> with the specified elements.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><em>item1</em></td>
-      <td><p>The first element to store in the array.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImmutableArray<t> Create<t>(T item1, T item2, T item3)</t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><em>item1</em></td>
+        <td><p>The first element to store in the array.</p>
 </td>
-    </tr>
-    <tr>
-      <td>T</td>
-      <td><em>item2</em></td>
-      <td><p>The second element to store in the array.</p>
+      </tr>
+      <tr>
+        <td>T</td>
+        <td><em>item2</em></td>
+        <td><p>The second element to store in the array.</p>
 </td>
-    </tr>
-    <tr>
-      <td>T</td>
-      <td><em>item3</em></td>
-      <td><p>The third element to store in the array.</p>
+      </tr>
+      <tr>
+        <td>T</td>
+        <td><em>item3</em></td>
+        <td><p>The third element to store in the array.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
-      <td><p>A 3-element array.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.ImmutableArray&lt;T&gt;</td>
+        <td><p>A 3-element array.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L84"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Create_T__T__T__T__T_">Create&lt;T&gt;(T, T, T, T)</h4>
-<div class="markdown level1 summary"><p>Creates an <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a> with the specified elements.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static ImmutableArray<t> Create<t>(T item1, T item2, T item3, T item4)</t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L84">View Source</a>
+      </span>
+  <h4 id="Create_T__T__T__T__T_">Create&lt;T&gt;(T, T, T, T)</h4>
+  <div class="markdown level1 summary"><p>Creates an <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a> with the specified elements.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><em>item1</em></td>
-      <td><p>The first element to store in the array.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImmutableArray<t> Create<t>(T item1, T item2, T item3, T item4)</t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><em>item1</em></td>
+        <td><p>The first element to store in the array.</p>
 </td>
-    </tr>
-    <tr>
-      <td>T</td>
-      <td><em>item2</em></td>
-      <td><p>The second element to store in the array.</p>
+      </tr>
+      <tr>
+        <td>T</td>
+        <td><em>item2</em></td>
+        <td><p>The second element to store in the array.</p>
 </td>
-    </tr>
-    <tr>
-      <td>T</td>
-      <td><em>item3</em></td>
-      <td><p>The third element to store in the array.</p>
+      </tr>
+      <tr>
+        <td>T</td>
+        <td><em>item3</em></td>
+        <td><p>The third element to store in the array.</p>
 </td>
-    </tr>
-    <tr>
-      <td>T</td>
-      <td><em>item4</em></td>
-      <td><p>The fourth element to store in the array.</p>
+      </tr>
+      <tr>
+        <td>T</td>
+        <td><em>item4</em></td>
+        <td><p>The fourth element to store in the array.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
-      <td><p>A 4-element array.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.ImmutableArray&lt;T&gt;</td>
+        <td><p>A 4-element array.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L149"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Create_T__T___">Create&lt;T&gt;(T[])</h4>
-<div class="markdown level1 summary"><p>Creates an empty <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static ImmutableArray<t> Create<t>(params T[] items)</t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L149">View Source</a>
+      </span>
+  <h4 id="Create_T__T___">Create&lt;T&gt;(T[])</h4>
+  <div class="markdown level1 summary"><p>Creates an empty <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T[]</td>
-      <td><em>items</em></td>
-      <td><p>The elements to store in the array.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImmutableArray<t> Create<t>(params T[] items)</t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><em>items</em></td>
+        <td><p>The elements to store in the array.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
-      <td><p>An immutable array.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.ImmutableArray&lt;T&gt;</td>
+        <td><p>An immutable array.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L174"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Create_T__T____Int32__Int32_">Create&lt;T&gt;(T[], Int32, Int32)</h4>
-<div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a> struct.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This overload allows helper methods or custom builder classes to efficiently avoid paying a redundant<br>tax for copying an array when the new array is a segment of an existing array.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static ImmutableArray<t> Create<t>(T[] items, int start, int length)</t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L174">View Source</a>
+      </span>
+  <h4 id="Create_T__T____Int32__Int32_">Create&lt;T&gt;(T[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a> struct.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T[]</td>
-      <td><em>items</em></td>
-      <td><p>The array to initialize the array with. A defensive copy is made.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Create_T__T____Int32__Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This overload allows helper methods or custom builder classes to efficiently avoid paying a redundant
+tax for copying an array when the new array is a segment of an existing array.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImmutableArray<t> Create<t>(T[] items, int start, int length)</t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><em>items</em></td>
+        <td><p>The array to initialize the array with. A defensive copy is made.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td><em>start</em></td>
-      <td><p>The index of the first element in the source array to include in the resulting array.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>start</em></td>
+        <td><p>The index of the first element in the source array to include in the resulting array.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td><em>length</em></td>
-      <td><p>The number of elements from the source array to include in the resulting array.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>length</em></td>
+        <td><p>The number of elements from the source array to include in the resulting array.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.ImmutableArray&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L207"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Create_T__ImmutableArray_T___Int32__Int32_">Create&lt;T&gt;(ImmutableArray&lt;T&gt;, Int32, Int32)</h4>
-<div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a> struct.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This overload allows helper methods or custom builder classes to efficiently avoid paying a redundant<br>tax for copying an array when the new array is a segment of an existing array.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static ImmutableArray<t> Create<t>(ImmutableArray<t> items, int start, int length)</t></t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L207">View Source</a>
+      </span>
+  <h4 id="Create_T__ImmutableArray_T___Int32__Int32_">Create&lt;T&gt;(ImmutableArray&lt;T&gt;, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a> struct.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
-      <td><em>items</em></td>
-      <td><p>The array to initialize the array with.
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Create_T__ImmutableArray_T___Int32__Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This overload allows helper methods or custom builder classes to efficiently avoid paying a redundant
+tax for copying an array when the new array is a segment of an existing array.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImmutableArray<t> Create<t>(ImmutableArray<t> items, int start, int length)</t></t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.ImmutableArray&lt;T&gt;</td>
+        <td><em>items</em></td>
+        <td><p>The array to initialize the array with.
 The selected array segment may be copied into a new array.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td><em>start</em></td>
-      <td><p>The index of the first element in the source array to include in the resulting array.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>start</em></td>
+        <td><p>The index of the first element in the source array to include in the resulting array.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td><em>length</em></td>
-      <td><p>The number of elements from the source array to include in the resulting array.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>length</em></td>
+        <td><p>The number of elements from the source array to include in the resulting array.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.ImmutableArray&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L367"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="CreateBuilder_T___">CreateBuilder&lt;T&gt;()</h4>
-<div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Collections.Immutable.ImmutableArray`1.Builder.html">System.Collections.Immutable.ImmutableArray`1.Builder</a> class.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static ImmutableArray<t>.Builder CreateBuilder<t>()</t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L367">View Source</a>
+      </span>
+  <h4 id="CreateBuilder_T___">CreateBuilder&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Collections.Immutable.ImmutableArray`1.Builder.html">System.Collections.Immutable.ImmutableArray`1.Builder</a> class.</p>
 </div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableArray`1.Builder.html" name="System.Collections.Immutable.ImmutableArray.Builder">ImmutableArray</a>&lt;&gt;</td>
-      <td><p>A new builder.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImmutableArray<t>.Builder CreateBuilder<t>()</t></t></code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.ImmutableArray.Builder&lt;&gt;</td>
+        <td><p>A new builder.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L379"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="CreateBuilder_T__Int32_">CreateBuilder&lt;T&gt;(Int32)</h4>
-<div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Collections.Immutable.ImmutableArray`1.Builder.html">System.Collections.Immutable.ImmutableArray`1.Builder</a> class.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static ImmutableArray<t>.Builder CreateBuilder<t>(int initialCapacity)</t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L379">View Source</a>
+      </span>
+  <h4 id="CreateBuilder_T__Int32_">CreateBuilder&lt;T&gt;(Int32)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Collections.Immutable.ImmutableArray`1.Builder.html">System.Collections.Immutable.ImmutableArray`1.Builder</a> class.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td><em>initialCapacity</em></td>
-      <td><p>The size of the initial array backing the builder.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImmutableArray<t>.Builder CreateBuilder<t>(int initialCapacity)</t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>initialCapacity</em></td>
+        <td><p>The size of the initial array backing the builder.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableArray`1.Builder.html" name="System.Collections.Immutable.ImmutableArray.Builder">ImmutableArray</a>&lt;&gt;</td>
-      <td><p>A new builder.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.ImmutableArray.Builder&lt;&gt;</td>
+        <td><p>A new builder.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L97"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="CreateRange_T__IEnumerable_T__">CreateRange&lt;T&gt;(IEnumerable&lt;T&gt;)</h4>
-<div class="markdown level1 summary"><p>Creates an <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a> populated with the contents of the specified sequence.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static ImmutableArray<t> CreateRange<t>(IEnumerable<t> items)</t></t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L97">View Source</a>
+      </span>
+  <h4 id="CreateRange_T__IEnumerable_T__">CreateRange&lt;T&gt;(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates an <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a> populated with the contents of the specified sequence.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;T&gt;</td>
-      <td><em>items</em></td>
-      <td><p>The elements to store in the array.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImmutableArray<t> CreateRange<t>(IEnumerable<t> items)</t></t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><em>items</em></td>
+        <td><p>The elements to store in the array.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;T&gt;</td>
-      <td><p>An immutable array.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.ImmutableArray&lt;T&gt;</td>
+        <td><p>An immutable array.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L238"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="CreateRange_TSource__TResult__ImmutableArray_TSource___Func_TSource__TResult__">CreateRange&lt;TSource, TResult&gt;(ImmutableArray&lt;TSource&gt;, Func&lt;TSource, TResult&gt;)</h4>
-<div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a> struct.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This overload allows efficient creation of an <see cref="T:System.Collections.Immutable.ImmutableArray`1"></see> based on an existing</p><br><p><see cref="T:System.Collections.Immutable.ImmutableArray`1"></see>, where a mapping function needs to be applied to each element from</br>the source array.<p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static ImmutableArray<tresult> CreateRange<tsource, tresult="">(ImmutableArray<tsource> items, Func<tsource, tresult=""> selector)</tsource,></tsource></tsource,></tresult></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L238">View Source</a>
+      </span>
+  <h4 id="CreateRange_TSource__TResult__ImmutableArray_TSource___Func_TSource__TResult__">CreateRange&lt;TSource, TResult&gt;(ImmutableArray&lt;TSource&gt;, Func&lt;TSource, TResult&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a> struct.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;TSource&gt;</td>
-      <td><em>items</em></td>
-      <td><p>The source array to initialize the resulting array with.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="CreateRange_TSource__TResult__ImmutableArray_TSource___Func_TSource__TResult___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This overload allows efficient creation of an <see cref="T:System.Collections.Immutable.ImmutableArray`1"></see> based on an existing</p>
+<p><see cref="T:System.Collections.Immutable.ImmutableArray`1"></see>, where a mapping function needs to be applied to each element from
+the source array.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImmutableArray<tresult> CreateRange<tsource, tresult="">(ImmutableArray<tsource> items, Func<tsource, tresult=""> selector)</tsource,></tsource></tsource,></tresult></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.ImmutableArray&lt;TSource&gt;</td>
+        <td><em>items</em></td>
+        <td><p>The source array to initialize the resulting array with.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;TSource, TResult&gt;</td>
-      <td><em>selector</em></td>
-      <td><p>The function to apply to each element from the source array.</p>
+      </tr>
+      <tr>
+        <td>System.Func&lt;TSource, TResult&gt;</td>
+        <td><em>selector</em></td>
+        <td><p>The function to apply to each element from the source array.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;TResult&gt;</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.ImmutableArray&lt;TResult&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L271"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="CreateRange_TSource__TResult__ImmutableArray_TSource___Int32__Int32__Func_TSource__TResult__">CreateRange&lt;TSource, TResult&gt;(ImmutableArray&lt;TSource&gt;, Int32, Int32, Func&lt;TSource, TResult&gt;)</h4>
-<div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a> struct.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This overload allows efficient creation of an <see cref="T:System.Collections.Immutable.ImmutableArray`1"></see> based on a slice of an existing</p><br><p><see cref="T:System.Collections.Immutable.ImmutableArray`1"></see>, where a mapping function needs to be applied to each element from the source array</br>included in the resulting array.<p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static ImmutableArray<tresult> CreateRange<tsource, tresult="">(ImmutableArray<tsource> items, int start, int length, Func<tsource, tresult=""> selector)</tsource,></tsource></tsource,></tresult></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L271">View Source</a>
+      </span>
+  <h4 id="CreateRange_TSource__TResult__ImmutableArray_TSource___Int32__Int32__Func_TSource__TResult__">CreateRange&lt;TSource, TResult&gt;(ImmutableArray&lt;TSource&gt;, Int32, Int32, Func&lt;TSource, TResult&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a> struct.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;TSource&gt;</td>
-      <td><em>items</em></td>
-      <td><p>The source array to initialize the resulting array with.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="CreateRange_TSource__TResult__ImmutableArray_TSource___Int32__Int32__Func_TSource__TResult___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This overload allows efficient creation of an <see cref="T:System.Collections.Immutable.ImmutableArray`1"></see> based on a slice of an existing</p>
+<p><see cref="T:System.Collections.Immutable.ImmutableArray`1"></see>, where a mapping function needs to be applied to each element from the source array
+included in the resulting array.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImmutableArray<tresult> CreateRange<tsource, tresult="">(ImmutableArray<tsource> items, int start, int length, Func<tsource, tresult=""> selector)</tsource,></tsource></tsource,></tresult></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.ImmutableArray&lt;TSource&gt;</td>
+        <td><em>items</em></td>
+        <td><p>The source array to initialize the resulting array with.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td><em>start</em></td>
-      <td><p>The index of the first element in the source array to include in the resulting array.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>start</em></td>
+        <td><p>The index of the first element in the source array to include in the resulting array.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td><em>length</em></td>
-      <td><p>The number of elements from the source array to include in the resulting array.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>length</em></td>
+        <td><p>The number of elements from the source array to include in the resulting array.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;TSource, TResult&gt;</td>
-      <td><em>selector</em></td>
-      <td><p>The function to apply to each element from the source array included in the resulting array.</p>
+      </tr>
+      <tr>
+        <td>System.Func&lt;TSource, TResult&gt;</td>
+        <td><em>selector</em></td>
+        <td><p>The function to apply to each element from the source array included in the resulting array.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;TResult&gt;</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.ImmutableArray&lt;TResult&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L305"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="CreateRange_TSource__TArg__TResult__ImmutableArray_TSource___Func_TSource__TArg__TResult___TArg_">CreateRange&lt;TSource, TArg, TResult&gt;(ImmutableArray&lt;TSource&gt;, Func&lt;TSource, TArg, TResult&gt;, TArg)</h4>
-<div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a> struct.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This overload allows efficient creation of an <see cref="T:System.Collections.Immutable.ImmutableArray`1"></see> based on an existing</p><br><p><see cref="T:System.Collections.Immutable.ImmutableArray`1"></see>, where a mapping function needs to be applied to each element from</br>the source array.<p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static ImmutableArray<tresult> CreateRange<tsource, targ,="" tresult="">(ImmutableArray<tsource> items, Func<tsource, targ,="" tresult=""> selector, TArg arg)</tsource,></tsource></tsource,></tresult></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L305">View Source</a>
+      </span>
+  <h4 id="CreateRange_TSource__TArg__TResult__ImmutableArray_TSource___Func_TSource__TArg__TResult___TArg_">CreateRange&lt;TSource, TArg, TResult&gt;(ImmutableArray&lt;TSource&gt;, Func&lt;TSource, TArg, TResult&gt;, TArg)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a> struct.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;TSource&gt;</td>
-      <td><em>items</em></td>
-      <td><p>The source array to initialize the resulting array with.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="CreateRange_TSource__TArg__TResult__ImmutableArray_TSource___Func_TSource__TArg__TResult___TArg__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This overload allows efficient creation of an <see cref="T:System.Collections.Immutable.ImmutableArray`1"></see> based on an existing</p>
+<p><see cref="T:System.Collections.Immutable.ImmutableArray`1"></see>, where a mapping function needs to be applied to each element from
+the source array.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImmutableArray<tresult> CreateRange<tsource, targ,="" tresult="">(ImmutableArray<tsource> items, Func<tsource, targ,="" tresult=""> selector, TArg arg)</tsource,></tsource></tsource,></tresult></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.ImmutableArray&lt;TSource&gt;</td>
+        <td><em>items</em></td>
+        <td><p>The source array to initialize the resulting array with.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Func`3.html" name="System.Func">Func</a>&lt;TSource, TArg, TResult&gt;</td>
-      <td><em>selector</em></td>
-      <td><p>The function to apply to each element from the source array.</p>
+      </tr>
+      <tr>
+        <td>System.Func&lt;TSource, TArg, TResult&gt;</td>
+        <td><em>selector</em></td>
+        <td><p>The function to apply to each element from the source array.</p>
 </td>
-    </tr>
-    <tr>
-      <td>TArg</td>
-      <td><em>arg</em></td>
-      <td><p>An argument to be passed to the selector mapping function.</p>
+      </tr>
+      <tr>
+        <td>TArg</td>
+        <td><em>arg</em></td>
+        <td><p>An argument to be passed to the selector mapping function.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;TResult&gt;</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.ImmutableArray&lt;TResult&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L339"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="CreateRange_TSource__TArg__TResult__ImmutableArray_TSource___Int32__Int32__Func_TSource__TArg__TResult___TArg_">CreateRange&lt;TSource, TArg, TResult&gt;(ImmutableArray&lt;TSource&gt;, Int32, Int32, Func&lt;TSource, TArg, TResult&gt;, TArg)</h4>
-<div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a> struct.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This overload allows efficient creation of an <see cref="T:System.Collections.Immutable.ImmutableArray`1"></see> based on a slice of an existing</p><br><p><see cref="T:System.Collections.Immutable.ImmutableArray`1"></see>, where a mapping function needs to be applied to each element from the source array</br>included in the resulting array.<p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static ImmutableArray<tresult> CreateRange<tsource, targ,="" tresult="">(ImmutableArray<tsource> items, int start, int length, Func<tsource, targ,="" tresult=""> selector, TArg arg)</tsource,></tsource></tsource,></tresult></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L339">View Source</a>
+      </span>
+  <h4 id="CreateRange_TSource__TArg__TResult__ImmutableArray_TSource___Int32__Int32__Func_TSource__TArg__TResult___TArg_">CreateRange&lt;TSource, TArg, TResult&gt;(ImmutableArray&lt;TSource&gt;, Int32, Int32, Func&lt;TSource, TArg, TResult&gt;, TArg)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Collections.Immutable.ImmutableArray`1.html">System.Collections.Immutable.ImmutableArray`1</a> struct.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;TSource&gt;</td>
-      <td><em>items</em></td>
-      <td><p>The source array to initialize the resulting array with.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="CreateRange_TSource__TArg__TResult__ImmutableArray_TSource___Int32__Int32__Func_TSource__TArg__TResult___TArg__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This overload allows efficient creation of an <see cref="T:System.Collections.Immutable.ImmutableArray`1"></see> based on a slice of an existing</p>
+<p><see cref="T:System.Collections.Immutable.ImmutableArray`1"></see>, where a mapping function needs to be applied to each element from the source array
+included in the resulting array.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImmutableArray<tresult> CreateRange<tsource, targ,="" tresult="">(ImmutableArray<tsource> items, int start, int length, Func<tsource, targ,="" tresult=""> selector, TArg arg)</tsource,></tsource></tsource,></tresult></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.ImmutableArray&lt;TSource&gt;</td>
+        <td><em>items</em></td>
+        <td><p>The source array to initialize the resulting array with.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td><em>start</em></td>
-      <td><p>The index of the first element in the source array to include in the resulting array.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>start</em></td>
+        <td><p>The index of the first element in the source array to include in the resulting array.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td><em>length</em></td>
-      <td><p>The number of elements from the source array to include in the resulting array.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>length</em></td>
+        <td><p>The number of elements from the source array to include in the resulting array.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Func`3.html" name="System.Func">Func</a>&lt;TSource, TArg, TResult&gt;</td>
-      <td><em>selector</em></td>
-      <td><p>The function to apply to each element from the source array included in the resulting array.</p>
+      </tr>
+      <tr>
+        <td>System.Func&lt;TSource, TArg, TResult&gt;</td>
+        <td><em>selector</em></td>
+        <td><p>The function to apply to each element from the source array included in the resulting array.</p>
 </td>
-    </tr>
-    <tr>
-      <td>TArg</td>
-      <td><em>arg</em></td>
-      <td><p>An argument to be passed to the selector mapping function.</p>
+      </tr>
+      <tr>
+        <td>TArg</td>
+        <td><em>arg</em></td>
+        <td><p>An argument to be passed to the selector mapping function.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;TResult&gt;</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.ImmutableArray&lt;TResult&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L391"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ToImmutableArray_TSource__IEnumerable_TSource__">ToImmutableArray&lt;TSource&gt;(IEnumerable&lt;TSource&gt;)</h4>
-<div class="markdown level1 summary"><p>Enumerates a sequence exactly once and produces an immutable array of its contents.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static ImmutableArray<tsource> ToImmutableArray<tsource>(IEnumerable<tsource> items)</tsource></tsource></tsource></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs/#L391">View Source</a>
+      </span>
+  <h4 id="ToImmutableArray_TSource__IEnumerable_TSource__">ToImmutableArray&lt;TSource&gt;(IEnumerable&lt;TSource&gt;)</h4>
+  <div class="markdown level1 summary"><p>Enumerates a sequence exactly once and produces an immutable array of its contents.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;TSource&gt;</td>
-      <td><em>items</em></td>
-      <td><p>The sequence to enumerate.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImmutableArray<tsource> ToImmutableArray<tsource>(IEnumerable<tsource> items)</tsource></tsource></tsource></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;TSource&gt;</td>
+        <td><em>items</em></td>
+        <td><p>The sequence to enumerate.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableArray`1.html" name="System.Collections.Immutable.ImmutableArray">ImmutableArray</a>&lt;TSource&gt;</td>
-      <td><p>An immutable array.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.ImmutableArray&lt;TSource&gt;</td>
+        <td><p>An immutable array.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Enum ParallelMergeOptions | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Enum ParallelMergeOptions | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -55,6 +55,90 @@
       </div>
       <div class="article row grid-right"><div class="col-md-10">
         <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Parallel/src/System/Linq/ParallelMergeOptions.cs/#L33" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="ParallelMergeOptions">Enum ParallelMergeOptions</h1>
+      <div class="markdown level0 summary"><p>Specifies the preferred type of output merge to use in a query. This is a hint only, and may not be
+respected by the system when parallelizing all queries.</p>
+</div>
+      <div class="markdown level0 conceptual"></div>
+      <h6><strong>Namespace</strong>:System.Linq</h6>
+      <h6><strong>Assembly</strong>:System.Linq.Parallel.dll</h6>
+      <h5 id="ParallelMergeOptions_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public enum ParallelMergeOptions</code></pre>
+      </div>
+      <h5 id="ParallelMergeOptions_remarks"><strong>Remarks<strong></strong></strong></h5>
+      <div class="markdown level0 remarks"><para>
+Use <b>NotBuffered</b> for queries that will be consumed and output as streams, this has the lowest latency
+between beginning query execution and elements being yielded. For some queries, such as those involving a
+sort (OrderBy, OrderByDescending), buffering is essential and a hint of NotBuffered or AutoBuffered will
+be ignored.
+</para>
+<para>
+Use <b>AutoBuffered</b> for most cases; this is the default.  It strikes a balance between latency and
+overall performance.
+</para>
+<para>
+Use <b>FullyBuffered</b> for queries when the entire output can be processed before the information is
+needed. This option offers the best performance when all of the output can be accumulated before yielding
+any information, though it is not suitable for stream processing or showing partial results mid-query.
+</para></div>
+      <h3 id="fields">Fields</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Parallel/src/System/Linq/ParallelMergeOptions.cs/#L51">View Source</a>
+      </span>
+  <h4 id="AutoBuffered">AutoBuffered</h4>
+  <div class="markdown level1 summary"><p>Use a merge with output buffers of a size chosen by the system. Results
+will accumulate into an output buffer before they are available to the consumer of
+the query.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AutoBuffered = 2</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Parallel/src/System/Linq/ParallelMergeOptions.cs/#L38">View Source</a>
+      </span>
+  <h4 id="Default">Default</h4>
+  <div class="markdown level1 summary"><p>Use the default merge type, which is AutoBuffered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Default = 0</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Parallel/src/System/Linq/ParallelMergeOptions.cs/#L57">View Source</a>
+      </span>
+  <h4 id="FullyBuffered">FullyBuffered</h4>
+  <div class="markdown level1 summary"><p>Use a merge with full output buffers. The system will accumulate all of the
+results before making any of them available to the consumer of the query.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FullyBuffered = 3</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Parallel/src/System/Linq/ParallelMergeOptions.cs/#L44">View Source</a>
+      </span>
+  <h4 id="NotBuffered">NotBuffered</h4>
+  <div class="markdown level1 summary"><p>Use a merge without output buffers. As soon as result elements have been computed,
+make that element available to the consumer of the query.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">NotBuffered = 1</code></pre>
+  </div>
 
 </article>
 </div>

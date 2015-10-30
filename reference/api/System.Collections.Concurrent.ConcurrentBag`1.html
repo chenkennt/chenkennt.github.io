@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class ConcurrentBag&lt;T&gt; | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class ConcurrentBag&lt;T&gt; | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -60,7 +60,8 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="ConcurrentBag_T_">Class ConcurrentBag&lt;T&gt;</h1>
-      <div class="markdown level0 summary"><p>Represents an thread-safe, unordered collection of objects.</p><br></div>
+      <div class="markdown level0 summary"><p>Represents an thread-safe, unordered collection of objects.</p>
+</div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
         <h5>Inheritance</h5>
@@ -73,28 +74,42 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public class ConcurrentBag<t> : IProducerConsumerCollection<t>, ICollection, IReadOnlyCollection<t>, IEnumerable<t>, IEnumerable</t></t></t></t></code></pre>
       </div>
-      <h5 id="ConcurrentBag_T__remarks">remarks</h5>
-      <div class="markdown level0 remarks"><para><br>Bags are useful for storing objects when ordering doesn&#39;t matter, and unlike sets, bags support</br>duplicates. <see cref="T:System.Collections.Concurrent.ConcurrentBag`1"></see> is a thread-safe bag implementation, optimized for<br>scenarios where the same thread will be both producing and consuming data stored in the bag.</br></para><br><para><br><see cref="T:System.Collections.Concurrent.ConcurrentBag`1"></see> accepts null reference (Nothing in Visual Basic) as a valid</br>value for reference types.<br></para></br><para><br>All public and protected members of <see cref="T:System.Collections.Concurrent.ConcurrentBag`1"></see> are thread-safe and may be used</br>concurrently from multiple threads.<br></para></div>
+      <h5 id="ConcurrentBag_T__remarks"><strong>Remarks<strong></strong></strong></h5>
+      <div class="markdown level0 remarks"><para>
+Bags are useful for storing objects when ordering doesn&#39;t matter, and unlike sets, bags support
+duplicates. <see cref="T:System.Collections.Concurrent.ConcurrentBag`1"></see> is a thread-safe bag implementation, optimized for
+scenarios where the same thread will be both producing and consuming data stored in the bag.
+</para>
+<para>
+<see cref="T:System.Collections.Concurrent.ConcurrentBag`1"></see> accepts null reference (Nothing in Visual Basic) as a valid
+value for reference types.
+</para>
+<para>
+All public and protected members of <see cref="T:System.Collections.Concurrent.ConcurrentBag`1"></see> are thread-safe and may be used
+concurrently from multiple threads.
+</para></div>
       <h3 id="constructors">Constructors</h3>
-      
-    <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentBag.cs/#L55"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-  </span>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentBag.cs/#L55">View Source</a>
+      </span>
   <h4 id="ConcurrentBag__">ConcurrentBag()</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Collections.Concurrent.ConcurrentBag`1.html">System.Collections.Concurrent.ConcurrentBag`1</a><br>class.</p><br></div>
-  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Collections.Concurrent.ConcurrentBag`1.html">System.Collections.Concurrent.ConcurrentBag`1</a>
+class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public ConcurrentBag()</code></pre>
   </div>
-      
-    <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentBag.cs/#L68"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-  </span>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentBag.cs/#L68">View Source</a>
+      </span>
   <h4 id="ConcurrentBag_IEnumerable_T__">ConcurrentBag(IEnumerable&lt;T&gt;)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Collections.Concurrent.ConcurrentBag`1.html">System.Collections.Concurrent.ConcurrentBag`1</a><br>class that contains elements copied from the specified collection.</p><br></div>
-  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Collections.Concurrent.ConcurrentBag`1.html">System.Collections.Concurrent.ConcurrentBag`1</a>
+class that contains elements copied from the specified collection.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -111,461 +126,482 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;T&gt;</td>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
         <td><em>collection</em></td>
         <td><p>The collection whose elements are copied to the new <see cref="T:System.Collections.Concurrent.ConcurrentBag`1"></see>.</p>
 </td>
       </tr>
     </tbody>
   </table>
-<h3 id="properties">Properties</h3>
+      <h3 id="properties">Properties</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentBag.cs/#L585"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Count">Count</h4>
-<div class="markdown level1 summary"><p>Gets the number of elements contained in the <a href="System.Collections.Concurrent.ConcurrentBag`1.html">System.Collections.Concurrent.ConcurrentBag`1</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>The count returned represents a moment-in-time snapshot of the contents<br>of the bag.  It does not reflect any updates to the collection after</br><a href="System.Collections.Concurrent.ConcurrentBag`1.html">System.Collections.Concurrent.ConcurrentBag`1.GetEnumerator</a> was called.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentBag.cs/#L585">View Source</a>
+      </span>
+  <h4 id="Count">Count</h4>
+  <div class="markdown level1 summary"><p>Gets the number of elements contained in the <a href="System.Collections.Concurrent.ConcurrentBag`1.html">System.Collections.Concurrent.ConcurrentBag`1</a>.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Count_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The count returned represents a moment-in-time snapshot of the contents
+of the bag.  It does not reflect any updates to the collection after
+<a href="System.Collections.Concurrent.ConcurrentBag`1.html">System.Collections.Concurrent.ConcurrentBag`1.GetEnumerator</a> was called.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentBag.cs/#L610"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IsEmpty">IsEmpty</h4>
-<div class="markdown level1 summary"><p>Gets a value that indicates whether the <a href="System.Collections.Concurrent.ConcurrentBag`1.html">System.Collections.Concurrent.ConcurrentBag`1</a> is empty.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public bool IsEmpty { get; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentBag.cs/#L610">View Source</a>
+      </span>
+  <h4 id="IsEmpty">IsEmpty</h4>
+  <div class="markdown level1 summary"><p>Gets a value that indicates whether the <a href="System.Collections.Concurrent.ConcurrentBag`1.html">System.Collections.Concurrent.ConcurrentBag`1</a> is empty.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEmpty { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentBag.cs/#L647"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ICollection_IsSynchronized">ICollection.IsSynchronized</h4>
-<div class="markdown level1 summary"><p>Gets a value indicating whether access to the <a href="System.Collections.ICollection.html">System.Collections.ICollection</a> is<br>synchronized with the SyncRoot.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">bool ICollection.IsSynchronized { get; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentBag.cs/#L647">View Source</a>
+      </span>
+  <h4 id="ICollection_IsSynchronized">ICollection.IsSynchronized</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether access to the <a href="System.Collections.ICollection.html">System.Collections.ICollection</a> is
+synchronized with the SyncRoot.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ICollection.IsSynchronized { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentBag.cs/#L657"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ICollection_SyncRoot">ICollection.SyncRoot</h4>
-<div class="markdown level1 summary"><p>Gets an object that can be used to synchronize access to the <a href="System.Collections.ICollection.html">System.Collections.ICollection</a>. This property is not supported.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">object ICollection.SyncRoot { get; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentBag.cs/#L657">View Source</a>
+      </span>
+  <h4 id="ICollection_SyncRoot">ICollection.SyncRoot</h4>
+  <div class="markdown level1 summary"><p>Gets an object that can be used to synchronize access to the <a href="System.Collections.ICollection.html">System.Collections.ICollection</a>. This property is not supported.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h3 id="methods">Methods</h3>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ICollection.SyncRoot { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="methods">Methods</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentBag.cs/#L103"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Add_T_">Add(T)</h4>
-<div class="markdown level1 summary"><p>Adds an object to the <a href="System.Collections.Concurrent.ConcurrentBag`1.html">System.Collections.Concurrent.ConcurrentBag`1</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void Add(T item)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentBag.cs/#L103">View Source</a>
+      </span>
+  <h4 id="Add_T_">Add(T)</h4>
+  <div class="markdown level1 summary"><p>Adds an object to the <a href="System.Collections.Concurrent.ConcurrentBag`1.html">System.Collections.Concurrent.ConcurrentBag`1</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><em>item</em></td>
-      <td><p>The object to be added to the</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><em>item</em></td>
+        <td><p>The object to be added to the</p>
 <p><see cref="T:System.Collections.Concurrent.ConcurrentBag`1"></see>. The value can be a null reference
 (Nothing in Visual Basic) for reference types.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentBag.cs/#L434"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="CopyTo_T____Int32_">CopyTo(T[], Int32)</h4>
-<div class="markdown level1 summary"><p>Copies the <a href="System.Collections.Concurrent.ConcurrentBag`1.html">System.Collections.Concurrent.ConcurrentBag`1</a> elements to an existing<br>one-dimensional <a href="System.Array.html">System.Array</a>, starting at the specified array</br>index.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void CopyTo(T[] array, int index)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentBag.cs/#L434">View Source</a>
+      </span>
+  <h4 id="CopyTo_T____Int32_">CopyTo(T[], Int32)</h4>
+  <div class="markdown level1 summary"><p>Copies the <a href="System.Collections.Concurrent.ConcurrentBag`1.html">System.Collections.Concurrent.ConcurrentBag`1</a> elements to an existing
+one-dimensional <a href="System.Array.html">System.Array</a>, starting at the specified array
+index.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T[]</td>
-      <td><em>array</em></td>
-      <td><p>The one-dimensional <see cref="T:System.Array">Array</see> that is the
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(T[] array, int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><em>array</em></td>
+        <td><p>The one-dimensional <see cref="T:System.Array">Array</see> that is the
 destination of the elements copied from the</p>
 <p><see cref="T:System.Collections.Concurrent.ConcurrentBag`1"></see>. The <see cref="T:System.Array">Array</see> must have zero-based indexing.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td><em>index</em></td>
-      <td><p>The zero-based index in <paramref name="array"></paramref> at which copying
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>index</em></td>
+        <td><p>The zero-based index in <paramref name="array"></paramref> at which copying
 begins.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentBag.cs/#L542"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="GetEnumerator__">GetEnumerator()</h4>
-<div class="markdown level1 summary"><p>Returns an enumerator that iterates through the <a href="System.Collections.Concurrent.ConcurrentBag`1.html">System.Collections.Concurrent.ConcurrentBag`1</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>The enumeration represents a moment-in-time snapshot of the contents<br>of the bag.  It does not reflect any updates to the collection after</br><a href="System.Collections.Concurrent.ConcurrentBag`1.html">System.Collections.Concurrent.ConcurrentBag`1.GetEnumerator</a> was called.  The enumerator is safe to use<br>concurrently with reads from and writes to the bag.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public IEnumerator<t> GetEnumerator()</t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentBag.cs/#L542">View Source</a>
+      </span>
+  <h4 id="GetEnumerator__">GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the <a href="System.Collections.Concurrent.ConcurrentBag`1.html">System.Collections.Concurrent.ConcurrentBag`1</a>.</p>
 </div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerator`1.html" name="System.Collections.Generic.IEnumerator">IEnumerator</a>&lt;T&gt;</td>
-      <td><p>An enumerator for the contents of the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1"></see>.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="GetEnumerator___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The enumeration represents a moment-in-time snapshot of the contents
+of the bag.  It does not reflect any updates to the collection after
+<a href="System.Collections.Concurrent.ConcurrentBag`1.html">System.Collections.Concurrent.ConcurrentBag`1.GetEnumerator</a> was called.  The enumerator is safe to use
+concurrently with reads from and writes to the bag.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator<t> GetEnumerator()</t></code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerator&lt;T&gt;</td>
+        <td><p>An enumerator for the contents of the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1"></see>.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentBag.cs/#L151"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IProducerConsumerCollection_T__TryAdd_T_">IProducerConsumerCollection&lt;T&gt;.TryAdd(T)</h4>
-<div class="markdown level1 summary"><p>Attempts to add an object to the <a href="System.Collections.Concurrent.ConcurrentBag`1.html">System.Collections.Concurrent.ConcurrentBag`1</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">bool IProducerConsumerCollection<t>.TryAdd(T item)</t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentBag.cs/#L151">View Source</a>
+      </span>
+  <h4 id="IProducerConsumerCollection_T__TryAdd_T_">IProducerConsumerCollection&lt;T&gt;.TryAdd(T)</h4>
+  <div class="markdown level1 summary"><p>Attempts to add an object to the <a href="System.Collections.Concurrent.ConcurrentBag`1.html">System.Collections.Concurrent.ConcurrentBag`1</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><em>item</em></td>
-      <td><p>The object to be added to the</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IProducerConsumerCollection<t>.TryAdd(T item)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><em>item</em></td>
+        <td><p>The object to be added to the</p>
 <p><see cref="T:System.Collections.Concurrent.ConcurrentBag`1"></see>. The value can be a null reference
 (Nothing in Visual Basic) for reference types.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>Always returns true</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>Always returns true</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentBag.cs/#L487"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ICollection_CopyTo_Array__Int32_">ICollection.CopyTo(Array, Int32)</h4>
-<div class="markdown level1 summary"><p>Copies the elements of the <see cref="T:System.Collections.ICollection"></see> to an <see cref="T:System.Array"></see>, starting at a particular</p><br><p><see cref="T:System.Array"></see> index.</p></br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">void ICollection.CopyTo(Array array, int index)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentBag.cs/#L487">View Source</a>
+      </span>
+  <h4 id="ICollection_CopyTo_Array__Int32_">ICollection.CopyTo(Array, Int32)</h4>
+  <div class="markdown level1 summary"><p>Copies the elements of the <see cref="T:System.Collections.ICollection"></see> to an <see cref="T:System.Array"></see>, starting at a particular</p>
+<p><see cref="T:System.Array"></see> index.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Array.html" name="System.Array">Array</a></td>
-      <td><em>array</em></td>
-      <td><p>The one-dimensional <see cref="T:System.Array">Array</see> that is the
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ICollection.CopyTo(Array array, int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Array.html" name="System.Array">Array</a></td>
+        <td><em>array</em></td>
+        <td><p>The one-dimensional <see cref="T:System.Array">Array</see> that is the
 destination of the elements copied from the</p>
 <p><see cref="T:System.Collections.Concurrent.ConcurrentBag`1"></see>. The <see cref="T:System.Array">Array</see> must have zero-based indexing.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td><em>index</em></td>
-      <td><p>The zero-based index in <paramref name="array"></paramref> at which copying
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>index</em></td>
+        <td><p>The zero-based index in <paramref name="array"></paramref> at which copying
 begins.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentBag.cs/#L571"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IEnumerable_GetEnumerator__">IEnumerable.GetEnumerator()</h4>
-<div class="markdown level1 summary"><p>Returns an enumerator that iterates through the <a href="System.Collections.Concurrent.ConcurrentBag`1.html">System.Collections.Concurrent.ConcurrentBag`1</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>The items enumerated represent a moment-in-time snapshot of the contents<br>of the bag.  It does not reflect any update to the collection after</br><a href="System.Collections.Concurrent.ConcurrentBag`1.html">System.Collections.Concurrent.ConcurrentBag`1.GetEnumerator</a> was called.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">IEnumerator IEnumerable.GetEnumerator()</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentBag.cs/#L571">View Source</a>
+      </span>
+  <h4 id="IEnumerable_GetEnumerator__">IEnumerable.GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the <a href="System.Collections.Concurrent.ConcurrentBag`1.html">System.Collections.Concurrent.ConcurrentBag`1</a>.</p>
 </div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.IEnumerator.html" name="System.Collections.IEnumerator">IEnumerator</a></td>
-      <td><p>An enumerator for the contents of the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1"></see>.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="IEnumerable_GetEnumerator___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The items enumerated represent a moment-in-time snapshot of the contents
+of the bag.  It does not reflect any update to the collection after
+<a href="System.Collections.Concurrent.ConcurrentBag`1.html">System.Collections.Concurrent.ConcurrentBag`1.GetEnumerator</a> was called.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator IEnumerable.GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.IEnumerator.html" name="System.Collections.IEnumerator">IEnumerator</a></td>
+        <td><p>An enumerator for the contents of the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1"></see>.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentBag.cs/#L512"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ToArray__">ToArray()</h4>
-<div class="markdown level1 summary"><p>Copies the <a href="System.Collections.Concurrent.ConcurrentBag`1.html">System.Collections.Concurrent.ConcurrentBag`1</a> elements to a new array.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public T[] ToArray()</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentBag.cs/#L512">View Source</a>
+      </span>
+  <h4 id="ToArray__">ToArray()</h4>
+  <div class="markdown level1 summary"><p>Copies the <a href="System.Collections.Concurrent.ConcurrentBag`1.html">System.Collections.Concurrent.ConcurrentBag`1</a> elements to a new array.</p>
 </div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T[]</td>
-      <td><p>A new array containing a snapshot of elements copied from the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1"></see>.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T[] ToArray()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><p>A new array containing a snapshot of elements copied from the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1"></see>.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentBag.cs/#L178"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="TryPeek_out_T_">TryPeek(out T)</h4>
-<div class="markdown level1 summary"><p>Attempts to return an object from the <a href="System.Collections.Concurrent.ConcurrentBag`1.html">System.Collections.Concurrent.ConcurrentBag`1</a><br>without removing it.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public bool TryPeek(out T result)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentBag.cs/#L178">View Source</a>
+      </span>
+  <h4 id="TryPeek_out_T_">TryPeek(out T)</h4>
+  <div class="markdown level1 summary"><p>Attempts to return an object from the <a href="System.Collections.Concurrent.ConcurrentBag`1.html">System.Collections.Concurrent.ConcurrentBag`1</a>
+without removing it.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><em>result</em></td>
-      <td><p>When this method returns, <paramref name="result"></paramref> contains an object from
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryPeek(out T result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><em>result</em></td>
+        <td><p>When this method returns, <paramref name="result"></paramref> contains an object from
 the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1"></see> or the default value of</p>
 <p><typeparamref name="T"></typeparamref> if the operation failed.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>true if and object was returned successfully; otherwise, false.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>true if and object was returned successfully; otherwise, false.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentBag.cs/#L165"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="TryTake_out_T_">TryTake(out T)</h4>
-<div class="markdown level1 summary"><p>Attempts to remove and return an object from the <a href="System.Collections.Concurrent.ConcurrentBag`1.html">System.Collections.Concurrent.ConcurrentBag`1</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public bool TryTake(out T result)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentBag.cs/#L165">View Source</a>
+      </span>
+  <h4 id="TryTake_out_T_">TryTake(out T)</h4>
+  <div class="markdown level1 summary"><p>Attempts to remove and return an object from the <a href="System.Collections.Concurrent.ConcurrentBag`1.html">System.Collections.Concurrent.ConcurrentBag`1</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><em>result</em></td>
-      <td><p>When this method returns, <paramref name="result"></paramref> contains the object
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryTake(out T result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><em>result</em></td>
+        <td><p>When this method returns, <paramref name="result"></paramref> contains the object
 removed from the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1"></see> or the default value
 of <typeparamref name="T"></typeparamref> if the operation failed.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>true if an object was removed successfully; otherwise, false.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>true if an object was removed successfully; otherwise, false.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

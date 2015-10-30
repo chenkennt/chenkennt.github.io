@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class DataflowBlock | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class DataflowBlock | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -60,7 +60,8 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="DataflowBlock">Class DataflowBlock</h1>
-      <div class="markdown level0 summary"><p>Provides a set of static (Shared in Visual Basic) methods for working with dataflow blocks.</p><br></div>
+      <div class="markdown level0 summary"><p>Provides a set of static (Shared in Visual Basic) methods for working with dataflow blocks.</p>
+</div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
         <h5>Inheritance</h5>
@@ -73,161 +74,159 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public class DataflowBlock</code></pre>
       </div>
-      <h5 id="DataflowBlock_remarks">remarks</h5>
-      <div class="markdown level0 remarks"></div>
-<h3 id="methods">Methods</h3>
+      <h3 id="methods">Methods</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L2314"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="AsObservable_TOutput__ISourceBlock_TOutput__">AsObservable&lt;TOutput&gt;(ISourceBlock&lt;TOutput&gt;)</h4>
-<div class="markdown level1 summary"><p>Creates a new <a href="System.IObservable`1.html">System.IObservable`1</a> abstraction over the <a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html">System.Threading.Tasks.Dataflow.ISourceBlock`1</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IObservable<toutput> AsObservable<toutput>(ISourceBlock<toutput> source)</toutput></toutput></toutput></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L2314">View Source</a>
+      </span>
+  <h4 id="AsObservable_TOutput__ISourceBlock_TOutput__">AsObservable&lt;TOutput&gt;(ISourceBlock&lt;TOutput&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a href="System.IObservable`1.html">System.IObservable`1</a> abstraction over the <a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html">System.Threading.Tasks.Dataflow.ISourceBlock`1</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html" name="System.Threading.Tasks.Dataflow.ISourceBlock">ISourceBlock</a>&lt;TOutput&gt;</td>
-      <td><em>source</em></td>
-      <td><p>The source to wrap.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IObservable<toutput> AsObservable<toutput>(ISourceBlock<toutput> source)</toutput></toutput></toutput></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;</td>
+        <td><em>source</em></td>
+        <td><p>The source to wrap.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.IObservable`1.html" name="System.IObservable">IObservable</a>&lt;TOutput&gt;</td>
-      <td><p>An IObservable{TOutput} that enables observers to be subscribed to the source.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.IObservable&lt;TOutput&gt;</td>
+        <td><p>An IObservable{TOutput} that enables observers to be subscribed to the source.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L2691"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="AsObserver_TInput__ITargetBlock_TInput__">AsObserver&lt;TInput&gt;(ITargetBlock&lt;TInput&gt;)</h4>
-<div class="markdown level1 summary"><p>Creates a new <a href="System.IObserver`1.html">System.IObserver`1</a> abstraction over the <a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html">System.Threading.Tasks.Dataflow.ITargetBlock`1</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IObserver<tinput> AsObserver<tinput>(ITargetBlock<tinput> target)</tinput></tinput></tinput></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L2691">View Source</a>
+      </span>
+  <h4 id="AsObserver_TInput__ITargetBlock_TInput__">AsObserver&lt;TInput&gt;(ITargetBlock&lt;TInput&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a href="System.IObserver`1.html">System.IObserver`1</a> abstraction over the <a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html">System.Threading.Tasks.Dataflow.ITargetBlock`1</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html" name="System.Threading.Tasks.Dataflow.ITargetBlock">ITargetBlock</a>&lt;TInput&gt;</td>
-      <td><em>target</em></td>
-      <td><p>The target to wrap.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IObserver<tinput> AsObserver<tinput>(ITargetBlock<tinput> target)</tinput></tinput></tinput></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ITargetBlock&lt;TInput&gt;</td>
+        <td><em>target</em></td>
+        <td><p>The target to wrap.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.IObserver`1.html" name="System.IObserver">IObserver</a>&lt;TInput&gt;</td>
-      <td><p>An observer that wraps the target block.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.IObserver&lt;TInput&gt;</td>
+        <td><p>An observer that wraps the target block.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L1806"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Choose_T1__T2__ISourceBlock_T1___Action_T1___ISourceBlock_T2___Action_T2__">Choose&lt;T1, T2&gt;(ISourceBlock&lt;T1&gt;, Action&lt;T1&gt;, ISourceBlock&lt;T2&gt;, Action&lt;T2&gt;)</h4>
-<div class="markdown level1 summary"><p>Monitors two dataflow sources, invoking the provided handler for whichever source makes data available first.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static Task<int> Choose<t1, t2="">(ISourceBlock<t1> source1, Action<t1> action1, ISourceBlock<t2> source2, Action<t2> action2)</t2></t2></t1></t1></t1,></int></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L1806">View Source</a>
+      </span>
+  <h4 id="Choose_T1__T2__ISourceBlock_T1___Action_T1___ISourceBlock_T2___Action_T2__">Choose&lt;T1, T2&gt;(ISourceBlock&lt;T1&gt;, Action&lt;T1&gt;, ISourceBlock&lt;T2&gt;, Action&lt;T2&gt;)</h4>
+  <div class="markdown level1 summary"><p>Monitors two dataflow sources, invoking the provided handler for whichever source makes data available first.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html" name="System.Threading.Tasks.Dataflow.ISourceBlock">ISourceBlock</a>&lt;T1&gt;</td>
-      <td><em>source1</em></td>
-      <td><p>The first source.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task<int> Choose<t1, t2="">(ISourceBlock<t1> source1, Action<t1> action1, ISourceBlock<t2> source2, Action<t2> action2)</t2></t2></t1></t1></t1,></int></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ISourceBlock&lt;T1&gt;</td>
+        <td><em>source1</em></td>
+        <td><p>The first source.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;T1&gt;</td>
-      <td><em>action1</em></td>
-      <td><p>The handler to execute on data from the first source.</p>
+      </tr>
+      <tr>
+        <td>System.Action&lt;T1&gt;</td>
+        <td><em>action1</em></td>
+        <td><p>The handler to execute on data from the first source.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html" name="System.Threading.Tasks.Dataflow.ISourceBlock">ISourceBlock</a>&lt;T2&gt;</td>
-      <td><em>source2</em></td>
-      <td><p>The second source.</p>
+      </tr>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ISourceBlock&lt;T2&gt;</td>
+        <td><em>source2</em></td>
+        <td><p>The second source.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;T2&gt;</td>
-      <td><em>action2</em></td>
-      <td><p>The handler to execute on data from the second source.</p>
+      </tr>
+      <tr>
+        <td>System.Action&lt;T2&gt;</td>
+        <td><em>action2</em></td>
+        <td><p>The handler to execute on data from the second source.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;<a href="System.Int32.html" name="System.Int32">Int32</a>&gt;</td>
-      <td><para>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Task&lt;System.Int32&gt;</td>
+        <td><para>
 A <see cref="T:System.Threading.Tasks.Task`1"></see> that represents the asynchronous choice.
 If both sources are completed prior to the choice completing,
 the resulting task will be canceled. When one of the sources has data available and successfully propagates
@@ -239,75 +238,75 @@ represent the first or second source, respectively.
 <para>
 This method will only consume an element from one of the two data sources, never both.
 </para></td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L1844"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Choose_T1__T2__ISourceBlock_T1___Action_T1___ISourceBlock_T2___Action_T2___DataflowBlockOptions_">Choose&lt;T1, T2&gt;(ISourceBlock&lt;T1&gt;, Action&lt;T1&gt;, ISourceBlock&lt;T2&gt;, Action&lt;T2&gt;, DataflowBlockOptions)</h4>
-<div class="markdown level1 summary"><p>Monitors two dataflow sources, invoking the provided handler for whichever source makes data available first.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static Task<int> Choose<t1, t2="">(ISourceBlock<t1> source1, Action<t1> action1, ISourceBlock<t2> source2, Action<t2> action2, DataflowBlockOptions dataflowBlockOptions)</t2></t2></t1></t1></t1,></int></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L1844">View Source</a>
+      </span>
+  <h4 id="Choose_T1__T2__ISourceBlock_T1___Action_T1___ISourceBlock_T2___Action_T2___DataflowBlockOptions_">Choose&lt;T1, T2&gt;(ISourceBlock&lt;T1&gt;, Action&lt;T1&gt;, ISourceBlock&lt;T2&gt;, Action&lt;T2&gt;, DataflowBlockOptions)</h4>
+  <div class="markdown level1 summary"><p>Monitors two dataflow sources, invoking the provided handler for whichever source makes data available first.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html" name="System.Threading.Tasks.Dataflow.ISourceBlock">ISourceBlock</a>&lt;T1&gt;</td>
-      <td><em>source1</em></td>
-      <td><p>The first source.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task<int> Choose<t1, t2="">(ISourceBlock<t1> source1, Action<t1> action1, ISourceBlock<t2> source2, Action<t2> action2, DataflowBlockOptions dataflowBlockOptions)</t2></t2></t1></t1></t1,></int></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ISourceBlock&lt;T1&gt;</td>
+        <td><em>source1</em></td>
+        <td><p>The first source.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;T1&gt;</td>
-      <td><em>action1</em></td>
-      <td><p>The handler to execute on data from the first source.</p>
+      </tr>
+      <tr>
+        <td>System.Action&lt;T1&gt;</td>
+        <td><em>action1</em></td>
+        <td><p>The handler to execute on data from the first source.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html" name="System.Threading.Tasks.Dataflow.ISourceBlock">ISourceBlock</a>&lt;T2&gt;</td>
-      <td><em>source2</em></td>
-      <td><p>The second source.</p>
+      </tr>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ISourceBlock&lt;T2&gt;</td>
+        <td><em>source2</em></td>
+        <td><p>The second source.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;T2&gt;</td>
-      <td><em>action2</em></td>
-      <td><p>The handler to execute on data from the second source.</p>
+      </tr>
+      <tr>
+        <td>System.Action&lt;T2&gt;</td>
+        <td><em>action2</em></td>
+        <td><p>The handler to execute on data from the second source.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.DataflowBlockOptions.html" name="System.Threading.Tasks.Dataflow.DataflowBlockOptions">DataflowBlockOptions</a></td>
-      <td><em>dataflowBlockOptions</em></td>
-      <td><p>The options with which to configure this choice.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Threading.Tasks.Dataflow.DataflowBlockOptions.html" name="System.Threading.Tasks.Dataflow.DataflowBlockOptions">DataflowBlockOptions</a></td>
+        <td><em>dataflowBlockOptions</em></td>
+        <td><p>The options with which to configure this choice.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;<a href="System.Int32.html" name="System.Int32">Int32</a>&gt;</td>
-      <td><para>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Task&lt;System.Int32&gt;</td>
+        <td><para>
 A <see cref="T:System.Threading.Tasks.Task`1"></see> that represents the asynchronous choice.
 If both sources are completed prior to the choice completing, or if the CancellationToken
 provided as part of <paramref name="dataflowBlockOptions"></paramref> is canceled prior to the choice completing,
@@ -322,81 +321,81 @@ This method will only consume an element from one of the two data sources, never
 If cancellation is requested after an element has been received, the cancellation request will be ignored,
 and the relevant handler will be allowed to execute.
 </para></td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L1892"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Choose_T1__T2__T3__ISourceBlock_T1___Action_T1___ISourceBlock_T2___Action_T2___ISourceBlock_T3___Action_T3__">Choose&lt;T1, T2, T3&gt;(ISourceBlock&lt;T1&gt;, Action&lt;T1&gt;, ISourceBlock&lt;T2&gt;, Action&lt;T2&gt;, ISourceBlock&lt;T3&gt;, Action&lt;T3&gt;)</h4>
-<div class="markdown level1 summary"><p>Monitors three dataflow sources, invoking the provided handler for whichever source makes data available first.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static Task<int> Choose<t1, t2,="" t3="">(ISourceBlock<t1> source1, Action<t1> action1, ISourceBlock<t2> source2, Action<t2> action2, ISourceBlock<t3> source3, Action<t3> action3)</t3></t3></t2></t2></t1></t1></t1,></int></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L1892">View Source</a>
+      </span>
+  <h4 id="Choose_T1__T2__T3__ISourceBlock_T1___Action_T1___ISourceBlock_T2___Action_T2___ISourceBlock_T3___Action_T3__">Choose&lt;T1, T2, T3&gt;(ISourceBlock&lt;T1&gt;, Action&lt;T1&gt;, ISourceBlock&lt;T2&gt;, Action&lt;T2&gt;, ISourceBlock&lt;T3&gt;, Action&lt;T3&gt;)</h4>
+  <div class="markdown level1 summary"><p>Monitors three dataflow sources, invoking the provided handler for whichever source makes data available first.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html" name="System.Threading.Tasks.Dataflow.ISourceBlock">ISourceBlock</a>&lt;T1&gt;</td>
-      <td><em>source1</em></td>
-      <td><p>The first source.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task<int> Choose<t1, t2,="" t3="">(ISourceBlock<t1> source1, Action<t1> action1, ISourceBlock<t2> source2, Action<t2> action2, ISourceBlock<t3> source3, Action<t3> action3)</t3></t3></t2></t2></t1></t1></t1,></int></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ISourceBlock&lt;T1&gt;</td>
+        <td><em>source1</em></td>
+        <td><p>The first source.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;T1&gt;</td>
-      <td><em>action1</em></td>
-      <td><p>The handler to execute on data from the first source.</p>
+      </tr>
+      <tr>
+        <td>System.Action&lt;T1&gt;</td>
+        <td><em>action1</em></td>
+        <td><p>The handler to execute on data from the first source.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html" name="System.Threading.Tasks.Dataflow.ISourceBlock">ISourceBlock</a>&lt;T2&gt;</td>
-      <td><em>source2</em></td>
-      <td><p>The second source.</p>
+      </tr>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ISourceBlock&lt;T2&gt;</td>
+        <td><em>source2</em></td>
+        <td><p>The second source.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;T2&gt;</td>
-      <td><em>action2</em></td>
-      <td><p>The handler to execute on data from the second source.</p>
+      </tr>
+      <tr>
+        <td>System.Action&lt;T2&gt;</td>
+        <td><em>action2</em></td>
+        <td><p>The handler to execute on data from the second source.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html" name="System.Threading.Tasks.Dataflow.ISourceBlock">ISourceBlock</a>&lt;T3&gt;</td>
-      <td><em>source3</em></td>
-      <td><p>The third source.</p>
+      </tr>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ISourceBlock&lt;T3&gt;</td>
+        <td><em>source3</em></td>
+        <td><p>The third source.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;T3&gt;</td>
-      <td><em>action3</em></td>
-      <td><p>The handler to execute on data from the third source.</p>
+      </tr>
+      <tr>
+        <td>System.Action&lt;T3&gt;</td>
+        <td><em>action3</em></td>
+        <td><p>The handler to execute on data from the third source.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;<a href="System.Int32.html" name="System.Int32">Int32</a>&gt;</td>
-      <td><para>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Task&lt;System.Int32&gt;</td>
+        <td><para>
 A <see cref="T:System.Threading.Tasks.Task`1"></see> that represents the asynchronous choice.
 If all sources are completed prior to the choice completing,
 the resulting task will be canceled. When one of the sources has data available and successfully propagates
@@ -407,87 +406,87 @@ will end with its <see cref="P:System.Threading.Tasks.Task`1.Result"></see> set 
 <para>
 This method will only consume an element from one of the data sources, never more than one.
 </para></td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L1935"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Choose_T1__T2__T3__ISourceBlock_T1___Action_T1___ISourceBlock_T2___Action_T2___ISourceBlock_T3___Action_T3___DataflowBlockOptions_">Choose&lt;T1, T2, T3&gt;(ISourceBlock&lt;T1&gt;, Action&lt;T1&gt;, ISourceBlock&lt;T2&gt;, Action&lt;T2&gt;, ISourceBlock&lt;T3&gt;, Action&lt;T3&gt;, DataflowBlockOptions)</h4>
-<div class="markdown level1 summary"><p>Monitors three dataflow sources, invoking the provided handler for whichever source makes data available first.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static Task<int> Choose<t1, t2,="" t3="">(ISourceBlock<t1> source1, Action<t1> action1, ISourceBlock<t2> source2, Action<t2> action2, ISourceBlock<t3> source3, Action<t3> action3, DataflowBlockOptions dataflowBlockOptions)</t3></t3></t2></t2></t1></t1></t1,></int></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L1935">View Source</a>
+      </span>
+  <h4 id="Choose_T1__T2__T3__ISourceBlock_T1___Action_T1___ISourceBlock_T2___Action_T2___ISourceBlock_T3___Action_T3___DataflowBlockOptions_">Choose&lt;T1, T2, T3&gt;(ISourceBlock&lt;T1&gt;, Action&lt;T1&gt;, ISourceBlock&lt;T2&gt;, Action&lt;T2&gt;, ISourceBlock&lt;T3&gt;, Action&lt;T3&gt;, DataflowBlockOptions)</h4>
+  <div class="markdown level1 summary"><p>Monitors three dataflow sources, invoking the provided handler for whichever source makes data available first.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html" name="System.Threading.Tasks.Dataflow.ISourceBlock">ISourceBlock</a>&lt;T1&gt;</td>
-      <td><em>source1</em></td>
-      <td><p>The first source.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task<int> Choose<t1, t2,="" t3="">(ISourceBlock<t1> source1, Action<t1> action1, ISourceBlock<t2> source2, Action<t2> action2, ISourceBlock<t3> source3, Action<t3> action3, DataflowBlockOptions dataflowBlockOptions)</t3></t3></t2></t2></t1></t1></t1,></int></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ISourceBlock&lt;T1&gt;</td>
+        <td><em>source1</em></td>
+        <td><p>The first source.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;T1&gt;</td>
-      <td><em>action1</em></td>
-      <td><p>The handler to execute on data from the first source.</p>
+      </tr>
+      <tr>
+        <td>System.Action&lt;T1&gt;</td>
+        <td><em>action1</em></td>
+        <td><p>The handler to execute on data from the first source.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html" name="System.Threading.Tasks.Dataflow.ISourceBlock">ISourceBlock</a>&lt;T2&gt;</td>
-      <td><em>source2</em></td>
-      <td><p>The second source.</p>
+      </tr>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ISourceBlock&lt;T2&gt;</td>
+        <td><em>source2</em></td>
+        <td><p>The second source.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;T2&gt;</td>
-      <td><em>action2</em></td>
-      <td><p>The handler to execute on data from the second source.</p>
+      </tr>
+      <tr>
+        <td>System.Action&lt;T2&gt;</td>
+        <td><em>action2</em></td>
+        <td><p>The handler to execute on data from the second source.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html" name="System.Threading.Tasks.Dataflow.ISourceBlock">ISourceBlock</a>&lt;T3&gt;</td>
-      <td><em>source3</em></td>
-      <td><p>The third source.</p>
+      </tr>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ISourceBlock&lt;T3&gt;</td>
+        <td><em>source3</em></td>
+        <td><p>The third source.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;T3&gt;</td>
-      <td><em>action3</em></td>
-      <td><p>The handler to execute on data from the third source.</p>
+      </tr>
+      <tr>
+        <td>System.Action&lt;T3&gt;</td>
+        <td><em>action3</em></td>
+        <td><p>The handler to execute on data from the third source.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.DataflowBlockOptions.html" name="System.Threading.Tasks.Dataflow.DataflowBlockOptions">DataflowBlockOptions</a></td>
-      <td><em>dataflowBlockOptions</em></td>
-      <td><p>The options with which to configure this choice.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Threading.Tasks.Dataflow.DataflowBlockOptions.html" name="System.Threading.Tasks.Dataflow.DataflowBlockOptions">DataflowBlockOptions</a></td>
+        <td><em>dataflowBlockOptions</em></td>
+        <td><p>The options with which to configure this choice.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;<a href="System.Int32.html" name="System.Int32">Int32</a>&gt;</td>
-      <td><para>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Task&lt;System.Int32&gt;</td>
+        <td><para>
 A <see cref="T:System.Threading.Tasks.Task`1"></see> that represents the asynchronous choice.
 If all sources are completed prior to the choice completing, or if the CancellationToken
 provided as part of <paramref name="dataflowBlockOptions"></paramref> is canceled prior to the choice completing,
@@ -501,893 +500,922 @@ This method will only consume an element from one of the data sources, never mor
 If cancellation is requested after an element has been received, the cancellation request will be ignored,
 and the relevant handler will be allowed to execute.
 </para></td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L1646"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Encapsulate_TInput__TOutput__ITargetBlock_TInput___ISourceBlock_TOutput__">Encapsulate&lt;TInput, TOutput&gt;(ITargetBlock&lt;TInput&gt;, ISourceBlock&lt;TOutput&gt;)</h4>
-<div class="markdown level1 summary"><p>Encapsulates a target and a source into a single propagator.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This method does not in any way connect the target to the source. It creates a<br>propagator block whose target methods delegate to the specified target and whose</br>source methods delegate to the specified source.  Any connection between the target<br>and the source is left for the developer to explicitly provide.  The propagator&#39;s</br><a href="System.Threading.Tasks.Dataflow.IDataflowBlock.html">System.Threading.Tasks.Dataflow.IDataflowBlock</a> implementation delegates to the specified source.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IPropagatorBlock<tinput, toutput=""> Encapsulate<tinput, toutput="">(ITargetBlock<tinput> target, ISourceBlock<toutput> source)</toutput></tinput></tinput,></tinput,></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L1646">View Source</a>
+      </span>
+  <h4 id="Encapsulate_TInput__TOutput__ITargetBlock_TInput___ISourceBlock_TOutput__">Encapsulate&lt;TInput, TOutput&gt;(ITargetBlock&lt;TInput&gt;, ISourceBlock&lt;TOutput&gt;)</h4>
+  <div class="markdown level1 summary"><p>Encapsulates a target and a source into a single propagator.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html" name="System.Threading.Tasks.Dataflow.ITargetBlock">ITargetBlock</a>&lt;TInput&gt;</td>
-      <td><em>target</em></td>
-      <td><p>The target to encapsulate.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Encapsulate_TInput__TOutput__ITargetBlock_TInput___ISourceBlock_TOutput___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method does not in any way connect the target to the source. It creates a
+propagator block whose target methods delegate to the specified target and whose
+source methods delegate to the specified source.  Any connection between the target
+and the source is left for the developer to explicitly provide.  The propagator&#39;s
+<a href="System.Threading.Tasks.Dataflow.IDataflowBlock.html">System.Threading.Tasks.Dataflow.IDataflowBlock</a> implementation delegates to the specified source.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IPropagatorBlock<tinput, toutput=""> Encapsulate<tinput, toutput="">(ITargetBlock<tinput> target, ISourceBlock<toutput> source)</toutput></tinput></tinput,></tinput,></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ITargetBlock&lt;TInput&gt;</td>
+        <td><em>target</em></td>
+        <td><p>The target to encapsulate.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html" name="System.Threading.Tasks.Dataflow.ISourceBlock">ISourceBlock</a>&lt;TOutput&gt;</td>
-      <td><em>source</em></td>
-      <td><p>The source to encapsulate.</p>
+      </tr>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;</td>
+        <td><em>source</em></td>
+        <td><p>The source to encapsulate.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.IPropagatorBlock`2.html" name="System.Threading.Tasks.Dataflow.IPropagatorBlock">IPropagatorBlock</a>&lt;TInput, TOutput&gt;</td>
-      <td><p>The encapsulated target and source.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.IPropagatorBlock&lt;TInput, TOutput&gt;</td>
+        <td><p>The encapsulated target and source.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L38"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="LinkTo_TOutput__ISourceBlock_TOutput___ITargetBlock_TOutput__">LinkTo&lt;TOutput&gt;(ISourceBlock&lt;TOutput&gt;, ITargetBlock&lt;TOutput&gt;)</h4>
-<div class="markdown level1 summary"><p>Links the <a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html">System.Threading.Tasks.Dataflow.ISourceBlock`1</a> to the specified <a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html">System.Threading.Tasks.Dataflow.ITargetBlock`1</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IDisposable LinkTo<toutput>(ISourceBlock<toutput> source, ITargetBlock<toutput> target)</toutput></toutput></toutput></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L38">View Source</a>
+      </span>
+  <h4 id="LinkTo_TOutput__ISourceBlock_TOutput___ITargetBlock_TOutput__">LinkTo&lt;TOutput&gt;(ISourceBlock&lt;TOutput&gt;, ITargetBlock&lt;TOutput&gt;)</h4>
+  <div class="markdown level1 summary"><p>Links the <a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html">System.Threading.Tasks.Dataflow.ISourceBlock`1</a> to the specified <a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html">System.Threading.Tasks.Dataflow.ITargetBlock`1</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html" name="System.Threading.Tasks.Dataflow.ISourceBlock">ISourceBlock</a>&lt;TOutput&gt;</td>
-      <td><em>source</em></td>
-      <td><p>The source from which to link.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDisposable LinkTo<toutput>(ISourceBlock<toutput> source, ITargetBlock<toutput> target)</toutput></toutput></toutput></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;</td>
+        <td><em>source</em></td>
+        <td><p>The source from which to link.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html" name="System.Threading.Tasks.Dataflow.ITargetBlock">ITargetBlock</a>&lt;TOutput&gt;</td>
-      <td><em>target</em></td>
-      <td><p>The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1"></see> to which to connect the source.</p>
+      </tr>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ITargetBlock&lt;TOutput&gt;</td>
+        <td><em>target</em></td>
+        <td><p>The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1"></see> to which to connect the source.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.IDisposable.html" name="System.IDisposable">IDisposable</a></td>
-      <td><p>An IDisposable that, upon calling Dispose, will unlink the source from the target.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.IDisposable.html" name="System.IDisposable">IDisposable</a></td>
+        <td><p>An IDisposable that, upon calling Dispose, will unlink the source from the target.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L60"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="LinkTo_TOutput__ISourceBlock_TOutput___ITargetBlock_TOutput___Predicate_TOutput__">LinkTo&lt;TOutput&gt;(ISourceBlock&lt;TOutput&gt;, ITargetBlock&lt;TOutput&gt;, Predicate&lt;TOutput&gt;)</h4>
-<div class="markdown level1 summary"><p>Links the <a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html">System.Threading.Tasks.Dataflow.ISourceBlock`1</a> to the specified <a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html">System.Threading.Tasks.Dataflow.ITargetBlock`1</a> using the specified filter.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IDisposable LinkTo<toutput>(ISourceBlock<toutput> source, ITargetBlock<toutput> target, Predicate<toutput> predicate)</toutput></toutput></toutput></toutput></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L60">View Source</a>
+      </span>
+  <h4 id="LinkTo_TOutput__ISourceBlock_TOutput___ITargetBlock_TOutput___Predicate_TOutput__">LinkTo&lt;TOutput&gt;(ISourceBlock&lt;TOutput&gt;, ITargetBlock&lt;TOutput&gt;, Predicate&lt;TOutput&gt;)</h4>
+  <div class="markdown level1 summary"><p>Links the <a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html">System.Threading.Tasks.Dataflow.ISourceBlock`1</a> to the specified <a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html">System.Threading.Tasks.Dataflow.ITargetBlock`1</a> using the specified filter.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html" name="System.Threading.Tasks.Dataflow.ISourceBlock">ISourceBlock</a>&lt;TOutput&gt;</td>
-      <td><em>source</em></td>
-      <td><p>The source from which to link.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDisposable LinkTo<toutput>(ISourceBlock<toutput> source, ITargetBlock<toutput> target, Predicate<toutput> predicate)</toutput></toutput></toutput></toutput></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;</td>
+        <td><em>source</em></td>
+        <td><p>The source from which to link.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html" name="System.Threading.Tasks.Dataflow.ITargetBlock">ITargetBlock</a>&lt;TOutput&gt;</td>
-      <td><em>target</em></td>
-      <td><p>The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1"></see> to which to connect the source.</p>
+      </tr>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ITargetBlock&lt;TOutput&gt;</td>
+        <td><em>target</em></td>
+        <td><p>The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1"></see> to which to connect the source.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Predicate`1.html" name="System.Predicate">Predicate</a>&lt;TOutput&gt;</td>
-      <td><em>predicate</em></td>
-      <td><p>The filter a message must pass in order for it to propagate from the source to the target.</p>
+      </tr>
+      <tr>
+        <td>System.Predicate&lt;TOutput&gt;</td>
+        <td><em>predicate</em></td>
+        <td><p>The filter a message must pass in order for it to propagate from the source to the target.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.IDisposable.html" name="System.IDisposable">IDisposable</a></td>
-      <td><p>An IDisposable that, upon calling Dispose, will unlink the source from the target.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.IDisposable.html" name="System.IDisposable">IDisposable</a></td>
+        <td><p>An IDisposable that, upon calling Dispose, will unlink the source from the target.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L79"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="LinkTo_TOutput__ISourceBlock_TOutput___ITargetBlock_TOutput___DataflowLinkOptions__Predicate_TOutput__">LinkTo&lt;TOutput&gt;(ISourceBlock&lt;TOutput&gt;, ITargetBlock&lt;TOutput&gt;, DataflowLinkOptions, Predicate&lt;TOutput&gt;)</h4>
-<div class="markdown level1 summary"><p>Links the <a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html">System.Threading.Tasks.Dataflow.ISourceBlock`1</a> to the specified <a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html">System.Threading.Tasks.Dataflow.ITargetBlock`1</a> using the specified filter.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IDisposable LinkTo<toutput>(ISourceBlock<toutput> source, ITargetBlock<toutput> target, DataflowLinkOptions linkOptions, Predicate<toutput> predicate)</toutput></toutput></toutput></toutput></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L79">View Source</a>
+      </span>
+  <h4 id="LinkTo_TOutput__ISourceBlock_TOutput___ITargetBlock_TOutput___DataflowLinkOptions__Predicate_TOutput__">LinkTo&lt;TOutput&gt;(ISourceBlock&lt;TOutput&gt;, ITargetBlock&lt;TOutput&gt;, DataflowLinkOptions, Predicate&lt;TOutput&gt;)</h4>
+  <div class="markdown level1 summary"><p>Links the <a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html">System.Threading.Tasks.Dataflow.ISourceBlock`1</a> to the specified <a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html">System.Threading.Tasks.Dataflow.ITargetBlock`1</a> using the specified filter.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html" name="System.Threading.Tasks.Dataflow.ISourceBlock">ISourceBlock</a>&lt;TOutput&gt;</td>
-      <td><em>source</em></td>
-      <td><p>The source from which to link.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDisposable LinkTo<toutput>(ISourceBlock<toutput> source, ITargetBlock<toutput> target, DataflowLinkOptions linkOptions, Predicate<toutput> predicate)</toutput></toutput></toutput></toutput></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;</td>
+        <td><em>source</em></td>
+        <td><p>The source from which to link.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html" name="System.Threading.Tasks.Dataflow.ITargetBlock">ITargetBlock</a>&lt;TOutput&gt;</td>
-      <td><em>target</em></td>
-      <td><p>The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1"></see> to which to connect the source.</p>
+      </tr>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ITargetBlock&lt;TOutput&gt;</td>
+        <td><em>target</em></td>
+        <td><p>The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1"></see> to which to connect the source.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.DataflowLinkOptions.html" name="System.Threading.Tasks.Dataflow.DataflowLinkOptions">DataflowLinkOptions</a></td>
-      <td><em>linkOptions</em></td>
-      <td><p>The options to use to configure the link.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Threading.Tasks.Dataflow.DataflowLinkOptions.html" name="System.Threading.Tasks.Dataflow.DataflowLinkOptions">DataflowLinkOptions</a></td>
+        <td><em>linkOptions</em></td>
+        <td><p>The options to use to configure the link.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Predicate`1.html" name="System.Predicate">Predicate</a>&lt;TOutput&gt;</td>
-      <td><em>predicate</em></td>
-      <td><p>The filter a message must pass in order for it to propagate from the source to the target.</p>
+      </tr>
+      <tr>
+        <td>System.Predicate&lt;TOutput&gt;</td>
+        <td><em>predicate</em></td>
+        <td><p>The filter a message must pass in order for it to propagate from the source to the target.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.IDisposable.html" name="System.IDisposable">IDisposable</a></td>
-      <td><p>An IDisposable that, upon calling Dispose, will unlink the source from the target.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.IDisposable.html" name="System.IDisposable">IDisposable</a></td>
+        <td><p>An IDisposable that, upon calling Dispose, will unlink the source from the target.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L2767"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="NullTarget_TInput___">NullTarget&lt;TInput&gt;()</h4>
-<div class="markdown level1 summary"><p>Gets a target block that synchronously accepts all messages offered to it and drops them.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static ITargetBlock<tinput> NullTarget<tinput>()</tinput></tinput></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L2767">View Source</a>
+      </span>
+  <h4 id="NullTarget_TInput___">NullTarget&lt;TInput&gt;()</h4>
+  <div class="markdown level1 summary"><p>Gets a target block that synchronously accepts all messages offered to it and drops them.</p>
 </div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html" name="System.Threading.Tasks.Dataflow.ITargetBlock">ITargetBlock</a>&lt;TInput&gt;</td>
-      <td><p>A <a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html">System.Threading.Tasks.Dataflow.ITargetBlock`1</a> that accepts and subsequently drops all offered messages.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ITargetBlock<tinput> NullTarget<tinput>()</tinput></tinput></code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ITargetBlock&lt;TInput&gt;</td>
+        <td><p>A <a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html">System.Threading.Tasks.Dataflow.ITargetBlock`1</a> that accepts and subsequently drops all offered messages.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L1446"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="OutputAvailableAsync_TOutput__ISourceBlock_TOutput__">OutputAvailableAsync&lt;TOutput&gt;(ISourceBlock&lt;TOutput&gt;)</h4>
-<div class="markdown level1 summary"><p>Provides a <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a><br>that asynchronously monitors the source for available output.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static Task<bool> OutputAvailableAsync<toutput>(ISourceBlock<toutput> source)</toutput></toutput></bool></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L1446">View Source</a>
+      </span>
+  <h4 id="OutputAvailableAsync_TOutput__ISourceBlock_TOutput__">OutputAvailableAsync&lt;TOutput&gt;(ISourceBlock&lt;TOutput&gt;)</h4>
+  <div class="markdown level1 summary"><p>Provides a <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a>
+that asynchronously monitors the source for available output.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html" name="System.Threading.Tasks.Dataflow.ISourceBlock">ISourceBlock</a>&lt;TOutput&gt;</td>
-      <td><em>source</em></td>
-      <td><p>The source to monitor.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task<bool> OutputAvailableAsync<toutput>(ISourceBlock<toutput> source)</toutput></toutput></bool></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;</td>
+        <td><em>source</em></td>
+        <td><p>The source to monitor.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;<a href="System.Boolean.html" name="System.Boolean">Boolean</a>&gt;</td>
-      <td><p>A <see cref="T:System.Threading.Tasks.Task`1"></see> that informs of whether and when
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Task&lt;System.Boolean&gt;</td>
+        <td><p>A <see cref="T:System.Threading.Tasks.Task`1"></see> that informs of whether and when
 more output is available.  When the task completes, if its <see cref="P:System.Threading.Tasks.Task`1.Result"></see> is true, more output
 is available in the source (though another consumer of the source may retrieve the data).
 If it returns false, more output is not and will never be available, due to the source
 completing prior to output being available.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L1465"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="OutputAvailableAsync_TOutput__ISourceBlock_TOutput___CancellationToken_">OutputAvailableAsync&lt;TOutput&gt;(ISourceBlock&lt;TOutput&gt;, CancellationToken)</h4>
-<div class="markdown level1 summary"><p>Provides a <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a><br>that asynchronously monitors the source for available output.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static Task<bool> OutputAvailableAsync<toutput>(ISourceBlock<toutput> source, CancellationToken cancellationToken)</toutput></toutput></bool></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L1465">View Source</a>
+      </span>
+  <h4 id="OutputAvailableAsync_TOutput__ISourceBlock_TOutput___CancellationToken_">OutputAvailableAsync&lt;TOutput&gt;(ISourceBlock&lt;TOutput&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Provides a <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a>
+that asynchronously monitors the source for available output.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html" name="System.Threading.Tasks.Dataflow.ISourceBlock">ISourceBlock</a>&lt;TOutput&gt;</td>
-      <td><em>source</em></td>
-      <td><p>The source to monitor.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task<bool> OutputAvailableAsync<toutput>(ISourceBlock<toutput> source, CancellationToken cancellationToken)</toutput></toutput></bool></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;</td>
+        <td><em>source</em></td>
+        <td><p>The source to monitor.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
-      <td><em>cancellationToken</em></td>
-      <td><p>The cancellation token with which to cancel the asynchronous operation.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+        <td><em>cancellationToken</em></td>
+        <td><p>The cancellation token with which to cancel the asynchronous operation.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;<a href="System.Boolean.html" name="System.Boolean">Boolean</a>&gt;</td>
-      <td><p>A <see cref="T:System.Threading.Tasks.Task`1"></see> that informs of whether and when
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Task&lt;System.Boolean&gt;</td>
+        <td><p>A <see cref="T:System.Threading.Tasks.Task`1"></see> that informs of whether and when
 more output is available.  When the task completes, if its <see cref="P:System.Threading.Tasks.Task`1.Result"></see> is true, more output
 is available in the source (though another consumer of the source may retrieve the data).
 If it returns false, more output is not and will never be available, due to the source
 completing prior to output being available.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L277"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Post_TInput__ITargetBlock_TInput___TInput_">Post&lt;TInput&gt;(ITargetBlock&lt;TInput&gt;, TInput)</h4>
-<div class="markdown level1 summary"><p>Posts an item to the <a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html">System.Threading.Tasks.Dataflow.ITargetBlock`1</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This method will return once the target block has decided to accept or decline the item,<br>but unless otherwise dictated by special semantics of the target block, it does not wait</br>for the item to actually be processed (for example, <a href="System.Threading.Tasks.Dataflow.ActionBlock`1.html">System.Threading.Tasks.Dataflow.ActionBlock`1</a><br>will return from Post as soon as it has stored the posted item into its input queue).  From the perspective</br>of the block&#39;s processing, Post is asynchronous. For target blocks that support postponing offered messages,<br>or for blocks that may do more processing in their Post implementation, consider using</br><a href="">System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync</a>,<br>which will return immediately and will enable the target to postpone the posted message and later consume it</br>after SendAsync returns.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static bool Post<tinput>(ITargetBlock<tinput> target, TInput item)</tinput></tinput></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L277">View Source</a>
+      </span>
+  <h4 id="Post_TInput__ITargetBlock_TInput___TInput_">Post&lt;TInput&gt;(ITargetBlock&lt;TInput&gt;, TInput)</h4>
+  <div class="markdown level1 summary"><p>Posts an item to the <a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html">System.Threading.Tasks.Dataflow.ITargetBlock`1</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html" name="System.Threading.Tasks.Dataflow.ITargetBlock">ITargetBlock</a>&lt;TInput&gt;</td>
-      <td><em>target</em></td>
-      <td><p>The target block.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Post_TInput__ITargetBlock_TInput___TInput__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method will return once the target block has decided to accept or decline the item,
+but unless otherwise dictated by special semantics of the target block, it does not wait
+for the item to actually be processed (for example, <a href="System.Threading.Tasks.Dataflow.ActionBlock`1.html">System.Threading.Tasks.Dataflow.ActionBlock`1</a>
+will return from Post as soon as it has stored the posted item into its input queue).  From the perspective
+of the block&#39;s processing, Post is asynchronous. For target blocks that support postponing offered messages,
+or for blocks that may do more processing in their Post implementation, consider using
+<a href="">System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync</a>,
+which will return immediately and will enable the target to postpone the posted message and later consume it
+after SendAsync returns.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Post<tinput>(ITargetBlock<tinput> target, TInput item)</tinput></tinput></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ITargetBlock&lt;TInput&gt;</td>
+        <td><em>target</em></td>
+        <td><p>The target block.</p>
 </td>
-    </tr>
-    <tr>
-      <td>TInput</td>
-      <td><em>item</em></td>
-      <td><p>The item being offered to the target.</p>
+      </tr>
+      <tr>
+        <td>TInput</td>
+        <td><em>item</em></td>
+        <td><p>The item being offered to the target.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>true if the item was accepted by the target block; otherwise, false.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>true if the item was accepted by the target block; otherwise, false.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L911"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Receive_TOutput__ISourceBlock_TOutput__">Receive&lt;TOutput&gt;(ISourceBlock&lt;TOutput&gt;)</h4>
-<div class="markdown level1 summary"><p>Synchronously receives an item from the source.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static TOutput Receive<toutput>(ISourceBlock<toutput> source)</toutput></toutput></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L911">View Source</a>
+      </span>
+  <h4 id="Receive_TOutput__ISourceBlock_TOutput__">Receive&lt;TOutput&gt;(ISourceBlock&lt;TOutput&gt;)</h4>
+  <div class="markdown level1 summary"><p>Synchronously receives an item from the source.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html" name="System.Threading.Tasks.Dataflow.ISourceBlock">ISourceBlock</a>&lt;TOutput&gt;</td>
-      <td><em>source</em></td>
-      <td><p>The source from which to receive.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TOutput Receive<toutput>(ISourceBlock<toutput> source)</toutput></toutput></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;</td>
+        <td><em>source</em></td>
+        <td><p>The source from which to receive.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>TOutput</td>
-      <td><p>The received item.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TOutput</td>
+        <td><p>The received item.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L929"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Receive_TOutput__ISourceBlock_TOutput___CancellationToken_">Receive&lt;TOutput&gt;(ISourceBlock&lt;TOutput&gt;, CancellationToken)</h4>
-<div class="markdown level1 summary"><p>Synchronously receives an item from the source.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>If the source successfully offered an item that was received by this operation, it will be returned, even if a concurrent cancellation request occurs.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static TOutput Receive<toutput>(ISourceBlock<toutput> source, CancellationToken cancellationToken)</toutput></toutput></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L929">View Source</a>
+      </span>
+  <h4 id="Receive_TOutput__ISourceBlock_TOutput___CancellationToken_">Receive&lt;TOutput&gt;(ISourceBlock&lt;TOutput&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Synchronously receives an item from the source.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html" name="System.Threading.Tasks.Dataflow.ISourceBlock">ISourceBlock</a>&lt;TOutput&gt;</td>
-      <td><em>source</em></td>
-      <td><p>The source from which to receive.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Receive_TOutput__ISourceBlock_TOutput___CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the source successfully offered an item that was received by this operation, it will be returned, even if a concurrent cancellation request occurs.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TOutput Receive<toutput>(ISourceBlock<toutput> source, CancellationToken cancellationToken)</toutput></toutput></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;</td>
+        <td><em>source</em></td>
+        <td><p>The source from which to receive.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
-      <td><em>cancellationToken</em></td>
-      <td><p>The <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> which may be used to cancel the receive operation.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+        <td><em>cancellationToken</em></td>
+        <td><p>The <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> which may be used to cancel the receive operation.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>TOutput</td>
-      <td><p>The received item.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TOutput</td>
+        <td><p>The received item.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L950"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Receive_TOutput__ISourceBlock_TOutput___TimeSpan_">Receive&lt;TOutput&gt;(ISourceBlock&lt;TOutput&gt;, TimeSpan)</h4>
-<div class="markdown level1 summary"><p>Synchronously receives an item from the source.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>If the source successfully offered an item that was received by this operation, it will be returned, even if a concurrent timeout occurs.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static TOutput Receive<toutput>(ISourceBlock<toutput> source, TimeSpan timeout)</toutput></toutput></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L950">View Source</a>
+      </span>
+  <h4 id="Receive_TOutput__ISourceBlock_TOutput___TimeSpan_">Receive&lt;TOutput&gt;(ISourceBlock&lt;TOutput&gt;, TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Synchronously receives an item from the source.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html" name="System.Threading.Tasks.Dataflow.ISourceBlock">ISourceBlock</a>&lt;TOutput&gt;</td>
-      <td><em>source</em></td>
-      <td><p>The source from which to receive.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Receive_TOutput__ISourceBlock_TOutput___TimeSpan__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the source successfully offered an item that was received by this operation, it will be returned, even if a concurrent timeout occurs.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TOutput Receive<toutput>(ISourceBlock<toutput> source, TimeSpan timeout)</toutput></toutput></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;</td>
+        <td><em>source</em></td>
+        <td><p>The source from which to receive.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
-      <td><em>timeout</em></td>
-      <td><p>A <a href="System.TimeSpan.html">System.TimeSpan</a> that represents the number of milliseconds to wait, or a TimeSpan that represents -1 milliseconds to wait indefinitely.</p>
+      </tr>
+      <tr>
+        <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
+        <td><em>timeout</em></td>
+        <td><p>A <a href="System.TimeSpan.html">System.TimeSpan</a> that represents the number of milliseconds to wait, or a TimeSpan that represents -1 milliseconds to wait indefinitely.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>TOutput</td>
-      <td><p>The received item.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TOutput</td>
+        <td><p>The received item.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L973"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Receive_TOutput__ISourceBlock_TOutput___TimeSpan__CancellationToken_">Receive&lt;TOutput&gt;(ISourceBlock&lt;TOutput&gt;, TimeSpan, CancellationToken)</h4>
-<div class="markdown level1 summary"><p>Synchronously receives an item from the source.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>If the source successfully offered an item that was received by this operation, it will be returned, even if a concurrent timeout or cancellation request occurs.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static TOutput Receive<toutput>(ISourceBlock<toutput> source, TimeSpan timeout, CancellationToken cancellationToken)</toutput></toutput></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L973">View Source</a>
+      </span>
+  <h4 id="Receive_TOutput__ISourceBlock_TOutput___TimeSpan__CancellationToken_">Receive&lt;TOutput&gt;(ISourceBlock&lt;TOutput&gt;, TimeSpan, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Synchronously receives an item from the source.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html" name="System.Threading.Tasks.Dataflow.ISourceBlock">ISourceBlock</a>&lt;TOutput&gt;</td>
-      <td><em>source</em></td>
-      <td><p>The source from which to receive.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Receive_TOutput__ISourceBlock_TOutput___TimeSpan__CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the source successfully offered an item that was received by this operation, it will be returned, even if a concurrent timeout or cancellation request occurs.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TOutput Receive<toutput>(ISourceBlock<toutput> source, TimeSpan timeout, CancellationToken cancellationToken)</toutput></toutput></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;</td>
+        <td><em>source</em></td>
+        <td><p>The source from which to receive.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
-      <td><em>timeout</em></td>
-      <td><p>A <a href="System.TimeSpan.html">System.TimeSpan</a> that represents the number of milliseconds to wait, or a TimeSpan that represents -1 milliseconds to wait indefinitely.</p>
+      </tr>
+      <tr>
+        <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
+        <td><em>timeout</em></td>
+        <td><p>A <a href="System.TimeSpan.html">System.TimeSpan</a> that represents the number of milliseconds to wait, or a TimeSpan that represents -1 milliseconds to wait indefinitely.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
-      <td><em>cancellationToken</em></td>
-      <td><p>The <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> which may be used to cancel the receive operation.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+        <td><em>cancellationToken</em></td>
+        <td><p>The <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> which may be used to cancel the receive operation.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>TOutput</td>
-      <td><p>The received item.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TOutput</td>
+        <td><p>The received item.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L832"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ReceiveAsync_TOutput__ISourceBlock_TOutput__">ReceiveAsync&lt;TOutput&gt;(ISourceBlock&lt;TOutput&gt;)</h4>
-<div class="markdown level1 summary"><p>Asynchronously receives a value from the specified source.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static Task<toutput> ReceiveAsync<toutput>(ISourceBlock<toutput> source)</toutput></toutput></toutput></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L832">View Source</a>
+      </span>
+  <h4 id="ReceiveAsync_TOutput__ISourceBlock_TOutput__">ReceiveAsync&lt;TOutput&gt;(ISourceBlock&lt;TOutput&gt;)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously receives a value from the specified source.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html" name="System.Threading.Tasks.Dataflow.ISourceBlock">ISourceBlock</a>&lt;TOutput&gt;</td>
-      <td><em>source</em></td>
-      <td><p>The source from which to asynchronously receive.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task<toutput> ReceiveAsync<toutput>(ISourceBlock<toutput> source)</toutput></toutput></toutput></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;</td>
+        <td><em>source</em></td>
+        <td><p>The source from which to asynchronously receive.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TOutput&gt;</td>
-      <td><p>A <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> that represents the asynchronous receive operation.  When an item is successfully received from the source,
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Task&lt;TOutput&gt;</td>
+        <td><p>A <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> that represents the asynchronous receive operation.  When an item is successfully received from the source,
 the returned task will be completed and its <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1.Result</a> will return the received item.  If an item cannot be retrieved,
 because the source is empty and completed, the returned task will be canceled.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L849"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ReceiveAsync_TOutput__ISourceBlock_TOutput___CancellationToken_">ReceiveAsync&lt;TOutput&gt;(ISourceBlock&lt;TOutput&gt;, CancellationToken)</h4>
-<div class="markdown level1 summary"><p>Asynchronously receives a value from the specified source.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static Task<toutput> ReceiveAsync<toutput>(ISourceBlock<toutput> source, CancellationToken cancellationToken)</toutput></toutput></toutput></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L849">View Source</a>
+      </span>
+  <h4 id="ReceiveAsync_TOutput__ISourceBlock_TOutput___CancellationToken_">ReceiveAsync&lt;TOutput&gt;(ISourceBlock&lt;TOutput&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously receives a value from the specified source.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html" name="System.Threading.Tasks.Dataflow.ISourceBlock">ISourceBlock</a>&lt;TOutput&gt;</td>
-      <td><em>source</em></td>
-      <td><p>The source from which to asynchronously receive.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task<toutput> ReceiveAsync<toutput>(ISourceBlock<toutput> source, CancellationToken cancellationToken)</toutput></toutput></toutput></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;</td>
+        <td><em>source</em></td>
+        <td><p>The source from which to asynchronously receive.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
-      <td><em>cancellationToken</em></td>
-      <td><p>The <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> which may be used to cancel the receive operation.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+        <td><em>cancellationToken</em></td>
+        <td><p>The <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> which may be used to cancel the receive operation.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TOutput&gt;</td>
-      <td><p>A <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> that represents the asynchronous receive operation.  When an item is successfully received from the source,
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Task&lt;TOutput&gt;</td>
+        <td><p>A <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> that represents the asynchronous receive operation.  When an item is successfully received from the source,
 the returned task will be completed and its <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1.Result</a> will return the received item.  If an item cannot be retrieved,
 either because cancellation is requested or the source is empty and completed, the returned task will be canceled.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L869"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ReceiveAsync_TOutput__ISourceBlock_TOutput___TimeSpan_">ReceiveAsync&lt;TOutput&gt;(ISourceBlock&lt;TOutput&gt;, TimeSpan)</h4>
-<div class="markdown level1 summary"><p>Asynchronously receives a value from the specified source.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static Task<toutput> ReceiveAsync<toutput>(ISourceBlock<toutput> source, TimeSpan timeout)</toutput></toutput></toutput></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L869">View Source</a>
+      </span>
+  <h4 id="ReceiveAsync_TOutput__ISourceBlock_TOutput___TimeSpan_">ReceiveAsync&lt;TOutput&gt;(ISourceBlock&lt;TOutput&gt;, TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously receives a value from the specified source.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html" name="System.Threading.Tasks.Dataflow.ISourceBlock">ISourceBlock</a>&lt;TOutput&gt;</td>
-      <td><em>source</em></td>
-      <td><p>The source from which to asynchronously receive.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task<toutput> ReceiveAsync<toutput>(ISourceBlock<toutput> source, TimeSpan timeout)</toutput></toutput></toutput></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;</td>
+        <td><em>source</em></td>
+        <td><p>The source from which to asynchronously receive.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
-      <td><em>timeout</em></td>
-      <td><p>A <a href="System.TimeSpan.html">System.TimeSpan</a> that represents the number of milliseconds to wait, or a TimeSpan that represents -1 milliseconds to wait indefinitely.</p>
+      </tr>
+      <tr>
+        <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
+        <td><em>timeout</em></td>
+        <td><p>A <a href="System.TimeSpan.html">System.TimeSpan</a> that represents the number of milliseconds to wait, or a TimeSpan that represents -1 milliseconds to wait indefinitely.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TOutput&gt;</td>
-      <td><p>A <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> that represents the asynchronous receive operation.  When an item is successfully received from the source,
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Task&lt;TOutput&gt;</td>
+        <td><p>A <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> that represents the asynchronous receive operation.  When an item is successfully received from the source,
 the returned task will be completed and its <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1.Result</a> will return the received item.  If an item cannot be retrieved,
 either because the timeout expires or the source is empty and completed, the returned task will be canceled.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L890"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ReceiveAsync_TOutput__ISourceBlock_TOutput___TimeSpan__CancellationToken_">ReceiveAsync&lt;TOutput&gt;(ISourceBlock&lt;TOutput&gt;, TimeSpan, CancellationToken)</h4>
-<div class="markdown level1 summary"><p>Asynchronously receives a value from the specified source.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static Task<toutput> ReceiveAsync<toutput>(ISourceBlock<toutput> source, TimeSpan timeout, CancellationToken cancellationToken)</toutput></toutput></toutput></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L890">View Source</a>
+      </span>
+  <h4 id="ReceiveAsync_TOutput__ISourceBlock_TOutput___TimeSpan__CancellationToken_">ReceiveAsync&lt;TOutput&gt;(ISourceBlock&lt;TOutput&gt;, TimeSpan, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously receives a value from the specified source.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html" name="System.Threading.Tasks.Dataflow.ISourceBlock">ISourceBlock</a>&lt;TOutput&gt;</td>
-      <td><em>source</em></td>
-      <td><p>The source from which to asynchronously receive.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task<toutput> ReceiveAsync<toutput>(ISourceBlock<toutput> source, TimeSpan timeout, CancellationToken cancellationToken)</toutput></toutput></toutput></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;</td>
+        <td><em>source</em></td>
+        <td><p>The source from which to asynchronously receive.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
-      <td><em>timeout</em></td>
-      <td><p>A <a href="System.TimeSpan.html">System.TimeSpan</a> that represents the number of milliseconds to wait, or a TimeSpan that represents -1 milliseconds to wait indefinitely.</p>
+      </tr>
+      <tr>
+        <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
+        <td><em>timeout</em></td>
+        <td><p>A <a href="System.TimeSpan.html">System.TimeSpan</a> that represents the number of milliseconds to wait, or a TimeSpan that represents -1 milliseconds to wait indefinitely.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
-      <td><em>cancellationToken</em></td>
-      <td><p>The <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> which may be used to cancel the receive operation.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+        <td><em>cancellationToken</em></td>
+        <td><p>The <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> which may be used to cancel the receive operation.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TOutput&gt;</td>
-      <td><p>A <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> that represents the asynchronous receive operation.  When an item is successfully received from the source,
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Task&lt;TOutput&gt;</td>
+        <td><p>A <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> that represents the asynchronous receive operation.  When an item is successfully received from the source,
 the returned task will be completed and its <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1.Result</a> will return the received item.  If an item cannot be retrieved,
 either because the timeout expires, cancellation is requested, or the source is empty and completed, the returned task will be canceled.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L298"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="SendAsync_TInput__ITargetBlock_TInput___TInput_">SendAsync&lt;TInput&gt;(ITargetBlock&lt;TInput&gt;, TInput)</h4>
-<div class="markdown level1 summary"><p>Asynchronously offers a message to the target message block, allowing for postponement.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static Task<bool> SendAsync<tinput>(ITargetBlock<tinput> target, TInput item)</tinput></tinput></bool></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L298">View Source</a>
+      </span>
+  <h4 id="SendAsync_TInput__ITargetBlock_TInput___TInput_">SendAsync&lt;TInput&gt;(ITargetBlock&lt;TInput&gt;, TInput)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously offers a message to the target message block, allowing for postponement.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html" name="System.Threading.Tasks.Dataflow.ITargetBlock">ITargetBlock</a>&lt;TInput&gt;</td>
-      <td><em>target</em></td>
-      <td><p>The target to which to post the data.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task<bool> SendAsync<tinput>(ITargetBlock<tinput> target, TInput item)</tinput></tinput></bool></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ITargetBlock&lt;TInput&gt;</td>
+        <td><em>target</em></td>
+        <td><p>The target to which to post the data.</p>
 </td>
-    </tr>
-    <tr>
-      <td>TInput</td>
-      <td><em>item</em></td>
-      <td><p>The item being offered to the target.</p>
+      </tr>
+      <tr>
+        <td>TInput</td>
+        <td><em>item</em></td>
+        <td><p>The item being offered to the target.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;<a href="System.Boolean.html" name="System.Boolean">Boolean</a>&gt;</td>
-      <td><p>A <see cref="T:System.Threading.Tasks.Task`1"></see> that represents the asynchronous send.  If the target
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Task&lt;System.Boolean&gt;</td>
+        <td><p>A <see cref="T:System.Threading.Tasks.Task`1"></see> that represents the asynchronous send.  If the target
 accepts and consumes the offered element during the call to SendAsync, upon return
 from the call the resulting <see cref="T:System.Threading.Tasks.Task`1"></see> will be completed and its <see cref="P:System.Threading.Tasks.Task`1.Result">Result</see>
 property will return true.  If the target declines the offered element during the call, upon return from the call the resulting <see cref="T:System.Threading.Tasks.Task`1"></see> will
@@ -1396,63 +1424,63 @@ postpones the offered element, the element will be buffered until such time that
 point the Task will complete, with its <see cref="P:System.Threading.Tasks.Task`1.Result"></see> indicating whether the message was consumed.  If the target
 never attempts to consume or release the message, the returned task will never complete.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L325"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="SendAsync_TInput__ITargetBlock_TInput___TInput__CancellationToken_">SendAsync&lt;TInput&gt;(ITargetBlock&lt;TInput&gt;, TInput, CancellationToken)</h4>
-<div class="markdown level1 summary"><p>Asynchronously offers a message to the target message block, allowing for postponement.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static Task<bool> SendAsync<tinput>(ITargetBlock<tinput> target, TInput item, CancellationToken cancellationToken)</tinput></tinput></bool></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L325">View Source</a>
+      </span>
+  <h4 id="SendAsync_TInput__ITargetBlock_TInput___TInput__CancellationToken_">SendAsync&lt;TInput&gt;(ITargetBlock&lt;TInput&gt;, TInput, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously offers a message to the target message block, allowing for postponement.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html" name="System.Threading.Tasks.Dataflow.ITargetBlock">ITargetBlock</a>&lt;TInput&gt;</td>
-      <td><em>target</em></td>
-      <td><p>The target to which to post the data.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task<bool> SendAsync<tinput>(ITargetBlock<tinput> target, TInput item, CancellationToken cancellationToken)</tinput></tinput></bool></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ITargetBlock&lt;TInput&gt;</td>
+        <td><em>target</em></td>
+        <td><p>The target to which to post the data.</p>
 </td>
-    </tr>
-    <tr>
-      <td>TInput</td>
-      <td><em>item</em></td>
-      <td><p>The item being offered to the target.</p>
+      </tr>
+      <tr>
+        <td>TInput</td>
+        <td><em>item</em></td>
+        <td><p>The item being offered to the target.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
-      <td><em>cancellationToken</em></td>
-      <td><p>The cancellation token with which to request cancellation of the send operation.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+        <td><em>cancellationToken</em></td>
+        <td><p>The cancellation token with which to request cancellation of the send operation.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;<a href="System.Boolean.html" name="System.Boolean">Boolean</a>&gt;</td>
-      <td><para>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Task&lt;System.Boolean&gt;</td>
+        <td><para>
 A <see cref="T:System.Threading.Tasks.Task`1"></see> that represents the asynchronous send.  If the target
 accepts and consumes the offered element during the call to SendAsync, upon return
 from the call the resulting <see cref="T:System.Threading.Tasks.Task`1"></see> will be completed and its <see cref="P:System.Threading.Tasks.Task`1.Result">Result</see>
@@ -1466,61 +1494,65 @@ never attempts to consume or release the message, the returned task will never c
 If cancellation is requested before the target has successfully consumed the sent data,
 the returned task will complete in the Canceled state and the data will no longer be available to the target.
 </para></td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L813"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="TryReceive_TOutput__IReceivableSourceBlock_TOutput___out_TOutput_">TryReceive&lt;TOutput&gt;(IReceivableSourceBlock&lt;TOutput&gt;, out TOutput)</h4>
-<div class="markdown level1 summary"><p>Attempts to synchronously receive an item from the <a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html">System.Threading.Tasks.Dataflow.ISourceBlock`1</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This method does not wait until the source has an item to provide.<br>It will return whether or not an element was available.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static bool TryReceive<toutput>(IReceivableSourceBlock<toutput> source, out TOutput item)</toutput></toutput></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs/#L813">View Source</a>
+      </span>
+  <h4 id="TryReceive_TOutput__IReceivableSourceBlock_TOutput___out_TOutput_">TryReceive&lt;TOutput&gt;(IReceivableSourceBlock&lt;TOutput&gt;, out TOutput)</h4>
+  <div class="markdown level1 summary"><p>Attempts to synchronously receive an item from the <a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html">System.Threading.Tasks.Dataflow.ISourceBlock`1</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1.html" name="System.Threading.Tasks.Dataflow.IReceivableSourceBlock">IReceivableSourceBlock</a>&lt;TOutput&gt;</td>
-      <td><em>source</em></td>
-      <td><p>The source from which to receive.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="TryReceive_TOutput__IReceivableSourceBlock_TOutput___out_TOutput__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method does not wait until the source has an item to provide.
+It will return whether or not an element was available.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryReceive<toutput>(IReceivableSourceBlock<toutput> source, out TOutput item)</toutput></toutput></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.IReceivableSourceBlock&lt;TOutput&gt;</td>
+        <td><em>source</em></td>
+        <td><p>The source from which to receive.</p>
 </td>
-    </tr>
-    <tr>
-      <td>TOutput</td>
-      <td><em>item</em></td>
-      <td><p>The item received from the source.</p>
+      </tr>
+      <tr>
+        <td>TOutput</td>
+        <td><em>item</em></td>
+        <td><p>The item received from the source.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>true if an item could be received; otherwise, false.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>true if an item could be received; otherwise, false.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

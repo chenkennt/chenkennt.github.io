@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class XNode | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class XNode | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -60,7 +60,9 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="XNode">Class XNode</h1>
-      <div class="markdown level0 summary"><p>Represents nodes (elements, comments, document type, processing instruction,<br>and text nodes) in the XML tree.</p><br></div>
+      <div class="markdown level0 summary"><p>Represents nodes (elements, comments, document type, processing instruction,
+and text nodes) in the XML tree.</p>
+</div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
         <h5>Inheritance</h5>
@@ -74,1011 +76,1088 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public abstract class XNode : XObject</code></pre>
       </div>
-      <h5 id="XNode_remarks">remarks</h5>
-      <div class="markdown level0 remarks"><p>Nodes in the XML tree consist of objects of the following classes:<br><a href="System.Xml.Linq.XElement.html">System.Xml.Linq.XElement</a>,</br><a href="System.Xml.Linq.XComment.html">System.Xml.Linq.XComment</a>,<br><a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument</a>,</br><a href="System.Xml.Linq.XProcessingInstruction.html">System.Xml.Linq.XProcessingInstruction</a>,<br><a href="System.Xml.Linq.XText.html">System.Xml.Linq.XText</a>,</br><a href="System.Xml.Linq.XDocumentType.html">System.Xml.Linq.XDocumentType</a><br>Note that an <a href="System.Xml.Linq.XAttribute.html">System.Xml.Linq.XAttribute</a> is not an <a href="System.Xml.Linq.XNode.html">System.Xml.Linq.XNode</a>.</p><br></div>
-<h3 id="properties">Properties</h3>
-
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L77"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="DocumentOrderComparer">DocumentOrderComparer</h4>
-<div class="markdown level1 summary"><p>Gets a comparer that can compare the relative position of two nodes.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static XNodeDocumentOrderComparer DocumentOrderComparer { get; }</code></pre>
+      <h5 id="XNode_remarks"><strong>Remarks<strong></strong></strong></h5>
+      <div class="markdown level0 remarks"><p>Nodes in the XML tree consist of objects of the following classes:
+<a href="System.Xml.Linq.XElement.html">System.Xml.Linq.XElement</a>,
+<a href="System.Xml.Linq.XComment.html">System.Xml.Linq.XComment</a>,
+<a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument</a>,
+<a href="System.Xml.Linq.XProcessingInstruction.html">System.Xml.Linq.XProcessingInstruction</a>,
+<a href="System.Xml.Linq.XText.html">System.Xml.Linq.XText</a>,
+<a href="System.Xml.Linq.XDocumentType.html">System.Xml.Linq.XDocumentType</a>
+Note that an <a href="System.Xml.Linq.XAttribute.html">System.Xml.Linq.XAttribute</a> is not an <a href="System.Xml.Linq.XNode.html">System.Xml.Linq.XNode</a>.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Xml.Linq.XNodeDocumentOrderComparer.html" name="System.Xml.Linq.XNodeDocumentOrderComparer">XNodeDocumentOrderComparer</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <h3 id="properties">Properties</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L89"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="EqualityComparer">EqualityComparer</h4>
-<div class="markdown level1 summary"><p>Gets a comparer that can compare two nodes for value equality.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static XNodeEqualityComparer EqualityComparer { get; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L77">View Source</a>
+      </span>
+  <h4 id="DocumentOrderComparer">DocumentOrderComparer</h4>
+  <div class="markdown level1 summary"><p>Gets a comparer that can compare the relative position of two nodes.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Xml.Linq.XNodeEqualityComparer.html" name="System.Xml.Linq.XNodeEqualityComparer">XNodeEqualityComparer</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static XNodeDocumentOrderComparer DocumentOrderComparer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Xml.Linq.XNodeDocumentOrderComparer.html" name="System.Xml.Linq.XNodeDocumentOrderComparer">XNodeDocumentOrderComparer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L43"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="NextNode">NextNode</h4>
-<div class="markdown level1 summary"><p>Gets the next sibling node of this node.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>If this property does not have a parent, or if there is no next node,<br>then this property returns null.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public XNode NextNode { get; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L89">View Source</a>
+      </span>
+  <h4 id="EqualityComparer">EqualityComparer</h4>
+  <div class="markdown level1 summary"><p>Gets a comparer that can compare two nodes for value equality.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Xml.Linq.XNode.html" name="System.Xml.Linq.XNode">XNode</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static XNodeEqualityComparer EqualityComparer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Xml.Linq.XNodeEqualityComparer.html" name="System.Xml.Linq.XNodeEqualityComparer">XNodeEqualityComparer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L58"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="PreviousNode">PreviousNode</h4>
-<div class="markdown level1 summary"><p>Gets the previous sibling node of this node.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>If this property does not have a parent, or if there is no previous node,<br>then this property returns null.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public XNode PreviousNode { get; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L43">View Source</a>
+      </span>
+  <h4 id="NextNode">NextNode</h4>
+  <div class="markdown level1 summary"><p>Gets the next sibling node of this node.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Xml.Linq.XNode.html" name="System.Xml.Linq.XNode">XNode</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h3 id="methods">Methods</h3>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="NextNode_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If this property does not have a parent, or if there is no next node,
+then this property returns null.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XNode NextNode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Xml.Linq.XNode.html" name="System.Xml.Linq.XNode">XNode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L118"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="AddAfterSelf_Object_">AddAfterSelf(Object)</h4>
-<div class="markdown level1 summary"><p>Adds the specified content immediately after this node.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>See XContainer.Add(object content) for details about the content that can be added<br>using this method.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void AddAfterSelf(object content)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L58">View Source</a>
+      </span>
+  <h4 id="PreviousNode">PreviousNode</h4>
+  <div class="markdown level1 summary"><p>Gets the previous sibling node of this node.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a></td>
-      <td><em>content</em></td>
-      <td><p>A content object containing simple content or a collection of content objects
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="PreviousNode_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If this property does not have a parent, or if there is no previous node,
+then this property returns null.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XNode PreviousNode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Xml.Linq.XNode.html" name="System.Xml.Linq.XNode">XNode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="methods">Methods</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L118">View Source</a>
+      </span>
+  <h4 id="AddAfterSelf_Object_">AddAfterSelf(Object)</h4>
+  <div class="markdown level1 summary"><p>Adds the specified content immediately after this node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="AddAfterSelf_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See XContainer.Add(object content) for details about the content that can be added
+using this method.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddAfterSelf(object content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>content</em></td>
+        <td><p>A content object containing simple content or a collection of content objects
 to be added after this node.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L137"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="AddAfterSelf_Object___">AddAfterSelf(Object[])</h4>
-<div class="markdown level1 summary"><p>Adds the specified content immediately after this node.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>See XContainer.Add(object content) for details about the content that can be added<br>using this method.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void AddAfterSelf(params object[] content)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L137">View Source</a>
+      </span>
+  <h4 id="AddAfterSelf_Object___">AddAfterSelf(Object[])</h4>
+  <div class="markdown level1 summary"><p>Adds the specified content immediately after this node.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a>[]</td>
-      <td><em>content</em></td>
-      <td><p>A parameter list of content objects.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="AddAfterSelf_Object____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See XContainer.Add(object content) for details about the content that can be added
+using this method.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddAfterSelf(params object[] content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Object[]</td>
+        <td><em>content</em></td>
+        <td><p>A parameter list of content objects.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L162"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="AddBeforeSelf_Object_">AddBeforeSelf(Object)</h4>
-<div class="markdown level1 summary"><p>Adds the specified content immediately before this node.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>See XContainer.Add(object content) for details about the content that can be added<br>using this method.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void AddBeforeSelf(object content)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L162">View Source</a>
+      </span>
+  <h4 id="AddBeforeSelf_Object_">AddBeforeSelf(Object)</h4>
+  <div class="markdown level1 summary"><p>Adds the specified content immediately before this node.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a></td>
-      <td><em>content</em></td>
-      <td><p>A content object containing simple content or a collection of content objects
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="AddBeforeSelf_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See XContainer.Add(object content) for details about the content that can be added
+using this method.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddBeforeSelf(object content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>content</em></td>
+        <td><p>A content object containing simple content or a collection of content objects
 to be added after this node.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L184"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="AddBeforeSelf_Object___">AddBeforeSelf(Object[])</h4>
-<div class="markdown level1 summary"><p>Adds the specified content immediately before this node.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>See XContainer.Add(object content) for details about the content that can be added<br>using this method.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void AddBeforeSelf(params object[] content)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L184">View Source</a>
+      </span>
+  <h4 id="AddBeforeSelf_Object___">AddBeforeSelf(Object[])</h4>
+  <div class="markdown level1 summary"><p>Adds the specified content immediately before this node.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a>[]</td>
-      <td><em>content</em></td>
-      <td><p>A parameter list of content objects.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="AddBeforeSelf_Object____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See XContainer.Add(object content) for details about the content that can be added
+using this method.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddBeforeSelf(params object[] content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Object[]</td>
+        <td><em>content</em></td>
+        <td><p>A parameter list of content objects.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L202"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Ancestors__">Ancestors()</h4>
-<div class="markdown level1 summary"><p>Returns a collection of the ancestor elements of this node.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This method will not return itself in the results.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public IEnumerable<xelement> Ancestors()</xelement></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L202">View Source</a>
+      </span>
+  <h4 id="Ancestors__">Ancestors()</h4>
+  <div class="markdown level1 summary"><p>Returns a collection of the ancestor elements of this node.</p>
 </div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.Xml.Linq.XElement.html" name="System.Xml.Linq.XElement">XElement</a>&gt;</td>
-      <td><p>The ancestor elements of this node.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Ancestors___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method will not return itself in the results.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable<xelement> Ancestors()</xelement></code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt;</td>
+        <td><p>The ancestor elements of this node.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L219"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Ancestors_XName_">Ancestors(XName)</h4>
-<div class="markdown level1 summary"><p>Returns a collection of the ancestor elements of this node with the specified name.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This method will not return itself in the results.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public IEnumerable<xelement> Ancestors(XName name)</xelement></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L219">View Source</a>
+      </span>
+  <h4 id="Ancestors_XName_">Ancestors(XName)</h4>
+  <div class="markdown level1 summary"><p>Returns a collection of the ancestor elements of this node with the specified name.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Xml.Linq.XName.html" name="System.Xml.Linq.XName">XName</a></td>
-      <td><em>name</em></td>
-      <td><p>The name of the ancestor elements to find.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Ancestors_XName__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method will not return itself in the results.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable<xelement> Ancestors(XName name)</xelement></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Xml.Linq.XName.html" name="System.Xml.Linq.XName">XName</a></td>
+        <td><em>name</em></td>
+        <td><p>The name of the ancestor elements to find.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.Xml.Linq.XElement.html" name="System.Xml.Linq.XElement">XElement</a>&gt;</td>
-      <td><p>A collection of the ancestor elements of this node with the specified name.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt;</td>
+        <td><p>A collection of the ancestor elements of this node with the specified name.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L235"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="CompareDocumentOrder_XNode__XNode_">CompareDocumentOrder(XNode, XNode)</h4>
-<div class="markdown level1 summary"><p>Compares two nodes to determine their relative XML document order.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static int CompareDocumentOrder(XNode n1, XNode n2)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L235">View Source</a>
+      </span>
+  <h4 id="CompareDocumentOrder_XNode__XNode_">CompareDocumentOrder(XNode, XNode)</h4>
+  <div class="markdown level1 summary"><p>Compares two nodes to determine their relative XML document order.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Xml.Linq.XNode.html" name="System.Xml.Linq.XNode">XNode</a></td>
-      <td><em>n1</em></td>
-      <td><p>First node to compare.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CompareDocumentOrder(XNode n1, XNode n2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Xml.Linq.XNode.html" name="System.Xml.Linq.XNode">XNode</a></td>
+        <td><em>n1</em></td>
+        <td><p>First node to compare.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Xml.Linq.XNode.html" name="System.Xml.Linq.XNode">XNode</a></td>
-      <td><em>n2</em></td>
-      <td><p>Second node to compare.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Xml.Linq.XNode.html" name="System.Xml.Linq.XNode">XNode</a></td>
+        <td><em>n2</em></td>
+        <td><p>Second node to compare.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td><p>0 if the nodes are equal; -1 if n1 is before n2; 1 if n1 is after n2.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><p>0 if the nodes are equal; -1 if n1 is before n2; 1 if n1 is after n2.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L298"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="CreateReader__">CreateReader()</h4>
-<div class="markdown level1 summary"><p>Creates an <see cref="!:XmlReader"></see> for the node.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public XmlReader CreateReader()</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L298">View Source</a>
+      </span>
+  <h4 id="CreateReader__">CreateReader()</h4>
+  <div class="markdown level1 summary"><p>Creates an <see cref="!:XmlReader"></see> for the node.</p>
 </div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>XmlReader</td>
-      <td><p>An <see cref="!:XmlReader"></see> that can be used to read the node and its descendants.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XmlReader CreateReader()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>XmlReader</td>
+        <td><p>An <see cref="!:XmlReader"></see> that can be used to read the node and its descendants.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L310"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="CreateReader_ReaderOptions_">CreateReader(ReaderOptions)</h4>
-<div class="markdown level1 summary"><p>Creates an <see cref="!:XmlReader"></see> for the node.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public XmlReader CreateReader(ReaderOptions readerOptions)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L310">View Source</a>
+      </span>
+  <h4 id="CreateReader_ReaderOptions_">CreateReader(ReaderOptions)</h4>
+  <div class="markdown level1 summary"><p>Creates an <see cref="!:XmlReader"></see> for the node.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Xml.Linq.ReaderOptions.html" name="System.Xml.Linq.ReaderOptions">ReaderOptions</a></td>
-      <td><em>readerOptions</em></td>
-      <td><p>Options to be used for the returned reader. These override the default usage of annotations from the tree.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XmlReader CreateReader(ReaderOptions readerOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Xml.Linq.ReaderOptions.html" name="System.Xml.Linq.ReaderOptions">ReaderOptions</a></td>
+        <td><em>readerOptions</em></td>
+        <td><p>Options to be used for the returned reader. These override the default usage of annotations from the tree.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>XmlReader</td>
-      <td><p>An <see cref="!:XmlReader"></see> that can be used to read the node and its descendants.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>XmlReader</td>
+        <td><p>An <see cref="!:XmlReader"></see> that can be used to read the node and its descendants.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L547"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="DeepEquals_XNode__XNode_">DeepEquals(XNode, XNode)</h4>
-<div class="markdown level1 summary"><p>Compares the values of two nodes, including the values of all descendant nodes.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>A null node is equal to another null node but unequal to a non-null<br>node. Two <a href="System.Xml.Linq.XNode.html">System.Xml.Linq.XNode</a> objects of different types are never equal. Two</br><a href="System.Xml.Linq.XText.html">System.Xml.Linq.XText</a> nodes are equal if they contain the same text. Two<br><a href="System.Xml.Linq.XElement.html">System.Xml.Linq.XElement</a> nodes are equal if they have the same tag name, the same</br>set of attributes with the same values, and, ignoring comments and processing<br>instructions, contain two equal length sequences of equal content nodes.</br>Two <a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument</a>s are equal if their root nodes are equal. Two<br><a href="System.Xml.Linq.XComment.html">System.Xml.Linq.XComment</a> nodes are equal if they contain the same comment text.</br>Two <a href="System.Xml.Linq.XProcessingInstruction.html">System.Xml.Linq.XProcessingInstruction</a> nodes are equal if they have the same<br>target and data. Two <a href="System.Xml.Linq.XDocumentType.html">System.Xml.Linq.XDocumentType</a> nodes are equal if the have the</br>same name, public id, system id, and internal subset.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static bool DeepEquals(XNode n1, XNode n2)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L547">View Source</a>
+      </span>
+  <h4 id="DeepEquals_XNode__XNode_">DeepEquals(XNode, XNode)</h4>
+  <div class="markdown level1 summary"><p>Compares the values of two nodes, including the values of all descendant nodes.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Xml.Linq.XNode.html" name="System.Xml.Linq.XNode">XNode</a></td>
-      <td><em>n1</em></td>
-      <td><p>The first node to compare.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="DeepEquals_XNode__XNode__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A null node is equal to another null node but unequal to a non-null
+node. Two <a href="System.Xml.Linq.XNode.html">System.Xml.Linq.XNode</a> objects of different types are never equal. Two
+<a href="System.Xml.Linq.XText.html">System.Xml.Linq.XText</a> nodes are equal if they contain the same text. Two
+<a href="System.Xml.Linq.XElement.html">System.Xml.Linq.XElement</a> nodes are equal if they have the same tag name, the same
+set of attributes with the same values, and, ignoring comments and processing
+instructions, contain two equal length sequences of equal content nodes.
+Two <a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument</a>s are equal if their root nodes are equal. Two
+<a href="System.Xml.Linq.XComment.html">System.Xml.Linq.XComment</a> nodes are equal if they contain the same comment text.
+Two <a href="System.Xml.Linq.XProcessingInstruction.html">System.Xml.Linq.XProcessingInstruction</a> nodes are equal if they have the same
+target and data. Two <a href="System.Xml.Linq.XDocumentType.html">System.Xml.Linq.XDocumentType</a> nodes are equal if the have the
+same name, public id, system id, and internal subset.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool DeepEquals(XNode n1, XNode n2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Xml.Linq.XNode.html" name="System.Xml.Linq.XNode">XNode</a></td>
+        <td><em>n1</em></td>
+        <td><p>The first node to compare.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Xml.Linq.XNode.html" name="System.Xml.Linq.XNode">XNode</a></td>
-      <td><em>n2</em></td>
-      <td><p>The second node to compare.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Xml.Linq.XNode.html" name="System.Xml.Linq.XNode">XNode</a></td>
+        <td><em>n2</em></td>
+        <td><p>The second node to compare.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>true if the nodes are equal, false otherwise.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>true if the nodes are equal, false otherwise.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L360"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ElementsAfterSelf__">ElementsAfterSelf()</h4>
-<div class="markdown level1 summary"><p>Returns a collection of the sibling element nodes after this node, in document order.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This method only includes sibling element nodes in the returned collection.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public IEnumerable<xelement> ElementsAfterSelf()</xelement></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L360">View Source</a>
+      </span>
+  <h4 id="ElementsAfterSelf__">ElementsAfterSelf()</h4>
+  <div class="markdown level1 summary"><p>Returns a collection of the sibling element nodes after this node, in document order.</p>
 </div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.Xml.Linq.XElement.html" name="System.Xml.Linq.XElement">XElement</a>&gt;</td>
-      <td><p>The element nodes after this node.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="ElementsAfterSelf___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method only includes sibling element nodes in the returned collection.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable<xelement> ElementsAfterSelf()</xelement></code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt;</td>
+        <td><p>The element nodes after this node.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L374"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ElementsAfterSelf_XName_">ElementsAfterSelf(XName)</h4>
-<div class="markdown level1 summary"><p>Returns a collection of the sibling element nodes with the specified name<br>after this node, in document order.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This method only includes sibling element nodes in the returned collection.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public IEnumerable<xelement> ElementsAfterSelf(XName name)</xelement></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L374">View Source</a>
+      </span>
+  <h4 id="ElementsAfterSelf_XName_">ElementsAfterSelf(XName)</h4>
+  <div class="markdown level1 summary"><p>Returns a collection of the sibling element nodes with the specified name
+after this node, in document order.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Xml.Linq.XName.html" name="System.Xml.Linq.XName">XName</a></td>
-      <td><em>name</em></td>
-      <td><p>The name of elements to enumerate.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="ElementsAfterSelf_XName__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method only includes sibling element nodes in the returned collection.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable<xelement> ElementsAfterSelf(XName name)</xelement></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Xml.Linq.XName.html" name="System.Xml.Linq.XName">XName</a></td>
+        <td><em>name</em></td>
+        <td><p>The name of elements to enumerate.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.Xml.Linq.XElement.html" name="System.Xml.Linq.XElement">XElement</a>&gt;</td>
-      <td><p>The element nodes after this node with the specified name.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt;</td>
+        <td><p>The element nodes after this node with the specified name.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L386"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ElementsBeforeSelf__">ElementsBeforeSelf()</h4>
-<div class="markdown level1 summary"><p>Returns a collection of the sibling element nodes before this node, in document order.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This method only includes sibling element nodes in the returned collection.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public IEnumerable<xelement> ElementsBeforeSelf()</xelement></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L386">View Source</a>
+      </span>
+  <h4 id="ElementsBeforeSelf__">ElementsBeforeSelf()</h4>
+  <div class="markdown level1 summary"><p>Returns a collection of the sibling element nodes before this node, in document order.</p>
 </div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.Xml.Linq.XElement.html" name="System.Xml.Linq.XElement">XElement</a>&gt;</td>
-      <td><p>The element nodes before this node.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="ElementsBeforeSelf___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method only includes sibling element nodes in the returned collection.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable<xelement> ElementsBeforeSelf()</xelement></code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt;</td>
+        <td><p>The element nodes before this node.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L400"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ElementsBeforeSelf_XName_">ElementsBeforeSelf(XName)</h4>
-<div class="markdown level1 summary"><p>Returns a collection of the sibling element nodes with the specified name<br>before this node, in document order.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This method only includes sibling element nodes in the returned collection.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public IEnumerable<xelement> ElementsBeforeSelf(XName name)</xelement></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L400">View Source</a>
+      </span>
+  <h4 id="ElementsBeforeSelf_XName_">ElementsBeforeSelf(XName)</h4>
+  <div class="markdown level1 summary"><p>Returns a collection of the sibling element nodes with the specified name
+before this node, in document order.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Xml.Linq.XName.html" name="System.Xml.Linq.XName">XName</a></td>
-      <td><em>name</em></td>
-      <td><p>The name of elements to enumerate.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="ElementsBeforeSelf_XName__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method only includes sibling element nodes in the returned collection.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable<xelement> ElementsBeforeSelf(XName name)</xelement></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Xml.Linq.XName.html" name="System.Xml.Linq.XName">XName</a></td>
+        <td><em>name</em></td>
+        <td><p>The name of elements to enumerate.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.Xml.Linq.XElement.html" name="System.Xml.Linq.XElement">XElement</a>&gt;</td>
-      <td><p>The element nodes before this node with the specified name.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt;</td>
+        <td><p>The element nodes before this node with the specified name.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L411"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IsAfter_XNode_">IsAfter(XNode)</h4>
-<div class="markdown level1 summary"><p>Determines if the current node appears after a specified node<br>in terms of document order.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public bool IsAfter(XNode node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L411">View Source</a>
+      </span>
+  <h4 id="IsAfter_XNode_">IsAfter(XNode)</h4>
+  <div class="markdown level1 summary"><p>Determines if the current node appears after a specified node
+in terms of document order.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Xml.Linq.XNode.html" name="System.Xml.Linq.XNode">XNode</a></td>
-      <td><em>node</em></td>
-      <td><p>The node to compare for document order.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAfter(XNode node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Xml.Linq.XNode.html" name="System.Xml.Linq.XNode">XNode</a></td>
+        <td><em>node</em></td>
+        <td><p>The node to compare for document order.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>True if this node appears after the specified node; false if not.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>True if this node appears after the specified node; false if not.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L422"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IsBefore_XNode_">IsBefore(XNode)</h4>
-<div class="markdown level1 summary"><p>Determines if the current node appears before a specified node<br>in terms of document order.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public bool IsBefore(XNode node)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L422">View Source</a>
+      </span>
+  <h4 id="IsBefore_XNode_">IsBefore(XNode)</h4>
+  <div class="markdown level1 summary"><p>Determines if the current node appears before a specified node
+in terms of document order.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Xml.Linq.XNode.html" name="System.Xml.Linq.XNode">XNode</a></td>
-      <td><em>node</em></td>
-      <td><p>The node to compare for document order.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBefore(XNode node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Xml.Linq.XNode.html" name="System.Xml.Linq.XNode">XNode</a></td>
+        <td><em>node</em></td>
+        <td><p>The node to compare for document order.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>True if this node appears before the specified node; false if not.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>True if this node appears before the specified node; false if not.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L322"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="NodesAfterSelf__">NodesAfterSelf()</h4>
-<div class="markdown level1 summary"><p>Returns a collection of the sibling nodes after this node, in document order.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This method only includes sibling nodes in the returned collection.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public IEnumerable<xnode> NodesAfterSelf()</xnode></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L322">View Source</a>
+      </span>
+  <h4 id="NodesAfterSelf__">NodesAfterSelf()</h4>
+  <div class="markdown level1 summary"><p>Returns a collection of the sibling nodes after this node, in document order.</p>
 </div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.Xml.Linq.XNode.html" name="System.Xml.Linq.XNode">XNode</a>&gt;</td>
-      <td><p>The nodes after this node.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="NodesAfterSelf___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method only includes sibling nodes in the returned collection.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable<xnode> NodesAfterSelf()</xnode></code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XNode&gt;</td>
+        <td><p>The nodes after this node.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L339"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="NodesBeforeSelf__">NodesBeforeSelf()</h4>
-<div class="markdown level1 summary"><p>Returns a collection of the sibling nodes before this node, in document order.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This method only includes sibling nodes in the returned collection.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public IEnumerable<xnode> NodesBeforeSelf()</xnode></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L339">View Source</a>
+      </span>
+  <h4 id="NodesBeforeSelf__">NodesBeforeSelf()</h4>
+  <div class="markdown level1 summary"><p>Returns a collection of the sibling nodes before this node, in document order.</p>
 </div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.Xml.Linq.XNode.html" name="System.Xml.Linq.XNode">XNode</a>&gt;</td>
-      <td><p>The nodes after this node.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="NodesBeforeSelf___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method only includes sibling nodes in the returned collection.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable<xnode> NodesBeforeSelf()</xnode></code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XNode&gt;</td>
+        <td><p>The nodes after this node.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L438"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ReadFrom_XmlReader_">ReadFrom(XmlReader)</h4>
-<div class="markdown level1 summary"><p>Creates an <a href="System.Xml.Linq.XNode.html">System.Xml.Linq.XNode</a> from an <see cref="!:XmlReader"></see>.<br>The runtime type of the node is determined by the node type</br>(<a href="System.Xml.Linq.XObject.html">System.Xml.Linq.XObject.NodeType</a>) of the first node encountered<br>in the reader.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static XNode ReadFrom(XmlReader reader)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L438">View Source</a>
+      </span>
+  <h4 id="ReadFrom_XmlReader_">ReadFrom(XmlReader)</h4>
+  <div class="markdown level1 summary"><p>Creates an <a href="System.Xml.Linq.XNode.html">System.Xml.Linq.XNode</a> from an <see cref="!:XmlReader"></see>.
+The runtime type of the node is determined by the node type
+(<a href="System.Xml.Linq.XObject.html">System.Xml.Linq.XObject.NodeType</a>) of the first node encountered
+in the reader.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>XmlReader</td>
-      <td><em>reader</em></td>
-      <td><p>An <see cref="!:XmlReader"></see> positioned at the node to read into this <see cref="T:System.Xml.Linq.XNode"></see>.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static XNode ReadFrom(XmlReader reader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>XmlReader</td>
+        <td><em>reader</em></td>
+        <td><p>An <see cref="!:XmlReader"></see> positioned at the node to read into this <see cref="T:System.Xml.Linq.XNode"></see>.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Xml.Linq.XNode.html" name="System.Xml.Linq.XNode">XNode</a></td>
-      <td><p>An <see cref="T:System.Xml.Linq.XNode"></see> that contains the nodes read from the reader.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Xml.Linq.XNode.html" name="System.Xml.Linq.XNode">XNode</a></td>
+        <td><p>An <see cref="T:System.Xml.Linq.XNode"></see> that contains the nodes read from the reader.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L469"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Remove__">Remove()</h4>
-<div class="markdown level1 summary"><p>Removes this XNode from the underlying XML tree.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void Remove()</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L469">View Source</a>
+      </span>
+  <h4 id="Remove__">Remove()</h4>
+  <div class="markdown level1 summary"><p>Removes this XNode from the underlying XML tree.</p>
 </div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Remove()</code></pre>
+  </div>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L485"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ReplaceWith_Object_">ReplaceWith(Object)</h4>
-<div class="markdown level1 summary"><p>Replaces the content of this <a href="System.Xml.Linq.XNode.html">System.Xml.Linq.XNode</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void ReplaceWith(object content)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L485">View Source</a>
+      </span>
+  <h4 id="ReplaceWith_Object_">ReplaceWith(Object)</h4>
+  <div class="markdown level1 summary"><p>Replaces the content of this <a href="System.Xml.Linq.XNode.html">System.Xml.Linq.XNode</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a></td>
-      <td><em>content</em></td>
-      <td><p>Content that replaces this node.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReplaceWith(object content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>content</em></td>
+        <td><p>Content that replaces this node.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L501"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ReplaceWith_Object___">ReplaceWith(Object[])</h4>
-<div class="markdown level1 summary"><p>Replaces this node with the specified content.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void ReplaceWith(params object[] content)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L501">View Source</a>
+      </span>
+  <h4 id="ReplaceWith_Object___">ReplaceWith(Object[])</h4>
+  <div class="markdown level1 summary"><p>Replaces this node with the specified content.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a>[]</td>
-      <td><em>content</em></td>
-      <td><p>Content that replaces this node.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReplaceWith(params object[] content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Object[]</td>
+        <td><em>content</em></td>
+        <td><p>Content that replaces this node.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L511"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ToString__">ToString()</h4>
-<div class="markdown level1 summary"><p>Provides the formatted XML text representation.<br>You can use the SaveOptions as an annotation on this node or its ancestors, then this method will use those options.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L511">View Source</a>
+      </span>
+  <h4 id="ToString__">ToString()</h4>
+  <div class="markdown level1 summary"><p>Provides the formatted XML text representation.
+You can use the SaveOptions as an annotation on this node or its ancestors, then this method will use those options.</p>
 </div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><p>A formatted XML string.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><p>A formatted XML string.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L524"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ToString_SaveOptions_">ToString(SaveOptions)</h4>
-<div class="markdown level1 summary"><p>Provides the XML text representation.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public string ToString(SaveOptions options)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L524">View Source</a>
+      </span>
+  <h4 id="ToString_SaveOptions_">ToString(SaveOptions)</h4>
+  <div class="markdown level1 summary"><p>Provides the XML text representation.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Xml.Linq.SaveOptions.html" name="System.Xml.Linq.SaveOptions">SaveOptions</a></td>
-      <td><em>options</em></td>
-      <td><p>If SaveOptions.DisableFormatting is enabled the output is not indented.
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToString(SaveOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Xml.Linq.SaveOptions.html" name="System.Xml.Linq.SaveOptions">SaveOptions</a></td>
+        <td><em>options</em></td>
+        <td><p>If SaveOptions.DisableFormatting is enabled the output is not indented.
 If SaveOptions.OmitDuplicateNamespaces is enabled duplicate namespace declarations will be removed.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><p>An XML string.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><p>An XML string.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L559"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="WriteTo_XmlWriter_">WriteTo(XmlWriter)</h4>
-<div class="markdown level1 summary"><p>Write the current node to an <see cref="!:XmlWriter"></see>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public abstract void WriteTo(XmlWriter writer)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNode.cs/#L559">View Source</a>
+      </span>
+  <h4 id="WriteTo_XmlWriter_">WriteTo(XmlWriter)</h4>
+  <div class="markdown level1 summary"><p>Write the current node to an <see cref="!:XmlWriter"></see>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>XmlWriter</td>
-      <td><em>writer</em></td>
-      <td><p>The <see cref="!:XmlWriter"></see> to write the current node into.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void WriteTo(XmlWriter writer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>XmlWriter</td>
+        <td><em>writer</em></td>
+        <td><p>The <see cref="!:XmlWriter"></see> to write the current node into.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

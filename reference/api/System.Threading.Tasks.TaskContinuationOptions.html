@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Enum TaskContinuationOptions | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Enum TaskContinuationOptions | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -55,6 +55,217 @@
       </div>
       <div class="article row grid-right"><div class="col-md-10">
         <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/Task.cs/#L6858" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="TaskContinuationOptions">Enum TaskContinuationOptions</h1>
+      <div class="markdown level0 summary"><p>Specifies flags that control optional behavior for the creation and execution of continuation tasks.</p>
+</div>
+      <div class="markdown level0 conceptual"></div>
+      <h6><strong>Namespace</strong>:System.Threading.Tasks</h6>
+      <h6><strong>Assembly</strong>:mscorlib.dll</h6>
+      <h5 id="TaskContinuationOptions_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public enum TaskContinuationOptions</code></pre>
+      </div>
+      <h3 id="fields">Fields</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/Task.cs/#L6888">View Source</a>
+      </span>
+  <h4 id="AttachedToParent">AttachedToParent</h4>
+  <div class="markdown level1 summary"><p>Specifies that a task is attached to a parent in the task hierarchy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AttachedToParent = 4</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/Task.cs/#L6893">View Source</a>
+      </span>
+  <h4 id="DenyChildAttach">DenyChildAttach</h4>
+  <div class="markdown level1 summary"><p>Specifies that an InvalidOperationException will be thrown if an attempt is made to attach a child task to the created task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DenyChildAttach = 8</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/Task.cs/#L6946">View Source</a>
+      </span>
+  <h4 id="ExecuteSynchronously">ExecuteSynchronously</h4>
+  <div class="markdown level1 summary"><p>Specifies that the continuation task should be executed synchronously. With this option
+specified, the continuation will be run on the same thread that causes the antecedent task to
+transition into its final state. If the antecedent is already complete when the continuation is
+created, the continuation will run on the thread creating the continuation.  Only very
+short-running continuations should be executed synchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ExecuteSynchronously = 524288</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/Task.cs/#L6898">View Source</a>
+      </span>
+  <h4 id="HideScheduler">HideScheduler</h4>
+  <div class="markdown level1 summary"><p>Prevents the ambient scheduler from being seen as the current scheduler in the created task.  This means that operations
+like StartNew or ContinueWith that are performed in the created task will see TaskScheduler.Default as the current scheduler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HideScheduler = 16</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/Task.cs/#L6903">View Source</a>
+      </span>
+  <h4 id="LazyCancellation">LazyCancellation</h4>
+  <div class="markdown level1 summary"><p>In the case of continuation cancellation, prevents completion of the continuation until the antecedent has completed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">LazyCancellation = 32</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/Task.cs/#L6884">View Source</a>
+      </span>
+  <h4 id="LongRunning">LongRunning</h4>
+  <div class="markdown level1 summary"><p>Specifies that a task will be a long-running, course-grained operation.  It provides
+a hint to the <a href="System.Threading.Tasks.TaskScheduler.html">System.Threading.Tasks.TaskScheduler</a> that
+oversubscription may be warranted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">LongRunning = 2</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/Task.cs/#L6868">View Source</a>
+      </span>
+  <h4 id="None">None</h4>
+  <div class="markdown level1 summary"><p>Default = &quot;Continue on any, no task options, run asynchronously&quot;
+Specifies that the default behavior should be used.  Continuations, by default, will
+be scheduled when the antecedent task completes, regardless of the task&#39;s final <a href="System.Threading.Tasks.TaskStatus.html">System.Threading.Tasks.TaskStatus</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">None = 0</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/Task.cs/#L6923">View Source</a>
+      </span>
+  <h4 id="NotOnCanceled">NotOnCanceled</h4>
+  <div class="markdown level1 summary"><p>Specifies that the continuation task should not be scheduled if its antecedent was canceled. This
+option is not valid for multi-task continuations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">NotOnCanceled = 262144</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/Task.cs/#L6918">View Source</a>
+      </span>
+  <h4 id="NotOnFaulted">NotOnFaulted</h4>
+  <div class="markdown level1 summary"><p>Specifies that the continuation task should not be scheduled if its antecedent threw an unhandled
+exception. This option is not valid for multi-task continuations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">NotOnFaulted = 131072</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/Task.cs/#L6913">View Source</a>
+      </span>
+  <h4 id="NotOnRanToCompletion">NotOnRanToCompletion</h4>
+  <div class="markdown level1 summary"><p>Specifies that the continuation task should not be scheduled if its antecedent ran to completion.
+This option is not valid for multi-task continuations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">NotOnRanToCompletion = 65536</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/Task.cs/#L6938">View Source</a>
+      </span>
+  <h4 id="OnlyOnCanceled">OnlyOnCanceled</h4>
+  <div class="markdown level1 summary"><p>Specifies that the continuation task should be scheduled only if its antecedent was canceled.
+This option is not valid for multi-task continuations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">OnlyOnCanceled = 196608</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/Task.cs/#L6933">View Source</a>
+      </span>
+  <h4 id="OnlyOnFaulted">OnlyOnFaulted</h4>
+  <div class="markdown level1 summary"><p>Specifies that the continuation task should be scheduled only if its antecedent threw an
+unhandled exception. This option is not valid for multi-task continuations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">OnlyOnFaulted = 327680</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/Task.cs/#L6928">View Source</a>
+      </span>
+  <h4 id="OnlyOnRanToCompletion">OnlyOnRanToCompletion</h4>
+  <div class="markdown level1 summary"><p>Specifies that the continuation task should be scheduled only if its antecedent ran to
+completion. This option is not valid for multi-task continuations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">OnlyOnRanToCompletion = 393216</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/Task.cs/#L6877">View Source</a>
+      </span>
+  <h4 id="PreferFairness">PreferFairness</h4>
+  <div class="markdown level1 summary"><p>A hint to a <a href="System.Threading.Tasks.TaskScheduler.html">System.Threading.Tasks.TaskScheduler</a> to schedule a
+task in as fair a manner as possible, meaning that tasks scheduled sooner will be more likely to
+be run sooner, and tasks scheduled later will be more likely to be run later.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PreferFairness = 1</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/Task.cs/#L6905">View Source</a>
+      </span>
+  <h4 id="RunContinuationsAsynchronously">RunContinuationsAsynchronously</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">RunContinuationsAsynchronously = 64</code></pre>
+  </div>
 
 </article>
 </div>

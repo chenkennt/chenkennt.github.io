@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Struct CancellationToken | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Struct CancellationToken | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -55,6 +55,724 @@
       </div>
       <div class="article row grid-right"><div class="col-md-10">
         <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationToken.cs/#L40" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="CancellationToken">Struct CancellationToken</h1>
+      <div class="markdown level0 summary"><p>Propagates notification that operations should be canceled.</p>
+</div>
+      <div class="markdown level0 conceptual"></div>
+      <h6><strong>Namespace</strong>:System.Threading</h6>
+      <h6><strong>Assembly</strong>:mscorlib.dll</h6>
+      <h5 id="CancellationToken_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public struct CancellationToken</code></pre>
+      </div>
+      <h5 id="CancellationToken_remarks"><strong>Remarks<strong></strong></strong></h5>
+      <div class="markdown level0 remarks"><para>
+A <see cref="T:System.Threading.CancellationToken"></see> may be created directly in an unchangeable canceled or non-canceled state
+using the CancellationToken&#39;s constructors. However, to have a CancellationToken that can change
+from a non-canceled to a canceled state,
+<see cref="T:System.Threading.CancellationTokenSource">CancellationTokenSource</see> must be used.
+CancellationTokenSource exposes the associated CancellationToken that may be canceled by the source through its
+<see cref="P:System.Threading.CancellationTokenSource.Token">Token</see> property.
+</para>
+<para>
+Once canceled, a token may not transition to a non-canceled state, and a token whose
+<see cref="P:System.Threading.CancellationToken.CanBeCanceled"></see> is false will never change to one that can be canceled.
+</para>
+<para>
+All members of this struct are thread-safe and may be used concurrently from multiple threads.
+</para></div>
+      <h3 id="constructors">Constructors</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationToken.cs/#L155">View Source</a>
+      </span>
+  <h4 id="CancellationToken_Boolean_">CancellationToken(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes the <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="CancellationToken_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Tokens created with this constructor will remain in the canceled state specified
+by the <paramref name="canceled"></paramref> parameter.  If <paramref name="canceled"></paramref> is false,
+both <see cref="P:System.Threading.CancellationToken.CanBeCanceled"></see> and <see cref="P:System.Threading.CancellationToken.IsCancellationRequested"></see> will be false.
+If <paramref name="canceled"></paramref> is true,
+both <see cref="P:System.Threading.CancellationToken.CanBeCanceled"></see> and <see cref="P:System.Threading.CancellationToken.IsCancellationRequested"></see> will be true.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CancellationToken(bool canceled)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>canceled</em></td>
+        <td><p>The canceled state for the token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="properties">Properties</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationToken.cs/#L99">View Source</a>
+      </span>
+  <h4 id="CanBeCanceled">CanBeCanceled</h4>
+  <div class="markdown level1 summary"><p>Gets whether this token is capable of being in the canceled state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="CanBeCanceled_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If CanBeCanceled returns false, it is guaranteed that the token will never transition
+into a canceled state, meaning that <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken.IsCancellationRequested</a> will never
+return true.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanBeCanceled { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationToken.cs/#L83">View Source</a>
+      </span>
+  <h4 id="IsCancellationRequested">IsCancellationRequested</h4>
+  <div class="markdown level1 summary"><p>Gets whether cancellation has been requested for this token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="IsCancellationRequested_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><para>
+This property indicates whether cancellation has been requested for this token,
+either through the token initially being construted in a canceled state, or through
+calling <see cref="M:System.Threading.CancellationTokenSource.Cancel">Cancel</see>
+on the token&#39;s associated <see cref="T:System.Threading.CancellationTokenSource"></see>.
+</para>
+<para>
+If this property is true, it only guarantees that cancellation has been requested.
+It does not guarantee that every registered handler
+has finished executing, nor that cancellation requests have finished propagating
+to all registered handlers.  Additional synchronization may be required,
+particularly in situations where related objects are being canceled concurrently.
+</para></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCancellationRequested { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationToken.cs/#L59">View Source</a>
+      </span>
+  <h4 id="None">None</h4>
+  <div class="markdown level1 summary"><p>Returns an empty CancellationToken value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="None_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> value returned by this property will be non-cancelable by default.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CancellationToken None { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationToken.cs/#L117">View Source</a>
+      </span>
+  <h4 id="WaitHandle">WaitHandle</h4>
+  <div class="markdown level1 summary"><p>Gets a <a href="System.Threading.WaitHandle.html">System.Threading.WaitHandle</a> that is signaled when the token is canceled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaitHandle_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Accessing this property causes a <see cref="T:System.Threading.WaitHandle">WaitHandle</see>
+to be instantiated.  It is preferable to only use this property when necessary, and to then
+dispose the associated <see cref="T:System.Threading.CancellationTokenSource"></see> instance at the earliest opportunity (disposing
+the source will dispose of this allocated handle).  The handle should not be closed or disposed directly.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WaitHandle WaitHandle { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Threading.WaitHandle.html" name="System.Threading.WaitHandle">WaitHandle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="methods">Methods</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationToken.cs/#L398">View Source</a>
+      </span>
+  <h4 id="Equals_Object_">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the current <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> instance is equal to the
+specified <a href="System.Object.html">System.Object</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>other</em></td>
+        <td><p>The other object to which to compare this instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>True if <paramref name="other"></paramref> is a <see cref="T:System.Threading.CancellationToken">CancellationToken</see>
+and if the two instances are equal; otherwise, false. Two tokens are equal if they are associated
+with the same <see cref="T:System.Threading.CancellationTokenSource">CancellationTokenSource</see> or if they were both constructed
+from public CancellationToken constructors and their <see cref="P:System.Threading.CancellationToken.IsCancellationRequested"></see> values are equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationToken.cs/#L362">View Source</a>
+      </span>
+  <h4 id="Equals_CancellationToken_">Equals(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the current <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> instance is equal to the
+specified token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(CancellationToken other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+        <td><em>other</em></td>
+        <td><p>The other <see cref="T:System.Threading.CancellationToken">CancellationToken</see> to which to compare this
+instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>True if the instances are equal; otherwise, false. Two tokens are equal if they are associated
+with the same <a href="System.Threading.CancellationTokenSource.html">System.Threading.CancellationTokenSource</a> or if they were both constructed
+from public CancellationToken constructors and their <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken.IsCancellationRequested</a> values are equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationToken.cs/#L412">View Source</a>
+      </span>
+  <h4 id="GetHashCode__">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Serves as a hash function for a <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><p>A hash code for the current <see cref="T:System.Threading.CancellationToken">CancellationToken</see> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationToken.cs/#L191">View Source</a>
+      </span>
+  <h4 id="Register_Action_">Register(Action)</h4>
+  <div class="markdown level1 summary"><p>Registers a delegate that will be called when this <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> is canceled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Register_Action__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><para>
+If this token is already in the canceled state, the
+delegate will be run immediately and synchronously. Any exception the delegate generates will be
+propagated out of this method call.
+</para>
+<para>
+The current <see cref="T:System.Threading.ExecutionContext">ExecutionContext</see>, if one exists, will be captured
+along with the delegate and will be used when executing it.
+</para></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CancellationTokenRegistration Register(Action callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Action.html" name="undefined">Action</a></td>
+        <td><em>callback</em></td>
+        <td><p>The delegate to be executed when the <see cref="T:System.Threading.CancellationToken">CancellationToken</see> is canceled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Threading.CancellationTokenRegistration.html" name="System.Threading.CancellationTokenRegistration">CancellationTokenRegistration</a></td>
+        <td><p>The <a href="System.Threading.CancellationTokenRegistration.html">System.Threading.CancellationTokenRegistration</a> instance that can
+be used to deregister the callback.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationToken.cs/#L226">View Source</a>
+      </span>
+  <h4 id="Register_Action__Boolean_">Register(Action, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Registers a delegate that will be called when this
+<a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> is canceled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Register_Action__Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><para>
+If this token is already in the canceled state, the
+delegate will be run immediately and synchronously. Any exception the delegate generates will be
+propagated out of this method call.
+</para>
+<para>
+The current <see cref="T:System.Threading.ExecutionContext">ExecutionContext</see>, if one exists, will be captured
+along with the delegate and will be used when executing it.
+</para></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CancellationTokenRegistration Register(Action callback, bool useSynchronizationContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Action.html" name="undefined">Action</a></td>
+        <td><em>callback</em></td>
+        <td><p>The delegate to be executed when the <see cref="T:System.Threading.CancellationToken">CancellationToken</see> is canceled.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>useSynchronizationContext</em></td>
+        <td><p>A Boolean value that indicates whether to capture
+the current <a href="System.Threading.SynchronizationContext.html">System.Threading.SynchronizationContext</a> and use it
+when invoking the <paramref name="callback"></paramref>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Threading.CancellationTokenRegistration.html" name="System.Threading.CancellationTokenRegistration">CancellationTokenRegistration</a></td>
+        <td><p>The <a href="System.Threading.CancellationTokenRegistration.html">System.Threading.CancellationTokenRegistration</a> instance that can
+be used to deregister the callback.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationToken.cs/#L259">View Source</a>
+      </span>
+  <h4 id="Register_Action_Object___Object_">Register(Action&lt;Object&gt;, Object)</h4>
+  <div class="markdown level1 summary"><p>Registers a delegate that will be called when this
+<a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> is canceled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Register_Action_Object___Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><para>
+If this token is already in the canceled state, the
+delegate will be run immediately and synchronously. Any exception the delegate generates will be
+propagated out of this method call.
+</para>
+<para>
+The current <see cref="T:System.Threading.ExecutionContext">ExecutionContext</see>, if one exists, will be captured
+along with the delegate and will be used when executing it.
+</para></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CancellationTokenRegistration Register(Action<object> callback, object state)</object></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Action&lt;System.Object&gt;</td>
+        <td><em>callback</em></td>
+        <td><p>The delegate to be executed when the <see cref="T:System.Threading.CancellationToken">CancellationToken</see> is canceled.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>state</em></td>
+        <td><p>The state to pass to the <paramref name="callback"></paramref> when the delegate is invoked.  This may be null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Threading.CancellationTokenRegistration.html" name="System.Threading.CancellationTokenRegistration">CancellationTokenRegistration</a></td>
+        <td><p>The <a href="System.Threading.CancellationTokenRegistration.html">System.Threading.CancellationTokenRegistration</a> instance that can
+be used to deregister the callback.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationToken.cs/#L297">View Source</a>
+      </span>
+  <h4 id="Register_Action_Object___Object__Boolean_">Register(Action&lt;Object&gt;, Object, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Registers a delegate that will be called when this
+<a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> is canceled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Register_Action_Object___Object__Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><para>
+If this token is already in the canceled state, the
+delegate will be run immediately and synchronously. Any exception the delegate generates will be
+propagated out of this method call.
+</para>
+<para>
+The current <see cref="T:System.Threading.ExecutionContext">ExecutionContext</see>, if one exists,
+will be captured along with the delegate and will be used when executing it.
+</para></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CancellationTokenRegistration Register(Action<object> callback, object state, bool useSynchronizationContext)</object></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Action&lt;System.Object&gt;</td>
+        <td><em>callback</em></td>
+        <td><p>The delegate to be executed when the <see cref="T:System.Threading.CancellationToken">CancellationToken</see> is canceled.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>state</em></td>
+        <td><p>The state to pass to the <paramref name="callback"></paramref> when the delegate is invoked.  This may be null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>useSynchronizationContext</em></td>
+        <td><p>A Boolean value that indicates whether to capture
+the current <a href="System.Threading.SynchronizationContext.html">System.Threading.SynchronizationContext</a> and use it
+when invoking the <paramref name="callback"></paramref>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Threading.CancellationTokenRegistration.html" name="System.Threading.CancellationTokenRegistration">CancellationTokenRegistration</a></td>
+        <td><p>The <a href="System.Threading.CancellationTokenRegistration.html">System.Threading.CancellationTokenRegistration</a> instance that can
+be used to deregister the callback.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationToken.cs/#L463">View Source</a>
+      </span>
+  <h4 id="ThrowIfCancellationRequested__">ThrowIfCancellationRequested()</h4>
+  <div class="markdown level1 summary"><p>Throws a <a href="System.OperationCanceledException.html">System.OperationCanceledException</a> if
+this token has had cancellation requested.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="ThrowIfCancellationRequested___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method provides functionality equivalent to:
+<code>
+if (token.IsCancellationRequested)
+throw new OperationCanceledException(token);
+</code></p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ThrowIfCancellationRequested()</code></pre>
+  </div>
+      <h3 id="operators">Operators</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationToken.cs/#L431">View Source</a>
+      </span>
+  <h4 id="Equality_CancellationToken__CancellationToken_">Equality(CancellationToken, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Determines whether two <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> instances are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(CancellationToken left, CancellationToken right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+        <td><em>left</em></td>
+        <td><p>The first instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+        <td><em>right</em></td>
+        <td><p>The second instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>True if the instances are equal; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationToken.cs/#L444">View Source</a>
+      </span>
+  <h4 id="Inequality_CancellationToken__CancellationToken_">Inequality(CancellationToken, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Determines whether two <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> instances are not equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(CancellationToken left, CancellationToken right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+        <td><em>left</em></td>
+        <td><p>The first instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+        <td><em>right</em></td>
+        <td><p>The second instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>True if the instances are not equal; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

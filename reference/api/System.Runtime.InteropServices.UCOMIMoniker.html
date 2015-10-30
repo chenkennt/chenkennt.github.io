@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Interface UCOMIMoniker | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Interface UCOMIMoniker | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -55,6 +55,703 @@
       </div>
       <div class="article row grid-right"><div class="col-md-10">
         <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs/#L26" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="UCOMIMoniker">Interface UCOMIMoniker</h1>
+      <div class="markdown level0 summary"></div>
+      <div class="markdown level0 conceptual"></div>
+      <h6><strong>Namespace</strong>:System.Runtime.InteropServices</h6>
+      <h6><strong>Assembly</strong>:mscorlib.dll</h6>
+      <h5 id="UCOMIMoniker_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public interface UCOMIMoniker</code></pre>
+      </div>
+      <h3 id="methods">Methods</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs/#L43">View Source</a>
+      </span>
+  <h4 id="BindToObject_UCOMIBindCtx__UCOMIMoniker__ref_Guid__out_Object_">BindToObject(UCOMIBindCtx, UCOMIMoniker, ref Guid, out Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void BindToObject(UCOMIBindCtx pbc, UCOMIMoniker pmkToLeft, ref Guid riidResult, out object ppvResult)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIBindCtx.html" name="System.Runtime.InteropServices.UCOMIBindCtx">UCOMIBindCtx</a></td>
+        <td><em>pbc</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIMoniker.html" name="System.Runtime.InteropServices.UCOMIMoniker">UCOMIMoniker</a></td>
+        <td><em>pmkToLeft</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Guid.html" name="System.Guid">Guid</a></td>
+        <td><em>riidResult</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>ppvResult</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs/#L44">View Source</a>
+      </span>
+  <h4 id="BindToStorage_UCOMIBindCtx__UCOMIMoniker__ref_Guid__out_Object_">BindToStorage(UCOMIBindCtx, UCOMIMoniker, ref Guid, out Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void BindToStorage(UCOMIBindCtx pbc, UCOMIMoniker pmkToLeft, ref Guid riid, out object ppvObj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIBindCtx.html" name="System.Runtime.InteropServices.UCOMIBindCtx">UCOMIBindCtx</a></td>
+        <td><em>pbc</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIMoniker.html" name="System.Runtime.InteropServices.UCOMIMoniker">UCOMIMoniker</a></td>
+        <td><em>pmkToLeft</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Guid.html" name="System.Guid">Guid</a></td>
+        <td><em>riid</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>ppvObj</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs/#L53">View Source</a>
+      </span>
+  <h4 id="CommonPrefixWith_UCOMIMoniker__out_UCOMIMoniker_">CommonPrefixWith(UCOMIMoniker, out UCOMIMoniker)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CommonPrefixWith(UCOMIMoniker pmkOther, out UCOMIMoniker ppmkPrefix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIMoniker.html" name="System.Runtime.InteropServices.UCOMIMoniker">UCOMIMoniker</a></td>
+        <td><em>pmkOther</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIMoniker.html" name="System.Runtime.InteropServices.UCOMIMoniker">UCOMIMoniker</a></td>
+        <td><em>ppmkPrefix</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs/#L46">View Source</a>
+      </span>
+  <h4 id="ComposeWith_UCOMIMoniker__Boolean__out_UCOMIMoniker_">ComposeWith(UCOMIMoniker, Boolean, out UCOMIMoniker)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ComposeWith(UCOMIMoniker pmkRight, bool fOnlyIfNotGeneric, out UCOMIMoniker ppmkComposite)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIMoniker.html" name="System.Runtime.InteropServices.UCOMIMoniker">UCOMIMoniker</a></td>
+        <td><em>pmkRight</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>fOnlyIfNotGeneric</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIMoniker.html" name="System.Runtime.InteropServices.UCOMIMoniker">UCOMIMoniker</a></td>
+        <td><em>ppmkComposite</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs/#L47">View Source</a>
+      </span>
+  <h4 id="Enum_Boolean__out_UCOMIEnumMoniker_">Enum(Boolean, out UCOMIEnumMoniker)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Enum(bool fForward, out UCOMIEnumMoniker ppenumMoniker)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>fForward</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIEnumMoniker.html" name="System.Runtime.InteropServices.UCOMIEnumMoniker">UCOMIEnumMoniker</a></td>
+        <td><em>ppenumMoniker</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs/#L33">View Source</a>
+      </span>
+  <h4 id="GetClassID_out_Guid_">GetClassID(out Guid)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GetClassID(out Guid pClassID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Guid.html" name="System.Guid">Guid</a></td>
+        <td><em>pClassID</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs/#L55">View Source</a>
+      </span>
+  <h4 id="GetDisplayName_UCOMIBindCtx__UCOMIMoniker__out_String_">GetDisplayName(UCOMIBindCtx, UCOMIMoniker, out String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GetDisplayName(UCOMIBindCtx pbc, UCOMIMoniker pmkToLeft, out string ppszDisplayName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIBindCtx.html" name="System.Runtime.InteropServices.UCOMIBindCtx">UCOMIBindCtx</a></td>
+        <td><em>pbc</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIMoniker.html" name="System.Runtime.InteropServices.UCOMIMoniker">UCOMIMoniker</a></td>
+        <td><em>pmkToLeft</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>ppszDisplayName</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs/#L40">View Source</a>
+      </span>
+  <h4 id="GetSizeMax_out_Int64_">GetSizeMax(out Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GetSizeMax(out long pcbSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int64.html" name="System.Int64">Int64</a></td>
+        <td><em>pcbSize</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs/#L51">View Source</a>
+      </span>
+  <h4 id="GetTimeOfLastChange_UCOMIBindCtx__UCOMIMoniker__out_FILETIME_">GetTimeOfLastChange(UCOMIBindCtx, UCOMIMoniker, out FILETIME)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GetTimeOfLastChange(UCOMIBindCtx pbc, UCOMIMoniker pmkToLeft, out FILETIME pFileTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIBindCtx.html" name="System.Runtime.InteropServices.UCOMIBindCtx">UCOMIBindCtx</a></td>
+        <td><em>pbc</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIMoniker.html" name="System.Runtime.InteropServices.UCOMIMoniker">UCOMIMoniker</a></td>
+        <td><em>pmkToLeft</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.FILETIME.html" name="System.Runtime.InteropServices.FILETIME">FILETIME</a></td>
+        <td><em>pFileTime</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs/#L49">View Source</a>
+      </span>
+  <h4 id="Hash_out_Int32_">Hash(out Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Hash(out int pdwHash)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>pdwHash</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs/#L52">View Source</a>
+      </span>
+  <h4 id="Inverse_out_UCOMIMoniker_">Inverse(out UCOMIMoniker)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Inverse(out UCOMIMoniker ppmk)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIMoniker.html" name="System.Runtime.InteropServices.UCOMIMoniker">UCOMIMoniker</a></td>
+        <td><em>ppmk</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs/#L36">View Source</a>
+      </span>
+  <h4 id="IsDirty__">IsDirty()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int IsDirty()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs/#L48">View Source</a>
+      </span>
+  <h4 id="IsEqual_UCOMIMoniker_">IsEqual(UCOMIMoniker)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IsEqual(UCOMIMoniker pmkOtherMoniker)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIMoniker.html" name="System.Runtime.InteropServices.UCOMIMoniker">UCOMIMoniker</a></td>
+        <td><em>pmkOtherMoniker</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs/#L50">View Source</a>
+      </span>
+  <h4 id="IsRunning_UCOMIBindCtx__UCOMIMoniker__UCOMIMoniker_">IsRunning(UCOMIBindCtx, UCOMIMoniker, UCOMIMoniker)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IsRunning(UCOMIBindCtx pbc, UCOMIMoniker pmkToLeft, UCOMIMoniker pmkNewlyRunning)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIBindCtx.html" name="System.Runtime.InteropServices.UCOMIBindCtx">UCOMIBindCtx</a></td>
+        <td><em>pbc</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIMoniker.html" name="System.Runtime.InteropServices.UCOMIMoniker">UCOMIMoniker</a></td>
+        <td><em>pmkToLeft</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIMoniker.html" name="System.Runtime.InteropServices.UCOMIMoniker">UCOMIMoniker</a></td>
+        <td><em>pmkNewlyRunning</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs/#L57">View Source</a>
+      </span>
+  <h4 id="IsSystemMoniker_out_Int32_">IsSystemMoniker(out Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IsSystemMoniker(out int pdwMksys)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>pdwMksys</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs/#L38">View Source</a>
+      </span>
+  <h4 id="Load_UCOMIStream_">Load(UCOMIStream)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Load(UCOMIStream pStm)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIStream.html" name="System.Runtime.InteropServices.UCOMIStream">UCOMIStream</a></td>
+        <td><em>pStm</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs/#L56">View Source</a>
+      </span>
+  <h4 id="ParseDisplayName_UCOMIBindCtx__UCOMIMoniker__String__out_Int32__out_UCOMIMoniker_">ParseDisplayName(UCOMIBindCtx, UCOMIMoniker, String, out Int32, out UCOMIMoniker)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ParseDisplayName(UCOMIBindCtx pbc, UCOMIMoniker pmkToLeft, string pszDisplayName, out int pchEaten, out UCOMIMoniker ppmkOut)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIBindCtx.html" name="System.Runtime.InteropServices.UCOMIBindCtx">UCOMIBindCtx</a></td>
+        <td><em>pbc</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIMoniker.html" name="System.Runtime.InteropServices.UCOMIMoniker">UCOMIMoniker</a></td>
+        <td><em>pmkToLeft</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>pszDisplayName</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>pchEaten</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIMoniker.html" name="System.Runtime.InteropServices.UCOMIMoniker">UCOMIMoniker</a></td>
+        <td><em>ppmkOut</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs/#L45">View Source</a>
+      </span>
+  <h4 id="Reduce_UCOMIBindCtx__Int32__ref_UCOMIMoniker__out_UCOMIMoniker_">Reduce(UCOMIBindCtx, Int32, ref UCOMIMoniker, out UCOMIMoniker)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Reduce(UCOMIBindCtx pbc, int dwReduceHowFar, ref UCOMIMoniker ppmkToLeft, out UCOMIMoniker ppmkReduced)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIBindCtx.html" name="System.Runtime.InteropServices.UCOMIBindCtx">UCOMIBindCtx</a></td>
+        <td><em>pbc</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>dwReduceHowFar</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIMoniker.html" name="System.Runtime.InteropServices.UCOMIMoniker">UCOMIMoniker</a></td>
+        <td><em>ppmkToLeft</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIMoniker.html" name="System.Runtime.InteropServices.UCOMIMoniker">UCOMIMoniker</a></td>
+        <td><em>ppmkReduced</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs/#L54">View Source</a>
+      </span>
+  <h4 id="RelativePathTo_UCOMIMoniker__out_UCOMIMoniker_">RelativePathTo(UCOMIMoniker, out UCOMIMoniker)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RelativePathTo(UCOMIMoniker pmkOther, out UCOMIMoniker ppmkRelPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIMoniker.html" name="System.Runtime.InteropServices.UCOMIMoniker">UCOMIMoniker</a></td>
+        <td><em>pmkOther</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIMoniker.html" name="System.Runtime.InteropServices.UCOMIMoniker">UCOMIMoniker</a></td>
+        <td><em>ppmkRelPath</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs/#L39">View Source</a>
+      </span>
+  <h4 id="Save_UCOMIStream__Boolean_">Save(UCOMIStream, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Save(UCOMIStream pStm, bool fClearDirty)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.UCOMIStream.html" name="System.Runtime.InteropServices.UCOMIStream">UCOMIStream</a></td>
+        <td><em>pStm</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>fClearDirty</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

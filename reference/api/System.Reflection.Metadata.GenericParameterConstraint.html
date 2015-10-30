@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Struct GenericParameterConstraint | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Struct GenericParameterConstraint | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -55,6 +55,109 @@
       </div>
       <div class="article row grid-right"><div class="col-md-10">
         <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/GenericParameterConstraint.cs/#L8" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="GenericParameterConstraint">Struct GenericParameterConstraint</h1>
+      <div class="markdown level0 summary"></div>
+      <div class="markdown level0 conceptual"></div>
+      <h6><strong>Namespace</strong>:System.Reflection.Metadata</h6>
+      <h6><strong>Assembly</strong>:System.Reflection.Metadata.dll</h6>
+      <h5 id="GenericParameterConstraint_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public struct GenericParameterConstraint</code></pre>
+      </div>
+      <h3 id="properties">Properties</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/GenericParameterConstraint.cs/#L35">View Source</a>
+      </span>
+  <h4 id="Parameter">Parameter</h4>
+  <div class="markdown level1 summary"><p>The constrained <a href="System.Reflection.Metadata.GenericParameterHandle.html">System.Reflection.Metadata.GenericParameterHandle</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Parameter_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Corresponds to Owner field of GenericParamConstraint table in ECMA-335 Standard.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GenericParameterHandle Parameter { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.GenericParameterHandle.html" name="System.Reflection.Metadata.GenericParameterHandle">GenericParameterHandle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/GenericParameterConstraint.cs/#L48">View Source</a>
+      </span>
+  <h4 id="Type">Type</h4>
+  <div class="markdown level1 summary"><p>Handle (<a href="System.Reflection.Metadata.TypeDefinitionHandle.html">System.Reflection.Metadata.TypeDefinitionHandle</a>, <a href="System.Reflection.Metadata.TypeReferenceHandle.html">System.Reflection.Metadata.TypeReferenceHandle</a>, or <a href="System.Reflection.Metadata.TypeSpecificationHandle.html">System.Reflection.Metadata.TypeSpecificationHandle</a>)
+specifying from which type this generic parameter is constrained to derive,
+or which interface this generic parameter is constrained to implement.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Type_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Corresponds to Constraint field of GenericParamConstraint table in ECMA-335 Standard.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EntityHandle Type { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.EntityHandle.html" name="System.Reflection.Metadata.EntityHandle">EntityHandle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="methods">Methods</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/GenericParameterConstraint.cs/#L53">View Source</a>
+      </span>
+  <h4 id="GetCustomAttributes__">GetCustomAttributes()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CustomAttributeHandleCollection GetCustomAttributes()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.CustomAttributeHandleCollection.html" name="System.Reflection.Metadata.CustomAttributeHandleCollection">CustomAttributeHandleCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

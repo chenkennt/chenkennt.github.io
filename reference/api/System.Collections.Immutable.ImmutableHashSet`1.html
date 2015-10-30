@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class ImmutableHashSet&lt;T&gt; | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class ImmutableHashSet&lt;T&gt; | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -60,7 +60,8 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="ImmutableHashSet_T_">Class ImmutableHashSet&lt;T&gt;</h1>
-      <div class="markdown level0 summary"><p>An immutable unordered hash set implementation.</p><br></div>
+      <div class="markdown level0 summary"><p>An immutable unordered hash set implementation.</p>
+</div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
         <h5>Inheritance</h5>
@@ -73,1452 +74,1462 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public sealed class ImmutableHashSet<t> : IImmutableSet<t>, IHashKeyCollection<t>, IReadOnlyCollection<t>, ICollection<t>, IEnumerable<t>, ISet<t>, ICollection, IEnumerable, IStrongEnumerable<t,></t,><t>.Enumerator></t></t></t></t></t></t></t></t></code></pre>
       </div>
-      <h5 id="ImmutableHashSet_T__remarks">remarks</h5>
-      <div class="markdown level0 remarks"></div>
-  <h3 id="fields">Fields</h3>
-  
-  <span class="small pull-right mobile-hide">
-  <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L25"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Empty">Empty</h4>
-<div class="markdown level1 summary"><p>An empty immutable hash set with the default comparer for <typeparamref name="T"></typeparamref>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static readonly ImmutableHashSet<t> Empty</t></code></pre>
-</div>
-<h3 id="properties">Properties</h3>
+      <h3 id="fields">Fields</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L86"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Count">Count</h4>
-<div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L25">View Source</a>
+      </span>
+  <h4 id="Empty">Empty</h4>
+  <div class="markdown level1 summary"><p>An empty immutable hash set with the default comparer for <typeparamref name="T"></typeparamref>.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ImmutableHashSet<t> Empty</t></code></pre>
+  </div>
+      <h3 id="properties">Properties</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L94"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IsEmpty">IsEmpty</h4>
-<div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public bool IsEmpty { get; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L86">View Source</a>
+      </span>
+  <h4 id="Count">Count</h4>
+  <div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L104"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="KeyComparer">KeyComparer</h4>
-<div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public IEqualityComparer<t> KeyComparer { get; }</t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L94">View Source</a>
+      </span>
+  <h4 id="IsEmpty">IsEmpty</h4>
+  <div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEqualityComparer`1.html" name="System.Collections.Generic.IEqualityComparer">IEqualityComparer</a>&lt;T&gt;</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEmpty { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L517"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ICollection_T__IsReadOnly">ICollection&lt;T&gt;.IsReadOnly</h4>
-<div class="markdown level1 summary"><p>See the <a href="System.Collections.Generic.ICollection`1.html">System.Collections.Generic.ICollection`1</a> interface.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">bool ICollection<t>.IsReadOnly { get; }</t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L104">View Source</a>
+      </span>
+  <h4 id="KeyComparer">KeyComparer</h4>
+  <div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEqualityComparer<t> KeyComparer { get; }</t></code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEqualityComparer&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L138"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ICollection_IsSynchronized">ICollection.IsSynchronized</h4>
-<div class="markdown level1 summary"><p>See the <a href="System.Collections.ICollection.html">System.Collections.ICollection</a> interface.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">bool ICollection.IsSynchronized { get; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L517">View Source</a>
+      </span>
+  <h4 id="ICollection_T__IsReadOnly">ICollection&lt;T&gt;.IsReadOnly</h4>
+  <div class="markdown level1 summary"><p>See the <a href="System.Collections.Generic.ICollection`1.html">System.Collections.Generic.ICollection`1</a> interface.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ICollection<t>.IsReadOnly { get; }</t></code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L129"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ICollection_SyncRoot">ICollection.SyncRoot</h4>
-<div class="markdown level1 summary"><p>See <a href="System.Collections.ICollection.html">System.Collections.ICollection</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">object ICollection.SyncRoot { get; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L138">View Source</a>
+      </span>
+  <h4 id="ICollection_IsSynchronized">ICollection.IsSynchronized</h4>
+  <div class="markdown level1 summary"><p>See the <a href="System.Collections.ICollection.html">System.Collections.ICollection</a> interface.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h3 id="methods">Methods</h3>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ICollection.IsSynchronized { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L189"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Add_T_">Add(T)</h4>
-<div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public ImmutableHashSet<t> Add(T item)</t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L129">View Source</a>
+      </span>
+  <h4 id="ICollection_SyncRoot">ICollection.SyncRoot</h4>
+  <div class="markdown level1 summary"><p>See <a href="System.Collections.ICollection.html">System.Collections.ICollection</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><em>item</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableHashSet`1.html" name="System.Collections.Immutable.ImmutableHashSet&lt;T&gt;">ImmutableHashSet</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ICollection.SyncRoot { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="methods">Methods</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L76"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Clear__">Clear()</h4>
-<div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public ImmutableHashSet<t> Clear()</t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L189">View Source</a>
+      </span>
+  <h4 id="Add_T_">Add(T)</h4>
+  <div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p>
 </div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableHashSet`1.html" name="System.Collections.Immutable.ImmutableHashSet&lt;T&gt;">ImmutableHashSet</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableHashSet<t> Add(T item)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><em>item</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Immutable.ImmutableHashSet`1.html" name="System.Collections.Immutable.ImmutableHashSet&lt;T&gt;">ImmutableHashSet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L436"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Contains_T_">Contains(T)</h4>
-<div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public bool Contains(T item)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L76">View Source</a>
+      </span>
+  <h4 id="Clear__">Clear()</h4>
+  <div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><em>item</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableHashSet<t> Clear()</t></code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Immutable.ImmutableHashSet`1.html" name="System.Collections.Immutable.ImmutableHashSet&lt;T&gt;">ImmutableHashSet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L267"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Except_IEnumerable_T__">Except(IEnumerable&lt;T&gt;)</h4>
-<div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public ImmutableHashSet<t> Except(IEnumerable<t> other)</t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L436">View Source</a>
+      </span>
+  <h4 id="Contains_T_">Contains(T)</h4>
+  <div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;T&gt;</td>
-      <td><em>other</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableHashSet`1.html" name="System.Collections.Immutable.ImmutableHashSet&lt;T&gt;">ImmutableHashSet</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><em>item</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L592"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="GetEnumerator__">GetEnumerator()</h4>
-<div class="markdown level1 summary"><p>Returns an enumerator that iterates through the collection.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public ImmutableHashSet<t>.Enumerator GetEnumerator()</t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L267">View Source</a>
+      </span>
+  <h4 id="Except_IEnumerable_T__">Except(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p>
 </div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableHashSet`1.Enumerator.html" name="System.Collections.Immutable.ImmutableHashSet.Enumerator">ImmutableHashSet</a>&lt;&gt;</td>
-      <td><p>A <a href="System.Collections.Generic.IEnumerator`1.html">System.Collections.Generic.IEnumerator`1</a> that can be used to iterate through the collection.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableHashSet<t> Except(IEnumerable<t> other)</t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><em>other</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Immutable.ImmutableHashSet`1.html" name="System.Collections.Immutable.ImmutableHashSet&lt;T&gt;">ImmutableHashSet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L592">View Source</a>
+      </span>
+  <h4 id="GetEnumerator__">GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableHashSet<t>.Enumerator GetEnumerator()</t></code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Immutable.ImmutableHashSet`1.Enumerator.html" name="System.Collections.Immutable.ImmutableHashSet.Enumerator&lt;&gt;">ImmutableHashSet</a></td>
+        <td><p>A <a href="System.Collections.Generic.IEnumerator`1.html">System.Collections.Generic.IEnumerator`1</a> that can be used to iterate through the collection.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L254"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Intersect_IEnumerable_T__">Intersect(IEnumerable&lt;T&gt;)</h4>
-<div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public ImmutableHashSet<t> Intersect(IEnumerable<t> other)</t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L254">View Source</a>
+      </span>
+  <h4 id="Intersect_IEnumerable_T__">Intersect(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;T&gt;</td>
-      <td><em>other</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableHashSet`1.html" name="System.Collections.Immutable.ImmutableHashSet&lt;T&gt;">ImmutableHashSet</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableHashSet<t> Intersect(IEnumerable<t> other)</t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><em>other</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Immutable.ImmutableHashSet`1.html" name="System.Collections.Immutable.ImmutableHashSet&lt;T&gt;">ImmutableHashSet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L313"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IsProperSubsetOf_IEnumerable_T__">IsProperSubsetOf(IEnumerable&lt;T&gt;)</h4>
-<div class="markdown level1 summary"><p>Determines whether the current set is a property (strict) subset of a specified collection.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public bool IsProperSubsetOf(IEnumerable<t> other)</t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L313">View Source</a>
+      </span>
+  <h4 id="IsProperSubsetOf_IEnumerable_T__">IsProperSubsetOf(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the current set is a property (strict) subset of a specified collection.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;T&gt;</td>
-      <td><em>other</em></td>
-      <td><p>The collection to compare to the current set.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsProperSubsetOf(IEnumerable<t> other)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><em>other</em></td>
+        <td><p>The collection to compare to the current set.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>true if the current set is a correct subset of <paramref name="other"></paramref>; otherwise, false.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>true if the current set is a correct subset of <paramref name="other"></paramref>; otherwise, false.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L326"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IsProperSupersetOf_IEnumerable_T__">IsProperSupersetOf(IEnumerable&lt;T&gt;)</h4>
-<div class="markdown level1 summary"><p>Determines whether the current set is a correct superset of a specified collection.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public bool IsProperSupersetOf(IEnumerable<t> other)</t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L326">View Source</a>
+      </span>
+  <h4 id="IsProperSupersetOf_IEnumerable_T__">IsProperSupersetOf(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the current set is a correct superset of a specified collection.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;T&gt;</td>
-      <td><em>other</em></td>
-      <td><p>The collection to compare to the current set.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsProperSupersetOf(IEnumerable<t> other)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><em>other</em></td>
+        <td><p>The collection to compare to the current set.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>true if the current set is a correct superset of <paramref name="other"></paramref>; otherwise, false.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>true if the current set is a correct superset of <paramref name="other"></paramref>; otherwise, false.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L339"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IsSubsetOf_IEnumerable_T__">IsSubsetOf(IEnumerable&lt;T&gt;)</h4>
-<div class="markdown level1 summary"><p>Determines whether a set is a subset of a specified collection.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public bool IsSubsetOf(IEnumerable<t> other)</t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L339">View Source</a>
+      </span>
+  <h4 id="IsSubsetOf_IEnumerable_T__">IsSubsetOf(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether a set is a subset of a specified collection.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;T&gt;</td>
-      <td><em>other</em></td>
-      <td><p>The collection to compare to the current set.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSubsetOf(IEnumerable<t> other)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><em>other</em></td>
+        <td><p>The collection to compare to the current set.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>true if the current set is a subset of <paramref name="other"></paramref>; otherwise, false.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>true if the current set is a subset of <paramref name="other"></paramref>; otherwise, false.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L352"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IsSupersetOf_IEnumerable_T__">IsSupersetOf(IEnumerable&lt;T&gt;)</h4>
-<div class="markdown level1 summary"><p>Determines whether the current set is a superset of a specified collection.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public bool IsSupersetOf(IEnumerable<t> other)</t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L352">View Source</a>
+      </span>
+  <h4 id="IsSupersetOf_IEnumerable_T__">IsSupersetOf(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the current set is a superset of a specified collection.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;T&gt;</td>
-      <td><em>other</em></td>
-      <td><p>The collection to compare to the current set.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSupersetOf(IEnumerable<t> other)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><em>other</em></td>
+        <td><p>The collection to compare to the current set.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>true if the current set is a superset of <paramref name="other"></paramref>; otherwise, false.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>true if the current set is a superset of <paramref name="other"></paramref>; otherwise, false.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L365"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Overlaps_IEnumerable_T__">Overlaps(IEnumerable&lt;T&gt;)</h4>
-<div class="markdown level1 summary"><p>Determines whether the current set overlaps with the specified collection.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public bool Overlaps(IEnumerable<t> other)</t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L365">View Source</a>
+      </span>
+  <h4 id="Overlaps_IEnumerable_T__">Overlaps(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the current set overlaps with the specified collection.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;T&gt;</td>
-      <td><em>other</em></td>
-      <td><p>The collection to compare to the current set.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Overlaps(IEnumerable<t> other)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><em>other</em></td>
+        <td><p>The collection to compare to the current set.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>true if the current set and <paramref name="other"></paramref> share at least one common element; otherwise, false.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>true if the current set and <paramref name="other"></paramref> share at least one common element; otherwise, false.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L202"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Remove_T_">Remove(T)</h4>
-<div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public ImmutableHashSet<t> Remove(T item)</t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L202">View Source</a>
+      </span>
+  <h4 id="Remove_T_">Remove(T)</h4>
+  <div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><em>item</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableHashSet`1.html" name="System.Collections.Immutable.ImmutableHashSet&lt;T&gt;">ImmutableHashSet</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableHashSet<t> Remove(T item)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><em>item</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Immutable.ImmutableHashSet`1.html" name="System.Collections.Immutable.ImmutableHashSet&lt;T&gt;">ImmutableHashSet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L295"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="SetEquals_IEnumerable_T__">SetEquals(IEnumerable&lt;T&gt;)</h4>
-<div class="markdown level1 summary"><p>Checks whether a given sequence of items entirely describe the contents of this set.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public bool SetEquals(IEnumerable<t> other)</t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L295">View Source</a>
+      </span>
+  <h4 id="SetEquals_IEnumerable_T__">SetEquals(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Checks whether a given sequence of items entirely describe the contents of this set.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;T&gt;</td>
-      <td><em>other</em></td>
-      <td><p>The sequence of items to check against this set.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetEquals(IEnumerable<t> other)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><em>other</em></td>
+        <td><p>The sequence of items to check against this set.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>A value indicating whether the sets are equal.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>A value indicating whether the sets are equal.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L280"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="SymmetricExcept_IEnumerable_T__">SymmetricExcept(IEnumerable&lt;T&gt;)</h4>
-<div class="markdown level1 summary"><p>Produces a set that contains elements either in this set or a given sequence, but not both.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public ImmutableHashSet<t> SymmetricExcept(IEnumerable<t> other)</t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L280">View Source</a>
+      </span>
+  <h4 id="SymmetricExcept_IEnumerable_T__">SymmetricExcept(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Produces a set that contains elements either in this set or a given sequence, but not both.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;T&gt;</td>
-      <td><em>other</em></td>
-      <td><p>The other sequence of items.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableHashSet<t> SymmetricExcept(IEnumerable<t> other)</t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><em>other</em></td>
+        <td><p>The other sequence of items.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableHashSet`1.html" name="System.Collections.Immutable.ImmutableHashSet&lt;T&gt;">ImmutableHashSet</a></td>
-      <td><p>The new set.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Immutable.ImmutableHashSet`1.html" name="System.Collections.Immutable.ImmutableHashSet&lt;T&gt;">ImmutableHashSet</a></td>
+        <td><p>The new set.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L540"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ICollection_T__Add_T_">ICollection&lt;T&gt;.Add(T)</h4>
-<div class="markdown level1 summary"><p>See the <a href="System.Collections.Generic.IList`1.html">System.Collections.Generic.IList`1</a> interface.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">void ICollection<t>.Add(T item)</t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L540">View Source</a>
+      </span>
+  <h4 id="ICollection_T__Add_T_">ICollection&lt;T&gt;.Add(T)</h4>
+  <div class="markdown level1 summary"><p>See the <a href="System.Collections.Generic.IList`1.html">System.Collections.Generic.IList`1</a> interface.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><em>item</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ICollection<t>.Add(T item)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><em>item</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L548"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ICollection_T__Clear__">ICollection&lt;T&gt;.Clear()</h4>
-<div class="markdown level1 summary"><p>See the <a href="System.Collections.Generic.ICollection`1.html">System.Collections.Generic.ICollection`1</a> interface.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">void ICollection<t>.Clear()</t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L548">View Source</a>
+      </span>
+  <h4 id="ICollection_T__Clear__">ICollection&lt;T&gt;.Clear()</h4>
+  <div class="markdown level1 summary"><p>See the <a href="System.Collections.Generic.ICollection`1.html">System.Collections.Generic.ICollection`1</a> interface.</p>
 </div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ICollection<t>.Clear()</t></code></pre>
+  </div>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L525"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ICollection_T__CopyTo_T____Int32_">ICollection&lt;T&gt;.CopyTo(T[], Int32)</h4>
-<div class="markdown level1 summary"><p>See the <a href="System.Collections.Generic.ICollection`1.html">System.Collections.Generic.ICollection`1</a> interface.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">void ICollection<t>.CopyTo(T[] array, int arrayIndex)</t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L525">View Source</a>
+      </span>
+  <h4 id="ICollection_T__CopyTo_T____Int32_">ICollection&lt;T&gt;.CopyTo(T[], Int32)</h4>
+  <div class="markdown level1 summary"><p>See the <a href="System.Collections.Generic.ICollection`1.html">System.Collections.Generic.ICollection`1</a> interface.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T[]</td>
-      <td><em>array</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td><em>arrayIndex</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ICollection<t>.CopyTo(T[] array, int arrayIndex)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><em>array</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>arrayIndex</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L556"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ICollection_T__Remove_T_">ICollection&lt;T&gt;.Remove(T)</h4>
-<div class="markdown level1 summary"><p>See the <a href="System.Collections.Generic.IList`1.html">System.Collections.Generic.IList`1</a> interface.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">bool ICollection<t>.Remove(T item)</t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L556">View Source</a>
+      </span>
+  <h4 id="ICollection_T__Remove_T_">ICollection&lt;T&gt;.Remove(T)</h4>
+  <div class="markdown level1 summary"><p>See the <a href="System.Collections.Generic.IList`1.html">System.Collections.Generic.IList`1</a> interface.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><em>item</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ICollection<t>.Remove(T item)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><em>item</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L600"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IEnumerable_T__GetEnumerator__">IEnumerable&lt;T&gt;.GetEnumerator()</h4>
-<div class="markdown level1 summary"><p>Returns an enumerator that iterates through the collection.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">IEnumerator<t> IEnumerable<t>.GetEnumerator()</t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L600">View Source</a>
+      </span>
+  <h4 id="IEnumerable_T__GetEnumerator__">IEnumerable&lt;T&gt;.GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the collection.</p>
 </div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerator`1.html" name="System.Collections.Generic.IEnumerator">IEnumerator</a>&lt;T&gt;</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator<t> IEnumerable<t>.GetEnumerator()</t></t></code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerator&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L570"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ICollection_CopyTo_Array__Int32_">ICollection.CopyTo(Array, Int32)</h4>
-<div class="markdown level1 summary"><p>Copies the elements of the <see cref="T:System.Collections.ICollection"></see> to an <see cref="T:System.Array"></see>, starting at a particular <see cref="T:System.Array"></see> index.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">void ICollection.CopyTo(Array array, int arrayIndex)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L570">View Source</a>
+      </span>
+  <h4 id="ICollection_CopyTo_Array__Int32_">ICollection.CopyTo(Array, Int32)</h4>
+  <div class="markdown level1 summary"><p>Copies the elements of the <see cref="T:System.Collections.ICollection"></see> to an <see cref="T:System.Array"></see>, starting at a particular <see cref="T:System.Array"></see> index.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Array.html" name="System.Array">Array</a></td>
-      <td><em>array</em></td>
-      <td><p>The one-dimensional <see cref="T:System.Array"></see> that is the destination of the elements copied from <see cref="T:System.Collections.ICollection"></see>. The <see cref="T:System.Array"></see> must have zero-based indexing.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ICollection.CopyTo(Array array, int arrayIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Array.html" name="System.Array">Array</a></td>
+        <td><em>array</em></td>
+        <td><p>The one-dimensional <see cref="T:System.Array"></see> that is the destination of the elements copied from <see cref="T:System.Collections.ICollection"></see>. The <see cref="T:System.Array"></see> must have zero-based indexing.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td><em>arrayIndex</em></td>
-      <td><p>The zero-based index in <paramref name="array"></paramref> at which copying begins.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>arrayIndex</em></td>
+        <td><p>The zero-based index in <paramref name="array"></paramref> at which copying begins.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L615"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IEnumerable_GetEnumerator__">IEnumerable.GetEnumerator()</h4>
-<div class="markdown level1 summary"><p>Returns an enumerator that iterates through a collection.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">IEnumerator IEnumerable.GetEnumerator()</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L615">View Source</a>
+      </span>
+  <h4 id="IEnumerable_GetEnumerator__">IEnumerable.GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>Returns an enumerator that iterates through a collection.</p>
 </div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.IEnumerator.html" name="System.Collections.IEnumerator">IEnumerator</a></td>
-      <td><p>An <a href="System.Collections.IEnumerator.html">System.Collections.IEnumerator</a> object that can be used to iterate through the collection.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator IEnumerable.GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.IEnumerator.html" name="System.Collections.IEnumerator">IEnumerator</a></td>
+        <td><p>An <a href="System.Collections.IEnumerator.html">System.Collections.IEnumerator</a> object that can be used to iterate through the collection.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L380"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IImmutableSet_T__Add_T_">IImmutableSet&lt;T&gt;.Add(T)</h4>
-<div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">IImmutableSet<t> IImmutableSet<t>.Add(T item)</t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L380">View Source</a>
+      </span>
+  <h4 id="IImmutableSet_T__Add_T_">IImmutableSet&lt;T&gt;.Add(T)</h4>
+  <div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><em>item</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.IImmutableSet`1.html" name="System.Collections.Immutable.IImmutableSet">IImmutableSet</a>&lt;T&gt;</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IImmutableSet<t> IImmutableSet<t>.Add(T item)</t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><em>item</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.IImmutableSet&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L116"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IImmutableSet_T__Clear__">IImmutableSet&lt;T&gt;.Clear()</h4>
-<div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">IImmutableSet<t> IImmutableSet<t>.Clear()</t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L116">View Source</a>
+      </span>
+  <h4 id="IImmutableSet_T__Clear__">IImmutableSet&lt;T&gt;.Clear()</h4>
+  <div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p>
 </div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.IImmutableSet`1.html" name="System.Collections.Immutable.IImmutableSet">IImmutableSet</a>&lt;T&gt;</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IImmutableSet<t> IImmutableSet<t>.Clear()</t></t></code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.IImmutableSet&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L416"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IImmutableSet_T__Except_IEnumerable_T__">IImmutableSet&lt;T&gt;.Except(IEnumerable&lt;T&gt;)</h4>
-<div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">IImmutableSet<t> IImmutableSet<t>.Except(IEnumerable<t> other)</t></t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L416">View Source</a>
+      </span>
+  <h4 id="IImmutableSet_T__Except_IEnumerable_T__">IImmutableSet&lt;T&gt;.Except(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;T&gt;</td>
-      <td><em>other</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.IImmutableSet`1.html" name="System.Collections.Immutable.IImmutableSet">IImmutableSet</a>&lt;T&gt;</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IImmutableSet<t> IImmutableSet<t>.Except(IEnumerable<t> other)</t></t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><em>other</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.IImmutableSet&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L407"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IImmutableSet_T__Intersect_IEnumerable_T__">IImmutableSet&lt;T&gt;.Intersect(IEnumerable&lt;T&gt;)</h4>
-<div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">IImmutableSet<t> IImmutableSet<t>.Intersect(IEnumerable<t> other)</t></t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L407">View Source</a>
+      </span>
+  <h4 id="IImmutableSet_T__Intersect_IEnumerable_T__">IImmutableSet&lt;T&gt;.Intersect(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;T&gt;</td>
-      <td><em>other</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.IImmutableSet`1.html" name="System.Collections.Immutable.IImmutableSet">IImmutableSet</a>&lt;T&gt;</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IImmutableSet<t> IImmutableSet<t>.Intersect(IEnumerable<t> other)</t></t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><em>other</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.IImmutableSet&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L389"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IImmutableSet_T__Remove_T_">IImmutableSet&lt;T&gt;.Remove(T)</h4>
-<div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">IImmutableSet<t> IImmutableSet<t>.Remove(T item)</t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L389">View Source</a>
+      </span>
+  <h4 id="IImmutableSet_T__Remove_T_">IImmutableSet&lt;T&gt;.Remove(T)</h4>
+  <div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><em>item</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.IImmutableSet`1.html" name="System.Collections.Immutable.IImmutableSet">IImmutableSet</a>&lt;T&gt;</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IImmutableSet<t> IImmutableSet<t>.Remove(T item)</t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><em>item</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.IImmutableSet&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L427"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IImmutableSet_T__SymmetricExcept_IEnumerable_T__">IImmutableSet&lt;T&gt;.SymmetricExcept(IEnumerable&lt;T&gt;)</h4>
-<div class="markdown level1 summary"><p>Produces a set that contains elements either in this set or a given sequence, but not both.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">IImmutableSet<t> IImmutableSet<t>.SymmetricExcept(IEnumerable<t> other)</t></t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L427">View Source</a>
+      </span>
+  <h4 id="IImmutableSet_T__SymmetricExcept_IEnumerable_T__">IImmutableSet&lt;T&gt;.SymmetricExcept(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Produces a set that contains elements either in this set or a given sequence, but not both.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;T&gt;</td>
-      <td><em>other</em></td>
-      <td><p>The other sequence of items.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IImmutableSet<t> IImmutableSet<t>.SymmetricExcept(IEnumerable<t> other)</t></t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><em>other</em></td>
+        <td><p>The other sequence of items.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.IImmutableSet`1.html" name="System.Collections.Immutable.IImmutableSet">IImmutableSet</a>&lt;T&gt;</td>
-      <td><p>The new set.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.IImmutableSet&lt;T&gt;</td>
+        <td><p>The new set.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L398"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IImmutableSet_T__Union_IEnumerable_T__">IImmutableSet&lt;T&gt;.Union(IEnumerable&lt;T&gt;)</h4>
-<div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">IImmutableSet<t> IImmutableSet<t>.Union(IEnumerable<t> other)</t></t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L398">View Source</a>
+      </span>
+  <h4 id="IImmutableSet_T__Union_IEnumerable_T__">IImmutableSet&lt;T&gt;.Union(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;T&gt;</td>
-      <td><em>other</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.IImmutableSet`1.html" name="System.Collections.Immutable.IImmutableSet">IImmutableSet</a>&lt;T&gt;</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IImmutableSet<t> IImmutableSet<t>.Union(IEnumerable<t> other)</t></t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><em>other</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Immutable.IImmutableSet&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L177"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ToBuilder__">ToBuilder()</h4>
-<div class="markdown level1 summary"><p>Creates a collection with the same contents as this collection that<br>can be efficiently mutated across multiple operations using standard</br>mutable interfaces.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This is an O(1) operation and results in only a single (small) memory allocation.<br>The mutable collection that is returned is <em>not</em> thread-safe.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public ImmutableHashSet<t>.Builder ToBuilder()</t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L177">View Source</a>
+      </span>
+  <h4 id="ToBuilder__">ToBuilder()</h4>
+  <div class="markdown level1 summary"><p>Creates a collection with the same contents as this collection that
+can be efficiently mutated across multiple operations using standard
+mutable interfaces.</p>
 </div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableHashSet`1.Builder.html" name="System.Collections.Immutable.ImmutableHashSet.Builder">ImmutableHashSet</a>&lt;&gt;</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="ToBuilder___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is an O(1) operation and results in only a single (small) memory allocation.
+The mutable collection that is returned is <em>not</em> thread-safe.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableHashSet<t>.Builder ToBuilder()</t></code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Immutable.ImmutableHashSet`1.Builder.html" name="System.Collections.Immutable.ImmutableHashSet.Builder&lt;&gt;">ImmutableHashSet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L223"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="TryGetValue_T__out_T_">TryGetValue(T, out T)</h4>
-<div class="markdown level1 summary"><p>Searches the set for a given value and returns the equal value it finds, if any.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This can be useful when you want to reuse a previously stored reference instead of<br>a newly constructed one (so that more sharing of references can occur) or to look up</br>a value that has more complete data than the value you currently have, although their<br>comparer functions indicate they are equal.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public bool TryGetValue(T equalValue, out T actualValue)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L223">View Source</a>
+      </span>
+  <h4 id="TryGetValue_T__out_T_">TryGetValue(T, out T)</h4>
+  <div class="markdown level1 summary"><p>Searches the set for a given value and returns the equal value it finds, if any.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><em>equalValue</em></td>
-      <td><p>The value to search for.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="TryGetValue_T__out_T__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This can be useful when you want to reuse a previously stored reference instead of
+a newly constructed one (so that more sharing of references can occur) or to look up
+a value that has more complete data than the value you currently have, although their
+comparer functions indicate they are equal.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetValue(T equalValue, out T actualValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><em>equalValue</em></td>
+        <td><p>The value to search for.</p>
 </td>
-    </tr>
-    <tr>
-      <td>T</td>
-      <td><em>actualValue</em></td>
-      <td><p>The value from the set that the search found, or the original value if the search yielded no match.</p>
+      </tr>
+      <tr>
+        <td>T</td>
+        <td><em>actualValue</em></td>
+        <td><p>The value from the set that the search found, or the original value if the search yielded no match.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>A value indicating whether the search was successful.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>A value indicating whether the search was successful.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L242"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Union_IEnumerable_T__">Union(IEnumerable&lt;T&gt;)</h4>
-<div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public ImmutableHashSet<t> Union(IEnumerable<t> other)</t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L242">View Source</a>
+      </span>
+  <h4 id="Union_IEnumerable_T__">Union(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;T&gt;</td>
-      <td><em>other</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableHashSet`1.html" name="System.Collections.Immutable.ImmutableHashSet&lt;T&gt;">ImmutableHashSet</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableHashSet<t> Union(IEnumerable<t> other)</t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><em>other</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Immutable.ImmutableHashSet`1.html" name="System.Collections.Immutable.ImmutableHashSet&lt;T&gt;">ImmutableHashSet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L445"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="WithComparer_IEqualityComparer_T__">WithComparer(IEqualityComparer&lt;T&gt;)</h4>
-<div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public ImmutableHashSet<t> WithComparer(IEqualityComparer<t> equalityComparer)</t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs/#L445">View Source</a>
+      </span>
+  <h4 id="WithComparer_IEqualityComparer_T__">WithComparer(IEqualityComparer&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>See the <a href="System.Collections.Immutable.IImmutableSet`1.html">System.Collections.Immutable.IImmutableSet`1</a> interface.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEqualityComparer`1.html" name="System.Collections.Generic.IEqualityComparer">IEqualityComparer</a>&lt;T&gt;</td>
-      <td><em>equalityComparer</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Immutable.ImmutableHashSet`1.html" name="System.Collections.Immutable.ImmutableHashSet&lt;T&gt;">ImmutableHashSet</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableHashSet<t> WithComparer(IEqualityComparer<t> equalityComparer)</t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEqualityComparer&lt;T&gt;</td>
+        <td><em>equalityComparer</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Immutable.ImmutableHashSet`1.html" name="System.Collections.Immutable.ImmutableHashSet&lt;T&gt;">ImmutableHashSet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

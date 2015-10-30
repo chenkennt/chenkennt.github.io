@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class XContainer | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class XContainer | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -60,7 +60,8 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="XContainer">Class XContainer</h1>
-      <div class="markdown level0 summary"><p>Represents a node that can contain other nodes.</p><br></div>
+      <div class="markdown level0 summary"><p>Represents a node that can contain other nodes.</p>
+</div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
         <h5>Inheritance</h5>
@@ -75,538 +76,590 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public abstract class XContainer : XNode</code></pre>
       </div>
-      <h5 id="XContainer_remarks">remarks</h5>
-      <div class="markdown level0 remarks"><p>The two classes that derive from <a href="System.Xml.Linq.XContainer.html">System.Xml.Linq.XContainer</a> are<br><a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument</a> and <a href="System.Xml.Linq.XElement.html">System.Xml.Linq.XElement</a>.</p><br></div>
-<h3 id="properties">Properties</h3>
-
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L50"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="FirstNode">FirstNode</h4>
-<div class="markdown level1 summary"><p>Get the first child node of this node.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public XNode FirstNode { get; }</code></pre>
+      <h5 id="XContainer_remarks"><strong>Remarks<strong></strong></strong></h5>
+      <div class="markdown level0 remarks"><p>The two classes that derive from <a href="System.Xml.Linq.XContainer.html">System.Xml.Linq.XContainer</a> are
+<a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument</a> and <a href="System.Xml.Linq.XElement.html">System.Xml.Linq.XElement</a>.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Xml.Linq.XNode.html" name="System.Xml.Linq.XNode">XNode</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <h3 id="properties">Properties</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L62"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="LastNode">LastNode</h4>
-<div class="markdown level1 summary"><p>Get the last child node of this node.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public XNode LastNode { get; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L50">View Source</a>
+      </span>
+  <h4 id="FirstNode">FirstNode</h4>
+  <div class="markdown level1 summary"><p>Get the first child node of this node.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Xml.Linq.XNode.html" name="System.Xml.Linq.XNode">XNode</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h3 id="methods">Methods</h3>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XNode FirstNode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Xml.Linq.XNode.html" name="System.Xml.Linq.XNode">XNode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L133"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Add_Object_">Add(Object)</h4>
-<div class="markdown level1 summary"><p>Adds the specified content as a child (or children) of this <a href="System.Xml.Linq.XContainer.html">System.Xml.Linq.XContainer</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>When adding simple content, a number of types may be passed to this method.<br>Valid types include:</p><br><list><item>string</item><item>double</item><item>float</item><item>decimal</item><item>bool</item><item>DateTime</item><item>DateTimeOffset</item><item>TimeSpan</item><item>Any type implementing ToString()</item><item>Any type implementing IEnumerable</item></list></br>When adding complex content, a number of types may be passed to this method.<br><list><item>XObject</item><item>XNode</item><item>XAttribute</item><item>Any type implementing IEnumerable</item></list></br><br><p>If an object implements IEnumerable, then the collection in the object is enumerated,</br>and all items in the collection are added. If the collection contains simple content,<br>then the simple content in the collection is concatenated and added as a single</br>string of simple content. If the collection contains complex content, then each item<br>in the collection is added separately.<p></br><p>If content is null, nothing is added. This allows the results of a query to be passed<br>as content. If the query returns null, no contents are added, and this method does not</br>throw a NullReferenceException.</p><br><p>Attributes and simple content can&#39;t be added to a document.</p></br><p>An added attribute must have a unique name within the element to<br>which it is being added.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void Add(object content)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L62">View Source</a>
+      </span>
+  <h4 id="LastNode">LastNode</h4>
+  <div class="markdown level1 summary"><p>Get the last child node of this node.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a></td>
-      <td><em>content</em></td>
-      <td><p>A content object containing simple content or a collection of content objects
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XNode LastNode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Xml.Linq.XNode.html" name="System.Xml.Linq.XNode">XNode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="methods">Methods</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L133">View Source</a>
+      </span>
+  <h4 id="Add_Object_">Add(Object)</h4>
+  <div class="markdown level1 summary"><p>Adds the specified content as a child (or children) of this <a href="System.Xml.Linq.XContainer.html">System.Xml.Linq.XContainer</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Add_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When adding simple content, a number of types may be passed to this method.
+Valid types include:</p>
+<list><item>string</item><item>double</item><item>float</item><item>decimal</item><item>bool</item><item>DateTime</item><item>DateTimeOffset</item><item>TimeSpan</item><item>Any type implementing ToString()</item><item>Any type implementing IEnumerable</item></list>
+When adding complex content, a number of types may be passed to this method.
+<list><item>XObject</item><item>XNode</item><item>XAttribute</item><item>Any type implementing IEnumerable</item></list>
+
+
+<p>If an object implements IEnumerable, then the collection in the object is enumerated,
+and all items in the collection are added. If the collection contains simple content,
+then the simple content in the collection is concatenated and added as a single
+string of simple content. If the collection contains complex content, then each item
+in the collection is added separately.</p>
+<p>If content is null, nothing is added. This allows the results of a query to be passed
+as content. If the query returns null, no contents are added, and this method does not
+throw a NullReferenceException.</p>
+<p>Attributes and simple content can&#39;t be added to a document.</p>
+<p>An added attribute must have a unique name within the element to
+which it is being added.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(object content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>content</em></td>
+        <td><p>A content object containing simple content or a collection of content objects
 to be added.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L190"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Add_Object___">Add(Object[])</h4>
-<div class="markdown level1 summary"><p>Adds the specified content as a child (or children) of this <a href="System.Xml.Linq.XContainer.html">System.Xml.Linq.XContainer</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>See XContainer.Add(object content) for details about the content that can be added<br>using this method.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void Add(params object[] content)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L190">View Source</a>
+      </span>
+  <h4 id="Add_Object___">Add(Object[])</h4>
+  <div class="markdown level1 summary"><p>Adds the specified content as a child (or children) of this <a href="System.Xml.Linq.XContainer.html">System.Xml.Linq.XContainer</a>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a>[]</td>
-      <td><em>content</em></td>
-      <td><p>A parameter list of content objects.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Add_Object____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See XContainer.Add(object content) for details about the content that can be added
+using this method.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(params object[] content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Object[]</td>
+        <td><em>content</em></td>
+        <td><p>A parameter list of content objects.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L211"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="AddFirst_Object_">AddFirst(Object)</h4>
-<div class="markdown level1 summary"><p>Adds the specified content as the first child (or children) of this document or element.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>See <a href="System.Xml.Linq.XContainer.html">System.Xml.Linq.XContainer.Add(System.Object)</a> for details about the content that can be added<br>using this method.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void AddFirst(object content)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L211">View Source</a>
+      </span>
+  <h4 id="AddFirst_Object_">AddFirst(Object)</h4>
+  <div class="markdown level1 summary"><p>Adds the specified content as the first child (or children) of this document or element.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a></td>
-      <td><em>content</em></td>
-      <td><p>A content object containing simple content or a collection of content objects
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="AddFirst_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See <a href="System.Xml.Linq.XContainer.html">System.Xml.Linq.XContainer.Add(System.Object)</a> for details about the content that can be added
+using this method.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddFirst(object content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>content</em></td>
+        <td><p>A content object containing simple content or a collection of content objects
 to be added.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L229"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="AddFirst_Object___">AddFirst(Object[])</h4>
-<div class="markdown level1 summary"><p>Adds the specified content as the first children of this document or element.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>See XContainer.Add(object content) for details about the content that can be added<br>using this method.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void AddFirst(params object[] content)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L229">View Source</a>
+      </span>
+  <h4 id="AddFirst_Object___">AddFirst(Object[])</h4>
+  <div class="markdown level1 summary"><p>Adds the specified content as the first children of this document or element.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a>[]</td>
-      <td><em>content</em></td>
-      <td><p>A parameter list of content objects.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="AddFirst_Object____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See XContainer.Add(object content) for details about the content that can be added
+using this method.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddFirst(params object[] content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Object[]</td>
+        <td><em>content</em></td>
+        <td><p>A parameter list of content objects.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L240"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="CreateWriter__">CreateWriter()</h4>
-<div class="markdown level1 summary"><p>Creates an <see cref="!:XmlWriter"></see> used to add either nodes<br>or attributes to the <a href="System.Xml.Linq.XContainer.html">System.Xml.Linq.XContainer</a>. The later option</br>applies only for <a href="System.Xml.Linq.XElement.html">System.Xml.Linq.XElement</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public XmlWriter CreateWriter()</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L240">View Source</a>
+      </span>
+  <h4 id="CreateWriter__">CreateWriter()</h4>
+  <div class="markdown level1 summary"><p>Creates an <see cref="!:XmlWriter"></see> used to add either nodes
+or attributes to the <a href="System.Xml.Linq.XContainer.html">System.Xml.Linq.XContainer</a>. The later option
+applies only for <a href="System.Xml.Linq.XElement.html">System.Xml.Linq.XElement</a>.</p>
 </div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>XmlWriter</td>
-      <td><p>An <see cref="!:XmlWriter"></see></p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XmlWriter CreateWriter()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>XmlWriter</td>
+        <td><p>An <see cref="!:XmlWriter"></see></p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L251"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="DescendantNodes__">DescendantNodes()</h4>
-<div class="markdown level1 summary"><p>Get descendant elements plus leaf nodes contained in an <a href="System.Xml.Linq.XContainer.html">System.Xml.Linq.XContainer</a></p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public IEnumerable<xnode> DescendantNodes()</xnode></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L251">View Source</a>
+      </span>
+  <h4 id="DescendantNodes__">DescendantNodes()</h4>
+  <div class="markdown level1 summary"><p>Get descendant elements plus leaf nodes contained in an <a href="System.Xml.Linq.XContainer.html">System.Xml.Linq.XContainer</a></p>
 </div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.Xml.Linq.XNode.html" name="System.Xml.Linq.XNode">XNode</a>&gt;</td>
-      <td><p><a href="System.Collections.Generic.IEnumerable`1.html">System.Collections.Generic.IEnumerable`1</a> over all descendants</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable<xnode> DescendantNodes()</xnode></code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XNode&gt;</td>
+        <td><p><a href="System.Collections.Generic.IEnumerable`1.html">System.Collections.Generic.IEnumerable`1</a> over all descendants</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L265"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Descendants__">Descendants()</h4>
-<div class="markdown level1 summary"><p>Returns the descendant <see cref="T:System.Xml.Linq.XElement"></see>s of this <see cref="T:System.Xml.Linq.XContainer"></see>.  Note this method will<br>not return itself in the resulting IEnumerable.  See <see cref="M:System.Xml.Linq.XElement.DescendantsAndSelf"></see> if you</br>need to include the current <see cref="T:System.Xml.Linq.XElement"></see> in the results.</p><br><seealso cref="M:System.Xml.Linq.XElement.DescendantsAndSelf"></seealso></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public IEnumerable<xelement> Descendants()</xelement></code></pre>
-</div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.Xml.Linq.XElement.html" name="System.Xml.Linq.XElement">XElement</a>&gt;</td>
-      <td><p>An IEnumerable of <see cref="T:System.Xml.Linq.XElement"></see> with all of the descendants below this <see cref="T:System.Xml.Linq.XContainer"></see> in the XML tree.</p>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L265">View Source</a>
+      </span>
+  <h4 id="Descendants__">Descendants()</h4>
+  <div class="markdown level1 summary"><p>Returns the descendant <see cref="T:System.Xml.Linq.XElement"></see>s of this <see cref="T:System.Xml.Linq.XContainer"></see>.  Note this method will
+not return itself in the resulting IEnumerable.  See <see cref="M:System.Xml.Linq.XElement.DescendantsAndSelf"></see> if you
+need to include the current <see cref="T:System.Xml.Linq.XElement"></see> in the results.</p>
+<seealso cref="M:System.Xml.Linq.XElement.DescendantsAndSelf"></seealso></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable<xelement> Descendants()</xelement></code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt;</td>
+        <td><p>An IEnumerable of <see cref="T:System.Xml.Linq.XElement"></see> with all of the descendants below this <see cref="T:System.Xml.Linq.XContainer"></see> in the XML tree.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L276"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Descendants_XName_">Descendants(XName)</h4>
-<div class="markdown level1 summary"><p>Returns the Descendant <a href="System.Xml.Linq.XElement.html">System.Xml.Linq.XElement</a>s with the passed in <a href="System.Xml.Linq.XName.html">System.Xml.Linq.XName</a> as an IEnumerable<br>of XElement.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public IEnumerable<xelement> Descendants(XName name)</xelement></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L276">View Source</a>
+      </span>
+  <h4 id="Descendants_XName_">Descendants(XName)</h4>
+  <div class="markdown level1 summary"><p>Returns the Descendant <a href="System.Xml.Linq.XElement.html">System.Xml.Linq.XElement</a>s with the passed in <a href="System.Xml.Linq.XName.html">System.Xml.Linq.XName</a> as an IEnumerable
+of XElement.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Xml.Linq.XName.html" name="System.Xml.Linq.XName">XName</a></td>
-      <td><em>name</em></td>
-      <td><p>The <see cref="T:System.Xml.Linq.XName"></see> to match against descendant <see cref="T:System.Xml.Linq.XElement"></see>s.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable<xelement> Descendants(XName name)</xelement></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Xml.Linq.XName.html" name="System.Xml.Linq.XName">XName</a></td>
+        <td><em>name</em></td>
+        <td><p>The <see cref="T:System.Xml.Linq.XName"></see> to match against descendant <see cref="T:System.Xml.Linq.XElement"></see>s.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.Xml.Linq.XElement.html" name="System.Xml.Linq.XElement">XElement</a>&gt;</td>
-      <td><p>An <see cref="T:System.Collections.IEnumerable"></see> of <see cref="T:System.Xml.Linq.XElement"></see></p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt;</td>
+        <td><p>An <see cref="T:System.Collections.IEnumerable"></see> of <see cref="T:System.Xml.Linq.XElement"></see></p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L292"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Element_XName_">Element(XName)</h4>
-<div class="markdown level1 summary"><p>Returns the child element with this <see cref="T:System.Xml.Linq.XName"></see> or null if there is no child element<br>with a matching <see cref="T:System.Xml.Linq.XName"></see>.</br><a href="System.Xml.Linq.XContainer.html">System.Xml.Linq.XContainer.Elements</a></p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public XElement Element(XName name)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L292">View Source</a>
+      </span>
+  <h4 id="Element_XName_">Element(XName)</h4>
+  <div class="markdown level1 summary"><p>Returns the child element with this <see cref="T:System.Xml.Linq.XName"></see> or null if there is no child element
+with a matching <see cref="T:System.Xml.Linq.XName"></see>.
+<a href="System.Xml.Linq.XContainer.html">System.Xml.Linq.XContainer.Elements</a></p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Xml.Linq.XName.html" name="System.Xml.Linq.XName">XName</a></td>
-      <td><em>name</em></td>
-      <td><p>The <see cref="T:System.Xml.Linq.XName"></see> to match against this <see cref="T:System.Xml.Linq.XContainer"></see>s child elements.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XElement Element(XName name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Xml.Linq.XName.html" name="System.Xml.Linq.XName">XName</a></td>
+        <td><em>name</em></td>
+        <td><p>The <see cref="T:System.Xml.Linq.XName"></see> to match against this <see cref="T:System.Xml.Linq.XContainer"></see>s child elements.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Xml.Linq.XElement.html" name="System.Xml.Linq.XElement">XElement</a></td>
-      <td><p>An <see cref="T:System.Xml.Linq.XElement"></see> child that matches the <see cref="T:System.Xml.Linq.XName"></see> passed in, or null.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Xml.Linq.XElement.html" name="System.Xml.Linq.XElement">XElement</a></td>
+        <td><p>An <see cref="T:System.Xml.Linq.XElement"></see> child that matches the <see cref="T:System.Xml.Linq.XName"></see> passed in, or null.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L316"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Elements__">Elements()</h4>
-<div class="markdown level1 summary"><p>Returns all of the child elements of this <a href="System.Xml.Linq.XContainer.html">System.Xml.Linq.XContainer</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public IEnumerable<xelement> Elements()</xelement></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L316">View Source</a>
+      </span>
+  <h4 id="Elements__">Elements()</h4>
+  <div class="markdown level1 summary"><p>Returns all of the child elements of this <a href="System.Xml.Linq.XContainer.html">System.Xml.Linq.XContainer</a>.</p>
 </div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.Xml.Linq.XElement.html" name="System.Xml.Linq.XElement">XElement</a>&gt;</td>
-      <td><p>An <see cref="T:System.Collections.IEnumerable"></see> over all of this <see cref="T:System.Xml.Linq.XContainer"></see>&#39;s child <see cref="T:System.Xml.Linq.XElement"></see>s.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable<xelement> Elements()</xelement></code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt;</td>
+        <td><p>An <see cref="T:System.Collections.IEnumerable"></see> over all of this <see cref="T:System.Xml.Linq.XContainer"></see>&#39;s child <see cref="T:System.Xml.Linq.XElement"></see>s.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L331"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Elements_XName_">Elements(XName)</h4>
-<div class="markdown level1 summary"><p>Returns the child elements of this <a href="System.Xml.Linq.XContainer.html">System.Xml.Linq.XContainer</a> that match the <a href="System.Xml.Linq.XName.html">System.Xml.Linq.XName</a> passed in.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public IEnumerable<xelement> Elements(XName name)</xelement></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L331">View Source</a>
+      </span>
+  <h4 id="Elements_XName_">Elements(XName)</h4>
+  <div class="markdown level1 summary"><p>Returns the child elements of this <a href="System.Xml.Linq.XContainer.html">System.Xml.Linq.XContainer</a> that match the <a href="System.Xml.Linq.XName.html">System.Xml.Linq.XName</a> passed in.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Xml.Linq.XName.html" name="System.Xml.Linq.XName">XName</a></td>
-      <td><em>name</em></td>
-      <td><p>The <see cref="T:System.Xml.Linq.XName"></see> to match against the <see cref="T:System.Xml.Linq.XElement"></see> children of this <see cref="T:System.Xml.Linq.XContainer"></see>.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable<xelement> Elements(XName name)</xelement></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Xml.Linq.XName.html" name="System.Xml.Linq.XName">XName</a></td>
+        <td><em>name</em></td>
+        <td><p>The <see cref="T:System.Xml.Linq.XName"></see> to match against the <see cref="T:System.Xml.Linq.XElement"></see> children of this <see cref="T:System.Xml.Linq.XContainer"></see>.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.Xml.Linq.XElement.html" name="System.Xml.Linq.XElement">XElement</a>&gt;</td>
-      <td><p>An <see cref="T:System.Collections.IEnumerable"></see> of <see cref="T:System.Xml.Linq.XElement"></see> children of this <see cref="T:System.Xml.Linq.XContainer"></see> that have
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt;</td>
+        <td><p>An <see cref="T:System.Collections.IEnumerable"></see> of <see cref="T:System.Xml.Linq.XElement"></see> children of this <see cref="T:System.Xml.Linq.XContainer"></see> that have
 a matching <see cref="T:System.Xml.Linq.XName"></see>.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L347"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Nodes__">Nodes()</h4>
-<div class="markdown level1 summary"><p>Returns the content of this <a href="System.Xml.Linq.XContainer.html">System.Xml.Linq.XContainer</a> as an <a href="System.Collections.IEnumerable.html">System.Collections.IEnumerable</a> of <a href="System.Object.html">System.Object</a>.  Note<br>that the content does not include <a href="System.Xml.Linq.XAttribute.html">System.Xml.Linq.XAttribute</a>s.</br><a href="System.Xml.Linq.XElement.html">System.Xml.Linq.XElement.Attributes</a></p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public IEnumerable<xnode> Nodes()</xnode></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L347">View Source</a>
+      </span>
+  <h4 id="Nodes__">Nodes()</h4>
+  <div class="markdown level1 summary"><p>Returns the content of this <a href="System.Xml.Linq.XContainer.html">System.Xml.Linq.XContainer</a> as an <a href="System.Collections.IEnumerable.html">System.Collections.IEnumerable</a> of <a href="System.Object.html">System.Object</a>.  Note
+that the content does not include <a href="System.Xml.Linq.XAttribute.html">System.Xml.Linq.XAttribute</a>s.
+<a href="System.Xml.Linq.XElement.html">System.Xml.Linq.XElement.Attributes</a></p>
 </div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.Xml.Linq.XNode.html" name="System.Xml.Linq.XNode">XNode</a>&gt;</td>
-      <td><p>The contents of this <see cref="T:System.Xml.Linq.XContainer"></see></p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable<xnode> Nodes()</xnode></code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XNode&gt;</td>
+        <td><p>The contents of this <see cref="T:System.Xml.Linq.XContainer"></see></p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L365"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="RemoveNodes__">RemoveNodes()</h4>
-<div class="markdown level1 summary"><p>Removes the nodes from this <a href="System.Xml.Linq.XContainer.html">System.Xml.Linq.XContainer</a>.  Note this<br>methods does not remove attributes.  See <a href="System.Xml.Linq.XElement.html">System.Xml.Linq.XElement.RemoveAttributes</a>.</p><br><seealso cref="M:System.Xml.Linq.XElement.RemoveAttributes"></seealso></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void RemoveNodes()</code></pre>
-</div>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L365">View Source</a>
+      </span>
+  <h4 id="RemoveNodes__">RemoveNodes()</h4>
+  <div class="markdown level1 summary"><p>Removes the nodes from this <a href="System.Xml.Linq.XContainer.html">System.Xml.Linq.XContainer</a>.  Note this
+methods does not remove attributes.  See <a href="System.Xml.Linq.XElement.html">System.Xml.Linq.XElement.RemoveAttributes</a>.</p>
+<seealso cref="M:System.Xml.Linq.XElement.RemoveAttributes"></seealso></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveNodes()</code></pre>
+  </div>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L435"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ReplaceNodes_Object_">ReplaceNodes(Object)</h4>
-<div class="markdown level1 summary"><p>Replaces the children nodes of this document or element with the specified content.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>See XContainer.Add(object content) for details about the content that can be added<br>using this method.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void ReplaceNodes(object content)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L435">View Source</a>
+      </span>
+  <h4 id="ReplaceNodes_Object_">ReplaceNodes(Object)</h4>
+  <div class="markdown level1 summary"><p>Replaces the children nodes of this document or element with the specified content.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a></td>
-      <td><em>content</em></td>
-      <td><p>A content object containing simple content or a collection of content objects
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="ReplaceNodes_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See XContainer.Add(object content) for details about the content that can be added
+using this method.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReplaceNodes(object content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>content</em></td>
+        <td><p>A content object containing simple content or a collection of content objects
 that replace the children nodes.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L452"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ReplaceNodes_Object___">ReplaceNodes(Object[])</h4>
-<div class="markdown level1 summary"><p>Replaces the children nodes of this document or element with the specified content.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>See XContainer.Add(object content) for details about the content that can be added<br>using this method.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void ReplaceNodes(params object[] content)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XContainer.cs/#L452">View Source</a>
+      </span>
+  <h4 id="ReplaceNodes_Object___">ReplaceNodes(Object[])</h4>
+  <div class="markdown level1 summary"><p>Replaces the children nodes of this document or element with the specified content.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a>[]</td>
-      <td><em>content</em></td>
-      <td><p>A parameter list of content objects.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="ReplaceNodes_Object____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See XContainer.Add(object content) for details about the content that can be added
+using this method.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReplaceNodes(params object[] content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Object[]</td>
+        <td><em>content</em></td>
+        <td><p>A parameter list of content objects.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

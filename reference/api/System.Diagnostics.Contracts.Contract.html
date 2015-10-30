@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class Contract | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class Contract | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -60,7 +60,8 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="Contract">Class Contract</h1>
-      <div class="markdown level0 summary"><p>Contains static methods for representing program contracts such as preconditions, postconditions, and invariants.</p><br></div>
+      <div class="markdown level0 summary"><p>Contains static methods for representing program contracts such as preconditions, postconditions, and invariants.</p>
+</div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
         <h5>Inheritance</h5>
@@ -73,840 +74,920 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public class Contract</code></pre>
       </div>
-      <h5 id="Contract_remarks">remarks</h5>
-      <div class="markdown level0 remarks"><p>WARNING: A binary rewriter must be used to insert runtime enforcement of these contracts.<br>Otherwise some contracts like Ensures can only be checked statically and will not throw exceptions during runtime when contracts are violated.</br>Please note this class uses conditional compilation to help avoid easy mistakes.  Defining the preprocessor<br>symbol CONTRACTS_PRECONDITIONS will include all preconditions expressed using Contract.Requires in your</br>build.  The symbol CONTRACTS_FULL will include postconditions and object invariants, and requires the binary rewriter.</p><br></div>
-<h3 id="methods">Methods</h3>
-
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L335"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Assert_Boolean_">Assert(Boolean)</h4>
-<div class="markdown level1 summary"><p>In debug builds, perform a runtime check that <paramref name="condition"></paramref> is true.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void Assert(bool condition)</code></pre>
+      <h5 id="Contract_remarks"><strong>Remarks<strong></strong></strong></h5>
+      <div class="markdown level0 remarks"><p>WARNING: A binary rewriter must be used to insert runtime enforcement of these contracts.
+Otherwise some contracts like Ensures can only be checked statically and will not throw exceptions during runtime when contracts are violated.
+Please note this class uses conditional compilation to help avoid easy mistakes.  Defining the preprocessor
+symbol CONTRACTS_PRECONDITIONS will include all preconditions expressed using Contract.Requires in your
+build.  The symbol CONTRACTS_FULL will include postconditions and object invariants, and requires the binary rewriter.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><em>condition</em></td>
-      <td><p>Expression to check to always be true.</p>
-</td>
-    </tr>
-  </tbody>
-</table>
+      <h3 id="methods">Methods</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L352"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Assert_Boolean__String_">Assert(Boolean, String)</h4>
-<div class="markdown level1 summary"><p>In debug builds, perform a runtime check that <paramref name="condition"></paramref> is true.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void Assert(bool condition, string userMessage)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L335">View Source</a>
+      </span>
+  <h4 id="Assert_Boolean_">Assert(Boolean)</h4>
+  <div class="markdown level1 summary"><p>In debug builds, perform a runtime check that <paramref name="condition"></paramref> is true.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><em>condition</em></td>
-      <td><p>Expression to check to always be true.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Assert(bool condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>condition</em></td>
+        <td><p>Expression to check to always be true.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>userMessage</em></td>
-      <td><p>If it is not a constant string literal, then the contract may not be understood by tools.</p>
-</td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L293"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Assume_Boolean_">Assume(Boolean)</h4>
-<div class="markdown level1 summary"><p>Instructs code analysis tools to assume the expression <paramref name="condition"></paramref> is true even if it can not be statically proven to always be true.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>At runtime this is equivalent to an <a href="System.Diagnostics.Contracts.Contract.html">System.Diagnostics.Contracts.Contract.Assert(System.Boolean)</a>.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void Assume(bool condition)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L352">View Source</a>
+      </span>
+  <h4 id="Assert_Boolean__String_">Assert(Boolean, String)</h4>
+  <div class="markdown level1 summary"><p>In debug builds, perform a runtime check that <paramref name="condition"></paramref> is true.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><em>condition</em></td>
-      <td><p>Expression to assume will always be true.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Assert(bool condition, string userMessage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>condition</em></td>
+        <td><p>Expression to check to always be true.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>userMessage</em></td>
+        <td><p>If it is not a constant string literal, then the contract may not be understood by tools.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L314"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Assume_Boolean__String_">Assume(Boolean, String)</h4>
-<div class="markdown level1 summary"><p>Instructs code analysis tools to assume the expression <paramref name="condition"></paramref> is true even if it can not be statically proven to always be true.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>At runtime this is equivalent to an <a href="System.Diagnostics.Contracts.Contract.html">System.Diagnostics.Contracts.Contract.Assert(System.Boolean)</a>.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void Assume(bool condition, string userMessage)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L293">View Source</a>
+      </span>
+  <h4 id="Assume_Boolean_">Assume(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Instructs code analysis tools to assume the expression <paramref name="condition"></paramref> is true even if it can not be statically proven to always be true.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><em>condition</em></td>
-      <td><p>Expression to assume will always be true.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Assume_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>At runtime this is equivalent to an <a href="System.Diagnostics.Contracts.Contract.html">System.Diagnostics.Contracts.Contract.Assert(System.Boolean)</a>.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Assume(bool condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>condition</em></td>
+        <td><p>Expression to assume will always be true.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>userMessage</em></td>
-      <td><p>If it is not a constant string literal, then the contract may not be understood by tools.</p>
-</td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L869"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="EndContractBlock__">EndContractBlock()</h4>
-<div class="markdown level1 summary"><p>Marker to indicate the end of the contract section of a method.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void EndContractBlock()</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L314">View Source</a>
+      </span>
+  <h4 id="Assume_Boolean__String_">Assume(Boolean, String)</h4>
+  <div class="markdown level1 summary"><p>Instructs code analysis tools to assume the expression <paramref name="condition"></paramref> is true even if it can not be statically proven to always be true.</p>
 </div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Assume_Boolean__String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>At runtime this is equivalent to an <a href="System.Diagnostics.Contracts.Contract.html">System.Diagnostics.Contracts.Contract.Assert(System.Boolean)</a>.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Assume(bool condition, string userMessage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>condition</em></td>
+        <td><p>Expression to assume will always be true.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>userMessage</em></td>
+        <td><p>If it is not a constant string literal, then the contract may not be understood by tools.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L462"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Ensures_Boolean_">Ensures(Boolean)</h4>
-<div class="markdown level1 summary"><p>Specifies a public contract such that the expression <paramref name="condition"></paramref> will be true when the enclosing method or property returns normally.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This call must happen at the beginning of a method or property before any other code.<br>This contract is exposed to clients so must only reference members at least as visible as the enclosing method.</br>The contract rewriter must be used for runtime enforcement of this postcondition.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void Ensures(bool condition)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L869">View Source</a>
+      </span>
+  <h4 id="EndContractBlock__">EndContractBlock()</h4>
+  <div class="markdown level1 summary"><p>Marker to indicate the end of the contract section of a method.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><em>condition</em></td>
-      <td><p>Boolean expression representing the contract.  May include <a href="System.Diagnostics.Contracts.Contract.html">System.Diagnostics.Contracts.Contract.OldValue<code>1(</code>0)</a> and <a href="System.Diagnostics.Contracts.Contract.html">System.Diagnostics.Contracts.Contract.Result``1</a>.</p>
-</td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void EndContractBlock()</code></pre>
+  </div>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L482"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Ensures_Boolean__String_">Ensures(Boolean, String)</h4>
-<div class="markdown level1 summary"><p>Specifies a public contract such that the expression <paramref name="condition"></paramref> will be true when the enclosing method or property returns normally.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This call must happen at the beginning of a method or property before any other code.<br>This contract is exposed to clients so must only reference members at least as visible as the enclosing method.</br>The contract rewriter must be used for runtime enforcement of this postcondition.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void Ensures(bool condition, string userMessage)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L462">View Source</a>
+      </span>
+  <h4 id="Ensures_Boolean_">Ensures(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Specifies a public contract such that the expression <paramref name="condition"></paramref> will be true when the enclosing method or property returns normally.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><em>condition</em></td>
-      <td><p>Boolean expression representing the contract.  May include <a href="System.Diagnostics.Contracts.Contract.html">System.Diagnostics.Contracts.Contract.OldValue<code>1(</code>0)</a> and <a href="System.Diagnostics.Contracts.Contract.html">System.Diagnostics.Contracts.Contract.Result``1</a>.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Ensures_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This call must happen at the beginning of a method or property before any other code.
+This contract is exposed to clients so must only reference members at least as visible as the enclosing method.
+The contract rewriter must be used for runtime enforcement of this postcondition.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Ensures(bool condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>condition</em></td>
+        <td><p>Boolean expression representing the contract.  May include <a href="System.Diagnostics.Contracts.Contract.html">System.Diagnostics.Contracts.Contract.OldValue<code>1(</code>0)</a> and <a href="System.Diagnostics.Contracts.Contract.html">System.Diagnostics.Contracts.Contract.Result``1</a>.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>userMessage</em></td>
-      <td><p>If it is not a constant string literal, then the contract may not be understood by tools.</p>
-</td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L502"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="EnsuresOnThrow_TException__Boolean_">EnsuresOnThrow&lt;TException&gt;(Boolean)</h4>
-<div class="markdown level1 summary"><p>Specifies a contract such that if an exception of type <typeparamref name="TException"></typeparamref> is thrown then the expression <paramref name="condition"></paramref> will be true when the enclosing method or property terminates abnormally.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This call must happen at the beginning of a method or property before any other code.<br>This contract is exposed to clients so must only reference types and members at least as visible as the enclosing method.</br>The contract rewriter must be used for runtime enforcement of this postcondition.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void EnsuresOnThrow<texception>(bool condition)where TException : Exception</texception></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L482">View Source</a>
+      </span>
+  <h4 id="Ensures_Boolean__String_">Ensures(Boolean, String)</h4>
+  <div class="markdown level1 summary"><p>Specifies a public contract such that the expression <paramref name="condition"></paramref> will be true when the enclosing method or property returns normally.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><em>condition</em></td>
-      <td><p>Boolean expression representing the contract.  May include <a href="System.Diagnostics.Contracts.Contract.html">System.Diagnostics.Contracts.Contract.OldValue<code>1(</code>0)</a> and <a href="System.Diagnostics.Contracts.Contract.html">System.Diagnostics.Contracts.Contract.Result``1</a>.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Ensures_Boolean__String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This call must happen at the beginning of a method or property before any other code.
+This contract is exposed to clients so must only reference members at least as visible as the enclosing method.
+The contract rewriter must be used for runtime enforcement of this postcondition.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Ensures(bool condition, string userMessage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>condition</em></td>
+        <td><p>Boolean expression representing the contract.  May include <a href="System.Diagnostics.Contracts.Contract.html">System.Diagnostics.Contracts.Contract.OldValue<code>1(</code>0)</a> and <a href="System.Diagnostics.Contracts.Contract.html">System.Diagnostics.Contracts.Contract.Result``1</a>.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>userMessage</em></td>
+        <td><p>If it is not a constant string literal, then the contract may not be understood by tools.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L524"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="EnsuresOnThrow_TException__Boolean__String_">EnsuresOnThrow&lt;TException&gt;(Boolean, String)</h4>
-<div class="markdown level1 summary"><p>Specifies a contract such that if an exception of type <typeparamref name="TException"></typeparamref> is thrown then the expression <paramref name="condition"></paramref> will be true when the enclosing method or property terminates abnormally.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This call must happen at the beginning of a method or property before any other code.<br>This contract is exposed to clients so must only reference types and members at least as visible as the enclosing method.</br>The contract rewriter must be used for runtime enforcement of this postcondition.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void EnsuresOnThrow<texception>(bool condition, string userMessage)where TException : Exception</texception></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L502">View Source</a>
+      </span>
+  <h4 id="EnsuresOnThrow_TException__Boolean_">EnsuresOnThrow&lt;TException&gt;(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Specifies a contract such that if an exception of type <typeparamref name="TException"></typeparamref> is thrown then the expression <paramref name="condition"></paramref> will be true when the enclosing method or property terminates abnormally.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><em>condition</em></td>
-      <td><p>Boolean expression representing the contract.  May include <a href="System.Diagnostics.Contracts.Contract.html">System.Diagnostics.Contracts.Contract.OldValue<code>1(</code>0)</a> and <a href="System.Diagnostics.Contracts.Contract.html">System.Diagnostics.Contracts.Contract.Result``1</a>.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="EnsuresOnThrow_TException__Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This call must happen at the beginning of a method or property before any other code.
+This contract is exposed to clients so must only reference types and members at least as visible as the enclosing method.
+The contract rewriter must be used for runtime enforcement of this postcondition.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void EnsuresOnThrow<texception>(bool condition)where TException : Exception</texception></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>condition</em></td>
+        <td><p>Boolean expression representing the contract.  May include <a href="System.Diagnostics.Contracts.Contract.html">System.Diagnostics.Contracts.Contract.OldValue<code>1(</code>0)</a> and <a href="System.Diagnostics.Contracts.Contract.html">System.Diagnostics.Contracts.Contract.Result``1</a>.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>userMessage</em></td>
-      <td><p>If it is not a constant string literal, then the contract may not be understood by tools.</p>
-</td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L707"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Exists_Int32__Int32__Predicate_Int32__">Exists(Int32, Int32, Predicate&lt;Int32&gt;)</h4>
-<div class="markdown level1 summary"><p>Returns whether the <paramref name="predicate"></paramref> returns <c>true</c><br>for any integer starting from <paramref name="fromInclusive"></paramref> to <paramref name="toExclusive"></paramref> - 1.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static bool Exists(int fromInclusive, int toExclusive, Predicate<int> predicate)</int></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L524">View Source</a>
+      </span>
+  <h4 id="EnsuresOnThrow_TException__Boolean__String_">EnsuresOnThrow&lt;TException&gt;(Boolean, String)</h4>
+  <div class="markdown level1 summary"><p>Specifies a contract such that if an exception of type <typeparamref name="TException"></typeparamref> is thrown then the expression <paramref name="condition"></paramref> will be true when the enclosing method or property terminates abnormally.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td><em>fromInclusive</em></td>
-      <td><p>First integer to pass to <paramref name="predicate"></paramref>.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="EnsuresOnThrow_TException__Boolean__String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This call must happen at the beginning of a method or property before any other code.
+This contract is exposed to clients so must only reference types and members at least as visible as the enclosing method.
+The contract rewriter must be used for runtime enforcement of this postcondition.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void EnsuresOnThrow<texception>(bool condition, string userMessage)where TException : Exception</texception></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>condition</em></td>
+        <td><p>Boolean expression representing the contract.  May include <a href="System.Diagnostics.Contracts.Contract.html">System.Diagnostics.Contracts.Contract.OldValue<code>1(</code>0)</a> and <a href="System.Diagnostics.Contracts.Contract.html">System.Diagnostics.Contracts.Contract.Result``1</a>.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td><em>toExclusive</em></td>
-      <td><p>One greater than the last integer to pass to <paramref name="predicate"></paramref>.</p>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>userMessage</em></td>
+        <td><p>If it is not a constant string literal, then the contract may not be understood by tools.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Predicate`1.html" name="System.Predicate">Predicate</a>&lt;<a href="System.Int32.html" name="System.Int32">Int32</a>&gt;</td>
-      <td><em>predicate</em></td>
-      <td><p>Function that is evaluated from <paramref name="fromInclusive"></paramref> to <paramref name="toExclusive"></paramref> - 1.</p>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L707">View Source</a>
+      </span>
+  <h4 id="Exists_Int32__Int32__Predicate_Int32__">Exists(Int32, Int32, Predicate&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns whether the <paramref name="predicate"></paramref> returns <c>true</c>
+for any integer starting from <paramref name="fromInclusive"></paramref> to <paramref name="toExclusive"></paramref> - 1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Exists(int fromInclusive, int toExclusive, Predicate<int> predicate)</int></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>fromInclusive</em></td>
+        <td><p>First integer to pass to <paramref name="predicate"></paramref>.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p><c>true</c> if <paramref name="predicate"></paramref> returns <c>true</c> for any integer
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>toExclusive</em></td>
+        <td><p>One greater than the last integer to pass to <paramref name="predicate"></paramref>.</p>
+</td>
+      </tr>
+      <tr>
+        <td>System.Predicate&lt;System.Int32&gt;</td>
+        <td><em>predicate</em></td>
+        <td><p>Function that is evaluated from <paramref name="fromInclusive"></paramref> to <paramref name="toExclusive"></paramref> - 1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p><c>true</c> if <paramref name="predicate"></paramref> returns <c>true</c> for any integer
 starting from <paramref name="fromInclusive"></paramref> to <paramref name="toExclusive"></paramref> - 1.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L737"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Exists_T__IEnumerable_T___Predicate_T__">Exists&lt;T&gt;(IEnumerable&lt;T&gt;, Predicate&lt;T&gt;)</h4>
-<div class="markdown level1 summary"><p>Returns whether the <paramref name="predicate"></paramref> returns <c>true</c><br>for any element in the <paramref name="collection"></paramref>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static bool Exists<t>(IEnumerable<t> collection, Predicate<t> predicate)</t></t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L737">View Source</a>
+      </span>
+  <h4 id="Exists_T__IEnumerable_T___Predicate_T__">Exists&lt;T&gt;(IEnumerable&lt;T&gt;, Predicate&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns whether the <paramref name="predicate"></paramref> returns <c>true</c>
+for any element in the <paramref name="collection"></paramref>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;T&gt;</td>
-      <td><em>collection</em></td>
-      <td><p>The collection from which elements will be drawn from to pass to <paramref name="predicate"></paramref>.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Exists<t>(IEnumerable<t> collection, Predicate<t> predicate)</t></t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><em>collection</em></td>
+        <td><p>The collection from which elements will be drawn from to pass to <paramref name="predicate"></paramref>.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Predicate`1.html" name="System.Predicate">Predicate</a>&lt;T&gt;</td>
-      <td><em>predicate</em></td>
-      <td><p>Function that is evaluated on elements from <paramref name="collection"></paramref>.</p>
+      </tr>
+      <tr>
+        <td>System.Predicate&lt;T&gt;</td>
+        <td><em>predicate</em></td>
+        <td><p>Function that is evaluated on elements from <paramref name="collection"></paramref>.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p><c>true</c> if and only if <paramref name="predicate"></paramref> returns <c>true</c> for an element in</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p><c>true</c> if and only if <paramref name="predicate"></paramref> returns <c>true</c> for an element in</p>
 <p><paramref name="collection"></paramref>.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L645"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ForAll_Int32__Int32__Predicate_Int32__">ForAll(Int32, Int32, Predicate&lt;Int32&gt;)</h4>
-<div class="markdown level1 summary"><p>Returns whether the <paramref name="predicate"></paramref> returns <c>true</c><br>for all integers starting from <paramref name="fromInclusive"></paramref> to <paramref name="toExclusive"></paramref> - 1.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static bool ForAll(int fromInclusive, int toExclusive, Predicate<int> predicate)</int></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L645">View Source</a>
+      </span>
+  <h4 id="ForAll_Int32__Int32__Predicate_Int32__">ForAll(Int32, Int32, Predicate&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns whether the <paramref name="predicate"></paramref> returns <c>true</c>
+for all integers starting from <paramref name="fromInclusive"></paramref> to <paramref name="toExclusive"></paramref> - 1.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td><em>fromInclusive</em></td>
-      <td><p>First integer to pass to <paramref name="predicate"></paramref>.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ForAll(int fromInclusive, int toExclusive, Predicate<int> predicate)</int></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>fromInclusive</em></td>
+        <td><p>First integer to pass to <paramref name="predicate"></paramref>.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td><em>toExclusive</em></td>
-      <td><p>One greater than the last integer to pass to <paramref name="predicate"></paramref>.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>toExclusive</em></td>
+        <td><p>One greater than the last integer to pass to <paramref name="predicate"></paramref>.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Predicate`1.html" name="System.Predicate">Predicate</a>&lt;<a href="System.Int32.html" name="System.Int32">Int32</a>&gt;</td>
-      <td><em>predicate</em></td>
-      <td><p>Function that is evaluated from <paramref name="fromInclusive"></paramref> to <paramref name="toExclusive"></paramref> - 1.</p>
+      </tr>
+      <tr>
+        <td>System.Predicate&lt;System.Int32&gt;</td>
+        <td><em>predicate</em></td>
+        <td><p>Function that is evaluated from <paramref name="fromInclusive"></paramref> to <paramref name="toExclusive"></paramref> - 1.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p><c>true</c> if <paramref name="predicate"></paramref> returns <c>true</c> for all integers
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p><c>true</c> if <paramref name="predicate"></paramref> returns <c>true</c> for all integers
 starting from <paramref name="fromInclusive"></paramref> to <paramref name="toExclusive"></paramref> - 1.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L676"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ForAll_T__IEnumerable_T___Predicate_T__">ForAll&lt;T&gt;(IEnumerable&lt;T&gt;, Predicate&lt;T&gt;)</h4>
-<div class="markdown level1 summary"><p>Returns whether the <paramref name="predicate"></paramref> returns <c>true</c><br>for all elements in the <paramref name="collection"></paramref>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static bool ForAll<t>(IEnumerable<t> collection, Predicate<t> predicate)</t></t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L676">View Source</a>
+      </span>
+  <h4 id="ForAll_T__IEnumerable_T___Predicate_T__">ForAll&lt;T&gt;(IEnumerable&lt;T&gt;, Predicate&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns whether the <paramref name="predicate"></paramref> returns <c>true</c>
+for all elements in the <paramref name="collection"></paramref>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;T&gt;</td>
-      <td><em>collection</em></td>
-      <td><p>The collection from which elements will be drawn from to pass to <paramref name="predicate"></paramref>.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ForAll<t>(IEnumerable<t> collection, Predicate<t> predicate)</t></t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><em>collection</em></td>
+        <td><p>The collection from which elements will be drawn from to pass to <paramref name="predicate"></paramref>.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Predicate`1.html" name="System.Predicate">Predicate</a>&lt;T&gt;</td>
-      <td><em>predicate</em></td>
-      <td><p>Function that is evaluated on elements from <paramref name="collection"></paramref>.</p>
+      </tr>
+      <tr>
+        <td>System.Predicate&lt;T&gt;</td>
+        <td><em>predicate</em></td>
+        <td><p>Function that is evaluated on elements from <paramref name="collection"></paramref>.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p><c>true</c> if and only if <paramref name="predicate"></paramref> returns <c>true</c> for all elements in</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p><c>true</c> if and only if <paramref name="predicate"></paramref> returns <c>true</c> for all elements in</p>
 <p><paramref name="collection"></paramref>.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L599"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Invariant_Boolean_">Invariant(Boolean)</h4>
-<div class="markdown level1 summary"><p>Specifies a contract such that the expression <paramref name="condition"></paramref> will be true after every method or property on the enclosing class.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This contact can only be specified in a dedicated invariant method declared on a class.<br>This contract is not exposed to clients so may reference members less visible as the enclosing method.</br>The contract rewriter must be used for runtime enforcement of this invariant.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void Invariant(bool condition)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L599">View Source</a>
+      </span>
+  <h4 id="Invariant_Boolean_">Invariant(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Specifies a contract such that the expression <paramref name="condition"></paramref> will be true after every method or property on the enclosing class.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><em>condition</em></td>
-      <td><p>Boolean expression representing the contract.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Invariant_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This contact can only be specified in a dedicated invariant method declared on a class.
+This contract is not exposed to clients so may reference members less visible as the enclosing method.
+The contract rewriter must be used for runtime enforcement of this invariant.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Invariant(bool condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>condition</em></td>
+        <td><p>Boolean expression representing the contract.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L619"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Invariant_Boolean__String_">Invariant(Boolean, String)</h4>
-<div class="markdown level1 summary"><p>Specifies a contract such that the expression <paramref name="condition"></paramref> will be true after every method or property on the enclosing class.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This contact can only be specified in a dedicated invariant method declared on a class.<br>This contract is not exposed to clients so may reference members less visible as the enclosing method.</br>The contract rewriter must be used for runtime enforcement of this invariant.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void Invariant(bool condition, string userMessage)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L619">View Source</a>
+      </span>
+  <h4 id="Invariant_Boolean__String_">Invariant(Boolean, String)</h4>
+  <div class="markdown level1 summary"><p>Specifies a contract such that the expression <paramref name="condition"></paramref> will be true after every method or property on the enclosing class.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><em>condition</em></td>
-      <td><p>Boolean expression representing the contract.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Invariant_Boolean__String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This contact can only be specified in a dedicated invariant method declared on a class.
+This contract is not exposed to clients so may reference members less visible as the enclosing method.
+The contract rewriter must be used for runtime enforcement of this invariant.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Invariant(bool condition, string userMessage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>condition</em></td>
+        <td><p>Boolean expression representing the contract.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>userMessage</em></td>
-      <td><p>If it is not a constant string literal, then the contract may not be understood by tools.</p>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>userMessage</em></td>
+        <td><p>If it is not a constant string literal, then the contract may not be understood by tools.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L577"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="OldValue_T__T_">OldValue&lt;T&gt;(T)</h4>
-<div class="markdown level1 summary"><p>Represents the value of <paramref name="value"></paramref> as it was at the start of the method or property.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This method can only be used within the argument to the <a href="System.Diagnostics.Contracts.Contract.html">System.Diagnostics.Contracts.Contract.Ensures(System.Boolean)</a> contract.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static T OldValue<t>(T value)</t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L577">View Source</a>
+      </span>
+  <h4 id="OldValue_T__T_">OldValue&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"><p>Represents the value of <paramref name="value"></paramref> as it was at the start of the method or property.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><em>value</em></td>
-      <td><p>Value to represent.  This must be a field or parameter.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="OldValue_T__T__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method can only be used within the argument to the <a href="System.Diagnostics.Contracts.Contract.html">System.Diagnostics.Contracts.Contract.Ensures(System.Boolean)</a> contract.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T OldValue<t>(T value)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><em>value</em></td>
+        <td><p>Value to represent.  This must be a field or parameter.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><p>Value of <paramref name="value"></paramref> at the start of the method or property.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><p>Value of <paramref name="value"></paramref> at the start of the method or property.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L377"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Requires_Boolean_">Requires(Boolean)</h4>
-<div class="markdown level1 summary"><p>Specifies a contract such that the expression <paramref name="condition"></paramref> must be true before the enclosing method or property is invoked.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This call must happen at the beginning of a method or property before any other code.<br>This contract is exposed to clients so must only reference members at least as visible as the enclosing method.</br>Use this form when backward compatibility does not force you to throw a particular exception.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void Requires(bool condition)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L377">View Source</a>
+      </span>
+  <h4 id="Requires_Boolean_">Requires(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Specifies a contract such that the expression <paramref name="condition"></paramref> must be true before the enclosing method or property is invoked.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><em>condition</em></td>
-      <td><p>Boolean expression representing the contract.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Requires_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This call must happen at the beginning of a method or property before any other code.
+This contract is exposed to clients so must only reference members at least as visible as the enclosing method.
+Use this form when backward compatibility does not force you to throw a particular exception.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Requires(bool condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>condition</em></td>
+        <td><p>Boolean expression representing the contract.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L397"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Requires_Boolean__String_">Requires(Boolean, String)</h4>
-<div class="markdown level1 summary"><p>Specifies a contract such that the expression <paramref name="condition"></paramref> must be true before the enclosing method or property is invoked.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This call must happen at the beginning of a method or property before any other code.<br>This contract is exposed to clients so must only reference members at least as visible as the enclosing method.</br>Use this form when backward compatibility does not force you to throw a particular exception.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void Requires(bool condition, string userMessage)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L397">View Source</a>
+      </span>
+  <h4 id="Requires_Boolean__String_">Requires(Boolean, String)</h4>
+  <div class="markdown level1 summary"><p>Specifies a contract such that the expression <paramref name="condition"></paramref> must be true before the enclosing method or property is invoked.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><em>condition</em></td>
-      <td><p>Boolean expression representing the contract.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Requires_Boolean__String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This call must happen at the beginning of a method or property before any other code.
+This contract is exposed to clients so must only reference members at least as visible as the enclosing method.
+Use this form when backward compatibility does not force you to throw a particular exception.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Requires(bool condition, string userMessage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>condition</em></td>
+        <td><p>Boolean expression representing the contract.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>userMessage</em></td>
-      <td><p>If it is not a constant string literal, then the contract may not be understood by tools.</p>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>userMessage</em></td>
+        <td><p>If it is not a constant string literal, then the contract may not be understood by tools.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L416"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Requires_TException__Boolean_">Requires&lt;TException&gt;(Boolean)</h4>
-<div class="markdown level1 summary"><p>Specifies a contract such that the expression <paramref name="condition"></paramref> must be true before the enclosing method or property is invoked.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This call must happen at the beginning of a method or property before any other code.<br>This contract is exposed to clients so must only reference members at least as visible as the enclosing method.</br>Use this form when you want to throw a particular exception.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void Requires<texception>(bool condition)where TException : Exception</texception></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L416">View Source</a>
+      </span>
+  <h4 id="Requires_TException__Boolean_">Requires&lt;TException&gt;(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Specifies a contract such that the expression <paramref name="condition"></paramref> must be true before the enclosing method or property is invoked.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><em>condition</em></td>
-      <td><p>Boolean expression representing the contract.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Requires_TException__Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This call must happen at the beginning of a method or property before any other code.
+This contract is exposed to clients so must only reference members at least as visible as the enclosing method.
+Use this form when you want to throw a particular exception.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Requires<texception>(bool condition)where TException : Exception</texception></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>condition</em></td>
+        <td><p>Boolean expression representing the contract.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L437"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Requires_TException__Boolean__String_">Requires&lt;TException&gt;(Boolean, String)</h4>
-<div class="markdown level1 summary"><p>Specifies a contract such that the expression <paramref name="condition"></paramref> must be true before the enclosing method or property is invoked.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This call must happen at the beginning of a method or property before any other code.<br>This contract is exposed to clients so must only reference members at least as visible as the enclosing method.</br>Use this form when you want to throw a particular exception.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void Requires<texception>(bool condition, string userMessage)where TException : Exception</texception></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L437">View Source</a>
+      </span>
+  <h4 id="Requires_TException__Boolean__String_">Requires&lt;TException&gt;(Boolean, String)</h4>
+  <div class="markdown level1 summary"><p>Specifies a contract such that the expression <paramref name="condition"></paramref> must be true before the enclosing method or property is invoked.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><em>condition</em></td>
-      <td><p>Boolean expression representing the contract.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Requires_TException__Boolean__String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This call must happen at the beginning of a method or property before any other code.
+This contract is exposed to clients so must only reference members at least as visible as the enclosing method.
+Use this form when you want to throw a particular exception.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Requires<texception>(bool condition, string userMessage)where TException : Exception</texception></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>condition</em></td>
+        <td><p>Boolean expression representing the contract.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>userMessage</em></td>
-      <td><p>If it is not a constant string literal, then the contract may not be understood by tools.</p>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>userMessage</em></td>
+        <td><p>If it is not a constant string literal, then the contract may not be understood by tools.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L545"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Result_T___">Result&lt;T&gt;()</h4>
-<div class="markdown level1 summary"><p>Represents the result (a.k.a. return value) of a method or property.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This method can only be used within the argument to the <a href="System.Diagnostics.Contracts.Contract.html">System.Diagnostics.Contracts.Contract.Ensures(System.Boolean)</a> contract.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static T Result<t>()</t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L545">View Source</a>
+      </span>
+  <h4 id="Result_T___">Result&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Represents the result (a.k.a. return value) of a method or property.</p>
 </div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><p>Return value of the enclosing method or property.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Result_T____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method can only be used within the argument to the <a href="System.Diagnostics.Contracts.Contract.html">System.Diagnostics.Contracts.Contract.Ensures(System.Boolean)</a> contract.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T Result<t>()</t></code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><p>Return value of the enclosing method or property.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L561"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ValueAtReturn_T__out_T_">ValueAtReturn&lt;T&gt;(out T)</h4>
-<div class="markdown level1 summary"><p>Represents the final (output) value of an out parameter when returning from a method.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This method can only be used within the argument to the <a href="System.Diagnostics.Contracts.Contract.html">System.Diagnostics.Contracts.Contract.Ensures(System.Boolean)</a> contract.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static T ValueAtReturn<t>(out T value)</t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L561">View Source</a>
+      </span>
+  <h4 id="ValueAtReturn_T__out_T_">ValueAtReturn&lt;T&gt;(out T)</h4>
+  <div class="markdown level1 summary"><p>Represents the final (output) value of an out parameter when returning from a method.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><em>value</em></td>
-      <td><p>The out parameter.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="ValueAtReturn_T__out_T__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method can only be used within the argument to the <a href="System.Diagnostics.Contracts.Contract.html">System.Diagnostics.Contracts.Contract.Ensures(System.Boolean)</a> contract.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T ValueAtReturn<t>(out T value)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><em>value</em></td>
+        <td><p>The out parameter.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><p>The output value of the out parameter.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><p>The output value of the out parameter.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h3 id="events">Events</h3>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="events">Events</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/ContractsBCL.cs/#L121"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ContractFailed">ContractFailed</h4>
-<div class="markdown level1 summary"><p>Allows a managed application environment such as an interactive interpreter (IronPython)<br>to be notified of contract failures and</br>potentially &quot;handle&quot; them, either by throwing a particular exception type, etc.  If any of the<br>event handlers sets the Cancel flag in the ContractFailedEventArgs, then the Contract class will</br>not pop up an assert dialog box or trigger escalation policy.  Hooking this event requires<br>full trust, because it will inform you of bugs in the appdomain and because the event handler</br>could allow you to continue execution.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static event EventHandler<contractfailedeventargs> ContractFailed</contractfailedeventargs></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/ContractsBCL.cs/#L121">View Source</a>
+      </span>
+  <h4 id="ContractFailed">ContractFailed</h4>
+  <div class="markdown level1 summary"><p>Allows a managed application environment such as an interactive interpreter (IronPython)
+to be notified of contract failures and
+potentially &quot;handle&quot; them, either by throwing a particular exception type, etc.  If any of the
+event handlers sets the Cancel flag in the ContractFailedEventArgs, then the Contract class will
+not pop up an assert dialog box or trigger escalation policy.  Hooking this event requires
+full trust, because it will inform you of bugs in the appdomain and because the event handler
+could allow you to continue execution.</p>
 </div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event EventHandler<contractfailedeventargs> ContractFailed</contractfailedeventargs></code></pre>
+  </div>
 
 </article>
 </div>

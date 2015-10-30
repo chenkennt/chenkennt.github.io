@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class WriteOnceBlock&lt;T&gt; | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class WriteOnceBlock&lt;T&gt; | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -60,7 +60,8 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="WriteOnceBlock_T_">Class WriteOnceBlock&lt;T&gt;</h1>
-      <div class="markdown level0 summary"><p>Provides a buffer for receiving and storing at most one element in a network of dataflow blocks.</p><br></div>
+      <div class="markdown level0 summary"><p>Provides a buffer for receiving and storing at most one element in a network of dataflow blocks.</p>
+</div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
         <h5>Inheritance</h5>
@@ -73,16 +74,14 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public sealed class WriteOnceBlock<t> : IPropagatorBlock<t, t="">, ITargetBlock<t>, IReceivableSourceBlock<t>, ISourceBlock<t>, IDataflowBlock, IDebuggerDisplay</t></t></t></t,></t></code></pre>
       </div>
-      <h5 id="WriteOnceBlock_T__remarks">remarks</h5>
-      <div class="markdown level0 remarks"></div>
       <h3 id="constructors">Constructors</h3>
-      
-    <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/WriteOnceBlock.cs/#L53"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-  </span>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/WriteOnceBlock.cs/#L53">View Source</a>
+      </span>
   <h4 id="WriteOnceBlock_Func_T__T__">WriteOnceBlock(Func&lt;T, T&gt;)</h4>
-  <div class="markdown level1 summary"><p>Initializes the <a href="System.Threading.Tasks.Dataflow.WriteOnceBlock`1.html">System.Threading.Tasks.Dataflow.WriteOnceBlock`1</a>.</p><br></div>
-  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 summary"><p>Initializes the <a href="System.Threading.Tasks.Dataflow.WriteOnceBlock`1.html">System.Threading.Tasks.Dataflow.WriteOnceBlock`1</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -99,7 +98,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;T, T&gt;</td>
+        <td>System.Func&lt;T, T&gt;</td>
         <td><em>cloningFunction</em></td>
         <td><p>The function to use to clone the data when offered to other blocks.
 This may be null to indicate that no cloning need be performed.</p>
@@ -107,13 +106,13 @@ This may be null to indicate that no cloning need be performed.</p>
       </tr>
     </tbody>
   </table>
-      
-    <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/WriteOnceBlock.cs/#L64"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-  </span>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/WriteOnceBlock.cs/#L64">View Source</a>
+      </span>
   <h4 id="WriteOnceBlock_Func_T__T___DataflowBlockOptions_">WriteOnceBlock(Func&lt;T, T&gt;, DataflowBlockOptions)</h4>
-  <div class="markdown level1 summary"><p>Initializes the <a href="System.Threading.Tasks.Dataflow.WriteOnceBlock`1.html">System.Threading.Tasks.Dataflow.WriteOnceBlock`1</a> with the specified <a href="System.Threading.Tasks.Dataflow.DataflowBlockOptions.html">System.Threading.Tasks.Dataflow.DataflowBlockOptions</a>.</p><br></div>
-  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 summary"><p>Initializes the <a href="System.Threading.Tasks.Dataflow.WriteOnceBlock`1.html">System.Threading.Tasks.Dataflow.WriteOnceBlock`1</a> with the specified <a href="System.Threading.Tasks.Dataflow.DataflowBlockOptions.html">System.Threading.Tasks.Dataflow.DataflowBlockOptions</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -130,7 +129,7 @@ This may be null to indicate that no cloning need be performed.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;T, T&gt;</td>
+        <td>System.Func&lt;T, T&gt;</td>
         <td><em>cloningFunction</em></td>
         <td><p>The function to use to clone the data when offered to other blocks.
 This may be null to indicate that no cloning need be performed.</p>
@@ -144,441 +143,430 @@ This may be null to indicate that no cloning need be performed.</p>
       </tr>
     </tbody>
   </table>
-<h3 id="properties">Properties</h3>
+      <h3 id="properties">Properties</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/WriteOnceBlock.cs/#L347"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Completion">Completion</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public Task Completion { get; }</code></pre>
-</div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Task.html" name="System.Threading.Tasks.Task">Task</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h3 id="methods">Methods</h3>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/WriteOnceBlock.cs/#L347">View Source</a>
+      </span>
+  <h4 id="Completion">Completion</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Completion { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Threading.Tasks.Task.html" name="System.Threading.Tasks.Task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="methods">Methods</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/WriteOnceBlock.cs/#L225"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Complete__">Complete()</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void Complete()</code></pre>
-</div>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/WriteOnceBlock.cs/#L225">View Source</a>
+      </span>
+  <h4 id="Complete__">Complete()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Complete()</code></pre>
+  </div>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/WriteOnceBlock.cs/#L309"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="LinkTo_ITargetBlock_T___DataflowLinkOptions_">LinkTo(ITargetBlock&lt;T&gt;, DataflowLinkOptions)</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public IDisposable LinkTo(ITargetBlock<t> target, DataflowLinkOptions linkOptions)</t></code></pre>
-</div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html" name="System.Threading.Tasks.Dataflow.ITargetBlock">ITargetBlock</a>&lt;T&gt;</td>
-      <td><em>target</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.DataflowLinkOptions.html" name="System.Threading.Tasks.Dataflow.DataflowLinkOptions">DataflowLinkOptions</a></td>
-      <td><em>linkOptions</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.IDisposable.html" name="System.IDisposable">IDisposable</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/WriteOnceBlock.cs/#L309">View Source</a>
+      </span>
+  <h4 id="LinkTo_ITargetBlock_T___DataflowLinkOptions_">LinkTo(ITargetBlock&lt;T&gt;, DataflowLinkOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable LinkTo(ITargetBlock<t> target, DataflowLinkOptions linkOptions)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ITargetBlock&lt;T&gt;</td>
+        <td><em>target</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Threading.Tasks.Dataflow.DataflowLinkOptions.html" name="System.Threading.Tasks.Dataflow.DataflowLinkOptions">DataflowLinkOptions</a></td>
+        <td><em>linkOptions</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.IDisposable.html" name="System.IDisposable">IDisposable</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/WriteOnceBlock.cs/#L216"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IDataflowBlock_Fault_Exception_">IDataflowBlock.Fault(Exception)</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">void IDataflowBlock.Fault(Exception exception)</code></pre>
-</div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Exception.html" name="System.Exception">Exception</a></td>
-      <td><em>exception</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/WriteOnceBlock.cs/#L216">View Source</a>
+      </span>
+  <h4 id="IDataflowBlock_Fault_Exception_">IDataflowBlock.Fault(Exception)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IDataflowBlock.Fault(Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Exception.html" name="System.Exception">Exception</a></td>
+        <td><em>exception</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/WriteOnceBlock.cs/#L290"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="IReceivableSourceBlock_T__TryReceiveAll_out_IList_T__">IReceivableSourceBlock&lt;T&gt;.TryReceiveAll(out IList&lt;T&gt;)</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">bool IReceivableSourceBlock<t>.TryReceiveAll(out IList<t> items)</t></t></code></pre>
-</div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IList`1.html" name="System.Collections.Generic.IList">IList</a>&lt;T&gt;</td>
-      <td><em>items</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/WriteOnceBlock.cs/#L290">View Source</a>
+      </span>
+  <h4 id="IReceivableSourceBlock_T__TryReceiveAll_out_IList_T__">IReceivableSourceBlock&lt;T&gt;.TryReceiveAll(out IList&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IReceivableSourceBlock<t>.TryReceiveAll(out IList<t> items)</t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IList&lt;T&gt;</td>
+        <td><em>items</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/WriteOnceBlock.cs/#L391"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ISourceBlock_T__ConsumeMessage_DataflowMessageHeader__ITargetBlock_T___out_Boolean_">ISourceBlock&lt;T&gt;.ConsumeMessage(DataflowMessageHeader, ITargetBlock&lt;T&gt;, out Boolean)</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">T ISourceBlock<t>.ConsumeMessage(DataflowMessageHeader messageHeader, ITargetBlock<t> target, out bool messageConsumed)</t></t></code></pre>
-</div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.DataflowMessageHeader.html" name="System.Threading.Tasks.Dataflow.DataflowMessageHeader">DataflowMessageHeader</a></td>
-      <td><em>messageHeader</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html" name="System.Threading.Tasks.Dataflow.ITargetBlock">ITargetBlock</a>&lt;T&gt;</td>
-      <td><em>target</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><em>messageConsumed</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/WriteOnceBlock.cs/#L391">View Source</a>
+      </span>
+  <h4 id="ISourceBlock_T__ConsumeMessage_DataflowMessageHeader__ITargetBlock_T___out_Boolean_">ISourceBlock&lt;T&gt;.ConsumeMessage(DataflowMessageHeader, ITargetBlock&lt;T&gt;, out Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">T ISourceBlock<t>.ConsumeMessage(DataflowMessageHeader messageHeader, ITargetBlock<t> target, out bool messageConsumed)</t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Threading.Tasks.Dataflow.DataflowMessageHeader.html" name="System.Threading.Tasks.Dataflow.DataflowMessageHeader">DataflowMessageHeader</a></td>
+        <td><em>messageHeader</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ITargetBlock&lt;T&gt;</td>
+        <td><em>target</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>messageConsumed</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/WriteOnceBlock.cs/#L427"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ISourceBlock_T__ReleaseReservation_DataflowMessageHeader__ITargetBlock_T__">ISourceBlock&lt;T&gt;.ReleaseReservation(DataflowMessageHeader, ITargetBlock&lt;T&gt;)</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">void ISourceBlock<t>.ReleaseReservation(DataflowMessageHeader messageHeader, ITargetBlock<t> target)</t></t></code></pre>
-</div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.DataflowMessageHeader.html" name="System.Threading.Tasks.Dataflow.DataflowMessageHeader">DataflowMessageHeader</a></td>
-      <td><em>messageHeader</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html" name="System.Threading.Tasks.Dataflow.ITargetBlock">ITargetBlock</a>&lt;T&gt;</td>
-      <td><em>target</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/WriteOnceBlock.cs/#L427">View Source</a>
+      </span>
+  <h4 id="ISourceBlock_T__ReleaseReservation_DataflowMessageHeader__ITargetBlock_T__">ISourceBlock&lt;T&gt;.ReleaseReservation(DataflowMessageHeader, ITargetBlock&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ISourceBlock<t>.ReleaseReservation(DataflowMessageHeader messageHeader, ITargetBlock<t> target)</t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Threading.Tasks.Dataflow.DataflowMessageHeader.html" name="System.Threading.Tasks.Dataflow.DataflowMessageHeader">DataflowMessageHeader</a></td>
+        <td><em>messageHeader</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ITargetBlock&lt;T&gt;</td>
+        <td><em>target</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/WriteOnceBlock.cs/#L413"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ISourceBlock_T__ReserveMessage_DataflowMessageHeader__ITargetBlock_T__">ISourceBlock&lt;T&gt;.ReserveMessage(DataflowMessageHeader, ITargetBlock&lt;T&gt;)</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">bool ISourceBlock<t>.ReserveMessage(DataflowMessageHeader messageHeader, ITargetBlock<t> target)</t></t></code></pre>
-</div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.DataflowMessageHeader.html" name="System.Threading.Tasks.Dataflow.DataflowMessageHeader">DataflowMessageHeader</a></td>
-      <td><em>messageHeader</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html" name="System.Threading.Tasks.Dataflow.ITargetBlock">ITargetBlock</a>&lt;T&gt;</td>
-      <td><em>target</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/WriteOnceBlock.cs/#L413">View Source</a>
+      </span>
+  <h4 id="ISourceBlock_T__ReserveMessage_DataflowMessageHeader__ITargetBlock_T__">ISourceBlock&lt;T&gt;.ReserveMessage(DataflowMessageHeader, ITargetBlock&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ISourceBlock<t>.ReserveMessage(DataflowMessageHeader messageHeader, ITargetBlock<t> target)</t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Threading.Tasks.Dataflow.DataflowMessageHeader.html" name="System.Threading.Tasks.Dataflow.DataflowMessageHeader">DataflowMessageHeader</a></td>
+        <td><em>messageHeader</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ITargetBlock&lt;T&gt;</td>
+        <td><em>target</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/WriteOnceBlock.cs/#L350"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ITargetBlock_T__OfferMessage_DataflowMessageHeader__T__ISourceBlock_T___Boolean_">ITargetBlock&lt;T&gt;.OfferMessage(DataflowMessageHeader, T, ISourceBlock&lt;T&gt;, Boolean)</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">DataflowMessageStatus ITargetBlock<t>.OfferMessage(DataflowMessageHeader messageHeader, T messageValue, ISourceBlock<t> source, bool consumeToAccept)</t></t></code></pre>
-</div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.DataflowMessageHeader.html" name="System.Threading.Tasks.Dataflow.DataflowMessageHeader">DataflowMessageHeader</a></td>
-      <td><em>messageHeader</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>T</td>
-      <td><em>messageValue</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html" name="System.Threading.Tasks.Dataflow.ISourceBlock">ISourceBlock</a>&lt;T&gt;</td>
-      <td><em>source</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><em>consumeToAccept</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Dataflow.DataflowMessageStatus.html" name="System.Threading.Tasks.Dataflow.DataflowMessageStatus">DataflowMessageStatus</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/WriteOnceBlock.cs/#L350">View Source</a>
+      </span>
+  <h4 id="ITargetBlock_T__OfferMessage_DataflowMessageHeader__T__ISourceBlock_T___Boolean_">ITargetBlock&lt;T&gt;.OfferMessage(DataflowMessageHeader, T, ISourceBlock&lt;T&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DataflowMessageStatus ITargetBlock<t>.OfferMessage(DataflowMessageHeader messageHeader, T messageValue, ISourceBlock<t> source, bool consumeToAccept)</t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Threading.Tasks.Dataflow.DataflowMessageHeader.html" name="System.Threading.Tasks.Dataflow.DataflowMessageHeader">DataflowMessageHeader</a></td>
+        <td><em>messageHeader</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T</td>
+        <td><em>messageValue</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>System.Threading.Tasks.Dataflow.ISourceBlock&lt;T&gt;</td>
+        <td><em>source</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>consumeToAccept</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Threading.Tasks.Dataflow.DataflowMessageStatus.html" name="System.Threading.Tasks.Dataflow.DataflowMessageStatus">DataflowMessageStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/WriteOnceBlock.cs/#L523"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ToString__">ToString()</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
-</div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/WriteOnceBlock.cs/#L523">View Source</a>
+      </span>
+  <h4 id="ToString__">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/WriteOnceBlock.cs/#L268"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="TryReceive_Predicate_T___out_T_">TryReceive(Predicate&lt;T&gt;, out T)</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public bool TryReceive(Predicate<t> filter, out T item)</t></code></pre>
-</div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Predicate`1.html" name="System.Predicate">Predicate</a>&lt;T&gt;</td>
-      <td><em>filter</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>T</td>
-      <td><em>item</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/WriteOnceBlock.cs/#L268">View Source</a>
+      </span>
+  <h4 id="TryReceive_Predicate_T___out_T_">TryReceive(Predicate&lt;T&gt;, out T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryReceive(Predicate<t> filter, out T item)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Predicate&lt;T&gt;</td>
+        <td><em>filter</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T</td>
+        <td><em>item</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

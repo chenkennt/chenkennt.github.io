@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Namespace System.Security.Policy | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Namespace System.Security.Policy | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -61,33 +61,50 @@
           <div class="markdown level0 summary"></div>
           <div class="markdown level0 conceptual"></div>
           <div class="markdown level0 remarks"></div>
-          <h3 id="classes">Classes</h3>
-          <h4><a href="System.Security.Policy.ApplicationTrust.html" name="System.Security.Policy.ApplicationTrust">ApplicationTrust</a></h4>
-          <section></section>
-          <h4><a href="System.Security.Policy.Evidence.html" name="System.Security.Policy.Evidence">Evidence</a></h4>
-          <section>The Evidence class keeps track of information that can be used to make security decisions about<br>an assembly or an AppDomain.  There are two types of evidence, one is supplied by the CLR or a</br>host, the other supplied by the assembly itself.<br>We keep a dictionary that maps each type of possbile evidence to an EvidenceTypeDescriptor which</br>contains the evidence objects themselves if they exist as well as some extra metadata about that<br>type of evidence.  This dictionary is fully populated with keys for host evidence at all times and</br>for assembly evidence the first time the application evidence is touched.  This means that if a<br>Type key does not exist in the dictionary, then that particular type of evidence will never be</br>given to the assembly or AppDomain in question as host evidence.  The only exception is if the<br>user later manually adds host evidence via the AddHostEvidence API.</br><br>Assembly supplied evidence is created up front, however host supplied evidence may be lazily</br>created.  In the lazy creation case, the Type will map to either an EvidenceTypeDescriptor that does<br>not contain any evidence data or null.  As requests come in for that evidence, we'll populate the</br>EvidenceTypeDescriptor appropriately.</section>
-          <h4><a href="System.Security.Policy.EvidenceBase.html" name="System.Security.Policy.EvidenceBase">EvidenceBase</a></h4>
-          <section>Base class from which all objects to be used as Evidence must derive</section>
-          <h4><a href="System.Security.Policy.PolicyException.html" name="System.Security.Policy.PolicyException">PolicyException</a></h4>
-          <section></section>
-          <h4><a href="System.Security.Policy.PolicyStatement.html" name="System.Security.Policy.PolicyStatement">PolicyStatement</a></h4>
-          <section></section>
-          <h4><a href="System.Security.Policy.Site.html" name="System.Security.Policy.Site">Site</a></h4>
-          <section></section>
-          <h4><a href="System.Security.Policy.StrongName.html" name="System.Security.Policy.StrongName">StrongName</a></h4>
-          <section></section>
-          <h4><a href="System.Security.Policy.Url.html" name="System.Security.Policy.Url">Url</a></h4>
-          <section></section>
-          <h4><a href="System.Security.Policy.Zone.html" name="System.Security.Policy.Zone">Zone</a></h4>
-          <section></section>
-          <h3 id="interfaces">Interfaces</h3>
-          <h4><a href="System.Security.Policy.IIdentityPermissionFactory.html" name="System.Security.Policy.IIdentityPermissionFactory">IIdentityPermissionFactory</a></h4>
-          <section></section>
-          <h3 id="enums">Enums</h3>
-          <h4><a href="System.Security.Policy.ApplicationVersionMatch.html" name="System.Security.Policy.ApplicationVersionMatch">ApplicationVersionMatch</a></h4>
-          <section></section>
-          <h4><a href="System.Security.Policy.PolicyStatementAttribute.html" name="System.Security.Policy.PolicyStatementAttribute">PolicyStatementAttribute</a></h4>
-          <section></section>
+            <h3 id="classes">Classes</h3>
+              <h4><a href="System.Security.Policy.ApplicationTrust.html" name="System.Security.Policy.ApplicationTrust">ApplicationTrust</a></h4>
+              <section></section>
+              <h4><a href="System.Security.Policy.Evidence.html" name="System.Security.Policy.Evidence">Evidence</a></h4>
+              <section>The Evidence class keeps track of information that can be used to make security decisions about
+an assembly or an AppDomain.  There are two types of evidence, one is supplied by the CLR or a
+host, the other supplied by the assembly itself.
+
+
+We keep a dictionary that maps each type of possbile evidence to an EvidenceTypeDescriptor which
+contains the evidence objects themselves if they exist as well as some extra metadata about that
+type of evidence.  This dictionary is fully populated with keys for host evidence at all times and
+for assembly evidence the first time the application evidence is touched.  This means that if a
+Type key does not exist in the dictionary, then that particular type of evidence will never be
+given to the assembly or AppDomain in question as host evidence.  The only exception is if the
+user later manually adds host evidence via the AddHostEvidence API.
+
+
+Assembly supplied evidence is created up front, however host supplied evidence may be lazily
+created.  In the lazy creation case, the Type will map to either an EvidenceTypeDescriptor that does
+not contain any evidence data or null.  As requests come in for that evidence, we'll populate the
+EvidenceTypeDescriptor appropriately.</section>
+              <h4><a href="System.Security.Policy.EvidenceBase.html" name="System.Security.Policy.EvidenceBase">EvidenceBase</a></h4>
+              <section>Base class from which all objects to be used as Evidence must derive</section>
+              <h4><a href="System.Security.Policy.PolicyException.html" name="System.Security.Policy.PolicyException">PolicyException</a></h4>
+              <section></section>
+              <h4><a href="System.Security.Policy.PolicyStatement.html" name="System.Security.Policy.PolicyStatement">PolicyStatement</a></h4>
+              <section></section>
+              <h4><a href="System.Security.Policy.Site.html" name="System.Security.Policy.Site">Site</a></h4>
+              <section></section>
+              <h4><a href="System.Security.Policy.StrongName.html" name="System.Security.Policy.StrongName">StrongName</a></h4>
+              <section></section>
+              <h4><a href="System.Security.Policy.Url.html" name="System.Security.Policy.Url">Url</a></h4>
+              <section></section>
+              <h4><a href="System.Security.Policy.Zone.html" name="System.Security.Policy.Zone">Zone</a></h4>
+              <section></section>
+            <h3 id="interfaces">Interfaces</h3>
+              <h4><a href="System.Security.Policy.IIdentityPermissionFactory.html" name="System.Security.Policy.IIdentityPermissionFactory">IIdentityPermissionFactory</a></h4>
+              <section></section>
+            <h3 id="enums">Enums</h3>
+              <h4><a href="System.Security.Policy.ApplicationVersionMatch.html" name="System.Security.Policy.ApplicationVersionMatch">ApplicationVersionMatch</a></h4>
+              <section></section>
+              <h4><a href="System.Security.Policy.PolicyStatementAttribute.html" name="System.Security.Policy.PolicyStatementAttribute">PolicyStatementAttribute</a></h4>
+              <section></section>
 
 </article>
 </div>

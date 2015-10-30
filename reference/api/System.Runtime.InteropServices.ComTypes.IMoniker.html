@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Interface IMoniker | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Interface IMoniker | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -55,6 +55,748 @@
       </div>
       <div class="article row grid-right"><div class="col-md-10">
         <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IMoniker.cs/#L25" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="IMoniker">Interface IMoniker</h1>
+      <div class="markdown level0 summary"></div>
+      <div class="markdown level0 conceptual"></div>
+      <h6><strong>Namespace</strong>:System.Runtime.InteropServices.ComTypes</h6>
+      <h6><strong>Assembly</strong>:mscorlib.dll</h6>
+      <h5 id="IMoniker_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public interface IMoniker</code></pre>
+      </div>
+      <h3 id="methods">Methods</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IMoniker.cs/#L41">View Source</a>
+      </span>
+  <h4 id="BindToObject_IBindCtx__IMoniker__ref_Guid__out_Object_">BindToObject(IBindCtx, IMoniker, ref Guid, out Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void BindToObject(IBindCtx pbc, IMoniker pmkToLeft, ref Guid riidResult, out object ppvResult)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ComTypes.IBindCtx.html" name="System.Runtime.InteropServices.ComTypes.IBindCtx">IBindCtx</a></td>
+        <td><em>pbc</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ComTypes.IMoniker.html" name="System.Runtime.InteropServices.ComTypes.IMoniker">IMoniker</a></td>
+        <td><em>pmkToLeft</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Guid.html" name="System.Guid">Guid</a></td>
+        <td><em>riidResult</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>ppvResult</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IMoniker.cs/#L42">View Source</a>
+      </span>
+  <h4 id="BindToStorage_IBindCtx__IMoniker__ref_Guid__out_Object_">BindToStorage(IBindCtx, IMoniker, ref Guid, out Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void BindToStorage(IBindCtx pbc, IMoniker pmkToLeft, ref Guid riid, out object ppvObj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ComTypes.IBindCtx.html" name="System.Runtime.InteropServices.ComTypes.IBindCtx">IBindCtx</a></td>
+        <td><em>pbc</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ComTypes.IMoniker.html" name="System.Runtime.InteropServices.ComTypes.IMoniker">IMoniker</a></td>
+        <td><em>pmkToLeft</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Guid.html" name="System.Guid">Guid</a></td>
+        <td><em>riid</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>ppvObj</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IMoniker.cs/#L53">View Source</a>
+      </span>
+  <h4 id="CommonPrefixWith_IMoniker__out_IMoniker_">CommonPrefixWith(IMoniker, out IMoniker)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CommonPrefixWith(IMoniker pmkOther, out IMoniker ppmkPrefix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ComTypes.IMoniker.html" name="System.Runtime.InteropServices.ComTypes.IMoniker">IMoniker</a></td>
+        <td><em>pmkOther</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ComTypes.IMoniker.html" name="System.Runtime.InteropServices.ComTypes.IMoniker">IMoniker</a></td>
+        <td><em>ppmkPrefix</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IMoniker.cs/#L44">View Source</a>
+      </span>
+  <h4 id="ComposeWith_IMoniker__Boolean__out_IMoniker_">ComposeWith(IMoniker, Boolean, out IMoniker)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ComposeWith(IMoniker pmkRight, bool fOnlyIfNotGeneric, out IMoniker ppmkComposite)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ComTypes.IMoniker.html" name="System.Runtime.InteropServices.ComTypes.IMoniker">IMoniker</a></td>
+        <td><em>pmkRight</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>fOnlyIfNotGeneric</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ComTypes.IMoniker.html" name="System.Runtime.InteropServices.ComTypes.IMoniker">IMoniker</a></td>
+        <td><em>ppmkComposite</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IMoniker.cs/#L45">View Source</a>
+      </span>
+  <h4 id="Enum_Boolean__out_IEnumMoniker_">Enum(Boolean, out IEnumMoniker)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Enum(bool fForward, out IEnumMoniker ppenumMoniker)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>fForward</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ComTypes.IEnumMoniker.html" name="System.Runtime.InteropServices.ComTypes.IEnumMoniker">IEnumMoniker</a></td>
+        <td><em>ppenumMoniker</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IMoniker.cs/#L31">View Source</a>
+      </span>
+  <h4 id="GetClassID_out_Guid_">GetClassID(out Guid)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GetClassID(out Guid pClassID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Guid.html" name="System.Guid">Guid</a></td>
+        <td><em>pClassID</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IMoniker.cs/#L55">View Source</a>
+      </span>
+  <h4 id="GetDisplayName_IBindCtx__IMoniker__out_String_">GetDisplayName(IBindCtx, IMoniker, out String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GetDisplayName(IBindCtx pbc, IMoniker pmkToLeft, out string ppszDisplayName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ComTypes.IBindCtx.html" name="System.Runtime.InteropServices.ComTypes.IBindCtx">IBindCtx</a></td>
+        <td><em>pbc</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ComTypes.IMoniker.html" name="System.Runtime.InteropServices.ComTypes.IMoniker">IMoniker</a></td>
+        <td><em>pmkToLeft</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>ppszDisplayName</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IMoniker.cs/#L38">View Source</a>
+      </span>
+  <h4 id="GetSizeMax_out_Int64_">GetSizeMax(out Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GetSizeMax(out long pcbSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int64.html" name="System.Int64">Int64</a></td>
+        <td><em>pcbSize</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IMoniker.cs/#L51">View Source</a>
+      </span>
+  <h4 id="GetTimeOfLastChange_IBindCtx__IMoniker__out_FILETIME_">GetTimeOfLastChange(IBindCtx, IMoniker, out FILETIME)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GetTimeOfLastChange(IBindCtx pbc, IMoniker pmkToLeft, out FILETIME pFileTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ComTypes.IBindCtx.html" name="System.Runtime.InteropServices.ComTypes.IBindCtx">IBindCtx</a></td>
+        <td><em>pbc</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ComTypes.IMoniker.html" name="System.Runtime.InteropServices.ComTypes.IMoniker">IMoniker</a></td>
+        <td><em>pmkToLeft</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ComTypes.FILETIME.html" name="System.Runtime.InteropServices.ComTypes.FILETIME">FILETIME</a></td>
+        <td><em>pFileTime</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IMoniker.cs/#L48">View Source</a>
+      </span>
+  <h4 id="Hash_out_Int32_">Hash(out Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Hash(out int pdwHash)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>pdwHash</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IMoniker.cs/#L52">View Source</a>
+      </span>
+  <h4 id="Inverse_out_IMoniker_">Inverse(out IMoniker)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Inverse(out IMoniker ppmk)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ComTypes.IMoniker.html" name="System.Runtime.InteropServices.ComTypes.IMoniker">IMoniker</a></td>
+        <td><em>ppmk</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IMoniker.cs/#L34">View Source</a>
+      </span>
+  <h4 id="IsDirty__">IsDirty()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int IsDirty()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IMoniker.cs/#L46">View Source</a>
+      </span>
+  <h4 id="IsEqual_IMoniker_">IsEqual(IMoniker)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int IsEqual(IMoniker pmkOtherMoniker)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ComTypes.IMoniker.html" name="System.Runtime.InteropServices.ComTypes.IMoniker">IMoniker</a></td>
+        <td><em>pmkOtherMoniker</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IMoniker.cs/#L49">View Source</a>
+      </span>
+  <h4 id="IsRunning_IBindCtx__IMoniker__IMoniker_">IsRunning(IBindCtx, IMoniker, IMoniker)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int IsRunning(IBindCtx pbc, IMoniker pmkToLeft, IMoniker pmkNewlyRunning)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ComTypes.IBindCtx.html" name="System.Runtime.InteropServices.ComTypes.IBindCtx">IBindCtx</a></td>
+        <td><em>pbc</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ComTypes.IMoniker.html" name="System.Runtime.InteropServices.ComTypes.IMoniker">IMoniker</a></td>
+        <td><em>pmkToLeft</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ComTypes.IMoniker.html" name="System.Runtime.InteropServices.ComTypes.IMoniker">IMoniker</a></td>
+        <td><em>pmkNewlyRunning</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IMoniker.cs/#L57">View Source</a>
+      </span>
+  <h4 id="IsSystemMoniker_out_Int32_">IsSystemMoniker(out Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int IsSystemMoniker(out int pdwMksys)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>pdwMksys</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IMoniker.cs/#L36">View Source</a>
+      </span>
+  <h4 id="Load_IStream_">Load(IStream)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Load(IStream pStm)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ComTypes.IStream.html" name="System.Runtime.InteropServices.ComTypes.IStream">IStream</a></td>
+        <td><em>pStm</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IMoniker.cs/#L56">View Source</a>
+      </span>
+  <h4 id="ParseDisplayName_IBindCtx__IMoniker__String__out_Int32__out_IMoniker_">ParseDisplayName(IBindCtx, IMoniker, String, out Int32, out IMoniker)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ParseDisplayName(IBindCtx pbc, IMoniker pmkToLeft, string pszDisplayName, out int pchEaten, out IMoniker ppmkOut)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ComTypes.IBindCtx.html" name="System.Runtime.InteropServices.ComTypes.IBindCtx">IBindCtx</a></td>
+        <td><em>pbc</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ComTypes.IMoniker.html" name="System.Runtime.InteropServices.ComTypes.IMoniker">IMoniker</a></td>
+        <td><em>pmkToLeft</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>pszDisplayName</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>pchEaten</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ComTypes.IMoniker.html" name="System.Runtime.InteropServices.ComTypes.IMoniker">IMoniker</a></td>
+        <td><em>ppmkOut</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IMoniker.cs/#L43">View Source</a>
+      </span>
+  <h4 id="Reduce_IBindCtx__Int32__ref_IMoniker__out_IMoniker_">Reduce(IBindCtx, Int32, ref IMoniker, out IMoniker)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Reduce(IBindCtx pbc, int dwReduceHowFar, ref IMoniker ppmkToLeft, out IMoniker ppmkReduced)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ComTypes.IBindCtx.html" name="System.Runtime.InteropServices.ComTypes.IBindCtx">IBindCtx</a></td>
+        <td><em>pbc</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>dwReduceHowFar</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ComTypes.IMoniker.html" name="System.Runtime.InteropServices.ComTypes.IMoniker">IMoniker</a></td>
+        <td><em>ppmkToLeft</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ComTypes.IMoniker.html" name="System.Runtime.InteropServices.ComTypes.IMoniker">IMoniker</a></td>
+        <td><em>ppmkReduced</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IMoniker.cs/#L54">View Source</a>
+      </span>
+  <h4 id="RelativePathTo_IMoniker__out_IMoniker_">RelativePathTo(IMoniker, out IMoniker)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RelativePathTo(IMoniker pmkOther, out IMoniker ppmkRelPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ComTypes.IMoniker.html" name="System.Runtime.InteropServices.ComTypes.IMoniker">IMoniker</a></td>
+        <td><em>pmkOther</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ComTypes.IMoniker.html" name="System.Runtime.InteropServices.ComTypes.IMoniker">IMoniker</a></td>
+        <td><em>ppmkRelPath</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IMoniker.cs/#L37">View Source</a>
+      </span>
+  <h4 id="Save_IStream__Boolean_">Save(IStream, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Save(IStream pStm, bool fClearDirty)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.InteropServices.ComTypes.IStream.html" name="System.Runtime.InteropServices.ComTypes.IStream">IStream</a></td>
+        <td><em>pStm</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>fClearDirty</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

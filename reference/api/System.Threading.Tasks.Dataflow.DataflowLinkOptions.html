@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class DataflowLinkOptions | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class DataflowLinkOptions | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -60,7 +60,8 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="DataflowLinkOptions">Class DataflowLinkOptions</h1>
-      <div class="markdown level0 summary"><p>Provides options used to configure a link between dataflow blocks.</p><br></div>
+      <div class="markdown level0 summary"><p>Provides options used to configure a link between dataflow blocks.</p>
+</div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
         <h5>Inheritance</h5>
@@ -73,103 +74,108 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public class DataflowLinkOptions</code></pre>
       </div>
-      <h5 id="DataflowLinkOptions_remarks">remarks</h5>
-      <div class="markdown level0 remarks"><p><see cref="T:System.Threading.Tasks.Dataflow.DataflowLinkOptions"></see> is mutable and can be configured through its properties.<br>When specific configuration options are not set, the following defaults are used:</p><br><p><list type="table"><listheader><term>Options</term><description>Default</description></listheader><item><term>PropagateCompletion</term><description>False</description></item><item><term>MaxMessages</term><description>DataflowBlockOptions.Unbounded (-1)</description></item><item><term>Append</term><description>True</description></item></list></br>Dataflow blocks capture the state of the options at linking. Subsequent changes to the provided<p><br><p><see cref="T:System.Threading.Tasks.Dataflow.DataflowLinkOptions"></see> instance should not affect the behavior of a link.</p></br></div>
+      <h5 id="DataflowLinkOptions_remarks"><strong>Remarks<strong></strong></strong></h5>
+      <div class="markdown level0 remarks"><p><see cref="T:System.Threading.Tasks.Dataflow.DataflowLinkOptions"></see> is mutable and can be configured through its properties.
+When specific configuration options are not set, the following defaults are used:</p>
+<p><list type="table"><listheader><term>Options</term><description>Default</description></listheader><item><term>PropagateCompletion</term><description>False</description></item><item><term>MaxMessages</term><description>DataflowBlockOptions.Unbounded (-1)</description></item><item><term>Append</term><description>True</description></item></list>
+Dataflow blocks capture the state of the options at linking. Subsequent changes to the provided</p>
+<p><see cref="T:System.Threading.Tasks.Dataflow.DataflowLinkOptions"></see> instance should not affect the behavior of a link.</p>
+</div>
       <h3 id="constructors">Constructors</h3>
-      
-    <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowLinkOptions.cs/#L75"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-  </span>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowLinkOptions.cs/#L75">View Source</a>
+      </span>
   <h4 id="DataflowLinkOptions__">DataflowLinkOptions()</h4>
-  <div class="markdown level1 summary"><p>Initializes the <a href="System.Threading.Tasks.Dataflow.DataflowLinkOptions.html">System.Threading.Tasks.Dataflow.DataflowLinkOptions</a>.</p><br></div>
-  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 summary"><p>Initializes the <a href="System.Threading.Tasks.Dataflow.DataflowLinkOptions.html">System.Threading.Tasks.Dataflow.DataflowLinkOptions</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public DataflowLinkOptions()</code></pre>
   </div>
-<h3 id="properties">Properties</h3>
+      <h3 id="properties">Properties</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowLinkOptions.cs/#L103"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Append">Append</h4>
-<div class="markdown level1 summary"><p>Gets or sets whether the link should be appended to the source’s list of links, or whether it should be prepended.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public bool Append { get; set; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowLinkOptions.cs/#L103">View Source</a>
+      </span>
+  <h4 id="Append">Append</h4>
+  <div class="markdown level1 summary"><p>Gets or sets whether the link should be appended to the source’s list of links, or whether it should be prepended.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Append { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowLinkOptions.cs/#L91"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="MaxMessages">MaxMessages</h4>
-<div class="markdown level1 summary"><p>Gets or sets the maximum number of messages that may be consumed across the link.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public int MaxMessages { get; set; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowLinkOptions.cs/#L91">View Source</a>
+      </span>
+  <h4 id="MaxMessages">MaxMessages</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the maximum number of messages that may be consumed across the link.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxMessages { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowLinkOptions.cs/#L80"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="PropagateCompletion">PropagateCompletion</h4>
-<div class="markdown level1 summary"><p>Gets or sets whether the linked target will have completion and faulting notification propagated to it automatically.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public bool PropagateCompletion { get; set; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowLinkOptions.cs/#L80">View Source</a>
+      </span>
+  <h4 id="PropagateCompletion">PropagateCompletion</h4>
+  <div class="markdown level1 summary"><p>Gets or sets whether the linked target will have completion and faulting notification propagated to it automatically.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PropagateCompletion { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

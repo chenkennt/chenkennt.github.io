@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Struct Plane | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Struct Plane | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -55,6 +55,781 @@
       </div>
       <div class="article row grid-right"><div class="col-md-10">
         <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Plane.cs/#L12" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="Plane">Struct Plane</h1>
+      <div class="markdown level0 summary"><p>A structure encapsulating a 3D Plane</p>
+</div>
+      <div class="markdown level0 conceptual"></div>
+      <h6><strong>Namespace</strong>:System.Numerics</h6>
+      <h6><strong>Assembly</strong>:System.Numerics.Vectors.dll</h6>
+      <h5 id="Plane_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public struct Plane : IEquatable<plane></plane></code></pre>
+      </div>
+      <h3 id="constructors">Constructors</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Plane.cs/#L41">View Source</a>
+      </span>
+  <h4 id="Plane_Vector3__Single_">Plane(Vector3, Single)</h4>
+  <div class="markdown level1 summary"><p>Constructs a Plane from the given normal and distance along the normal from the origin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Plane(Vector3 normal, float d)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector3.html" name="System.Numerics.Vector3">Vector3</a></td>
+        <td><em>normal</em></td>
+        <td><p>The Plane&#39;s normal vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Single.html" name="System.Single">Single</a></td>
+        <td><em>d</em></td>
+        <td><p>The Plane&#39;s distance from the origin along its normal vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Plane.cs/#L52">View Source</a>
+      </span>
+  <h4 id="Plane_Vector4_">Plane(Vector4)</h4>
+  <div class="markdown level1 summary"><p>Constructs a Plane from the given Vector4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Plane(Vector4 value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector4.html" name="System.Numerics.Vector4">Vector4</a></td>
+        <td><em>value</em></td>
+        <td><p>A vector whose first 3 elements describe the normal vector,
+and whose W component defines the distance along that normal from the origin.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Plane.cs/#L30">View Source</a>
+      </span>
+  <h4 id="Plane_Single__Single__Single__Single_">Plane(Single, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Constructs a Plane from the X, Y, and Z components of its normal, and its distance from the origin on that normal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Plane(float x, float y, float z, float d)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Single.html" name="System.Single">Single</a></td>
+        <td><em>x</em></td>
+        <td><p>The X-component of the normal.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Single.html" name="System.Single">Single</a></td>
+        <td><em>y</em></td>
+        <td><p>The Y-component of the normal.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Single.html" name="System.Single">Single</a></td>
+        <td><em>z</em></td>
+        <td><p>The Z-component of the normal.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Single.html" name="System.Single">Single</a></td>
+        <td><em>d</em></td>
+        <td><p>The distance of the Plane along its normal from the origin.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="fields">Fields</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Plane.cs/#L21">View Source</a>
+      </span>
+  <h4 id="D">D</h4>
+  <div class="markdown level1 summary"><p>The distance of the Plane along its normal from the origin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float D</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Plane.cs/#L17">View Source</a>
+      </span>
+  <h4 id="Normal">Normal</h4>
+  <div class="markdown level1 summary"><p>The normal vector of the Plane.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 Normal</code></pre>
+  </div>
+      <h3 id="methods">Methods</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Plane.cs/#L65">View Source</a>
+      </span>
+  <h4 id="CreateFromVertices_Vector3__Vector3__Vector3_">CreateFromVertices(Vector3, Vector3, Vector3)</h4>
+  <div class="markdown level1 summary"><p>Creates a Plane that contains the three given points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Plane CreateFromVertices(Vector3 point1, Vector3 point2, Vector3 point3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Vector3.html" name="System.Numerics.Vector3">Vector3</a></td>
+        <td><em>point1</em></td>
+        <td><p>The first point defining the Plane.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Vector3.html" name="System.Numerics.Vector3">Vector3</a></td>
+        <td><em>point2</em></td>
+        <td><p>The second point defining the Plane.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Vector3.html" name="System.Numerics.Vector3">Vector3</a></td>
+        <td><em>point3</em></td>
+        <td><p>The third point defining the Plane.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Plane.html" name="System.Numerics.Plane">Plane</a></td>
+        <td><p>The Plane containing the three points.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Plane.cs/#L227">View Source</a>
+      </span>
+  <h4 id="Dot_Plane__Vector4_">Dot(Plane, Vector4)</h4>
+  <div class="markdown level1 summary"><p>Calculates the dot product of a Plane and Vector4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Dot(Plane plane, Vector4 value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Plane.html" name="System.Numerics.Plane">Plane</a></td>
+        <td><em>plane</em></td>
+        <td><p>The Plane.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Vector4.html" name="System.Numerics.Vector4">Vector4</a></td>
+        <td><em>value</em></td>
+        <td><p>The Vector4.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Single.html" name="System.Single">Single</a></td>
+        <td><p>The dot product.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Plane.cs/#L242">View Source</a>
+      </span>
+  <h4 id="DotCoordinate_Plane__Vector3_">DotCoordinate(Plane, Vector3)</h4>
+  <div class="markdown level1 summary"><p>Returns the dot product of a specified Vector3 and the normal vector of this Plane plus the distance (D) value of the Plane.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float DotCoordinate(Plane plane, Vector3 value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Plane.html" name="System.Numerics.Plane">Plane</a></td>
+        <td><em>plane</em></td>
+        <td><p>The plane.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Vector3.html" name="System.Numerics.Vector3">Vector3</a></td>
+        <td><em>value</em></td>
+        <td><p>The Vector3.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Single.html" name="System.Single">Single</a></td>
+        <td><p>The resulting value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Plane.cs/#L264">View Source</a>
+      </span>
+  <h4 id="DotNormal_Plane__Vector3_">DotNormal(Plane, Vector3)</h4>
+  <div class="markdown level1 summary"><p>Returns the dot product of a specified Vector3 and the Normal vector of this Plane.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float DotNormal(Plane plane, Vector3 value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Plane.html" name="System.Numerics.Plane">Plane</a></td>
+        <td><em>plane</em></td>
+        <td><p>The plane.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Vector3.html" name="System.Numerics.Vector3">Vector3</a></td>
+        <td><em>value</em></td>
+        <td><p>The Vector3.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Single.html" name="System.Single">Single</a></td>
+        <td><p>The resulting dot product.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Plane.cs/#L314">View Source</a>
+      </span>
+  <h4 id="Equals_Plane_">Equals(Plane)</h4>
+  <div class="markdown level1 summary"><p>Returns a boolean indicating whether the given Plane is equal to this Plane instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(Plane other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Plane.html" name="System.Numerics.Plane">Plane</a></td>
+        <td><em>other</em></td>
+        <td><p>The Plane to compare this instance to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>True if the other Plane is equal to this instance; False otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Plane.cs/#L335">View Source</a>
+      </span>
+  <h4 id="Equals_Object_">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Returns a boolean indicating whether the given Object is equal to this Plane instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>obj</em></td>
+        <td><p>The Object to compare against.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>True if the Object is equal to this Plane; False otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Plane.cs/#L361">View Source</a>
+      </span>
+  <h4 id="GetHashCode__">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Returns the hash code for this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><p>The hash code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Plane.cs/#L117">View Source</a>
+      </span>
+  <h4 id="Normalize_Plane_">Normalize(Plane)</h4>
+  <div class="markdown level1 summary"><p>Creates a new Plane whose normal vector is the source Plane&#39;s normal vector normalized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Plane Normalize(Plane value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Plane.html" name="System.Numerics.Plane">Plane</a></td>
+        <td><em>value</em></td>
+        <td><p>The source Plane.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Plane.html" name="System.Numerics.Plane">Plane</a></td>
+        <td><p>The normalized Plane.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Plane.cs/#L350">View Source</a>
+      </span>
+  <h4 id="ToString__">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns a String representing this Plane instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><p>The string representation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Plane.cs/#L160">View Source</a>
+      </span>
+  <h4 id="Transform_Plane__Matrix4x4_">Transform(Plane, Matrix4x4)</h4>
+  <div class="markdown level1 summary"><p>Transforms a normalized Plane by a Matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Plane Transform(Plane plane, Matrix4x4 matrix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Plane.html" name="System.Numerics.Plane">Plane</a></td>
+        <td><em>plane</em></td>
+        <td><p>The normalized Plane to transform.
+This Plane must already be normalized, so that its Normal vector is of unit length, before this method is called.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Matrix4x4.html" name="System.Numerics.Matrix4x4">Matrix4x4</a></td>
+        <td><em>matrix</em></td>
+        <td><p>The transformation matrix to apply to the Plane.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Plane.html" name="System.Numerics.Plane">Plane</a></td>
+        <td><p>The transformed Plane.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Plane.cs/#L182">View Source</a>
+      </span>
+  <h4 id="Transform_Plane__Quaternion_">Transform(Plane, Quaternion)</h4>
+  <div class="markdown level1 summary"><p>Transforms a normalized Plane by a Quaternion rotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Plane Transform(Plane plane, Quaternion rotation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Plane.html" name="System.Numerics.Plane">Plane</a></td>
+        <td><em>plane</em></td>
+        <td><p>The normalized Plane to transform.
+This Plane must already be normalized, so that its Normal vector is of unit length, before this method is called.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Quaternion.html" name="System.Numerics.Quaternion">Quaternion</a></td>
+        <td><em>rotation</em></td>
+        <td><p>The Quaternion rotation to apply to the Plane.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Plane.html" name="System.Numerics.Plane">Plane</a></td>
+        <td><p>A new Plane that results from applying the rotation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="operators">Operators</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Plane.cs/#L285">View Source</a>
+      </span>
+  <h4 id="Equality_Plane__Plane_">Equality(Plane, Plane)</h4>
+  <div class="markdown level1 summary"><p>Returns a boolean indicating whether the two given Planes are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Plane value1, Plane value2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Plane.html" name="System.Numerics.Plane">Plane</a></td>
+        <td><em>value1</em></td>
+        <td><p>The first Plane to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Plane.html" name="System.Numerics.Plane">Plane</a></td>
+        <td><em>value2</em></td>
+        <td><p>The second Plane to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>True if the Planes are equal; False otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Numerics.Vectors/src/System/Numerics/Plane.cs/#L300">View Source</a>
+      </span>
+  <h4 id="Inequality_Plane__Plane_">Inequality(Plane, Plane)</h4>
+  <div class="markdown level1 summary"><p>Returns a boolean indicating whether the two given Planes are not equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Plane value1, Plane value2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Numerics.Plane.html" name="System.Numerics.Plane">Plane</a></td>
+        <td><em>value1</em></td>
+        <td><p>The first Plane to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Numerics.Plane.html" name="System.Numerics.Plane">Plane</a></td>
+        <td><em>value2</em></td>
+        <td><p>The second Plane to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>True if the Planes are not equal; False if they are equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

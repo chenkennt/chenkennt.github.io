@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class DynamicObject | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class DynamicObject | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -60,7 +60,12 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="DynamicObject">Class DynamicObject</h1>
-      <div class="markdown level0 summary"><p>Provides a simple class that can be inherited from to create an object with dynamic behavior<br>at runtime.  Subclasses can override the various binder methods (GetMember, SetMember, Call, etc...)</br>to provide custom behavior that will be invoked at runtime.</p><br><p>If a method is not overridden then the DynamicObject does not directly support that behavior and</br>the call site will determine how the binding should be performed.<p><br></div>
+      <div class="markdown level0 summary"><p>Provides a simple class that can be inherited from to create an object with dynamic behavior
+at runtime.  Subclasses can override the various binder methods (GetMember, SetMember, Call, etc...)
+to provide custom behavior that will be invoked at runtime.</p>
+<p>If a method is not overridden then the DynamicObject does not directly support that behavior and
+the call site will determine how the binding should be performed.</p>
+</div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
         <h5>Inheritance</h5>
@@ -73,748 +78,773 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public class DynamicObject : IDynamicMetaObjectProvider</code></pre>
       </div>
-      <h5 id="DynamicObject_remarks">remarks</h5>
-      <div class="markdown level0 remarks"></div>
       <h3 id="constructors">Constructors</h3>
-      
-    <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicObject.cs/#L27"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-  </span>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicObject.cs/#L27">View Source</a>
+      </span>
   <h4 id="DynamicObject__">DynamicObject()</h4>
-  <div class="markdown level1 summary"><p>Enables derived types to create a new instance of DynamicObject.  DynamicObject instances cannot be<br>directly instantiated because they have no implementation of dynamic behavior.</p><br></div>
-  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 summary"><p>Enables derived types to create a new instance of DynamicObject.  DynamicObject instances cannot be
+directly instantiated because they have no implementation of dynamic behavior.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected DynamicObject()</code></pre>
   </div>
-<h3 id="methods">Methods</h3>
+      <h3 id="methods">Methods</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicObject.cs/#L215"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="GetDynamicMemberNames__">GetDynamicMemberNames()</h4>
-<div class="markdown level1 summary"><p>Returns the enumeration of all dynamic member names.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public virtual IEnumerable<string> GetDynamicMemberNames()</string></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicObject.cs/#L215">View Source</a>
+      </span>
+  <h4 id="GetDynamicMemberNames__">GetDynamicMemberNames()</h4>
+  <div class="markdown level1 summary"><p>Returns the enumeration of all dynamic member names.</p>
 </div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.String.html" name="System.String">String</a>&gt;</td>
-      <td><p>The list of dynamic member names.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable<string> GetDynamicMemberNames()</string></code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;System.String&gt;</td>
+        <td><p>The list of dynamic member names.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicObject.cs/#L844"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="GetMetaObject_Expression_">GetMetaObject(Expression)</h4>
-<div class="markdown level1 summary"><p>The provided MetaObject will dispatch to the Dynamic virtual methods.<br>The object can be encapsulated inside of another MetaObject to</br>provide custom behavior for individual actions.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public virtual DynamicMetaObject GetMetaObject(Expression parameter)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicObject.cs/#L844">View Source</a>
+      </span>
+  <h4 id="GetMetaObject_Expression_">GetMetaObject(Expression)</h4>
+  <div class="markdown level1 summary"><p>The provided MetaObject will dispatch to the Dynamic virtual methods.
+The object can be encapsulated inside of another MetaObject to
+provide custom behavior for individual actions.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Expression</td>
-      <td><em>parameter</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Dynamic.DynamicMetaObject.html" name="System.Dynamic.DynamicMetaObject">DynamicMetaObject</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DynamicMetaObject GetMetaObject(Expression parameter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Expression</td>
+        <td><em>parameter</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Dynamic.DynamicMetaObject.html" name="System.Dynamic.DynamicMetaObject">DynamicMetaObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicObject.cs/#L145"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="TryBinaryOperation_BinaryOperationBinder__Object__out_Object_">TryBinaryOperation(BinaryOperationBinder, Object, out Object)</h4>
-<div class="markdown level1 summary"><p>Provides the implementation of performing a binary operation.  Derived classes can<br>override this method to customize behavior.  When not overridden the call site requesting</br>the binder determines the behavior.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public virtual bool TryBinaryOperation(BinaryOperationBinder binder, object arg, out object result)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicObject.cs/#L145">View Source</a>
+      </span>
+  <h4 id="TryBinaryOperation_BinaryOperationBinder__Object__out_Object_">TryBinaryOperation(BinaryOperationBinder, Object, out Object)</h4>
+  <div class="markdown level1 summary"><p>Provides the implementation of performing a binary operation.  Derived classes can
+override this method to customize behavior.  When not overridden the call site requesting
+the binder determines the behavior.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Dynamic.BinaryOperationBinder.html" name="System.Dynamic.BinaryOperationBinder">BinaryOperationBinder</a></td>
-      <td><em>binder</em></td>
-      <td><p>The binder provided by the call site.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool TryBinaryOperation(BinaryOperationBinder binder, object arg, out object result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Dynamic.BinaryOperationBinder.html" name="System.Dynamic.BinaryOperationBinder">BinaryOperationBinder</a></td>
+        <td><em>binder</em></td>
+        <td><p>The binder provided by the call site.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a></td>
-      <td><em>arg</em></td>
-      <td><p>The right operand for the operation.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>arg</em></td>
+        <td><p>The right operand for the operation.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a></td>
-      <td><em>result</em></td>
-      <td><p>The result of the operation.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>result</em></td>
+        <td><p>The result of the operation.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>true if the operation is complete, false if the call site should determine behavior.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>true if the operation is complete, false if the call site should determine behavior.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicObject.cs/#L97"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="TryConvert_ConvertBinder__out_Object_">TryConvert(ConvertBinder, out Object)</h4>
-<div class="markdown level1 summary"><p>Provides the implementation of converting the DynamicObject to another type.  Derived classes<br>can override this method to customize behavior.  When not overridden the call site</br>requesting the binder determines the behavior.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public virtual bool TryConvert(ConvertBinder binder, out object result)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicObject.cs/#L97">View Source</a>
+      </span>
+  <h4 id="TryConvert_ConvertBinder__out_Object_">TryConvert(ConvertBinder, out Object)</h4>
+  <div class="markdown level1 summary"><p>Provides the implementation of converting the DynamicObject to another type.  Derived classes
+can override this method to customize behavior.  When not overridden the call site
+requesting the binder determines the behavior.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Dynamic.ConvertBinder.html" name="System.Dynamic.ConvertBinder">ConvertBinder</a></td>
-      <td><em>binder</em></td>
-      <td><p>The binder provided by the call site.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool TryConvert(ConvertBinder binder, out object result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Dynamic.ConvertBinder.html" name="System.Dynamic.ConvertBinder">ConvertBinder</a></td>
+        <td><em>binder</em></td>
+        <td><p>The binder provided by the call site.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a></td>
-      <td><em>result</em></td>
-      <td><p>The result of the conversion.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>result</em></td>
+        <td><p>The result of the conversion.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>true if the operation is complete, false if the call site should determine behavior.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>true if the operation is complete, false if the call site should determine behavior.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicObject.cs/#L113"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="TryCreateInstance_CreateInstanceBinder__Object____out_Object_">TryCreateInstance(CreateInstanceBinder, Object[], out Object)</h4>
-<div class="markdown level1 summary"><p>Provides the implementation of creating an instance of the DynamicObject.  Derived classes<br>can override this method to customize behavior.  When not overridden the call site requesting</br>the binder determines the behavior.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public virtual bool TryCreateInstance(CreateInstanceBinder binder, object[] args, out object result)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicObject.cs/#L113">View Source</a>
+      </span>
+  <h4 id="TryCreateInstance_CreateInstanceBinder__Object____out_Object_">TryCreateInstance(CreateInstanceBinder, Object[], out Object)</h4>
+  <div class="markdown level1 summary"><p>Provides the implementation of creating an instance of the DynamicObject.  Derived classes
+can override this method to customize behavior.  When not overridden the call site requesting
+the binder determines the behavior.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Dynamic.CreateInstanceBinder.html" name="System.Dynamic.CreateInstanceBinder">CreateInstanceBinder</a></td>
-      <td><em>binder</em></td>
-      <td><p>The binder provided by the call site.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool TryCreateInstance(CreateInstanceBinder binder, object[] args, out object result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Dynamic.CreateInstanceBinder.html" name="System.Dynamic.CreateInstanceBinder">CreateInstanceBinder</a></td>
+        <td><em>binder</em></td>
+        <td><p>The binder provided by the call site.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a>[]</td>
-      <td><em>args</em></td>
-      <td><p>The arguments used for creation.</p>
+      </tr>
+      <tr>
+        <td>System.Object[]</td>
+        <td><em>args</em></td>
+        <td><p>The arguments used for creation.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a></td>
-      <td><em>result</em></td>
-      <td><p>The created instance.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>result</em></td>
+        <td><p>The created instance.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>true if the operation is complete, false if the call site should determine behavior.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>true if the operation is complete, false if the call site should determine behavior.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicObject.cs/#L206"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="TryDeleteIndex_DeleteIndexBinder__Object___">TryDeleteIndex(DeleteIndexBinder, Object[])</h4>
-<div class="markdown level1 summary"><p>Provides the implementation of performing a delete index operation.  Derived classes<br>can override this method to custmize behavior.  When not overridden the call site</br>requesting the binder determines the behavior.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public virtual bool TryDeleteIndex(DeleteIndexBinder binder, object[] indexes)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicObject.cs/#L206">View Source</a>
+      </span>
+  <h4 id="TryDeleteIndex_DeleteIndexBinder__Object___">TryDeleteIndex(DeleteIndexBinder, Object[])</h4>
+  <div class="markdown level1 summary"><p>Provides the implementation of performing a delete index operation.  Derived classes
+can override this method to custmize behavior.  When not overridden the call site
+requesting the binder determines the behavior.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Dynamic.DeleteIndexBinder.html" name="System.Dynamic.DeleteIndexBinder">DeleteIndexBinder</a></td>
-      <td><em>binder</em></td>
-      <td><p>The binder provided by the call site.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool TryDeleteIndex(DeleteIndexBinder binder, object[] indexes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Dynamic.DeleteIndexBinder.html" name="System.Dynamic.DeleteIndexBinder">DeleteIndexBinder</a></td>
+        <td><em>binder</em></td>
+        <td><p>The binder provided by the call site.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a>[]</td>
-      <td><em>indexes</em></td>
-      <td><p>The indexes to be deleted.</p>
+      </tr>
+      <tr>
+        <td>System.Object[]</td>
+        <td><em>indexes</em></td>
+        <td><p>The indexes to be deleted.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>true if the operation is complete, false if the call site should determine behavior.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>true if the operation is complete, false if the call site should determine behavior.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicObject.cs/#L68"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="TryDeleteMember_DeleteMemberBinder_">TryDeleteMember(DeleteMemberBinder)</h4>
-<div class="markdown level1 summary"><p>Provides the implementation of deleting a member.  Derived classes can override<br>this method to customize behavior.  When not overridden the call site requesting the</br>binder determines the behavior.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public virtual bool TryDeleteMember(DeleteMemberBinder binder)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicObject.cs/#L68">View Source</a>
+      </span>
+  <h4 id="TryDeleteMember_DeleteMemberBinder_">TryDeleteMember(DeleteMemberBinder)</h4>
+  <div class="markdown level1 summary"><p>Provides the implementation of deleting a member.  Derived classes can override
+this method to customize behavior.  When not overridden the call site requesting the
+binder determines the behavior.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Dynamic.DeleteMemberBinder.html" name="System.Dynamic.DeleteMemberBinder">DeleteMemberBinder</a></td>
-      <td><em>binder</em></td>
-      <td><p>The binder provided by the call site.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool TryDeleteMember(DeleteMemberBinder binder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Dynamic.DeleteMemberBinder.html" name="System.Dynamic.DeleteMemberBinder">DeleteMemberBinder</a></td>
+        <td><em>binder</em></td>
+        <td><p>The binder provided by the call site.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>true if the operation is complete, false if the call site should determine behavior.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>true if the operation is complete, false if the call site should determine behavior.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicObject.cs/#L176"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="TryGetIndex_GetIndexBinder__Object____out_Object_">TryGetIndex(GetIndexBinder, Object[], out Object)</h4>
-<div class="markdown level1 summary"><p>Provides the implementation of performing a get index operation.  Derived classes can<br>override this method to customize behavior.  When not overridden the call site requesting</br>the binder determines the behavior.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public virtual bool TryGetIndex(GetIndexBinder binder, object[] indexes, out object result)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicObject.cs/#L176">View Source</a>
+      </span>
+  <h4 id="TryGetIndex_GetIndexBinder__Object____out_Object_">TryGetIndex(GetIndexBinder, Object[], out Object)</h4>
+  <div class="markdown level1 summary"><p>Provides the implementation of performing a get index operation.  Derived classes can
+override this method to customize behavior.  When not overridden the call site requesting
+the binder determines the behavior.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Dynamic.GetIndexBinder.html" name="System.Dynamic.GetIndexBinder">GetIndexBinder</a></td>
-      <td><em>binder</em></td>
-      <td><p>The binder provided by the call site.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool TryGetIndex(GetIndexBinder binder, object[] indexes, out object result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Dynamic.GetIndexBinder.html" name="System.Dynamic.GetIndexBinder">GetIndexBinder</a></td>
+        <td><em>binder</em></td>
+        <td><p>The binder provided by the call site.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a>[]</td>
-      <td><em>indexes</em></td>
-      <td><p>The indexes to be used.</p>
+      </tr>
+      <tr>
+        <td>System.Object[]</td>
+        <td><em>indexes</em></td>
+        <td><p>The indexes to be used.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a></td>
-      <td><em>result</em></td>
-      <td><p>The result of the operation.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>result</em></td>
+        <td><p>The result of the operation.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>true if the operation is complete, false if the call site should determine behavior.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>true if the operation is complete, false if the call site should determine behavior.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicObject.cs/#L41"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="TryGetMember_GetMemberBinder__out_Object_">TryGetMember(GetMemberBinder, out Object)</h4>
-<div class="markdown level1 summary"><p>Provides the implementation of getting a member.  Derived classes can override<br>this method to customize behavior.  When not overridden the call site requesting the</br>binder determines the behavior.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public virtual bool TryGetMember(GetMemberBinder binder, out object result)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicObject.cs/#L41">View Source</a>
+      </span>
+  <h4 id="TryGetMember_GetMemberBinder__out_Object_">TryGetMember(GetMemberBinder, out Object)</h4>
+  <div class="markdown level1 summary"><p>Provides the implementation of getting a member.  Derived classes can override
+this method to customize behavior.  When not overridden the call site requesting the
+binder determines the behavior.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Dynamic.GetMemberBinder.html" name="System.Dynamic.GetMemberBinder">GetMemberBinder</a></td>
-      <td><em>binder</em></td>
-      <td><p>The binder provided by the call site.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool TryGetMember(GetMemberBinder binder, out object result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Dynamic.GetMemberBinder.html" name="System.Dynamic.GetMemberBinder">GetMemberBinder</a></td>
+        <td><em>binder</em></td>
+        <td><p>The binder provided by the call site.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a></td>
-      <td><em>result</em></td>
-      <td><p>The result of the get operation.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>result</em></td>
+        <td><p>The result of the get operation.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>true if the operation is complete, false if the call site should determine behavior.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>true if the operation is complete, false if the call site should determine behavior.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicObject.cs/#L129"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="TryInvoke_InvokeBinder__Object____out_Object_">TryInvoke(InvokeBinder, Object[], out Object)</h4>
-<div class="markdown level1 summary"><p>Provides the implementation of invoking the DynamicObject.  Derived classes can<br>override this method to customize behavior.  When not overridden the call site requesting</br>the binder determines the behavior.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public virtual bool TryInvoke(InvokeBinder binder, object[] args, out object result)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicObject.cs/#L129">View Source</a>
+      </span>
+  <h4 id="TryInvoke_InvokeBinder__Object____out_Object_">TryInvoke(InvokeBinder, Object[], out Object)</h4>
+  <div class="markdown level1 summary"><p>Provides the implementation of invoking the DynamicObject.  Derived classes can
+override this method to customize behavior.  When not overridden the call site requesting
+the binder determines the behavior.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Dynamic.InvokeBinder.html" name="System.Dynamic.InvokeBinder">InvokeBinder</a></td>
-      <td><em>binder</em></td>
-      <td><p>The binder provided by the call site.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool TryInvoke(InvokeBinder binder, object[] args, out object result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Dynamic.InvokeBinder.html" name="System.Dynamic.InvokeBinder">InvokeBinder</a></td>
+        <td><em>binder</em></td>
+        <td><p>The binder provided by the call site.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a>[]</td>
-      <td><em>args</em></td>
-      <td><p>The arguments to be used for the invocation.</p>
+      </tr>
+      <tr>
+        <td>System.Object[]</td>
+        <td><em>args</em></td>
+        <td><p>The arguments to be used for the invocation.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a></td>
-      <td><em>result</em></td>
-      <td><p>The result of the invocation.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>result</em></td>
+        <td><p>The result of the invocation.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>true if the operation is complete, false if the call site should determine behavior.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>true if the operation is complete, false if the call site should determine behavior.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicObject.cs/#L82"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="TryInvokeMember_InvokeMemberBinder__Object____out_Object_">TryInvokeMember(InvokeMemberBinder, Object[], out Object)</h4>
-<div class="markdown level1 summary"><p>Provides the implementation of calling a member.  Derived classes can override<br>this method to customize behavior.  When not overridden the call site requesting the</br>binder determines the behavior.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public virtual bool TryInvokeMember(InvokeMemberBinder binder, object[] args, out object result)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicObject.cs/#L82">View Source</a>
+      </span>
+  <h4 id="TryInvokeMember_InvokeMemberBinder__Object____out_Object_">TryInvokeMember(InvokeMemberBinder, Object[], out Object)</h4>
+  <div class="markdown level1 summary"><p>Provides the implementation of calling a member.  Derived classes can override
+this method to customize behavior.  When not overridden the call site requesting the
+binder determines the behavior.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Dynamic.InvokeMemberBinder.html" name="System.Dynamic.InvokeMemberBinder">InvokeMemberBinder</a></td>
-      <td><em>binder</em></td>
-      <td><p>The binder provided by the call site.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool TryInvokeMember(InvokeMemberBinder binder, object[] args, out object result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Dynamic.InvokeMemberBinder.html" name="System.Dynamic.InvokeMemberBinder">InvokeMemberBinder</a></td>
+        <td><em>binder</em></td>
+        <td><p>The binder provided by the call site.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a>[]</td>
-      <td><em>args</em></td>
-      <td><p>The arguments to be used for the invocation.</p>
+      </tr>
+      <tr>
+        <td>System.Object[]</td>
+        <td><em>args</em></td>
+        <td><p>The arguments to be used for the invocation.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a></td>
-      <td><em>result</em></td>
-      <td><p>The result of the invocation.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>result</em></td>
+        <td><p>The result of the invocation.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>true if the operation is complete, false if the call site should determine behavior.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>true if the operation is complete, false if the call site should determine behavior.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicObject.cs/#L192"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="TrySetIndex_SetIndexBinder__Object____Object_">TrySetIndex(SetIndexBinder, Object[], Object)</h4>
-<div class="markdown level1 summary"><p>Provides the implementation of performing a set index operation.  Derived classes can<br>override this method to custmize behavior.  When not overridden the call site requesting</br>the binder determines the behavior.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public virtual bool TrySetIndex(SetIndexBinder binder, object[] indexes, object value)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicObject.cs/#L192">View Source</a>
+      </span>
+  <h4 id="TrySetIndex_SetIndexBinder__Object____Object_">TrySetIndex(SetIndexBinder, Object[], Object)</h4>
+  <div class="markdown level1 summary"><p>Provides the implementation of performing a set index operation.  Derived classes can
+override this method to custmize behavior.  When not overridden the call site requesting
+the binder determines the behavior.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Dynamic.SetIndexBinder.html" name="System.Dynamic.SetIndexBinder">SetIndexBinder</a></td>
-      <td><em>binder</em></td>
-      <td><p>The binder provided by the call site.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool TrySetIndex(SetIndexBinder binder, object[] indexes, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Dynamic.SetIndexBinder.html" name="System.Dynamic.SetIndexBinder">SetIndexBinder</a></td>
+        <td><em>binder</em></td>
+        <td><p>The binder provided by the call site.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a>[]</td>
-      <td><em>indexes</em></td>
-      <td><p>The indexes to be used.</p>
+      </tr>
+      <tr>
+        <td>System.Object[]</td>
+        <td><em>indexes</em></td>
+        <td><p>The indexes to be used.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a></td>
-      <td><em>value</em></td>
-      <td><p>The value to set.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>value</em></td>
+        <td><p>The value to set.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>true if the operation is complete, false if the call site should determine behavior.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>true if the operation is complete, false if the call site should determine behavior.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicObject.cs/#L56"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="TrySetMember_SetMemberBinder__Object_">TrySetMember(SetMemberBinder, Object)</h4>
-<div class="markdown level1 summary"><p>Provides the implementation of setting a member.  Derived classes can override<br>this method to customize behavior.  When not overridden the call site requesting the</br>binder determines the behavior.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public virtual bool TrySetMember(SetMemberBinder binder, object value)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicObject.cs/#L56">View Source</a>
+      </span>
+  <h4 id="TrySetMember_SetMemberBinder__Object_">TrySetMember(SetMemberBinder, Object)</h4>
+  <div class="markdown level1 summary"><p>Provides the implementation of setting a member.  Derived classes can override
+this method to customize behavior.  When not overridden the call site requesting the
+binder determines the behavior.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Dynamic.SetMemberBinder.html" name="System.Dynamic.SetMemberBinder">SetMemberBinder</a></td>
-      <td><em>binder</em></td>
-      <td><p>The binder provided by the call site.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool TrySetMember(SetMemberBinder binder, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Dynamic.SetMemberBinder.html" name="System.Dynamic.SetMemberBinder">SetMemberBinder</a></td>
+        <td><em>binder</em></td>
+        <td><p>The binder provided by the call site.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a></td>
-      <td><em>value</em></td>
-      <td><p>The value to set.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>value</em></td>
+        <td><p>The value to set.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>true if the operation is complete, false if the call site should determine behavior.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>true if the operation is complete, false if the call site should determine behavior.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicObject.cs/#L160"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="TryUnaryOperation_UnaryOperationBinder__out_Object_">TryUnaryOperation(UnaryOperationBinder, out Object)</h4>
-<div class="markdown level1 summary"><p>Provides the implementation of performing a unary operation.  Derived classes can<br>override this method to customize behavior.  When not overridden the call site requesting</br>the binder determines the behavior.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public virtual bool TryUnaryOperation(UnaryOperationBinder binder, out object result)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicObject.cs/#L160">View Source</a>
+      </span>
+  <h4 id="TryUnaryOperation_UnaryOperationBinder__out_Object_">TryUnaryOperation(UnaryOperationBinder, out Object)</h4>
+  <div class="markdown level1 summary"><p>Provides the implementation of performing a unary operation.  Derived classes can
+override this method to customize behavior.  When not overridden the call site requesting
+the binder determines the behavior.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Dynamic.UnaryOperationBinder.html" name="System.Dynamic.UnaryOperationBinder">UnaryOperationBinder</a></td>
-      <td><em>binder</em></td>
-      <td><p>The binder provided by the call site.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool TryUnaryOperation(UnaryOperationBinder binder, out object result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Dynamic.UnaryOperationBinder.html" name="System.Dynamic.UnaryOperationBinder">UnaryOperationBinder</a></td>
+        <td><em>binder</em></td>
+        <td><p>The binder provided by the call site.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a></td>
-      <td><em>result</em></td>
-      <td><p>The result of the operation.</p>
+      </tr>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>result</em></td>
+        <td><p>The result of the operation.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>true if the operation is complete, false if the call site should determine behavior.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>true if the operation is complete, false if the call site should determine behavior.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

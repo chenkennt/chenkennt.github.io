@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class ContractHelper | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class ContractHelper | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -73,119 +73,118 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public class ContractHelper</code></pre>
       </div>
-      <h5 id="ContractHelper_remarks">remarks</h5>
-      <div class="markdown level0 remarks"></div>
-<h3 id="methods">Methods</h3>
+      <h3 id="methods">Methods</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L929"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="RaiseContractFailedEvent_ContractFailureKind__String__String__Exception_">RaiseContractFailedEvent(ContractFailureKind, String, String, Exception)</h4>
-<div class="markdown level1 summary"><p>Rewriter will call this method on a contract failure to allow listeners to be notified.<br>The method should not perform any failure (assert/throw) itself.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static string RaiseContractFailedEvent(ContractFailureKind failureKind, string userMessage, string conditionText, Exception innerException)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L929">View Source</a>
+      </span>
+  <h4 id="RaiseContractFailedEvent_ContractFailureKind__String__String__Exception_">RaiseContractFailedEvent(ContractFailureKind, String, String, Exception)</h4>
+  <div class="markdown level1 summary"><p>Rewriter will call this method on a contract failure to allow listeners to be notified.
+The method should not perform any failure (assert/throw) itself.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Diagnostics.Contracts.ContractFailureKind.html" name="System.Diagnostics.Contracts.ContractFailureKind">ContractFailureKind</a></td>
-      <td><em>failureKind</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>userMessage</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>conditionText</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.Exception.html" name="System.Exception">Exception</a></td>
-      <td><em>innerException</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><p>null if the event was handled and should not trigger a failure.
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RaiseContractFailedEvent(ContractFailureKind failureKind, string userMessage, string conditionText, Exception innerException)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Diagnostics.Contracts.ContractFailureKind.html" name="System.Diagnostics.Contracts.ContractFailureKind">ContractFailureKind</a></td>
+        <td><em>failureKind</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>userMessage</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>conditionText</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Exception.html" name="System.Exception">Exception</a></td>
+        <td><em>innerException</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><p>null if the event was handled and should not trigger a failure.
 Otherwise, returns the localized failure message</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L942"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="TriggerFailure_ContractFailureKind__String__String__String__Exception_">TriggerFailure(ContractFailureKind, String, String, String, Exception)</h4>
-<div class="markdown level1 summary"><p>Rewriter calls this method to get the default failure behavior.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void TriggerFailure(ContractFailureKind kind, string displayMessage, string userMessage, string conditionText, Exception innerException)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs/#L942">View Source</a>
+      </span>
+  <h4 id="TriggerFailure_ContractFailureKind__String__String__String__Exception_">TriggerFailure(ContractFailureKind, String, String, String, Exception)</h4>
+  <div class="markdown level1 summary"><p>Rewriter calls this method to get the default failure behavior.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Diagnostics.Contracts.ContractFailureKind.html" name="System.Diagnostics.Contracts.ContractFailureKind">ContractFailureKind</a></td>
-      <td><em>kind</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>displayMessage</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>userMessage</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>conditionText</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.Exception.html" name="System.Exception">Exception</a></td>
-      <td><em>innerException</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TriggerFailure(ContractFailureKind kind, string displayMessage, string userMessage, string conditionText, Exception innerException)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Diagnostics.Contracts.ContractFailureKind.html" name="System.Diagnostics.Contracts.ContractFailureKind">ContractFailureKind</a></td>
+        <td><em>kind</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>displayMessage</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>userMessage</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>conditionText</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Exception.html" name="System.Exception">Exception</a></td>
+        <td><em>innerException</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

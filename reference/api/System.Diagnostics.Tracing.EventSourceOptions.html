@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Struct EventSourceOptions | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Struct EventSourceOptions | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -55,6 +55,163 @@
       </div>
       <div class="article row grid-right"><div class="col-md-10">
         <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Eventing/TraceLogging/EventSourceOptions.cs/#L17" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="EventSourceOptions">Struct EventSourceOptions</h1>
+      <div class="markdown level0 summary"><p>Used when calling EventSource.Write.
+Optional overrides for event settings such as Level, Keywords, or Opcode.
+If overrides are not provided for a setting, default values will be used.</p>
+</div>
+      <div class="markdown level0 conceptual"></div>
+      <h6><strong>Namespace</strong>:System.Diagnostics.Tracing</h6>
+      <h6><strong>Assembly</strong>:mscorlib.dll</h6>
+      <h5 id="EventSourceOptions_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public struct EventSourceOptions</code></pre>
+      </div>
+      <h3 id="properties">Properties</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Eventing/TraceLogging/EventSourceOptions.cs/#L116">View Source</a>
+      </span>
+  <h4 id="ActivityOptions">ActivityOptions</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the activity options for this specified events. If this property is
+unset, the event&#39;s activity options will be 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventActivityOptions ActivityOptions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Diagnostics.Tracing.EventActivityOptions.html" name="System.Diagnostics.Tracing.EventActivityOptions">EventActivityOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Eventing/TraceLogging/EventSourceOptions.cs/#L80">View Source</a>
+      </span>
+  <h4 id="Keywords">Keywords</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the keywords to use for the specified event. If this
+property is unset, the event&#39;s keywords will be 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventKeywords Keywords { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Diagnostics.Tracing.EventKeywords.html" name="System.Diagnostics.Tracing.EventKeywords">EventKeywords</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Eventing/TraceLogging/EventSourceOptions.cs/#L36">View Source</a>
+      </span>
+  <h4 id="Level">Level</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the level to use for the specified event. If this property
+is unset, the event&#39;s level will be 5 (Verbose).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventLevel Level { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Diagnostics.Tracing.EventLevel.html" name="System.Diagnostics.Tracing.EventLevel">EventLevel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Eventing/TraceLogging/EventSourceOptions.cs/#L54">View Source</a>
+      </span>
+  <h4 id="Opcode">Opcode</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the opcode to use for the specified event. If this property
+is unset, the event&#39;s opcode will 0 (Info).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventOpcode Opcode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Diagnostics.Tracing.EventOpcode.html" name="System.Diagnostics.Tracing.EventOpcode">EventOpcode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Eventing/TraceLogging/EventSourceOptions.cs/#L98">View Source</a>
+      </span>
+  <h4 id="Tags">Tags</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the tags to use for the specified event. If this property is
+unset, the event&#39;s tags will be 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventTags Tags { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Diagnostics.Tracing.EventTags.html" name="System.Diagnostics.Tracing.EventTags">EventTags</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

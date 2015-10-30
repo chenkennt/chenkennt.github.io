@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Enum EventOpcode | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Enum EventOpcode | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -55,6 +55,153 @@
       </div>
       <div class="article row grid-right"><div class="col-md-10">
         <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs/#L69" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="EventOpcode">Enum EventOpcode</h1>
+      <div class="markdown level0 summary"><p>EventOpcode. Custom values must be in the range from 11 through 239</p>
+</div>
+      <div class="markdown level0 conceptual"></div>
+      <h6><strong>Namespace</strong>:System.Diagnostics.Tracing</h6>
+      <h6><strong>Assembly</strong>:mscorlib.dll</h6>
+      <h5 id="EventOpcode_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public enum EventOpcode</code></pre>
+      </div>
+      <h3 id="fields">Fields</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs/#L88">View Source</a>
+      </span>
+  <h4 id="DataCollectionStart">DataCollectionStart</h4>
+  <div class="markdown level1 summary"><p>A trace collection start event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DataCollectionStart = 3</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs/#L92">View Source</a>
+      </span>
+  <h4 id="DataCollectionStop">DataCollectionStop</h4>
+  <div class="markdown level1 summary"><p>A trace collection end event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DataCollectionStop = 4</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs/#L96">View Source</a>
+      </span>
+  <h4 id="Extension">Extension</h4>
+  <div class="markdown level1 summary"><p>An extensional event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Extension = 5</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs/#L76">View Source</a>
+      </span>
+  <h4 id="Info">Info</h4>
+  <div class="markdown level1 summary"><p>An informational event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Info = 0</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs/#L116">View Source</a>
+      </span>
+  <h4 id="Receive">Receive</h4>
+  <div class="markdown level1 summary"><p>An event representing receiving an activity transfer from another component</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Receive = 240</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs/#L100">View Source</a>
+      </span>
+  <h4 id="Reply">Reply</h4>
+  <div class="markdown level1 summary"><p>A reply event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Reply = 6</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs/#L104">View Source</a>
+      </span>
+  <h4 id="Resume">Resume</h4>
+  <div class="markdown level1 summary"><p>An event representing the activity resuming from the suspension</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Resume = 7</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs/#L112">View Source</a>
+      </span>
+  <h4 id="Send">Send</h4>
+  <div class="markdown level1 summary"><p>An event representing the activity is transferred to another component, and can continue to work</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Send = 9</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs/#L80">View Source</a>
+      </span>
+  <h4 id="Start">Start</h4>
+  <div class="markdown level1 summary"><p>An activity start event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Start = 1</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs/#L84">View Source</a>
+      </span>
+  <h4 id="Stop">Stop</h4>
+  <div class="markdown level1 summary"><p>An activity end event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Stop = 2</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs/#L108">View Source</a>
+      </span>
+  <h4 id="Suspend">Suspend</h4>
+  <div class="markdown level1 summary"><p>An event representing the activity is suspended, pending another activity&#39;s completion</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Suspend = 8</code></pre>
+  </div>
 
 </article>
 </div>

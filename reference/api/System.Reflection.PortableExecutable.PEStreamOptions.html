@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Enum PEStreamOptions | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Enum PEStreamOptions | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -55,6 +55,76 @@
       </div>
       <div class="article row grid-right"><div class="col-md-10">
         <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEStreamOptions.cs/#L6" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="PEStreamOptions">Enum PEStreamOptions</h1>
+      <div class="markdown level0 summary"></div>
+      <div class="markdown level0 conceptual"></div>
+      <h6><strong>Namespace</strong>:System.Reflection.PortableExecutable</h6>
+      <h6><strong>Assembly</strong>:System.Reflection.Metadata.dll</h6>
+      <h5 id="PEStreamOptions_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public enum PEStreamOptions</code></pre>
+      </div>
+      <h3 id="fields">Fields</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEStreamOptions.cs/#L12">View Source</a>
+      </span>
+  <h4 id="Default">Default</h4>
+  <div class="markdown level1 summary"><p>By default the stream is disposed when <a href="System.Reflection.PortableExecutable.PEReader.html">System.Reflection.PortableExecutable.PEReader</a> is disposed and sections of the PE image are read lazily.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Default = 0</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEStreamOptions.cs/#L17">View Source</a>
+      </span>
+  <h4 id="LeaveOpen">LeaveOpen</h4>
+  <div class="markdown level1 summary"><p>Keep the stream open when the <a href="System.Reflection.PortableExecutable.PEReader.html">System.Reflection.PortableExecutable.PEReader</a> is disposed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">LeaveOpen = 1</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEStreamOptions.cs/#L36">View Source</a>
+      </span>
+  <h4 id="PrefetchEntireImage">PrefetchEntireImage</h4>
+  <div class="markdown level1 summary"><p>Reads the entire image into memory right away.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="PrefetchEntireImage_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p><a href="System.Reflection.PortableExecutable.PEReader.html">System.Reflection.PortableExecutable.PEReader</a> closes the stream automatically by the time the constructor returns unless <a href="System.Reflection.PortableExecutable.PEStreamOptions.html">System.Reflection.PortableExecutable.PEStreamOptions.LeaveOpen</a> is specified.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PrefetchEntireImage = 4</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEStreamOptions.cs/#L28">View Source</a>
+      </span>
+  <h4 id="PrefetchMetadata">PrefetchMetadata</h4>
+  <div class="markdown level1 summary"><p>Reads metadata section into memory right away.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="PrefetchMetadata_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Reading from other sections of the file is not allowed (<see cref="T:System.InvalidOperationException"></see> is thrown by the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see>).
+The underlying file may be closed and even deleted after <see cref="T:System.Reflection.PortableExecutable.PEReader"></see> is constructed.</p>
+<p><see cref="T:System.Reflection.PortableExecutable.PEReader"></see> closes the stream automatically by the time the constructor returns unless <see cref="F:System.Reflection.PortableExecutable.PEStreamOptions.LeaveOpen"></see> is specified.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PrefetchMetadata = 2</code></pre>
+  </div>
 
 </article>
 </div>

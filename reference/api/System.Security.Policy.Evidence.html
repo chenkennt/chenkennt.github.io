@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class Evidence | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class Evidence | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -60,7 +60,21 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="Evidence">Class Evidence</h1>
-      <div class="markdown level0 summary"><p>The Evidence class keeps track of information that can be used to make security decisions about<br>an assembly or an AppDomain.  There are two types of evidence, one is supplied by the CLR or a</br>host, the other supplied by the assembly itself.</p><br><p>We keep a dictionary that maps each type of possbile evidence to an EvidenceTypeDescriptor which</br>contains the evidence objects themselves if they exist as well as some extra metadata about that<br>type of evidence.  This dictionary is fully populated with keys for host evidence at all times and</br>for assembly evidence the first time the application evidence is touched.  This means that if a<br>Type key does not exist in the dictionary, then that particular type of evidence will never be</br>given to the assembly or AppDomain in question as host evidence.  The only exception is if the<br>user later manually adds host evidence via the AddHostEvidence API.<p></br><p>Assembly supplied evidence is created up front, however host supplied evidence may be lazily<br>created.  In the lazy creation case, the Type will map to either an EvidenceTypeDescriptor that does</br>not contain any evidence data or null.  As requests come in for that evidence, we&#39;ll populate the<br>EvidenceTypeDescriptor appropriately.</p><br></div>
+      <div class="markdown level0 summary"><p>The Evidence class keeps track of information that can be used to make security decisions about
+an assembly or an AppDomain.  There are two types of evidence, one is supplied by the CLR or a
+host, the other supplied by the assembly itself.</p>
+<p>We keep a dictionary that maps each type of possbile evidence to an EvidenceTypeDescriptor which
+contains the evidence objects themselves if they exist as well as some extra metadata about that
+type of evidence.  This dictionary is fully populated with keys for host evidence at all times and
+for assembly evidence the first time the application evidence is touched.  This means that if a
+Type key does not exist in the dictionary, then that particular type of evidence will never be
+given to the assembly or AppDomain in question as host evidence.  The only exception is if the
+user later manually adds host evidence via the AddHostEvidence API.</p>
+<p>Assembly supplied evidence is created up front, however host supplied evidence may be lazily
+created.  In the lazy creation case, the Type will map to either an EvidenceTypeDescriptor that does
+not contain any evidence data or null.  As requests come in for that evidence, we&#39;ll populate the
+EvidenceTypeDescriptor appropriately.</p>
+</div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
         <h5>Inheritance</h5>
@@ -73,8 +87,6 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public sealed class Evidence</code></pre>
       </div>
-      <h5 id="Evidence_remarks">remarks</h5>
-      <div class="markdown level0 remarks"></div>
 
 </article>
 </div>

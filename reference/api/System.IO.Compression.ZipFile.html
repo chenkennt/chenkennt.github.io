@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class ZipFile | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class ZipFile | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -73,210 +73,230 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public class ZipFile</code></pre>
       </div>
-      <h5 id="ZipFile_remarks">remarks</h5>
-      <div class="markdown level0 remarks"></div>
-<h3 id="methods">Methods</h3>
+      <h3 id="methods">Methods</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFile.cs/#L247"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="CreateFromDirectory_String__String_">CreateFromDirectory(String, String)</h4>
-<div class="markdown level1 summary"><p>Creates a Zip archive at the path <code>destinationArchiveFileName</code> that contains the files and directories from<br>the directory specified by <code>sourceDirectoryName</code>. The directory structure is preserved in the archive, and a</br>recursive search is done for files to be archived. The archive must not exist. If the directory is empty, an empty<br>archive will be created. If a file in the directory cannot be added to the archive, the archive will be left incomplete</br>and invalid and the method will throw an exception. This method does not include the base directory into the archive.<br>If an error is encountered while adding files to the archive, this method will stop adding files and leave the archive</br>in an invalid state. The paths are permitted to specify relative or absolute path information. Relative path information<br>is interpreted as relative to the current working directory. If a file in the archive has data in the last write time</br>field that is not a valid Zip timestamp, an indicator value of 1980 January 1 at midnight will be used for the file&#39;s<br>last modified time.</p><br><p>If an entry with the specified name already exists in the archive, a second entry will be created that has an identical name.</p></br><p>Since no <code>CompressionLevel</code> is specified, the default provided by the implementation of the underlying compression<br>algorithm will be used; the <code>ZipArchive</code> will not impose its own default.</br>(Currently, the underlying compression algorithm is provided by the <code>System.IO.Compression.DeflateStream</code> class.)</p></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void CreateFromDirectory(string sourceDirectoryName, string destinationArchiveFileName)</code></pre>
-</div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>sourceDirectoryName</em></td>
-      <td><p>The path to the directory on the file system to be archived.</p>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFile.cs/#L247">View Source</a>
+      </span>
+  <h4 id="CreateFromDirectory_String__String_">CreateFromDirectory(String, String)</h4>
+  <div class="markdown level1 summary"><p>Creates a Zip archive at the path <code>destinationArchiveFileName</code> that contains the files and directories from
+the directory specified by <code>sourceDirectoryName</code>. The directory structure is preserved in the archive, and a
+recursive search is done for files to be archived. The archive must not exist. If the directory is empty, an empty
+archive will be created. If a file in the directory cannot be added to the archive, the archive will be left incomplete
+and invalid and the method will throw an exception. This method does not include the base directory into the archive.
+If an error is encountered while adding files to the archive, this method will stop adding files and leave the archive
+in an invalid state. The paths are permitted to specify relative or absolute path information. Relative path information
+is interpreted as relative to the current working directory. If a file in the archive has data in the last write time
+field that is not a valid Zip timestamp, an indicator value of 1980 January 1 at midnight will be used for the file&#39;s
+last modified time.</p>
+<p>If an entry with the specified name already exists in the archive, a second entry will be created that has an identical name.</p>
+<p>Since no <code>CompressionLevel</code> is specified, the default provided by the implementation of the underlying compression
+algorithm will be used; the <code>ZipArchive</code> will not impose its own default.
+(Currently, the underlying compression algorithm is provided by the <code>System.IO.Compression.DeflateStream</code> class.)</p></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CreateFromDirectory(string sourceDirectoryName, string destinationArchiveFileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>sourceDirectoryName</em></td>
+        <td><p>The path to the directory on the file system to be archived.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>destinationArchiveFileName</em></td>
-      <td><p>The name of the archive to be created.</p>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>destinationArchiveFileName</em></td>
+        <td><p>The name of the archive to be created.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFile.cs/#L297"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="CreateFromDirectory_String__String__CompressionLevel__Boolean_">CreateFromDirectory(String, String, CompressionLevel, Boolean)</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void CreateFromDirectory(string sourceDirectoryName, string destinationArchiveFileName, CompressionLevel compressionLevel, bool includeBaseDirectory)</code></pre>
-</div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>sourceDirectoryName</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>destinationArchiveFileName</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>CompressionLevel</td>
-      <td><em>compressionLevel</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><em>includeBaseDirectory</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFile.cs/#L297">View Source</a>
+      </span>
+  <h4 id="CreateFromDirectory_String__String__CompressionLevel__Boolean_">CreateFromDirectory(String, String, CompressionLevel, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CreateFromDirectory(string sourceDirectoryName, string destinationArchiveFileName, CompressionLevel compressionLevel, bool includeBaseDirectory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>sourceDirectoryName</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>destinationArchiveFileName</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>CompressionLevel</td>
+        <td><em>compressionLevel</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>includeBaseDirectory</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFile.cs/#L370"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="CreateFromDirectory_String__String__CompressionLevel__Boolean__Encoding_">CreateFromDirectory(String, String, CompressionLevel, Boolean, Encoding)</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void CreateFromDirectory(string sourceDirectoryName, string destinationArchiveFileName, CompressionLevel compressionLevel, bool includeBaseDirectory, Encoding entryNameEncoding)</code></pre>
-</div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>sourceDirectoryName</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>destinationArchiveFileName</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>CompressionLevel</td>
-      <td><em>compressionLevel</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><em>includeBaseDirectory</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.Text.Encoding.html" name="System.Text.Encoding">Encoding</a></td>
-      <td><em>entryNameEncoding</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFile.cs/#L370">View Source</a>
+      </span>
+  <h4 id="CreateFromDirectory_String__String__CompressionLevel__Boolean__Encoding_">CreateFromDirectory(String, String, CompressionLevel, Boolean, Encoding)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CreateFromDirectory(string sourceDirectoryName, string destinationArchiveFileName, CompressionLevel compressionLevel, bool includeBaseDirectory, Encoding entryNameEncoding)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>sourceDirectoryName</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>destinationArchiveFileName</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>CompressionLevel</td>
+        <td><em>compressionLevel</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>includeBaseDirectory</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Text.Encoding.html" name="System.Text.Encoding">Encoding</a></td>
+        <td><em>entryNameEncoding</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFile.cs/#L408"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ExtractToDirectory_String__String_">ExtractToDirectory(String, String)</h4>
-<div class="markdown level1 summary"><p>Extracts all of the files in the specified archive to a directory on the file system.<br>The specified directory must not exist. This method will create all subdirectories and the specified directory.</br>If there is an error while extracting the archive, the archive will remain partially extracted. Each entry will<br>be extracted such that the extracted file has the same relative path to the destinationDirectoryName as the entry</br>has to the archive. The path is permitted to specify relative or absolute path information. Relative path information<br>is interpreted as relative to the current working directory. If a file to be archived has an invalid last modified</br>time, the first datetime representable in the Zip timestamp format (midnight on January 1, 1980) will be used.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void ExtractToDirectory(string sourceArchiveFileName, string destinationDirectoryName)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFile.cs/#L408">View Source</a>
+      </span>
+  <h4 id="ExtractToDirectory_String__String_">ExtractToDirectory(String, String)</h4>
+  <div class="markdown level1 summary"><p>Extracts all of the files in the specified archive to a directory on the file system.
+The specified directory must not exist. This method will create all subdirectories and the specified directory.
+If there is an error while extracting the archive, the archive will remain partially extracted. Each entry will
+be extracted such that the extracted file has the same relative path to the destinationDirectoryName as the entry
+has to the archive. The path is permitted to specify relative or absolute path information. Relative path information
+is interpreted as relative to the current working directory. If a file to be archived has an invalid last modified
+time, the first datetime representable in the Zip timestamp format (midnight on January 1, 1980) will be used.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>sourceArchiveFileName</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>destinationDirectoryName</em></td>
-      <td><p>The path to the directory on the file system. The directory specified must not exist, but the directory that it is contained in must exist.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ExtractToDirectory(string sourceArchiveFileName, string destinationDirectoryName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>sourceArchiveFileName</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>destinationDirectoryName</em></td>
+        <td><p>The path to the directory on the file system. The directory specified must not exist, but the directory that it is contained in must exist.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFile.cs/#L466"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ExtractToDirectory_String__String__Encoding_">ExtractToDirectory(String, String, Encoding)</h4>
-<div class="markdown level1 summary"><p>Extracts all of the files in the specified archive to a directory on the file system.<br>The specified directory must not exist. This method will create all subdirectories and the specified directory.</br>If there is an error while extracting the archive, the archive will remain partially extracted. Each entry will<br>be extracted such that the extracted file has the same relative path to the destinationDirectoryName as the entry</br>has to the archive. The path is permitted to specify relative or absolute path information. Relative path information<br>is interpreted as relative to the current working directory. If a file to be archived has an invalid last modified</br>time, the first datetime representable in the Zip timestamp format (midnight on January 1, 1980) will be used.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void ExtractToDirectory(string sourceArchiveFileName, string destinationDirectoryName, Encoding entryNameEncoding)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFile.cs/#L466">View Source</a>
+      </span>
+  <h4 id="ExtractToDirectory_String__String__Encoding_">ExtractToDirectory(String, String, Encoding)</h4>
+  <div class="markdown level1 summary"><p>Extracts all of the files in the specified archive to a directory on the file system.
+The specified directory must not exist. This method will create all subdirectories and the specified directory.
+If there is an error while extracting the archive, the archive will remain partially extracted. Each entry will
+be extracted such that the extracted file has the same relative path to the destinationDirectoryName as the entry
+has to the archive. The path is permitted to specify relative or absolute path information. Relative path information
+is interpreted as relative to the current working directory. If a file to be archived has an invalid last modified
+time, the first datetime representable in the Zip timestamp format (midnight on January 1, 1980) will be used.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>sourceArchiveFileName</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>destinationDirectoryName</em></td>
-      <td><p>The path to the directory on the file system. The directory specified must not exist, but the directory that it is contained in must exist.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ExtractToDirectory(string sourceArchiveFileName, string destinationDirectoryName, Encoding entryNameEncoding)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>sourceArchiveFileName</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>destinationDirectoryName</em></td>
+        <td><p>The path to the directory on the file system. The directory specified must not exist, but the directory that it is contained in must exist.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Text.Encoding.html" name="System.Text.Encoding">Encoding</a></td>
-      <td><em>entryNameEncoding</em></td>
-      <td><p>The encoding to use when reading or writing entry names in this ZipArchive.
+      </tr>
+      <tr>
+        <td><a href="System.Text.Encoding.html" name="System.Text.Encoding">Encoding</a></td>
+        <td><em>entryNameEncoding</em></td>
+        <td><p>The encoding to use when reading or writing entry names in this ZipArchive.
 ///     <para>NOTE: Specifying this parameter to values other than <c>null</c> is discouraged.
 However, this may be necessary for interoperability with ZIP archive tools and libraries that do not correctly support
 UTF-8 encoding for entry names.<br>
@@ -287,43 +307,43 @@ use the specified <c>entryNameEncoding</c> in order to decode the entry name.</i
 use UTF-8 (<c>Encoding.UTF8</c>) in order to decode the entry name.</item></list><para>Note that Unicode encodings other than UTF-8 may not be currently used for the <c>entryNameEncoding</c>,
 otherwise an <see cref="T:System.ArgumentException"></see> is thrown.</para></p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFile.cs/#L75"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Open_String__ZipArchiveMode_">Open(String, ZipArchiveMode)</h4>
-<div class="markdown level1 summary"><p>Opens a <code>ZipArchive</code> on the specified <code>archiveFileName</code> in the specified <code>ZipArchiveMode</code> mode.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static ZipArchive Open(string archiveFileName, ZipArchiveMode mode)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFile.cs/#L75">View Source</a>
+      </span>
+  <h4 id="Open_String__ZipArchiveMode_">Open(String, ZipArchiveMode)</h4>
+  <div class="markdown level1 summary"><p>Opens a <code>ZipArchive</code> on the specified <code>archiveFileName</code> in the specified <code>ZipArchiveMode</code> mode.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>archiveFileName</em></td>
-      <td><p>A string specifying the path on the filesystem to open the archive on.
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ZipArchive Open(string archiveFileName, ZipArchiveMode mode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>archiveFileName</em></td>
+        <td><p>A string specifying the path on the filesystem to open the archive on.
 The path is permitted to specify relative or absolute path information.
 Relative path information is interpreted as relative to the current working directory.</p>
 </td>
-    </tr>
-    <tr>
-      <td>ZipArchiveMode</td>
-      <td><em>mode</em></td>
-      <td><p>See the description of the <code>ZipArchiveMode</code> enum.
+      </tr>
+      <tr>
+        <td>ZipArchiveMode</td>
+        <td><em>mode</em></td>
+        <td><p>See the description of the <code>ZipArchiveMode</code> enum.
 If <code>Read</code> is specified, the file is opened with <code>System.IO.FileMode.Open</code>, and will throw
 a <code>FileNotFoundException</code> if the file does not exist.
 If <code>Create</code> is specified, the file is opened with <code>System.IO.FileMode.CreateNew</code>, and will throw
@@ -334,58 +354,58 @@ If the file exists and is not a Zip file, a <code>ZipArchiveException</code> wil
 If the file exists and is empty or does not exist, a new Zip file will be created.
 Note that creating a Zip file with the <code>ZipArchiveMode.Create</code> mode is more efficient when creating a new Zip file.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>ZipArchive</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ZipArchive</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFile.cs/#L156"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Open_String__ZipArchiveMode__Encoding_">Open(String, ZipArchiveMode, Encoding)</h4>
-<div class="markdown level1 summary"><p>Opens a <code>ZipArchive</code> on the specified <code>archiveFileName</code> in the specified <code>ZipArchiveMode</code> mode.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static ZipArchive Open(string archiveFileName, ZipArchiveMode mode, Encoding entryNameEncoding)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFile.cs/#L156">View Source</a>
+      </span>
+  <h4 id="Open_String__ZipArchiveMode__Encoding_">Open(String, ZipArchiveMode, Encoding)</h4>
+  <div class="markdown level1 summary"><p>Opens a <code>ZipArchive</code> on the specified <code>archiveFileName</code> in the specified <code>ZipArchiveMode</code> mode.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>archiveFileName</em></td>
-      <td><p>A string specifying the path on the filesystem to open the archive on.
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ZipArchive Open(string archiveFileName, ZipArchiveMode mode, Encoding entryNameEncoding)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>archiveFileName</em></td>
+        <td><p>A string specifying the path on the filesystem to open the archive on.
 The path is permitted to specify relative or absolute path information.
 Relative path information is interpreted as relative to the current working directory.</p>
 </td>
-    </tr>
-    <tr>
-      <td>ZipArchiveMode</td>
-      <td><em>mode</em></td>
-      <td><p>See the description of the <code>ZipArchiveMode</code> enum.
+      </tr>
+      <tr>
+        <td>ZipArchiveMode</td>
+        <td><em>mode</em></td>
+        <td><p>See the description of the <code>ZipArchiveMode</code> enum.
 If <code>Read</code> is specified, the file is opened with <code>System.IO.FileMode.Open</code>, and will throw
 a <code>FileNotFoundException</code> if the file does not exist.
 If <code>Create</code> is specified, the file is opened with <code>System.IO.FileMode.CreateNew</code>, and will throw
@@ -396,11 +416,11 @@ If the file exists and is not a Zip file, a <code>ZipArchiveException</code> wil
 If the file exists and is empty or does not exist, a new Zip file will be created.
 Note that creating a Zip file with the <code>ZipArchiveMode.Create</code> mode is more efficient when creating a new Zip file.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Text.Encoding.html" name="System.Text.Encoding">Encoding</a></td>
-      <td><em>entryNameEncoding</em></td>
-      <td><p>The encoding to use when reading or writing entry names in this ZipArchive.
+      </tr>
+      <tr>
+        <td><a href="System.Text.Encoding.html" name="System.Text.Encoding">Encoding</a></td>
+        <td><em>entryNameEncoding</em></td>
+        <td><p>The encoding to use when reading or writing entry names in this ZipArchive.
 ///     <para>NOTE: Specifying this parameter to values other than <c>null</c> is discouraged.
 However, this may be necessary for interoperability with ZIP archive tools and libraries that do not correctly support
 UTF-8 encoding for entry names.<br>
@@ -417,70 +437,70 @@ The language encoding flag (EFS) in the general purpose bit flag of the local fi
 if the specified <c>entryNameEncoding</c> is a UTF-8 encoding.</item></list><para>Note that Unicode encodings other than UTF-8 may not be currently used for the <c>entryNameEncoding</c>,
 otherwise an <see cref="T:System.ArgumentException"></see> is thrown.</para></p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>ZipArchive</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ZipArchive</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFile.cs/#L34"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="OpenRead_String_">OpenRead(String)</h4>
-<div class="markdown level1 summary"><p>Opens a <code>ZipArchive</code> on the specified path for reading. The specified file is opened with <code>FileMode.Open</code>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static ZipArchive OpenRead(string archiveFileName)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFile.cs/#L34">View Source</a>
+      </span>
+  <h4 id="OpenRead_String_">OpenRead(String)</h4>
+  <div class="markdown level1 summary"><p>Opens a <code>ZipArchive</code> on the specified path for reading. The specified file is opened with <code>FileMode.Open</code>.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><em>archiveFileName</em></td>
-      <td><p>A string specifying the path on the filesystem to open the archive on. The path is permitted
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ZipArchive OpenRead(string archiveFileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><em>archiveFileName</em></td>
+        <td><p>A string specifying the path on the filesystem to open the archive on. The path is permitted
 to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>ZipArchive</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ZipArchive</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

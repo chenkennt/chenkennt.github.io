@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class ValidationResult | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class ValidationResult | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -60,7 +60,10 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="ValidationResult">Class ValidationResult</h1>
-      <div class="markdown level0 summary"><p>Container class for the results of a validation request.</p><br><para><br>Use the static <see cref="F:System.ComponentModel.DataAnnotations.ValidationResult.Success"></see> to represent successful validation.</br></para></div>
+      <div class="markdown level0 summary"><p>Container class for the results of a validation request.</p>
+<para>
+Use the static <see cref="F:System.ComponentModel.DataAnnotations.ValidationResult.Success"></see> to represent successful validation.
+</para></div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
         <h5>Inheritance</h5>
@@ -73,16 +76,14 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public class ValidationResult</code></pre>
       </div>
-      <h5 id="ValidationResult_remarks">remarks</h5>
-      <div class="markdown level0 remarks"></div>
       <h3 id="constructors">Constructors</h3>
-      
-    <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationResult.cs/#L71"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-  </span>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationResult.cs/#L71">View Source</a>
+      </span>
   <h4 id="ValidationResult_ValidationResult_">ValidationResult(ValidationResult)</h4>
-  <div class="markdown level1 summary"><p>Constructor that creates a copy of an existing ValidationResult.</p><br></div>
-  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 summary"><p>Constructor that creates a copy of an existing ValidationResult.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -106,13 +107,14 @@
       </tr>
     </tbody>
   </table>
-      
-    <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationResult.cs/#L43"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-  </span>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationResult.cs/#L43">View Source</a>
+      </span>
   <h4 id="ValidationResult_String_">ValidationResult(String)</h4>
-  <div class="markdown level1 summary"><p>Constructor that accepts an error message.  This error message would override any error message<br>provided on the <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute</a>.</p><br></div>
-  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 summary"><p>Constructor that accepts an error message.  This error message would override any error message
+provided on the <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -137,13 +139,14 @@ will use <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html
       </tr>
     </tbody>
   </table>
-      
-    <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationResult.cs/#L60"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-  </span>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationResult.cs/#L60">View Source</a>
+      </span>
   <h4 id="ValidationResult_String__IEnumerable_String__">ValidationResult(String, IEnumerable&lt;String&gt;)</h4>
-  <div class="markdown level1 summary"><p>Constructor that accepts an error message as well as a list of member names involved in the validation.<br>This error message would override any error message provided on the <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute</a>.</p><br></div>
-  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 summary"><p>Constructor that accepts an error message as well as a list of member names involved in the validation.
+This error message would override any error message provided on the <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -167,7 +170,7 @@ will use <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html
 </td>
       </tr>
       <tr>
-        <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.String.html" name="System.String">String</a>&gt;</td>
+        <td>System.Collections.Generic.IEnumerable&lt;System.String&gt;</td>
         <td><em>memberNames</em></td>
         <td><p>The list of member names affected by this result.
 This list of member names is meant to be used by presentation layers to indicate which fields are in error.</p>
@@ -175,104 +178,114 @@ This list of member names is meant to be used by presentation layers to indicate
       </tr>
     </tbody>
   </table>
-  <h3 id="fields">Fields</h3>
-  
-  <span class="small pull-right mobile-hide">
-  <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationResult.cs/#L26"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Success">Success</h4>
-<div class="markdown level1 summary"><p>Gets a <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">System.ComponentModel.DataAnnotations.ValidationResult</a> that indicates Success.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>The <c>null</c> value is used to indicate success.  Consumers of <see cref="T:System.ComponentModel.DataAnnotations.ValidationResult"></see>s<br>should compare the values to <see cref="F:System.ComponentModel.DataAnnotations.ValidationResult.Success"></see> rather than checking for null.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static readonly ValidationResult Success</code></pre>
-</div>
-<h3 id="properties">Properties</h3>
+      <h3 id="fields">Fields</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationResult.cs/#L97"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ErrorMessage">ErrorMessage</h4>
-<div class="markdown level1 summary"><p>Gets the error message for this result.  It may be null.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public string ErrorMessage { get; set; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationResult.cs/#L26">View Source</a>
+      </span>
+  <h4 id="Success">Success</h4>
+  <div class="markdown level1 summary"><p>Gets a <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">System.ComponentModel.DataAnnotations.ValidationResult</a> that indicates Success.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Success_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The <c>null</c> value is used to indicate success.  Consumers of <see cref="T:System.ComponentModel.DataAnnotations.ValidationResult"></see>s
+should compare the values to <see cref="F:System.ComponentModel.DataAnnotations.ValidationResult.Success"></see> rather than checking for null.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ValidationResult Success</code></pre>
+  </div>
+      <h3 id="properties">Properties</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationResult.cs/#L89"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="MemberNames">MemberNames</h4>
-<div class="markdown level1 summary"><p>Gets the collection of member names affected by this result.  The collection may be empty but will never be null.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public IEnumerable<string> MemberNames { get; }</string></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationResult.cs/#L97">View Source</a>
+      </span>
+  <h4 id="ErrorMessage">ErrorMessage</h4>
+  <div class="markdown level1 summary"><p>Gets the error message for this result.  It may be null.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.String.html" name="System.String">String</a>&gt;</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h3 id="methods">Methods</h3>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ErrorMessage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationResult.cs/#L120"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ToString__">ToString()</h4>
-<div class="markdown level1 summary"><p>Override the string representation of this instance, returning<br>the <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">System.ComponentModel.DataAnnotations.ValidationResult.ErrorMessage</a> if not <c>null</c>, otherwise</br>the base <a href="System.Object.html">System.Object.ToString</a> result.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>If the <see cref="P:System.ComponentModel.DataAnnotations.ValidationResult.ErrorMessage"></see> is empty, it will still qualify<br>as being specified, and therefore returned from <see cref="M:System.ComponentModel.DataAnnotations.ValidationResult.ToString"></see>.</p><br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationResult.cs/#L89">View Source</a>
+      </span>
+  <h4 id="MemberNames">MemberNames</h4>
+  <div class="markdown level1 summary"><p>Gets the collection of member names affected by this result.  The collection may be empty but will never be null.</p>
 </div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td><p>The <see cref="P:System.ComponentModel.DataAnnotations.ValidationResult.ErrorMessage"></see> property value if specified,
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable<string> MemberNames { get; }</string></code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;System.String&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="methods">Methods</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationResult.cs/#L120">View Source</a>
+      </span>
+  <h4 id="ToString__">ToString()</h4>
+  <div class="markdown level1 summary"><p>Override the string representation of this instance, returning
+the <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">System.ComponentModel.DataAnnotations.ValidationResult.ErrorMessage</a> if not <c>null</c>, otherwise
+the base <a href="System.Object.html">System.Object.ToString</a> result.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="ToString___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the <see cref="P:System.ComponentModel.DataAnnotations.ValidationResult.ErrorMessage"></see> is empty, it will still qualify
+as being specified, and therefore returned from <see cref="M:System.ComponentModel.DataAnnotations.ValidationResult.ToString"></see>.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td><p>The <see cref="P:System.ComponentModel.DataAnnotations.ValidationResult.ErrorMessage"></see> property value if specified,
 otherwise, the base <see cref="M:System.Object.ToString"></see> result.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

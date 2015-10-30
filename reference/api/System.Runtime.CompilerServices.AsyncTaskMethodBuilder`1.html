@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Struct AsyncTaskMethodBuilder&lt;TResult&gt; | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Struct AsyncTaskMethodBuilder&lt;TResult&gt; | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -55,6 +55,278 @@
       </div>
       <div class="article row grid-right"><div class="col-md-10">
         <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/CompilerServices/AsyncMethodBuilder.cs/#L421" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="AsyncTaskMethodBuilder_TResult_">Struct AsyncTaskMethodBuilder&lt;TResult&gt;</h1>
+      <div class="markdown level0 summary"><p>Provides a builder for asynchronous methods that return <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a>.
+This type is intended for compiler use only.</p>
+</div>
+      <div class="markdown level0 conceptual"></div>
+      <h6><strong>Namespace</strong>:System.Runtime.CompilerServices</h6>
+      <h6><strong>Assembly</strong>:mscorlib.dll</h6>
+      <h5 id="AsyncTaskMethodBuilder_TResult__syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public struct AsyncTaskMethodBuilder<tresult></tresult></code></pre>
+      </div>
+      <h5 id="AsyncTaskMethodBuilder_TResult__remarks"><strong>Remarks<strong></strong></strong></h5>
+      <div class="markdown level0 remarks"><p>AsyncTaskMethodBuilder{TResult} is a value type, and thus it is copied by value.
+Prior to being copied, one of its Task, SetResult, or SetException members must be accessed,
+or else the copies may end up building distinct Task instances.</p>
+</div>
+      <h3 id="properties">Properties</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/CompilerServices/AsyncMethodBuilder.cs/#L569">View Source</a>
+      </span>
+  <h4 id="Task">Task</h4>
+  <div class="markdown level1 summary"><p>Gets the <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> for this builder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task<tresult> Task { get; }</tresult></code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Task&lt;TResult&gt;</td>
+        <td><p>The <see cref="T:System.Threading.Tasks.Task`1"></see> representing the builder&#39;s asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="methods">Methods</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/CompilerServices/AsyncMethodBuilder.cs/#L493">View Source</a>
+      </span>
+  <h4 id="AwaitOnCompleted_TAwaiter__TStateMachine__ref_TAwaiter__ref_TStateMachine_">AwaitOnCompleted&lt;TAwaiter, TStateMachine&gt;(ref TAwaiter, ref TStateMachine)</h4>
+  <div class="markdown level1 summary"><p>Schedules the specified state machine to be pushed forward when the specified awaiter completes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AwaitOnCompleted<tawaiter, tstatemachine="">(ref TAwaiter awaiter, ref TStateMachine stateMachine)where TAwaiter : INotifyCompletion where TStateMachine : IAsyncStateMachine</tawaiter,></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TAwaiter</td>
+        <td><em>awaiter</em></td>
+        <td><p>The awaiter.</p>
+</td>
+      </tr>
+      <tr>
+        <td>TStateMachine</td>
+        <td><em>stateMachine</em></td>
+        <td><p>The state machine.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/CompilerServices/AsyncMethodBuilder.cs/#L533">View Source</a>
+      </span>
+  <h4 id="AwaitUnsafeOnCompleted_TAwaiter__TStateMachine__ref_TAwaiter__ref_TStateMachine_">AwaitUnsafeOnCompleted&lt;TAwaiter, TStateMachine&gt;(ref TAwaiter, ref TStateMachine)</h4>
+  <div class="markdown level1 summary"><p>Schedules the specified state machine to be pushed forward when the specified awaiter completes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AwaitUnsafeOnCompleted<tawaiter, tstatemachine="">(ref TAwaiter awaiter, ref TStateMachine stateMachine)where TAwaiter : ICriticalNotifyCompletion where TStateMachine : IAsyncStateMachine</tawaiter,></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TAwaiter</td>
+        <td><em>awaiter</em></td>
+        <td><p>The awaiter.</p>
+</td>
+      </tr>
+      <tr>
+        <td>TStateMachine</td>
+        <td><em>stateMachine</em></td>
+        <td><p>The state machine.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/CompilerServices/AsyncMethodBuilder.cs/#L440">View Source</a>
+      </span>
+  <h4 id="Create__">Create()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new <a href="System.Runtime.CompilerServices.AsyncTaskMethodBuilder.html">System.Runtime.CompilerServices.AsyncTaskMethodBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AsyncTaskMethodBuilder<tresult> Create()</tresult></code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.html" name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder&lt;TResult&gt;">AsyncTaskMethodBuilder</a></td>
+        <td><p>The initialized <see cref="T:System.Runtime.CompilerServices.AsyncTaskMethodBuilder"></see>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/CompilerServices/AsyncMethodBuilder.cs/#L647">View Source</a>
+      </span>
+  <h4 id="SetException_Exception_">SetException(Exception)</h4>
+  <div class="markdown level1 summary"><p>Completes the <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> in the
+<a href="System.Threading.Tasks.TaskStatus.html">System.Threading.Tasks.TaskStatus</a> state with the specified exception.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetException(Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Exception.html" name="System.Exception">Exception</a></td>
+        <td><em>exception</em></td>
+        <td><p>The <a href="System.Exception.html">System.Exception</a> to use to fault the task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/CompilerServices/AsyncMethodBuilder.cs/#L586">View Source</a>
+      </span>
+  <h4 id="SetResult_TResult_">SetResult(TResult)</h4>
+  <div class="markdown level1 summary"><p>Completes the <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> in the
+<a href="System.Threading.Tasks.TaskStatus.html">System.Threading.Tasks.TaskStatus</a> state with the specified result.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetResult(TResult result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TResult</td>
+        <td><em>result</em></td>
+        <td><p>The result to use to complete the task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/CompilerServices/AsyncMethodBuilder.cs/#L481">View Source</a>
+      </span>
+  <h4 id="SetStateMachine_IAsyncStateMachine_">SetStateMachine(IAsyncStateMachine)</h4>
+  <div class="markdown level1 summary"><p>Associates the builder with the state machine it represents.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetStateMachine(IAsyncStateMachine stateMachine)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Runtime.CompilerServices.IAsyncStateMachine.html" name="System.Runtime.CompilerServices.IAsyncStateMachine">IAsyncStateMachine</a></td>
+        <td><em>stateMachine</em></td>
+        <td><p>The heap-allocated state machine object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Runtime/CompilerServices/AsyncMethodBuilder.cs/#L450">View Source</a>
+      </span>
+  <h4 id="Start_TStateMachine__ref_TStateMachine_">Start&lt;TStateMachine&gt;(ref TStateMachine)</h4>
+  <div class="markdown level1 summary"><p>Initiates the builder&#39;s execution with the associated state machine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Start<tstatemachine>(ref TStateMachine stateMachine)where TStateMachine : IAsyncStateMachine</tstatemachine></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TStateMachine</td>
+        <td><em>stateMachine</em></td>
+        <td><p>The state machine instance, passed by reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

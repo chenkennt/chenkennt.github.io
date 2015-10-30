@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Interface IImmutableList&lt;T&gt; | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Interface IImmutableList&lt;T&gt; | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -55,6 +55,748 @@
       </div>
       <div class="article row grid-right"><div class="col-md-10">
         <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableList.cs/#L18" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="IImmutableList_T_">Interface IImmutableList&lt;T&gt;</h1>
+      <div class="markdown level0 summary"><p>A list of elements that can only be modified by creating a new instance of the list.</p>
+</div>
+      <div class="markdown level0 conceptual"></div>
+      <h6><strong>Namespace</strong>:System.Collections.Immutable</h6>
+      <h6><strong>Assembly</strong>:System.Collections.Immutable.dll</h6>
+      <h5 id="IImmutableList_T__syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public interface IImmutableList<t> : IReadOnlyList<t>, IReadOnlyCollection<t>, IEnumerable<t>, IEnumerable</t></t></t></t></code></pre>
+      </div>
+      <h5 id="IImmutableList_T__remarks"><strong>Remarks<strong></strong></strong></h5>
+      <div class="markdown level0 remarks"><p>Mutations on this list generate new lists.  Incremental changes to a list share as much memory as possible with the prior versions of a list,
+while allowing garbage collection to clean up any unique list data that is no longer being referenced.</p>
+</div>
+      <h3 id="methods">Methods</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableList.cs/#L82">View Source</a>
+      </span>
+  <h4 id="Add_T_">Add(T)</h4>
+  <div class="markdown level1 summary"><p>Adds the specified value to this list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IImmutableList<t> Add(T value)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><em>value</em></td>
+        <td><p>The value to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Immutable.IImmutableList`1.html" name="System.Collections.Immutable.IImmutableList&lt;T&gt;">IImmutableList</a></td>
+        <td><p>A new list with the element added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableList.cs/#L90">View Source</a>
+      </span>
+  <h4 id="AddRange_IEnumerable_T__">AddRange(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds the specified values to this list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IImmutableList<t> AddRange(IEnumerable<t> items)</t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><em>items</em></td>
+        <td><p>The values to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Immutable.IImmutableList`1.html" name="System.Collections.Immutable.IImmutableList&lt;T&gt;">IImmutableList</a></td>
+        <td><p>A new list with the elements added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableList.cs/#L24">View Source</a>
+      </span>
+  <h4 id="Clear__">Clear()</h4>
+  <div class="markdown level1 summary"><p>Gets an empty list that retains the same sort or unordered semantics that this instance has.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IImmutableList<t> Clear()</t></code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Immutable.IImmutableList`1.html" name="System.Collections.Immutable.IImmutableList&lt;T&gt;">IImmutableList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableList.cs/#L51">View Source</a>
+      </span>
+  <h4 id="IndexOf_T__Int32__Int32__IEqualityComparer_T__">IndexOf(T, Int32, Int32, IEqualityComparer&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Searches for the specified object and returns the zero-based index of the
+first occurrence within the range of elements in the <a href="System.Collections.Immutable.ImmutableList`1.html">System.Collections.Immutable.ImmutableList`1</a>
+that starts at the specified index and contains the specified number of elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int IndexOf(T item, int index, int count, IEqualityComparer<t> equalityComparer)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><em>item</em></td>
+        <td><p>The object to locate in the <see cref="T:System.Collections.Immutable.ImmutableList`1"></see>. The value
+can be null for reference types.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>index</em></td>
+        <td><p>The zero-based starting index of the search. 0 (zero) is valid in an empty
+list.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>count</em></td>
+        <td><p>The number of elements in the section to search.</p>
+</td>
+      </tr>
+      <tr>
+        <td>System.Collections.Generic.IEqualityComparer&lt;T&gt;</td>
+        <td><em>equalityComparer</em></td>
+        <td><p>The equality comparer to use in the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><p>The zero-based index of the first occurrence of item within the range of
+elements in the <see cref="T:System.Collections.Immutable.ImmutableList`1"></see> that starts at index and
+contains count number of elements, if found; otherwise, -1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableList.cs/#L99">View Source</a>
+      </span>
+  <h4 id="Insert_Int32__T_">Insert(Int32, T)</h4>
+  <div class="markdown level1 summary"><p>Inserts the specified value at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IImmutableList<t> Insert(int index, T element)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>index</em></td>
+        <td><p>The index at which to insert the value.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T</td>
+        <td><em>element</em></td>
+        <td><p>The element to insert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Immutable.IImmutableList`1.html" name="System.Collections.Immutable.IImmutableList&lt;T&gt;">IImmutableList</a></td>
+        <td><p>The new immutable list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableList.cs/#L108">View Source</a>
+      </span>
+  <h4 id="InsertRange_Int32__IEnumerable_T__">InsertRange(Int32, IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Inserts the specified values at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IImmutableList<t> InsertRange(int index, IEnumerable<t> items)</t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>index</em></td>
+        <td><p>The index at which to insert the value.</p>
+</td>
+      </tr>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><em>items</em></td>
+        <td><p>The elements to insert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Immutable.IImmutableList`1.html" name="System.Collections.Immutable.IImmutableList&lt;T&gt;">IImmutableList</a></td>
+        <td><p>The new immutable list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableList.cs/#L74">View Source</a>
+      </span>
+  <h4 id="LastIndexOf_T__Int32__Int32__IEqualityComparer_T__">LastIndexOf(T, Int32, Int32, IEqualityComparer&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Searches for the specified object and returns the zero-based index of the
+last occurrence within the range of elements in the <a href="System.Collections.Immutable.ImmutableList`1.html">System.Collections.Immutable.ImmutableList`1</a>
+that contains the specified number of elements and ends at the specified
+index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int LastIndexOf(T item, int index, int count, IEqualityComparer<t> equalityComparer)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><em>item</em></td>
+        <td><p>The object to locate in the <see cref="T:System.Collections.Immutable.ImmutableList`1"></see>. The value
+can be null for reference types.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>index</em></td>
+        <td><p>The starting position of the search. The search proceeds from <paramref name="index"></paramref> toward the beginning of this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>count</em></td>
+        <td><p>The number of elements in the section to search.</p>
+</td>
+      </tr>
+      <tr>
+        <td>System.Collections.Generic.IEqualityComparer&lt;T&gt;</td>
+        <td><em>equalityComparer</em></td>
+        <td><p>The equality comparer to use in the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><p>The zero-based index of the last occurrence of <paramref name="item"></paramref> within the range of elements
+in the <see cref="T:System.Collections.Immutable.ImmutableList`1"></see> that contains <paramref name="count"></paramref> number of elements
+and ends at <paramref name="index"></paramref>, if found; otherwise, -1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableList.cs/#L119">View Source</a>
+      </span>
+  <h4 id="Remove_T__IEqualityComparer_T__">Remove(T, IEqualityComparer&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Removes the specified value from this list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IImmutableList<t> Remove(T value, IEqualityComparer<t> equalityComparer)</t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><em>value</em></td>
+        <td><p>The value to remove.</p>
+</td>
+      </tr>
+      <tr>
+        <td>System.Collections.Generic.IEqualityComparer&lt;T&gt;</td>
+        <td><em>equalityComparer</em></td>
+        <td><p>The equality comparer to use in the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Immutable.IImmutableList`1.html" name="System.Collections.Immutable.IImmutableList&lt;T&gt;">IImmutableList</a></td>
+        <td><p>A new list with the element removed, or this list if the element is not in this list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableList.cs/#L133">View Source</a>
+      </span>
+  <h4 id="RemoveAll_Predicate_T__">RemoveAll(Predicate&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Removes all the elements that match the conditions defined by the specified
+predicate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IImmutableList<t> RemoveAll(Predicate<t> match)</t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Predicate&lt;T&gt;</td>
+        <td><em>match</em></td>
+        <td><p>The <a href="System.Predicate`1.html">System.Predicate`1</a> delegate that defines the conditions of the elements
+to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Immutable.IImmutableList`1.html" name="System.Collections.Immutable.IImmutableList&lt;T&gt;">IImmutableList</a></td>
+        <td><p>The new list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableList.cs/#L165">View Source</a>
+      </span>
+  <h4 id="RemoveAt_Int32_">RemoveAt(Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes the element at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IImmutableList<t> RemoveAt(int index)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>index</em></td>
+        <td><p>The index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Immutable.IImmutableList`1.html" name="System.Collections.Immutable.IImmutableList&lt;T&gt;">IImmutableList</a></td>
+        <td><p>A new list with the elements removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableList.cs/#L146">View Source</a>
+      </span>
+  <h4 id="RemoveRange_IEnumerable_T___IEqualityComparer_T__">RemoveRange(IEnumerable&lt;T&gt;, IEqualityComparer&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Removes the specified values from this list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IImmutableList<t> RemoveRange(IEnumerable<t> items, IEqualityComparer<t> equalityComparer)</t></t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><em>items</em></td>
+        <td><p>The items to remove if matches are found in this list.</p>
+</td>
+      </tr>
+      <tr>
+        <td>System.Collections.Generic.IEqualityComparer&lt;T&gt;</td>
+        <td><em>equalityComparer</em></td>
+        <td><p>The equality comparer to use in the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Immutable.IImmutableList`1.html" name="System.Collections.Immutable.IImmutableList&lt;T&gt;">IImmutableList</a></td>
+        <td><p>A new list with the elements removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableList.cs/#L157">View Source</a>
+      </span>
+  <h4 id="RemoveRange_Int32__Int32_">RemoveRange(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes the specified values from this list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IImmutableList<t> RemoveRange(int index, int count)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>index</em></td>
+        <td><p>The starting index to begin removal.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>count</em></td>
+        <td><p>The number of elements to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Immutable.IImmutableList`1.html" name="System.Collections.Immutable.IImmutableList&lt;T&gt;">IImmutableList</a></td>
+        <td><p>A new list with the elements removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableList.cs/#L187">View Source</a>
+      </span>
+  <h4 id="Replace_T__T__IEqualityComparer_T__">Replace(T, T, IEqualityComparer&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Replaces the first equal element in the list with the specified element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IImmutableList<t> Replace(T oldValue, T newValue, IEqualityComparer<t> equalityComparer)</t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><em>oldValue</em></td>
+        <td><p>The element to replace.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T</td>
+        <td><em>newValue</em></td>
+        <td><p>The element to replace the old element with.</p>
+</td>
+      </tr>
+      <tr>
+        <td>System.Collections.Generic.IEqualityComparer&lt;T&gt;</td>
+        <td><em>equalityComparer</em></td>
+        <td><p>The equality comparer to use in the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Immutable.IImmutableList`1.html" name="System.Collections.Immutable.IImmutableList&lt;T&gt;">IImmutableList</a></td>
+        <td><p>The new list -- even if the value being replaced is equal to the new value for that position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableList.cs/#L174">View Source</a>
+      </span>
+  <h4 id="SetItem_Int32__T_">SetItem(Int32, T)</h4>
+  <div class="markdown level1 summary"><p>Replaces an element in the list at a given position with the specified element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IImmutableList<t> SetItem(int index, T value)</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>index</em></td>
+        <td><p>The position in the list of the element to replace.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T</td>
+        <td><em>value</em></td>
+        <td><p>The element to replace the old element with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Collections.Immutable.IImmutableList`1.html" name="System.Collections.Immutable.IImmutableList&lt;T&gt;">IImmutableList</a></td>
+        <td><p>The new list -- even if the value being replaced is equal to the new value for that position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

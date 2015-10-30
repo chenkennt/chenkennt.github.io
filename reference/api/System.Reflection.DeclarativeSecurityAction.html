@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Enum DeclarativeSecurityAction | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Enum DeclarativeSecurityAction | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -55,6 +55,141 @@
       </div>
       <div class="article row grid-right"><div class="col-md-10">
         <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs/#L51" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="DeclarativeSecurityAction">Enum DeclarativeSecurityAction</h1>
+      <div class="markdown level0 summary"><p>Specifies the security actions that can be performed using declarative security.</p>
+</div>
+      <div class="markdown level0 conceptual"></div>
+      <h6><strong>Namespace</strong>:System.Reflection</h6>
+      <h6><strong>Assembly</strong>:System.Reflection.Metadata.dll</h6>
+      <h5 id="DeclarativeSecurityAction_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public enum DeclarativeSecurityAction : short</code></pre>
+      </div>
+      <h3 id="fields">Fields</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs/#L66">View Source</a>
+      </span>
+  <h4 id="Assert">Assert</h4>
+  <div class="markdown level1 summary"><p>The calling code can access the resource identified by the current permission object, even if callers higher in the stack have not been granted permission to access the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Assert = 3</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs/#L61">View Source</a>
+      </span>
+  <h4 id="Demand">Demand</h4>
+  <div class="markdown level1 summary"><p>Check that all callers in the call chain have been granted specified permission,</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Demand = 2</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs/#L71">View Source</a>
+      </span>
+  <h4 id="Deny">Deny</h4>
+  <div class="markdown level1 summary"><p>Without further checks refuse Demand for the specified permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Deny = 4</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs/#L86">View Source</a>
+      </span>
+  <h4 id="InheritanceDemand">InheritanceDemand</h4>
+  <div class="markdown level1 summary"><p>The derived class inheriting the class or overriding a method is required to have been granted the specified permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">InheritanceDemand = 7</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs/#L81">View Source</a>
+      </span>
+  <h4 id="LinkDemand">LinkDemand</h4>
+  <div class="markdown level1 summary"><p>Check that the immediate caller has been granted the specified permission;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">LinkDemand = 6</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs/#L56">View Source</a>
+      </span>
+  <h4 id="None">None</h4>
+  <div class="markdown level1 summary"><p>No declarative security action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">None = 0</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs/#L76">View Source</a>
+      </span>
+  <h4 id="PermitOnly">PermitOnly</h4>
+  <div class="markdown level1 summary"><p>Without further checks, refuse Demand for all permissions other than those specified.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PermitOnly = 5</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs/#L91">View Source</a>
+      </span>
+  <h4 id="RequestMinimum">RequestMinimum</h4>
+  <div class="markdown level1 summary"><p>The request for the minimum permissions required for code to run. This action can only be used within the scope of the assembly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">RequestMinimum = 8</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs/#L96">View Source</a>
+      </span>
+  <h4 id="RequestOptional">RequestOptional</h4>
+  <div class="markdown level1 summary"><p>The request for additional permissions that are optional (not required to run). This request implicitly refuses all other permissions not specifically requested. This action can only be used within the scope of the assembly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">RequestOptional = 9</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs/#L101">View Source</a>
+      </span>
+  <h4 id="RequestRefuse">RequestRefuse</h4>
+  <div class="markdown level1 summary"><p>The request that permissions that might be misused will not be granted to the calling code. This action can only be used within the scope of the assembly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">RequestRefuse = 10</code></pre>
+  </div>
 
 </article>
 </div>

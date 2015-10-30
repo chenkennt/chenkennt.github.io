@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class DynamicMetaObjectBinder | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class DynamicMetaObjectBinder | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -60,7 +60,8 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="DynamicMetaObjectBinder">Class DynamicMetaObjectBinder</h1>
-      <div class="markdown level0 summary"><p>The dynamic call site binder that participates in the <a href="System.Dynamic.DynamicMetaObject.html">System.Dynamic.DynamicMetaObject</a> binding protocol.</p><br></div>
+      <div class="markdown level0 summary"><p>The dynamic call site binder that participates in the <a href="System.Dynamic.DynamicMetaObject.html">System.Dynamic.DynamicMetaObject</a> binding protocol.</p>
+</div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
         <h5>Inheritance</h5>
@@ -74,307 +75,313 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public abstract class DynamicMetaObjectBinder : CallSiteBinder</code></pre>
       </div>
-      <h5 id="DynamicMetaObjectBinder_remarks">remarks</h5>
-      <div class="markdown level0 remarks"><p>The <see cref="T:System.Runtime.CompilerServices.CallSiteBinder"></see> performs the binding of the dynamic operation using the runtime values<br>as input. On the other hand, the <see cref="T:System.Dynamic.DynamicMetaObjectBinder"></see> participates in the <see cref="T:System.Dynamic.DynamicMetaObject"></see></br>binding protocol.</p><br></div>
+      <h5 id="DynamicMetaObjectBinder_remarks"><strong>Remarks<strong></strong></strong></h5>
+      <div class="markdown level0 remarks"><p>The <see cref="T:System.Runtime.CompilerServices.CallSiteBinder"></see> performs the binding of the dynamic operation using the runtime values
+as input. On the other hand, the <see cref="T:System.Dynamic.DynamicMetaObjectBinder"></see> participates in the <see cref="T:System.Dynamic.DynamicMetaObject"></see>
+binding protocol.</p>
+</div>
       <h3 id="constructors">Constructors</h3>
-      
-    <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObjectBinder.cs/#L28"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-  </span>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObjectBinder.cs/#L28">View Source</a>
+      </span>
   <h4 id="DynamicMetaObjectBinder__">DynamicMetaObjectBinder()</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Dynamic.DynamicMetaObjectBinder.html">System.Dynamic.DynamicMetaObjectBinder</a> class.</p><br></div>
-  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Dynamic.DynamicMetaObjectBinder.html">System.Dynamic.DynamicMetaObjectBinder</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected DynamicMetaObjectBinder()</code></pre>
   </div>
-<h3 id="properties">Properties</h3>
+      <h3 id="properties">Properties</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObjectBinder.cs/#L35"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="ReturnType">ReturnType</h4>
-<div class="markdown level1 summary"><p>The result type of the operation.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public virtual Type ReturnType { get; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObjectBinder.cs/#L35">View Source</a>
+      </span>
+  <h4 id="ReturnType">ReturnType</h4>
+  <div class="markdown level1 summary"><p>The result type of the operation.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Type.html" name="System.Type">Type</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h3 id="methods">Methods</h3>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Type ReturnType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Type.html" name="System.Type">Type</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="methods">Methods</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObjectBinder.cs/#L172"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Bind_DynamicMetaObject__DynamicMetaObject___">Bind(DynamicMetaObject, DynamicMetaObject[])</h4>
-<div class="markdown level1 summary"><p>When overridden in the derived class, performs the binding of the dynamic operation.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public abstract DynamicMetaObject Bind(DynamicMetaObject target, DynamicMetaObject[] args)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObjectBinder.cs/#L172">View Source</a>
+      </span>
+  <h4 id="Bind_DynamicMetaObject__DynamicMetaObject___">Bind(DynamicMetaObject, DynamicMetaObject[])</h4>
+  <div class="markdown level1 summary"><p>When overridden in the derived class, performs the binding of the dynamic operation.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Dynamic.DynamicMetaObject.html" name="System.Dynamic.DynamicMetaObject">DynamicMetaObject</a></td>
-      <td><em>target</em></td>
-      <td><p>The target of the dynamic operation.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract DynamicMetaObject Bind(DynamicMetaObject target, DynamicMetaObject[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Dynamic.DynamicMetaObject.html" name="System.Dynamic.DynamicMetaObject">DynamicMetaObject</a></td>
+        <td><em>target</em></td>
+        <td><p>The target of the dynamic operation.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Dynamic.DynamicMetaObject.html" name="System.Dynamic.DynamicMetaObject">DynamicMetaObject</a>[]</td>
-      <td><em>args</em></td>
-      <td><p>An array of arguments of the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td>System.Dynamic.DynamicMetaObject[]</td>
+        <td><em>args</em></td>
+        <td><p>An array of arguments of the dynamic operation.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Dynamic.DynamicMetaObject.html" name="System.Dynamic.DynamicMetaObject">DynamicMetaObject</a></td>
-      <td><p>The <a href="System.Dynamic.DynamicMetaObject.html">System.Dynamic.DynamicMetaObject</a> representing the result of the binding.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Dynamic.DynamicMetaObject.html" name="System.Dynamic.DynamicMetaObject">DynamicMetaObject</a></td>
+        <td><p>The <a href="System.Dynamic.DynamicMetaObject.html">System.Dynamic.DynamicMetaObject</a> representing the result of the binding.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObjectBinder.cs/#L52"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Bind_Object____ReadOnlyCollection_ParameterExpression___LabelTarget_">Bind(Object[], ReadOnlyCollection&lt;ParameterExpression&gt;, LabelTarget)</h4>
-<div class="markdown level1 summary"><p>Performs the runtime binding of the dynamic operation on a set of arguments.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public override sealed Expression Bind(object[] args, ReadOnlyCollection<parameterexpression> parameters, LabelTarget returnLabel)</parameterexpression></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObjectBinder.cs/#L52">View Source</a>
+      </span>
+  <h4 id="Bind_Object____ReadOnlyCollection_ParameterExpression___LabelTarget_">Bind(Object[], ReadOnlyCollection&lt;ParameterExpression&gt;, LabelTarget)</h4>
+  <div class="markdown level1 summary"><p>Performs the runtime binding of the dynamic operation on a set of arguments.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a>[]</td>
-      <td><em>args</em></td>
-      <td><p>An array of arguments to the dynamic operation.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed Expression Bind(object[] args, ReadOnlyCollection<parameterexpression> parameters, LabelTarget returnLabel)</parameterexpression></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Object[]</td>
+        <td><em>args</em></td>
+        <td><p>An array of arguments to the dynamic operation.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Collections.ObjectModel.ReadOnlyCollection`1.html" name="System.Collections.ObjectModel.ReadOnlyCollection">ReadOnlyCollection</a>&lt;ParameterExpression&gt;</td>
-      <td><em>parameters</em></td>
-      <td><p>The array of <see cref="!:ParameterExpression"></see> instances that represent the parameters of the call site in the binding process.</p>
+      </tr>
+      <tr>
+        <td>System.Collections.ObjectModel.ReadOnlyCollection&lt;ParameterExpression&gt;</td>
+        <td><em>parameters</em></td>
+        <td><p>The array of <see cref="!:ParameterExpression"></see> instances that represent the parameters of the call site in the binding process.</p>
 </td>
-    </tr>
-    <tr>
-      <td>LabelTarget</td>
-      <td><em>returnLabel</em></td>
-      <td><p>A LabelTarget used to return the result of the dynamic binding.</p>
+      </tr>
+      <tr>
+        <td>LabelTarget</td>
+        <td><em>returnLabel</em></td>
+        <td><p>A LabelTarget used to return the result of the dynamic binding.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Expression</td>
-      <td><p>An Expression that performs tests on the dynamic operation arguments, and
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Expression</td>
+        <td><p>An Expression that performs tests on the dynamic operation arguments, and
 performs the dynamic operation if the tests are valid. If the tests fail on
 subsequent occurrences of the dynamic operation, Bind will be called again
 to produce a new <see cref="!:Expression"></see> for the new argument types.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObjectBinder.cs/#L194"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Defer_DynamicMetaObject__DynamicMetaObject___">Defer(DynamicMetaObject, DynamicMetaObject[])</h4>
-<div class="markdown level1 summary"><p>Defers the binding of the operation until later time when the runtime values of all dynamic operation arguments have been computed.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public DynamicMetaObject Defer(DynamicMetaObject target, params DynamicMetaObject[] args)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObjectBinder.cs/#L194">View Source</a>
+      </span>
+  <h4 id="Defer_DynamicMetaObject__DynamicMetaObject___">Defer(DynamicMetaObject, DynamicMetaObject[])</h4>
+  <div class="markdown level1 summary"><p>Defers the binding of the operation until later time when the runtime values of all dynamic operation arguments have been computed.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Dynamic.DynamicMetaObject.html" name="System.Dynamic.DynamicMetaObject">DynamicMetaObject</a></td>
-      <td><em>target</em></td>
-      <td><p>The target of the dynamic operation.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamicMetaObject Defer(DynamicMetaObject target, params DynamicMetaObject[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Dynamic.DynamicMetaObject.html" name="System.Dynamic.DynamicMetaObject">DynamicMetaObject</a></td>
+        <td><em>target</em></td>
+        <td><p>The target of the dynamic operation.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Dynamic.DynamicMetaObject.html" name="System.Dynamic.DynamicMetaObject">DynamicMetaObject</a>[]</td>
-      <td><em>args</em></td>
-      <td><p>An array of arguments of the dynamic operation.</p>
+      </tr>
+      <tr>
+        <td>System.Dynamic.DynamicMetaObject[]</td>
+        <td><em>args</em></td>
+        <td><p>An array of arguments of the dynamic operation.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Dynamic.DynamicMetaObject.html" name="System.Dynamic.DynamicMetaObject">DynamicMetaObject</a></td>
-      <td><p>The <a href="System.Dynamic.DynamicMetaObject.html">System.Dynamic.DynamicMetaObject</a> representing the result of the binding.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Dynamic.DynamicMetaObject.html" name="System.Dynamic.DynamicMetaObject">DynamicMetaObject</a></td>
+        <td><p>The <a href="System.Dynamic.DynamicMetaObject.html">System.Dynamic.DynamicMetaObject</a> representing the result of the binding.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObjectBinder.cs/#L216"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Defer_DynamicMetaObject___">Defer(DynamicMetaObject[])</h4>
-<div class="markdown level1 summary"><p>Defers the binding of the operation until later time when the runtime values of all dynamic operation arguments have been computed.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public DynamicMetaObject Defer(params DynamicMetaObject[] args)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObjectBinder.cs/#L216">View Source</a>
+      </span>
+  <h4 id="Defer_DynamicMetaObject___">Defer(DynamicMetaObject[])</h4>
+  <div class="markdown level1 summary"><p>Defers the binding of the operation until later time when the runtime values of all dynamic operation arguments have been computed.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Dynamic.DynamicMetaObject.html" name="System.Dynamic.DynamicMetaObject">DynamicMetaObject</a>[]</td>
-      <td><em>args</em></td>
-      <td><p>An array of arguments of the dynamic operation.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamicMetaObject Defer(params DynamicMetaObject[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Dynamic.DynamicMetaObject[]</td>
+        <td><em>args</em></td>
+        <td><p>An array of arguments of the dynamic operation.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Dynamic.DynamicMetaObject.html" name="System.Dynamic.DynamicMetaObject">DynamicMetaObject</a></td>
-      <td><p>The <a href="System.Dynamic.DynamicMetaObject.html">System.Dynamic.DynamicMetaObject</a> representing the result of the binding.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Dynamic.DynamicMetaObject.html" name="System.Dynamic.DynamicMetaObject">DynamicMetaObject</a></td>
+        <td><p>The <a href="System.Dynamic.DynamicMetaObject.html">System.Dynamic.DynamicMetaObject</a> representing the result of the binding.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObjectBinder.cs/#L182"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="GetUpdateExpression_Type_">GetUpdateExpression(Type)</h4>
-<div class="markdown level1 summary"><p>Gets an expression that will cause the binding to be updated. It<br>indicates that the expression&#39;s binding is no longer valid.</br>This is typically used when the &quot;version&quot; of a dynamic object has<br>changed.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public Expression GetUpdateExpression(Type type)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObjectBinder.cs/#L182">View Source</a>
+      </span>
+  <h4 id="GetUpdateExpression_Type_">GetUpdateExpression(Type)</h4>
+  <div class="markdown level1 summary"><p>Gets an expression that will cause the binding to be updated. It
+indicates that the expression&#39;s binding is no longer valid.
+This is typically used when the &quot;version&quot; of a dynamic object has
+changed.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Type.html" name="System.Type">Type</a></td>
-      <td><em>type</em></td>
-      <td><p>The <see cref="!:Expression.Type">Type</see> property of the resulting expression; any type is allowed.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Expression GetUpdateExpression(Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Type.html" name="System.Type">Type</a></td>
+        <td><em>type</em></td>
+        <td><p>The <see cref="!:Expression.Type">Type</see> property of the resulting expression; any type is allowed.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Expression</td>
-      <td><p>The update expression.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Expression</td>
+        <td><p>The update expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

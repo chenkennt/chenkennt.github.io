@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class TaskCompletionSource&lt;TResult&gt; | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class TaskCompletionSource&lt;TResult&gt; | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -60,7 +60,9 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="TaskCompletionSource_TResult_">Class TaskCompletionSource&lt;TResult&gt;</h1>
-      <div class="markdown level0 summary"><p>Represents the producer side of a <a href="">System.Threading.Tasks.Task{TResult}</a> unbound to a<br>delegate, providing access to the consumer side through the <a href="System.Threading.Tasks.TaskCompletionSource`1.html">System.Threading.Tasks.TaskCompletionSource`1.Task</a> property.</p><br></div>
+      <div class="markdown level0 summary"><p>Represents the producer side of a <a href="">System.Threading.Tasks.Task{TResult}</a> unbound to a
+delegate, providing access to the consumer side through the <a href="System.Threading.Tasks.TaskCompletionSource`1.html">System.Threading.Tasks.TaskCompletionSource`1.Task</a> property.</p>
+</div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
         <h5>Inheritance</h5>
@@ -73,28 +75,43 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public class TaskCompletionSource<tresult></tresult></code></pre>
       </div>
-      <h5 id="TaskCompletionSource_TResult__remarks">remarks</h5>
-      <div class="markdown level0 remarks"><para><br>It is often the case that a <see cref="T:System.Threading.Tasks.Task{TResult}"></see> is desired to</br>represent another asynchronous operation.<br><see cref="T:System.Threading.Tasks.TaskCompletionSource`1">TaskCompletionSource</see> is provided for this purpose. It enables</br>the creation of a task that can be handed out to consumers, and those consumers can use the members<br>of the task as they would any other. However, unlike most tasks, the state of a task created by a</br>TaskCompletionSource is controlled explicitly by the methods on TaskCompletionSource. This enables the<br>completion of the external asynchronous operation to be propagated to the underlying Task. The</br>separation also ensures that consumers are not able to transition the state without access to the<br>corresponding TaskCompletionSource.</br></para><br><para><br>All members of <see cref="T:System.Threading.Tasks.TaskCompletionSource`1"></see> are thread-safe</br>and may be used from multiple threads concurrently.<br></para></div>
+      <h5 id="TaskCompletionSource_TResult__remarks"><strong>Remarks<strong></strong></strong></h5>
+      <div class="markdown level0 remarks"><para>
+It is often the case that a <see cref="T:System.Threading.Tasks.Task{TResult}"></see> is desired to
+represent another asynchronous operation.
+<see cref="T:System.Threading.Tasks.TaskCompletionSource`1">TaskCompletionSource</see> is provided for this purpose. It enables
+the creation of a task that can be handed out to consumers, and those consumers can use the members
+of the task as they would any other. However, unlike most tasks, the state of a task created by a
+TaskCompletionSource is controlled explicitly by the methods on TaskCompletionSource. This enables the
+completion of the external asynchronous operation to be propagated to the underlying Task. The
+separation also ensures that consumers are not able to transition the state without access to the
+corresponding TaskCompletionSource.
+</para>
+<para>
+All members of <see cref="T:System.Threading.Tasks.TaskCompletionSource`1"></see> are thread-safe
+and may be used from multiple threads concurrently.
+</para></div>
       <h3 id="constructors">Constructors</h3>
-      
-    <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs/#L57"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-  </span>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs/#L57">View Source</a>
+      </span>
   <h4 id="TaskCompletionSource__">TaskCompletionSource()</h4>
-  <div class="markdown level1 summary"><p>Creates a <a href="System.Threading.Tasks.TaskCompletionSource`1.html">System.Threading.Tasks.TaskCompletionSource`1</a>.</p><br></div>
-  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 summary"><p>Creates a <a href="System.Threading.Tasks.TaskCompletionSource`1.html">System.Threading.Tasks.TaskCompletionSource`1</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public TaskCompletionSource()</code></pre>
   </div>
-      
-    <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs/#L88"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-  </span>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs/#L88">View Source</a>
+      </span>
   <h4 id="TaskCompletionSource_Object_">TaskCompletionSource(Object)</h4>
-  <div class="markdown level1 summary"><p>Creates a <a href="System.Threading.Tasks.TaskCompletionSource`1.html">System.Threading.Tasks.TaskCompletionSource`1</a><br>with the specified state.</p><br></div>
-  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 summary"><p>Creates a <a href="System.Threading.Tasks.TaskCompletionSource`1.html">System.Threading.Tasks.TaskCompletionSource`1</a>
+with the specified state.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -119,13 +136,14 @@
       </tr>
     </tbody>
   </table>
-      
-    <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs/#L105"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-  </span>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs/#L105">View Source</a>
+      </span>
   <h4 id="TaskCompletionSource_Object__TaskCreationOptions_">TaskCompletionSource(Object, TaskCreationOptions)</h4>
-  <div class="markdown level1 summary"><p>Creates a <a href="System.Threading.Tasks.TaskCompletionSource`1.html">System.Threading.Tasks.TaskCompletionSource`1</a> with<br>the specified state and options.</p><br></div>
-  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 summary"><p>Creates a <a href="System.Threading.Tasks.TaskCompletionSource`1.html">System.Threading.Tasks.TaskCompletionSource`1</a> with
+the specified state and options.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -157,14 +175,20 @@
       </tr>
     </tbody>
   </table>
-      
-    <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs/#L77"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-  </span>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs/#L77">View Source</a>
+      </span>
   <h4 id="TaskCompletionSource_TaskCreationOptions_">TaskCompletionSource(TaskCreationOptions)</h4>
-  <div class="markdown level1 summary"><p>Creates a <a href="System.Threading.Tasks.TaskCompletionSource`1.html">System.Threading.Tasks.TaskCompletionSource`1</a><br>with the specified options.</p><br></div>
-  <div class="markdown level1 remarks"><p>The <a href="">System.Threading.Tasks.Task{TResult}</a> created<br>by this instance and accessible through its <a href="System.Threading.Tasks.TaskCompletionSource`1.html">System.Threading.Tasks.TaskCompletionSource`1.Task</a> property</br>will be instantiated using the specified <paramref name="creationOptions"></paramref>.</p><br></div>
+  <div class="markdown level1 summary"><p>Creates a <a href="System.Threading.Tasks.TaskCompletionSource`1.html">System.Threading.Tasks.TaskCompletionSource`1</a>
+with the specified options.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
+  <h5 id="TaskCompletionSource_TaskCreationOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The <a href="">System.Threading.Tasks.Task{TResult}</a> created
+by this instance and accessible through its <a href="System.Threading.Tasks.TaskCompletionSource`1.html">System.Threading.Tasks.TaskCompletionSource`1.Task</a> property
+will be instantiated using the specified <paramref name="creationOptions"></paramref>.</p>
+</div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public TaskCompletionSource(TaskCreationOptions creationOptions)</code></pre>
@@ -188,347 +212,410 @@
       </tr>
     </tbody>
   </table>
-<h3 id="properties">Properties</h3>
+      <h3 id="properties">Properties</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs/#L123"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Task">Task</h4>
-<div class="markdown level1 summary"><p>Gets the <a href="">System.Threading.Tasks.Task{TResult}</a> created<br>by this <a href="System.Threading.Tasks.TaskCompletionSource`1.html">System.Threading.Tasks.TaskCompletionSource`1</a>.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This property enables a consumer access to the <see cref="T:System.Threading.Tasks.Task{TResult}"></see> that is controlled by this instance.<br>The <see cref="M:System.Threading.Tasks.TaskCompletionSource`1.SetResult(`0)"></see>, <see cref="M:System.Threading.Tasks.TaskCompletionSource`1.SetException(System.Exception)"></see>,</p><br><p><see cref="M:System.Threading.Tasks.TaskCompletionSource`1.SetException(System.Collections.Generic.IEnumerable{System.Exception})"></see>, and <see cref="M:System.Threading.Tasks.TaskCompletionSource`1.SetCanceled"></see></br>methods (and their &quot;Try&quot; variants) on this instance all result in the relevant state<br>transitions on this underlying Task.<p></br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public Task<tresult> Task { get; }</tresult></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs/#L123">View Source</a>
+      </span>
+  <h4 id="Task">Task</h4>
+  <div class="markdown level1 summary"><p>Gets the <a href="">System.Threading.Tasks.Task{TResult}</a> created
+by this <a href="System.Threading.Tasks.TaskCompletionSource`1.html">System.Threading.Tasks.TaskCompletionSource`1</a>.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TResult&gt;</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h3 id="methods">Methods</h3>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Task_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property enables a consumer access to the <see cref="T:System.Threading.Tasks.Task{TResult}"></see> that is controlled by this instance.
+The <see cref="M:System.Threading.Tasks.TaskCompletionSource`1.SetResult(`0)"></see>, <see cref="M:System.Threading.Tasks.TaskCompletionSource`1.SetException(System.Exception)"></see>,</p>
+<p><see cref="M:System.Threading.Tasks.TaskCompletionSource`1.SetException(System.Collections.Generic.IEnumerable{System.Exception})"></see>, and <see cref="M:System.Threading.Tasks.TaskCompletionSource`1.SetCanceled"></see>
+methods (and their &quot;Try&quot; variants) on this instance all result in the relevant state
+transitions on this underlying Task.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task<tresult> Task { get; }</tresult></code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Threading.Tasks.Task&lt;TResult&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="methods">Methods</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs/#L363"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="SetCanceled__">SetCanceled()</h4>
-<div class="markdown level1 summary"><p>Transitions the underlying<br><a href="">System.Threading.Tasks.Task{TResult}</a> into the</br><a href="System.Threading.Tasks.TaskStatus.html">System.Threading.Tasks.TaskStatus.Canceled</a><br>state.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void SetCanceled()</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs/#L363">View Source</a>
+      </span>
+  <h4 id="SetCanceled__">SetCanceled()</h4>
+  <div class="markdown level1 summary"><p>Transitions the underlying
+<a href="">System.Threading.Tasks.Task{TResult}</a> into the
+<a href="System.Threading.Tasks.TaskStatus.html">System.Threading.Tasks.TaskStatus.Canceled</a>
+state.</p>
 </div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCanceled()</code></pre>
+  </div>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs/#L266"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="SetException_IEnumerable_Exception__">SetException(IEnumerable&lt;Exception&gt;)</h4>
-<div class="markdown level1 summary"><p>Transitions the underlying<br><a href="">System.Threading.Tasks.Task{TResult}</a> into the</br><a href="System.Threading.Tasks.TaskStatus.html">System.Threading.Tasks.TaskStatus.Faulted</a><br>state.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void SetException(IEnumerable<exception> exceptions)</exception></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs/#L266">View Source</a>
+      </span>
+  <h4 id="SetException_IEnumerable_Exception__">SetException(IEnumerable&lt;Exception&gt;)</h4>
+  <div class="markdown level1 summary"><p>Transitions the underlying
+<a href="">System.Threading.Tasks.Task{TResult}</a> into the
+<a href="System.Threading.Tasks.TaskStatus.html">System.Threading.Tasks.TaskStatus.Faulted</a>
+state.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.Exception.html" name="System.Exception">Exception</a>&gt;</td>
-      <td><em>exceptions</em></td>
-      <td><p>The collection of exceptions to bind to this <see cref="T:System.Threading.Tasks.Task{TResult}"></see>.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetException(IEnumerable<exception> exceptions)</exception></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;System.Exception&gt;</td>
+        <td><em>exceptions</em></td>
+        <td><p>The collection of exceptions to bind to this <see cref="T:System.Threading.Tasks.Task{TResult}"></see>.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs/#L238"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="SetException_Exception_">SetException(Exception)</h4>
-<div class="markdown level1 summary"><p>Transitions the underlying<br><a href="">System.Threading.Tasks.Task{TResult}</a> into the</br><a href="System.Threading.Tasks.TaskStatus.html">System.Threading.Tasks.TaskStatus.Faulted</a><br>state.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void SetException(Exception exception)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs/#L238">View Source</a>
+      </span>
+  <h4 id="SetException_Exception_">SetException(Exception)</h4>
+  <div class="markdown level1 summary"><p>Transitions the underlying
+<a href="">System.Threading.Tasks.Task{TResult}</a> into the
+<a href="System.Threading.Tasks.TaskStatus.html">System.Threading.Tasks.TaskStatus.Faulted</a>
+state.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Exception.html" name="System.Exception">Exception</a></td>
-      <td><em>exception</em></td>
-      <td><p>The exception to bind to this <see cref="T:System.Threading.Tasks.Task{TResult}"></see>.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetException(Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Exception.html" name="System.Exception">Exception</a></td>
+        <td><em>exception</em></td>
+        <td><p>The exception to bind to this <see cref="T:System.Threading.Tasks.Task{TResult}"></see>.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs/#L315"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="SetResult_TResult_">SetResult(TResult)</h4>
-<div class="markdown level1 summary"><p>Transitions the underlying<br><a href="">System.Threading.Tasks.Task{TResult}</a> into the</br><a href="System.Threading.Tasks.TaskStatus.html">System.Threading.Tasks.TaskStatus.RanToCompletion</a><br>state.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void SetResult(TResult result)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs/#L315">View Source</a>
+      </span>
+  <h4 id="SetResult_TResult_">SetResult(TResult)</h4>
+  <div class="markdown level1 summary"><p>Transitions the underlying
+<a href="">System.Threading.Tasks.Task{TResult}</a> into the
+<a href="System.Threading.Tasks.TaskStatus.html">System.Threading.Tasks.TaskStatus.RanToCompletion</a>
+state.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>TResult</td>
-      <td><em>result</em></td>
-      <td><p>The result value to bind to this <see cref="T:System.Threading.Tasks.Task{TResult}"></see>.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetResult(TResult result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TResult</td>
+        <td><em>result</em></td>
+        <td><p>The result value to bind to this <see cref="T:System.Threading.Tasks.Task{TResult}"></see>.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs/#L336"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="TrySetCanceled__">TrySetCanceled()</h4>
-<div class="markdown level1 summary"><p>Attempts to transition the underlying<br><a href="">System.Threading.Tasks.Task{TResult}</a> into the</br><a href="System.Threading.Tasks.TaskStatus.html">System.Threading.Tasks.TaskStatus.Canceled</a><br>state.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This operation will return false if the</p><br><p><see cref="T:System.Threading.Tasks.Task{TResult}"></see> is already in one</br>of the three final states:<p><br><p><see cref="F:System.Threading.Tasks.TaskStatus.RanToCompletion">RanToCompletion</see>,</p></br><p><see cref="F:System.Threading.Tasks.TaskStatus.Faulted">Faulted</see>, or</p><br><p><see cref="F:System.Threading.Tasks.TaskStatus.Canceled">Canceled</see>.</p></br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public bool TrySetCanceled()</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs/#L336">View Source</a>
+      </span>
+  <h4 id="TrySetCanceled__">TrySetCanceled()</h4>
+  <div class="markdown level1 summary"><p>Attempts to transition the underlying
+<a href="">System.Threading.Tasks.Task{TResult}</a> into the
+<a href="System.Threading.Tasks.TaskStatus.html">System.Threading.Tasks.TaskStatus.Canceled</a>
+state.</p>
 </div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>True if the operation was successful; otherwise, false.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="TrySetCanceled___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This operation will return false if the</p>
+<p><see cref="T:System.Threading.Tasks.Task{TResult}"></see> is already in one
+of the three final states:</p>
+<p><see cref="F:System.Threading.Tasks.TaskStatus.RanToCompletion">RanToCompletion</see>,</p>
+<p><see cref="F:System.Threading.Tasks.TaskStatus.Faulted">Faulted</see>, or</p>
+<p><see cref="F:System.Threading.Tasks.TaskStatus.Canceled">Canceled</see>.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TrySetCanceled()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>True if the operation was successful; otherwise, false.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs/#L342"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="TrySetCanceled_CancellationToken_">TrySetCanceled(CancellationToken)</h4>
-<div class="markdown level1 summary"></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public bool TrySetCanceled(CancellationToken cancellationToken)</code></pre>
-</div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
-      <td><em>cancellationToken</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs/#L342">View Source</a>
+      </span>
+  <h4 id="TrySetCanceled_CancellationToken_">TrySetCanceled(CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TrySetCanceled(CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
+        <td><em>cancellationToken</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs/#L185"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="TrySetException_IEnumerable_Exception__">TrySetException(IEnumerable&lt;Exception&gt;)</h4>
-<div class="markdown level1 summary"><p>Attempts to transition the underlying<br><a href="">System.Threading.Tasks.Task{TResult}</a> into the</br><a href="System.Threading.Tasks.TaskStatus.html">System.Threading.Tasks.TaskStatus.Faulted</a><br>state.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This operation will return false if the</p><br><p><see cref="T:System.Threading.Tasks.Task{TResult}"></see> is already in one</br>of the three final states:<p><br><p><see cref="F:System.Threading.Tasks.TaskStatus.RanToCompletion">RanToCompletion</see>,</p></br><p><see cref="F:System.Threading.Tasks.TaskStatus.Faulted">Faulted</see>, or</p><br><p><see cref="F:System.Threading.Tasks.TaskStatus.Canceled">Canceled</see>.</p></br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public bool TrySetException(IEnumerable<exception> exceptions)</exception></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs/#L185">View Source</a>
+      </span>
+  <h4 id="TrySetException_IEnumerable_Exception__">TrySetException(IEnumerable&lt;Exception&gt;)</h4>
+  <div class="markdown level1 summary"><p>Attempts to transition the underlying
+<a href="">System.Threading.Tasks.Task{TResult}</a> into the
+<a href="System.Threading.Tasks.TaskStatus.html">System.Threading.Tasks.TaskStatus.Faulted</a>
+state.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.Exception.html" name="System.Exception">Exception</a>&gt;</td>
-      <td><em>exceptions</em></td>
-      <td><p>The collection of exceptions to bind to this <see cref="T:System.Threading.Tasks.Task{TResult}"></see>.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="TrySetException_IEnumerable_Exception___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This operation will return false if the</p>
+<p><see cref="T:System.Threading.Tasks.Task{TResult}"></see> is already in one
+of the three final states:</p>
+<p><see cref="F:System.Threading.Tasks.TaskStatus.RanToCompletion">RanToCompletion</see>,</p>
+<p><see cref="F:System.Threading.Tasks.TaskStatus.Faulted">Faulted</see>, or</p>
+<p><see cref="F:System.Threading.Tasks.TaskStatus.Canceled">Canceled</see>.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TrySetException(IEnumerable<exception> exceptions)</exception></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;System.Exception&gt;</td>
+        <td><em>exceptions</em></td>
+        <td><p>The collection of exceptions to bind to this <see cref="T:System.Threading.Tasks.Task{TResult}"></see>.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>True if the operation was successful; otherwise, false.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>True if the operation was successful; otherwise, false.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs/#L156"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="TrySetException_Exception_">TrySetException(Exception)</h4>
-<div class="markdown level1 summary"><p>Attempts to transition the underlying<br><a href="">System.Threading.Tasks.Task{TResult}</a> into the</br><a href="System.Threading.Tasks.TaskStatus.html">System.Threading.Tasks.TaskStatus.Faulted</a><br>state.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This operation will return false if the</p><br><p><see cref="T:System.Threading.Tasks.Task{TResult}"></see> is already in one</br>of the three final states:<p><br><p><see cref="F:System.Threading.Tasks.TaskStatus.RanToCompletion">RanToCompletion</see>,</p></br><p><see cref="F:System.Threading.Tasks.TaskStatus.Faulted">Faulted</see>, or</p><br><p><see cref="F:System.Threading.Tasks.TaskStatus.Canceled">Canceled</see>.</p></br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public bool TrySetException(Exception exception)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs/#L156">View Source</a>
+      </span>
+  <h4 id="TrySetException_Exception_">TrySetException(Exception)</h4>
+  <div class="markdown level1 summary"><p>Attempts to transition the underlying
+<a href="">System.Threading.Tasks.Task{TResult}</a> into the
+<a href="System.Threading.Tasks.TaskStatus.html">System.Threading.Tasks.TaskStatus.Faulted</a>
+state.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Exception.html" name="System.Exception">Exception</a></td>
-      <td><em>exception</em></td>
-      <td><p>The exception to bind to this <see cref="T:System.Threading.Tasks.Task{TResult}"></see>.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="TrySetException_Exception__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This operation will return false if the</p>
+<p><see cref="T:System.Threading.Tasks.Task{TResult}"></see> is already in one
+of the three final states:</p>
+<p><see cref="F:System.Threading.Tasks.TaskStatus.RanToCompletion">RanToCompletion</see>,</p>
+<p><see cref="F:System.Threading.Tasks.TaskStatus.Faulted">Faulted</see>, or</p>
+<p><see cref="F:System.Threading.Tasks.TaskStatus.Canceled">Canceled</see>.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TrySetException(Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Exception.html" name="System.Exception">Exception</a></td>
+        <td><em>exception</em></td>
+        <td><p>The exception to bind to this <see cref="T:System.Threading.Tasks.Task{TResult}"></see>.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>True if the operation was successful; otherwise, false.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>True if the operation was successful; otherwise, false.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs/#L292"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="TrySetResult_TResult_">TrySetResult(TResult)</h4>
-<div class="markdown level1 summary"><p>Attempts to transition the underlying<br><a href="">System.Threading.Tasks.Task{TResult}</a> into the</br><a href="System.Threading.Tasks.TaskStatus.html">System.Threading.Tasks.TaskStatus.RanToCompletion</a><br>state.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"><p>This operation will return false if the</p><br><p><see cref="T:System.Threading.Tasks.Task{TResult}"></see> is already in one</br>of the three final states:<p><br><p><see cref="F:System.Threading.Tasks.TaskStatus.RanToCompletion">RanToCompletion</see>,</p></br><p><see cref="F:System.Threading.Tasks.TaskStatus.Faulted">Faulted</see>, or</p><br><p><see cref="F:System.Threading.Tasks.TaskStatus.Canceled">Canceled</see>.</p></br></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public bool TrySetResult(TResult result)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs/#L292">View Source</a>
+      </span>
+  <h4 id="TrySetResult_TResult_">TrySetResult(TResult)</h4>
+  <div class="markdown level1 summary"><p>Attempts to transition the underlying
+<a href="">System.Threading.Tasks.Task{TResult}</a> into the
+<a href="System.Threading.Tasks.TaskStatus.html">System.Threading.Tasks.TaskStatus.RanToCompletion</a>
+state.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>TResult</td>
-      <td><em>result</em></td>
-      <td><p>The result value to bind to this <see cref="T:System.Threading.Tasks.Task{TResult}"></see>.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="TrySetResult_TResult__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This operation will return false if the</p>
+<p><see cref="T:System.Threading.Tasks.Task{TResult}"></see> is already in one
+of the three final states:</p>
+<p><see cref="F:System.Threading.Tasks.TaskStatus.RanToCompletion">RanToCompletion</see>,</p>
+<p><see cref="F:System.Threading.Tasks.TaskStatus.Faulted">Faulted</see>, or</p>
+<p><see cref="F:System.Threading.Tasks.TaskStatus.Canceled">Canceled</see>.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TrySetResult(TResult result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TResult</td>
+        <td><em>result</em></td>
+        <td><p>The result value to bind to this <see cref="T:System.Threading.Tasks.Task{TResult}"></see>.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td><p>True if the operation was successful; otherwise, false.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>True if the operation was successful; otherwise, false.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

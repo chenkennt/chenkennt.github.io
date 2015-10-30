@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class GroupingDataflowBlockOptions | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class GroupingDataflowBlockOptions | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -60,7 +60,10 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="GroupingDataflowBlockOptions">Class GroupingDataflowBlockOptions</h1>
-      <div class="markdown level0 summary"><p>Provides options used to configure the processing performed by dataflow blocks that<br>group together multiple messages, blocks such as <a href="System.Threading.Tasks.Dataflow.JoinBlock`2.html">System.Threading.Tasks.Dataflow.JoinBlock`2</a> and</br><a href="System.Threading.Tasks.Dataflow.BatchBlock`1.html">System.Threading.Tasks.Dataflow.BatchBlock`1</a>.</p><br></div>
+      <div class="markdown level0 summary"><p>Provides options used to configure the processing performed by dataflow blocks that
+group together multiple messages, blocks such as <a href="System.Threading.Tasks.Dataflow.JoinBlock`2.html">System.Threading.Tasks.Dataflow.JoinBlock`2</a> and
+<a href="System.Threading.Tasks.Dataflow.BatchBlock`1.html">System.Threading.Tasks.Dataflow.BatchBlock`1</a>.</p>
+</div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
         <h5>Inheritance</h5>
@@ -74,76 +77,82 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public class GroupingDataflowBlockOptions : DataflowBlockOptions</code></pre>
       </div>
-      <h5 id="GroupingDataflowBlockOptions_remarks">remarks</h5>
-      <div class="markdown level0 remarks"><p><see cref="T:System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions"></see> is mutable and can be configured through its properties.<br>When specific configuration options are not set, the following defaults are used:</p><br><p><list type="table"><listheader><term>Options</term><description>Default</description></listheader><item><term>TaskScheduler</term><description><see cref="P:System.Threading.Tasks.TaskScheduler.Default"></see></description></item><item><term>CancellationToken</term><description><see cref="P:System.Threading.CancellationToken.None"></see></description></item><item><term>MaxMessagesPerTask</term><description>DataflowBlockOptions.Unbounded (-1)</description></item><item><term>BoundedCapacity</term><description>DataflowBlockOptions.Unbounded (-1)</description></item><item><term>NameFormat</term><description>&quot;{0} Id={1}&quot;</description></item><item><term>MaxNumberOfGroups</term><description>GroupingDataflowBlockOptions.Unbounded (-1)</description></item><item><term>Greedy</term><description>true</description></item></list></br>Dataflow block capture the state of the options at their construction.  Subsequent changes<br>to the provided <see cref="T:System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions"></see> instance should not affect the behavior</br>of a dataflow block.<p><br></div>
+      <h5 id="GroupingDataflowBlockOptions_remarks"><strong>Remarks<strong></strong></strong></h5>
+      <div class="markdown level0 remarks"><p><see cref="T:System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions"></see> is mutable and can be configured through its properties.
+When specific configuration options are not set, the following defaults are used:</p>
+<p><list type="table"><listheader><term>Options</term><description>Default</description></listheader><item><term>TaskScheduler</term><description><see cref="P:System.Threading.Tasks.TaskScheduler.Default"></see></description></item><item><term>CancellationToken</term><description><see cref="P:System.Threading.CancellationToken.None"></see></description></item><item><term>MaxMessagesPerTask</term><description>DataflowBlockOptions.Unbounded (-1)</description></item><item><term>BoundedCapacity</term><description>DataflowBlockOptions.Unbounded (-1)</description></item><item><term>NameFormat</term><description>&quot;{0} Id={1}&quot;</description></item><item><term>MaxNumberOfGroups</term><description>GroupingDataflowBlockOptions.Unbounded (-1)</description></item><item><term>Greedy</term><description>true</description></item></list>
+Dataflow block capture the state of the options at their construction.  Subsequent changes
+to the provided <see cref="T:System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions"></see> instance should not affect the behavior
+of a dataflow block.</p>
+</div>
       <h3 id="constructors">Constructors</h3>
-      
-    <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlockOptions.cs/#L381"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-  </span>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlockOptions.cs/#L381">View Source</a>
+      </span>
   <h4 id="GroupingDataflowBlockOptions__">GroupingDataflowBlockOptions()</h4>
-  <div class="markdown level1 summary"><p>Initializes the <a href="System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions.html">System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions</a>.</p><br></div>
-  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 summary"><p>Initializes the <a href="System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions.html">System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public GroupingDataflowBlockOptions()</code></pre>
   </div>
-<h3 id="properties">Properties</h3>
+      <h3 id="properties">Properties</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlockOptions.cs/#L384"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Greedy">Greedy</h4>
-<div class="markdown level1 summary"><p>Gets or sets the Boolean value to use to determine whether to greedily consume offered messages.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public bool Greedy { get; set; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlockOptions.cs/#L384">View Source</a>
+      </span>
+  <h4 id="Greedy">Greedy</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the Boolean value to use to determine whether to greedily consume offered messages.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Greedy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlockOptions.cs/#L395"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="MaxNumberOfGroups">MaxNumberOfGroups</h4>
-<div class="markdown level1 summary"><p>Gets or sets the maximum number of groups that should be generated by the block.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public long MaxNumberOfGroups { get; set; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlockOptions.cs/#L395">View Source</a>
+      </span>
+  <h4 id="MaxNumberOfGroups">MaxNumberOfGroups</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the maximum number of groups that should be generated by the block.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Int64.html" name="System.Int64">Int64</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long MaxNumberOfGroups { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int64.html" name="System.Int64">Int64</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

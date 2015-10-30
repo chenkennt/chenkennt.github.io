@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Struct SpinLock | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Struct SpinLock | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -55,6 +55,379 @@
       </div>
       <div class="article row grid-right"><div class="col-md-10">
         <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SpinLock.cs/#L56" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="SpinLock">Struct SpinLock</h1>
+      <div class="markdown level0 summary"><p>Provides a mutual exclusion lock primitive where a thread trying to acquire the lock waits in a loop
+repeatedly checking until the lock becomes available.</p>
+</div>
+      <div class="markdown level0 conceptual"></div>
+      <h6><strong>Namespace</strong>:System.Threading</h6>
+      <h6><strong>Assembly</strong>:mscorlib.dll</h6>
+      <h5 id="SpinLock_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public struct SpinLock</code></pre>
+      </div>
+      <h5 id="SpinLock_remarks"><strong>Remarks<strong></strong></strong></h5>
+      <div class="markdown level0 remarks"><para>
+Spin locks can be used for leaf-level locks where the object allocation implied by using a <see cref="T:System.Threading.Monitor"></see>, in size or due to garbage collection pressure, is overly
+expensive. Avoiding blocking is another reason that a spin lock can be useful, however if you expect
+any significant amount of blocking, you are probably best not using spin locks due to excessive
+spinning. Spinning can be beneficial when locks are fine grained and large in number (for example, a
+lock per node in a linked list) as well as when lock hold times are always extremely short. In
+general, while holding a spin lock, one should avoid blocking, calling anything that itself may
+block, holding more than one spin lock at once, making dynamically dispatched calls (interface and
+virtuals), making statically dispatched calls into any code one doesn&#39;t own, or allocating memory.
+</para>
+<para>
+<see cref="T:System.Threading.SpinLock"></see> should only be used when it&#39;s been determined that doing so will improve an
+application&#39;s performance. It&#39;s also important to note that <see cref="T:System.Threading.SpinLock"></see> is a value type,
+for performance reasons. As such, one must be very careful not to accidentally copy a SpinLock
+instance, as the two instances (the original and the copy) would then be completely independent of
+one another, which would likely lead to erroneous behavior of the application. If a SpinLock instance
+must be passed around, it should be passed by reference rather than by value.
+</para>
+<para>
+Do not store <see cref="T:System.Threading.SpinLock"></see> instances in readonly fields.
+</para>
+<para>
+All members of <see cref="T:System.Threading.SpinLock"></see> are thread-safe and may be used from multiple threads
+concurrently.
+</para></div>
+      <h3 id="constructors">Constructors</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SpinLock.cs/#L119">View Source</a>
+      </span>
+  <h4 id="SpinLock_Boolean_">SpinLock(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Threading.SpinLock.html">System.Threading.SpinLock</a>
+structure with the option to track thread IDs to improve debugging.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="SpinLock_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The default constructor for <see cref="T:System.Threading.SpinLock"></see> tracks thread ownership.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SpinLock(bool enableThreadOwnerTracking)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>enableThreadOwnerTracking</em></td>
+        <td><p>Whether to capture and use thread IDs for debugging
+purposes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="properties">Properties</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SpinLock.cs/#L635">View Source</a>
+      </span>
+  <h4 id="IsHeld">IsHeld</h4>
+  <div class="markdown level1 summary"><p>Gets whether the lock is currently held by any thread.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsHeld { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SpinLock.cs/#L661">View Source</a>
+      </span>
+  <h4 id="IsHeldByCurrentThread">IsHeldByCurrentThread</h4>
+  <div class="markdown level1 summary"><p>Gets whether the lock is currently held by any thread.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="IsHeldByCurrentThread_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the lock was initialized to track owner threads, this will return whether the lock is acquired
+by the current thread. It is invalid to use this property when the lock was initialized to not
+track thread ownership.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsHeldByCurrentThread { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SpinLock.cs/#L675">View Source</a>
+      </span>
+  <h4 id="IsThreadOwnerTrackingEnabled">IsThreadOwnerTrackingEnabled</h4>
+  <div class="markdown level1 summary"><p>Gets whether thread ownership tracking is enabled for this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsThreadOwnerTrackingEnabled { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="methods">Methods</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SpinLock.cs/#L157">View Source</a>
+      </span>
+  <h4 id="Enter_ref_Boolean_">Enter(ref Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Threading.SpinLock.html">System.Threading.SpinLock</a>
+structure with the option to track thread IDs to improve debugging.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Enter_ref_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The default constructor for <see cref="T:System.Threading.SpinLock"></see> tracks thread ownership.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Enter(ref bool lockTaken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>lockTaken</em></td>
+        <td><p>True if the lock is acquired; otherwise, false. <paramref name="lockTaken"></paramref> must be initialized to false prior to calling this method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SpinLock.cs/#L544">View Source</a>
+      </span>
+  <h4 id="Exit__">Exit()</h4>
+  <div class="markdown level1 summary"><p>Releases the lock.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Exit___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The default overload of <a href="System.Threading.SpinLock.html">System.Threading.SpinLock.Exit</a> provides the same behavior as if calling <a href="System.Threading.SpinLock.html">System.Threading.SpinLock.Exit(System.Boolean)</a> using true as the argument, but Exit() could be slightly faster than Exit(true).</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Exit()</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SpinLock.cs/#L575">View Source</a>
+      </span>
+  <h4 id="Exit_Boolean_">Exit(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Releases the lock.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="Exit_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Calling <a href="System.Threading.SpinLock.html">System.Threading.SpinLock.Exit(System.Boolean)</a> with the <paramref name="useMemoryBarrier"></paramref> argument set to
+true will improve the fairness of the lock at the expense of some performance. The default <a href="System.Threading.SpinLock.html">System.Threading.SpinLock.Enter(System.Boolean)</a>
+overload behaves as if specifying true for <paramref name="useMemoryBarrier"></paramref>.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Exit(bool useMemoryBarrier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>useMemoryBarrier</em></td>
+        <td><p>A Boolean value that indicates whether a memory fence should be issued in order to immediately
+publish the exit operation to other threads.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SpinLock.cs/#L189">View Source</a>
+      </span>
+  <h4 id="TryEnter_ref_Boolean_">TryEnter(ref Boolean)</h4>
+  <div class="markdown level1 summary"><p>Attempts to acquire the lock in a reliable manner, such that even if an exception occurs within
+the method call, <paramref name="lockTaken"></paramref> can be examined reliably to determine whether the
+lock was acquired.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="TryEnter_ref_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Unlike <a href="System.Threading.SpinLock.html">System.Threading.SpinLock.Enter(System.Boolean)</a>, TryEnter will not block waiting for the lock to be available. If the
+lock is not available when TryEnter is called, it will return immediately without any further
+spinning.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TryEnter(ref bool lockTaken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>lockTaken</em></td>
+        <td><p>True if the lock is acquired; otherwise, false. <paramref name="lockTaken"></paramref> must be initialized to false prior to calling this method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SpinLock.cs/#L256">View Source</a>
+      </span>
+  <h4 id="TryEnter_Int32__ref_Boolean_">TryEnter(Int32, ref Boolean)</h4>
+  <div class="markdown level1 summary"><p>Attempts to acquire the lock in a reliable manner, such that even if an exception occurs within
+the method call, <paramref name="lockTaken"></paramref> can be examined reliably to determine whether the
+lock was acquired.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="TryEnter_Int32__ref_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Unlike <a href="System.Threading.SpinLock.html">System.Threading.SpinLock.Enter(System.Boolean)</a>, TryEnter will not block indefinitely waiting for the lock to be
+available. It will block until either the lock is available or until the <paramref name="millisecondsTimeout"></paramref> has expired.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TryEnter(int millisecondsTimeout, ref bool lockTaken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><em>millisecondsTimeout</em></td>
+        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a> (-1) to wait indefinitely.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>lockTaken</em></td>
+        <td><p>True if the lock is acquired; otherwise, false. <paramref name="lockTaken"></paramref> must be initialized to false prior to calling this method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SpinLock.cs/#L220">View Source</a>
+      </span>
+  <h4 id="TryEnter_TimeSpan__ref_Boolean_">TryEnter(TimeSpan, ref Boolean)</h4>
+  <div class="markdown level1 summary"><p>Attempts to acquire the lock in a reliable manner, such that even if an exception occurs within
+the method call, <paramref name="lockTaken"></paramref> can be examined reliably to determine whether the
+lock was acquired.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="TryEnter_TimeSpan__ref_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Unlike <a href="System.Threading.SpinLock.html">System.Threading.SpinLock.Enter(System.Boolean)</a>, TryEnter will not block indefinitely waiting for the lock to be
+available. It will block until either the lock is available or until the <paramref name="timeout"></paramref>
+has expired.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TryEnter(TimeSpan timeout, ref bool lockTaken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
+        <td><em>timeout</em></td>
+        <td><p>A <see cref="T:System.TimeSpan"></see> that represents the number of milliseconds
+to wait, or a <see cref="T:System.TimeSpan"></see> that represents -1 milliseconds to wait indefinitely.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><em>lockTaken</em></td>
+        <td><p>True if the lock is acquired; otherwise, false. <paramref name="lockTaken"></paramref> must be initialized to false prior to calling this method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

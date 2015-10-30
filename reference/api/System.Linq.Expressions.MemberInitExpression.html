@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class MemberInitExpression | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class MemberInitExpression | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -60,7 +60,8 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="MemberInitExpression">Class MemberInitExpression</h1>
-      <div class="markdown level0 summary"><p>Represents calling a constructor and initializing one or more members of the new object.</p><br></div>
+      <div class="markdown level0 summary"><p>Represents calling a constructor and initializing one or more members of the new object.</p>
+</div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
         <h5>Inheritance</h5>
@@ -74,273 +75,277 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public sealed class MemberInitExpression : Expression</code></pre>
       </div>
-      <h5 id="MemberInitExpression_remarks">remarks</h5>
-      <div class="markdown level0 remarks"></div>
-<h3 id="properties">Properties</h3>
+      <h3 id="properties">Properties</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/MemberInitExpression.cs/#L67"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Bindings">Bindings</h4>
-<div class="markdown level1 summary"><p>Gets the bindings that describe how to initialize the members of the newly created object.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public ReadOnlyCollection<memberbinding> Bindings { get; }</memberbinding></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/MemberInitExpression.cs/#L67">View Source</a>
+      </span>
+  <h4 id="Bindings">Bindings</h4>
+  <div class="markdown level1 summary"><p>Gets the bindings that describe how to initialize the members of the newly created object.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.ObjectModel.ReadOnlyCollection`1.html" name="System.Collections.ObjectModel.ReadOnlyCollection">ReadOnlyCollection</a>&lt;<a href="System.Linq.Expressions.MemberBinding.html" name="System.Linq.Expressions.MemberBinding">MemberBinding</a>&gt;</td>
-      <td><p>A <a href="System.Collections.ObjectModel.ReadOnlyCollection`1.html">System.Collections.ObjectModel.ReadOnlyCollection`1</a> of <a href="System.Linq.Expressions.MemberBinding.html">System.Linq.Expressions.MemberBinding</a> objects which describe how to initialize the members.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReadOnlyCollection<memberbinding> Bindings { get; }</memberbinding></code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.MemberBinding&gt;</td>
+        <td><p>A <a href="System.Collections.ObjectModel.ReadOnlyCollection`1.html">System.Collections.ObjectModel.ReadOnlyCollection`1</a> of <a href="System.Linq.Expressions.MemberBinding.html">System.Linq.Expressions.MemberBinding</a> objects which describe how to initialize the members.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/MemberInitExpression.cs/#L40"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="CanReduce">CanReduce</h4>
-<div class="markdown level1 summary"><p>Gets a value that indicates whether the expression tree node can be reduced.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public override bool CanReduce { get; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/MemberInitExpression.cs/#L40">View Source</a>
+      </span>
+  <h4 id="CanReduce">CanReduce</h4>
+  <div class="markdown level1 summary"><p>Gets a value that indicates whether the expression tree node can be reduced.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool CanReduce { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/MemberInitExpression.cs/#L60"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="NewExpression">NewExpression</h4>
-<div class="markdown level1 summary"><p>Gets the expression that represents the constructor call.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public NewExpression NewExpression { get; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/MemberInitExpression.cs/#L60">View Source</a>
+      </span>
+  <h4 id="NewExpression">NewExpression</h4>
+  <div class="markdown level1 summary"><p>Gets the expression that represents the constructor call.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.NewExpression.html" name="System.Linq.Expressions.NewExpression">NewExpression</a></td>
-      <td><p>A <a href="System.Linq.Expressions.NewExpression.html">System.Linq.Expressions.NewExpression</a> that represents the constructor call.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NewExpression NewExpression { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.NewExpression.html" name="System.Linq.Expressions.NewExpression">NewExpression</a></td>
+        <td><p>A <a href="System.Linq.Expressions.NewExpression.html">System.Linq.Expressions.NewExpression</a> that represents the constructor call.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/MemberInitExpression.cs/#L53"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="NodeType">NodeType</h4>
-<div class="markdown level1 summary"><p>Returns the node type of this Expression. Extension nodes should return<br>ExpressionType.Extension when overriding this method.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public override sealed ExpressionType NodeType { get; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/MemberInitExpression.cs/#L53">View Source</a>
+      </span>
+  <h4 id="NodeType">NodeType</h4>
+  <div class="markdown level1 summary"><p>Returns the node type of this Expression. Extension nodes should return
+ExpressionType.Extension when overriding this method.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.ExpressionType.html" name="System.Linq.Expressions.ExpressionType">ExpressionType</a></td>
-      <td><p>The <a href="System.Linq.Expressions.ExpressionType.html">System.Linq.Expressions.ExpressionType</a> of the expression.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed ExpressionType NodeType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.ExpressionType.html" name="System.Linq.Expressions.ExpressionType">ExpressionType</a></td>
+        <td><p>The <a href="System.Linq.Expressions.ExpressionType.html">System.Linq.Expressions.ExpressionType</a> of the expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/MemberInitExpression.cs/#L32"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Type">Type</h4>
-<div class="markdown level1 summary"><p>Gets the static type of the expression that this <a href="System.Linq.Expressions.Expression.html">System.Linq.Expressions.Expression</a> represents.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public override sealed Type Type { get; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/MemberInitExpression.cs/#L32">View Source</a>
+      </span>
+  <h4 id="Type">Type</h4>
+  <div class="markdown level1 summary"><p>Gets the static type of the expression that this <a href="System.Linq.Expressions.Expression.html">System.Linq.Expressions.Expression</a> represents.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Type.html" name="System.Type">Type</a></td>
-      <td><p>The <a href="System.Linq.Expressions.MemberInitExpression.html">System.Linq.Expressions.MemberInitExpression.Type</a> that represents the static type of the expression.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed Type Type { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Type.html" name="System.Type">Type</a></td>
+        <td><p>The <a href="System.Linq.Expressions.MemberInitExpression.html">System.Linq.Expressions.MemberInitExpression.Type</a> that represents the static type of the expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h3 id="methods">Methods</h3>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="methods">Methods</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/MemberInitExpression.cs/#L75"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Accept_ExpressionVisitor_">Accept(ExpressionVisitor)</h4>
-<div class="markdown level1 summary"><p>Dispatches to the specific visit method for this node type.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected override Expression Accept(ExpressionVisitor visitor)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/MemberInitExpression.cs/#L75">View Source</a>
+      </span>
+  <h4 id="Accept_ExpressionVisitor_">Accept(ExpressionVisitor)</h4>
+  <div class="markdown level1 summary"><p>Dispatches to the specific visit method for this node type.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.ExpressionVisitor.html" name="System.Linq.Expressions.ExpressionVisitor">ExpressionVisitor</a></td>
-      <td><em>visitor</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Expression Accept(ExpressionVisitor visitor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.ExpressionVisitor.html" name="System.Linq.Expressions.ExpressionVisitor">ExpressionVisitor</a></td>
+        <td><em>visitor</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/MemberInitExpression.cs/#L87"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Reduce__">Reduce()</h4>
-<div class="markdown level1 summary"><p>Reduces the <a href="System.Linq.Expressions.MemberInitExpression.html">System.Linq.Expressions.MemberInitExpression</a> to a simpler expression.<br>If CanReduce returns true, this should return a valid expression.</br>This method is allowed to return another node which itself<br>must be reduced.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public override Expression Reduce()</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/MemberInitExpression.cs/#L87">View Source</a>
+      </span>
+  <h4 id="Reduce__">Reduce()</h4>
+  <div class="markdown level1 summary"><p>Reduces the <a href="System.Linq.Expressions.MemberInitExpression.html">System.Linq.Expressions.MemberInitExpression</a> to a simpler expression.
+If CanReduce returns true, this should return a valid expression.
+This method is allowed to return another node which itself
+must be reduced.</p>
 </div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
-      <td><p>The reduced expression.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Expression Reduce()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.Expression.html" name="System.Linq.Expressions.Expression">Expression</a></td>
+        <td><p>The reduced expression.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/MemberInitExpression.cs/#L144"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Update_NewExpression__IEnumerable_MemberBinding__">Update(NewExpression, IEnumerable&lt;MemberBinding&gt;)</h4>
-<div class="markdown level1 summary"><p>Creates a new expression that is like this one, but using the<br>supplied children. If all of the children are the same, it will</br>return this expression.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public MemberInitExpression Update(NewExpression newExpression, IEnumerable<memberbinding> bindings)</memberbinding></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Linq.Expressions/src/System/Linq/Expressions/MemberInitExpression.cs/#L144">View Source</a>
+      </span>
+  <h4 id="Update_NewExpression__IEnumerable_MemberBinding__">Update(NewExpression, IEnumerable&lt;MemberBinding&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates a new expression that is like this one, but using the
+supplied children. If all of the children are the same, it will
+return this expression.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.NewExpression.html" name="System.Linq.Expressions.NewExpression">NewExpression</a></td>
-      <td><em>newExpression</em></td>
-      <td><p>The <a href="System.Linq.Expressions.MemberInitExpression.html">System.Linq.Expressions.MemberInitExpression.NewExpression</a> property of the result.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MemberInitExpression Update(NewExpression newExpression, IEnumerable<memberbinding> bindings)</memberbinding></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.NewExpression.html" name="System.Linq.Expressions.NewExpression">NewExpression</a></td>
+        <td><em>newExpression</em></td>
+        <td><p>The <a href="System.Linq.Expressions.MemberInitExpression.html">System.Linq.Expressions.MemberInitExpression.NewExpression</a> property of the result.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.Linq.Expressions.MemberBinding.html" name="System.Linq.Expressions.MemberBinding">MemberBinding</a>&gt;</td>
-      <td><em>bindings</em></td>
-      <td><p>The <a href="System.Linq.Expressions.MemberInitExpression.html">System.Linq.Expressions.MemberInitExpression.Bindings</a> property of the result.</p>
+      </tr>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;System.Linq.Expressions.MemberBinding&gt;</td>
+        <td><em>bindings</em></td>
+        <td><p>The <a href="System.Linq.Expressions.MemberInitExpression.html">System.Linq.Expressions.MemberInitExpression.Bindings</a> property of the result.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Linq.Expressions.MemberInitExpression.html" name="System.Linq.Expressions.MemberInitExpression">MemberInitExpression</a></td>
-      <td><p>This expression if no children changed, or an expression with the updated children.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Linq.Expressions.MemberInitExpression.html" name="System.Linq.Expressions.MemberInitExpression">MemberInitExpression</a></td>
+        <td><p>This expression if no children changed, or an expression with the updated children.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

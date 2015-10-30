@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class EventSourceAttribute | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class EventSourceAttribute | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -60,7 +60,8 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="EventSourceAttribute">Class EventSourceAttribute</h1>
-      <div class="markdown level0 summary"><p>Allows customizing defaults and specifying localization support for the event source class to which it is applied.</p><br></div>
+      <div class="markdown level0 summary"><p>Allows customizing defaults and specifying localization support for the event source class to which it is applied.</p>
+</div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
         <h5>Inheritance</h5>
@@ -74,90 +75,107 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public sealed class EventSourceAttribute : Attribute, _Attribute</code></pre>
       </div>
-      <h5 id="EventSourceAttribute_remarks">remarks</h5>
-      <div class="markdown level0 remarks"></div>
-<h3 id="properties">Properties</h3>
+      <h3 id="properties">Properties</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs/#L4797"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Guid">Guid</h4>
-<div class="markdown level1 summary"><p>Overrides the default (calculated) Guid of an EventSource type. Explicitly defining a GUID is discouraged,<br>except when upgrading existing ETW providers to using event sources.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public string Guid { get; set; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs/#L4797">View Source</a>
+      </span>
+  <h4 id="Guid">Guid</h4>
+  <div class="markdown level1 summary"><p>Overrides the default (calculated) Guid of an EventSource type. Explicitly defining a GUID is discouraged,
+except when upgrading existing ETW providers to using event sources.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Guid { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs/#L4820"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="LocalizationResources">LocalizationResources</h4>
-<div class="markdown level1 summary"><para><br>EventSources support localization of events. The names used for events, opcodes, tasks, keywords and maps</br>can be localized to several languages if desired. This works by creating a ResX style string table<br>(by simply adding a &#39;Resource File&#39; to your project). This resource file is given a name e.g.</br>&#39;DefaultNameSpace.ResourceFileName&#39; which can be passed to the ResourceManager constructor to read the<br>resources. This name is the value of the LocalizationResources property.</br></para><br><para><br>If LocalizationResources property is non-null, then EventSource will look up the localized strings for events by</br>using the following resource naming scheme<br></para></br><para><em> event_EVENTNAME</em></para><br><para> task_TASKNAME</para></br><para><em> keyword_KEYWORDNAME</em></para><br><para> map_MAPNAME</para></br><para><br>where the capitalized name is the name of the event, task, keyword, or map value that should be localized.</br>Note that the localized string for an event corresponds to the Message string, and can have {0} values<br>which represent the payload values.</br></para></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public string LocalizationResources { get; set; }</code></pre>
-</div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs/#L4820">View Source</a>
+      </span>
+  <h4 id="LocalizationResources">LocalizationResources</h4>
+  <div class="markdown level1 summary"><para>
+EventSources support localization of events. The names used for events, opcodes, tasks, keywords and maps
+can be localized to several languages if desired. This works by creating a ResX style string table
+(by simply adding a &#39;Resource File&#39; to your project). This resource file is given a name e.g.
+&#39;DefaultNameSpace.ResourceFileName&#39; which can be passed to the ResourceManager constructor to read the
+resources. This name is the value of the LocalizationResources property.
+</para>
+<para>
+If LocalizationResources property is non-null, then EventSource will look up the localized strings for events by
+using the following resource naming scheme
+</para>
+<para><em> event_EVENTNAME</em></para>
+<para> task_TASKNAME</para>
+<para><em> keyword_KEYWORDNAME</em></para>
+<para> map_MAPNAME</para>
+<para>
+where the capitalized name is the name of the event, task, keyword, or map value that should be localized.
+Note that the localized string for an event corresponds to the Message string, and can have {0} values
+which represent the payload values.
+</para></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LocalizationResources { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs/#L4791"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Name">Name</h4>
-<div class="markdown level1 summary"><p>Overrides the ETW name of the event source (which defaults to the class name)</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs/#L4791">View Source</a>
+      </span>
+  <h4 id="Name">Name</h4>
+  <div class="markdown level1 summary"><p>Overrides the ETW name of the event source (which defaults to the class name)</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.String.html" name="System.String">String</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.String.html" name="System.String">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

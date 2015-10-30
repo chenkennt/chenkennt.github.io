@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Struct DataflowMessageHeader | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Struct DataflowMessageHeader | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -55,6 +55,334 @@
       </div>
       <div class="article row grid-right"><div class="col-md-10">
         <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageHeader.cs/#L20" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="DataflowMessageHeader">Struct DataflowMessageHeader</h1>
+      <div class="markdown level0 summary"><p>Provides a container of data attributes for passing between dataflow blocks.</p>
+</div>
+      <div class="markdown level0 conceptual"></div>
+      <h6><strong>Namespace</strong>:System.Threading.Tasks.Dataflow</h6>
+      <h6><strong>Assembly</strong>:System.Threading.Tasks.Dataflow.dll</h6>
+      <h5 id="DataflowMessageHeader_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public struct DataflowMessageHeader : IEquatable<dataflowmessageheader></dataflowmessageheader></code></pre>
+      </div>
+      <h3 id="constructors">Constructors</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageHeader.cs/#L28">View Source</a>
+      </span>
+  <h4 id="DataflowMessageHeader_Int64_">DataflowMessageHeader(Int64)</h4>
+  <div class="markdown level1 summary"><p>Initializes the <a href="System.Threading.Tasks.Dataflow.DataflowMessageHeader.html">System.Threading.Tasks.Dataflow.DataflowMessageHeader</a> with the specified attributes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataflowMessageHeader(long id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int64.html" name="System.Int64">Int64</a></td>
+        <td><em>id</em></td>
+        <td><p>The ID of the message. Must be unique within the originating source block. Need not be globally unique.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="properties">Properties</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageHeader.cs/#L42">View Source</a>
+      </span>
+  <h4 id="Id">Id</h4>
+  <div class="markdown level1 summary"><p>Gets the ID of the message within the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Id { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int64.html" name="System.Int64">Int64</a></td>
+        <td><p>The ID contained in the <a href="System.Threading.Tasks.Dataflow.DataflowMessageHeader.html">System.Threading.Tasks.Dataflow.DataflowMessageHeader</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageHeader.cs/#L38">View Source</a>
+      </span>
+  <h4 id="IsValid">IsValid</h4>
+  <div class="markdown level1 summary"><p>Gets the validity of the message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsValid { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>True if the ID of the message is different from 0. False if the ID of the message is 0</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="methods">Methods</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageHeader.cs/#L61">View Source</a>
+      </span>
+  <h4 id="Equals_Object_">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Checks boxed <a href="System.Threading.Tasks.Dataflow.DataflowMessageHeader.html">System.Threading.Tasks.Dataflow.DataflowMessageHeader</a> instances for equality by ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Object.html" name="System.Object">Object</a></td>
+        <td><em>obj</em></td>
+        <td><p>A boxed <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader"></see> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>True if the instances are equal. False otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageHeader.cs/#L53">View Source</a>
+      </span>
+  <h4 id="Equals_DataflowMessageHeader_">Equals(DataflowMessageHeader)</h4>
+  <div class="markdown level1 summary"><p>Checks two <a href="System.Threading.Tasks.Dataflow.DataflowMessageHeader.html">System.Threading.Tasks.Dataflow.DataflowMessageHeader</a> instances for equality by ID without boxing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(DataflowMessageHeader other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Threading.Tasks.Dataflow.DataflowMessageHeader.html" name="System.Threading.Tasks.Dataflow.DataflowMessageHeader">DataflowMessageHeader</a></td>
+        <td><em>other</em></td>
+        <td><p>Another <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader"></see> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>True if the instances are equal. False otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageHeader.cs/#L68">View Source</a>
+      </span>
+  <h4 id="GetHashCode__">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Generates a hash code for the <a href="System.Threading.Tasks.Dataflow.DataflowMessageHeader.html">System.Threading.Tasks.Dataflow.DataflowMessageHeader</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td><p>Hash code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="operators">Operators</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageHeader.cs/#L77">View Source</a>
+      </span>
+  <h4 id="Equality_DataflowMessageHeader__DataflowMessageHeader_">Equality(DataflowMessageHeader, DataflowMessageHeader)</h4>
+  <div class="markdown level1 summary"><p>Checks two <a href="System.Threading.Tasks.Dataflow.DataflowMessageHeader.html">System.Threading.Tasks.Dataflow.DataflowMessageHeader</a> instances for equality by ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(DataflowMessageHeader left, DataflowMessageHeader right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Threading.Tasks.Dataflow.DataflowMessageHeader.html" name="System.Threading.Tasks.Dataflow.DataflowMessageHeader">DataflowMessageHeader</a></td>
+        <td><em>left</em></td>
+        <td><p>A <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader"></see> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Threading.Tasks.Dataflow.DataflowMessageHeader.html" name="System.Threading.Tasks.Dataflow.DataflowMessageHeader">DataflowMessageHeader</a></td>
+        <td><em>right</em></td>
+        <td><p>A <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader"></see> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>True if the instances are equal. False otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageHeader.cs/#L86">View Source</a>
+      </span>
+  <h4 id="Inequality_DataflowMessageHeader__DataflowMessageHeader_">Inequality(DataflowMessageHeader, DataflowMessageHeader)</h4>
+  <div class="markdown level1 summary"><p>Checks two <a href="System.Threading.Tasks.Dataflow.DataflowMessageHeader.html">System.Threading.Tasks.Dataflow.DataflowMessageHeader</a> instances for non-equality by ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(DataflowMessageHeader left, DataflowMessageHeader right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Threading.Tasks.Dataflow.DataflowMessageHeader.html" name="System.Threading.Tasks.Dataflow.DataflowMessageHeader">DataflowMessageHeader</a></td>
+        <td><em>left</em></td>
+        <td><p>A <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader"></see> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="System.Threading.Tasks.Dataflow.DataflowMessageHeader.html" name="System.Threading.Tasks.Dataflow.DataflowMessageHeader">DataflowMessageHeader</a></td>
+        <td><em>right</em></td>
+        <td><p>A <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader"></see> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td><p>True if the instances are not equal. False otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

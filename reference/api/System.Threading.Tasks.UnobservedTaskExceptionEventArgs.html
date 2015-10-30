@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class UnobservedTaskExceptionEventArgs | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class UnobservedTaskExceptionEventArgs | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -60,7 +60,9 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="UnobservedTaskExceptionEventArgs">Class UnobservedTaskExceptionEventArgs</h1>
-      <div class="markdown level0 summary"><p>Provides data for the event that is raised when a faulted <a href="System.Threading.Tasks.Task.html">System.Threading.Tasks.Task</a>&#39;s<br>exception goes unobserved.</p><br></div>
+      <div class="markdown level0 summary"><p>Provides data for the event that is raised when a faulted <a href="System.Threading.Tasks.Task.html">System.Threading.Tasks.Task</a>&#39;s
+exception goes unobserved.</p>
+</div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
         <h5>Inheritance</h5>
@@ -74,16 +76,21 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public class UnobservedTaskExceptionEventArgs : EventArgs</code></pre>
       </div>
-      <h5 id="UnobservedTaskExceptionEventArgs_remarks">remarks</h5>
-      <div class="markdown level0 remarks"><p>The Exception property is used to examine the exception without marking it<br>as observed, whereas the <a href="System.Threading.Tasks.UnobservedTaskExceptionEventArgs.html">System.Threading.Tasks.UnobservedTaskExceptionEventArgs.SetObserved</a> method is used to mark the exception</br>as observed.  Marking the exception as observed prevents it from triggering exception escalation policy<br>which, by default, terminates the process.</p><br></div>
+      <h5 id="UnobservedTaskExceptionEventArgs_remarks"><strong>Remarks<strong></strong></strong></h5>
+      <div class="markdown level0 remarks"><p>The Exception property is used to examine the exception without marking it
+as observed, whereas the <a href="System.Threading.Tasks.UnobservedTaskExceptionEventArgs.html">System.Threading.Tasks.UnobservedTaskExceptionEventArgs.SetObserved</a> method is used to mark the exception
+as observed.  Marking the exception as observed prevents it from triggering exception escalation policy
+which, by default, terminates the process.</p>
+</div>
       <h3 id="constructors">Constructors</h3>
-      
-    <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskScheduler.cs/#L711"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-  </span>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskScheduler.cs/#L711">View Source</a>
+      </span>
   <h4 id="UnobservedTaskExceptionEventArgs_AggregateException_">UnobservedTaskExceptionEventArgs(AggregateException)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Threading.Tasks.UnobservedTaskExceptionEventArgs.html">System.Threading.Tasks.UnobservedTaskExceptionEventArgs</a> class<br>with the unobserved exception.</p><br></div>
-  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Threading.Tasks.UnobservedTaskExceptionEventArgs.html">System.Threading.Tasks.UnobservedTaskExceptionEventArgs</a> class
+with the unobserved exception.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -107,74 +114,75 @@
       </tr>
     </tbody>
   </table>
-<h3 id="properties">Properties</h3>
+      <h3 id="properties">Properties</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskScheduler.cs/#L727"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Exception">Exception</h4>
-<div class="markdown level1 summary"><p>The Exception that went unobserved.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public AggregateException Exception { get; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskScheduler.cs/#L727">View Source</a>
+      </span>
+  <h4 id="Exception">Exception</h4>
+  <div class="markdown level1 summary"><p>The Exception that went unobserved.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.AggregateException.html" name="undefined">AggregateException</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AggregateException Exception { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.AggregateException.html" name="undefined">AggregateException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskScheduler.cs/#L722"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Observed">Observed</h4>
-<div class="markdown level1 summary"><p>Gets whether this exception has been marked as &quot;observed.&quot;</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public bool Observed { get; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskScheduler.cs/#L722">View Source</a>
+      </span>
+  <h4 id="Observed">Observed</h4>
+  <div class="markdown level1 summary"><p>Gets whether this exception has been marked as &quot;observed.&quot;</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h3 id="methods">Methods</h3>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Observed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="methods">Methods</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskScheduler.cs/#L717"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="SetObserved__">SetObserved()</h4>
-<div class="markdown level1 summary"><p>Marks the <a href="System.Threading.Tasks.UnobservedTaskExceptionEventArgs.html">System.Threading.Tasks.UnobservedTaskExceptionEventArgs.Exception</a> as &quot;observed,&quot; thus preventing it<br>from triggering exception escalation policy which, by default, terminates the process.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void SetObserved()</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskScheduler.cs/#L717">View Source</a>
+      </span>
+  <h4 id="SetObserved__">SetObserved()</h4>
+  <div class="markdown level1 summary"><p>Marks the <a href="System.Threading.Tasks.UnobservedTaskExceptionEventArgs.html">System.Threading.Tasks.UnobservedTaskExceptionEventArgs.Exception</a> as &quot;observed,&quot; thus preventing it
+from triggering exception escalation policy which, by default, terminates the process.</p>
 </div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetObserved()</code></pre>
+  </div>
 
 </article>
 </div>

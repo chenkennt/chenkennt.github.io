@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Enum SignatureCallingConvention | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Enum SignatureCallingConvention | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -55,6 +55,95 @@
       </div>
       <div class="article row grid-right"><div class="col-md-10">
         <article class="content wrap" id="_content">
+          
+        <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureCallingConvention.cs/#L11" class="btn btn-primary pull-right mobile-hide">
+        <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
+      </a>
+      <h1 id="SignatureCallingConvention">Enum SignatureCallingConvention</h1>
+      <div class="markdown level0 summary"><p>Specifies how arguments in a given signature are passed from the caller to the callee.
+Underlying values correspond to the representation in the leading signature byte
+represented by <a href="System.Reflection.Metadata.SignatureHeader.html">System.Reflection.Metadata.SignatureHeader</a>.</p>
+</div>
+      <div class="markdown level0 conceptual"></div>
+      <h6><strong>Namespace</strong>:System.Reflection.Metadata</h6>
+      <h6><strong>Assembly</strong>:System.Reflection.Metadata.dll</h6>
+      <h5 id="SignatureCallingConvention_syntax">Syntax</h5>
+      <div class="codewrapper">
+        <pre><code class="lang-csharp hljs">public enum SignatureCallingConvention : byte</code></pre>
+      </div>
+      <h3 id="fields">Fields</h3>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureCallingConvention.cs/#L21">View Source</a>
+      </span>
+  <h4 id="CDecl">CDecl</h4>
+  <div class="markdown level1 summary"><p>Unmanaged C/C++-style calling convention where the call stack is cleaned by the caller.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">CDecl = 1</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureCallingConvention.cs/#L16">View Source</a>
+      </span>
+  <h4 id="Default">Default</h4>
+  <div class="markdown level1 summary"><p>Managed calling convention with fixed-length argument list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Default = 0</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureCallingConvention.cs/#L36">View Source</a>
+      </span>
+  <h4 id="FastCall">FastCall</h4>
+  <div class="markdown level1 summary"><p>Unmanaged calling convention where arguments are passed in registers when possible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FastCall = 4</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureCallingConvention.cs/#L26">View Source</a>
+      </span>
+  <h4 id="StdCall">StdCall</h4>
+  <div class="markdown level1 summary"><p>Unmanaged calling convention where call stack is cleaned up by the callee.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">StdCall = 2</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureCallingConvention.cs/#L31">View Source</a>
+      </span>
+  <h4 id="ThisCall">ThisCall</h4>
+  <div class="markdown level1 summary"><p>Unmanaged C++-style calling convention for calling instance member functions with a fixed argument list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ThisCall = 3</code></pre>
+  </div>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureCallingConvention.cs/#L41">View Source</a>
+      </span>
+  <h4 id="VarArgs">VarArgs</h4>
+  <div class="markdown level1 summary"><p>Managed calling convention for passing extra arguments.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VarArgs = 5</code></pre>
+  </div>
 
 </article>
 </div>

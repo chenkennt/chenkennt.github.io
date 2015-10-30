@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class CallSiteBinder | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class CallSiteBinder | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -60,7 +60,8 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="CallSiteBinder">Class CallSiteBinder</h1>
-      <div class="markdown level0 summary"><p>Class responsible for runtime binding of the dynamic operations on the dynamic call site.</p><br></div>
+      <div class="markdown level0 summary"><p>Class responsible for runtime binding of the dynamic operations on the dynamic call site.</p>
+</div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
         <h5>Inheritance</h5>
@@ -73,193 +74,197 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public abstract class CallSiteBinder</code></pre>
       </div>
-      <h5 id="CallSiteBinder_remarks">remarks</h5>
-      <div class="markdown level0 remarks"></div>
       <h3 id="constructors">Constructors</h3>
-      
-    <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSiteBinder.cs/#L30"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-  </span>
+
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSiteBinder.cs/#L30">View Source</a>
+      </span>
   <h4 id="CallSiteBinder__">CallSiteBinder()</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Runtime.CompilerServices.CallSiteBinder.html">System.Runtime.CompilerServices.CallSiteBinder</a> class.</p><br></div>
-  <div class="markdown level1 remarks"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Runtime.CompilerServices.CallSiteBinder.html">System.Runtime.CompilerServices.CallSiteBinder</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected CallSiteBinder()</code></pre>
   </div>
-<h3 id="properties">Properties</h3>
+      <h3 id="properties">Properties</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSiteBinder.cs/#L40"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="UpdateLabel">UpdateLabel</h4>
-<div class="markdown level1 summary"><p>Gets a label that can be used to cause the binding to be updated. It<br>indicates that the expression&#39;s binding is no longer valid.</br>This is typically used when the &quot;version&quot; of a dynamic object has<br>changed.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static LabelTarget UpdateLabel { get; }</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSiteBinder.cs/#L40">View Source</a>
+      </span>
+  <h4 id="UpdateLabel">UpdateLabel</h4>
+  <div class="markdown level1 summary"><p>Gets a label that can be used to cause the binding to be updated. It
+indicates that the expression&#39;s binding is no longer valid.
+This is typically used when the &quot;version&quot; of a dynamic object has
+changed.</p>
 </div>
-<h5 class="returns">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>LabelTarget</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h3 id="methods">Methods</h3>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LabelTarget UpdateLabel { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>LabelTarget</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+      <h3 id="methods">Methods</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSiteBinder.cs/#L101"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="Bind_Object____ReadOnlyCollection_ParameterExpression___LabelTarget_">Bind(Object[], ReadOnlyCollection&lt;ParameterExpression&gt;, LabelTarget)</h4>
-<div class="markdown level1 summary"><p>Performs the runtime binding of the dynamic operation on a set of arguments.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public abstract Expression Bind(object[] args, ReadOnlyCollection<parameterexpression> parameters, LabelTarget returnLabel)</parameterexpression></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSiteBinder.cs/#L101">View Source</a>
+      </span>
+  <h4 id="Bind_Object____ReadOnlyCollection_ParameterExpression___LabelTarget_">Bind(Object[], ReadOnlyCollection&lt;ParameterExpression&gt;, LabelTarget)</h4>
+  <div class="markdown level1 summary"><p>Performs the runtime binding of the dynamic operation on a set of arguments.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a>[]</td>
-      <td><em>args</em></td>
-      <td><p>An array of arguments to the dynamic operation.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Expression Bind(object[] args, ReadOnlyCollection<parameterexpression> parameters, LabelTarget returnLabel)</parameterexpression></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Object[]</td>
+        <td><em>args</em></td>
+        <td><p>An array of arguments to the dynamic operation.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Collections.ObjectModel.ReadOnlyCollection`1.html" name="System.Collections.ObjectModel.ReadOnlyCollection">ReadOnlyCollection</a>&lt;ParameterExpression&gt;</td>
-      <td><em>parameters</em></td>
-      <td><p>The array of <see cref="!:ParameterExpression"></see> instances that represent the parameters of the call site in the binding process.</p>
+      </tr>
+      <tr>
+        <td>System.Collections.ObjectModel.ReadOnlyCollection&lt;ParameterExpression&gt;</td>
+        <td><em>parameters</em></td>
+        <td><p>The array of <see cref="!:ParameterExpression"></see> instances that represent the parameters of the call site in the binding process.</p>
 </td>
-    </tr>
-    <tr>
-      <td>LabelTarget</td>
-      <td><em>returnLabel</em></td>
-      <td><p>A LabelTarget used to return the result of the dynamic binding.</p>
+      </tr>
+      <tr>
+        <td>LabelTarget</td>
+        <td><em>returnLabel</em></td>
+        <td><p>A LabelTarget used to return the result of the dynamic binding.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Expression</td>
-      <td><p>An Expression that performs tests on the dynamic operation arguments, and
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Expression</td>
+        <td><p>An Expression that performs tests on the dynamic operation arguments, and
 performs the dynamic operation if hte tests are valid. If the tests fail on
 subsequent occurrences of the dynamic operation, Bind will be called again
 to produce a new <see cref="!:Expression"></see> for the new argument types.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSiteBinder.cs/#L112"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="BindDelegate_T__CallSite_T___Object___">BindDelegate&lt;T&gt;(CallSite&lt;T&gt;, Object[])</h4>
-<div class="markdown level1 summary"><p>Provides low-level runtime binding support.  Classes can override this and provide a direct<br>delegate for the implementation of rule.  This can enable saving rules to disk, having</br>specialized rules available at runtime, or providing a different caching policy.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public virtual T BindDelegate<t>(CallSite<t> site, object[] args)where T : class</t></t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSiteBinder.cs/#L112">View Source</a>
+      </span>
+  <h4 id="BindDelegate_T__CallSite_T___Object___">BindDelegate&lt;T&gt;(CallSite&lt;T&gt;, Object[])</h4>
+  <div class="markdown level1 summary"><p>Provides low-level runtime binding support.  Classes can override this and provide a direct
+delegate for the implementation of rule.  This can enable saving rules to disk, having
+specialized rules available at runtime, or providing a different caching policy.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Runtime.CompilerServices.CallSite`1.html" name="System.Runtime.CompilerServices.CallSite">CallSite</a>&lt;T&gt;</td>
-      <td><em>site</em></td>
-      <td><p>The CallSite the bind is being performed for.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual T BindDelegate<t>(CallSite<t> site, object[] args)where T : class</t></t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Runtime.CompilerServices.CallSite&lt;T&gt;</td>
+        <td><em>site</em></td>
+        <td><p>The CallSite the bind is being performed for.</p>
 </td>
-    </tr>
-    <tr>
-      <td><a href="System.Object.html" name="System.Object">Object</a>[]</td>
-      <td><em>args</em></td>
-      <td><p>The arguments for the binder.</p>
+      </tr>
+      <tr>
+        <td>System.Object[]</td>
+        <td><em>args</em></td>
+        <td><p>The arguments for the binder.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><p>A new delegate which replaces the CallSite Target.</p>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><p>A new delegate which replaces the CallSite Target.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSiteBinder.cs/#L160"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="CacheTarget_T__T_">CacheTarget&lt;T&gt;(T)</h4>
-<div class="markdown level1 summary"><p>Adds a target to the cache of known targets.  The cached targets will<br>be scanned before calling BindDelegate to produce the new rule.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected void CacheTarget<t>(T target)where T : class</t></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSiteBinder.cs/#L160">View Source</a>
+      </span>
+  <h4 id="CacheTarget_T__T_">CacheTarget&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"><p>Adds a target to the cache of known targets.  The cached targets will
+be scanned before calling BindDelegate to produce the new rule.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>T</td>
-      <td><em>target</em></td>
-      <td><p>The target delegate to be added to the cache.</p>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void CacheTarget<t>(T target)where T : class</t></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T</td>
+        <td><em>target</em></td>
+        <td><p>The target delegate to be added to the cache.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>

@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> | </title>
+  <title>Class MetadataReaderExtensions | </title>
   <meta name="viewport" content="width=device-width">
-  <meta name="title" content=" | ">
+  <meta name="title" content="Class MetadataReaderExtensions | ">
   
   <link rel="shortcut icon" href="../../favicon.ico">
   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -60,7 +60,8 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="MetadataReaderExtensions">Class MetadataReaderExtensions</h1>
-      <div class="markdown level0 summary"><p>Provides extension methods for working with certain raw elements of the Ecma 335 metadata tables and heaps.</p><br></div>
+      <div class="markdown level0 summary"><p>Provides extension methods for working with certain raw elements of the Ecma 335 metadata tables and heaps.</p>
+</div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
         <h5>Inheritance</h5>
@@ -73,581 +74,579 @@
       <div class="codewrapper">
         <pre><code class="lang-csharp hljs">public class MetadataReaderExtensions</code></pre>
       </div>
-      <h5 id="MetadataReaderExtensions_remarks">remarks</h5>
-      <div class="markdown level0 remarks"></div>
-<h3 id="methods">Methods</h3>
+      <h3 id="methods">Methods</h3>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/MetadataReaderExtensions.cs/#L276"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="GetEditAndContinueLogEntries_MetadataReader_">GetEditAndContinueLogEntries(MetadataReader)</h4>
-<div class="markdown level1 summary"><p>Enumerates entries of EnC log.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IEnumerable<editandcontinuelogentry> GetEditAndContinueLogEntries(MetadataReader reader)</editandcontinuelogentry></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/MetadataReaderExtensions.cs/#L276">View Source</a>
+      </span>
+  <h4 id="GetEditAndContinueLogEntries_MetadataReader_">GetEditAndContinueLogEntries(MetadataReader)</h4>
+  <div class="markdown level1 summary"><p>Enumerates entries of EnC log.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Reflection.Metadata.MetadataReader.html" name="System.Reflection.Metadata.MetadataReader">MetadataReader</a></td>
-      <td><em>reader</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.Reflection.Metadata.Ecma335.EditAndContinueLogEntry.html" name="System.Reflection.Metadata.Ecma335.EditAndContinueLogEntry">EditAndContinueLogEntry</a>&gt;</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable<editandcontinuelogentry> GetEditAndContinueLogEntries(MetadataReader reader)</editandcontinuelogentry></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.MetadataReader.html" name="System.Reflection.Metadata.MetadataReader">MetadataReader</a></td>
+        <td><em>reader</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;System.Reflection.Metadata.Ecma335.EditAndContinueLogEntry&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/MetadataReaderExtensions.cs/#L295"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="GetEditAndContinueMapEntries_MetadataReader_">GetEditAndContinueMapEntries(MetadataReader)</h4>
-<div class="markdown level1 summary"><p>Enumerates entries of EnC map.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IEnumerable<entityhandle> GetEditAndContinueMapEntries(MetadataReader reader)</entityhandle></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/MetadataReaderExtensions.cs/#L295">View Source</a>
+      </span>
+  <h4 id="GetEditAndContinueMapEntries_MetadataReader_">GetEditAndContinueMapEntries(MetadataReader)</h4>
+  <div class="markdown level1 summary"><p>Enumerates entries of EnC map.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Reflection.Metadata.MetadataReader.html" name="System.Reflection.Metadata.MetadataReader">MetadataReader</a></td>
-      <td><em>reader</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.Reflection.Metadata.EntityHandle.html" name="System.Reflection.Metadata.EntityHandle">EntityHandle</a>&gt;</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable<entityhandle> GetEditAndContinueMapEntries(MetadataReader reader)</entityhandle></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.MetadataReader.html" name="System.Reflection.Metadata.MetadataReader">MetadataReader</a></td>
+        <td><em>reader</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;System.Reflection.Metadata.EntityHandle&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/MetadataReaderExtensions.cs/#L192"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="GetHeapMetadataOffset_MetadataReader__HeapIndex_">GetHeapMetadataOffset(MetadataReader, HeapIndex)</h4>
-<div class="markdown level1 summary"><p>Returns the offset from the start of metadata to the specified heap.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static int GetHeapMetadataOffset(MetadataReader reader, HeapIndex heapIndex)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/MetadataReaderExtensions.cs/#L192">View Source</a>
+      </span>
+  <h4 id="GetHeapMetadataOffset_MetadataReader__HeapIndex_">GetHeapMetadataOffset(MetadataReader, HeapIndex)</h4>
+  <div class="markdown level1 summary"><p>Returns the offset from the start of metadata to the specified heap.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Reflection.Metadata.MetadataReader.html" name="System.Reflection.Metadata.MetadataReader">MetadataReader</a></td>
-      <td><em>reader</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.Reflection.Metadata.Ecma335.HeapIndex.html" name="System.Reflection.Metadata.Ecma335.HeapIndex">HeapIndex</a></td>
-      <td><em>heapIndex</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetHeapMetadataOffset(MetadataReader reader, HeapIndex heapIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.MetadataReader.html" name="System.Reflection.Metadata.MetadataReader">MetadataReader</a></td>
+        <td><em>reader</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.Metadata.Ecma335.HeapIndex.html" name="System.Reflection.Metadata.Ecma335.HeapIndex">HeapIndex</a></td>
+        <td><em>heapIndex</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/MetadataReaderExtensions.cs/#L177"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="GetHeapSize_MetadataReader__HeapIndex_">GetHeapSize(MetadataReader, HeapIndex)</h4>
-<div class="markdown level1 summary"><p>Returns the size of the specified heap.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static int GetHeapSize(MetadataReader reader, HeapIndex heapIndex)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/MetadataReaderExtensions.cs/#L177">View Source</a>
+      </span>
+  <h4 id="GetHeapSize_MetadataReader__HeapIndex_">GetHeapSize(MetadataReader, HeapIndex)</h4>
+  <div class="markdown level1 summary"><p>Returns the size of the specified heap.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Reflection.Metadata.MetadataReader.html" name="System.Reflection.Metadata.MetadataReader">MetadataReader</a></td>
-      <td><em>reader</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.Reflection.Metadata.Ecma335.HeapIndex.html" name="System.Reflection.Metadata.Ecma335.HeapIndex">HeapIndex</a></td>
-      <td><em>heapIndex</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetHeapSize(MetadataReader reader, HeapIndex heapIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.MetadataReader.html" name="System.Reflection.Metadata.MetadataReader">MetadataReader</a></td>
+        <td><em>reader</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.Metadata.Ecma335.HeapIndex.html" name="System.Reflection.Metadata.Ecma335.HeapIndex">HeapIndex</a></td>
+        <td><em>heapIndex</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/MetadataReaderExtensions.cs/#L248"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="GetNextHandle_MetadataReader__BlobHandle_">GetNextHandle(MetadataReader, BlobHandle)</h4>
-<div class="markdown level1 summary"><p>Returns the a handle to the Blob that follows the given one in the Blob heap or a nil handle if it is the last one.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static BlobHandle GetNextHandle(MetadataReader reader, BlobHandle handle)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/MetadataReaderExtensions.cs/#L248">View Source</a>
+      </span>
+  <h4 id="GetNextHandle_MetadataReader__BlobHandle_">GetNextHandle(MetadataReader, BlobHandle)</h4>
+  <div class="markdown level1 summary"><p>Returns the a handle to the Blob that follows the given one in the Blob heap or a nil handle if it is the last one.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Reflection.Metadata.MetadataReader.html" name="System.Reflection.Metadata.MetadataReader">MetadataReader</a></td>
-      <td><em>reader</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.Reflection.Metadata.BlobHandle.html" name="System.Reflection.Metadata.BlobHandle">BlobHandle</a></td>
-      <td><em>handle</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Reflection.Metadata.BlobHandle.html" name="System.Reflection.Metadata.BlobHandle">BlobHandle</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BlobHandle GetNextHandle(MetadataReader reader, BlobHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.MetadataReader.html" name="System.Reflection.Metadata.MetadataReader">MetadataReader</a></td>
+        <td><em>reader</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.Metadata.BlobHandle.html" name="System.Reflection.Metadata.BlobHandle">BlobHandle</a></td>
+        <td><em>handle</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.BlobHandle.html" name="System.Reflection.Metadata.BlobHandle">BlobHandle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/MetadataReaderExtensions.cs/#L262"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="GetNextHandle_MetadataReader__StringHandle_">GetNextHandle(MetadataReader, StringHandle)</h4>
-<div class="markdown level1 summary"><p>Returns the a handle to the String that follows the given one in the String heap or a nil handle if it is the last one.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static StringHandle GetNextHandle(MetadataReader reader, StringHandle handle)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/MetadataReaderExtensions.cs/#L262">View Source</a>
+      </span>
+  <h4 id="GetNextHandle_MetadataReader__StringHandle_">GetNextHandle(MetadataReader, StringHandle)</h4>
+  <div class="markdown level1 summary"><p>Returns the a handle to the String that follows the given one in the String heap or a nil handle if it is the last one.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Reflection.Metadata.MetadataReader.html" name="System.Reflection.Metadata.MetadataReader">MetadataReader</a></td>
-      <td><em>reader</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.Reflection.Metadata.StringHandle.html" name="System.Reflection.Metadata.StringHandle">StringHandle</a></td>
-      <td><em>handle</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Reflection.Metadata.StringHandle.html" name="System.Reflection.Metadata.StringHandle">StringHandle</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringHandle GetNextHandle(MetadataReader reader, StringHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.MetadataReader.html" name="System.Reflection.Metadata.MetadataReader">MetadataReader</a></td>
+        <td><em>reader</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.Metadata.StringHandle.html" name="System.Reflection.Metadata.StringHandle">StringHandle</a></td>
+        <td><em>handle</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.StringHandle.html" name="System.Reflection.Metadata.StringHandle">StringHandle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/MetadataReaderExtensions.cs/#L234"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="GetNextHandle_MetadataReader__UserStringHandle_">GetNextHandle(MetadataReader, UserStringHandle)</h4>
-<div class="markdown level1 summary"><p>Returns the a handle to the UserString that follows the given one in the UserString heap or a nil handle if it is the last one.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static UserStringHandle GetNextHandle(MetadataReader reader, UserStringHandle handle)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/MetadataReaderExtensions.cs/#L234">View Source</a>
+      </span>
+  <h4 id="GetNextHandle_MetadataReader__UserStringHandle_">GetNextHandle(MetadataReader, UserStringHandle)</h4>
+  <div class="markdown level1 summary"><p>Returns the a handle to the UserString that follows the given one in the UserString heap or a nil handle if it is the last one.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Reflection.Metadata.MetadataReader.html" name="System.Reflection.Metadata.MetadataReader">MetadataReader</a></td>
-      <td><em>reader</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.Reflection.Metadata.UserStringHandle.html" name="System.Reflection.Metadata.UserStringHandle">UserStringHandle</a></td>
-      <td><em>handle</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Reflection.Metadata.UserStringHandle.html" name="System.Reflection.Metadata.UserStringHandle">UserStringHandle</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UserStringHandle GetNextHandle(MetadataReader reader, UserStringHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.MetadataReader.html" name="System.Reflection.Metadata.MetadataReader">MetadataReader</a></td>
+        <td><em>reader</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.Metadata.UserStringHandle.html" name="System.Reflection.Metadata.UserStringHandle">UserStringHandle</a></td>
+        <td><em>handle</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.UserStringHandle.html" name="System.Reflection.Metadata.UserStringHandle">UserStringHandle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/MetadataReaderExtensions.cs/#L105"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="GetTableMetadataOffset_MetadataReader__TableIndex_">GetTableMetadataOffset(MetadataReader, TableIndex)</h4>
-<div class="markdown level1 summary"><p>Returns the offset from the start of metadata to the specified table.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static int GetTableMetadataOffset(MetadataReader reader, TableIndex tableIndex)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/MetadataReaderExtensions.cs/#L105">View Source</a>
+      </span>
+  <h4 id="GetTableMetadataOffset_MetadataReader__TableIndex_">GetTableMetadataOffset(MetadataReader, TableIndex)</h4>
+  <div class="markdown level1 summary"><p>Returns the offset from the start of metadata to the specified table.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Reflection.Metadata.MetadataReader.html" name="System.Reflection.Metadata.MetadataReader">MetadataReader</a></td>
-      <td><em>reader</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.Reflection.Metadata.Ecma335.TableIndex.html" name="System.Reflection.Metadata.Ecma335.TableIndex">TableIndex</a></td>
-      <td><em>tableIndex</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetTableMetadataOffset(MetadataReader reader, TableIndex tableIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.MetadataReader.html" name="System.Reflection.Metadata.MetadataReader">MetadataReader</a></td>
+        <td><em>reader</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.Metadata.Ecma335.TableIndex.html" name="System.Reflection.Metadata.Ecma335.TableIndex">TableIndex</a></td>
+        <td><em>tableIndex</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/MetadataReaderExtensions.cs/#L20"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="GetTableRowCount_MetadataReader__TableIndex_">GetTableRowCount(MetadataReader, TableIndex)</h4>
-<div class="markdown level1 summary"><p>Returns the number of rows in the specified table.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static int GetTableRowCount(MetadataReader reader, TableIndex tableIndex)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/MetadataReaderExtensions.cs/#L20">View Source</a>
+      </span>
+  <h4 id="GetTableRowCount_MetadataReader__TableIndex_">GetTableRowCount(MetadataReader, TableIndex)</h4>
+  <div class="markdown level1 summary"><p>Returns the number of rows in the specified table.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Reflection.Metadata.MetadataReader.html" name="System.Reflection.Metadata.MetadataReader">MetadataReader</a></td>
-      <td><em>reader</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.Reflection.Metadata.Ecma335.TableIndex.html" name="System.Reflection.Metadata.Ecma335.TableIndex">TableIndex</a></td>
-      <td><em>tableIndex</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetTableRowCount(MetadataReader reader, TableIndex tableIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.MetadataReader.html" name="System.Reflection.Metadata.MetadataReader">MetadataReader</a></td>
+        <td><em>reader</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.Metadata.Ecma335.TableIndex.html" name="System.Reflection.Metadata.Ecma335.TableIndex">TableIndex</a></td>
+        <td><em>tableIndex</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/MetadataReaderExtensions.cs/#L40"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="GetTableRowSize_MetadataReader__TableIndex_">GetTableRowSize(MetadataReader, TableIndex)</h4>
-<div class="markdown level1 summary"><p>Returns the size of a row in the specified table.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static int GetTableRowSize(MetadataReader reader, TableIndex tableIndex)</code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/MetadataReaderExtensions.cs/#L40">View Source</a>
+      </span>
+  <h4 id="GetTableRowSize_MetadataReader__TableIndex_">GetTableRowSize(MetadataReader, TableIndex)</h4>
+  <div class="markdown level1 summary"><p>Returns the size of a row in the specified table.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Reflection.Metadata.MetadataReader.html" name="System.Reflection.Metadata.MetadataReader">MetadataReader</a></td>
-      <td><em>reader</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="System.Reflection.Metadata.Ecma335.TableIndex.html" name="System.Reflection.Metadata.Ecma335.TableIndex">TableIndex</a></td>
-      <td><em>tableIndex</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetTableRowSize(MetadataReader reader, TableIndex tableIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.MetadataReader.html" name="System.Reflection.Metadata.MetadataReader">MetadataReader</a></td>
+        <td><em>reader</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="System.Reflection.Metadata.Ecma335.TableIndex.html" name="System.Reflection.Metadata.Ecma335.TableIndex">TableIndex</a></td>
+        <td><em>tableIndex</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/MetadataReaderExtensions.cs/#L335"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="GetTypesWithEvents_MetadataReader_">GetTypesWithEvents(MetadataReader)</h4>
-<div class="markdown level1 summary"><p>Enumerate types that define one or more events.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IEnumerable<typedefinitionhandle> GetTypesWithEvents(MetadataReader reader)</typedefinitionhandle></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/MetadataReaderExtensions.cs/#L335">View Source</a>
+      </span>
+  <h4 id="GetTypesWithEvents_MetadataReader_">GetTypesWithEvents(MetadataReader)</h4>
+  <div class="markdown level1 summary"><p>Enumerate types that define one or more events.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Reflection.Metadata.MetadataReader.html" name="System.Reflection.Metadata.MetadataReader">MetadataReader</a></td>
-      <td><em>reader</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.Reflection.Metadata.TypeDefinitionHandle.html" name="System.Reflection.Metadata.TypeDefinitionHandle">TypeDefinitionHandle</a>&gt;</td>
-      <td><p>The resulting sequence corresponds exactly to entries in EventMap table,
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable<typedefinitionhandle> GetTypesWithEvents(MetadataReader reader)</typedefinitionhandle></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.MetadataReader.html" name="System.Reflection.Metadata.MetadataReader">MetadataReader</a></td>
+        <td><em>reader</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;System.Reflection.Metadata.TypeDefinitionHandle&gt;</td>
+        <td><p>The resulting sequence corresponds exactly to entries in EventMap table,
 i.e. n-th returned <a href="System.Reflection.Metadata.TypeDefinitionHandle.html">System.Reflection.Metadata.TypeDefinitionHandle</a> is stored in n-th row of EventMap.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
-<span class="small pull-right mobile-hide">
-<a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/MetadataReaderExtensions.cs/#L315"><!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source</a>
-</span>
-<h4 id="GetTypesWithProperties_MetadataReader_">GetTypesWithProperties(MetadataReader)</h4>
-<div class="markdown level1 summary"><p>Enumerate types that define one or more properties.</p><br></div>
-<div class="markdown level1 conceptual"></div>
-<div class="markdown level1 remarks"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IEnumerable<typedefinitionhandle> GetTypesWithProperties(MetadataReader reader)</typedefinitionhandle></code></pre>
+      <span class="small pull-right mobile-hide">
+      <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/MetadataReaderExtensions.cs/#L315">View Source</a>
+      </span>
+  <h4 id="GetTypesWithProperties_MetadataReader_">GetTypesWithProperties(MetadataReader)</h4>
+  <div class="markdown level1 summary"><p>Enumerate types that define one or more properties.</p>
 </div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Reflection.Metadata.MetadataReader.html" name="System.Reflection.Metadata.MetadataReader">MetadataReader</a></td>
-      <td><em>reader</em></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.Reflection.Metadata.TypeDefinitionHandle.html" name="System.Reflection.Metadata.TypeDefinitionHandle">TypeDefinitionHandle</a>&gt;</td>
-      <td><p>The resulting sequence corresponds exactly to entries in PropertyMap table,
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable<typedefinitionhandle> GetTypesWithProperties(MetadataReader reader)</typedefinitionhandle></code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="System.Reflection.Metadata.MetadataReader.html" name="System.Reflection.Metadata.MetadataReader">MetadataReader</a></td>
+        <td><em>reader</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>System.Collections.Generic.IEnumerable&lt;System.Reflection.Metadata.TypeDefinitionHandle&gt;</td>
+        <td><p>The resulting sequence corresponds exactly to entries in PropertyMap table,
 i.e. n-th returned <a href="System.Reflection.Metadata.TypeDefinitionHandle.html">System.Reflection.Metadata.TypeDefinitionHandle</a> is stored in n-th row of PropertyMap.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
 </div>
