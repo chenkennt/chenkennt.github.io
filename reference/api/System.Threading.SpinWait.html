@@ -70,19 +70,17 @@
         <pre><code class="lang-csharp hljs">public struct SpinWait</code></pre>
       </div>
       <h5 id="SpinWait_remarks"><strong>Remarks<strong></strong></strong></h5>
-      <div class="markdown level0 remarks"><para>
-<see cref="T:System.Threading.SpinWait"></see> encapsulates common spinning logic. On single-processor machines, yields are
+      <div class="markdown level0 remarks"><p><para><a href="System.Threading.SpinWait.html">SpinWait</a> encapsulates common spinning logic. On single-processor machines, yields are
 always used instead of busy waits, and on computers with Intel™ processors employing Hyper-Threading™
 technology, it helps to prevent hardware thread starvation. SpinWait encapsulates a good mixture of
 spinning and true yielding.
 </para>
-<para>
-<see cref="T:System.Threading.SpinWait"></see> is a value type, which means that low-level code can utilize SpinWait without
+<para><a href="System.Threading.SpinWait.html">SpinWait</a> is a value type, which means that low-level code can utilize SpinWait without
 fear of unnecessary allocation overheads. SpinWait is not generally useful for ordinary applications.
 In most cases, you should use the synchronization classes provided by the .NET Framework, such as
-<see cref="T:System.Threading.Monitor"></see>. For most purposes where spin waiting is required, however,
-the <see cref="T:System.Threading.SpinWait"></see> type should be preferred over the <see cref="M:System.Threading.Thread.SpinWait(System.Int32)"></see> method.
-</para>
+<a href="System.Threading.Monitor.html">Monitor</a>. For most purposes where spin waiting is required, however,
+the <a href="System.Threading.SpinWait.html">SpinWait</a> type should be preferred over the <a href="System.Threading.Thread.html">SpinWait(Int32)</a> method.
+</para></p>
 <para>
 While SpinWait is designed to be used in concurrent applications, it is not designed to be
 used from multiple threads concurrently.  SpinWait&#39;s members are not thread-safe.  If multiple
@@ -94,7 +92,7 @@ threads must spin, each should use its own instance of SpinWait.
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SpinWait.cs/#L89">View Source</a>
       </span>
   <h4 id="Count">Count</h4>
-  <div class="markdown level1 summary"><p>Gets the number of times <a href="System.Threading.SpinWait.html">System.Threading.SpinWait.SpinOnce</a> has been called on this instance.</p>
+  <div class="markdown level1 summary"><p>Gets the number of times <a href="System.Threading.SpinWait.html">SpinOnce()</a> has been called on this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -121,13 +119,13 @@ threads must spin, each should use its own instance of SpinWait.
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SpinWait.cs/#L104">View Source</a>
       </span>
   <h4 id="NextSpinWillYield">NextSpinWillYield</h4>
-  <div class="markdown level1 summary"><p>Gets whether the next call to <a href="System.Threading.SpinWait.html">System.Threading.SpinWait.SpinOnce</a> will yield the processor, triggering a
+  <div class="markdown level1 summary"><p>Gets whether the next call to <a href="System.Threading.SpinWait.html">SpinOnce()</a> will yield the processor, triggering a
 forced context switch.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="NextSpinWillYield_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>On a single-CPU machine, <see cref="M:System.Threading.SpinWait.SpinOnce"></see> always yields the processor. On machines with
-multiple CPUs, <see cref="M:System.Threading.SpinWait.SpinOnce"></see> may yield after an unspecified number of calls.</p>
+  <div class="markdown level1 remarks"><p>On a single-CPU machine, <a href="System.Threading.SpinWait.html">SpinOnce()</a> always yields the processor. On machines with
+multiple CPUs, <a href="System.Threading.SpinWait.html">SpinOnce()</a> may yield after an unspecified number of calls.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -158,8 +156,8 @@ multiple CPUs, <see cref="M:System.Threading.SpinWait.SpinOnce"></see> may yield
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Reset___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This makes <see cref="M:System.Threading.SpinWait.SpinOnce"></see> and <see cref="P:System.Threading.SpinWait.NextSpinWillYield"></see> behave as though no calls
-to <see cref="M:System.Threading.SpinWait.SpinOnce"></see> had been issued on this instance. If a <see cref="T:System.Threading.SpinWait"></see> instance
+  <div class="markdown level1 remarks"><p>This makes <a href="System.Threading.SpinWait.html">SpinOnce()</a> and <a href="System.Threading.SpinWait.html">NextSpinWillYield</a> behave as though no calls
+to <a href="System.Threading.SpinWait.html">SpinOnce()</a> had been issued on this instance. If a <a href="System.Threading.SpinWait.html">SpinWait</a> instance
 is reused many times, it may be useful to reset it to avoid yielding too soon.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -176,7 +174,7 @@ is reused many times, it may be useful to reset it to avoid yielding too soon.</
   <div class="markdown level1 conceptual"></div>
   <h5 id="SpinOnce___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This is typically called in a loop, and may change in behavior based on the number of times a
-<a href="System.Threading.SpinWait.html">System.Threading.SpinWait.SpinOnce</a> has been called thus far on this instance.</p>
+<a href="System.Threading.SpinWait.html">SpinOnce()</a> has been called thus far on this instance.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -205,7 +203,7 @@ is reused many times, it may be useful to reset it to avoid yielding too soon.</
     </thead>
     <tbody>
       <tr>
-        <td>System.Func&lt;System.Boolean&gt;</td>
+        <td><a href="System.Func`1.html" name="System.Func">Func</a>&lt;<a href="System.Boolean.html" name="System.Boolean">Boolean</a>&gt;</td>
         <td><em>condition</em></td>
         <td><p>A delegate to be executed over and over until it returns true.</p>
 </td>
@@ -235,7 +233,7 @@ is reused many times, it may be useful to reset it to avoid yielding too soon.</
     </thead>
     <tbody>
       <tr>
-        <td>System.Func&lt;System.Boolean&gt;</td>
+        <td><a href="System.Func`1.html" name="System.Func">Func</a>&lt;<a href="System.Boolean.html" name="System.Boolean">Boolean</a>&gt;</td>
         <td><em>condition</em></td>
         <td><p>A delegate to be executed over and over until it returns true.</p>
 </td>
@@ -243,7 +241,7 @@ is reused many times, it may be useful to reset it to avoid yielding too soon.</
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
         <td><em>millisecondsTimeout</em></td>
-        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a> (-1) to wait indefinitely.</p>
+        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">Infinite</a> (-1) to wait indefinitely.</p>
 </td>
       </tr>
     </tbody>
@@ -287,7 +285,7 @@ is reused many times, it may be useful to reset it to avoid yielding too soon.</
     </thead>
     <tbody>
       <tr>
-        <td>System.Func&lt;System.Boolean&gt;</td>
+        <td><a href="System.Func`1.html" name="System.Func">Func</a>&lt;<a href="System.Boolean.html" name="System.Boolean">Boolean</a>&gt;</td>
         <td><em>condition</em></td>
         <td><p>A delegate to be executed over and over until it returns true.</p>
 </td>
@@ -295,7 +293,7 @@ is reused many times, it may be useful to reset it to avoid yielding too soon.</
       <tr>
         <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
         <td><em>timeout</em></td>
-        <td><p>A <a href="System.TimeSpan.html">System.TimeSpan</a> that represents the number of milliseconds to wait,
+        <td><p>A <a href="System.TimeSpan.html">TimeSpan</a> that represents the number of milliseconds to wait,
 or a TimeSpan that represents -1 milliseconds to wait indefinitely.</p>
 </td>
       </tr>

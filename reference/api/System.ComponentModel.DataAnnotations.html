@@ -74,9 +74,9 @@ optimistic concurrency checks.</section>
               <h4><a href="System.ComponentModel.DataAnnotations.CustomValidationAttribute.html" name="System.ComponentModel.DataAnnotations.CustomValidationAttribute">CustomValidationAttribute</a></h4>
               <section>Validation attribute that executes a user-supplied method at runtime, using one of these signatures:
 <para>
-public static <see cref="T:System.ComponentModel.DataAnnotations.ValidationResult"></see> Method(object value) { ... }
+public static @'System.ComponentModel.DataAnnotations.ValidationResult' Method(object value) { ... }
 </para><para>
-public static <see cref="T:System.ComponentModel.DataAnnotations.ValidationResult"></see> Method(object value, <see cref="T:System.ComponentModel.DataAnnotations.ValidationContext"></see> context) {
+public static @'System.ComponentModel.DataAnnotations.ValidationResult' Method(object value, @'System.ComponentModel.DataAnnotations.ValidationContext' context) {
 ... }
 </para><para>
 The value can be strongly typed as type conversion will be attempted.
@@ -132,7 +132,7 @@ should allow editing of the value.</section>
               <section></section>
               <h4><a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html" name="System.ComponentModel.DataAnnotations.ValidationAttribute">ValidationAttribute</a></h4>
               <section>Base class for all validation attributes.
-<para>Override <see cref="M:System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)"></see> to implement validation logic.</para></section>
+<para>Override @'System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)' to implement validation logic.</para></section>
               <h4><a href="System.ComponentModel.DataAnnotations.ValidationContext.html" name="System.ComponentModel.DataAnnotations.ValidationContext">ValidationContext</a></h4>
               <section>Describes the context in which a validation is being performed.</section>
               <h4><a href="System.ComponentModel.DataAnnotations.ValidationException.html" name="System.ComponentModel.DataAnnotations.ValidationException">ValidationException</a></h4>
@@ -140,7 +140,7 @@ should allow editing of the value.</section>
               <h4><a href="System.ComponentModel.DataAnnotations.ValidationResult.html" name="System.ComponentModel.DataAnnotations.ValidationResult">ValidationResult</a></h4>
               <section>Container class for the results of a validation request.
 <para>
-Use the static <see cref="F:System.ComponentModel.DataAnnotations.ValidationResult.Success"></see> to represent successful validation.
+Use the static @'System.ComponentModel.DataAnnotations.ValidationResult.Success' to represent successful validation.
 </para></section>
               <h4><a href="System.ComponentModel.DataAnnotations.Validator.html" name="System.ComponentModel.DataAnnotations.Validator">Validator</a></h4>
               <section>Helper class to validate objects, properties and other values using their associated

@@ -86,15 +86,15 @@ This class cannot be inherited.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Equals_XNode__XNode__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>A null node is equal to another null node but unequal to a non-null
-node. Two <a href="System.Xml.Linq.XNode.html">System.Xml.Linq.XNode</a>s of different types are never equal. Two
-<a href="System.Xml.Linq.XText.html">System.Xml.Linq.XText</a> nodes are equal if they contain the same text. Two
-<a href="System.Xml.Linq.XElement.html">System.Xml.Linq.XElement</a> nodes are equal if they have the same tag name, the same
+node. Two <a href="System.Xml.Linq.XNode.html">XNode</a>s of different types are never equal. Two
+<a href="System.Xml.Linq.XText.html">XText</a> nodes are equal if they contain the same text. Two
+<a href="System.Xml.Linq.XElement.html">XElement</a> nodes are equal if they have the same tag name, the same
 set of attributes with the same values, and, ignoring comments and processing
 instructions, contain two equal length sequences of pairwise equal content nodes.
-Two <a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument</a>s are equal if their root nodes are equal. Two
-<a href="System.Xml.Linq.XComment.html">System.Xml.Linq.XComment</a> nodes are equal if they contain the same comment text.
-Two <a href="System.Xml.Linq.XProcessingInstruction.html">System.Xml.Linq.XProcessingInstruction</a> nodes are equal if they have the same
-target and data. Two <a href="System.Xml.Linq.XDocumentType.html">System.Xml.Linq.XDocumentType</a> nodes are equal if the have the
+Two <a href="System.Xml.Linq.XDocument.html">XDocument</a>s are equal if their root nodes are equal. Two
+<a href="System.Xml.Linq.XComment.html">XComment</a> nodes are equal if they contain the same comment text.
+Two <a href="System.Xml.Linq.XProcessingInstruction.html">XProcessingInstruction</a> nodes are equal if they have the same
+target and data. Two <a href="System.Xml.Linq.XDocumentType.html">XDocumentType</a> nodes are equal if the have the
 same name, public id, system id, and internal subset.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -146,11 +146,11 @@ same name, public id, system id, and internal subset.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Xml.XDocument/src/System/Xml/Linq/XNodeEqualityComparer.cs/#L52">View Source</a>
       </span>
   <h4 id="GetHashCode_XNode_">GetHashCode(XNode)</h4>
-  <div class="markdown level1 summary"><p>Returns a hash code based on an <a href="System.Xml.Linq.XNode.html">System.Xml.Linq.XNode</a> objects value.</p>
+  <div class="markdown level1 summary"><p>Returns a hash code based on an <a href="System.Xml.Linq.XNode.html">XNode</a> objects value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="GetHashCode_XNode__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The <see cref="T:System.Xml.Linq.XNode"></see> class&#39;s implementation of <see cref="M:System.Object.GetHashCode"></see>
+  <div class="markdown level1 remarks"><p>The <a href="System.Xml.Linq.XNode.html">XNode</a> class&#39;s implementation of <a href="System.Object.html">GetHashCode()</a>
 is based on the referential identity of the node. This method computes a
 hash code based on the value of the node.</p>
 </div>
@@ -202,15 +202,15 @@ hash code based on the value of the node.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 id="IEqualityComparer_Equals_Object__Object__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>A null node is equal to another null node but unequal to a non-null
-node. Two <a href="System.Xml.Linq.XNode.html">System.Xml.Linq.XNode</a>s of different types are never equal. Two
-<a href="System.Xml.Linq.XText.html">System.Xml.Linq.XText</a> nodes are equal if they contain the same text. Two
-<a href="System.Xml.Linq.XElement.html">System.Xml.Linq.XElement</a> nodes are equal if they have the same tag name, the same
+node. Two <a href="System.Xml.Linq.XNode.html">XNode</a>s of different types are never equal. Two
+<a href="System.Xml.Linq.XText.html">XText</a> nodes are equal if they contain the same text. Two
+<a href="System.Xml.Linq.XElement.html">XElement</a> nodes are equal if they have the same tag name, the same
 set of attributes with the same values, and, ignoring comments and processing
 instructions, contain two equal length sequences of pairwise equal content nodes.
-Two <a href="System.Xml.Linq.XDocument.html">System.Xml.Linq.XDocument</a>s are equal if their root nodes are equal. Two
-<a href="System.Xml.Linq.XComment.html">System.Xml.Linq.XComment</a> nodes are equal if they contain the same comment text.
-Two <a href="System.Xml.Linq.XProcessingInstruction.html">System.Xml.Linq.XProcessingInstruction</a> nodes are equal if they have the same
-target and data. Two <a href="System.Xml.Linq.XDocumentType.html">System.Xml.Linq.XDocumentType</a> nodes are equal if the have the
+Two <a href="System.Xml.Linq.XDocument.html">XDocument</a>s are equal if their root nodes are equal. Two
+<a href="System.Xml.Linq.XComment.html">XComment</a> nodes are equal if they contain the same comment text.
+Two <a href="System.Xml.Linq.XProcessingInstruction.html">XProcessingInstruction</a> nodes are equal if they have the same
+target and data. Two <a href="System.Xml.Linq.XDocumentType.html">XDocumentType</a> nodes are equal if the have the
 same name, public id, system id, and internal subset.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -266,7 +266,7 @@ same name, public id, system id, and internal subset.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="IEqualityComparer_GetHashCode_Object__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The <a href="System.Xml.Linq.XNode.html">System.Xml.Linq.XNode</a> class&#39;s implementation of <a href="System.Object.html">System.Object.GetHashCode</a>
+  <div class="markdown level1 remarks"><p>The <a href="System.Xml.Linq.XNode.html">XNode</a> class&#39;s implementation of <a href="System.Object.html">GetHashCode()</a>
 is based on the referential identity of the node. This method computes a
 hash code based on the value of the node.</p>
 </div>

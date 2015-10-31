@@ -60,7 +60,7 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="ManualResetEventSlim">Class ManualResetEventSlim</h1>
-      <div class="markdown level0 summary"><p>Provides a slimmed down version of <a href="System.Threading.ManualResetEvent.html">System.Threading.ManualResetEvent</a>.</p>
+      <div class="markdown level0 summary"><p>Provides a slimmed down version of <a href="System.Threading.ManualResetEvent.html">ManualResetEvent</a>.</p>
 </div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
@@ -75,9 +75,9 @@
         <pre><code class="lang-csharp hljs">public class ManualResetEventSlim : IDisposable</code></pre>
       </div>
       <h5 id="ManualResetEventSlim_remarks"><strong>Remarks<strong></strong></strong></h5>
-      <div class="markdown level0 remarks"><p>All public and protected members of <see cref="T:System.Threading.ManualResetEventSlim"></see> are thread-safe and may be used
+      <div class="markdown level0 remarks"><p>All public and protected members of <a href="System.Threading.ManualResetEventSlim.html">ManualResetEventSlim</a> are thread-safe and may be used
 concurrently from multiple threads, with the exception of Dispose, which
-must only be used when all other operations on the <see cref="T:System.Threading.ManualResetEventSlim"></see> have
+must only be used when all other operations on the <a href="System.Threading.ManualResetEventSlim.html">ManualResetEventSlim</a> have
 completed, and Reset, which should only be used when no other threads are
 accessing the event.</p>
 </div>
@@ -87,7 +87,7 @@ accessing the event.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/ManualResetEventSlim.cs/#L186">View Source</a>
       </span>
   <h4 id="ManualResetEventSlim__">ManualResetEventSlim()</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Threading.ManualResetEventSlim.html">System.Threading.ManualResetEventSlim</a>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Threading.ManualResetEventSlim.html">ManualResetEventSlim</a>
 class with an initial state of nonsignaled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -100,7 +100,7 @@ class with an initial state of nonsignaled.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/ManualResetEventSlim.cs/#L198">View Source</a>
       </span>
   <h4 id="ManualResetEventSlim_Boolean_">ManualResetEventSlim(Boolean)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Threading.ManualResetEventSlim.html">System.Threading.ManualResetEventSlim</a>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Threading.ManualResetEventSlim.html">ManualResetEventSlim</a>
 class with a Boolen value indicating whether to set the intial state to signaled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -132,7 +132,7 @@ to nonsignaled.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/ManualResetEventSlim.cs/#L216">View Source</a>
       </span>
   <h4 id="ManualResetEventSlim_Boolean__Int32_">ManualResetEventSlim(Boolean, Int32)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Threading.ManualResetEventSlim.html">System.Threading.ManualResetEventSlim</a>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Threading.ManualResetEventSlim.html">ManualResetEventSlim</a>
 class with a Boolen value indicating whether to set the intial state to signaled and a specified
 spin count.</p>
 </div>
@@ -227,12 +227,12 @@ wait.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/ManualResetEventSlim.cs/#L101">View Source</a>
       </span>
   <h4 id="WaitHandle">WaitHandle</h4>
-  <div class="markdown level1 summary"><p>Gets the underlying <a href="System.Threading.WaitHandle.html">System.Threading.WaitHandle</a> object for this <a href="System.Threading.ManualResetEventSlim.html">System.Threading.ManualResetEventSlim</a>.</p>
+  <div class="markdown level1 summary"><p>Gets the underlying <a href="System.Threading.WaitHandle.html">WaitHandle</a> object for this <a href="System.Threading.ManualResetEventSlim.html">ManualResetEventSlim</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="WaitHandle_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Accessing this property forces initialization of an underlying event object if one hasn&#39;t
-already been created.  To simply wait on this <see cref="T:System.Threading.ManualResetEventSlim"></see>,
+already been created.  To simply wait on this <a href="System.Threading.ManualResetEventSlim.html">ManualResetEventSlim</a>,
 the public Wait methods should be preferred.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -260,11 +260,11 @@ the public Wait methods should be preferred.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/ManualResetEventSlim.cs/#L686">View Source</a>
       </span>
   <h4 id="Dispose__">Dispose()</h4>
-  <div class="markdown level1 summary"><p>Releases all resources used by the current instance of <a href="System.Threading.ManualResetEventSlim.html">System.Threading.ManualResetEventSlim</a>.</p>
+  <div class="markdown level1 summary"><p>Releases all resources used by the current instance of <a href="System.Threading.ManualResetEventSlim.html">ManualResetEventSlim</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Dispose___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Unlike most of the members of <see cref="T:System.Threading.ManualResetEventSlim"></see>, <see cref="M:System.Threading.ManualResetEventSlim.Dispose"></see> is not
+  <div class="markdown level1 remarks"><p>Unlike most of the members of <a href="System.Threading.ManualResetEventSlim.html">ManualResetEventSlim</a>, <a href="System.Threading.ManualResetEventSlim.html">Dispose()</a> is not
 thread-safe and may not be used concurrently with other members of this instance.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -277,11 +277,11 @@ thread-safe and may not be used concurrently with other members of this instance
       </span>
   <h4 id="Dispose_Boolean_">Dispose(Boolean)</h4>
   <div class="markdown level1 summary"><p>When overridden in a derived class, releases the unmanaged resources used by the
-<a href="System.Threading.ManualResetEventSlim.html">System.Threading.ManualResetEventSlim</a>, and optionally releases the managed resources.</p>
+<a href="System.Threading.ManualResetEventSlim.html">ManualResetEventSlim</a>, and optionally releases the managed resources.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Dispose_Boolean__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Unlike most of the members of <see cref="T:System.Threading.ManualResetEventSlim"></see>, <see cref="M:System.Threading.ManualResetEventSlim.Dispose(System.Boolean)"></see> is not
+  <div class="markdown level1 remarks"><p>Unlike most of the members of <a href="System.Threading.ManualResetEventSlim.html">ManualResetEventSlim</a>, <a href="System.Threading.ManualResetEventSlim.html">Dispose(Boolean)</a> is not
 thread-safe and may not be used concurrently with other members of this instance.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -316,7 +316,7 @@ false to release only unmanaged resources.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Reset___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Unlike most of the members of <a href="System.Threading.ManualResetEventSlim.html">System.Threading.ManualResetEventSlim</a>, <a href="System.Threading.ManualResetEventSlim.html">System.Threading.ManualResetEventSlim.Reset</a> is not
+  <div class="markdown level1 remarks"><p>Unlike most of the members of <a href="System.Threading.ManualResetEventSlim.html">ManualResetEventSlim</a>, <a href="System.Threading.ManualResetEventSlim.html">Reset()</a> is not
 thread-safe and may not be used concurrently with other members of this instance.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -341,7 +341,7 @@ proceed.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/ManualResetEventSlim.cs/#L421">View Source</a>
       </span>
   <h4 id="Wait__">Wait()</h4>
-  <div class="markdown level1 summary"><p>Blocks the current thread until the current <a href="System.Threading.ManualResetEventSlim.html">System.Threading.ManualResetEventSlim</a> is set.</p>
+  <div class="markdown level1 summary"><p>Blocks the current thread until the current <a href="System.Threading.ManualResetEventSlim.html">ManualResetEventSlim</a> is set.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Wait___remarks">Remarks</h5>
@@ -357,7 +357,7 @@ return immediately if the event is currently in a set state.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/ManualResetEventSlim.cs/#L516">View Source</a>
       </span>
   <h4 id="Wait_Int32_">Wait(Int32)</h4>
-  <div class="markdown level1 summary"><p>Blocks the current thread until the current <a href="System.Threading.ManualResetEventSlim.html">System.Threading.ManualResetEventSlim</a> is set, using a
+  <div class="markdown level1 summary"><p>Blocks the current thread until the current <a href="System.Threading.ManualResetEventSlim.html">ManualResetEventSlim</a> is set, using a
 32-bit signed integer to measure the time interval.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -378,7 +378,7 @@ return immediately if the event is currently in a set state.</p>
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
         <td><em>millisecondsTimeout</em></td>
-        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a>(-1) to wait indefinitely.</p>
+        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">Infinite</a>(-1) to wait indefinitely.</p>
 </td>
       </tr>
     </tbody>
@@ -394,7 +394,7 @@ return immediately if the event is currently in a set state.</p>
     <tbody>
       <tr>
         <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-        <td><p>true if the <see cref="T:System.Threading.ManualResetEventSlim"></see> was set; otherwise,
+        <td><p>true if the <a href="System.Threading.ManualResetEventSlim.html">ManualResetEventSlim</a> was set; otherwise,
 false.</p>
 </td>
       </tr>
@@ -405,8 +405,8 @@ false.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/ManualResetEventSlim.cs/#L539">View Source</a>
       </span>
   <h4 id="Wait_Int32__CancellationToken_">Wait(Int32, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Blocks the current thread until the current <a href="System.Threading.ManualResetEventSlim.html">System.Threading.ManualResetEventSlim</a> is set, using a
-32-bit signed integer to measure the time interval, while observing a <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a>.</p>
+  <div class="markdown level1 summary"><p>Blocks the current thread until the current <a href="System.Threading.ManualResetEventSlim.html">ManualResetEventSlim</a> is set, using a
+32-bit signed integer to measure the time interval, while observing a <a href="System.Threading.CancellationToken.html">CancellationToken</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -426,13 +426,13 @@ false.</p>
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
         <td><em>millisecondsTimeout</em></td>
-        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a>(-1) to wait indefinitely.</p>
+        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">Infinite</a>(-1) to wait indefinitely.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
         <td><em>cancellationToken</em></td>
-        <td><p>The <see cref="T:System.Threading.CancellationToken"></see> to
+        <td><p>The <a href="System.Threading.CancellationToken.html">CancellationToken</a> to
 observe.</p>
 </td>
       </tr>
@@ -449,7 +449,7 @@ observe.</p>
     <tbody>
       <tr>
         <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-        <td><p>true if the <see cref="T:System.Threading.ManualResetEventSlim"></see> was set; otherwise,
+        <td><p>true if the <a href="System.Threading.ManualResetEventSlim.html">ManualResetEventSlim</a> was set; otherwise,
 false.</p>
 </td>
       </tr>
@@ -460,8 +460,8 @@ false.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/ManualResetEventSlim.cs/#L441">View Source</a>
       </span>
   <h4 id="Wait_CancellationToken_">Wait(CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Blocks the current thread until the current <a href="System.Threading.ManualResetEventSlim.html">System.Threading.ManualResetEventSlim</a> receives a signal,
-while observing a <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a>.</p>
+  <div class="markdown level1 summary"><p>Blocks the current thread until the current <a href="System.Threading.ManualResetEventSlim.html">ManualResetEventSlim</a> receives a signal,
+while observing a <a href="System.Threading.CancellationToken.html">CancellationToken</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Wait_CancellationToken__remarks">Remarks</h5>
@@ -485,7 +485,7 @@ return immediately if the event is currently in a set state.</p>
       <tr>
         <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
         <td><em>cancellationToken</em></td>
-        <td><p>The <see cref="T:System.Threading.CancellationToken"></see> to
+        <td><p>The <a href="System.Threading.CancellationToken.html">CancellationToken</a> to
 observe.</p>
 </td>
       </tr>
@@ -496,8 +496,8 @@ observe.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/ManualResetEventSlim.cs/#L461">View Source</a>
       </span>
   <h4 id="Wait_TimeSpan_">Wait(TimeSpan)</h4>
-  <div class="markdown level1 summary"><p>Blocks the current thread until the current <a href="System.Threading.ManualResetEventSlim.html">System.Threading.ManualResetEventSlim</a> is set, using a
-<a href="System.TimeSpan.html">System.TimeSpan</a> to measure the time interval.</p>
+  <div class="markdown level1 summary"><p>Blocks the current thread until the current <a href="System.Threading.ManualResetEventSlim.html">ManualResetEventSlim</a> is set, using a
+<a href="System.TimeSpan.html">TimeSpan</a> to measure the time interval.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -517,8 +517,8 @@ observe.</p>
       <tr>
         <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
         <td><em>timeout</em></td>
-        <td><p>A <see cref="T:System.TimeSpan"></see> that represents the number of milliseconds
-to wait, or a <see cref="T:System.TimeSpan"></see> that represents -1 milliseconds to wait indefinitely.</p>
+        <td><p>A <a href="System.TimeSpan.html">TimeSpan</a> that represents the number of milliseconds
+to wait, or a <a href="System.TimeSpan.html">TimeSpan</a> that represents -1 milliseconds to wait indefinitely.</p>
 </td>
       </tr>
     </tbody>
@@ -534,7 +534,7 @@ to wait, or a <see cref="T:System.TimeSpan"></see> that represents -1 millisecon
     <tbody>
       <tr>
         <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-        <td><p>true if the <see cref="T:System.Threading.ManualResetEventSlim"></see> was set; otherwise,
+        <td><p>true if the <a href="System.Threading.ManualResetEventSlim.html">ManualResetEventSlim</a> was set; otherwise,
 false.</p>
 </td>
       </tr>
@@ -545,8 +545,8 @@ false.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/ManualResetEventSlim.cs/#L492">View Source</a>
       </span>
   <h4 id="Wait_TimeSpan__CancellationToken_">Wait(TimeSpan, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Blocks the current thread until the current <a href="System.Threading.ManualResetEventSlim.html">System.Threading.ManualResetEventSlim</a> is set, using a
-<a href="System.TimeSpan.html">System.TimeSpan</a> to measure the time interval, while observing a <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a>.</p>
+  <div class="markdown level1 summary"><p>Blocks the current thread until the current <a href="System.Threading.ManualResetEventSlim.html">ManualResetEventSlim</a> is set, using a
+<a href="System.TimeSpan.html">TimeSpan</a> to measure the time interval, while observing a <a href="System.Threading.CancellationToken.html">CancellationToken</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -566,14 +566,14 @@ false.</p>
       <tr>
         <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
         <td><em>timeout</em></td>
-        <td><p>A <see cref="T:System.TimeSpan"></see> that represents the number of milliseconds
-to wait, or a <see cref="T:System.TimeSpan"></see> that represents -1 milliseconds to wait indefinitely.</p>
+        <td><p>A <a href="System.TimeSpan.html">TimeSpan</a> that represents the number of milliseconds
+to wait, or a <a href="System.TimeSpan.html">TimeSpan</a> that represents -1 milliseconds to wait indefinitely.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
         <td><em>cancellationToken</em></td>
-        <td><p>The <see cref="T:System.Threading.CancellationToken"></see> to
+        <td><p>The <a href="System.Threading.CancellationToken.html">CancellationToken</a> to
 observe.</p>
 </td>
       </tr>
@@ -590,7 +590,7 @@ observe.</p>
     <tbody>
       <tr>
         <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-        <td><p>true if the <see cref="T:System.Threading.ManualResetEventSlim"></see> was set; otherwise,
+        <td><p>true if the <a href="System.Threading.ManualResetEventSlim.html">ManualResetEventSlim</a> was set; otherwise,
 false.</p>
 </td>
       </tr>

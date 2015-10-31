@@ -454,8 +454,8 @@ As such, the first field of this entry, which is normally an RVA, is a file poin
   <h4 id="FileAlignment">FileAlignment</h4>
   <div class="markdown level1 summary"><p>The alignment factor (in bytes) that is used to align the raw data of sections in the image file.
 The value should be a power of 2 between 512 and 64K, inclusive. The default is 512.
-If the <see cref="P:System.Reflection.PortableExecutable.PEHeader.SectionAlignment"></see> is less than the architecture&#39;s page size,
-then <see cref="P:System.Reflection.PortableExecutable.PEHeader.FileAlignment"></see> must match <see cref="P:System.Reflection.PortableExecutable.PEHeader.SectionAlignment"></see>.</p>
+If the <a href="System.Reflection.PortableExecutable.PEHeader.html">SectionAlignment</a> is less than the architecture&#39;s page size,
+then <a href="System.Reflection.PortableExecutable.PEHeader.html">FileAlignment</a> must match <a href="System.Reflection.PortableExecutable.PEHeader.html">SectionAlignment</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -857,7 +857,7 @@ must be a multiple of 64K.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEHeader.cs/#L162">View Source</a>
       </span>
   <h4 id="NumberOfRvaAndSizes">NumberOfRvaAndSizes</h4>
-  <div class="markdown level1 summary"><p>The number of data-directory entries in the remainder of the <a href="System.Reflection.PortableExecutable.PEHeader.html">System.Reflection.PortableExecutable.PEHeader</a>. Each describes a location and size.</p>
+  <div class="markdown level1 summary"><p>The number of data-directory entries in the remainder of the <a href="System.Reflection.PortableExecutable.PEHeader.html">PEHeader</a>. Each describes a location and size.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -910,7 +910,7 @@ must be a multiple of 64K.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEHeader.cs/#L74">View Source</a>
       </span>
   <h4 id="SectionAlignment">SectionAlignment</h4>
-  <div class="markdown level1 summary"><p>The alignment (in bytes) of sections when they are loaded into memory. It must be greater than or equal to <a href="System.Reflection.PortableExecutable.PEHeader.html">System.Reflection.PortableExecutable.PEHeader.FileAlignment</a>.
+  <div class="markdown level1 summary"><p>The alignment (in bytes) of sections when they are loaded into memory. It must be greater than or equal to <a href="System.Reflection.PortableExecutable.PEHeader.html">FileAlignment</a>.
 The default is the page size for the architecture.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1019,7 +1019,7 @@ The default is the page size for the architecture.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEHeader.cs/#L152">View Source</a>
       </span>
   <h4 id="SizeOfHeapReserve">SizeOfHeapReserve</h4>
-  <div class="markdown level1 summary"><p>The size of the local heap space to reserve. Only <a href="System.Reflection.PortableExecutable.PEHeader.html">System.Reflection.PortableExecutable.PEHeader.SizeOfHeapCommit</a> is committed;
+  <div class="markdown level1 summary"><p>The size of the local heap space to reserve. Only <a href="System.Reflection.PortableExecutable.PEHeader.html">SizeOfHeapCommit</a> is committed;
 the rest is made available one page at a time until the reserve size is reached.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1048,7 +1048,7 @@ the rest is made available one page at a time until the reserve size is reached.
       </span>
   <h4 id="SizeOfImage">SizeOfImage</h4>
   <div class="markdown level1 summary"><p>The size (in bytes) of the image, including all headers, as the image is loaded in memory.
-It must be a multiple of <a href="System.Reflection.PortableExecutable.PEHeader.html">System.Reflection.PortableExecutable.PEHeader.SectionAlignment</a>.</p>
+It must be a multiple of <a href="System.Reflection.PortableExecutable.PEHeader.html">SectionAlignment</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1129,7 +1129,7 @@ It must be a multiple of <a href="System.Reflection.PortableExecutable.PEHeader.
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEHeader.cs/#L141">View Source</a>
       </span>
   <h4 id="SizeOfStackReserve">SizeOfStackReserve</h4>
-  <div class="markdown level1 summary"><p>The size of the stack to reserve. Only <a href="System.Reflection.PortableExecutable.PEHeader.html">System.Reflection.PortableExecutable.PEHeader.SizeOfStackCommit</a> is committed;
+  <div class="markdown level1 summary"><p>The size of the stack to reserve. Only <a href="System.Reflection.PortableExecutable.PEHeader.html">SizeOfStackCommit</a> is committed;
 the rest is made available one page at a time until the reserve size is reached.</p>
 </div>
   <div class="markdown level1 conceptual"></div>

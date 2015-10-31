@@ -81,25 +81,25 @@ Each element in each partition has an integer index associated with it, which de
 order of that element against elements in other partitions.
 </para>
 <para>
-Inheritors of <see cref="T:System.Collections.Concurrent.OrderablePartitioner`1"></see> must adhere to the following rules:
+Inheritors of <a href="System.Collections.Concurrent.OrderablePartitioner`1.html">OrderablePartitioner</a> must adhere to the following rules:
 <ol><li>All indices must be unique, such that there may not be duplicate indices. If all indices are not
 unique, the output ordering may be scrambled.</li><li>All indices must be non-negative. If any indices are negative, consumers of the implementation
-may throw exceptions.</li><li><see cref="M:System.Collections.Concurrent.OrderablePartitioner`1.GetPartitions(System.Int32)"></see> and <see cref="M:System.Collections.Concurrent.OrderablePartitioner`1.GetOrderablePartitions(System.Int32)"></see> should throw a
-<see cref="T:System.ArgumentOutOfRangeException"></see> if the requested partition count is less than or
-equal to zero.</li><li><see cref="M:System.Collections.Concurrent.OrderablePartitioner`1.GetPartitions(System.Int32)"></see> and <see cref="M:System.Collections.Concurrent.OrderablePartitioner`1.GetOrderablePartitions(System.Int32)"></see> should always return a number
+may throw exceptions.</li><li><a href="System.Collections.Concurrent.OrderablePartitioner`1.html">GetPartitions(Int32)</a> and <a href="System.Collections.Concurrent.OrderablePartitioner`1.html">GetOrderablePartitions(Int32)</a> should throw a
+<a href="System.ArgumentOutOfRangeException.html">ArgumentOutOfRangeException</a> if the requested partition count is less than or
+equal to zero.</li><li><a href="System.Collections.Concurrent.OrderablePartitioner`1.html">GetPartitions(Int32)</a> and <a href="System.Collections.Concurrent.OrderablePartitioner`1.html">GetOrderablePartitions(Int32)</a> should always return a number
 of enumerables equal to the requested partition count. If the partitioner runs out of data and cannot
 create as many partitions as requested, an empty enumerator should be returned for each of the
-remaining partitions. If this rule is not followed, consumers of the implementation may throw a <see cref="T:System.InvalidOperationException"></see>.</li><li><see cref="M:System.Collections.Concurrent.OrderablePartitioner`1.GetPartitions(System.Int32)"></see>, <see cref="M:System.Collections.Concurrent.OrderablePartitioner`1.GetOrderablePartitions(System.Int32)"></see>,
-<see cref="M:System.Collections.Concurrent.OrderablePartitioner`1.GetDynamicPartitions"></see>, and <see cref="M:System.Collections.Concurrent.OrderablePartitioner`1.GetOrderableDynamicPartitions"></see>
+remaining partitions. If this rule is not followed, consumers of the implementation may throw a <a href="System.InvalidOperationException.html">InvalidOperationException</a>.</li><li><a href="System.Collections.Concurrent.OrderablePartitioner`1.html">GetPartitions(Int32)</a>, <a href="System.Collections.Concurrent.OrderablePartitioner`1.html">GetOrderablePartitions(Int32)</a>,
+<a href="System.Collections.Concurrent.OrderablePartitioner`1.html">GetDynamicPartitions()</a>, and <a href="System.Collections.Concurrent.OrderablePartitioner`1.html">GetOrderableDynamicPartitions()</a>
 should never return null. If null is returned, a consumer of the implementation may throw a
-<see cref="T:System.InvalidOperationException"></see>.</li><li><see cref="M:System.Collections.Concurrent.OrderablePartitioner`1.GetPartitions(System.Int32)"></see>, <see cref="M:System.Collections.Concurrent.OrderablePartitioner`1.GetOrderablePartitions(System.Int32)"></see>,
-<see cref="M:System.Collections.Concurrent.OrderablePartitioner`1.GetDynamicPartitions"></see>, and <see cref="M:System.Collections.Concurrent.OrderablePartitioner`1.GetOrderableDynamicPartitions"></see>
+<a href="System.InvalidOperationException.html">InvalidOperationException</a>.</li><li><a href="System.Collections.Concurrent.OrderablePartitioner`1.html">GetPartitions(Int32)</a>, <a href="System.Collections.Concurrent.OrderablePartitioner`1.html">GetOrderablePartitions(Int32)</a>,
+<a href="System.Collections.Concurrent.OrderablePartitioner`1.html">GetDynamicPartitions()</a>, and <a href="System.Collections.Concurrent.OrderablePartitioner`1.html">GetOrderableDynamicPartitions()</a>
 should always return partitions that can fully and uniquely enumerate the input data source. All of
 the data and only the data contained in the input source should be enumerated, with no duplication
 that was not already in the input, unless specifically required by the particular partitioner&#39;s
-design. If this is not followed, the output ordering may be scrambled.</li><li>If <see cref="P:System.Collections.Concurrent.OrderablePartitioner`1.KeysOrderedInEachPartition"></see> returns true, each partition must return elements
-with increasing key indices.</li><li>If <see cref="P:System.Collections.Concurrent.OrderablePartitioner`1.KeysOrderedAcrossPartitions"></see> returns true, all the keys in partition numbered N
-must be larger than all the keys in partition numbered N-1.</li><li>If <see cref="P:System.Collections.Concurrent.OrderablePartitioner`1.KeysNormalized"></see> returns true, all indices must be monotonically increasing from
+design. If this is not followed, the output ordering may be scrambled.</li><li>If <a href="System.Collections.Concurrent.OrderablePartitioner`1.html">KeysOrderedInEachPartition</a> returns true, each partition must return elements
+with increasing key indices.</li><li>If <a href="System.Collections.Concurrent.OrderablePartitioner`1.html">KeysOrderedAcrossPartitions</a> returns true, all the keys in partition numbered N
+must be larger than all the keys in partition numbered N-1.</li><li>If <a href="System.Collections.Concurrent.OrderablePartitioner`1.html">KeysNormalized</a> returns true, all indices must be monotonically increasing from
 0, though not necessarily within a single partition.</li></ol></para></div>
       <h3 id="constructors">Constructors</h3>
 
@@ -107,7 +107,7 @@ must be larger than all the keys in partition numbered N-1.</li><li>If <see cref
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/OrderablePartitioner.cs/#L85">View Source</a>
       </span>
   <h4 id="OrderablePartitioner_Boolean__Boolean__Boolean_">OrderablePartitioner(Boolean, Boolean, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Collections.Concurrent.OrderablePartitioner`1.html">System.Collections.Concurrent.OrderablePartitioner`1</a> class with the
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Collections.Concurrent.OrderablePartitioner`1.html">OrderablePartitioner</a> class with the
 specified constraints on the index keys.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -161,7 +161,7 @@ only their relative order is considered, not their absolute values.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="KeysNormalized_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If <a href="System.Collections.Concurrent.OrderablePartitioner`1.html">System.Collections.Concurrent.OrderablePartitioner`1.KeysNormalized</a> returns true, all order keys are distinct integers in the range
+  <div class="markdown level1 remarks"><p>If <a href="System.Collections.Concurrent.OrderablePartitioner`1.html">KeysNormalized</a> returns true, all order keys are distinct integers in the range
 [0 .. numberOfElements-1]. If the property returns false, order keys must still be dictinct, but
 only their relative order is considered, not their absolute values.</p>
 </div>
@@ -193,7 +193,7 @@ only their relative order is considered, not their absolute values.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="KeysOrderedAcrossPartitions_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If <a href="System.Collections.Concurrent.OrderablePartitioner`1.html">System.Collections.Concurrent.OrderablePartitioner`1.KeysOrderedAcrossPartitions</a> returns true, each element in partition 0 has a
+  <div class="markdown level1 remarks"><p>If <a href="System.Collections.Concurrent.OrderablePartitioner`1.html">KeysOrderedAcrossPartitions</a> returns true, each element in partition 0 has a
 smaller order key than any element in partition 1, each element in partition 1 has a smaller
 order key than any element in partition 2, and so on.</p>
 </div>
@@ -255,15 +255,15 @@ partitions.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 id="GetDynamicPartitions___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><para>
-The returned object implements the <see cref="T:System.Collections.Generic.IEnumerable{TSource}"></see> interface. Calling <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator">GetEnumerator</see> on the
+The returned object implements the System.Collections.Generic.IEnumerable{TSource} interface. Calling <a href="System.Collections.Generic.IEnumerable`1.html">GetEnumerator()</a> on the
 object creates another partition over the sequence.
 </para>
 <para>
-The default implementation provides the same behavior as <see cref="M:System.Collections.Concurrent.OrderablePartitioner`1.GetOrderableDynamicPartitions"></see> except
+The default implementation provides the same behavior as <a href="System.Collections.Concurrent.OrderablePartitioner`1.html">GetOrderableDynamicPartitions()</a> except
 that the returned set of partitions does not provide the keys for the elements.
 </para>
 <para>
-The <see cref="M:System.Collections.Concurrent.OrderablePartitioner`1.GetDynamicPartitions"></see> method is only supported if the <see cref="P:System.Collections.Concurrent.Partitioner`1.SupportsDynamicPartitions"></see>
+The <a href="System.Collections.Concurrent.OrderablePartitioner`1.html">GetDynamicPartitions()</a> method is only supported if the <a href="System.Collections.Concurrent.Partitioner`1.html">SupportsDynamicPartitions</a>
 property returns true.
 </para></div>
   <h5 class="decalaration">Declaration</h5>
@@ -280,7 +280,7 @@ property returns true.
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Generic.IEnumerable&lt;TSource&gt;</td>
+        <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;TSource&gt;</td>
         <td><p>An object that can create partitions over the underlying data source.</p>
 </td>
       </tr>
@@ -297,7 +297,7 @@ partitions.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 id="GetOrderableDynamicPartitions___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><para>
-The returned object implements the <see cref="T:System.Collections.Generic.IEnumerable{TSource}"></see> interface. Calling <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator">GetEnumerator</see> on the
+The returned object implements the System.Collections.Generic.IEnumerable{TSource} interface. Calling <a href="System.Collections.Generic.IEnumerable`1.html">GetEnumerator()</a> on the
 object creates another partition over the sequence.
 </para>
 <para>
@@ -306,7 +306,7 @@ itself, and the key is an integer which determines the relative ordering of this
 other elements.
 </para>
 <para>
-The <see cref="M:System.Collections.Concurrent.OrderablePartitioner`1.GetOrderableDynamicPartitions"></see> method is only supported if the <see cref="P:System.Collections.Concurrent.Partitioner`1.SupportsDynamicPartitions">SupportsDynamicPartitions</see>
+The <a href="System.Collections.Concurrent.OrderablePartitioner`1.html">GetOrderableDynamicPartitions()</a> method is only supported if the <a href="System.Collections.Concurrent.Partitioner`1.html">SupportsDynamicPartitions</a>
 property returns true.
 </para></div>
   <h5 class="decalaration">Declaration</h5>
@@ -323,7 +323,7 @@ property returns true.
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.Int64, TSource&gt;&gt;</td>
+        <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.Collections.Generic.KeyValuePair`2.html" name="System.Collections.Generic.KeyValuePair">KeyValuePair</a>&lt;<a href="System.Int64.html" name="System.Int64">Int64</a>, TSource&gt;&gt;</td>
         <td><p>An object that can create partitions over the underlying data source.</p>
 </td>
       </tr>
@@ -374,7 +374,7 @@ the relative ordering of this element against other elements in the data source.
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Generic.IList&lt;System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;System.Int64, TSource&gt;&gt;&gt;</td>
+        <td><a href="System.Collections.Generic.IList`1.html" name="System.Collections.Generic.IList">IList</a>&lt;<a href="System.Collections.Generic.IEnumerator`1.html" name="System.Collections.Generic.IEnumerator">IEnumerator</a>&lt;<a href="System.Collections.Generic.KeyValuePair`2.html" name="System.Collections.Generic.KeyValuePair">KeyValuePair</a>&lt;<a href="System.Int64.html" name="System.Int64">Int64</a>, TSource&gt;&gt;&gt;</td>
         <td><p>A list containing <paramref name="partitionCount"></paramref> enumerators.</p>
 </td>
       </tr>
@@ -389,7 +389,7 @@ the relative ordering of this element against other elements in the data source.
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="GetPartitions_Int32__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The default implementation provides the same behavior as <a href="System.Collections.Concurrent.OrderablePartitioner`1.html">System.Collections.Concurrent.OrderablePartitioner`1.GetOrderablePartitions(System.Int32)</a> except
+  <div class="markdown level1 remarks"><p>The default implementation provides the same behavior as <a href="System.Collections.Concurrent.OrderablePartitioner`1.html">GetOrderablePartitions(Int32)</a> except
 that the returned set of partitions does not provide the keys for the elements.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -424,7 +424,7 @@ that the returned set of partitions does not provide the keys for the elements.<
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Generic.IList&lt;System.Collections.Generic.IEnumerator&lt;TSource&gt;&gt;</td>
+        <td><a href="System.Collections.Generic.IList`1.html" name="System.Collections.Generic.IList">IList</a>&lt;<a href="System.Collections.Generic.IEnumerator`1.html" name="System.Collections.Generic.IEnumerator">IEnumerator</a>&lt;TSource&gt;&gt;</td>
         <td><p>A list containing <paramref name="partitionCount"></paramref> enumerators.</p>
 </td>
       </tr>

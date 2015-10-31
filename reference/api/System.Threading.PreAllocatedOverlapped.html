@@ -80,20 +80,20 @@
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Overlapped/src/System/Threading/ClrThreadPoolPreAllocatedOverlapped.cs/#L49">View Source</a>
       </span>
   <h4 id="PreAllocatedOverlapped_IOCompletionCallback__Object__Object_">PreAllocatedOverlapped(IOCompletionCallback, Object, Object)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Threading.PreAllocatedOverlapped.html">System.Threading.PreAllocatedOverlapped</a> class, specifying
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Threading.PreAllocatedOverlapped.html">PreAllocatedOverlapped</a> class, specifying
 a delegate that is invoked when each asynchronous I/O operation is complete, a user-provided
 object providing context, and managed objects that serve as buffers.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="PreAllocatedOverlapped_IOCompletionCallback__Object__Object__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The new <see cref="T:System.Threading.PreAllocatedOverlapped"></see> instance can be passed to</p>
-<p><see cref="M:System.Threading.ThreadPoolBoundHandle.AllocateNativeOverlapped(System.Threading.PreAllocatedOverlapped)"></see>, to produce
-a <see cref="T:System.Threading.NativeOverlapped"></see> instance that can be passed to the operating system in overlapped
-I/O operations.  A single <see cref="T:System.Threading.PreAllocatedOverlapped"></see> instance can only be used for
-a single native I/O operation at a time.  However, the state stored in the <see cref="T:System.Threading.PreAllocatedOverlapped"></see>
+  <div class="markdown level1 remarks"><p>The new <a href="System.Threading.PreAllocatedOverlapped.html">PreAllocatedOverlapped</a> instance can be passed to
+<a href="System.Threading.ThreadPoolBoundHandle.html">AllocateNativeOverlapped(PreAllocatedOverlapped)</a>, to produce
+a <a href="System.Threading.NativeOverlapped.html">NativeOverlapped</a> instance that can be passed to the operating system in overlapped
+I/O operations.  A single <a href="System.Threading.PreAllocatedOverlapped.html">PreAllocatedOverlapped</a> instance can only be used for
+a single native I/O operation at a time.  However, the state stored in the <a href="System.Threading.PreAllocatedOverlapped.html">PreAllocatedOverlapped</a>
 instance can be reused for subsequent native operations.</p>
 <note>
-The buffers specified in <paramref name="pinData"></paramref> are pinned until <see cref="M:System.Threading.PreAllocatedOverlapped.Dispose"></see> is called.
+The buffers specified in <paramref name="pinData"></paramref> are pinned until <a href="System.Threading.PreAllocatedOverlapped.html">Dispose()</a> is called.
 </note></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -112,15 +112,15 @@ The buffers specified in <paramref name="pinData"></paramref> are pinned until <
       <tr>
         <td><a href="System.Threading.IOCompletionCallback.html" name="System.Threading.IOCompletionCallback">IOCompletionCallback</a></td>
         <td><em>callback</em></td>
-        <td><p>An <a href="System.Threading.IOCompletionCallback.html">System.Threading.IOCompletionCallback</a> delegate that represents the callback method
+        <td><p>An <a href="System.Threading.IOCompletionCallback.html">IOCompletionCallback</a> delegate that represents the callback method
 invoked when each asynchronous I/O operation completes.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Object.html" name="System.Object">Object</a></td>
         <td><em>state</em></td>
-        <td><p>A user-provided object that distinguishes <see cref="T:System.Threading.NativeOverlapped"></see> instance produced from this
-object from other <see cref="T:System.Threading.NativeOverlapped"></see> instances. Can be <see langword="null"></see>.</p>
+        <td><p>A user-provided object that distinguishes <a href="System.Threading.NativeOverlapped.html">NativeOverlapped</a> instance produced from this
+object from other <a href="System.Threading.NativeOverlapped.html">NativeOverlapped</a> instances. Can be <see langword="null"></see>.</p>
 </td>
       </tr>
       <tr>
@@ -138,7 +138,7 @@ object represents a buffer, for example an array of bytes.  Can be <see langword
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Overlapped/src/System/Threading/ClrThreadPoolPreAllocatedOverlapped.cs/#L71">View Source</a>
       </span>
   <h4 id="Dispose__">Dispose()</h4>
-  <div class="markdown level1 summary"><p>Frees the resources associated with this <a href="System.Threading.PreAllocatedOverlapped.html">System.Threading.PreAllocatedOverlapped</a> instance.</p>
+  <div class="markdown level1 summary"><p>Frees the resources associated with this <a href="System.Threading.PreAllocatedOverlapped.html">PreAllocatedOverlapped</a> instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

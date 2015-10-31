@@ -76,8 +76,8 @@
       </div>
       <h5 id="Progress_T__remarks"><strong>Remarks<strong></strong></strong></h5>
       <div class="markdown level0 remarks"><p>Any handler provided to the constructor or event handlers registered with
-the <a href="System.Progress`1.html">System.Progress`1.ProgressChanged</a> event are invoked through a
-<a href="System.Threading.SynchronizationContext.html">System.Threading.SynchronizationContext</a> instance captured
+the <a href="System.Progress`1.html">ProgressChanged</a> event are invoked through a
+<a href="System.Threading.SynchronizationContext.html">SynchronizationContext</a> instance captured
 when the instance is constructed.  If there is no current SynchronizationContext
 at the time of construction, the callbacks will be invoked on the ThreadPool.</p>
 </div>
@@ -87,7 +87,7 @@ at the time of construction, the callbacks will be invoked on the ThreadPool.</p
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Progress.cs/#L43">View Source</a>
       </span>
   <h4 id="Progress__">Progress()</h4>
-  <div class="markdown level1 summary"><p>Initializes the <a href="System.Progress`1.html">System.Progress`1</a>.</p>
+  <div class="markdown level1 summary"><p>Initializes the <a href="System.Progress`1.html">Progress</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -99,7 +99,7 @@ at the time of construction, the callbacks will be invoked on the ThreadPool.</p
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Progress.cs/#L63">View Source</a>
       </span>
   <h4 id="Progress_Action_T__">Progress(Action&lt;T&gt;)</h4>
-  <div class="markdown level1 summary"><p>Initializes the <a href="System.Progress`1.html">System.Progress`1</a> with the specified callback.</p>
+  <div class="markdown level1 summary"><p>Initializes the <a href="System.Progress`1.html">Progress</a> with the specified callback.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -117,11 +117,11 @@ at the time of construction, the callbacks will be invoked on the ThreadPool.</p
     </thead>
     <tbody>
       <tr>
-        <td>System.Action&lt;T&gt;</td>
+        <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;T&gt;</td>
         <td><em>handler</em></td>
         <td><p>A handler to invoke for each reported progress value.  This handler will be invoked
-in addition to any delegates registered with the <a href="System.Progress`1.html">System.Progress`1.ProgressChanged</a> event.
-Depending on the <a href="System.Threading.SynchronizationContext.html">System.Threading.SynchronizationContext</a> instance captured by
+in addition to any delegates registered with the <a href="System.Progress`1.html">ProgressChanged</a> event.
+Depending on the <a href="System.Threading.SynchronizationContext.html">SynchronizationContext</a> instance captured by
 the <see cref="!:Progress"></see> at construction, it&#39;s possible that this handler instance
 could be invoked concurrently with itself.</p>
 </td>
@@ -200,7 +200,7 @@ could be invoked concurrently with itself.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ProgressChanged_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Handlers registered with this event will be invoked on the
-<a href="System.Threading.SynchronizationContext.html">System.Threading.SynchronizationContext</a> captured when the instance was constructed.</p>
+<a href="System.Threading.SynchronizationContext.html">SynchronizationContext</a> captured when the instance was constructed.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

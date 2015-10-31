@@ -61,7 +61,7 @@
       </a>
       <h1 id="ParallelOptions">Class ParallelOptions</h1>
       <div class="markdown level0 summary"><p>Stores options that configure the operation of methods on the
-<a href="System.Threading.Tasks.Parallel.html">System.Threading.Tasks.Parallel</a> class.</p>
+<a href="System.Threading.Tasks.Parallel.html">Parallel</a> class.</p>
 </div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
@@ -77,7 +77,7 @@
       </div>
       <h5 id="ParallelOptions_remarks"><strong>Remarks<strong></strong></strong></h5>
       <div class="markdown level0 remarks"><p>By default, methods on the Parallel class attempt to utilize all available processors, are non-cancelable, and target
-the default TaskScheduler (TaskScheduler.Default). <a href="System.Threading.Tasks.ParallelOptions.html">System.Threading.Tasks.ParallelOptions</a> enables
+the default TaskScheduler (TaskScheduler.Default). <a href="System.Threading.Tasks.ParallelOptions.html">ParallelOptions</a> enables
 overriding these defaults.</p>
 </div>
       <h3 id="constructors">Constructors</h3>
@@ -86,14 +86,14 @@ overriding these defaults.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/Parallel.cs/#L45">View Source</a>
       </span>
   <h4 id="ParallelOptions__">ParallelOptions()</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Threading.Tasks.ParallelOptions.html">System.Threading.Tasks.ParallelOptions</a> class.</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Threading.Tasks.ParallelOptions.html">ParallelOptions</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ParallelOptions___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This constructor initializes the instance with default values.  <a href="System.Threading.Tasks.ParallelOptions.html">System.Threading.Tasks.ParallelOptions.MaxDegreeOfParallelism</a>
+  <div class="markdown level1 remarks"><p>This constructor initializes the instance with default values.  <a href="System.Threading.Tasks.ParallelOptions.html">MaxDegreeOfParallelism</a>
 is initialized to -1, signifying that there is no upper bound set on how much parallelism should
-be employed.  <a href="System.Threading.Tasks.ParallelOptions.html">System.Threading.Tasks.ParallelOptions.CancellationToken</a> is initialized to a non-cancelable token,
-and <a href="System.Threading.Tasks.ParallelOptions.html">System.Threading.Tasks.ParallelOptions.TaskScheduler</a> is initialized to the default scheduler (TaskScheduler.Default).
+be employed.  <a href="System.Threading.Tasks.ParallelOptions.html">CancellationToken</a> is initialized to a non-cancelable token,
+and <a href="System.Threading.Tasks.ParallelOptions.html">TaskScheduler</a> is initialized to the default scheduler (TaskScheduler.Default).
 All of these defaults may be overwritten using the property set accessors on the instance.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -106,16 +106,16 @@ All of these defaults may be overwritten using the property set accessors on the
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/Parallel.cs/#L109">View Source</a>
       </span>
   <h4 id="CancellationToken">CancellationToken</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a>
-associated with this <a href="System.Threading.Tasks.ParallelOptions.html">System.Threading.Tasks.ParallelOptions</a> instance.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the <a href="System.Threading.CancellationToken.html">CancellationToken</a>
+associated with this <a href="System.Threading.Tasks.ParallelOptions.html">ParallelOptions</a> instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="CancellationToken_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Providing a <see cref="T:System.Threading.CancellationToken">CancellationToken</see>
-to a <see cref="T:System.Threading.Tasks.Parallel">Parallel</see> method enables the operation to be
+  <div class="markdown level1 remarks"><p>Providing a <a href="System.Threading.CancellationToken.html">CancellationToken</a>
+to a <a href="System.Threading.Tasks.Parallel.html">Parallel</a> method enables the operation to be
 exited early. Code external to the operation may cancel the token, and if the operation observes the
-token being set, it may exit early by throwing an</p>
-<p><see cref="T:System.OperationCanceledException"></see>.</p>
+token being set, it may exit early by throwing an
+<a href="System.OperationCanceledException.html">OperationCanceledException</a>.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -145,8 +145,8 @@ token being set, it may exit early by throwing an</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="MaxDegreeOfParallelism_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The <see cref="P:System.Threading.Tasks.ParallelOptions.MaxDegreeOfParallelism"></see> limits the number of concurrent operations run by <see cref="T:System.Threading.Tasks.Parallel">Parallel</see> method calls that are passed this
-ParallelOptions instance to the set value, if it is positive. If <see cref="P:System.Threading.Tasks.ParallelOptions.MaxDegreeOfParallelism"></see> is -1, then there is no limit placed on the number of concurrently
+  <div class="markdown level1 remarks"><p>The <a href="System.Threading.Tasks.ParallelOptions.html">MaxDegreeOfParallelism</a> limits the number of concurrent operations run by <a href="System.Threading.Tasks.Parallel.html">Parallel</a> method calls that are passed this
+ParallelOptions instance to the set value, if it is positive. If <a href="System.Threading.Tasks.ParallelOptions.html">MaxDegreeOfParallelism</a> is -1, then there is no limit placed on the number of concurrently
 running operations.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -173,8 +173,8 @@ running operations.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/Parallel.cs/#L57">View Source</a>
       </span>
   <h4 id="TaskScheduler">TaskScheduler</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the <a href="System.Threading.Tasks.TaskScheduler.html">System.Threading.Tasks.TaskScheduler</a>
-associated with this <a href="System.Threading.Tasks.ParallelOptions.html">System.Threading.Tasks.ParallelOptions</a> instance. Setting this property to null
+  <div class="markdown level1 summary"><p>Gets or sets the <a href="System.Threading.Tasks.TaskScheduler.html">TaskScheduler</a>
+associated with this <a href="System.Threading.Tasks.ParallelOptions.html">ParallelOptions</a> instance. Setting this property to null
 indicates that the current scheduler should be used.</p>
 </div>
   <div class="markdown level1 conceptual"></div>

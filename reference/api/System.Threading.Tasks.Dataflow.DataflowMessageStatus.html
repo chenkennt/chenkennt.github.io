@@ -60,7 +60,7 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="DataflowMessageStatus">Enum DataflowMessageStatus</h1>
-      <div class="markdown level0 summary"><p>Represents the status of a <a href="System.Threading.Tasks.Dataflow.DataflowMessageHeader.html">System.Threading.Tasks.Dataflow.DataflowMessageHeader</a> when passed between dataflow blocks.</p>
+      <div class="markdown level0 summary"><p>Represents the status of a <a href="System.Threading.Tasks.Dataflow.DataflowMessageHeader.html">DataflowMessageHeader</a> when passed between dataflow blocks.</p>
 </div>
       <div class="markdown level0 conceptual"></div>
       <h6><strong>Namespace</strong>:System.Threading.Tasks.Dataflow</h6>
@@ -75,7 +75,7 @@
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageStatus.cs/#L22">View Source</a>
       </span>
   <h4 id="Accepted">Accepted</h4>
-  <div class="markdown level1 summary"><p>Indicates that the <a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html">System.Threading.Tasks.Dataflow.ITargetBlock`1</a> accepted the message.  Once a target has accepted a message,
+  <div class="markdown level1 summary"><p>Indicates that the <a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html">ITargetBlock</a> accepted the message.  Once a target has accepted a message,
 it is wholly owned by the target.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -88,7 +88,7 @@ it is wholly owned by the target.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageStatus.cs/#L27">View Source</a>
       </span>
   <h4 id="Declined">Declined</h4>
-  <div class="markdown level1 summary"><p>Indicates that the <a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html">System.Threading.Tasks.Dataflow.ITargetBlock`1</a> declined the message.  The <a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html">System.Threading.Tasks.Dataflow.ISourceBlock`1</a> still owns the message.</p>
+  <div class="markdown level1 summary"><p>Indicates that the <a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html">ITargetBlock</a> declined the message.  The <a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html">ISourceBlock</a> still owns the message.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -100,8 +100,8 @@ it is wholly owned by the target.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageStatus.cs/#L45">View Source</a>
       </span>
   <h4 id="DecliningPermanently">DecliningPermanently</h4>
-  <div class="markdown level1 summary"><p>Indicates that the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1"></see> declined the message.  The <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1"></see> still owns the message.
-Additionally, the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1"></see> will decline all future messages sent by the source.</p>
+  <div class="markdown level1 summary"><p>Indicates that the <a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html">ITargetBlock</a> declined the message.  The <a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html">ISourceBlock</a> still owns the message.
+Additionally, the <a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html">ITargetBlock</a> will decline all future messages sent by the source.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -113,7 +113,7 @@ Additionally, the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1"><
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageStatus.cs/#L39">View Source</a>
       </span>
   <h4 id="NotAvailable">NotAvailable</h4>
-  <div class="markdown level1 summary"><p>Indicates that the <a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html">System.Threading.Tasks.Dataflow.ITargetBlock`1</a> tried to accept the message from the <a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html">System.Threading.Tasks.Dataflow.ISourceBlock`1</a>, but the
+  <div class="markdown level1 summary"><p>Indicates that the <a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html">ITargetBlock</a> tried to accept the message from the <a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html">ISourceBlock</a>, but the
 message was no longer available.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -126,8 +126,8 @@ message was no longer available.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageStatus.cs/#L33">View Source</a>
       </span>
   <h4 id="Postponed">Postponed</h4>
-  <div class="markdown level1 summary"><p>Indicates that the <a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html">System.Threading.Tasks.Dataflow.ITargetBlock`1</a> postponed the message for potential consumption at a later time.
-The <a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html">System.Threading.Tasks.Dataflow.ISourceBlock`1</a> still owns the message.</p>
+  <div class="markdown level1 summary"><p>Indicates that the <a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html">ITargetBlock</a> postponed the message for potential consumption at a later time.
+The <a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html">ISourceBlock</a> still owns the message.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

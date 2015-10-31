@@ -77,13 +77,13 @@
       <h5 id="Barrier_remarks"><strong>Remarks<strong></strong></strong></h5>
       <div class="markdown level0 remarks"><para>
 A group of tasks cooperate by moving through a series of phases, where each in the group signals it
-has arrived at the <see cref="T:System.Threading.Barrier"></see> in a given phase and implicitly waits for all others to
-arrive. The same <see cref="T:System.Threading.Barrier"></see> can be used for multiple phases.
+has arrived at the <a href="System.Threading.Barrier.html">Barrier</a> in a given phase and implicitly waits for all others to
+arrive. The same <a href="System.Threading.Barrier.html">Barrier</a> can be used for multiple phases.
 </para>
 <para>
-All public and protected members of <see cref="T:System.Threading.Barrier"></see> are thread-safe and may be used
+All public and protected members of <a href="System.Threading.Barrier.html">Barrier</a> are thread-safe and may be used
 concurrently from multiple threads, with the exception of Dispose, which
-must only be used when all other operations on the <see cref="T:System.Threading.Barrier"></see> have
+must only be used when all other operations on the <a href="System.Threading.Barrier.html">Barrier</a> have
 completed.
 </para></div>
       <h3 id="constructors">Constructors</h3>
@@ -92,7 +92,7 @@ completed.
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading/src/System/Threading/Barrier.cs/#L184">View Source</a>
       </span>
   <h4 id="Barrier_Int32_">Barrier(Int32)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Threading.Barrier.html">System.Threading.Barrier</a> class.</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Threading.Barrier.html">Barrier</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -122,7 +122,7 @@ completed.
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading/src/System/Threading/Barrier.cs/#L203">View Source</a>
       </span>
   <h4 id="Barrier_Int32__Action_Barrier__">Barrier(Int32, Action&lt;Barrier&gt;)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Threading.Barrier.html">System.Threading.Barrier</a> class.</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Threading.Barrier.html">Barrier</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Barrier_Int32__Action_Barrier___remarks">Remarks</h5>
@@ -152,9 +152,9 @@ has completed execution.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;System.Threading.Barrier&gt;</td>
+        <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;<a href="System.Threading.Barrier.html" name="System.Threading.Barrier">Barrier</a>&gt;</td>
         <td><em>postPhaseAction</em></td>
-        <td><p>The <a href="System.Action`1.html">System.Action`1</a> to be executed after each
+        <td><p>The <a href="System.Action`1.html">Action</a> to be executed after each
 phase.</p>
 </td>
       </tr>
@@ -253,7 +253,7 @@ ParticipantCount is 0.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading/src/System/Threading/Barrier.cs/#L276">View Source</a>
       </span>
   <h4 id="AddParticipant__">AddParticipant()</h4>
-  <div class="markdown level1 summary"><p>Notifies the <a href="System.Threading.Barrier.html">System.Threading.Barrier</a> that there will be an additional participant.</p>
+  <div class="markdown level1 summary"><p>Notifies the <a href="System.Threading.Barrier.html">Barrier</a> that there will be an additional participant.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -282,7 +282,7 @@ participate.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading/src/System/Threading/Barrier.cs/#L304">View Source</a>
       </span>
   <h4 id="AddParticipants_Int32_">AddParticipants(Int32)</h4>
-  <div class="markdown level1 summary"><p>Notifies the <a href="System.Threading.Barrier.html">System.Threading.Barrier</a> that there will be additional participants.</p>
+  <div class="markdown level1 summary"><p>Notifies the <a href="System.Threading.Barrier.html">Barrier</a> that there will be additional participants.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -330,11 +330,11 @@ participate.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading/src/System/Threading/Barrier.cs/#L893">View Source</a>
       </span>
   <h4 id="Dispose__">Dispose()</h4>
-  <div class="markdown level1 summary"><p>Releases all resources used by the current instance of <a href="System.Threading.Barrier.html">System.Threading.Barrier</a>.</p>
+  <div class="markdown level1 summary"><p>Releases all resources used by the current instance of <a href="System.Threading.Barrier.html">Barrier</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Dispose___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Unlike most of the members of <see cref="T:System.Threading.Barrier"></see>, Dispose is not thread-safe and may not be
+  <div class="markdown level1 remarks"><p>Unlike most of the members of <a href="System.Threading.Barrier.html">Barrier</a>, Dispose is not thread-safe and may not be
 used concurrently with other members of this instance.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -347,11 +347,11 @@ used concurrently with other members of this instance.</p>
       </span>
   <h4 id="Dispose_Boolean_">Dispose(Boolean)</h4>
   <div class="markdown level1 summary"><p>When overridden in a derived class, releases the unmanaged resources used by the
-<a href="System.Threading.Barrier.html">System.Threading.Barrier</a>, and optionally releases the managed resources.</p>
+<a href="System.Threading.Barrier.html">Barrier</a>, and optionally releases the managed resources.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Dispose_Boolean__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Unlike most of the members of <see cref="T:System.Threading.Barrier"></see>, Dispose is not thread-safe and may not be
+  <div class="markdown level1 remarks"><p>Unlike most of the members of <a href="System.Threading.Barrier.html">Barrier</a>, Dispose is not thread-safe and may not be
 used concurrently with other members of this instance.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -382,7 +382,7 @@ only unmanaged resources.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading/src/System/Threading/Barrier.cs/#L392">View Source</a>
       </span>
   <h4 id="RemoveParticipant__">RemoveParticipant()</h4>
-  <div class="markdown level1 summary"><p>Notifies the <a href="System.Threading.Barrier.html">System.Threading.Barrier</a> that there will be one less participant.</p>
+  <div class="markdown level1 summary"><p>Notifies the <a href="System.Threading.Barrier.html">Barrier</a> that there will be one less participant.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -394,7 +394,7 @@ only unmanaged resources.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading/src/System/Threading/Barrier.cs/#L409">View Source</a>
       </span>
   <h4 id="RemoveParticipants_Int32_">RemoveParticipants(Int32)</h4>
-  <div class="markdown level1 summary"><p>Notifies the <a href="System.Threading.Barrier.html">System.Threading.Barrier</a> that there will be fewer participants.</p>
+  <div class="markdown level1 summary"><p>Notifies the <a href="System.Threading.Barrier.html">Barrier</a> that there will be fewer participants.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -424,7 +424,7 @@ only unmanaged resources.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading/src/System/Threading/Barrier.cs/#L476">View Source</a>
       </span>
   <h4 id="SignalAndWait__">SignalAndWait()</h4>
-  <div class="markdown level1 summary"><p>Signals that a participant has reached the <a href="System.Threading.Barrier.html">System.Threading.Barrier</a> and waits for all other
+  <div class="markdown level1 summary"><p>Signals that a participant has reached the <a href="System.Threading.Barrier.html">Barrier</a> and waits for all other
 participants to reach the barrier as well.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -437,7 +437,7 @@ participants to reach the barrier as well.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading/src/System/Threading/Barrier.cs/#L579">View Source</a>
       </span>
   <h4 id="SignalAndWait_Int32_">SignalAndWait(Int32)</h4>
-  <div class="markdown level1 summary"><p>Signals that a participant has reached the <a href="System.Threading.Barrier.html">System.Threading.Barrier</a> and waits for all other
+  <div class="markdown level1 summary"><p>Signals that a participant has reached the <a href="System.Threading.Barrier.html">Barrier</a> and waits for all other
 participants to reach the barrier as well, using a
 32-bit signed integer to measure the time interval.</p>
 </div>
@@ -459,7 +459,7 @@ participants to reach the barrier as well, using a
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
         <td><em>millisecondsTimeout</em></td>
-        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a>(-1) to wait indefinitely.</p>
+        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">Infinite</a>(-1) to wait indefinitely.</p>
 </td>
       </tr>
     </tbody>
@@ -487,7 +487,7 @@ participants to reach the barrier as well, using a
   <h4 id="SignalAndWait_Int32__CancellationToken_">SignalAndWait(Int32, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Signals that a participant has reached the barrier and waits for all other participants to reach
 the barrier as well, using a
-32-bit signed integer to measure the time interval, while observing a <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a>.</p>
+32-bit signed integer to measure the time interval, while observing a <a href="System.Threading.CancellationToken.html">CancellationToken</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -507,13 +507,13 @@ the barrier as well, using a
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
         <td><em>millisecondsTimeout</em></td>
-        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a>(-1) to wait indefinitely.</p>
+        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">Infinite</a>(-1) to wait indefinitely.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
         <td><em>cancellationToken</em></td>
-        <td><p>The <see cref="T:System.Threading.CancellationToken"></see> to
+        <td><p>The <a href="System.Threading.CancellationToken.html">CancellationToken</a> to
 observe.</p>
 </td>
       </tr>
@@ -540,8 +540,8 @@ observe.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading/src/System/Threading/Barrier.cs/#L496">View Source</a>
       </span>
   <h4 id="SignalAndWait_CancellationToken_">SignalAndWait(CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Signals that a participant has reached the <a href="System.Threading.Barrier.html">System.Threading.Barrier</a> and waits for all other
-participants to reach the barrier, while observing a <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a>.</p>
+  <div class="markdown level1 summary"><p>Signals that a participant has reached the <a href="System.Threading.Barrier.html">Barrier</a> and waits for all other
+participants to reach the barrier, while observing a <a href="System.Threading.CancellationToken.html">CancellationToken</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -561,7 +561,7 @@ participants to reach the barrier, while observing a <a href="System.Threading.C
       <tr>
         <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
         <td><em>cancellationToken</em></td>
-        <td><p>The <see cref="T:System.Threading.CancellationToken"></see> to
+        <td><p>The <a href="System.Threading.CancellationToken.html">CancellationToken</a> to
 observe.</p>
 </td>
       </tr>
@@ -572,9 +572,9 @@ observe.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading/src/System/Threading/Barrier.cs/#L525">View Source</a>
       </span>
   <h4 id="SignalAndWait_TimeSpan_">SignalAndWait(TimeSpan)</h4>
-  <div class="markdown level1 summary"><p>Signals that a participant has reached the <a href="System.Threading.Barrier.html">System.Threading.Barrier</a> and waits for all other
+  <div class="markdown level1 summary"><p>Signals that a participant has reached the <a href="System.Threading.Barrier.html">Barrier</a> and waits for all other
 participants to reach the barrier as well, using a
-<a href="System.TimeSpan.html">System.TimeSpan</a> to measure the time interval.</p>
+<a href="System.TimeSpan.html">TimeSpan</a> to measure the time interval.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -594,8 +594,8 @@ participants to reach the barrier as well, using a
       <tr>
         <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
         <td><em>timeout</em></td>
-        <td><p>A <see cref="T:System.TimeSpan"></see> that represents the number of
-milliseconds to wait, or a <see cref="T:System.TimeSpan"></see> that represents -1 milliseconds to
+        <td><p>A <a href="System.TimeSpan.html">TimeSpan</a> that represents the number of
+milliseconds to wait, or a <a href="System.TimeSpan.html">TimeSpan</a> that represents -1 milliseconds to
 wait indefinitely.</p>
 </td>
       </tr>
@@ -622,9 +622,9 @@ wait indefinitely.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading/src/System/Threading/Barrier.cs/#L552">View Source</a>
       </span>
   <h4 id="SignalAndWait_TimeSpan__CancellationToken_">SignalAndWait(TimeSpan, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Signals that a participant has reached the <a href="System.Threading.Barrier.html">System.Threading.Barrier</a> and waits for all other
+  <div class="markdown level1 summary"><p>Signals that a participant has reached the <a href="System.Threading.Barrier.html">Barrier</a> and waits for all other
 participants to reach the barrier as well, using a
-<a href="System.TimeSpan.html">System.TimeSpan</a> to measure the time interval, while observing a <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a>.</p>
+<a href="System.TimeSpan.html">TimeSpan</a> to measure the time interval, while observing a <a href="System.Threading.CancellationToken.html">CancellationToken</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -644,15 +644,15 @@ participants to reach the barrier as well, using a
       <tr>
         <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
         <td><em>timeout</em></td>
-        <td><p>A <see cref="T:System.TimeSpan"></see> that represents the number of
-milliseconds to wait, or a <see cref="T:System.TimeSpan"></see> that represents -1 milliseconds to
+        <td><p>A <a href="System.TimeSpan.html">TimeSpan</a> that represents the number of
+milliseconds to wait, or a <a href="System.TimeSpan.html">TimeSpan</a> that represents -1 milliseconds to
 wait indefinitely.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
         <td><em>cancellationToken</em></td>
-        <td><p>The <see cref="T:System.Threading.CancellationToken"></see> to
+        <td><p>The <a href="System.Threading.CancellationToken.html">CancellationToken</a> to
 observe.</p>
 </td>
       </tr>

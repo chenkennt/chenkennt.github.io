@@ -76,34 +76,31 @@
         <pre><code class="lang-csharp hljs">public class Task<tresult> : Task, IThreadPoolWorkItem, IAsyncResult, IDisposable</tresult></code></pre>
       </div>
       <h5 id="Task_TResult__remarks"><strong>Remarks<strong></strong></strong></h5>
-      <div class="markdown level0 remarks"><para>
-<see cref="T:System.Threading.Tasks.Task`1"></see> instances may be created in a variety of ways. The most common approach is by
-using the task&#39;s <see cref="P:System.Threading.Tasks.Task`1.Factory"></see> property to retrieve a <see cref="T:System.Threading.Tasks.TaskFactory`1"></see> instance that can be used to create tasks for several
-purposes. For example, to create a <see cref="T:System.Threading.Tasks.Task`1"></see> that runs a function, the factory&#39;s StartNew
+      <div class="markdown level0 remarks"><p><para><a href="System.Threading.Tasks.Task`1.html">Task</a> instances may be created in a variety of ways. The most common approach is by
+using the task&#39;s <a href="System.Threading.Tasks.Task`1.html">Factory</a> property to retrieve a <a href="System.Threading.Tasks.TaskFactory`1.html">TaskFactory</a> instance that can be used to create tasks for several
+purposes. For example, to create a <a href="System.Threading.Tasks.Task`1.html">Task</a> that runs a function, the factory&#39;s StartNew
 method may be used:
 <code>
 // C#
 var t = Task&lt;int&gt;.Factory.StartNew(() =&gt; GenerateResult());
 - or -
-var t = Task.Factory.StartNew(() =&gt; GenerateResult());
-
-
-&#39; Visual Basic
+var t = Task.Factory.StartNew(() =&gt; GenerateResult());<p>
+<p>&#39; Visual Basic
 Dim t = Task&lt;int&gt;.Factory.StartNew(Function() GenerateResult())
 - or -
 Dim t = Task.Factory.StartNew(Function() GenerateResult())
-</code></para>
+</code></para></p>
 <para>
-The <see cref="T:System.Threading.Tasks.Task`1"></see> class also provides constructors that initialize the task but that do not
+The <a href="System.Threading.Tasks.Task`1.html">Task</a> class also provides constructors that initialize the task but that do not
 schedule it for execution. For performance reasons, the StartNew method should be the
 preferred mechanism for creating and scheduling computational tasks, but for scenarios where creation
 and scheduling must be separated, the constructors may be used, and the task&#39;s
-<see cref="M:System.Threading.Tasks.Task.Start">Start</see>
+<a href="System.Threading.Tasks.Task.html">Start()</a>
 method may then be used to schedule the task for execution at a later time.
 </para>
 <para>
-All members of <see cref="T:System.Threading.Tasks.Task`1"></see>, except for
-<see cref="M:System.Threading.Tasks.Task.Dispose">Dispose</see>, are thread-safe
+All members of <a href="System.Threading.Tasks.Task`1.html">Task</a>, except for
+<a href="System.Threading.Tasks.Task.html">Dispose()</a>, are thread-safe
 and may be used from multiple threads concurrently.
 </para></div>
       <h3 id="constructors">Constructors</h3>
@@ -112,7 +109,7 @@ and may be used from multiple threads concurrently.
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L131">View Source</a>
       </span>
   <h4 id="Task_Func_TResult__">Task(Func&lt;TResult&gt;)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> with the specified function.</p>
+  <div class="markdown level1 summary"><p>Initializes a new <a href="System.Threading.Tasks.Task`1.html">Task</a> with the specified function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -130,10 +127,10 @@ and may be used from multiple threads concurrently.
     </thead>
     <tbody>
       <tr>
-        <td>System.Func&lt;TResult&gt;</td>
+        <td><a href="System.Func`1.html" name="System.Func">Func</a>&lt;TResult&gt;</td>
         <td><em>function</em></td>
         <td><p>The delegate that represents the code to execute in the task. When the function has completed,
-the task&#39;s <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1.Result</a> property will be set to return the result value of the function.</p>
+the task&#39;s <a href="System.Threading.Tasks.Task`1.html">Result</a> property will be set to return the result value of the function.</p>
 </td>
       </tr>
     </tbody>
@@ -143,7 +140,7 @@ the task&#39;s <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tas
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L155">View Source</a>
       </span>
   <h4 id="Task_Func_TResult___CancellationToken_">Task(Func&lt;TResult&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> with the specified function.</p>
+  <div class="markdown level1 summary"><p>Initializes a new <a href="System.Threading.Tasks.Task`1.html">Task</a> with the specified function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -161,16 +158,16 @@ the task&#39;s <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tas
     </thead>
     <tbody>
       <tr>
-        <td>System.Func&lt;TResult&gt;</td>
+        <td><a href="System.Func`1.html" name="System.Func">Func</a>&lt;TResult&gt;</td>
         <td><em>function</em></td>
         <td><p>The delegate that represents the code to execute in the task. When the function has completed,
-the task&#39;s <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1.Result</a> property will be set to return the result value of the function.</p>
+the task&#39;s <a href="System.Threading.Tasks.Task`1.html">Result</a> property will be set to return the result value of the function.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
         <td><em>cancellationToken</em></td>
-        <td><p>The <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> to be assigned to this task.</p>
+        <td><p>The <a href="System.Threading.CancellationToken.html">CancellationToken</a> to be assigned to this task.</p>
 </td>
       </tr>
     </tbody>
@@ -180,7 +177,7 @@ the task&#39;s <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tas
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L212">View Source</a>
       </span>
   <h4 id="Task_Func_TResult___CancellationToken__TaskCreationOptions_">Task(Func&lt;TResult&gt;, CancellationToken, TaskCreationOptions)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> with the specified function and creation options.</p>
+  <div class="markdown level1 summary"><p>Initializes a new <a href="System.Threading.Tasks.Task`1.html">Task</a> with the specified function and creation options.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -198,22 +195,22 @@ the task&#39;s <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tas
     </thead>
     <tbody>
       <tr>
-        <td>System.Func&lt;TResult&gt;</td>
+        <td><a href="System.Func`1.html" name="System.Func">Func</a>&lt;TResult&gt;</td>
         <td><em>function</em></td>
         <td><p>The delegate that represents the code to execute in the task. When the function has completed,
-the task&#39;s <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1.Result</a> property will be set to return the result value of the function.</p>
+the task&#39;s <a href="System.Threading.Tasks.Task`1.html">Result</a> property will be set to return the result value of the function.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
         <td><em>cancellationToken</em></td>
-        <td><p>The <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> that will be assigned to the new task.</p>
+        <td><p>The <a href="System.Threading.CancellationToken.html">CancellationToken</a> that will be assigned to the new task.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Threading.Tasks.TaskCreationOptions.html" name="System.Threading.Tasks.TaskCreationOptions">TaskCreationOptions</a></td>
         <td><em>creationOptions</em></td>
-        <td><p>The <a href="System.Threading.Tasks.TaskCreationOptions.html">System.Threading.Tasks.TaskCreationOptions</a> used to
+        <td><p>The <a href="System.Threading.Tasks.TaskCreationOptions.html">TaskCreationOptions</a> used to
 customize the task&#39;s behavior.</p>
 </td>
       </tr>
@@ -224,7 +221,7 @@ customize the task&#39;s behavior.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L182">View Source</a>
       </span>
   <h4 id="Task_Func_TResult___TaskCreationOptions_">Task(Func&lt;TResult&gt;, TaskCreationOptions)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> with the specified function and creation options.</p>
+  <div class="markdown level1 summary"><p>Initializes a new <a href="System.Threading.Tasks.Task`1.html">Task</a> with the specified function and creation options.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -242,16 +239,16 @@ customize the task&#39;s behavior.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Func&lt;TResult&gt;</td>
+        <td><a href="System.Func`1.html" name="System.Func">Func</a>&lt;TResult&gt;</td>
         <td><em>function</em></td>
         <td><p>The delegate that represents the code to execute in the task. When the function has completed,
-the task&#39;s <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1.Result</a> property will be set to return the result value of the function.</p>
+the task&#39;s <a href="System.Threading.Tasks.Task`1.html">Result</a> property will be set to return the result value of the function.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Threading.Tasks.TaskCreationOptions.html" name="System.Threading.Tasks.TaskCreationOptions">TaskCreationOptions</a></td>
         <td><em>creationOptions</em></td>
-        <td><p>The <a href="System.Threading.Tasks.TaskCreationOptions.html">System.Threading.Tasks.TaskCreationOptions</a> used to
+        <td><p>The <a href="System.Threading.Tasks.TaskCreationOptions.html">TaskCreationOptions</a> used to
 customize the task&#39;s behavior.</p>
 </td>
       </tr>
@@ -262,7 +259,7 @@ customize the task&#39;s behavior.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L231">View Source</a>
       </span>
   <h4 id="Task_Func_Object__TResult___Object_">Task(Func&lt;Object, TResult&gt;, Object)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> with the specified function and state.</p>
+  <div class="markdown level1 summary"><p>Initializes a new <a href="System.Threading.Tasks.Task`1.html">Task</a> with the specified function and state.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -280,10 +277,10 @@ customize the task&#39;s behavior.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Func&lt;System.Object, TResult&gt;</td>
+        <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;<a href="System.Object.html" name="System.Object">Object</a>, TResult&gt;</td>
         <td><em>function</em></td>
         <td><p>The delegate that represents the code to execute in the task. When the function has completed,
-the task&#39;s <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1.Result</a> property will be set to return the result value of the function.</p>
+the task&#39;s <a href="System.Threading.Tasks.Task`1.html">Result</a> property will be set to return the result value of the function.</p>
 </td>
       </tr>
       <tr>
@@ -299,7 +296,7 @@ the task&#39;s <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tas
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L255">View Source</a>
       </span>
   <h4 id="Task_Func_Object__TResult___Object__CancellationToken_">Task(Func&lt;Object, TResult&gt;, Object, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> with the specified action, state, and options.</p>
+  <div class="markdown level1 summary"><p>Initializes a new <a href="System.Threading.Tasks.Task`1.html">Task</a> with the specified action, state, and options.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -317,10 +314,10 @@ the task&#39;s <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tas
     </thead>
     <tbody>
       <tr>
-        <td>System.Func&lt;System.Object, TResult&gt;</td>
+        <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;<a href="System.Object.html" name="System.Object">Object</a>, TResult&gt;</td>
         <td><em>function</em></td>
         <td><p>The delegate that represents the code to execute in the task. When the function has completed,
-the task&#39;s <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1.Result</a> property will be set to return the result value of the function.</p>
+the task&#39;s <a href="System.Threading.Tasks.Task`1.html">Result</a> property will be set to return the result value of the function.</p>
 </td>
       </tr>
       <tr>
@@ -332,7 +329,7 @@ the task&#39;s <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tas
       <tr>
         <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
         <td><em>cancellationToken</em></td>
-        <td><p>The <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> to be assigned to the new task.</p>
+        <td><p>The <a href="System.Threading.CancellationToken.html">CancellationToken</a> to be assigned to the new task.</p>
 </td>
       </tr>
     </tbody>
@@ -342,7 +339,7 @@ the task&#39;s <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tas
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L316">View Source</a>
       </span>
   <h4 id="Task_Func_Object__TResult___Object__CancellationToken__TaskCreationOptions_">Task(Func&lt;Object, TResult&gt;, Object, CancellationToken, TaskCreationOptions)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> with the specified action, state, and options.</p>
+  <div class="markdown level1 summary"><p>Initializes a new <a href="System.Threading.Tasks.Task`1.html">Task</a> with the specified action, state, and options.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -360,10 +357,10 @@ the task&#39;s <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tas
     </thead>
     <tbody>
       <tr>
-        <td>System.Func&lt;System.Object, TResult&gt;</td>
+        <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;<a href="System.Object.html" name="System.Object">Object</a>, TResult&gt;</td>
         <td><em>function</em></td>
         <td><p>The delegate that represents the code to execute in the task. When the function has completed,
-the task&#39;s <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1.Result</a> property will be set to return the result value of the function.</p>
+the task&#39;s <a href="System.Threading.Tasks.Task`1.html">Result</a> property will be set to return the result value of the function.</p>
 </td>
       </tr>
       <tr>
@@ -375,13 +372,13 @@ the task&#39;s <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tas
       <tr>
         <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
         <td><em>cancellationToken</em></td>
-        <td><p>The <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> to be assigned to the new task.</p>
+        <td><p>The <a href="System.Threading.CancellationToken.html">CancellationToken</a> to be assigned to the new task.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Threading.Tasks.TaskCreationOptions.html" name="System.Threading.Tasks.TaskCreationOptions">TaskCreationOptions</a></td>
         <td><em>creationOptions</em></td>
-        <td><p>The <a href="System.Threading.Tasks.TaskCreationOptions.html">System.Threading.Tasks.TaskCreationOptions</a> used to
+        <td><p>The <a href="System.Threading.Tasks.TaskCreationOptions.html">TaskCreationOptions</a> used to
 customize the task&#39;s behavior.</p>
 </td>
       </tr>
@@ -392,7 +389,7 @@ customize the task&#39;s behavior.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L283">View Source</a>
       </span>
   <h4 id="Task_Func_Object__TResult___Object__TaskCreationOptions_">Task(Func&lt;Object, TResult&gt;, Object, TaskCreationOptions)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> with the specified action, state, and options.</p>
+  <div class="markdown level1 summary"><p>Initializes a new <a href="System.Threading.Tasks.Task`1.html">Task</a> with the specified action, state, and options.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -410,10 +407,10 @@ customize the task&#39;s behavior.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Func&lt;System.Object, TResult&gt;</td>
+        <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;<a href="System.Object.html" name="System.Object">Object</a>, TResult&gt;</td>
         <td><em>function</em></td>
         <td><p>The delegate that represents the code to execute in the task. When the function has completed,
-the task&#39;s <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1.Result</a> property will be set to return the result value of the function.</p>
+the task&#39;s <a href="System.Threading.Tasks.Task`1.html">Result</a> property will be set to return the result value of the function.</p>
 </td>
       </tr>
       <tr>
@@ -425,7 +422,7 @@ the task&#39;s <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tas
       <tr>
         <td><a href="System.Threading.Tasks.TaskCreationOptions.html" name="System.Threading.Tasks.TaskCreationOptions">TaskCreationOptions</a></td>
         <td><em>creationOptions</em></td>
-        <td><p>The <a href="System.Threading.Tasks.TaskCreationOptions.html">System.Threading.Tasks.TaskCreationOptions</a> used to
+        <td><p>The <a href="System.Threading.Tasks.TaskCreationOptions.html">TaskCreationOptions</a> used to
 customize the task&#39;s behavior.</p>
 </td>
       </tr>
@@ -437,12 +434,12 @@ customize the task&#39;s behavior.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L663">View Source</a>
       </span>
   <h4 id="Factory">Factory</h4>
-  <div class="markdown level1 summary"><p>Provides access to factory methods for creating <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> instances.</p>
+  <div class="markdown level1 summary"><p>Provides access to factory methods for creating <a href="System.Threading.Tasks.Task`1.html">Task</a> instances.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Factory_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The factory returned from <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1.Factory</a> is a default instance
-of <a href="System.Threading.Tasks.TaskFactory`1.html">System.Threading.Tasks.TaskFactory`1</a>, as would result from using
+  <div class="markdown level1 remarks"><p>The factory returned from <a href="System.Threading.Tasks.Task`1.html">Factory</a> is a default instance
+of <a href="System.Threading.Tasks.TaskFactory`1.html">TaskFactory</a>, as would result from using
 the default constructor on the factory type.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -459,7 +456,7 @@ the default constructor on the factory type.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Threading.Tasks.TaskFactory&lt;TResult&gt;</td>
+        <td><a href="System.Threading.Tasks.TaskFactory`1.html" name="System.Threading.Tasks.TaskFactory">TaskFactory</a>&lt;TResult&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -469,13 +466,13 @@ the default constructor on the factory type.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L524">View Source</a>
       </span>
   <h4 id="Result">Result</h4>
-  <div class="markdown level1 summary"><p>Gets the result value of this <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a>.</p>
+  <div class="markdown level1 summary"><p>Gets the result value of this <a href="System.Threading.Tasks.Task`1.html">Task</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Result_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The get accessor for this property ensures that the asynchronous operation is complete before
 returning. Once the result of the computation is available, it is stored and will be returned
-immediately on later calls to <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1.Result</a>.</p>
+immediately on later calls to <a href="System.Threading.Tasks.Task`1.html">Result</a>.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -502,7 +499,7 @@ immediately on later calls to <a href="System.Threading.Tasks.Task`1.html">Syste
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L702">View Source</a>
       </span>
   <h4 id="ConfigureAwait_Boolean_">ConfigureAwait(Boolean)</h4>
-  <div class="markdown level1 summary"><p>Configures an awaiter used to await this <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a>.</p>
+  <div class="markdown level1 summary"><p>Configures an awaiter used to await this <a href="System.Threading.Tasks.Task`1.html">Task</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -537,7 +534,7 @@ immediately on later calls to <a href="System.Threading.Tasks.Task`1.html">Syste
     </thead>
     <tbody>
       <tr>
-        <td>System.Runtime.CompilerServices.ConfiguredTaskAwaitable&lt;TResult&gt;</td>
+        <td><a href="System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.html" name="System.Runtime.CompilerServices.ConfiguredTaskAwaitable">ConfiguredTaskAwaitable</a>&lt;TResult&gt;</td>
         <td><p>An object used to await this task.</p>
 </td>
       </tr>
@@ -548,11 +545,11 @@ immediately on later calls to <a href="System.Threading.Tasks.Task`1.html">Syste
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L929">View Source</a>
       </span>
   <h4 id="ContinueWith_Action_Task_TResult___Object___Object_">ContinueWith(Action&lt;Task&lt;TResult&gt;, Object&gt;, Object)</h4>
-  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> completes.</p>
+  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">Task</a> completes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ContinueWith_Action_Task_TResult___Object___Object__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The returned <a href="System.Threading.Tasks.Task.html">System.Threading.Tasks.Task</a> will not be scheduled for execution until the current task has
+  <div class="markdown level1 remarks"><p>The returned <a href="System.Threading.Tasks.Task.html">Task</a> will not be scheduled for execution until the current task has
 completed, whether it completes due to running to completion successfully, faulting due to an
 unhandled exception, or exiting out early due to being canceled.</p>
 </div>
@@ -571,9 +568,9 @@ unhandled exception, or exiting out early due to being canceled.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Action&lt;System.Threading.Tasks.Task&lt;TResult&gt;, System.Object&gt;</td>
+        <td><a href="System.Action`2.html" name="System.Action">Action</a>&lt;<a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TResult&gt;, <a href="System.Object.html" name="System.Object">Object</a>&gt;</td>
         <td><em>continuationAction</em></td>
-        <td><p>An action to run when the <see cref="T:System.Threading.Tasks.Task`1"></see> completes. When run, the delegate will be
+        <td><p>An action to run when the <a href="System.Threading.Tasks.Task`1.html">Task</a> completes. When run, the delegate will be
 passed the completed task and the caller-supplied state object as arguments.</p>
 </td>
       </tr>
@@ -596,7 +593,7 @@ passed the completed task and the caller-supplied state object as arguments.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.Task.html" name="System.Threading.Tasks.Task">Task</a></td>
-        <td><p>A new continuation <see cref="T:System.Threading.Tasks.Task"></see>.</p>
+        <td><p>A new continuation <a href="System.Threading.Tasks.Task.html">Task</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -606,11 +603,11 @@ passed the completed task and the caller-supplied state object as arguments.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L958">View Source</a>
       </span>
   <h4 id="ContinueWith_Action_Task_TResult___Object___Object__CancellationToken_">ContinueWith(Action&lt;Task&lt;TResult&gt;, Object&gt;, Object, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> completes.</p>
+  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">Task</a> completes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ContinueWith_Action_Task_TResult___Object___Object__CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The returned <a href="System.Threading.Tasks.Task.html">System.Threading.Tasks.Task</a> will not be scheduled for execution until the current task has
+  <div class="markdown level1 remarks"><p>The returned <a href="System.Threading.Tasks.Task.html">Task</a> will not be scheduled for execution until the current task has
 completed, whether it completes due to running to completion successfully, faulting due to an
 unhandled exception, or exiting out early due to being canceled.</p>
 </div>
@@ -629,9 +626,9 @@ unhandled exception, or exiting out early due to being canceled.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Action&lt;System.Threading.Tasks.Task&lt;TResult&gt;, System.Object&gt;</td>
+        <td><a href="System.Action`2.html" name="System.Action">Action</a>&lt;<a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TResult&gt;, <a href="System.Object.html" name="System.Object">Object</a>&gt;</td>
         <td><em>continuationAction</em></td>
-        <td><p>An action to run when the <see cref="T:System.Threading.Tasks.Task`1"></see> completes. When run, the delegate will be
+        <td><p>An action to run when the <a href="System.Threading.Tasks.Task`1.html">Task</a> completes. When run, the delegate will be
 passed the completed task and the caller-supplied state object as arguments.</p>
 </td>
       </tr>
@@ -644,7 +641,7 @@ passed the completed task and the caller-supplied state object as arguments.</p>
       <tr>
         <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
         <td><em>cancellationToken</em></td>
-        <td><p>The <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> that will be assigned to the new continuation task.</p>
+        <td><p>The <a href="System.Threading.CancellationToken.html">CancellationToken</a> that will be assigned to the new continuation task.</p>
 </td>
       </tr>
     </tbody>
@@ -660,7 +657,7 @@ passed the completed task and the caller-supplied state object as arguments.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.Task.html" name="System.Threading.Tasks.Task">Task</a></td>
-        <td><p>A new continuation <see cref="T:System.Threading.Tasks.Task"></see>.</p>
+        <td><p>A new continuation <a href="System.Threading.Tasks.Task.html">Task</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -670,11 +667,11 @@ passed the completed task and the caller-supplied state object as arguments.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L1071">View Source</a>
       </span>
   <h4 id="ContinueWith_Action_Task_TResult___Object___Object__CancellationToken__TaskContinuationOptions__TaskScheduler_">ContinueWith(Action&lt;Task&lt;TResult&gt;, Object&gt;, Object, CancellationToken, TaskContinuationOptions, TaskScheduler)</h4>
-  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> completes.</p>
+  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">Task</a> completes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ContinueWith_Action_Task_TResult___Object___Object__CancellationToken__TaskContinuationOptions__TaskScheduler__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The returned <a href="System.Threading.Tasks.Task.html">System.Threading.Tasks.Task</a> will not be scheduled for execution until the current task has
+  <div class="markdown level1 remarks"><p>The returned <a href="System.Threading.Tasks.Task.html">Task</a> will not be scheduled for execution until the current task has
 completed. If the criteria specified through the <paramref name="continuationOptions"></paramref> parameter
 are not met, the continuation task will be canceled instead of scheduled.</p>
 </div>
@@ -693,9 +690,9 @@ are not met, the continuation task will be canceled instead of scheduled.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Action&lt;System.Threading.Tasks.Task&lt;TResult&gt;, System.Object&gt;</td>
+        <td><a href="System.Action`2.html" name="System.Action">Action</a>&lt;<a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TResult&gt;, <a href="System.Object.html" name="System.Object">Object</a>&gt;</td>
         <td><em>continuationAction</em></td>
-        <td><p>An action to run when the <see cref="T:System.Threading.Tasks.Task`1"></see> completes. When run, the delegate will be
+        <td><p>An action to run when the <a href="System.Threading.Tasks.Task`1.html">Task</a> completes. When run, the delegate will be
 passed the completed task and the caller-supplied state object as arguments.</p>
 </td>
       </tr>
@@ -708,21 +705,21 @@ passed the completed task and the caller-supplied state object as arguments.</p>
       <tr>
         <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
         <td><em>cancellationToken</em></td>
-        <td><p>The <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> that will be assigned to the new continuation task.</p>
+        <td><p>The <a href="System.Threading.CancellationToken.html">CancellationToken</a> that will be assigned to the new continuation task.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Threading.Tasks.TaskContinuationOptions.html" name="System.Threading.Tasks.TaskContinuationOptions">TaskContinuationOptions</a></td>
         <td><em>continuationOptions</em></td>
         <td><p>Options for when the continuation is scheduled and how it behaves. This includes criteria, such
-as <a href="System.Threading.Tasks.TaskContinuationOptions.html">System.Threading.Tasks.TaskContinuationOptions.OnlyOnCanceled</a>, as
-well as execution options, such as <a href="System.Threading.Tasks.TaskContinuationOptions.html">System.Threading.Tasks.TaskContinuationOptions.ExecuteSynchronously</a>.</p>
+as <a href="System.Threading.Tasks.TaskContinuationOptions.html">OnlyOnCanceled</a>, as
+well as execution options, such as <a href="System.Threading.Tasks.TaskContinuationOptions.html">ExecuteSynchronously</a>.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Threading.Tasks.TaskScheduler.html" name="System.Threading.Tasks.TaskScheduler">TaskScheduler</a></td>
         <td><em>scheduler</em></td>
-        <td><p>The <a href="System.Threading.Tasks.TaskScheduler.html">System.Threading.Tasks.TaskScheduler</a> to associate with the continuation task and to use for its
+        <td><p>The <a href="System.Threading.Tasks.TaskScheduler.html">TaskScheduler</a> to associate with the continuation task and to use for its
 execution.</p>
 </td>
       </tr>
@@ -739,7 +736,7 @@ execution.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.Task.html" name="System.Threading.Tasks.Task">Task</a></td>
-        <td><p>A new continuation <see cref="T:System.Threading.Tasks.Task"></see>.</p>
+        <td><p>A new continuation <a href="System.Threading.Tasks.Task.html">Task</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -749,11 +746,11 @@ execution.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L1025">View Source</a>
       </span>
   <h4 id="ContinueWith_Action_Task_TResult___Object___Object__TaskContinuationOptions_">ContinueWith(Action&lt;Task&lt;TResult&gt;, Object&gt;, Object, TaskContinuationOptions)</h4>
-  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> completes.</p>
+  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">Task</a> completes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ContinueWith_Action_Task_TResult___Object___Object__TaskContinuationOptions__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The returned <a href="System.Threading.Tasks.Task.html">System.Threading.Tasks.Task</a> will not be scheduled for execution until the current task has
+  <div class="markdown level1 remarks"><p>The returned <a href="System.Threading.Tasks.Task.html">Task</a> will not be scheduled for execution until the current task has
 completed. If the continuation criteria specified through the <paramref name="continuationOptions"></paramref> parameter are not met, the continuation task will be canceled
 instead of scheduled.</p>
 </div>
@@ -772,9 +769,9 @@ instead of scheduled.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Action&lt;System.Threading.Tasks.Task&lt;TResult&gt;, System.Object&gt;</td>
+        <td><a href="System.Action`2.html" name="System.Action">Action</a>&lt;<a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TResult&gt;, <a href="System.Object.html" name="System.Object">Object</a>&gt;</td>
         <td><em>continuationAction</em></td>
-        <td><p>An action to run when the <see cref="T:System.Threading.Tasks.Task`1"></see> completes. When run, the delegate will be
+        <td><p>An action to run when the <a href="System.Threading.Tasks.Task`1.html">Task</a> completes. When run, the delegate will be
 passed the completed task and the caller-supplied state object as arguments.</p>
 </td>
       </tr>
@@ -788,8 +785,8 @@ passed the completed task and the caller-supplied state object as arguments.</p>
         <td><a href="System.Threading.Tasks.TaskContinuationOptions.html" name="System.Threading.Tasks.TaskContinuationOptions">TaskContinuationOptions</a></td>
         <td><em>continuationOptions</em></td>
         <td><p>Options for when the continuation is scheduled and how it behaves. This includes criteria, such
-as <a href="System.Threading.Tasks.TaskContinuationOptions.html">System.Threading.Tasks.TaskContinuationOptions.OnlyOnCanceled</a>, as
-well as execution options, such as <a href="System.Threading.Tasks.TaskContinuationOptions.html">System.Threading.Tasks.TaskContinuationOptions.ExecuteSynchronously</a>.</p>
+as <a href="System.Threading.Tasks.TaskContinuationOptions.html">OnlyOnCanceled</a>, as
+well as execution options, such as <a href="System.Threading.Tasks.TaskContinuationOptions.html">ExecuteSynchronously</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -805,7 +802,7 @@ well as execution options, such as <a href="System.Threading.Tasks.TaskContinuat
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.Task.html" name="System.Threading.Tasks.Task">Task</a></td>
-        <td><p>A new continuation <see cref="T:System.Threading.Tasks.Task"></see>.</p>
+        <td><p>A new continuation <a href="System.Threading.Tasks.Task.html">Task</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -815,11 +812,11 @@ well as execution options, such as <a href="System.Threading.Tasks.TaskContinuat
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L989">View Source</a>
       </span>
   <h4 id="ContinueWith_Action_Task_TResult___Object___Object__TaskScheduler_">ContinueWith(Action&lt;Task&lt;TResult&gt;, Object&gt;, Object, TaskScheduler)</h4>
-  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> completes.</p>
+  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">Task</a> completes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ContinueWith_Action_Task_TResult___Object___Object__TaskScheduler__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The returned <a href="System.Threading.Tasks.Task.html">System.Threading.Tasks.Task</a> will not be scheduled for execution until the current task has
+  <div class="markdown level1 remarks"><p>The returned <a href="System.Threading.Tasks.Task.html">Task</a> will not be scheduled for execution until the current task has
 completed, whether it completes due to running to completion successfully, faulting due to an
 unhandled exception, or exiting out early due to being canceled.</p>
 </div>
@@ -838,9 +835,9 @@ unhandled exception, or exiting out early due to being canceled.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Action&lt;System.Threading.Tasks.Task&lt;TResult&gt;, System.Object&gt;</td>
+        <td><a href="System.Action`2.html" name="System.Action">Action</a>&lt;<a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TResult&gt;, <a href="System.Object.html" name="System.Object">Object</a>&gt;</td>
         <td><em>continuationAction</em></td>
-        <td><p>An action to run when the <see cref="T:System.Threading.Tasks.Task`1"></see> completes. When run, the delegate will be
+        <td><p>An action to run when the <a href="System.Threading.Tasks.Task`1.html">Task</a> completes. When run, the delegate will be
 passed the completed task and the caller-supplied state object as arguments.</p>
 </td>
       </tr>
@@ -853,7 +850,7 @@ passed the completed task and the caller-supplied state object as arguments.</p>
       <tr>
         <td><a href="System.Threading.Tasks.TaskScheduler.html" name="System.Threading.Tasks.TaskScheduler">TaskScheduler</a></td>
         <td><em>scheduler</em></td>
-        <td><p>The <a href="System.Threading.Tasks.TaskScheduler.html">System.Threading.Tasks.TaskScheduler</a> to associate with the continuation task and to use for its execution.</p>
+        <td><p>The <a href="System.Threading.Tasks.TaskScheduler.html">TaskScheduler</a> to associate with the continuation task and to use for its execution.</p>
 </td>
       </tr>
     </tbody>
@@ -869,7 +866,7 @@ passed the completed task and the caller-supplied state object as arguments.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.Task.html" name="System.Threading.Tasks.Task">Task</a></td>
-        <td><p>A new continuation <see cref="T:System.Threading.Tasks.Task"></see>.</p>
+        <td><p>A new continuation <a href="System.Threading.Tasks.Task.html">Task</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -879,11 +876,11 @@ passed the completed task and the caller-supplied state object as arguments.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L729">View Source</a>
       </span>
   <h4 id="ContinueWith_Action_Task_TResult___">ContinueWith(Action&lt;Task&lt;TResult&gt;&gt;)</h4>
-  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> completes.</p>
+  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">Task</a> completes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ContinueWith_Action_Task_TResult____remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The returned <a href="System.Threading.Tasks.Task.html">System.Threading.Tasks.Task</a> will not be scheduled for execution until the current task has
+  <div class="markdown level1 remarks"><p>The returned <a href="System.Threading.Tasks.Task.html">Task</a> will not be scheduled for execution until the current task has
 completed, whether it completes due to running to completion successfully, faulting due to an
 unhandled exception, or exiting out early due to being canceled.</p>
 </div>
@@ -902,9 +899,9 @@ unhandled exception, or exiting out early due to being canceled.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Action&lt;System.Threading.Tasks.Task&lt;TResult&gt;&gt;</td>
+        <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;<a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TResult&gt;&gt;</td>
         <td><em>continuationAction</em></td>
-        <td><p>An action to run when the <see cref="T:System.Threading.Tasks.Task`1"></see> completes. When run, the delegate will be
+        <td><p>An action to run when the <a href="System.Threading.Tasks.Task`1.html">Task</a> completes. When run, the delegate will be
 passed the completed task as an argument.</p>
 </td>
       </tr>
@@ -921,7 +918,7 @@ passed the completed task as an argument.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.Task.html" name="System.Threading.Tasks.Task">Task</a></td>
-        <td><p>A new continuation <see cref="T:System.Threading.Tasks.Task"></see>.</p>
+        <td><p>A new continuation <a href="System.Threading.Tasks.Task.html">Task</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -931,11 +928,11 @@ passed the completed task as an argument.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L757">View Source</a>
       </span>
   <h4 id="ContinueWith_Action_Task_TResult____CancellationToken_">ContinueWith(Action&lt;Task&lt;TResult&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> completes.</p>
+  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">Task</a> completes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ContinueWith_Action_Task_TResult____CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The returned <a href="System.Threading.Tasks.Task.html">System.Threading.Tasks.Task</a> will not be scheduled for execution until the current task has
+  <div class="markdown level1 remarks"><p>The returned <a href="System.Threading.Tasks.Task.html">Task</a> will not be scheduled for execution until the current task has
 completed, whether it completes due to running to completion successfully, faulting due to an
 unhandled exception, or exiting out early due to being canceled.</p>
 </div>
@@ -954,16 +951,16 @@ unhandled exception, or exiting out early due to being canceled.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Action&lt;System.Threading.Tasks.Task&lt;TResult&gt;&gt;</td>
+        <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;<a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TResult&gt;&gt;</td>
         <td><em>continuationAction</em></td>
-        <td><p>An action to run when the <see cref="T:System.Threading.Tasks.Task`1"></see> completes. When run, the delegate will be
+        <td><p>An action to run when the <a href="System.Threading.Tasks.Task`1.html">Task</a> completes. When run, the delegate will be
 passed the completed task as an argument.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
         <td><em>cancellationToken</em></td>
-        <td><p>The <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> that will be assigned to the new continuation task.</p>
+        <td><p>The <a href="System.Threading.CancellationToken.html">CancellationToken</a> that will be assigned to the new continuation task.</p>
 </td>
       </tr>
     </tbody>
@@ -979,7 +976,7 @@ passed the completed task as an argument.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.Task.html" name="System.Threading.Tasks.Task">Task</a></td>
-        <td><p>A new continuation <see cref="T:System.Threading.Tasks.Task"></see>.</p>
+        <td><p>A new continuation <a href="System.Threading.Tasks.Task.html">Task</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -989,11 +986,11 @@ passed the completed task as an argument.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L867">View Source</a>
       </span>
   <h4 id="ContinueWith_Action_Task_TResult____CancellationToken__TaskContinuationOptions__TaskScheduler_">ContinueWith(Action&lt;Task&lt;TResult&gt;&gt;, CancellationToken, TaskContinuationOptions, TaskScheduler)</h4>
-  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> completes.</p>
+  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">Task</a> completes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ContinueWith_Action_Task_TResult____CancellationToken__TaskContinuationOptions__TaskScheduler__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The returned <a href="System.Threading.Tasks.Task.html">System.Threading.Tasks.Task</a> will not be scheduled for execution until the current task has
+  <div class="markdown level1 remarks"><p>The returned <a href="System.Threading.Tasks.Task.html">Task</a> will not be scheduled for execution until the current task has
 completed. If the criteria specified through the <paramref name="continuationOptions"></paramref> parameter
 are not met, the continuation task will be canceled instead of scheduled.</p>
 </div>
@@ -1012,30 +1009,30 @@ are not met, the continuation task will be canceled instead of scheduled.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Action&lt;System.Threading.Tasks.Task&lt;TResult&gt;&gt;</td>
+        <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;<a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TResult&gt;&gt;</td>
         <td><em>continuationAction</em></td>
-        <td><p>An action to run when the <see cref="T:System.Threading.Tasks.Task`1"></see> completes. When run, the delegate will be
+        <td><p>An action to run when the <a href="System.Threading.Tasks.Task`1.html">Task</a> completes. When run, the delegate will be
 passed the completed task as an argument.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
         <td><em>cancellationToken</em></td>
-        <td><p>The <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> that will be assigned to the new continuation task.</p>
+        <td><p>The <a href="System.Threading.CancellationToken.html">CancellationToken</a> that will be assigned to the new continuation task.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Threading.Tasks.TaskContinuationOptions.html" name="System.Threading.Tasks.TaskContinuationOptions">TaskContinuationOptions</a></td>
         <td><em>continuationOptions</em></td>
         <td><p>Options for when the continuation is scheduled and how it behaves. This includes criteria, such
-as <a href="System.Threading.Tasks.TaskContinuationOptions.html">System.Threading.Tasks.TaskContinuationOptions.OnlyOnCanceled</a>, as
-well as execution options, such as <a href="System.Threading.Tasks.TaskContinuationOptions.html">System.Threading.Tasks.TaskContinuationOptions.ExecuteSynchronously</a>.</p>
+as <a href="System.Threading.Tasks.TaskContinuationOptions.html">OnlyOnCanceled</a>, as
+well as execution options, such as <a href="System.Threading.Tasks.TaskContinuationOptions.html">ExecuteSynchronously</a>.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Threading.Tasks.TaskScheduler.html" name="System.Threading.Tasks.TaskScheduler">TaskScheduler</a></td>
         <td><em>scheduler</em></td>
-        <td><p>The <a href="System.Threading.Tasks.TaskScheduler.html">System.Threading.Tasks.TaskScheduler</a> to associate with the continuation task and to use for its
+        <td><p>The <a href="System.Threading.Tasks.TaskScheduler.html">TaskScheduler</a> to associate with the continuation task and to use for its
 execution.</p>
 </td>
       </tr>
@@ -1052,7 +1049,7 @@ execution.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.Task.html" name="System.Threading.Tasks.Task">Task</a></td>
-        <td><p>A new continuation <see cref="T:System.Threading.Tasks.Task"></see>.</p>
+        <td><p>A new continuation <a href="System.Threading.Tasks.Task.html">Task</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -1062,11 +1059,11 @@ execution.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L822">View Source</a>
       </span>
   <h4 id="ContinueWith_Action_Task_TResult____TaskContinuationOptions_">ContinueWith(Action&lt;Task&lt;TResult&gt;&gt;, TaskContinuationOptions)</h4>
-  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> completes.</p>
+  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">Task</a> completes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ContinueWith_Action_Task_TResult____TaskContinuationOptions__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The returned <a href="System.Threading.Tasks.Task.html">System.Threading.Tasks.Task</a> will not be scheduled for execution until the current task has
+  <div class="markdown level1 remarks"><p>The returned <a href="System.Threading.Tasks.Task.html">Task</a> will not be scheduled for execution until the current task has
 completed. If the continuation criteria specified through the <paramref name="continuationOptions"></paramref> parameter are not met, the continuation task will be canceled
 instead of scheduled.</p>
 </div>
@@ -1085,9 +1082,9 @@ instead of scheduled.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Action&lt;System.Threading.Tasks.Task&lt;TResult&gt;&gt;</td>
+        <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;<a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TResult&gt;&gt;</td>
         <td><em>continuationAction</em></td>
-        <td><p>An action to run when the <see cref="T:System.Threading.Tasks.Task`1"></see> completes. When run, the delegate will be
+        <td><p>An action to run when the <a href="System.Threading.Tasks.Task`1.html">Task</a> completes. When run, the delegate will be
 passed the completed task as an argument.</p>
 </td>
       </tr>
@@ -1095,8 +1092,8 @@ passed the completed task as an argument.</p>
         <td><a href="System.Threading.Tasks.TaskContinuationOptions.html" name="System.Threading.Tasks.TaskContinuationOptions">TaskContinuationOptions</a></td>
         <td><em>continuationOptions</em></td>
         <td><p>Options for when the continuation is scheduled and how it behaves. This includes criteria, such
-as <a href="System.Threading.Tasks.TaskContinuationOptions.html">System.Threading.Tasks.TaskContinuationOptions.OnlyOnCanceled</a>, as
-well as execution options, such as <a href="System.Threading.Tasks.TaskContinuationOptions.html">System.Threading.Tasks.TaskContinuationOptions.ExecuteSynchronously</a>.</p>
+as <a href="System.Threading.Tasks.TaskContinuationOptions.html">OnlyOnCanceled</a>, as
+well as execution options, such as <a href="System.Threading.Tasks.TaskContinuationOptions.html">ExecuteSynchronously</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -1112,7 +1109,7 @@ well as execution options, such as <a href="System.Threading.Tasks.TaskContinuat
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.Task.html" name="System.Threading.Tasks.Task">Task</a></td>
-        <td><p>A new continuation <see cref="T:System.Threading.Tasks.Task"></see>.</p>
+        <td><p>A new continuation <a href="System.Threading.Tasks.Task.html">Task</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -1122,11 +1119,11 @@ well as execution options, such as <a href="System.Threading.Tasks.TaskContinuat
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L787">View Source</a>
       </span>
   <h4 id="ContinueWith_Action_Task_TResult____TaskScheduler_">ContinueWith(Action&lt;Task&lt;TResult&gt;&gt;, TaskScheduler)</h4>
-  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> completes.</p>
+  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">Task</a> completes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ContinueWith_Action_Task_TResult____TaskScheduler__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The returned <a href="System.Threading.Tasks.Task.html">System.Threading.Tasks.Task</a> will not be scheduled for execution until the current task has
+  <div class="markdown level1 remarks"><p>The returned <a href="System.Threading.Tasks.Task.html">Task</a> will not be scheduled for execution until the current task has
 completed, whether it completes due to running to completion successfully, faulting due to an
 unhandled exception, or exiting out early due to being canceled.</p>
 </div>
@@ -1145,16 +1142,16 @@ unhandled exception, or exiting out early due to being canceled.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Action&lt;System.Threading.Tasks.Task&lt;TResult&gt;&gt;</td>
+        <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;<a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TResult&gt;&gt;</td>
         <td><em>continuationAction</em></td>
-        <td><p>An action to run when the <see cref="T:System.Threading.Tasks.Task`1"></see> completes. When run, the delegate will be
+        <td><p>An action to run when the <a href="System.Threading.Tasks.Task`1.html">Task</a> completes. When run, the delegate will be
 passed the completed task as an argument.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Threading.Tasks.TaskScheduler.html" name="System.Threading.Tasks.TaskScheduler">TaskScheduler</a></td>
         <td><em>scheduler</em></td>
-        <td><p>The <a href="System.Threading.Tasks.TaskScheduler.html">System.Threading.Tasks.TaskScheduler</a> to associate with the continuation task and to use for its execution.</p>
+        <td><p>The <a href="System.Threading.Tasks.TaskScheduler.html">TaskScheduler</a> to associate with the continuation task and to use for its execution.</p>
 </td>
       </tr>
     </tbody>
@@ -1170,7 +1167,7 @@ passed the completed task as an argument.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.Task.html" name="System.Threading.Tasks.Task">Task</a></td>
-        <td><p>A new continuation <see cref="T:System.Threading.Tasks.Task"></see>.</p>
+        <td><p>A new continuation <a href="System.Threading.Tasks.Task.html">Task</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -1180,11 +1177,11 @@ passed the completed task as an argument.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L1136">View Source</a>
       </span>
   <h4 id="ContinueWith_TNewResult__Func_Task_TResult___TNewResult__">ContinueWith&lt;TNewResult&gt;(Func&lt;Task&lt;TResult&gt;, TNewResult&gt;)</h4>
-  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> completes.</p>
+  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">Task</a> completes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ContinueWith_TNewResult__Func_Task_TResult___TNewResult___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The returned <see cref="T:System.Threading.Tasks.Task`1"></see> will not be scheduled for execution until the current
+  <div class="markdown level1 remarks"><p>The returned <a href="System.Threading.Tasks.Task`1.html">Task</a> will not be scheduled for execution until the current
 task has completed, whether it completes due to running to completion successfully, faulting due
 to an unhandled exception, or exiting out early due to being canceled.</p>
 </div>
@@ -1203,9 +1200,9 @@ to an unhandled exception, or exiting out early due to being canceled.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Func&lt;System.Threading.Tasks.Task&lt;TResult&gt;, TNewResult&gt;</td>
+        <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;<a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TResult&gt;, TNewResult&gt;</td>
         <td><em>continuationFunction</em></td>
-        <td><p>A function to run when the <see cref="T:System.Threading.Tasks.Task`1"></see> completes. When run, the delegate will be
+        <td><p>A function to run when the <a href="System.Threading.Tasks.Task`1.html">Task</a> completes. When run, the delegate will be
 passed the completed task as an argument.</p>
 </td>
       </tr>
@@ -1221,8 +1218,8 @@ passed the completed task as an argument.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Threading.Tasks.Task&lt;TNewResult&gt;</td>
-        <td><p>A new continuation <see cref="T:System.Threading.Tasks.Task`1"></see>.</p>
+        <td><a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TNewResult&gt;</td>
+        <td><p>A new continuation <a href="System.Threading.Tasks.Task`1.html">Task</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -1232,11 +1229,11 @@ passed the completed task as an argument.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L1167">View Source</a>
       </span>
   <h4 id="ContinueWith_TNewResult__Func_Task_TResult___TNewResult___CancellationToken_">ContinueWith&lt;TNewResult&gt;(Func&lt;Task&lt;TResult&gt;, TNewResult&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> completes.</p>
+  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">Task</a> completes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ContinueWith_TNewResult__Func_Task_TResult___TNewResult___CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The returned <see cref="T:System.Threading.Tasks.Task`1"></see> will not be scheduled for execution until the current
+  <div class="markdown level1 remarks"><p>The returned <a href="System.Threading.Tasks.Task`1.html">Task</a> will not be scheduled for execution until the current
 task has completed, whether it completes due to running to completion successfully, faulting due
 to an unhandled exception, or exiting out early due to being canceled.</p>
 </div>
@@ -1255,16 +1252,16 @@ to an unhandled exception, or exiting out early due to being canceled.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Func&lt;System.Threading.Tasks.Task&lt;TResult&gt;, TNewResult&gt;</td>
+        <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;<a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TResult&gt;, TNewResult&gt;</td>
         <td><em>continuationFunction</em></td>
-        <td><p>A function to run when the <see cref="T:System.Threading.Tasks.Task`1"></see> completes. When run, the delegate will be
+        <td><p>A function to run when the <a href="System.Threading.Tasks.Task`1.html">Task</a> completes. When run, the delegate will be
 passed the completed task as an argument.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
         <td><em>cancellationToken</em></td>
-        <td><p>The <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> that will be assigned to the new task.</p>
+        <td><p>The <a href="System.Threading.CancellationToken.html">CancellationToken</a> that will be assigned to the new task.</p>
 </td>
       </tr>
     </tbody>
@@ -1279,8 +1276,8 @@ passed the completed task as an argument.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Threading.Tasks.Task&lt;TNewResult&gt;</td>
-        <td><p>A new continuation <see cref="T:System.Threading.Tasks.Task`1"></see>.</p>
+        <td><a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TNewResult&gt;</td>
+        <td><p>A new continuation <a href="System.Threading.Tasks.Task`1.html">Task</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -1290,17 +1287,17 @@ passed the completed task as an argument.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L1298">View Source</a>
       </span>
   <h4 id="ContinueWith_TNewResult__Func_Task_TResult___TNewResult___CancellationToken__TaskContinuationOptions__TaskScheduler_">ContinueWith&lt;TNewResult&gt;(Func&lt;Task&lt;TResult&gt;, TNewResult&gt;, CancellationToken, TaskContinuationOptions, TaskScheduler)</h4>
-  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> completes.</p>
+  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">Task</a> completes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ContinueWith_TNewResult__Func_Task_TResult___TNewResult___CancellationToken__TaskContinuationOptions__TaskScheduler__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><para>
-The returned <see cref="T:System.Threading.Tasks.Task`1"></see> will not be scheduled for execution until the current task has
+The returned <a href="System.Threading.Tasks.Task`1.html">Task</a> will not be scheduled for execution until the current task has
 completed, whether it completes due to running to completion successfully, faulting due to an
 unhandled exception, or exiting out early due to being canceled.
 </para>
 <para>
-The <paramref name="continuationFunction"></paramref>, when executed, should return a <see cref="T:System.Threading.Tasks.Task`1"></see>.
+The <paramref name="continuationFunction"></paramref>, when executed, should return a <a href="System.Threading.Tasks.Task`1.html">Task</a>.
 This task&#39;s completion state will be transferred to the task returned from the
 ContinueWith call.
 </para></div>
@@ -1319,30 +1316,30 @@ ContinueWith call.
     </thead>
     <tbody>
       <tr>
-        <td>System.Func&lt;System.Threading.Tasks.Task&lt;TResult&gt;, TNewResult&gt;</td>
+        <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;<a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TResult&gt;, TNewResult&gt;</td>
         <td><em>continuationFunction</em></td>
-        <td><p>A function to run when the <see cref="T:System.Threading.Tasks.Task`1"></see> completes. When run, the delegate will be passed as
+        <td><p>A function to run when the <a href="System.Threading.Tasks.Task`1.html">Task</a> completes. When run, the delegate will be passed as
 an argument this completed task.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
         <td><em>cancellationToken</em></td>
-        <td><p>The <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> that will be assigned to the new task.</p>
+        <td><p>The <a href="System.Threading.CancellationToken.html">CancellationToken</a> that will be assigned to the new task.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Threading.Tasks.TaskContinuationOptions.html" name="System.Threading.Tasks.TaskContinuationOptions">TaskContinuationOptions</a></td>
         <td><em>continuationOptions</em></td>
         <td><p>Options for when the continuation is scheduled and how it behaves. This includes criteria, such
-as <a href="System.Threading.Tasks.TaskContinuationOptions.html">System.Threading.Tasks.TaskContinuationOptions.OnlyOnCanceled</a>, as
-well as execution options, such as <a href="System.Threading.Tasks.TaskContinuationOptions.html">System.Threading.Tasks.TaskContinuationOptions.ExecuteSynchronously</a>.</p>
+as <a href="System.Threading.Tasks.TaskContinuationOptions.html">OnlyOnCanceled</a>, as
+well as execution options, such as <a href="System.Threading.Tasks.TaskContinuationOptions.html">ExecuteSynchronously</a>.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Threading.Tasks.TaskScheduler.html" name="System.Threading.Tasks.TaskScheduler">TaskScheduler</a></td>
         <td><em>scheduler</em></td>
-        <td><p>The <a href="System.Threading.Tasks.TaskScheduler.html">System.Threading.Tasks.TaskScheduler</a> to associate with the continuation task and to use for its
+        <td><p>The <a href="System.Threading.Tasks.TaskScheduler.html">TaskScheduler</a> to associate with the continuation task and to use for its
 execution.</p>
 </td>
       </tr>
@@ -1358,8 +1355,8 @@ execution.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Threading.Tasks.Task&lt;TNewResult&gt;</td>
-        <td><p>A new continuation <see cref="T:System.Threading.Tasks.Task`1"></see>.</p>
+        <td><a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TNewResult&gt;</td>
+        <td><p>A new continuation <a href="System.Threading.Tasks.Task`1.html">Task</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -1369,17 +1366,17 @@ execution.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L1243">View Source</a>
       </span>
   <h4 id="ContinueWith_TNewResult__Func_Task_TResult___TNewResult___TaskContinuationOptions_">ContinueWith&lt;TNewResult&gt;(Func&lt;Task&lt;TResult&gt;, TNewResult&gt;, TaskContinuationOptions)</h4>
-  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> completes.</p>
+  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">Task</a> completes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ContinueWith_TNewResult__Func_Task_TResult___TNewResult___TaskContinuationOptions__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><para>
-The returned <see cref="T:System.Threading.Tasks.Task`1"></see> will not be scheduled for execution until the current
+The returned <a href="System.Threading.Tasks.Task`1.html">Task</a> will not be scheduled for execution until the current
 task has completed, whether it completes due to running to completion successfully, faulting due
 to an unhandled exception, or exiting out early due to being canceled.
 </para>
 <para>
-The <paramref name="continuationFunction"></paramref>, when executed, should return a <see cref="T:System.Threading.Tasks.Task`1"></see>. This task&#39;s completion state will be transferred to the task returned
+The <paramref name="continuationFunction"></paramref>, when executed, should return a <a href="System.Threading.Tasks.Task`1.html">Task</a>. This task&#39;s completion state will be transferred to the task returned
 from the ContinueWith call.
 </para></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1397,9 +1394,9 @@ from the ContinueWith call.
     </thead>
     <tbody>
       <tr>
-        <td>System.Func&lt;System.Threading.Tasks.Task&lt;TResult&gt;, TNewResult&gt;</td>
+        <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;<a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TResult&gt;, TNewResult&gt;</td>
         <td><em>continuationFunction</em></td>
-        <td><p>A function to run when the <see cref="T:System.Threading.Tasks.Task`1"></see> completes. When run, the delegate will be
+        <td><p>A function to run when the <a href="System.Threading.Tasks.Task`1.html">Task</a> completes. When run, the delegate will be
 passed the completed task as an argument.</p>
 </td>
       </tr>
@@ -1407,8 +1404,8 @@ passed the completed task as an argument.</p>
         <td><a href="System.Threading.Tasks.TaskContinuationOptions.html" name="System.Threading.Tasks.TaskContinuationOptions">TaskContinuationOptions</a></td>
         <td><em>continuationOptions</em></td>
         <td><p>Options for when the continuation is scheduled and how it behaves. This includes criteria, such
-as <a href="System.Threading.Tasks.TaskContinuationOptions.html">System.Threading.Tasks.TaskContinuationOptions.OnlyOnCanceled</a>, as
-well as execution options, such as <a href="System.Threading.Tasks.TaskContinuationOptions.html">System.Threading.Tasks.TaskContinuationOptions.ExecuteSynchronously</a>.</p>
+as <a href="System.Threading.Tasks.TaskContinuationOptions.html">OnlyOnCanceled</a>, as
+well as execution options, such as <a href="System.Threading.Tasks.TaskContinuationOptions.html">ExecuteSynchronously</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -1423,8 +1420,8 @@ well as execution options, such as <a href="System.Threading.Tasks.TaskContinuat
     </thead>
     <tbody>
       <tr>
-        <td>System.Threading.Tasks.Task&lt;TNewResult&gt;</td>
-        <td><p>A new continuation <see cref="T:System.Threading.Tasks.Task`1"></see>.</p>
+        <td><a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TNewResult&gt;</td>
+        <td><p>A new continuation <a href="System.Threading.Tasks.Task`1.html">Task</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -1434,11 +1431,11 @@ well as execution options, such as <a href="System.Threading.Tasks.TaskContinuat
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L1199">View Source</a>
       </span>
   <h4 id="ContinueWith_TNewResult__Func_Task_TResult___TNewResult___TaskScheduler_">ContinueWith&lt;TNewResult&gt;(Func&lt;Task&lt;TResult&gt;, TNewResult&gt;, TaskScheduler)</h4>
-  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> completes.</p>
+  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">Task</a> completes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ContinueWith_TNewResult__Func_Task_TResult___TNewResult___TaskScheduler__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The returned <see cref="T:System.Threading.Tasks.Task`1"></see> will not be scheduled for execution until the current task has
+  <div class="markdown level1 remarks"><p>The returned <a href="System.Threading.Tasks.Task`1.html">Task</a> will not be scheduled for execution until the current task has
 completed, whether it completes due to running to completion successfully, faulting due to an
 unhandled exception, or exiting out early due to being canceled.</p>
 </div>
@@ -1457,16 +1454,16 @@ unhandled exception, or exiting out early due to being canceled.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Func&lt;System.Threading.Tasks.Task&lt;TResult&gt;, TNewResult&gt;</td>
+        <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;<a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TResult&gt;, TNewResult&gt;</td>
         <td><em>continuationFunction</em></td>
-        <td><p>A function to run when the <see cref="T:System.Threading.Tasks.Task`1"></see> completes.  When run, the delegate will be
+        <td><p>A function to run when the <a href="System.Threading.Tasks.Task`1.html">Task</a> completes.  When run, the delegate will be
 passed the completed task as an argument.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Threading.Tasks.TaskScheduler.html" name="System.Threading.Tasks.TaskScheduler">TaskScheduler</a></td>
         <td><em>scheduler</em></td>
-        <td><p>The <a href="System.Threading.Tasks.TaskScheduler.html">System.Threading.Tasks.TaskScheduler</a> to associate with the continuation task and to use for its execution.</p>
+        <td><p>The <a href="System.Threading.Tasks.TaskScheduler.html">TaskScheduler</a> to associate with the continuation task and to use for its execution.</p>
 </td>
       </tr>
     </tbody>
@@ -1481,8 +1478,8 @@ passed the completed task as an argument.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Threading.Tasks.Task&lt;TNewResult&gt;</td>
-        <td><p>A new continuation <see cref="T:System.Threading.Tasks.Task`1"></see>.</p>
+        <td><a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TNewResult&gt;</td>
+        <td><p>A new continuation <a href="System.Threading.Tasks.Task`1.html">Task</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -1492,11 +1489,11 @@ passed the completed task as an argument.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L1363">View Source</a>
       </span>
   <h4 id="ContinueWith_TNewResult__Func_Task_TResult___Object__TNewResult___Object_">ContinueWith&lt;TNewResult&gt;(Func&lt;Task&lt;TResult&gt;, Object, TNewResult&gt;, Object)</h4>
-  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> completes.</p>
+  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">Task</a> completes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ContinueWith_TNewResult__Func_Task_TResult___Object__TNewResult___Object__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The returned <see cref="T:System.Threading.Tasks.Task`1"></see> will not be scheduled for execution until the current
+  <div class="markdown level1 remarks"><p>The returned <a href="System.Threading.Tasks.Task`1.html">Task</a> will not be scheduled for execution until the current
 task has completed, whether it completes due to running to completion successfully, faulting due
 to an unhandled exception, or exiting out early due to being canceled.</p>
 </div>
@@ -1515,9 +1512,9 @@ to an unhandled exception, or exiting out early due to being canceled.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Func&lt;System.Threading.Tasks.Task&lt;TResult&gt;, System.Object, TNewResult&gt;</td>
+        <td><a href="System.Func`3.html" name="System.Func">Func</a>&lt;<a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TResult&gt;, <a href="System.Object.html" name="System.Object">Object</a>, TNewResult&gt;</td>
         <td><em>continuationFunction</em></td>
-        <td><p>A function to run when the <see cref="T:System.Threading.Tasks.Task`1"></see> completes. When run, the delegate will be
+        <td><p>A function to run when the <a href="System.Threading.Tasks.Task`1.html">Task</a> completes. When run, the delegate will be
 passed the completed task and the caller-supplied state object as arguments.</p>
 </td>
       </tr>
@@ -1539,8 +1536,8 @@ passed the completed task and the caller-supplied state object as arguments.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Threading.Tasks.Task&lt;TNewResult&gt;</td>
-        <td><p>A new continuation <see cref="T:System.Threading.Tasks.Task`1"></see>.</p>
+        <td><a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TNewResult&gt;</td>
+        <td><p>A new continuation <a href="System.Threading.Tasks.Task`1.html">Task</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -1550,11 +1547,11 @@ passed the completed task and the caller-supplied state object as arguments.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L1395">View Source</a>
       </span>
   <h4 id="ContinueWith_TNewResult__Func_Task_TResult___Object__TNewResult___Object__CancellationToken_">ContinueWith&lt;TNewResult&gt;(Func&lt;Task&lt;TResult&gt;, Object, TNewResult&gt;, Object, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> completes.</p>
+  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">Task</a> completes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ContinueWith_TNewResult__Func_Task_TResult___Object__TNewResult___Object__CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The returned <see cref="T:System.Threading.Tasks.Task`1"></see> will not be scheduled for execution until the current
+  <div class="markdown level1 remarks"><p>The returned <a href="System.Threading.Tasks.Task`1.html">Task</a> will not be scheduled for execution until the current
 task has completed, whether it completes due to running to completion successfully, faulting due
 to an unhandled exception, or exiting out early due to being canceled.</p>
 </div>
@@ -1573,9 +1570,9 @@ to an unhandled exception, or exiting out early due to being canceled.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Func&lt;System.Threading.Tasks.Task&lt;TResult&gt;, System.Object, TNewResult&gt;</td>
+        <td><a href="System.Func`3.html" name="System.Func">Func</a>&lt;<a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TResult&gt;, <a href="System.Object.html" name="System.Object">Object</a>, TNewResult&gt;</td>
         <td><em>continuationFunction</em></td>
-        <td><p>A function to run when the <see cref="T:System.Threading.Tasks.Task`1"></see> completes. When run, the delegate will be
+        <td><p>A function to run when the <a href="System.Threading.Tasks.Task`1.html">Task</a> completes. When run, the delegate will be
 passed the completed task and the caller-supplied state object as arguments.</p>
 </td>
       </tr>
@@ -1588,7 +1585,7 @@ passed the completed task and the caller-supplied state object as arguments.</p>
       <tr>
         <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
         <td><em>cancellationToken</em></td>
-        <td><p>The <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> that will be assigned to the new task.</p>
+        <td><p>The <a href="System.Threading.CancellationToken.html">CancellationToken</a> that will be assigned to the new task.</p>
 </td>
       </tr>
     </tbody>
@@ -1603,8 +1600,8 @@ passed the completed task and the caller-supplied state object as arguments.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Threading.Tasks.Task&lt;TNewResult&gt;</td>
-        <td><p>A new continuation <see cref="T:System.Threading.Tasks.Task`1"></see>.</p>
+        <td><a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TNewResult&gt;</td>
+        <td><p>A new continuation <a href="System.Threading.Tasks.Task`1.html">Task</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -1614,17 +1611,17 @@ passed the completed task and the caller-supplied state object as arguments.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L1532">View Source</a>
       </span>
   <h4 id="ContinueWith_TNewResult__Func_Task_TResult___Object__TNewResult___Object__CancellationToken__TaskContinuationOptions__TaskScheduler_">ContinueWith&lt;TNewResult&gt;(Func&lt;Task&lt;TResult&gt;, Object, TNewResult&gt;, Object, CancellationToken, TaskContinuationOptions, TaskScheduler)</h4>
-  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> completes.</p>
+  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">Task</a> completes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ContinueWith_TNewResult__Func_Task_TResult___Object__TNewResult___Object__CancellationToken__TaskContinuationOptions__TaskScheduler__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><para>
-The returned <see cref="T:System.Threading.Tasks.Task`1"></see> will not be scheduled for execution until the current task has
+The returned <a href="System.Threading.Tasks.Task`1.html">Task</a> will not be scheduled for execution until the current task has
 completed, whether it completes due to running to completion successfully, faulting due to an
 unhandled exception, or exiting out early due to being canceled.
 </para>
 <para>
-The <paramref name="continuationFunction"></paramref>, when executed, should return a <see cref="T:System.Threading.Tasks.Task`1"></see>.
+The <paramref name="continuationFunction"></paramref>, when executed, should return a <a href="System.Threading.Tasks.Task`1.html">Task</a>.
 This task&#39;s completion state will be transferred to the task returned from the
 ContinueWith call.
 </para></div>
@@ -1643,9 +1640,9 @@ ContinueWith call.
     </thead>
     <tbody>
       <tr>
-        <td>System.Func&lt;System.Threading.Tasks.Task&lt;TResult&gt;, System.Object, TNewResult&gt;</td>
+        <td><a href="System.Func`3.html" name="System.Func">Func</a>&lt;<a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TResult&gt;, <a href="System.Object.html" name="System.Object">Object</a>, TNewResult&gt;</td>
         <td><em>continuationFunction</em></td>
-        <td><p>A function to run when the <see cref="T:System.Threading.Tasks.Task`1"></see> completes. When run, the delegate will be
+        <td><p>A function to run when the <a href="System.Threading.Tasks.Task`1.html">Task</a> completes. When run, the delegate will be
 passed the completed task and the caller-supplied state object as arguments.</p>
 </td>
       </tr>
@@ -1658,21 +1655,21 @@ passed the completed task and the caller-supplied state object as arguments.</p>
       <tr>
         <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
         <td><em>cancellationToken</em></td>
-        <td><p>The <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> that will be assigned to the new task.</p>
+        <td><p>The <a href="System.Threading.CancellationToken.html">CancellationToken</a> that will be assigned to the new task.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Threading.Tasks.TaskContinuationOptions.html" name="System.Threading.Tasks.TaskContinuationOptions">TaskContinuationOptions</a></td>
         <td><em>continuationOptions</em></td>
         <td><p>Options for when the continuation is scheduled and how it behaves. This includes criteria, such
-as <a href="System.Threading.Tasks.TaskContinuationOptions.html">System.Threading.Tasks.TaskContinuationOptions.OnlyOnCanceled</a>, as
-well as execution options, such as <a href="System.Threading.Tasks.TaskContinuationOptions.html">System.Threading.Tasks.TaskContinuationOptions.ExecuteSynchronously</a>.</p>
+as <a href="System.Threading.Tasks.TaskContinuationOptions.html">OnlyOnCanceled</a>, as
+well as execution options, such as <a href="System.Threading.Tasks.TaskContinuationOptions.html">ExecuteSynchronously</a>.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Threading.Tasks.TaskScheduler.html" name="System.Threading.Tasks.TaskScheduler">TaskScheduler</a></td>
         <td><em>scheduler</em></td>
-        <td><p>The <a href="System.Threading.Tasks.TaskScheduler.html">System.Threading.Tasks.TaskScheduler</a> to associate with the continuation task and to use for its
+        <td><p>The <a href="System.Threading.Tasks.TaskScheduler.html">TaskScheduler</a> to associate with the continuation task and to use for its
 execution.</p>
 </td>
       </tr>
@@ -1688,8 +1685,8 @@ execution.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Threading.Tasks.Task&lt;TNewResult&gt;</td>
-        <td><p>A new continuation <see cref="T:System.Threading.Tasks.Task`1"></see>.</p>
+        <td><a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TNewResult&gt;</td>
+        <td><p>A new continuation <a href="System.Threading.Tasks.Task`1.html">Task</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -1699,17 +1696,17 @@ execution.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L1475">View Source</a>
       </span>
   <h4 id="ContinueWith_TNewResult__Func_Task_TResult___Object__TNewResult___Object__TaskContinuationOptions_">ContinueWith&lt;TNewResult&gt;(Func&lt;Task&lt;TResult&gt;, Object, TNewResult&gt;, Object, TaskContinuationOptions)</h4>
-  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> completes.</p>
+  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">Task</a> completes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ContinueWith_TNewResult__Func_Task_TResult___Object__TNewResult___Object__TaskContinuationOptions__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><para>
-The returned <see cref="T:System.Threading.Tasks.Task`1"></see> will not be scheduled for execution until the current
+The returned <a href="System.Threading.Tasks.Task`1.html">Task</a> will not be scheduled for execution until the current
 task has completed, whether it completes due to running to completion successfully, faulting due
 to an unhandled exception, or exiting out early due to being canceled.
 </para>
 <para>
-The <paramref name="continuationFunction"></paramref>, when executed, should return a <see cref="T:System.Threading.Tasks.Task`1"></see>. This task&#39;s completion state will be transferred to the task returned
+The <paramref name="continuationFunction"></paramref>, when executed, should return a <a href="System.Threading.Tasks.Task`1.html">Task</a>. This task&#39;s completion state will be transferred to the task returned
 from the ContinueWith call.
 </para></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1727,9 +1724,9 @@ from the ContinueWith call.
     </thead>
     <tbody>
       <tr>
-        <td>System.Func&lt;System.Threading.Tasks.Task&lt;TResult&gt;, System.Object, TNewResult&gt;</td>
+        <td><a href="System.Func`3.html" name="System.Func">Func</a>&lt;<a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TResult&gt;, <a href="System.Object.html" name="System.Object">Object</a>, TNewResult&gt;</td>
         <td><em>continuationFunction</em></td>
-        <td><p>A function to run when the <see cref="T:System.Threading.Tasks.Task`1"></see> completes. When run, the delegate will be
+        <td><p>A function to run when the <a href="System.Threading.Tasks.Task`1.html">Task</a> completes. When run, the delegate will be
 passed the completed task and the caller-supplied state object as arguments.</p>
 </td>
       </tr>
@@ -1743,8 +1740,8 @@ passed the completed task and the caller-supplied state object as arguments.</p>
         <td><a href="System.Threading.Tasks.TaskContinuationOptions.html" name="System.Threading.Tasks.TaskContinuationOptions">TaskContinuationOptions</a></td>
         <td><em>continuationOptions</em></td>
         <td><p>Options for when the continuation is scheduled and how it behaves. This includes criteria, such
-as <a href="System.Threading.Tasks.TaskContinuationOptions.html">System.Threading.Tasks.TaskContinuationOptions.OnlyOnCanceled</a>, as
-well as execution options, such as <a href="System.Threading.Tasks.TaskContinuationOptions.html">System.Threading.Tasks.TaskContinuationOptions.ExecuteSynchronously</a>.</p>
+as <a href="System.Threading.Tasks.TaskContinuationOptions.html">OnlyOnCanceled</a>, as
+well as execution options, such as <a href="System.Threading.Tasks.TaskContinuationOptions.html">ExecuteSynchronously</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -1759,8 +1756,8 @@ well as execution options, such as <a href="System.Threading.Tasks.TaskContinuat
     </thead>
     <tbody>
       <tr>
-        <td>System.Threading.Tasks.Task&lt;TNewResult&gt;</td>
-        <td><p>A new continuation <see cref="T:System.Threading.Tasks.Task`1"></see>.</p>
+        <td><a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TNewResult&gt;</td>
+        <td><p>A new continuation <a href="System.Threading.Tasks.Task`1.html">Task</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -1770,11 +1767,11 @@ well as execution options, such as <a href="System.Threading.Tasks.TaskContinuat
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L1429">View Source</a>
       </span>
   <h4 id="ContinueWith_TNewResult__Func_Task_TResult___Object__TNewResult___Object__TaskScheduler_">ContinueWith&lt;TNewResult&gt;(Func&lt;Task&lt;TResult&gt;, Object, TNewResult&gt;, Object, TaskScheduler)</h4>
-  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> completes.</p>
+  <div class="markdown level1 summary"><p>Creates a continuation that executes when the target <a href="System.Threading.Tasks.Task`1.html">Task</a> completes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ContinueWith_TNewResult__Func_Task_TResult___Object__TNewResult___Object__TaskScheduler__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The returned <see cref="T:System.Threading.Tasks.Task`1"></see> will not be scheduled for execution until the current task has
+  <div class="markdown level1 remarks"><p>The returned <a href="System.Threading.Tasks.Task`1.html">Task</a> will not be scheduled for execution until the current task has
 completed, whether it completes due to running to completion successfully, faulting due to an
 unhandled exception, or exiting out early due to being canceled.</p>
 </div>
@@ -1793,9 +1790,9 @@ unhandled exception, or exiting out early due to being canceled.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Func&lt;System.Threading.Tasks.Task&lt;TResult&gt;, System.Object, TNewResult&gt;</td>
+        <td><a href="System.Func`3.html" name="System.Func">Func</a>&lt;<a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TResult&gt;, <a href="System.Object.html" name="System.Object">Object</a>, TNewResult&gt;</td>
         <td><em>continuationFunction</em></td>
-        <td><p>A function to run when the <see cref="T:System.Threading.Tasks.Task`1"></see> completes.  When run, the delegate will be
+        <td><p>A function to run when the <a href="System.Threading.Tasks.Task`1.html">Task</a> completes.  When run, the delegate will be
 passed the completed task and the caller-supplied state object as arguments.</p>
 </td>
       </tr>
@@ -1808,7 +1805,7 @@ passed the completed task and the caller-supplied state object as arguments.</p>
       <tr>
         <td><a href="System.Threading.Tasks.TaskScheduler.html" name="System.Threading.Tasks.TaskScheduler">TaskScheduler</a></td>
         <td><em>scheduler</em></td>
-        <td><p>The <a href="System.Threading.Tasks.TaskScheduler.html">System.Threading.Tasks.TaskScheduler</a> to associate with the continuation task and to use for its execution.</p>
+        <td><p>The <a href="System.Threading.Tasks.TaskScheduler.html">TaskScheduler</a> to associate with the continuation task and to use for its execution.</p>
 </td>
       </tr>
     </tbody>
@@ -1823,8 +1820,8 @@ passed the completed task and the caller-supplied state object as arguments.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Threading.Tasks.Task&lt;TNewResult&gt;</td>
-        <td><p>A new continuation <see cref="T:System.Threading.Tasks.Task`1"></see>.</p>
+        <td><a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TNewResult&gt;</td>
+        <td><p>A new continuation <a href="System.Threading.Tasks.Task`1.html">Task</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -1834,7 +1831,7 @@ passed the completed task and the caller-supplied state object as arguments.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/future.cs/#L692">View Source</a>
       </span>
   <h4 id="GetAwaiter__">GetAwaiter()</h4>
-  <div class="markdown level1 summary"><p>Gets an awaiter used to await this <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a>.</p>
+  <div class="markdown level1 summary"><p>Gets an awaiter used to await this <a href="System.Threading.Tasks.Task`1.html">Task</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="GetAwaiter___remarks">Remarks</h5>
@@ -1854,7 +1851,7 @@ passed the completed task and the caller-supplied state object as arguments.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Runtime.CompilerServices.TaskAwaiter&lt;TResult&gt;</td>
+        <td><a href="System.Runtime.CompilerServices.TaskAwaiter`1.html" name="System.Runtime.CompilerServices.TaskAwaiter">TaskAwaiter</a>&lt;TResult&gt;</td>
         <td><p>An awaiter instance.</p>
 </td>
       </tr>

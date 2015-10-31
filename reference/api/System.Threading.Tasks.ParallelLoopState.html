@@ -60,7 +60,7 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="ParallelLoopState">Class ParallelLoopState</h1>
-      <div class="markdown level0 summary"><p>Enables iterations of <a href="System.Threading.Tasks.Parallel.html">System.Threading.Tasks.Parallel</a> loops to interact with
+      <div class="markdown level0 summary"><p>Enables iterations of <a href="System.Threading.Tasks.Parallel.html">Parallel</a> loops to interact with
 other iterations.</p>
 </div>
       <div class="markdown level0 conceptual"></div>
@@ -109,7 +109,7 @@ iteration.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/ParallelLoopState.cs/#L72">View Source</a>
       </span>
   <h4 id="IsStopped">IsStopped</h4>
-  <div class="markdown level1 summary"><p>Gets whether any iteration of the loop has called <a href="System.Threading.Tasks.ParallelLoopState.html">System.Threading.Tasks.ParallelLoopState.Stop</a>.</p>
+  <div class="markdown level1 summary"><p>Gets whether any iteration of the loop has called <a href="System.Threading.Tasks.ParallelLoopState.html">Stop()</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -136,11 +136,11 @@ iteration.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/ParallelLoopState.cs/#L111">View Source</a>
       </span>
   <h4 id="LowestBreakIteration">LowestBreakIteration</h4>
-  <div class="markdown level1 summary"><p>Gets the lowest iteration of the loop from which <a href="System.Threading.Tasks.ParallelLoopState.html">System.Threading.Tasks.ParallelLoopState.Break</a> was called.</p>
+  <div class="markdown level1 summary"><p>Gets the lowest iteration of the loop from which <a href="System.Threading.Tasks.ParallelLoopState.html">Break()</a> was called.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="LowestBreakIteration_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If no iteration of the loop called <see cref="M:System.Threading.Tasks.ParallelLoopState.Break"></see>, this property will return null.</p>
+  <div class="markdown level1 remarks"><p>If no iteration of the loop called <a href="System.Threading.Tasks.ParallelLoopState.html">Break()</a>, this property will return null.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -156,7 +156,7 @@ iteration.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Nullable&lt;System.Int64&gt;</td>
+        <td><a href="System.Nullable`1.html" name="System.Nullable">Nullable</a>&lt;<a href="System.Int64.html" name="System.Int64">Int64</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -171,12 +171,12 @@ on requests made by this or other iterations.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ShouldExitCurrentIteration_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>When an iteration of a loop calls <a href="System.Threading.Tasks.ParallelLoopState.html">System.Threading.Tasks.ParallelLoopState.Break</a> or <a href="System.Threading.Tasks.ParallelLoopState.html">System.Threading.Tasks.ParallelLoopState.Stop</a>, or
-when one throws an exception, or when the loop is canceled, the <a href="System.Threading.Tasks.Parallel.html">System.Threading.Tasks.Parallel</a> class will proactively
+  <div class="markdown level1 remarks"><p>When an iteration of a loop calls <a href="System.Threading.Tasks.ParallelLoopState.html">Break()</a> or <a href="System.Threading.Tasks.ParallelLoopState.html">Stop()</a>, or
+when one throws an exception, or when the loop is canceled, the <a href="System.Threading.Tasks.Parallel.html">Parallel</a> class will proactively
 attempt to prohibit additional iterations of the loop from starting execution.
 However, there may be cases where it is unable to prevent additional iterations from starting.
 It may also be the case that a long-running iteration has already begun execution.  In such
-cases, iterations may explicitly check the <a href="System.Threading.Tasks.ParallelLoopState.html">System.Threading.Tasks.ParallelLoopState.ShouldExitCurrentIteration</a> property and
+cases, iterations may explicitly check the <a href="System.Threading.Tasks.ParallelLoopState.html">ShouldExitCurrentIteration</a> property and
 cease execution if the property returns true.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -204,24 +204,22 @@ cease execution if the property returns true.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/ParallelLoopState.cs/#L178">View Source</a>
       </span>
   <h4 id="Break__">Break()</h4>
-  <div class="markdown level1 summary"><p>Communicates that the <a href="System.Threading.Tasks.Parallel.html">System.Threading.Tasks.Parallel</a> loop should cease execution at the system&#39;s earliest
+  <div class="markdown level1 summary"><p>Communicates that the <a href="System.Threading.Tasks.Parallel.html">Parallel</a> loop should cease execution at the system&#39;s earliest
 convenience of iterations beyond the current iteration.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Break___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><para>
-<see cref="M:System.Threading.Tasks.ParallelLoopState.Break"></see> may be used to communicate to the loop that no other iterations after the
-current iteration need be run. For example, if <see cref="M:System.Threading.Tasks.ParallelLoopState.Break"></see> is called from the 100th
+  <div class="markdown level1 remarks"><p><para><a href="System.Threading.Tasks.ParallelLoopState.html">Break()</a> may be used to communicate to the loop that no other iterations after the
+current iteration need be run. For example, if <a href="System.Threading.Tasks.ParallelLoopState.html">Break()</a> is called from the 100th
 iteration of a for loop iterating in parallel from 0 to 1000, all iterations less than 100 should
 still be run, but the iterations from 101 through to 1000 are not necessary.
-</para>
+</para></p>
 <para>
-For long-running iterations that may already be executing, <see cref="M:System.Threading.Tasks.ParallelLoopState.Break"></see> causes <see cref="P:System.Threading.Tasks.ParallelLoopState.LowestBreakIteration"></see>
+For long-running iterations that may already be executing, <a href="System.Threading.Tasks.ParallelLoopState.html">Break()</a> causes <a href="System.Threading.Tasks.ParallelLoopState.html">LowestBreakIteration</a>
 to be set to the current iteration&#39;s index if the current index is less than the current value of
-<see cref="P:System.Threading.Tasks.ParallelLoopState.LowestBreakIteration"></see>.
+<a href="System.Threading.Tasks.ParallelLoopState.html">LowestBreakIteration</a>.
 </para>
-<para>
-<see cref="M:System.Threading.Tasks.ParallelLoopState.Break"></see> is typically employed in search-based algorithms where an ordering is
+<para><a href="System.Threading.Tasks.ParallelLoopState.html">Break()</a> is typically employed in search-based algorithms where an ordering is
 present in the data source.
 </para></div>
   <h5 class="decalaration">Declaration</h5>
@@ -233,20 +231,19 @@ present in the data source.
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/ParallelLoopState.cs/#L139">View Source</a>
       </span>
   <h4 id="Stop__">Stop()</h4>
-  <div class="markdown level1 summary"><p>Communicates that the <a href="System.Threading.Tasks.Parallel.html">System.Threading.Tasks.Parallel</a> loop should cease execution at the system&#39;s earliest
+  <div class="markdown level1 summary"><p>Communicates that the <a href="System.Threading.Tasks.Parallel.html">Parallel</a> loop should cease execution at the system&#39;s earliest
 convenience.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Stop___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><para>
-<see cref="M:System.Threading.Tasks.ParallelLoopState.Stop"></see> may be used to communicate to the loop that no other iterations need be run.
-For long-running iterations that may already be executing, <see cref="M:System.Threading.Tasks.ParallelLoopState.Stop"></see> causes <see cref="P:System.Threading.Tasks.ParallelLoopState.IsStopped"></see>
-to return true for all other iterations of the loop, such that another iteration may check <see cref="P:System.Threading.Tasks.ParallelLoopState.IsStopped"></see> and exit early if it&#39;s observed to be true.
+  <div class="markdown level1 remarks"><p><para><a href="System.Threading.Tasks.ParallelLoopState.html">Stop()</a> may be used to communicate to the loop that no other iterations need be run.
+For long-running iterations that may already be executing, <a href="System.Threading.Tasks.ParallelLoopState.html">Stop()</a> causes <a href="System.Threading.Tasks.ParallelLoopState.html">IsStopped</a>
+to return true for all other iterations of the loop, such that another iteration may check <a href="System.Threading.Tasks.ParallelLoopState.html">IsStopped</a> and exit early if it&#39;s observed to be true.
 </para>
-<para>
-<see cref="M:System.Threading.Tasks.ParallelLoopState.Stop"></see> is typically employed in search-based algorithms, where once a result is found,
+<para><a href="System.Threading.Tasks.ParallelLoopState.html">Stop()</a> is typically employed in search-based algorithms, where once a result is found,
 no other iterations need be executed.
-</para></div>
+</para></p>
+</div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Stop()</code></pre>

@@ -75,9 +75,9 @@
         <pre><code class="lang-csharp hljs">public class CountdownEvent : IDisposable</code></pre>
       </div>
       <h5 id="CountdownEvent_remarks"><strong>Remarks<strong></strong></strong></h5>
-      <div class="markdown level0 remarks"><p>All public and protected members of <see cref="T:System.Threading.CountdownEvent"></see> are thread-safe and may be used
+      <div class="markdown level0 remarks"><p>All public and protected members of <a href="System.Threading.CountdownEvent.html">CountdownEvent</a> are thread-safe and may be used
 concurrently from multiple threads, with the exception of Dispose, which
-must only be used when all other operations on the <see cref="T:System.Threading.CountdownEvent"></see> have
+must only be used when all other operations on the <a href="System.Threading.CountdownEvent.html">CountdownEvent</a> have
 completed, and Reset, which should only be used when no other threads are
 accessing the event.</p>
 </div>
@@ -87,7 +87,7 @@ accessing the event.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L57">View Source</a>
       </span>
   <h4 id="CountdownEvent_Int32_">CountdownEvent(Int32)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a> class with the
+  <div class="markdown level1 summary"><p>Initializes a new instance of <a href="System.Threading.CountdownEvent.html">CountdownEvent</a> class with the
 specified count.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -108,7 +108,7 @@ specified count.</p>
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
         <td><em>initialCount</em></td>
-        <td><p>The number of signals required to set the <see cref="T:System.Threading.CountdownEvent"></see>.</p>
+        <td><p>The number of signals required to set the <a href="System.Threading.CountdownEvent.html">CountdownEvent</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -200,13 +200,13 @@ specified count.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L129">View Source</a>
       </span>
   <h4 id="WaitHandle">WaitHandle</h4>
-  <div class="markdown level1 summary"><p>Gets a <a href="System.Threading.WaitHandle.html">System.Threading.WaitHandle</a> that is used to wait for the event to be set.</p>
+  <div class="markdown level1 summary"><p>Gets a <a href="System.Threading.WaitHandle.html">WaitHandle</a> that is used to wait for the event to be set.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="WaitHandle_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p><a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent.WaitHandle</a> should only be used if it&#39;s needed for integration with code bases
-that rely on having a WaitHandle.  If all that&#39;s needed is to wait for the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a>
-to be set, the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent.Wait</a> method should be preferred.</p>
+  <div class="markdown level1 remarks"><p><a href="System.Threading.CountdownEvent.html">WaitHandle</a> should only be used if it&#39;s needed for integration with code bases
+that rely on having a WaitHandle.  If all that&#39;s needed is to wait for the <a href="System.Threading.CountdownEvent.html">CountdownEvent</a>
+to be set, the <a href="System.Threading.CountdownEvent.html">Wait()</a> method should be preferred.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -233,7 +233,7 @@ to be set, the <a href="System.Threading.CountdownEvent.html">System.Threading.C
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L283">View Source</a>
       </span>
   <h4 id="AddCount__">AddCount()</h4>
-  <div class="markdown level1 summary"><p>Increments the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a>&#39;s current count by one.</p>
+  <div class="markdown level1 summary"><p>Increments the <a href="System.Threading.CountdownEvent.html">CountdownEvent</a>&#39;s current count by one.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -245,7 +245,7 @@ to be set, the <a href="System.Threading.CountdownEvent.html">System.Threading.C
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L315">View Source</a>
       </span>
   <h4 id="AddCount_Int32_">AddCount(Int32)</h4>
-  <div class="markdown level1 summary"><p>Increments the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a>&#39;s current count by a specified
+  <div class="markdown level1 summary"><p>Increments the <a href="System.Threading.CountdownEvent.html">CountdownEvent</a>&#39;s current count by a specified
 value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -266,7 +266,7 @@ value.</p>
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
         <td><em>signalCount</em></td>
-        <td><p>The value by which to increase <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent.CurrentCount</a>.</p>
+        <td><p>The value by which to increase <a href="System.Threading.CountdownEvent.html">CurrentCount</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -276,11 +276,11 @@ value.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L145">View Source</a>
       </span>
   <h4 id="Dispose__">Dispose()</h4>
-  <div class="markdown level1 summary"><p>Releases all resources used by the current instance of <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a>.</p>
+  <div class="markdown level1 summary"><p>Releases all resources used by the current instance of <a href="System.Threading.CountdownEvent.html">CountdownEvent</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Dispose___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Unlike most of the members of <see cref="T:System.Threading.CountdownEvent"></see>, <see cref="M:System.Threading.CountdownEvent.Dispose"></see> is not
+  <div class="markdown level1 remarks"><p>Unlike most of the members of <a href="System.Threading.CountdownEvent.html">CountdownEvent</a>, <a href="System.Threading.CountdownEvent.html">Dispose()</a> is not
 thread-safe and may not be used concurrently with other members of this instance.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -293,11 +293,11 @@ thread-safe and may not be used concurrently with other members of this instance
       </span>
   <h4 id="Dispose_Boolean_">Dispose(Boolean)</h4>
   <div class="markdown level1 summary"><p>When overridden in a derived class, releases the unmanaged resources used by the
-<a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a>, and optionally releases the managed resources.</p>
+<a href="System.Threading.CountdownEvent.html">CountdownEvent</a>, and optionally releases the managed resources.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Dispose_Boolean__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Unlike most of the members of <see cref="T:System.Threading.CountdownEvent"></see>, <see cref="M:System.Threading.CountdownEvent.Dispose"></see> is not
+  <div class="markdown level1 remarks"><p>Unlike most of the members of <a href="System.Threading.CountdownEvent.html">CountdownEvent</a>, <a href="System.Threading.CountdownEvent.html">Dispose()</a> is not
 thread-safe and may not be used concurrently with other members of this instance.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -328,11 +328,11 @@ only unmanaged resources.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L388">View Source</a>
       </span>
   <h4 id="Reset__">Reset()</h4>
-  <div class="markdown level1 summary"><p>Resets the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent.CurrentCount</a> to the value of <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent.InitialCount</a>.</p>
+  <div class="markdown level1 summary"><p>Resets the <a href="System.Threading.CountdownEvent.html">CurrentCount</a> to the value of <a href="System.Threading.CountdownEvent.html">InitialCount</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Reset___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Unlike most of the members of <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a>, Reset is not
+  <div class="markdown level1 remarks"><p>Unlike most of the members of <a href="System.Threading.CountdownEvent.html">CountdownEvent</a>, Reset is not
 thread-safe and may not be used concurrently with other members of this instance.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -344,11 +344,11 @@ thread-safe and may not be used concurrently with other members of this instance
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L405">View Source</a>
       </span>
   <h4 id="Reset_Int32_">Reset(Int32)</h4>
-  <div class="markdown level1 summary"><p>Resets the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent.CurrentCount</a> to a specified value.</p>
+  <div class="markdown level1 summary"><p>Resets the <a href="System.Threading.CountdownEvent.html">CurrentCount</a> to a specified value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Reset_Int32__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Unlike most of the members of <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a>, Reset is not
+  <div class="markdown level1 remarks"><p>Unlike most of the members of <a href="System.Threading.CountdownEvent.html">CountdownEvent</a>, Reset is not
 thread-safe and may not be used concurrently with other members of this instance.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -368,7 +368,7 @@ thread-safe and may not be used concurrently with other members of this instance
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
         <td><em>count</em></td>
-        <td><p>The number of signals required to set the <see cref="T:System.Threading.CountdownEvent"></see>.</p>
+        <td><p>The number of signals required to set the <a href="System.Threading.CountdownEvent.html">CountdownEvent</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -378,7 +378,7 @@ thread-safe and may not be used concurrently with other members of this instance
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L185">View Source</a>
       </span>
   <h4 id="Signal__">Signal()</h4>
-  <div class="markdown level1 summary"><p>Registers a signal with the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a>, decrementing its
+  <div class="markdown level1 summary"><p>Registers a signal with the <a href="System.Threading.CountdownEvent.html">CountdownEvent</a>, decrementing its
 count.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -408,7 +408,7 @@ false.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L227">View Source</a>
       </span>
   <h4 id="Signal_Int32_">Signal(Int32)</h4>
-  <div class="markdown level1 summary"><p>Registers multiple signals with the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a>,
+  <div class="markdown level1 summary"><p>Registers multiple signals with the <a href="System.Threading.CountdownEvent.html">CountdownEvent</a>,
 decrementing its count by the specified amount.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -456,7 +456,7 @@ false.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L297">View Source</a>
       </span>
   <h4 id="TryAddCount__">TryAddCount()</h4>
-  <div class="markdown level1 summary"><p>Attempts to increment the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a>&#39;s current count by one.</p>
+  <div class="markdown level1 summary"><p>Attempts to increment the <a href="System.Threading.CountdownEvent.html">CountdownEvent</a>&#39;s current count by one.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -474,7 +474,7 @@ false.</p>
     <tbody>
       <tr>
         <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-        <td><p>true if the increment succeeded; otherwise, false. If <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent.CurrentCount</a> is
+        <td><p>true if the increment succeeded; otherwise, false. If <a href="System.Threading.CountdownEvent.html">CurrentCount</a> is
 already at zero. this will return false.</p>
 </td>
       </tr>
@@ -485,7 +485,7 @@ already at zero. this will return false.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L338">View Source</a>
       </span>
   <h4 id="TryAddCount_Int32_">TryAddCount(Int32)</h4>
-  <div class="markdown level1 summary"><p>Attempts to increment the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a>&#39;s current count by a
+  <div class="markdown level1 summary"><p>Attempts to increment the <a href="System.Threading.CountdownEvent.html">CountdownEvent</a>&#39;s current count by a
 specified value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -506,7 +506,7 @@ specified value.</p>
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
         <td><em>signalCount</em></td>
-        <td><p>The value by which to increase <see cref="P:System.Threading.CountdownEvent.CurrentCount"></see>.</p>
+        <td><p>The value by which to increase <a href="System.Threading.CountdownEvent.html">CurrentCount</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -522,7 +522,7 @@ specified value.</p>
     <tbody>
       <tr>
         <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-        <td><p>true if the increment succeeded; otherwise, false. If <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent.CurrentCount</a> is
+        <td><p>true if the increment succeeded; otherwise, false. If <a href="System.Threading.CountdownEvent.html">CurrentCount</a> is
 already at zero this will return false.</p>
 </td>
       </tr>
@@ -533,7 +533,7 @@ already at zero this will return false.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L436">View Source</a>
       </span>
   <h4 id="Wait__">Wait()</h4>
-  <div class="markdown level1 summary"><p>Blocks the current thread until the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a> is set.</p>
+  <div class="markdown level1 summary"><p>Blocks the current thread until the <a href="System.Threading.CountdownEvent.html">CountdownEvent</a> is set.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Wait___remarks">Remarks</h5>
@@ -549,7 +549,7 @@ return immediately if the event is currently in a set state.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L531">View Source</a>
       </span>
   <h4 id="Wait_Int32_">Wait(Int32)</h4>
-  <div class="markdown level1 summary"><p>Blocks the current thread until the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a> is set, using a
+  <div class="markdown level1 summary"><p>Blocks the current thread until the <a href="System.Threading.CountdownEvent.html">CountdownEvent</a> is set, using a
 32-bit signed integer to measure the time interval.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -570,7 +570,7 @@ return immediately if the event is currently in a set state.</p>
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
         <td><em>millisecondsTimeout</em></td>
-        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a>(-1) to wait indefinitely.</p>
+        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">Infinite</a>(-1) to wait indefinitely.</p>
 </td>
       </tr>
     </tbody>
@@ -586,7 +586,7 @@ return immediately if the event is currently in a set state.</p>
     <tbody>
       <tr>
         <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-        <td><p>true if the <see cref="T:System.Threading.CountdownEvent"></see> was set; otherwise,
+        <td><p>true if the <a href="System.Threading.CountdownEvent.html">CountdownEvent</a> was set; otherwise,
 false.</p>
 </td>
       </tr>
@@ -597,9 +597,9 @@ false.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L553">View Source</a>
       </span>
   <h4 id="Wait_Int32__CancellationToken_">Wait(Int32, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Blocks the current thread until the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a> is set, using a
+  <div class="markdown level1 summary"><p>Blocks the current thread until the <a href="System.Threading.CountdownEvent.html">CountdownEvent</a> is set, using a
 32-bit signed integer to measure the time interval, while observing a
-<a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a>.</p>
+<a href="System.Threading.CancellationToken.html">CancellationToken</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -619,13 +619,13 @@ false.</p>
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
         <td><em>millisecondsTimeout</em></td>
-        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a>(-1) to wait indefinitely.</p>
+        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">Infinite</a>(-1) to wait indefinitely.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
         <td><em>cancellationToken</em></td>
-        <td><p>The <see cref="T:System.Threading.CancellationToken"></see> to
+        <td><p>The <a href="System.Threading.CancellationToken.html">CancellationToken</a> to
 observe.</p>
 </td>
       </tr>
@@ -642,7 +642,7 @@ observe.</p>
     <tbody>
       <tr>
         <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-        <td><p>true if the <see cref="T:System.Threading.CountdownEvent"></see> was set; otherwise,
+        <td><p>true if the <a href="System.Threading.CountdownEvent.html">CountdownEvent</a> was set; otherwise,
 false.</p>
 </td>
       </tr>
@@ -653,15 +653,15 @@ false.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L459">View Source</a>
       </span>
   <h4 id="Wait_CancellationToken_">Wait(CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Blocks the current thread until the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a> is set, while
-observing a <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a>.</p>
+  <div class="markdown level1 summary"><p>Blocks the current thread until the <a href="System.Threading.CountdownEvent.html">CountdownEvent</a> is set, while
+observing a <a href="System.Threading.CancellationToken.html">CancellationToken</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Wait_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The caller of this method blocks indefinitely until the current instance is set. The caller will
-return immediately if the event is currently in a set state.  If the</p>
-<p><see cref="T:System.Threading.CancellationToken">CancellationToken</see> being observed
-is canceled during the wait operation, an <see cref="T:System.OperationCanceledException"></see>
+return immediately if the event is currently in a set state.  If the
+<a href="System.Threading.CancellationToken.html">CancellationToken</a> being observed
+is canceled during the wait operation, an <a href="System.OperationCanceledException.html">OperationCanceledException</a>
 will be thrown.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -681,7 +681,7 @@ will be thrown.</p>
       <tr>
         <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
         <td><em>cancellationToken</em></td>
-        <td><p>The <see cref="T:System.Threading.CancellationToken"></see> to
+        <td><p>The <a href="System.Threading.CancellationToken.html">CancellationToken</a> to
 observe.</p>
 </td>
       </tr>
@@ -692,8 +692,8 @@ observe.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L478">View Source</a>
       </span>
   <h4 id="Wait_TimeSpan_">Wait(TimeSpan)</h4>
-  <div class="markdown level1 summary"><p>Blocks the current thread until the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a> is set, using a
-<a href="System.TimeSpan.html">System.TimeSpan</a> to measure the time interval.</p>
+  <div class="markdown level1 summary"><p>Blocks the current thread until the <a href="System.Threading.CountdownEvent.html">CountdownEvent</a> is set, using a
+<a href="System.TimeSpan.html">TimeSpan</a> to measure the time interval.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -713,8 +713,8 @@ observe.</p>
       <tr>
         <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
         <td><em>timeout</em></td>
-        <td><p>A <see cref="T:System.TimeSpan"></see> that represents the number of
-milliseconds to wait, or a <see cref="T:System.TimeSpan"></see> that represents -1 milliseconds to
+        <td><p>A <a href="System.TimeSpan.html">TimeSpan</a> that represents the number of
+milliseconds to wait, or a <a href="System.TimeSpan.html">TimeSpan</a> that represents -1 milliseconds to
 wait indefinitely.</p>
 </td>
       </tr>
@@ -731,7 +731,7 @@ wait indefinitely.</p>
     <tbody>
       <tr>
         <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-        <td><p>true if the <see cref="T:System.Threading.CountdownEvent"></see> was set; otherwise,
+        <td><p>true if the <a href="System.Threading.CountdownEvent.html">CountdownEvent</a> was set; otherwise,
 false.</p>
 </td>
       </tr>
@@ -742,9 +742,9 @@ false.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CountdownEvent.cs/#L508">View Source</a>
       </span>
   <h4 id="Wait_TimeSpan__CancellationToken_">Wait(TimeSpan, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Blocks the current thread until the <a href="System.Threading.CountdownEvent.html">System.Threading.CountdownEvent</a> is set, using
-a <a href="System.TimeSpan.html">System.TimeSpan</a> to measure the time interval, while observing a
-<a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a>.</p>
+  <div class="markdown level1 summary"><p>Blocks the current thread until the <a href="System.Threading.CountdownEvent.html">CountdownEvent</a> is set, using
+a <a href="System.TimeSpan.html">TimeSpan</a> to measure the time interval, while observing a
+<a href="System.Threading.CancellationToken.html">CancellationToken</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -764,15 +764,15 @@ a <a href="System.TimeSpan.html">System.TimeSpan</a> to measure the time interva
       <tr>
         <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
         <td><em>timeout</em></td>
-        <td><p>A <see cref="T:System.TimeSpan"></see> that represents the number of
-milliseconds to wait, or a <see cref="T:System.TimeSpan"></see> that represents -1 milliseconds to
+        <td><p>A <a href="System.TimeSpan.html">TimeSpan</a> that represents the number of
+milliseconds to wait, or a <a href="System.TimeSpan.html">TimeSpan</a> that represents -1 milliseconds to
 wait indefinitely.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
         <td><em>cancellationToken</em></td>
-        <td><p>The <see cref="T:System.Threading.CancellationToken"></see> to
+        <td><p>The <a href="System.Threading.CancellationToken.html">CancellationToken</a> to
 observe.</p>
 </td>
       </tr>
@@ -789,7 +789,7 @@ observe.</p>
     <tbody>
       <tr>
         <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-        <td><p>true if the <see cref="T:System.Threading.CountdownEvent"></see> was set; otherwise,
+        <td><p>true if the <a href="System.Threading.CountdownEvent.html">CountdownEvent</a> was set; otherwise,
 false.</p>
 </td>
       </tr>

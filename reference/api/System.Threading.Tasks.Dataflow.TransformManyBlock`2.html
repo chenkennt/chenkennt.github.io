@@ -60,7 +60,7 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="TransformManyBlock_TInput__TOutput_">Class TransformManyBlock&lt;TInput, TOutput&gt;</h1>
-      <div class="markdown level0 summary"><p>Provides a dataflow block that invokes a provided <a href="System.Func`2.html">System.Func`2</a> delegate for every data element received.</p>
+      <div class="markdown level0 summary"><p>Provides a dataflow block that invokes a provided <a href="System.Func`2.html">Func</a> delegate for every data element received.</p>
 </div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
@@ -80,7 +80,7 @@
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/TransformManyBlock.cs/#L46">View Source</a>
       </span>
   <h4 id="TransformManyBlock_Func_TInput__IEnumerable_TOutput___">TransformManyBlock(Func&lt;TInput, IEnumerable&lt;TOutput&gt;&gt;)</h4>
-  <div class="markdown level1 summary"><p>Initializes the <a href="System.Threading.Tasks.Dataflow.TransformManyBlock`2.html">System.Threading.Tasks.Dataflow.TransformManyBlock`2</a> with the specified function.</p>
+  <div class="markdown level1 summary"><p>Initializes the <a href="System.Threading.Tasks.Dataflow.TransformManyBlock`2.html">TransformManyBlock</a> with the specified function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -98,10 +98,10 @@
     </thead>
     <tbody>
       <tr>
-        <td>System.Func&lt;TInput, System.Collections.Generic.IEnumerable&lt;TOutput&gt;&gt;</td>
+        <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;TInput, <a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;TOutput&gt;&gt;</td>
         <td><em>transform</em></td>
-        <td><p>The function to invoke with each data element received.  All of the data from the returned <see cref="T:System.Collections.Generic.IEnumerable`1"></see>
-will be made available as output from this <see cref="T:System.Threading.Tasks.Dataflow.TransformManyBlock`2"></see>.</p>
+        <td><p>The function to invoke with each data element received.  All of the data from the returned <a href="System.Collections.Generic.IEnumerable`1.html">IEnumerable</a>
+will be made available as output from this <a href="System.Threading.Tasks.Dataflow.TransformManyBlock`2.html">TransformManyBlock</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -111,7 +111,7 @@ will be made available as output from this <see cref="T:System.Threading.Tasks.D
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/TransformManyBlock.cs/#L59">View Source</a>
       </span>
   <h4 id="TransformManyBlock_Func_TInput__IEnumerable_TOutput____ExecutionDataflowBlockOptions_">TransformManyBlock(Func&lt;TInput, IEnumerable&lt;TOutput&gt;&gt;, ExecutionDataflowBlockOptions)</h4>
-  <div class="markdown level1 summary"><p>Initializes the <a href="System.Threading.Tasks.Dataflow.TransformManyBlock`2.html">System.Threading.Tasks.Dataflow.TransformManyBlock`2</a> with the specified function and <a href="System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions.html">System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions</a>.</p>
+  <div class="markdown level1 summary"><p>Initializes the <a href="System.Threading.Tasks.Dataflow.TransformManyBlock`2.html">TransformManyBlock</a> with the specified function and <a href="System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions.html">ExecutionDataflowBlockOptions</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -129,16 +129,16 @@ will be made available as output from this <see cref="T:System.Threading.Tasks.D
     </thead>
     <tbody>
       <tr>
-        <td>System.Func&lt;TInput, System.Collections.Generic.IEnumerable&lt;TOutput&gt;&gt;</td>
+        <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;TInput, <a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;TOutput&gt;&gt;</td>
         <td><em>transform</em></td>
-        <td><p>The function to invoke with each data element received.  All of the data from the returned in the <see cref="T:System.Collections.Generic.IEnumerable`1"></see>
-will be made available as output from this <see cref="T:System.Threading.Tasks.Dataflow.TransformManyBlock`2"></see>.</p>
+        <td><p>The function to invoke with each data element received.  All of the data from the returned in the <a href="System.Collections.Generic.IEnumerable`1.html">IEnumerable</a>
+will be made available as output from this <a href="System.Threading.Tasks.Dataflow.TransformManyBlock`2.html">TransformManyBlock</a>.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions.html" name="System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions">ExecutionDataflowBlockOptions</a></td>
         <td><em>dataflowBlockOptions</em></td>
-        <td><p>The options with which to configure this <see cref="T:System.Threading.Tasks.Dataflow.TransformManyBlock`2"></see>.</p>
+        <td><p>The options with which to configure this <a href="System.Threading.Tasks.Dataflow.TransformManyBlock`2.html">TransformManyBlock</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -148,7 +148,7 @@ will be made available as output from this <see cref="T:System.Threading.Tasks.D
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/TransformManyBlock.cs/#L70">View Source</a>
       </span>
   <h4 id="TransformManyBlock_Func_TInput__Task_IEnumerable_TOutput____">TransformManyBlock(Func&lt;TInput, Task&lt;IEnumerable&lt;TOutput&gt;&gt;&gt;)</h4>
-  <div class="markdown level1 summary"><p>Initializes the <a href="System.Threading.Tasks.Dataflow.TransformManyBlock`2.html">System.Threading.Tasks.Dataflow.TransformManyBlock`2</a> with the specified function.</p>
+  <div class="markdown level1 summary"><p>Initializes the <a href="System.Threading.Tasks.Dataflow.TransformManyBlock`2.html">TransformManyBlock</a> with the specified function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -166,10 +166,10 @@ will be made available as output from this <see cref="T:System.Threading.Tasks.D
     </thead>
     <tbody>
       <tr>
-        <td>System.Func&lt;TInput, System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;TOutput&gt;&gt;&gt;</td>
+        <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;TInput, <a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;<a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;TOutput&gt;&gt;&gt;</td>
         <td><em>transform</em></td>
-        <td><p>The function to invoke with each data element received. All of the data asynchronously returned in the <see cref="T:System.Collections.Generic.IEnumerable`1"></see>
-will be made available as output from this <see cref="T:System.Threading.Tasks.Dataflow.TransformManyBlock`2"></see>.</p>
+        <td><p>The function to invoke with each data element received. All of the data asynchronously returned in the <a href="System.Collections.Generic.IEnumerable`1.html">IEnumerable</a>
+will be made available as output from this <a href="System.Threading.Tasks.Dataflow.TransformManyBlock`2.html">TransformManyBlock</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -179,7 +179,7 @@ will be made available as output from this <see cref="T:System.Threading.Tasks.D
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Blocks/TransformManyBlock.cs/#L83">View Source</a>
       </span>
   <h4 id="TransformManyBlock_Func_TInput__Task_IEnumerable_TOutput_____ExecutionDataflowBlockOptions_">TransformManyBlock(Func&lt;TInput, Task&lt;IEnumerable&lt;TOutput&gt;&gt;&gt;, ExecutionDataflowBlockOptions)</h4>
-  <div class="markdown level1 summary"><p>Initializes the <a href="System.Threading.Tasks.Dataflow.TransformManyBlock`2.html">System.Threading.Tasks.Dataflow.TransformManyBlock`2</a> with the specified function and <a href="System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions.html">System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions</a>.</p>
+  <div class="markdown level1 summary"><p>Initializes the <a href="System.Threading.Tasks.Dataflow.TransformManyBlock`2.html">TransformManyBlock</a> with the specified function and <a href="System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions.html">ExecutionDataflowBlockOptions</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -197,16 +197,16 @@ will be made available as output from this <see cref="T:System.Threading.Tasks.D
     </thead>
     <tbody>
       <tr>
-        <td>System.Func&lt;TInput, System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;TOutput&gt;&gt;&gt;</td>
+        <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;TInput, <a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;<a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;TOutput&gt;&gt;&gt;</td>
         <td><em>transform</em></td>
-        <td><p>The function to invoke with each data element received. All of the data asynchronously returned in the <see cref="T:System.Collections.Generic.IEnumerable`1"></see>
-will be made available as output from this <see cref="T:System.Threading.Tasks.Dataflow.TransformManyBlock`2"></see>.</p>
+        <td><p>The function to invoke with each data element received. All of the data asynchronously returned in the <a href="System.Collections.Generic.IEnumerable`1.html">IEnumerable</a>
+will be made available as output from this <a href="System.Threading.Tasks.Dataflow.TransformManyBlock`2.html">TransformManyBlock</a>.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions.html" name="System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions">ExecutionDataflowBlockOptions</a></td>
         <td><em>dataflowBlockOptions</em></td>
-        <td><p>The options with which to configure this <see cref="T:System.Threading.Tasks.Dataflow.TransformManyBlock`2"></see>.</p>
+        <td><p>The options with which to configure this <a href="System.Threading.Tasks.Dataflow.TransformManyBlock`2.html">TransformManyBlock</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -324,7 +324,7 @@ will be made available as output from this <see cref="T:System.Threading.Tasks.D
     </thead>
     <tbody>
       <tr>
-        <td>System.Threading.Tasks.Dataflow.ITargetBlock&lt;TOutput&gt;</td>
+        <td><a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html" name="System.Threading.Tasks.Dataflow.ITargetBlock">ITargetBlock</a>&lt;TOutput&gt;</td>
         <td><em>target</em></td>
         <td></td>
       </tr>
@@ -405,7 +405,7 @@ will be made available as output from this <see cref="T:System.Threading.Tasks.D
         <td></td>
       </tr>
       <tr>
-        <td>System.Threading.Tasks.Dataflow.ITargetBlock&lt;TOutput&gt;</td>
+        <td><a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html" name="System.Threading.Tasks.Dataflow.ITargetBlock">ITargetBlock</a>&lt;TOutput&gt;</td>
         <td><em>target</em></td>
         <td></td>
       </tr>
@@ -458,7 +458,7 @@ will be made available as output from this <see cref="T:System.Threading.Tasks.D
         <td></td>
       </tr>
       <tr>
-        <td>System.Threading.Tasks.Dataflow.ITargetBlock&lt;TOutput&gt;</td>
+        <td><a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html" name="System.Threading.Tasks.Dataflow.ITargetBlock">ITargetBlock</a>&lt;TOutput&gt;</td>
         <td><em>target</em></td>
         <td></td>
       </tr>
@@ -491,7 +491,7 @@ will be made available as output from this <see cref="T:System.Threading.Tasks.D
         <td></td>
       </tr>
       <tr>
-        <td>System.Threading.Tasks.Dataflow.ITargetBlock&lt;TOutput&gt;</td>
+        <td><a href="System.Threading.Tasks.Dataflow.ITargetBlock`1.html" name="System.Threading.Tasks.Dataflow.ITargetBlock">ITargetBlock</a>&lt;TOutput&gt;</td>
         <td><em>target</em></td>
         <td></td>
       </tr>
@@ -544,7 +544,7 @@ will be made available as output from this <see cref="T:System.Threading.Tasks.D
         <td></td>
       </tr>
       <tr>
-        <td>System.Threading.Tasks.Dataflow.ISourceBlock&lt;TInput&gt;</td>
+        <td><a href="System.Threading.Tasks.Dataflow.ISourceBlock`1.html" name="System.Threading.Tasks.Dataflow.ISourceBlock">ISourceBlock</a>&lt;TInput&gt;</td>
         <td><em>source</em></td>
         <td></td>
       </tr>
@@ -618,7 +618,7 @@ will be made available as output from this <see cref="T:System.Threading.Tasks.D
     </thead>
     <tbody>
       <tr>
-        <td>System.Predicate&lt;TOutput&gt;</td>
+        <td><a href="System.Predicate`1.html" name="System.Predicate">Predicate</a>&lt;TOutput&gt;</td>
         <td><em>filter</em></td>
         <td></td>
       </tr>
@@ -666,7 +666,7 @@ will be made available as output from this <see cref="T:System.Threading.Tasks.D
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Generic.IList&lt;TOutput&gt;</td>
+        <td><a href="System.Collections.Generic.IList`1.html" name="System.Collections.Generic.IList">IList</a>&lt;TOutput&gt;</td>
         <td><em>items</em></td>
         <td></td>
       </tr>

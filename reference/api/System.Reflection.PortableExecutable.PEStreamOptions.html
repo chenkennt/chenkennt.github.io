@@ -74,7 +74,7 @@
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEStreamOptions.cs/#L12">View Source</a>
       </span>
   <h4 id="Default">Default</h4>
-  <div class="markdown level1 summary"><p>By default the stream is disposed when <a href="System.Reflection.PortableExecutable.PEReader.html">System.Reflection.PortableExecutable.PEReader</a> is disposed and sections of the PE image are read lazily.</p>
+  <div class="markdown level1 summary"><p>By default the stream is disposed when <a href="System.Reflection.PortableExecutable.PEReader.html">PEReader</a> is disposed and sections of the PE image are read lazily.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -86,7 +86,7 @@
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEStreamOptions.cs/#L17">View Source</a>
       </span>
   <h4 id="LeaveOpen">LeaveOpen</h4>
-  <div class="markdown level1 summary"><p>Keep the stream open when the <a href="System.Reflection.PortableExecutable.PEReader.html">System.Reflection.PortableExecutable.PEReader</a> is disposed.</p>
+  <div class="markdown level1 summary"><p>Keep the stream open when the <a href="System.Reflection.PortableExecutable.PEReader.html">PEReader</a> is disposed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -102,7 +102,7 @@
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="PrefetchEntireImage_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p><a href="System.Reflection.PortableExecutable.PEReader.html">System.Reflection.PortableExecutable.PEReader</a> closes the stream automatically by the time the constructor returns unless <a href="System.Reflection.PortableExecutable.PEStreamOptions.html">System.Reflection.PortableExecutable.PEStreamOptions.LeaveOpen</a> is specified.</p>
+  <div class="markdown level1 remarks"><p><a href="System.Reflection.PortableExecutable.PEReader.html">PEReader</a> closes the stream automatically by the time the constructor returns unless <a href="System.Reflection.PortableExecutable.PEStreamOptions.html">LeaveOpen</a> is specified.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -117,9 +117,9 @@
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="PrefetchMetadata_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Reading from other sections of the file is not allowed (<see cref="T:System.InvalidOperationException"></see> is thrown by the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see>).
-The underlying file may be closed and even deleted after <see cref="T:System.Reflection.PortableExecutable.PEReader"></see> is constructed.</p>
-<p><see cref="T:System.Reflection.PortableExecutable.PEReader"></see> closes the stream automatically by the time the constructor returns unless <see cref="F:System.Reflection.PortableExecutable.PEStreamOptions.LeaveOpen"></see> is specified.</p>
+  <div class="markdown level1 remarks"><p>Reading from other sections of the file is not allowed (<a href="System.InvalidOperationException.html">InvalidOperationException</a> is thrown by the <a href="System.Reflection.PortableExecutable.PEReader.html">PEReader</a>).
+The underlying file may be closed and even deleted after <a href="System.Reflection.PortableExecutable.PEReader.html">PEReader</a> is constructed.</p>
+<p><a href="System.Reflection.PortableExecutable.PEReader.html">PEReader</a> closes the stream automatically by the time the constructor returns unless <a href="System.Reflection.PortableExecutable.PEStreamOptions.html">LeaveOpen</a> is specified.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

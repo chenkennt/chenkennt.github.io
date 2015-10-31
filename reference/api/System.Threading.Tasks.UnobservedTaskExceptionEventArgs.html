@@ -60,7 +60,7 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="UnobservedTaskExceptionEventArgs">Class UnobservedTaskExceptionEventArgs</h1>
-      <div class="markdown level0 summary"><p>Provides data for the event that is raised when a faulted <a href="System.Threading.Tasks.Task.html">System.Threading.Tasks.Task</a>&#39;s
+      <div class="markdown level0 summary"><p>Provides data for the event that is raised when a faulted <a href="System.Threading.Tasks.Task.html">Task</a>&#39;s
 exception goes unobserved.</p>
 </div>
       <div class="markdown level0 conceptual"></div>
@@ -78,7 +78,7 @@ exception goes unobserved.</p>
       </div>
       <h5 id="UnobservedTaskExceptionEventArgs_remarks"><strong>Remarks<strong></strong></strong></h5>
       <div class="markdown level0 remarks"><p>The Exception property is used to examine the exception without marking it
-as observed, whereas the <a href="System.Threading.Tasks.UnobservedTaskExceptionEventArgs.html">System.Threading.Tasks.UnobservedTaskExceptionEventArgs.SetObserved</a> method is used to mark the exception
+as observed, whereas the <a href="System.Threading.Tasks.UnobservedTaskExceptionEventArgs.html">SetObserved()</a> method is used to mark the exception
 as observed.  Marking the exception as observed prevents it from triggering exception escalation policy
 which, by default, terminates the process.</p>
 </div>
@@ -88,7 +88,7 @@ which, by default, terminates the process.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskScheduler.cs/#L711">View Source</a>
       </span>
   <h4 id="UnobservedTaskExceptionEventArgs_AggregateException_">UnobservedTaskExceptionEventArgs(AggregateException)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Threading.Tasks.UnobservedTaskExceptionEventArgs.html">System.Threading.Tasks.UnobservedTaskExceptionEventArgs</a> class
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Threading.Tasks.UnobservedTaskExceptionEventArgs.html">UnobservedTaskExceptionEventArgs</a> class
 with the unobserved exception.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -175,7 +175,7 @@ with the unobserved exception.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/TaskScheduler.cs/#L717">View Source</a>
       </span>
   <h4 id="SetObserved__">SetObserved()</h4>
-  <div class="markdown level1 summary"><p>Marks the <a href="System.Threading.Tasks.UnobservedTaskExceptionEventArgs.html">System.Threading.Tasks.UnobservedTaskExceptionEventArgs.Exception</a> as &quot;observed,&quot; thus preventing it
+  <div class="markdown level1 summary"><p>Marks the <a href="System.Threading.Tasks.UnobservedTaskExceptionEventArgs.html">Exception</a> as &quot;observed,&quot; thus preventing it
 from triggering exception escalation policy which, by default, terminates the process.</p>
 </div>
   <div class="markdown level1 conceptual"></div>

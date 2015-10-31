@@ -75,7 +75,7 @@
         <pre><code class="lang-csharp hljs">public class Parallel</code></pre>
       </div>
       <h5 id="Parallel_remarks"><strong>Remarks<strong></strong></strong></h5>
-      <div class="markdown level0 remarks"><p>The <a href="System.Threading.Tasks.Parallel.html">System.Threading.Tasks.Parallel</a> class provides library-based data parallel replacements
+      <div class="markdown level0 remarks"><p>The <a href="System.Threading.Tasks.Parallel.html">Parallel</a> class provides library-based data parallel replacements
 for common operations such as for loops, for each loops, and execution of a set of statements.</p>
 </div>
       <h3 id="methods">Methods</h3>
@@ -91,11 +91,11 @@ for common operations such as for loops, for each loops, and execution of a set 
   <div class="markdown level1 remarks"><para>
 The <paramref name="body"></paramref> delegate is invoked once for each value in the iteration range:
 [fromInclusive, toExclusive).  It is provided with the following parameters: the iteration count (an Int32),
-and a <see cref="T:System.Threading.Tasks.ParallelLoopState">ParallelLoopState</see> instance that may be
+and a <a href="System.Threading.Tasks.ParallelLoopState.html">ParallelLoopState</a> instance that may be
 used to break out of the loop prematurely.
 </para>
 <para>
-Calling <see cref="M:System.Threading.Tasks.ParallelLoopState.Break">ParallelLoopState.Break()</see>
+Calling <a href="System.Threading.Tasks.ParallelLoopState.html">Break()</a>
 informs the For operation that iterations after the current one need not
 execute.  However, all iterations before the current one will still need to be executed if they have not already.
 Therefore, calling Break is similar to using a break operation within a
@@ -104,14 +104,14 @@ after the current one will definitely not execute.
 </para>
 <para>
 If executing all iterations before the current one is not necessary,
-<see cref="M:System.Threading.Tasks.ParallelLoopState.Stop">ParallelLoopState.Stop()</see>
+<a href="System.Threading.Tasks.ParallelLoopState.html">Stop()</a>
 should be preferred to using Break.  Calling Stop informs the For loop that it may abandon all remaining
 iterations, regardless of whether they&#39;re for interations above or below the current,
 since all required work has already been completed.  As with Break, however, there are no guarantees regarding
 which other iterations will not execute.
 </para>
 <para>
-When a loop is ended prematurely, the <see cref="T:ParallelLoopState"></see> that&#39;s returned will contain
+When a loop is ended prematurely, the ParallelLoopState that&#39;s returned will contain
 relevant information about the loop&#39;s completion.
 </para></div>
   <h5 class="decalaration">Declaration</h5>
@@ -141,7 +141,7 @@ relevant information about the loop&#39;s completion.
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;System.Int32, System.Threading.Tasks.ParallelLoopState&gt;</td>
+        <td><a href="System.Action`2.html" name="System.Action">Action</a>&lt;<a href="System.Int32.html" name="System.Int32">Int32</a>, <a href="System.Threading.Tasks.ParallelLoopState.html" name="System.Threading.Tasks.ParallelLoopState">ParallelLoopState</a>&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
@@ -159,7 +159,7 @@ relevant information about the loop&#39;s completion.
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -204,7 +204,7 @@ that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;System.Int32&gt;</td>
+        <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;<a href="System.Int32.html" name="System.Int32">Int32</a>&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
@@ -222,7 +222,7 @@ that contains information on what portion of the loop completed.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -239,7 +239,7 @@ that contains information on what portion of the loop completed.</p>
   <h5 id="For_Int32__Int32__ParallelOptions__Action_Int32__ParallelLoopState___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The <paramref name="body"></paramref> delegate is invoked once for each value in the iteration range:
 [fromInclusive, toExclusive).  It is provided with the following parameters: the iteration count (an Int32),
-and a <a href="System.Threading.Tasks.ParallelLoopState.html">System.Threading.Tasks.ParallelLoopState</a> instance that may be
+and a <a href="System.Threading.Tasks.ParallelLoopState.html">ParallelLoopState</a> instance that may be
 used to break out of the loop prematurely.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -271,12 +271,12 @@ used to break out of the loop prematurely.</p>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelOptions.html" name="System.Threading.Tasks.ParallelOptions">ParallelOptions</a></td>
         <td><em>parallelOptions</em></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">System.Threading.Tasks.ParallelOptions</a>
+        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">ParallelOptions</a>
 instance that configures the behavior of this operation.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;System.Int32, System.Threading.Tasks.ParallelLoopState&gt;</td>
+        <td><a href="System.Action`2.html" name="System.Action">Action</a>&lt;<a href="System.Int32.html" name="System.Int32">Int32</a>, <a href="System.Threading.Tasks.ParallelLoopState.html" name="System.Threading.Tasks.ParallelLoopState">ParallelLoopState</a>&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
@@ -294,7 +294,7 @@ instance that configures the behavior of this operation.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -341,12 +341,12 @@ that contains information on what portion of the loop completed.</p>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelOptions.html" name="System.Threading.Tasks.ParallelOptions">ParallelOptions</a></td>
         <td><em>parallelOptions</em></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">System.Threading.Tasks.ParallelOptions</a>
+        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">ParallelOptions</a>
 instance that configures the behavior of this operation.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;System.Int32&gt;</td>
+        <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;<a href="System.Int32.html" name="System.Int32">Int32</a>&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
@@ -364,7 +364,7 @@ instance that configures the behavior of this operation.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -381,7 +381,7 @@ that contains information on what portion of the loop completed.</p>
   <h5 id="For_Int64__Int64__Action_Int64__ParallelLoopState___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The <paramref name="body"></paramref> delegate is invoked once for each value in the iteration range:
 [fromInclusive, toExclusive).  It is provided with the following parameters: the iteration count (an Int64),
-and a <a href="System.Threading.Tasks.ParallelLoopState.html">System.Threading.Tasks.ParallelLoopState</a> instance that may be
+and a <a href="System.Threading.Tasks.ParallelLoopState.html">ParallelLoopState</a> instance that may be
 used to break out of the loop prematurely.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -411,7 +411,7 @@ used to break out of the loop prematurely.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;System.Int64, System.Threading.Tasks.ParallelLoopState&gt;</td>
+        <td><a href="System.Action`2.html" name="System.Action">Action</a>&lt;<a href="System.Int64.html" name="System.Int64">Int64</a>, <a href="System.Threading.Tasks.ParallelLoopState.html" name="System.Threading.Tasks.ParallelLoopState">ParallelLoopState</a>&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
@@ -429,7 +429,7 @@ used to break out of the loop prematurely.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -474,7 +474,7 @@ that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;System.Int64&gt;</td>
+        <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;<a href="System.Int64.html" name="System.Int64">Int64</a>&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
@@ -492,7 +492,7 @@ that contains information on what portion of the loop completed.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -509,7 +509,7 @@ that contains information on what portion of the loop completed.</p>
   <h5 id="For_Int64__Int64__ParallelOptions__Action_Int64__ParallelLoopState___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The <paramref name="body"></paramref> delegate is invoked once for each value in the iteration range:
 [fromInclusive, toExclusive).  It is provided with the following parameters: the iteration count (an Int64),
-and a <a href="System.Threading.Tasks.ParallelLoopState.html">System.Threading.Tasks.ParallelLoopState</a> instance that may be
+and a <a href="System.Threading.Tasks.ParallelLoopState.html">ParallelLoopState</a> instance that may be
 used to break out of the loop prematurely.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -541,12 +541,12 @@ used to break out of the loop prematurely.</p>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelOptions.html" name="System.Threading.Tasks.ParallelOptions">ParallelOptions</a></td>
         <td><em>parallelOptions</em></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">System.Threading.Tasks.ParallelOptions</a>
+        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">ParallelOptions</a>
 instance that configures the behavior of this operation.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;System.Int64, System.Threading.Tasks.ParallelLoopState&gt;</td>
+        <td><a href="System.Action`2.html" name="System.Action">Action</a>&lt;<a href="System.Int64.html" name="System.Int64">Int64</a>, <a href="System.Threading.Tasks.ParallelLoopState.html" name="System.Threading.Tasks.ParallelLoopState">ParallelLoopState</a>&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
@@ -564,7 +564,7 @@ instance that configures the behavior of this operation.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -611,12 +611,12 @@ that contains information on what portion of the loop completed.</p>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelOptions.html" name="System.Threading.Tasks.ParallelOptions">ParallelOptions</a></td>
         <td><em>parallelOptions</em></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">System.Threading.Tasks.ParallelOptions</a>
+        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">ParallelOptions</a>
 instance that configures the behavior of this operation.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;System.Int64&gt;</td>
+        <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;<a href="System.Int64.html" name="System.Int64">Int64</a>&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
@@ -634,7 +634,7 @@ instance that configures the behavior of this operation.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -652,7 +652,7 @@ that contains information on what portion of the loop completed.</p>
   <div class="markdown level1 remarks"><para>
 The <paramref name="body"></paramref> delegate is invoked once for each value in the iteration range:
 [fromInclusive, toExclusive).  It is provided with the following parameters: the iteration count (an Int32),
-a <see cref="T:System.Threading.Tasks.ParallelLoopState">ParallelLoopState</see> instance that may be
+a <a href="System.Threading.Tasks.ParallelLoopState.html">ParallelLoopState</a> instance that may be
 used to break out of the loop prematurely, and some local state that may be shared amongst iterations
 that execute on the same thread.
 </para>
@@ -691,20 +691,20 @@ action on each thread&#39;s local state.
 </td>
       </tr>
       <tr>
-        <td>System.Func&lt;TLocal&gt;</td>
+        <td><a href="System.Func`1.html" name="System.Func">Func</a>&lt;TLocal&gt;</td>
         <td><em>localInit</em></td>
         <td><p>The function delegate that returns the initial state of the local data
 for each thread.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Func&lt;System.Int32, System.Threading.Tasks.ParallelLoopState, TLocal, TLocal&gt;</td>
+        <td><a href="System.Func`4.html" name="System.Func">Func</a>&lt;<a href="System.Int32.html" name="System.Int32">Int32</a>, <a href="System.Threading.Tasks.ParallelLoopState.html" name="System.Threading.Tasks.ParallelLoopState">ParallelLoopState</a>, TLocal, TLocal&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;TLocal&gt;</td>
+        <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;TLocal&gt;</td>
         <td><em>localFinally</em></td>
         <td><p>The delegate that performs a final action on the local state of each
 thread.</p>
@@ -723,7 +723,7 @@ thread.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -741,7 +741,7 @@ that contains information on what portion of the loop completed.</p>
   <div class="markdown level1 remarks"><para>
 The <paramref name="body"></paramref> delegate is invoked once for each value in the iteration range:
 [fromInclusive, toExclusive).  It is provided with the following parameters: the iteration count (an Int32),
-a <see cref="T:System.Threading.Tasks.ParallelLoopState">ParallelLoopState</see> instance that may be
+a <a href="System.Threading.Tasks.ParallelLoopState.html">ParallelLoopState</a> instance that may be
 used to break out of the loop prematurely, and some local state that may be shared amongst iterations
 that execute on the same thread.
 </para>
@@ -782,25 +782,25 @@ action on each thread&#39;s local state.
       <tr>
         <td><a href="System.Threading.Tasks.ParallelOptions.html" name="System.Threading.Tasks.ParallelOptions">ParallelOptions</a></td>
         <td><em>parallelOptions</em></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">System.Threading.Tasks.ParallelOptions</a>
+        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">ParallelOptions</a>
 instance that configures the behavior of this operation.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Func&lt;TLocal&gt;</td>
+        <td><a href="System.Func`1.html" name="System.Func">Func</a>&lt;TLocal&gt;</td>
         <td><em>localInit</em></td>
         <td><p>The function delegate that returns the initial state of the local data
 for each thread.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Func&lt;System.Int32, System.Threading.Tasks.ParallelLoopState, TLocal, TLocal&gt;</td>
+        <td><a href="System.Func`4.html" name="System.Func">Func</a>&lt;<a href="System.Int32.html" name="System.Int32">Int32</a>, <a href="System.Threading.Tasks.ParallelLoopState.html" name="System.Threading.Tasks.ParallelLoopState">ParallelLoopState</a>, TLocal, TLocal&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;TLocal&gt;</td>
+        <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;TLocal&gt;</td>
         <td><em>localFinally</em></td>
         <td><p>The delegate that performs a final action on the local state of each
 thread.</p>
@@ -819,7 +819,7 @@ thread.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -837,7 +837,7 @@ that contains information on what portion of the loop completed.</p>
   <div class="markdown level1 remarks"><para>
 The <paramref name="body"></paramref> delegate is invoked once for each value in the iteration range:
 [fromInclusive, toExclusive).  It is provided with the following parameters: the iteration count (an Int64),
-a <see cref="T:System.Threading.Tasks.ParallelLoopState">ParallelLoopState</see> instance that may be
+a <a href="System.Threading.Tasks.ParallelLoopState.html">ParallelLoopState</a> instance that may be
 used to break out of the loop prematurely, and some local state that may be shared amongst iterations
 that execute on the same thread.
 </para>
@@ -876,20 +876,20 @@ action on each thread&#39;s local state.
 </td>
       </tr>
       <tr>
-        <td>System.Func&lt;TLocal&gt;</td>
+        <td><a href="System.Func`1.html" name="System.Func">Func</a>&lt;TLocal&gt;</td>
         <td><em>localInit</em></td>
         <td><p>The function delegate that returns the initial state of the local data
 for each thread.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Func&lt;System.Int64, System.Threading.Tasks.ParallelLoopState, TLocal, TLocal&gt;</td>
+        <td><a href="System.Func`4.html" name="System.Func">Func</a>&lt;<a href="System.Int64.html" name="System.Int64">Int64</a>, <a href="System.Threading.Tasks.ParallelLoopState.html" name="System.Threading.Tasks.ParallelLoopState">ParallelLoopState</a>, TLocal, TLocal&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;TLocal&gt;</td>
+        <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;TLocal&gt;</td>
         <td><em>localFinally</em></td>
         <td><p>The delegate that performs a final action on the local state of each
 thread.</p>
@@ -908,7 +908,7 @@ thread.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -926,7 +926,7 @@ that contains information on what portion of the loop completed.</p>
   <div class="markdown level1 remarks"><para>
 The <paramref name="body"></paramref> delegate is invoked once for each value in the iteration range:
 [fromInclusive, toExclusive).  It is provided with the following parameters: the iteration count (an Int64),
-a <see cref="T:System.Threading.Tasks.ParallelLoopState">ParallelLoopState</see> instance that may be
+a <a href="System.Threading.Tasks.ParallelLoopState.html">ParallelLoopState</a> instance that may be
 used to break out of the loop prematurely, and some local state that may be shared amongst iterations
 that execute on the same thread.
 </para>
@@ -967,25 +967,25 @@ action on each thread&#39;s local state.
       <tr>
         <td><a href="System.Threading.Tasks.ParallelOptions.html" name="System.Threading.Tasks.ParallelOptions">ParallelOptions</a></td>
         <td><em>parallelOptions</em></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">System.Threading.Tasks.ParallelOptions</a>
+        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">ParallelOptions</a>
 instance that configures the behavior of this operation.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Func&lt;TLocal&gt;</td>
+        <td><a href="System.Func`1.html" name="System.Func">Func</a>&lt;TLocal&gt;</td>
         <td><em>localInit</em></td>
         <td><p>The function delegate that returns the initial state of the local data
 for each thread.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Func&lt;System.Int64, System.Threading.Tasks.ParallelLoopState, TLocal, TLocal&gt;</td>
+        <td><a href="System.Func`4.html" name="System.Func">Func</a>&lt;<a href="System.Int64.html" name="System.Int64">Int64</a>, <a href="System.Threading.Tasks.ParallelLoopState.html" name="System.Threading.Tasks.ParallelLoopState">ParallelLoopState</a>, TLocal, TLocal&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;TLocal&gt;</td>
+        <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;TLocal&gt;</td>
         <td><em>localFinally</em></td>
         <td><p>The delegate that performs a final action on the local state of each
 thread.</p>
@@ -1004,7 +1004,7 @@ thread.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -1015,20 +1015,19 @@ that contains information on what portion of the loop completed.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/Parallel.cs/#L2410">View Source</a>
       </span>
   <h4 id="ForEach_TSource__OrderablePartitioner_TSource___Action_TSource__ParallelLoopState__Int64__">ForEach&lt;TSource&gt;(OrderablePartitioner&lt;TSource&gt;, Action&lt;TSource, ParallelLoopState, Int64&gt;)</h4>
-  <div class="markdown level1 summary"><p>Executes a for each operation on a <a href="">System.Collections.Concurrent.OrderablePartitioner{TSource}</a> in which iterations may run in parallel.</p>
+  <div class="markdown level1 summary"><p>Executes a for each operation on a System.Collections.Concurrent.OrderablePartitioner{TSource} in which iterations may run in parallel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ForEach_TSource__OrderablePartitioner_TSource___Action_TSource__ParallelLoopState__Int64___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><para>
-The <see cref="T:System.Collections.Concurrent.Partitioner{TSource}">Partitioner</see> is used to retrieve
+The System.Collections.Concurrent.Partitioner{TSource} is used to retrieve
 the elements to be processed, in place of the original data source.  If the current element&#39;s
-index is desired, the source must be an <see cref="T:System.Collections.Concurrent.OrderablePartitioner">
-OrderablePartitioner</see>.
+index is desired, the source must be an System.Collections.Concurrent.OrderablePartitioner.
 </para>
 <para>
 The <paramref name="body"></paramref> delegate is invoked once for each element in the <paramref name="source"></paramref>
 Partitioner.  It is provided with the following parameters: the current element,
-a <see cref="T:System.Threading.Tasks.ParallelLoopState">ParallelLoopState</see> instance that may be
+a <a href="System.Threading.Tasks.ParallelLoopState.html">ParallelLoopState</a> instance that may be
 used to break out of the loop prematurely, and the current element&#39;s index (an Int64).
 </para></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1046,13 +1045,13 @@ used to break out of the loop prematurely, and the current element&#39;s index (
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Concurrent.OrderablePartitioner&lt;TSource&gt;</td>
+        <td><a href="System.Collections.Concurrent.OrderablePartitioner`1.html" name="System.Collections.Concurrent.OrderablePartitioner">OrderablePartitioner</a>&lt;TSource&gt;</td>
         <td><em>source</em></td>
         <td><p>The OrderablePartitioner that contains the original data source.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;TSource, System.Threading.Tasks.ParallelLoopState, System.Int64&gt;</td>
+        <td><a href="System.Action`3.html" name="System.Action">Action</a>&lt;TSource, <a href="System.Threading.Tasks.ParallelLoopState.html" name="System.Threading.Tasks.ParallelLoopState">ParallelLoopState</a>, <a href="System.Int64.html" name="System.Int64">Int64</a>&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
@@ -1070,7 +1069,7 @@ used to break out of the loop prematurely, and the current element&#39;s index (
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -1081,20 +1080,19 @@ that contains information on what portion of the loop completed.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/Parallel.cs/#L2818">View Source</a>
       </span>
   <h4 id="ForEach_TSource__OrderablePartitioner_TSource___ParallelOptions__Action_TSource__ParallelLoopState__Int64__">ForEach&lt;TSource&gt;(OrderablePartitioner&lt;TSource&gt;, ParallelOptions, Action&lt;TSource, ParallelLoopState, Int64&gt;)</h4>
-  <div class="markdown level1 summary"><p>Executes a for each operation on a <a href="">System.Collections.Concurrent.OrderablePartitioner{TSource}</a> in which iterations may run in parallel.</p>
+  <div class="markdown level1 summary"><p>Executes a for each operation on a System.Collections.Concurrent.OrderablePartitioner{TSource} in which iterations may run in parallel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ForEach_TSource__OrderablePartitioner_TSource___ParallelOptions__Action_TSource__ParallelLoopState__Int64___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><para>
-The <see cref="T:System.Collections.Concurrent.Partitioner{TSource}">Partitioner</see> is used to retrieve
+The System.Collections.Concurrent.Partitioner{TSource} is used to retrieve
 the elements to be processed, in place of the original data source.  If the current element&#39;s
-index is desired, the source must be an <see cref="T:System.Collections.Concurrent.OrderablePartitioner">
-OrderablePartitioner</see>.
+index is desired, the source must be an System.Collections.Concurrent.OrderablePartitioner.
 </para>
 <para>
 The <paramref name="body"></paramref> delegate is invoked once for each element in the <paramref name="source"></paramref>
 Partitioner.  It is provided with the following parameters: the current element,
-a <see cref="T:System.Threading.Tasks.ParallelLoopState">ParallelLoopState</see> instance that may be
+a <a href="System.Threading.Tasks.ParallelLoopState.html">ParallelLoopState</a> instance that may be
 used to break out of the loop prematurely, and the current element&#39;s index (an Int64).
 </para></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1112,7 +1110,7 @@ used to break out of the loop prematurely, and the current element&#39;s index (
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Concurrent.OrderablePartitioner&lt;TSource&gt;</td>
+        <td><a href="System.Collections.Concurrent.OrderablePartitioner`1.html" name="System.Collections.Concurrent.OrderablePartitioner">OrderablePartitioner</a>&lt;TSource&gt;</td>
         <td><em>source</em></td>
         <td><p>The OrderablePartitioner that contains the original data source.</p>
 </td>
@@ -1120,12 +1118,12 @@ used to break out of the loop prematurely, and the current element&#39;s index (
       <tr>
         <td><a href="System.Threading.Tasks.ParallelOptions.html" name="System.Threading.Tasks.ParallelOptions">ParallelOptions</a></td>
         <td><em>parallelOptions</em></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">System.Threading.Tasks.ParallelOptions</a>
+        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">ParallelOptions</a>
 instance that configures the behavior of this operation.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;TSource, System.Threading.Tasks.ParallelLoopState, System.Int64&gt;</td>
+        <td><a href="System.Action`3.html" name="System.Action">Action</a>&lt;TSource, <a href="System.Threading.Tasks.ParallelLoopState.html" name="System.Threading.Tasks.ParallelLoopState">ParallelLoopState</a>, <a href="System.Int64.html" name="System.Int64">Int64</a>&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
@@ -1143,7 +1141,7 @@ instance that configures the behavior of this operation.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -1154,20 +1152,19 @@ that contains information on what portion of the loop completed.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/Parallel.cs/#L2348">View Source</a>
       </span>
   <h4 id="ForEach_TSource__Partitioner_TSource___Action_TSource__ParallelLoopState__">ForEach&lt;TSource&gt;(Partitioner&lt;TSource&gt;, Action&lt;TSource, ParallelLoopState&gt;)</h4>
-  <div class="markdown level1 summary"><p>Executes a for each operation on a <a href="">System.Collections.Concurrent.Partitioner{TSource}</a> in which iterations may run in parallel.</p>
+  <div class="markdown level1 summary"><p>Executes a for each operation on a System.Collections.Concurrent.Partitioner{TSource} in which iterations may run in parallel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ForEach_TSource__Partitioner_TSource___Action_TSource__ParallelLoopState___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><para>
-The <see cref="T:System.Collections.Concurrent.Partitioner{TSource}">Partitioner</see> is used to retrieve
+The System.Collections.Concurrent.Partitioner{TSource} is used to retrieve
 the elements to be processed, in place of the original data source.  If the current element&#39;s
-index is desired, the source must be an <see cref="T:System.Collections.Concurrent.OrderablePartitioner">
-OrderablePartitioner</see>.
+index is desired, the source must be an System.Collections.Concurrent.OrderablePartitioner.
 </para>
 <para>
 The <paramref name="body"></paramref> delegate is invoked once for each element in the <paramref name="source"></paramref>
 Partitioner.  It is provided with the following parameters: the current element,
-and a <see cref="T:System.Threading.Tasks.ParallelLoopState">ParallelLoopState</see> instance that may be
+and a <a href="System.Threading.Tasks.ParallelLoopState.html">ParallelLoopState</a> instance that may be
 used to break out of the loop prematurely.
 </para></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1185,13 +1182,13 @@ used to break out of the loop prematurely.
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Concurrent.Partitioner&lt;TSource&gt;</td>
+        <td><a href="System.Collections.Concurrent.Partitioner`1.html" name="System.Collections.Concurrent.Partitioner">Partitioner</a>&lt;TSource&gt;</td>
         <td><em>source</em></td>
         <td><p>The Partitioner that contains the original data source.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;TSource, System.Threading.Tasks.ParallelLoopState&gt;</td>
+        <td><a href="System.Action`2.html" name="System.Action">Action</a>&lt;TSource, <a href="System.Threading.Tasks.ParallelLoopState.html" name="System.Threading.Tasks.ParallelLoopState">ParallelLoopState</a>&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
@@ -1209,7 +1206,7 @@ used to break out of the loop prematurely.
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -1220,15 +1217,14 @@ that contains information on what portion of the loop completed.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/Parallel.cs/#L2289">View Source</a>
       </span>
   <h4 id="ForEach_TSource__Partitioner_TSource___Action_TSource__">ForEach&lt;TSource&gt;(Partitioner&lt;TSource&gt;, Action&lt;TSource&gt;)</h4>
-  <div class="markdown level1 summary"><p>Executes a for each operation on a <a href="">System.Collections.Concurrent.Partitioner{TSource}</a> in which iterations may run in parallel.</p>
+  <div class="markdown level1 summary"><p>Executes a for each operation on a System.Collections.Concurrent.Partitioner{TSource} in which iterations may run in parallel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ForEach_TSource__Partitioner_TSource___Action_TSource___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><para>
-The <see cref="T:System.Collections.Concurrent.Partitioner{TSource}">Partitioner</see> is used to retrieve
+The System.Collections.Concurrent.Partitioner{TSource} is used to retrieve
 the elements to be processed, in place of the original data source.  If the current element&#39;s
-index is desired, the source must be an <see cref="T:System.Collections.Concurrent.OrderablePartitioner">
-OrderablePartitioner</see>.
+index is desired, the source must be an System.Collections.Concurrent.OrderablePartitioner.
 </para>
 <para>
 The <paramref name="body"></paramref> delegate is invoked once for each element in the <paramref name="source"></paramref>
@@ -1249,13 +1245,13 @@ Partitioner.  It is provided with the current element as a parameter.
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Concurrent.Partitioner&lt;TSource&gt;</td>
+        <td><a href="System.Collections.Concurrent.Partitioner`1.html" name="System.Collections.Concurrent.Partitioner">Partitioner</a>&lt;TSource&gt;</td>
         <td><em>source</em></td>
         <td><p>The Partitioner that contains the original data source.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;TSource&gt;</td>
+        <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;TSource&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
@@ -1273,7 +1269,7 @@ Partitioner.  It is provided with the current element as a parameter.
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -1284,20 +1280,19 @@ that contains information on what portion of the loop completed.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/Parallel.cs/#L2740">View Source</a>
       </span>
   <h4 id="ForEach_TSource__Partitioner_TSource___ParallelOptions__Action_TSource__ParallelLoopState__">ForEach&lt;TSource&gt;(Partitioner&lt;TSource&gt;, ParallelOptions, Action&lt;TSource, ParallelLoopState&gt;)</h4>
-  <div class="markdown level1 summary"><p>Executes a for each operation on a <a href="">System.Collections.Concurrent.Partitioner{TSource}</a> in which iterations may run in parallel.</p>
+  <div class="markdown level1 summary"><p>Executes a for each operation on a System.Collections.Concurrent.Partitioner{TSource} in which iterations may run in parallel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ForEach_TSource__Partitioner_TSource___ParallelOptions__Action_TSource__ParallelLoopState___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><para>
-The <see cref="T:System.Collections.Concurrent.Partitioner{TSource}">Partitioner</see> is used to retrieve
+The System.Collections.Concurrent.Partitioner{TSource} is used to retrieve
 the elements to be processed, in place of the original data source.  If the current element&#39;s
-index is desired, the source must be an <see cref="T:System.Collections.Concurrent.OrderablePartitioner">
-OrderablePartitioner</see>.
+index is desired, the source must be an System.Collections.Concurrent.OrderablePartitioner.
 </para>
 <para>
 The <paramref name="body"></paramref> delegate is invoked once for each element in the <paramref name="source"></paramref>
 Partitioner.  It is provided with the following parameters: the current element,
-and a <see cref="T:System.Threading.Tasks.ParallelLoopState">ParallelLoopState</see> instance that may be
+and a <a href="System.Threading.Tasks.ParallelLoopState.html">ParallelLoopState</a> instance that may be
 used to break out of the loop prematurely.
 </para></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1315,7 +1310,7 @@ used to break out of the loop prematurely.
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Concurrent.Partitioner&lt;TSource&gt;</td>
+        <td><a href="System.Collections.Concurrent.Partitioner`1.html" name="System.Collections.Concurrent.Partitioner">Partitioner</a>&lt;TSource&gt;</td>
         <td><em>source</em></td>
         <td><p>The Partitioner that contains the original data source.</p>
 </td>
@@ -1323,12 +1318,12 @@ used to break out of the loop prematurely.
       <tr>
         <td><a href="System.Threading.Tasks.ParallelOptions.html" name="System.Threading.Tasks.ParallelOptions">ParallelOptions</a></td>
         <td><em>parallelOptions</em></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">System.Threading.Tasks.ParallelOptions</a>
+        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">ParallelOptions</a>
 instance that configures the behavior of this operation.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;TSource, System.Threading.Tasks.ParallelLoopState&gt;</td>
+        <td><a href="System.Action`2.html" name="System.Action">Action</a>&lt;TSource, <a href="System.Threading.Tasks.ParallelLoopState.html" name="System.Threading.Tasks.ParallelLoopState">ParallelLoopState</a>&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
@@ -1346,7 +1341,7 @@ instance that configures the behavior of this operation.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -1357,15 +1352,14 @@ that contains information on what portion of the loop completed.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/Parallel.cs/#L2665">View Source</a>
       </span>
   <h4 id="ForEach_TSource__Partitioner_TSource___ParallelOptions__Action_TSource__">ForEach&lt;TSource&gt;(Partitioner&lt;TSource&gt;, ParallelOptions, Action&lt;TSource&gt;)</h4>
-  <div class="markdown level1 summary"><p>Executes a for each operation on a <a href="">System.Collections.Concurrent.Partitioner{TSource}</a> in which iterations may run in parallel.</p>
+  <div class="markdown level1 summary"><p>Executes a for each operation on a System.Collections.Concurrent.Partitioner{TSource} in which iterations may run in parallel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ForEach_TSource__Partitioner_TSource___ParallelOptions__Action_TSource___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><para>
-The <see cref="T:System.Collections.Concurrent.Partitioner{TSource}">Partitioner</see> is used to retrieve
+The System.Collections.Concurrent.Partitioner{TSource} is used to retrieve
 the elements to be processed, in place of the original data source.  If the current element&#39;s
-index is desired, the source must be an <see cref="T:System.Collections.Concurrent.OrderablePartitioner">
-OrderablePartitioner</see>.
+index is desired, the source must be an System.Collections.Concurrent.OrderablePartitioner.
 </para>
 <para>
 The <paramref name="body"></paramref> delegate is invoked once for each element in the <paramref name="source"></paramref>
@@ -1386,7 +1380,7 @@ Partitioner.  It is provided with the current element as a parameter.
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Concurrent.Partitioner&lt;TSource&gt;</td>
+        <td><a href="System.Collections.Concurrent.Partitioner`1.html" name="System.Collections.Concurrent.Partitioner">Partitioner</a>&lt;TSource&gt;</td>
         <td><em>source</em></td>
         <td><p>The Partitioner that contains the original data source.</p>
 </td>
@@ -1394,12 +1388,12 @@ Partitioner.  It is provided with the current element as a parameter.
       <tr>
         <td><a href="System.Threading.Tasks.ParallelOptions.html" name="System.Threading.Tasks.ParallelOptions">ParallelOptions</a></td>
         <td><em>parallelOptions</em></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">System.Threading.Tasks.ParallelOptions</a>
+        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">ParallelOptions</a>
 instance that configures the behavior of this operation.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;TSource&gt;</td>
+        <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;TSource&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
@@ -1417,7 +1411,7 @@ instance that configures the behavior of this operation.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -1428,14 +1422,14 @@ that contains information on what portion of the loop completed.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/Parallel.cs/#L1704">View Source</a>
       </span>
   <h4 id="ForEach_TSource__IEnumerable_TSource___Action_TSource__ParallelLoopState__Int64__">ForEach&lt;TSource&gt;(IEnumerable&lt;TSource&gt;, Action&lt;TSource, ParallelLoopState, Int64&gt;)</h4>
-  <div class="markdown level1 summary"><p>Executes a for each operation on an <a href="">System.Collections.IEnumerable{TSource}</a>
+  <div class="markdown level1 summary"><p>Executes a for each operation on an System.Collections.IEnumerable{TSource}
 in which iterations may run in parallel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ForEach_TSource__IEnumerable_TSource___Action_TSource__ParallelLoopState__Int64___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The <paramref name="body"></paramref> delegate is invoked once for each element in the <paramref name="source"></paramref>
 enumerable.  It is provided with the following parameters: the current element,
-a <a href="System.Threading.Tasks.ParallelLoopState.html">System.Threading.Tasks.ParallelLoopState</a> instance that may be
+a <a href="System.Threading.Tasks.ParallelLoopState.html">ParallelLoopState</a> instance that may be
 used to break out of the loop prematurely, and the current element&#39;s index (an Int64).</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -1453,13 +1447,13 @@ used to break out of the loop prematurely, and the current element&#39;s index (
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Generic.IEnumerable&lt;TSource&gt;</td>
+        <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;TSource&gt;</td>
         <td><em>source</em></td>
         <td><p>An enumerable data source.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;TSource, System.Threading.Tasks.ParallelLoopState, System.Int64&gt;</td>
+        <td><a href="System.Action`3.html" name="System.Action">Action</a>&lt;TSource, <a href="System.Threading.Tasks.ParallelLoopState.html" name="System.Threading.Tasks.ParallelLoopState">ParallelLoopState</a>, <a href="System.Int64.html" name="System.Int64">Int64</a>&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
@@ -1477,7 +1471,7 @@ used to break out of the loop prematurely, and the current element&#39;s index (
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -1488,14 +1482,14 @@ that contains information on what portion of the loop completed.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/Parallel.cs/#L1617">View Source</a>
       </span>
   <h4 id="ForEach_TSource__IEnumerable_TSource___Action_TSource__ParallelLoopState__">ForEach&lt;TSource&gt;(IEnumerable&lt;TSource&gt;, Action&lt;TSource, ParallelLoopState&gt;)</h4>
-  <div class="markdown level1 summary"><p>Executes a for each operation on an <a href="">System.Collections.IEnumerable{TSource}</a>
+  <div class="markdown level1 summary"><p>Executes a for each operation on an System.Collections.IEnumerable{TSource}
 in which iterations may run in parallel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ForEach_TSource__IEnumerable_TSource___Action_TSource__ParallelLoopState___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The <paramref name="body"></paramref> delegate is invoked once for each element in the <paramref name="source"></paramref>
 enumerable.  It is provided with the following parameters: the current element,
-and a <a href="System.Threading.Tasks.ParallelLoopState.html">System.Threading.Tasks.ParallelLoopState</a> instance that may be
+and a <a href="System.Threading.Tasks.ParallelLoopState.html">ParallelLoopState</a> instance that may be
 used to break out of the loop prematurely.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -1513,13 +1507,13 @@ used to break out of the loop prematurely.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Generic.IEnumerable&lt;TSource&gt;</td>
+        <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;TSource&gt;</td>
         <td><em>source</em></td>
         <td><p>An enumerable data source.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;TSource, System.Threading.Tasks.ParallelLoopState&gt;</td>
+        <td><a href="System.Action`2.html" name="System.Action">Action</a>&lt;TSource, <a href="System.Threading.Tasks.ParallelLoopState.html" name="System.Threading.Tasks.ParallelLoopState">ParallelLoopState</a>&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
@@ -1537,7 +1531,7 @@ used to break out of the loop prematurely.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -1548,7 +1542,7 @@ that contains information on what portion of the loop completed.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/Parallel.cs/#L1532">View Source</a>
       </span>
   <h4 id="ForEach_TSource__IEnumerable_TSource___Action_TSource__">ForEach&lt;TSource&gt;(IEnumerable&lt;TSource&gt;, Action&lt;TSource&gt;)</h4>
-  <div class="markdown level1 summary"><p>Executes a for each operation on an <a href="">System.Collections.IEnumerable{TSource}</a>
+  <div class="markdown level1 summary"><p>Executes a for each operation on an System.Collections.IEnumerable{TSource}
 in which iterations may run in parallel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1571,13 +1565,13 @@ enumerable.  It is provided with the current element as a parameter.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Generic.IEnumerable&lt;TSource&gt;</td>
+        <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;TSource&gt;</td>
         <td><em>source</em></td>
         <td><p>An enumerable data source.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;TSource&gt;</td>
+        <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;TSource&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
@@ -1595,7 +1589,7 @@ enumerable.  It is provided with the current element as a parameter.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -1606,14 +1600,14 @@ that contains information on what portion of the loop completed.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/Parallel.cs/#L1751">View Source</a>
       </span>
   <h4 id="ForEach_TSource__IEnumerable_TSource___ParallelOptions__Action_TSource__ParallelLoopState__Int64__">ForEach&lt;TSource&gt;(IEnumerable&lt;TSource&gt;, ParallelOptions, Action&lt;TSource, ParallelLoopState, Int64&gt;)</h4>
-  <div class="markdown level1 summary"><p>Executes a for each operation on an <a href="">System.Collections.IEnumerable{TSource}</a>
+  <div class="markdown level1 summary"><p>Executes a for each operation on an System.Collections.IEnumerable{TSource}
 in which iterations may run in parallel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ForEach_TSource__IEnumerable_TSource___ParallelOptions__Action_TSource__ParallelLoopState__Int64___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The <paramref name="body"></paramref> delegate is invoked once for each element in the <paramref name="source"></paramref>
 enumerable.  It is provided with the following parameters: the current element,
-a <a href="System.Threading.Tasks.ParallelLoopState.html">System.Threading.Tasks.ParallelLoopState</a> instance that may be
+a <a href="System.Threading.Tasks.ParallelLoopState.html">ParallelLoopState</a> instance that may be
 used to break out of the loop prematurely, and the current element&#39;s index (an Int64).</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -1631,7 +1625,7 @@ used to break out of the loop prematurely, and the current element&#39;s index (
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Generic.IEnumerable&lt;TSource&gt;</td>
+        <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;TSource&gt;</td>
         <td><em>source</em></td>
         <td><p>An enumerable data source.</p>
 </td>
@@ -1639,12 +1633,12 @@ used to break out of the loop prematurely, and the current element&#39;s index (
       <tr>
         <td><a href="System.Threading.Tasks.ParallelOptions.html" name="System.Threading.Tasks.ParallelOptions">ParallelOptions</a></td>
         <td><em>parallelOptions</em></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">System.Threading.Tasks.ParallelOptions</a>
+        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">ParallelOptions</a>
 instance that configures the behavior of this operation.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;TSource, System.Threading.Tasks.ParallelLoopState, System.Int64&gt;</td>
+        <td><a href="System.Action`3.html" name="System.Action">Action</a>&lt;TSource, <a href="System.Threading.Tasks.ParallelLoopState.html" name="System.Threading.Tasks.ParallelLoopState">ParallelLoopState</a>, <a href="System.Int64.html" name="System.Int64">Int64</a>&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
@@ -1662,7 +1656,7 @@ instance that configures the behavior of this operation.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -1673,14 +1667,14 @@ that contains information on what portion of the loop completed.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/Parallel.cs/#L1664">View Source</a>
       </span>
   <h4 id="ForEach_TSource__IEnumerable_TSource___ParallelOptions__Action_TSource__ParallelLoopState__">ForEach&lt;TSource&gt;(IEnumerable&lt;TSource&gt;, ParallelOptions, Action&lt;TSource, ParallelLoopState&gt;)</h4>
-  <div class="markdown level1 summary"><p>Executes a for each operation on an <a href="">System.Collections.IEnumerable{TSource}</a>
+  <div class="markdown level1 summary"><p>Executes a for each operation on an System.Collections.IEnumerable{TSource}
 in which iterations may run in parallel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ForEach_TSource__IEnumerable_TSource___ParallelOptions__Action_TSource__ParallelLoopState___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The <paramref name="body"></paramref> delegate is invoked once for each element in the <paramref name="source"></paramref>
 enumerable.  It is provided with the following parameters: the current element,
-and a <a href="System.Threading.Tasks.ParallelLoopState.html">System.Threading.Tasks.ParallelLoopState</a> instance that may be
+and a <a href="System.Threading.Tasks.ParallelLoopState.html">ParallelLoopState</a> instance that may be
 used to break out of the loop prematurely.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -1698,7 +1692,7 @@ used to break out of the loop prematurely.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Generic.IEnumerable&lt;TSource&gt;</td>
+        <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;TSource&gt;</td>
         <td><em>source</em></td>
         <td><p>An enumerable data source.</p>
 </td>
@@ -1706,12 +1700,12 @@ used to break out of the loop prematurely.</p>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelOptions.html" name="System.Threading.Tasks.ParallelOptions">ParallelOptions</a></td>
         <td><em>parallelOptions</em></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">System.Threading.Tasks.ParallelOptions</a>
+        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">ParallelOptions</a>
 instance that configures the behavior of this operation.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;TSource, System.Threading.Tasks.ParallelLoopState&gt;</td>
+        <td><a href="System.Action`2.html" name="System.Action">Action</a>&lt;TSource, <a href="System.Threading.Tasks.ParallelLoopState.html" name="System.Threading.Tasks.ParallelLoopState">ParallelLoopState</a>&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
@@ -1729,7 +1723,7 @@ instance that configures the behavior of this operation.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -1740,7 +1734,7 @@ that contains information on what portion of the loop completed.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/Parallel.cs/#L1577">View Source</a>
       </span>
   <h4 id="ForEach_TSource__IEnumerable_TSource___ParallelOptions__Action_TSource__">ForEach&lt;TSource&gt;(IEnumerable&lt;TSource&gt;, ParallelOptions, Action&lt;TSource&gt;)</h4>
-  <div class="markdown level1 summary"><p>Executes a for each operation on an <a href="">System.Collections.IEnumerable{TSource}</a>
+  <div class="markdown level1 summary"><p>Executes a for each operation on an System.Collections.IEnumerable{TSource}
 in which iterations may run in parallel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1763,7 +1757,7 @@ enumerable.  It is provided with the current element as a parameter.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Generic.IEnumerable&lt;TSource&gt;</td>
+        <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;TSource&gt;</td>
         <td><em>source</em></td>
         <td><p>An enumerable data source.</p>
 </td>
@@ -1771,12 +1765,12 @@ enumerable.  It is provided with the current element as a parameter.</p>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelOptions.html" name="System.Threading.Tasks.ParallelOptions">ParallelOptions</a></td>
         <td><em>parallelOptions</em></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">System.Threading.Tasks.ParallelOptions</a>
+        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">ParallelOptions</a>
 instance that configures the behavior of this operation.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;TSource&gt;</td>
+        <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;TSource&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
@@ -1794,7 +1788,7 @@ instance that configures the behavior of this operation.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -1805,20 +1799,19 @@ that contains information on what portion of the loop completed.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/Parallel.cs/#L2582">View Source</a>
       </span>
   <h4 id="ForEach_TSource__TLocal__OrderablePartitioner_TSource___Func_TLocal___Func_TSource__ParallelLoopState__Int64__TLocal__TLocal___Action_TLocal__">ForEach&lt;TSource, TLocal&gt;(OrderablePartitioner&lt;TSource&gt;, Func&lt;TLocal&gt;, Func&lt;TSource, ParallelLoopState, Int64, TLocal, TLocal&gt;, Action&lt;TLocal&gt;)</h4>
-  <div class="markdown level1 summary"><p>Executes a for each operation on a <a href="">System.Collections.Concurrent.OrderablePartitioner{TSource}</a> in which iterations may run in parallel.</p>
+  <div class="markdown level1 summary"><p>Executes a for each operation on a System.Collections.Concurrent.OrderablePartitioner{TSource} in which iterations may run in parallel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ForEach_TSource__TLocal__OrderablePartitioner_TSource___Func_TLocal___Func_TSource__ParallelLoopState__Int64__TLocal__TLocal___Action_TLocal___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><para>
-The <see cref="T:System.Collections.Concurrent.Partitioner{TSource}">Partitioner</see> is used to retrieve
+The System.Collections.Concurrent.Partitioner{TSource} is used to retrieve
 the elements to be processed, in place of the original data source.  If the current element&#39;s
-index is desired, the source must be an <see cref="T:System.Collections.Concurrent.OrderablePartitioner">
-OrderablePartitioner</see>.
+index is desired, the source must be an System.Collections.Concurrent.OrderablePartitioner.
 </para>
 <para>
 The <paramref name="body"></paramref> delegate is invoked once for each element in the <paramref name="source"></paramref>
 Partitioner.  It is provided with the following parameters: the current element,
-a <see cref="T:System.Threading.Tasks.ParallelLoopState">ParallelLoopState</see> instance that may be
+a <a href="System.Threading.Tasks.ParallelLoopState.html">ParallelLoopState</a> instance that may be
 used to break out of the loop prematurely, the current element&#39;s index (an Int64), and some local
 state that may be shared amongst iterations that execute on the same thread.
 </para>
@@ -1845,26 +1838,26 @@ action on each thread&#39;s local state.
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Concurrent.OrderablePartitioner&lt;TSource&gt;</td>
+        <td><a href="System.Collections.Concurrent.OrderablePartitioner`1.html" name="System.Collections.Concurrent.OrderablePartitioner">OrderablePartitioner</a>&lt;TSource&gt;</td>
         <td><em>source</em></td>
         <td><p>The OrderablePartitioner that contains the original data source.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Func&lt;TLocal&gt;</td>
+        <td><a href="System.Func`1.html" name="System.Func">Func</a>&lt;TLocal&gt;</td>
         <td><em>localInit</em></td>
         <td><p>The function delegate that returns the initial state of the local data
 for each thread.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Func&lt;TSource, System.Threading.Tasks.ParallelLoopState, System.Int64, TLocal, TLocal&gt;</td>
+        <td><a href="System.Func`5.html" name="System.Func">Func</a>&lt;TSource, <a href="System.Threading.Tasks.ParallelLoopState.html" name="System.Threading.Tasks.ParallelLoopState">ParallelLoopState</a>, <a href="System.Int64.html" name="System.Int64">Int64</a>, TLocal, TLocal&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;TLocal&gt;</td>
+        <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;TLocal&gt;</td>
         <td><em>localFinally</em></td>
         <td><p>The delegate that performs a final action on the local state of each
 thread.</p>
@@ -1883,7 +1876,7 @@ thread.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -1894,20 +1887,19 @@ that contains information on what portion of the loop completed.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/Parallel.cs/#L3022">View Source</a>
       </span>
   <h4 id="ForEach_TSource__TLocal__OrderablePartitioner_TSource___ParallelOptions__Func_TLocal___Func_TSource__ParallelLoopState__Int64__TLocal__TLocal___Action_TLocal__">ForEach&lt;TSource, TLocal&gt;(OrderablePartitioner&lt;TSource&gt;, ParallelOptions, Func&lt;TLocal&gt;, Func&lt;TSource, ParallelLoopState, Int64, TLocal, TLocal&gt;, Action&lt;TLocal&gt;)</h4>
-  <div class="markdown level1 summary"><p>Executes a for each operation on a <a href="">System.Collections.Concurrent.OrderablePartitioner{TSource}</a> in which iterations may run in parallel.</p>
+  <div class="markdown level1 summary"><p>Executes a for each operation on a System.Collections.Concurrent.OrderablePartitioner{TSource} in which iterations may run in parallel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ForEach_TSource__TLocal__OrderablePartitioner_TSource___ParallelOptions__Func_TLocal___Func_TSource__ParallelLoopState__Int64__TLocal__TLocal___Action_TLocal___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><para>
-The <see cref="T:System.Collections.Concurrent.Partitioner{TSource}">Partitioner</see> is used to retrieve
+The System.Collections.Concurrent.Partitioner{TSource} is used to retrieve
 the elements to be processed, in place of the original data source.  If the current element&#39;s
-index is desired, the source must be an <see cref="T:System.Collections.Concurrent.OrderablePartitioner">
-OrderablePartitioner</see>.
+index is desired, the source must be an System.Collections.Concurrent.OrderablePartitioner.
 </para>
 <para>
 The <paramref name="body"></paramref> delegate is invoked once for each element in the <paramref name="source"></paramref>
 Partitioner.  It is provided with the following parameters: the current element,
-a <see cref="T:System.Threading.Tasks.ParallelLoopState">ParallelLoopState</see> instance that may be
+a <a href="System.Threading.Tasks.ParallelLoopState.html">ParallelLoopState</a> instance that may be
 used to break out of the loop prematurely, the current element&#39;s index (an Int64), and some local
 state that may be shared amongst iterations that execute on the same thread.
 </para>
@@ -1934,7 +1926,7 @@ action on each thread&#39;s local state.
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Concurrent.OrderablePartitioner&lt;TSource&gt;</td>
+        <td><a href="System.Collections.Concurrent.OrderablePartitioner`1.html" name="System.Collections.Concurrent.OrderablePartitioner">OrderablePartitioner</a>&lt;TSource&gt;</td>
         <td><em>source</em></td>
         <td><p>The OrderablePartitioner that contains the original data source.</p>
 </td>
@@ -1942,25 +1934,25 @@ action on each thread&#39;s local state.
       <tr>
         <td><a href="System.Threading.Tasks.ParallelOptions.html" name="System.Threading.Tasks.ParallelOptions">ParallelOptions</a></td>
         <td><em>parallelOptions</em></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">System.Threading.Tasks.ParallelOptions</a>
+        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">ParallelOptions</a>
 instance that configures the behavior of this operation.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Func&lt;TLocal&gt;</td>
+        <td><a href="System.Func`1.html" name="System.Func">Func</a>&lt;TLocal&gt;</td>
         <td><em>localInit</em></td>
         <td><p>The function delegate that returns the initial state of the local data
 for each thread.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Func&lt;TSource, System.Threading.Tasks.ParallelLoopState, System.Int64, TLocal, TLocal&gt;</td>
+        <td><a href="System.Func`5.html" name="System.Func">Func</a>&lt;TSource, <a href="System.Threading.Tasks.ParallelLoopState.html" name="System.Threading.Tasks.ParallelLoopState">ParallelLoopState</a>, <a href="System.Int64.html" name="System.Int64">Int64</a>, TLocal, TLocal&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;TLocal&gt;</td>
+        <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;TLocal&gt;</td>
         <td><em>localFinally</em></td>
         <td><p>The delegate that performs a final action on the local state of each
 thread.</p>
@@ -1979,7 +1971,7 @@ thread.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -1990,20 +1982,19 @@ that contains information on what portion of the loop completed.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/Parallel.cs/#L2492">View Source</a>
       </span>
   <h4 id="ForEach_TSource__TLocal__Partitioner_TSource___Func_TLocal___Func_TSource__ParallelLoopState__TLocal__TLocal___Action_TLocal__">ForEach&lt;TSource, TLocal&gt;(Partitioner&lt;TSource&gt;, Func&lt;TLocal&gt;, Func&lt;TSource, ParallelLoopState, TLocal, TLocal&gt;, Action&lt;TLocal&gt;)</h4>
-  <div class="markdown level1 summary"><p>Executes a for each operation on a <a href="">System.Collections.Concurrent.Partitioner{TSource}</a> in which iterations may run in parallel.</p>
+  <div class="markdown level1 summary"><p>Executes a for each operation on a System.Collections.Concurrent.Partitioner{TSource} in which iterations may run in parallel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ForEach_TSource__TLocal__Partitioner_TSource___Func_TLocal___Func_TSource__ParallelLoopState__TLocal__TLocal___Action_TLocal___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><para>
-The <see cref="T:System.Collections.Concurrent.Partitioner{TSource}">Partitioner</see> is used to retrieve
+The System.Collections.Concurrent.Partitioner{TSource} is used to retrieve
 the elements to be processed, in place of the original data source.  If the current element&#39;s
-index is desired, the source must be an <see cref="T:System.Collections.Concurrent.OrderablePartitioner">
-OrderablePartitioner</see>.
+index is desired, the source must be an System.Collections.Concurrent.OrderablePartitioner.
 </para>
 <para>
 The <paramref name="body"></paramref> delegate is invoked once for each element in the <paramref name="source"></paramref>
 Partitioner.  It is provided with the following parameters: the current element,
-a <see cref="T:System.Threading.Tasks.ParallelLoopState">ParallelLoopState</see> instance that may be
+a <a href="System.Threading.Tasks.ParallelLoopState.html">ParallelLoopState</a> instance that may be
 used to break out of the loop prematurely, and some local state that may be shared amongst iterations
 that execute on the same thread.
 </para>
@@ -2030,26 +2021,26 @@ action on each thread&#39;s local state.
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Concurrent.Partitioner&lt;TSource&gt;</td>
+        <td><a href="System.Collections.Concurrent.Partitioner`1.html" name="System.Collections.Concurrent.Partitioner">Partitioner</a>&lt;TSource&gt;</td>
         <td><em>source</em></td>
         <td><p>The Partitioner that contains the original data source.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Func&lt;TLocal&gt;</td>
+        <td><a href="System.Func`1.html" name="System.Func">Func</a>&lt;TLocal&gt;</td>
         <td><em>localInit</em></td>
         <td><p>The function delegate that returns the initial state of the local data
 for each thread.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Func&lt;TSource, System.Threading.Tasks.ParallelLoopState, TLocal, TLocal&gt;</td>
+        <td><a href="System.Func`4.html" name="System.Func">Func</a>&lt;TSource, <a href="System.Threading.Tasks.ParallelLoopState.html" name="System.Threading.Tasks.ParallelLoopState">ParallelLoopState</a>, TLocal, TLocal&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;TLocal&gt;</td>
+        <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;TLocal&gt;</td>
         <td><em>localFinally</em></td>
         <td><p>The delegate that performs a final action on the local state of each
 thread.</p>
@@ -2068,7 +2059,7 @@ thread.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -2079,20 +2070,19 @@ that contains information on what portion of the loop completed.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/Parallel.cs/#L2916">View Source</a>
       </span>
   <h4 id="ForEach_TSource__TLocal__Partitioner_TSource___ParallelOptions__Func_TLocal___Func_TSource__ParallelLoopState__TLocal__TLocal___Action_TLocal__">ForEach&lt;TSource, TLocal&gt;(Partitioner&lt;TSource&gt;, ParallelOptions, Func&lt;TLocal&gt;, Func&lt;TSource, ParallelLoopState, TLocal, TLocal&gt;, Action&lt;TLocal&gt;)</h4>
-  <div class="markdown level1 summary"><p>Executes a for each operation on a <a href="">System.Collections.Concurrent.Partitioner{TSource}</a> in which iterations may run in parallel.</p>
+  <div class="markdown level1 summary"><p>Executes a for each operation on a System.Collections.Concurrent.Partitioner{TSource} in which iterations may run in parallel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ForEach_TSource__TLocal__Partitioner_TSource___ParallelOptions__Func_TLocal___Func_TSource__ParallelLoopState__TLocal__TLocal___Action_TLocal___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><para>
-The <see cref="T:System.Collections.Concurrent.Partitioner{TSource}">Partitioner</see> is used to retrieve
+The System.Collections.Concurrent.Partitioner{TSource} is used to retrieve
 the elements to be processed, in place of the original data source.  If the current element&#39;s
-index is desired, the source must be an <see cref="T:System.Collections.Concurrent.OrderablePartitioner">
-OrderablePartitioner</see>.
+index is desired, the source must be an System.Collections.Concurrent.OrderablePartitioner.
 </para>
 <para>
 The <paramref name="body"></paramref> delegate is invoked once for each element in the <paramref name="source"></paramref>
 Partitioner.  It is provided with the following parameters: the current element,
-a <see cref="T:System.Threading.Tasks.ParallelLoopState">ParallelLoopState</see> instance that may be
+a <a href="System.Threading.Tasks.ParallelLoopState.html">ParallelLoopState</a> instance that may be
 used to break out of the loop prematurely, and some local state that may be shared amongst iterations
 that execute on the same thread.
 </para>
@@ -2119,7 +2109,7 @@ action on each thread&#39;s local state.
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Concurrent.Partitioner&lt;TSource&gt;</td>
+        <td><a href="System.Collections.Concurrent.Partitioner`1.html" name="System.Collections.Concurrent.Partitioner">Partitioner</a>&lt;TSource&gt;</td>
         <td><em>source</em></td>
         <td><p>The Partitioner that contains the original data source.</p>
 </td>
@@ -2127,25 +2117,25 @@ action on each thread&#39;s local state.
       <tr>
         <td><a href="System.Threading.Tasks.ParallelOptions.html" name="System.Threading.Tasks.ParallelOptions">ParallelOptions</a></td>
         <td><em>parallelOptions</em></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">System.Threading.Tasks.ParallelOptions</a>
+        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">ParallelOptions</a>
 instance that configures the behavior of this operation.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Func&lt;TLocal&gt;</td>
+        <td><a href="System.Func`1.html" name="System.Func">Func</a>&lt;TLocal&gt;</td>
         <td><em>localInit</em></td>
         <td><p>The function delegate that returns the initial state of the local data
 for each thread.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Func&lt;TSource, System.Threading.Tasks.ParallelLoopState, TLocal, TLocal&gt;</td>
+        <td><a href="System.Func`4.html" name="System.Func">Func</a>&lt;TSource, <a href="System.Threading.Tasks.ParallelLoopState.html" name="System.Threading.Tasks.ParallelLoopState">ParallelLoopState</a>, TLocal, TLocal&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;TLocal&gt;</td>
+        <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;TLocal&gt;</td>
         <td><em>localFinally</em></td>
         <td><p>The delegate that performs a final action on the local state of each
 thread.</p>
@@ -2164,7 +2154,7 @@ thread.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -2175,7 +2165,7 @@ that contains information on what portion of the loop completed.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/Parallel.cs/#L1811">View Source</a>
       </span>
   <h4 id="ForEach_TSource__TLocal__IEnumerable_TSource___Func_TLocal___Func_TSource__ParallelLoopState__TLocal__TLocal___Action_TLocal__">ForEach&lt;TSource, TLocal&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TLocal&gt;, Func&lt;TSource, ParallelLoopState, TLocal, TLocal&gt;, Action&lt;TLocal&gt;)</h4>
-  <div class="markdown level1 summary"><p>Executes a for each operation on an <a href="">System.Collections.IEnumerable{TSource}</a>
+  <div class="markdown level1 summary"><p>Executes a for each operation on an System.Collections.IEnumerable{TSource}
 in which iterations may run in parallel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2183,7 +2173,7 @@ in which iterations may run in parallel.</p>
   <div class="markdown level1 remarks"><para>
 The <paramref name="body"></paramref> delegate is invoked once for each element in the <paramref name="source"></paramref>
 enumerable.  It is provided with the following parameters: the current element,
-a <see cref="T:System.Threading.Tasks.ParallelLoopState">ParallelLoopState</see> instance that may be
+a <a href="System.Threading.Tasks.ParallelLoopState.html">ParallelLoopState</a> instance that may be
 used to break out of the loop prematurely, and some local state that may be shared amongst iterations
 that execute on the same thread.
 </para>
@@ -2210,26 +2200,26 @@ action on each thread&#39;s local state.
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Generic.IEnumerable&lt;TSource&gt;</td>
+        <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;TSource&gt;</td>
         <td><em>source</em></td>
         <td><p>An enumerable data source.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Func&lt;TLocal&gt;</td>
+        <td><a href="System.Func`1.html" name="System.Func">Func</a>&lt;TLocal&gt;</td>
         <td><em>localInit</em></td>
         <td><p>The function delegate that returns the initial state of the local data
 for each thread.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Func&lt;TSource, System.Threading.Tasks.ParallelLoopState, TLocal, TLocal&gt;</td>
+        <td><a href="System.Func`4.html" name="System.Func">Func</a>&lt;TSource, <a href="System.Threading.Tasks.ParallelLoopState.html" name="System.Threading.Tasks.ParallelLoopState">ParallelLoopState</a>, TLocal, TLocal&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;TLocal&gt;</td>
+        <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;TLocal&gt;</td>
         <td><em>localFinally</em></td>
         <td><p>The delegate that performs a final action on the local state of each
 thread.</p>
@@ -2248,7 +2238,7 @@ thread.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -2259,7 +2249,7 @@ that contains information on what portion of the loop completed.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/Parallel.cs/#L1957">View Source</a>
       </span>
   <h4 id="ForEach_TSource__TLocal__IEnumerable_TSource___Func_TLocal___Func_TSource__ParallelLoopState__Int64__TLocal__TLocal___Action_TLocal__">ForEach&lt;TSource, TLocal&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TLocal&gt;, Func&lt;TSource, ParallelLoopState, Int64, TLocal, TLocal&gt;, Action&lt;TLocal&gt;)</h4>
-  <div class="markdown level1 summary"><p>Executes a for each operation on an <a href="">System.Collections.IEnumerable{TSource}</a>
+  <div class="markdown level1 summary"><p>Executes a for each operation on an System.Collections.IEnumerable{TSource}
 in which iterations may run in parallel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2267,7 +2257,7 @@ in which iterations may run in parallel.</p>
   <div class="markdown level1 remarks"><para>
 The <paramref name="body"></paramref> delegate is invoked once for each element in the <paramref name="source"></paramref>
 enumerable.  It is provided with the following parameters: the current element,
-a <see cref="T:System.Threading.Tasks.ParallelLoopState">ParallelLoopState</see> instance that may be
+a <a href="System.Threading.Tasks.ParallelLoopState.html">ParallelLoopState</a> instance that may be
 used to break out of the loop prematurely, the current element&#39;s index (an Int64), and some local
 state that may be shared amongst iterations that execute on the same thread.
 </para>
@@ -2294,26 +2284,26 @@ action on each thread&#39;s local state.
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Generic.IEnumerable&lt;TSource&gt;</td>
+        <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;TSource&gt;</td>
         <td><em>source</em></td>
         <td><p>An enumerable data source.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Func&lt;TLocal&gt;</td>
+        <td><a href="System.Func`1.html" name="System.Func">Func</a>&lt;TLocal&gt;</td>
         <td><em>localInit</em></td>
         <td><p>The function delegate that returns the initial state of the local data
 for each thread.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Func&lt;TSource, System.Threading.Tasks.ParallelLoopState, System.Int64, TLocal, TLocal&gt;</td>
+        <td><a href="System.Func`5.html" name="System.Func">Func</a>&lt;TSource, <a href="System.Threading.Tasks.ParallelLoopState.html" name="System.Threading.Tasks.ParallelLoopState">ParallelLoopState</a>, <a href="System.Int64.html" name="System.Int64">Int64</a>, TLocal, TLocal&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;TLocal&gt;</td>
+        <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;TLocal&gt;</td>
         <td><em>localFinally</em></td>
         <td><p>The delegate that performs a final action on the local state of each
 thread.</p>
@@ -2332,7 +2322,7 @@ thread.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -2343,7 +2333,7 @@ that contains information on what portion of the loop completed.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/Parallel.cs/#L1887">View Source</a>
       </span>
   <h4 id="ForEach_TSource__TLocal__IEnumerable_TSource___ParallelOptions__Func_TLocal___Func_TSource__ParallelLoopState__TLocal__TLocal___Action_TLocal__">ForEach&lt;TSource, TLocal&gt;(IEnumerable&lt;TSource&gt;, ParallelOptions, Func&lt;TLocal&gt;, Func&lt;TSource, ParallelLoopState, TLocal, TLocal&gt;, Action&lt;TLocal&gt;)</h4>
-  <div class="markdown level1 summary"><p>Executes a for each operation on an <a href="">System.Collections.IEnumerable{TSource}</a>
+  <div class="markdown level1 summary"><p>Executes a for each operation on an System.Collections.IEnumerable{TSource}
 in which iterations may run in parallel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2351,7 +2341,7 @@ in which iterations may run in parallel.</p>
   <div class="markdown level1 remarks"><para>
 The <paramref name="body"></paramref> delegate is invoked once for each element in the <paramref name="source"></paramref>
 enumerable.  It is provided with the following parameters: the current element,
-a <see cref="T:System.Threading.Tasks.ParallelLoopState">ParallelLoopState</see> instance that may be
+a <a href="System.Threading.Tasks.ParallelLoopState.html">ParallelLoopState</a> instance that may be
 used to break out of the loop prematurely, and some local state that may be shared amongst iterations
 that execute on the same thread.
 </para>
@@ -2378,7 +2368,7 @@ action on each thread&#39;s local state.
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Generic.IEnumerable&lt;TSource&gt;</td>
+        <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;TSource&gt;</td>
         <td><em>source</em></td>
         <td><p>An enumerable data source.</p>
 </td>
@@ -2386,25 +2376,25 @@ action on each thread&#39;s local state.
       <tr>
         <td><a href="System.Threading.Tasks.ParallelOptions.html" name="System.Threading.Tasks.ParallelOptions">ParallelOptions</a></td>
         <td><em>parallelOptions</em></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">System.Threading.Tasks.ParallelOptions</a>
+        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">ParallelOptions</a>
 instance that configures the behavior of this operation.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Func&lt;TLocal&gt;</td>
+        <td><a href="System.Func`1.html" name="System.Func">Func</a>&lt;TLocal&gt;</td>
         <td><em>localInit</em></td>
         <td><p>The function delegate that returns the initial state of the local data
 for each thread.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Func&lt;TSource, System.Threading.Tasks.ParallelLoopState, TLocal, TLocal&gt;</td>
+        <td><a href="System.Func`4.html" name="System.Func">Func</a>&lt;TSource, <a href="System.Threading.Tasks.ParallelLoopState.html" name="System.Threading.Tasks.ParallelLoopState">ParallelLoopState</a>, TLocal, TLocal&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;TLocal&gt;</td>
+        <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;TLocal&gt;</td>
         <td><em>localFinally</em></td>
         <td><p>The delegate that performs a final action on the local state of each
 thread.</p>
@@ -2423,7 +2413,7 @@ thread.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -2434,7 +2424,7 @@ that contains information on what portion of the loop completed.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/Parallel.cs/#L2033">View Source</a>
       </span>
   <h4 id="ForEach_TSource__TLocal__IEnumerable_TSource___ParallelOptions__Func_TLocal___Func_TSource__ParallelLoopState__Int64__TLocal__TLocal___Action_TLocal__">ForEach&lt;TSource, TLocal&gt;(IEnumerable&lt;TSource&gt;, ParallelOptions, Func&lt;TLocal&gt;, Func&lt;TSource, ParallelLoopState, Int64, TLocal, TLocal&gt;, Action&lt;TLocal&gt;)</h4>
-  <div class="markdown level1 summary"><p>Executes a for each operation on an <a href="">System.Collections.IEnumerable{TSource}</a>
+  <div class="markdown level1 summary"><p>Executes a for each operation on an System.Collections.IEnumerable{TSource}
 in which iterations may run in parallel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2442,7 +2432,7 @@ in which iterations may run in parallel.</p>
   <div class="markdown level1 remarks"><para>
 The <paramref name="body"></paramref> delegate is invoked once for each element in the <paramref name="source"></paramref>
 enumerable.  It is provided with the following parameters: the current element,
-a <see cref="T:System.Threading.Tasks.ParallelLoopState">ParallelLoopState</see> instance that may be
+a <a href="System.Threading.Tasks.ParallelLoopState.html">ParallelLoopState</a> instance that may be
 used to break out of the loop prematurely, the current element&#39;s index (an Int64), and some local
 state that may be shared amongst iterations that execute on the same thread.
 </para>
@@ -2469,7 +2459,7 @@ action on each thread&#39;s local state.
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Generic.IEnumerable&lt;TSource&gt;</td>
+        <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;TSource&gt;</td>
         <td><em>source</em></td>
         <td><p>An enumerable data source.</p>
 </td>
@@ -2477,25 +2467,25 @@ action on each thread&#39;s local state.
       <tr>
         <td><a href="System.Threading.Tasks.ParallelOptions.html" name="System.Threading.Tasks.ParallelOptions">ParallelOptions</a></td>
         <td><em>parallelOptions</em></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">System.Threading.Tasks.ParallelOptions</a>
+        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">ParallelOptions</a>
 instance that configures the behavior of this operation.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Func&lt;TLocal&gt;</td>
+        <td><a href="System.Func`1.html" name="System.Func">Func</a>&lt;TLocal&gt;</td>
         <td><em>localInit</em></td>
         <td><p>The function delegate that returns the initial state of the local data
 for each thread.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Func&lt;TSource, System.Threading.Tasks.ParallelLoopState, System.Int64, TLocal, TLocal&gt;</td>
+        <td><a href="System.Func`5.html" name="System.Func">Func</a>&lt;TSource, <a href="System.Threading.Tasks.ParallelLoopState.html" name="System.Threading.Tasks.ParallelLoopState">ParallelLoopState</a>, <a href="System.Int64.html" name="System.Int64">Int64</a>, TLocal, TLocal&gt;</td>
         <td><em>body</em></td>
         <td><p>The delegate that is invoked once per iteration.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action&lt;TLocal&gt;</td>
+        <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;TLocal&gt;</td>
         <td><em>localFinally</em></td>
         <td><p>The delegate that performs a final action on the local state of each
 thread.</p>
@@ -2514,7 +2504,7 @@ thread.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelLoopResult.html" name="System.Threading.Tasks.ParallelLoopResult">ParallelLoopResult</a></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">System.Threading.Tasks.ParallelLoopResult</a> structure
+        <td><p>A <a href="System.Threading.Tasks.ParallelLoopResult.html">ParallelLoopResult</a> structure
 that contains information on what portion of the loop completed.</p>
 </td>
       </tr>
@@ -2550,9 +2540,9 @@ occurs due to normal or exceptional termination.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Action[]</td>
+        <td><a href="System.Action.html" name="System.Action">Action</a>[]</td>
         <td><em>actions</em></td>
-        <td><p>An array of <a href="System.Action.html">System.Action</a> to execute.</p>
+        <td><p>An array of <a href="System.Action.html">Action</a> to execute.</p>
 </td>
       </tr>
     </tbody>
@@ -2589,14 +2579,14 @@ occurs due to normal or exceptional termination.</p>
       <tr>
         <td><a href="System.Threading.Tasks.ParallelOptions.html" name="System.Threading.Tasks.ParallelOptions">ParallelOptions</a></td>
         <td><em>parallelOptions</em></td>
-        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">System.Threading.Tasks.ParallelOptions</a>
+        <td><p>A <a href="System.Threading.Tasks.ParallelOptions.html">ParallelOptions</a>
 instance that configures the behavior of this operation.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Action[]</td>
+        <td><a href="System.Action.html" name="System.Action">Action</a>[]</td>
         <td><em>actions</em></td>
-        <td><p>An array of <a href="System.Action.html">System.Action</a> to execute.</p>
+        <td><p>An array of <a href="System.Action.html">Action</a> to execute.</p>
 </td>
       </tr>
     </tbody>

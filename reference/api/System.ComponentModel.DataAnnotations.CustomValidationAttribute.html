@@ -62,9 +62,9 @@
       <h1 id="CustomValidationAttribute">Class CustomValidationAttribute</h1>
       <div class="markdown level0 summary"><p>Validation attribute that executes a user-supplied method at runtime, using one of these signatures:</p>
 <para>
-public static <see cref="T:System.ComponentModel.DataAnnotations.ValidationResult"></see> Method(object value) { ... }
+public static <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">ValidationResult</a> Method(object value) { ... }
 </para><para>
-public static <see cref="T:System.ComponentModel.DataAnnotations.ValidationResult"></see> Method(object value, <see cref="T:System.ComponentModel.DataAnnotations.ValidationContext"></see> context) {
+public static <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">ValidationResult</a> Method(object value, <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">ValidationContext</a> context) {
 ... }
 </para><para>
 The value can be strongly typed as type conversion will be attempted.
@@ -85,26 +85,26 @@ The value can be strongly typed as type conversion will be attempted.
       </div>
       <h5 id="CustomValidationAttribute_remarks"><strong>Remarks<strong></strong></strong></h5>
       <div class="markdown level0 remarks"><p>This validation attribute is used to invoke custom logic to perform validation at runtime.
-Like any other <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute</a>, its <a href="System.ComponentModel.DataAnnotations.CustomValidationAttribute.html">System.ComponentModel.DataAnnotations.CustomValidationAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)</a>
+Like any other <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">ValidationAttribute</a>, its <a href="System.ComponentModel.DataAnnotations.CustomValidationAttribute.html">IsValid(Object, ValidationContext)</a>
 method is invoked to perform validation.  This implementation simply redirects that call to the method
-identified by <a href="System.ComponentModel.DataAnnotations.CustomValidationAttribute.html">System.ComponentModel.DataAnnotations.CustomValidationAttribute.Method</a> on a type identified by <a href="System.ComponentModel.DataAnnotations.CustomValidationAttribute.html">System.ComponentModel.DataAnnotations.CustomValidationAttribute.ValidatorType</a><para>
-The supplied <see cref="P:System.ComponentModel.DataAnnotations.CustomValidationAttribute.ValidatorType"></see> cannot be null, and it must be a public type.
+identified by <a href="System.ComponentModel.DataAnnotations.CustomValidationAttribute.html">Method</a> on a type identified by <a href="System.ComponentModel.DataAnnotations.CustomValidationAttribute.html">ValidatorType</a><para>
+The supplied <a href="System.ComponentModel.DataAnnotations.CustomValidationAttribute.html">ValidatorType</a> cannot be null, and it must be a public type.
 </para><para>
-The named <see cref="P:System.ComponentModel.DataAnnotations.CustomValidationAttribute.Method"></see> must be public, static, return <see cref="T:System.ComponentModel.DataAnnotations.ValidationResult"></see> and take at
+The named <a href="System.ComponentModel.DataAnnotations.CustomValidationAttribute.html">Method</a> must be public, static, return <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">ValidationResult</a> and take at
 least one input parameter for the value to be validated.  This value parameter may be strongly typed.
 Type conversion will be attempted if clients pass in a value of a different type.
 </para><para>
-The <see cref="P:System.ComponentModel.DataAnnotations.CustomValidationAttribute.Method"></see> may also declare an additional parameter of type <see cref="T:System.ComponentModel.DataAnnotations.ValidationContext"></see>.
-The <see cref="T:System.ComponentModel.DataAnnotations.ValidationContext"></see> parameter provides additional context the method may use to determine
+The <a href="System.ComponentModel.DataAnnotations.CustomValidationAttribute.html">Method</a> may also declare an additional parameter of type <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">ValidationContext</a>.
+The <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">ValidationContext</a> parameter provides additional context the method may use to determine
 the context in which it is being used.
 </para><para>
-If the method returns <see cref="T:System.ComponentModel.DataAnnotations.ValidationResult"></see>.<see cref="F:System.ComponentModel.DataAnnotations.ValidationResult.Success"></see>, that indicates
+If the method returns <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">ValidationResult</a>.<a href="System.ComponentModel.DataAnnotations.ValidationResult.html">Success</a>, that indicates
 the given value is acceptable and validation passed.
-Returning an instance of <see cref="T:System.ComponentModel.DataAnnotations.ValidationResult"></see> indicates that the value is not acceptable
+Returning an instance of <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">ValidationResult</a> indicates that the value is not acceptable
 and validation failed.
 </para><para>
-If the method returns a <see cref="T:System.ComponentModel.DataAnnotations.ValidationResult"></see> with a <c>null</c><see cref="P:System.ComponentModel.DataAnnotations.ValidationResult.ErrorMessage"></see>
-then the normal <see cref="M:System.ComponentModel.DataAnnotations.ValidationAttribute.FormatErrorMessage(System.String)"></see> method will be called to compose the
+If the method returns a <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">ValidationResult</a> with a <c>null</c><a href="System.ComponentModel.DataAnnotations.ValidationResult.html">ErrorMessage</a>
+then the normal <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">FormatErrorMessage(String)</a> method will be called to compose the
 error message.
 </para></p>
 </div>
@@ -120,8 +120,8 @@ specified type.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 id="CustomValidationAttribute_Type__String__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>An invalid <paramref name="validatorType"></paramref> or <paramref name="Method"></paramref> will be cause
-<a href="System.ComponentModel.DataAnnotations.CustomValidationAttribute.html">System.ComponentModel.DataAnnotations.CustomValidationAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)</a>&gt; to return a <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">System.ComponentModel.DataAnnotations.ValidationResult</a>
-and <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute.FormatErrorMessage(System.String)</a> to return a summary error message.</p>
+<a href="System.ComponentModel.DataAnnotations.CustomValidationAttribute.html">IsValid(Object, ValidationContext)</a>&gt; to return a <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">ValidationResult</a>
+and <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">FormatErrorMessage(String)</a> to return a summary error message.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -141,7 +141,7 @@ and <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">Sys
         <td><a href="System.Type.html" name="System.Type">Type</a></td>
         <td><em>validatorType</em></td>
         <td><p>The type that will contain the method to invoke.  It cannot be null.  See
-<a href="System.ComponentModel.DataAnnotations.CustomValidationAttribute.html">System.ComponentModel.DataAnnotations.CustomValidationAttribute.Method</a>.</p>
+<a href="System.ComponentModel.DataAnnotations.CustomValidationAttribute.html">Method</a>.</p>
 </td>
       </tr>
       <tr>
@@ -158,7 +158,7 @@ and <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">Sys
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/CustomValidationAttribute.cs/#L110">View Source</a>
       </span>
   <h4 id="Method">Method</h4>
-  <div class="markdown level1 summary"><p>Gets the name of the method in <a href="System.ComponentModel.DataAnnotations.CustomValidationAttribute.html">System.ComponentModel.DataAnnotations.CustomValidationAttribute.ValidatorType</a> to invoke to perform validation.</p>
+  <div class="markdown level1 summary"><p>Gets the name of the method in <a href="System.ComponentModel.DataAnnotations.CustomValidationAttribute.html">ValidatorType</a> to invoke to perform validation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -185,7 +185,7 @@ and <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">Sys
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/CustomValidationAttribute.cs/#L102">View Source</a>
       </span>
   <h4 id="ValidatorType">ValidatorType</h4>
-  <div class="markdown level1 summary"><p>Gets the type that contains the validation method identified by <a href="System.ComponentModel.DataAnnotations.CustomValidationAttribute.html">System.ComponentModel.DataAnnotations.CustomValidationAttribute.Method</a>.</p>
+  <div class="markdown level1 summary"><p>Gets the type that contains the validation method identified by <a href="System.ComponentModel.DataAnnotations.CustomValidationAttribute.html">Method</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -213,7 +213,7 @@ and <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">Sys
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/CustomValidationAttribute.cs/#L191">View Source</a>
       </span>
   <h4 id="FormatErrorMessage_String_">FormatErrorMessage(String)</h4>
-  <div class="markdown level1 summary"><p>Override of <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute.FormatErrorMessage(System.String)</a></p>
+  <div class="markdown level1 summary"><p>Override of <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">FormatErrorMessage(String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -259,7 +259,7 @@ and <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">Sys
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/CustomValidationAttribute.cs/#L127">View Source</a>
       </span>
   <h4 id="IsValid_Object__ValidationContext_">IsValid(Object, ValidationContext)</h4>
-  <div class="markdown level1 summary"><p>Override of validation method.  See <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)</a>.</p>
+  <div class="markdown level1 summary"><p>Override of validation method.  See <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">IsValid(Object, ValidationContext)</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -285,7 +285,7 @@ and <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">Sys
       <tr>
         <td><a href="System.ComponentModel.DataAnnotations.ValidationContext.html" name="System.ComponentModel.DataAnnotations.ValidationContext">ValidationContext</a></td>
         <td><em>validationContext</em></td>
-        <td><p>A <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">System.ComponentModel.DataAnnotations.ValidationContext</a> instance that provides
+        <td><p>A <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">ValidationContext</a> instance that provides
 context about the validation operation, such as the object and member being validated.</p>
 </td>
       </tr>
@@ -302,7 +302,7 @@ context about the validation operation, such as the object and member being vali
     <tbody>
       <tr>
         <td><a href="System.ComponentModel.DataAnnotations.ValidationResult.html" name="System.ComponentModel.DataAnnotations.ValidationResult">ValidationResult</a></td>
-        <td><p>Whatever the <a href="System.ComponentModel.DataAnnotations.CustomValidationAttribute.html">System.ComponentModel.DataAnnotations.CustomValidationAttribute.Method</a> in <a href="System.ComponentModel.DataAnnotations.CustomValidationAttribute.html">System.ComponentModel.DataAnnotations.CustomValidationAttribute.ValidatorType</a> returns.</p>
+        <td><p>Whatever the <a href="System.ComponentModel.DataAnnotations.CustomValidationAttribute.html">Method</a> in <a href="System.ComponentModel.DataAnnotations.CustomValidationAttribute.html">ValidatorType</a> returns.</p>
 </td>
       </tr>
     </tbody>

@@ -141,7 +141,7 @@ like StartNew or ContinueWith that are performed in the created task will see Ta
       </span>
   <h4 id="LongRunning">LongRunning</h4>
   <div class="markdown level1 summary"><p>Specifies that a task will be a long-running, course-grained operation.  It provides
-a hint to the <a href="System.Threading.Tasks.TaskScheduler.html">System.Threading.Tasks.TaskScheduler</a> that
+a hint to the <a href="System.Threading.Tasks.TaskScheduler.html">TaskScheduler</a> that
 oversubscription may be warranted.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -156,7 +156,7 @@ oversubscription may be warranted.</p>
   <h4 id="None">None</h4>
   <div class="markdown level1 summary"><p>Default = &quot;Continue on any, no task options, run asynchronously&quot;
 Specifies that the default behavior should be used.  Continuations, by default, will
-be scheduled when the antecedent task completes, regardless of the task&#39;s final <a href="System.Threading.Tasks.TaskStatus.html">System.Threading.Tasks.TaskStatus</a>.</p>
+be scheduled when the antecedent task completes, regardless of the task&#39;s final <a href="System.Threading.Tasks.TaskStatus.html">TaskStatus</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -246,7 +246,7 @@ completion. This option is not valid for multi-task continuations.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/Tasks/Task.cs/#L6877">View Source</a>
       </span>
   <h4 id="PreferFairness">PreferFairness</h4>
-  <div class="markdown level1 summary"><p>A hint to a <a href="System.Threading.Tasks.TaskScheduler.html">System.Threading.Tasks.TaskScheduler</a> to schedule a
+  <div class="markdown level1 summary"><p>A hint to a <a href="System.Threading.Tasks.TaskScheduler.html">TaskScheduler</a> to schedule a
 task in as fair a manner as possible, meaning that tasks scheduled sooner will be more likely to
 be run sooner, and tasks scheduled later will be more likely to be run later.</p>
 </div>

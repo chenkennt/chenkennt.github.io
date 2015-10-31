@@ -61,7 +61,7 @@
       </a>
       <h1 id="BlockingCollection_T_">Class BlockingCollection&lt;T&gt;</h1>
       <div class="markdown level0 summary"><p>Provides blocking and bounding capabilities for thread-safe collections that
-implement <a href="">System.Collections.Concurrent.IProducerConsumerCollection{T}</a>.</p>
+implement System.Collections.Concurrent.IProducerConsumerCollection{T}.</p>
 </div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
@@ -76,18 +76,18 @@ implement <a href="">System.Collections.Concurrent.IProducerConsumerCollection{T
         <pre><code class="lang-csharp hljs">public class BlockingCollection<t> : ICollection, IDisposable, IReadOnlyCollection<t>, IEnumerable<t>, IEnumerable</t></t></t></code></pre>
       </div>
       <h5 id="BlockingCollection_T__remarks"><strong>Remarks<strong></strong></strong></h5>
-      <div class="markdown level0 remarks"><p><see cref="T:System.Collections.Concurrent.IProducerConsumerCollection{T}"></see> represents a collection
-that allows for thread-safe adding and removing of data.</p>
-<p><see cref="T:System.Collections.Concurrent.BlockingCollection{T}"></see> is used as a wrapper
-for an <see cref="T:System.Collections.Concurrent.IProducerConsumerCollection{T}"></see> instance, allowing
+      <div class="markdown level0 remarks"><p>System.Collections.Concurrent.IProducerConsumerCollection{T} represents a collection
+that allows for thread-safe adding and removing of data.
+System.Collections.Concurrent.BlockingCollection{T} is used as a wrapper
+for an System.Collections.Concurrent.IProducerConsumerCollection{T} instance, allowing
 removal attempts from the collection to block until data is available to be removed.  Similarly,
-a <see cref="T:System.Collections.Concurrent.BlockingCollection{T}"></see> can be created to enforce
-an upper-bound on the number of data elements allowed in the</p>
-<p><see cref="T:System.Collections.Concurrent.IProducerConsumerCollection{T}"></see>; addition attempts to the
-collection may then block until space is available to store the added items.  In this manner,</p>
-<p><see cref="T:System.Collections.Concurrent.BlockingCollection{T}"></see> is similar to a traditional
+a System.Collections.Concurrent.BlockingCollection{T} can be created to enforce
+an upper-bound on the number of data elements allowed in the
+System.Collections.Concurrent.IProducerConsumerCollection{T}; addition attempts to the
+collection may then block until space is available to store the added items.  In this manner,
+System.Collections.Concurrent.BlockingCollection{T} is similar to a traditional
 blocking queue data structure, except that the underlying data storage mechanism is abstracted
-away as an <see cref="T:System.Collections.Concurrent.IProducerConsumerCollection{T}"></see>.</p>
+away as an System.Collections.Concurrent.IProducerConsumerCollection{T}.</p>
 </div>
       <h3 id="constructors">Constructors</h3>
 
@@ -96,12 +96,12 @@ away as an <see cref="T:System.Collections.Concurrent.IProducerConsumerCollectio
       </span>
   <h4 id="BlockingCollection__">BlockingCollection()</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the
-<a href="">System.Collections.Concurrent.BlockingCollection{T}</a>
+System.Collections.Concurrent.BlockingCollection{T}
 class without an upper-bound.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="BlockingCollection___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The default underlying collection is a <a href="System.Collections.Concurrent.ConcurrentQueue`1.html">System.Collections.Concurrent.ConcurrentQueue`1</a>.</p>
+  <div class="markdown level1 remarks"><p>The default underlying collection is a <a href="System.Collections.Concurrent.ConcurrentQueue`1.html">ConcurrentQueue</a>.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -112,9 +112,9 @@ class without an upper-bound.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L200">View Source</a>
       </span>
   <h4 id="BlockingCollection_IProducerConsumerCollection_T__">BlockingCollection(IProducerConsumerCollection&lt;T&gt;)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the System.Collections.Concurrent.BlockingCollection{T}
 class without an upper-bound and using the provided
-<a href="">System.Collections.Concurrent.IProducerConsumerCollection{T}</a> as its underlying data store.</p>
+System.Collections.Concurrent.IProducerConsumerCollection{T} as its underlying data store.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -132,7 +132,7 @@ class without an upper-bound and using the provided
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Concurrent.IProducerConsumerCollection&lt;T&gt;</td>
+        <td><a href="System.Collections.Concurrent.IProducerConsumerCollection`1.html" name="System.Collections.Concurrent.IProducerConsumerCollection">IProducerConsumerCollection</a>&lt;T&gt;</td>
         <td><em>collection</em></td>
         <td><p>The collection to use as the underlying data store.</p>
 </td>
@@ -144,9 +144,9 @@ class without an upper-bound and using the provided
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L174">View Source</a>
       </span>
   <h4 id="BlockingCollection_IProducerConsumerCollection_T___Int32_">BlockingCollection(IProducerConsumerCollection&lt;T&gt;, Int32)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the System.Collections.Concurrent.BlockingCollection{T}
 class with the specified upper-bound and using the provided
-<a href="">System.Collections.Concurrent.IProducerConsumerCollection{T}</a> as its underlying data store.</p>
+System.Collections.Concurrent.IProducerConsumerCollection{T} as its underlying data store.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -164,7 +164,7 @@ class with the specified upper-bound and using the provided
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Concurrent.IProducerConsumerCollection&lt;T&gt;</td>
+        <td><a href="System.Collections.Concurrent.IProducerConsumerCollection`1.html" name="System.Collections.Concurrent.IProducerConsumerCollection">IProducerConsumerCollection</a>&lt;T&gt;</td>
         <td><em>collection</em></td>
         <td><p>The collection to use as the underlying data store.</p>
 </td>
@@ -182,12 +182,12 @@ class with the specified upper-bound and using the provided
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L159">View Source</a>
       </span>
   <h4 id="BlockingCollection_Int32_">BlockingCollection(Int32)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the System.Collections.Concurrent.BlockingCollection{T}
 class with the specified upper-bound.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="BlockingCollection_Int32__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The default underlying collection is a <a href="System.Collections.Concurrent.ConcurrentQueue`1.html">System.Collections.Concurrent.ConcurrentQueue`1</a>.</p>
+  <div class="markdown level1 remarks"><p>The default underlying collection is a <a href="System.Collections.Concurrent.ConcurrentQueue`1.html">ConcurrentQueue</a>.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -217,7 +217,7 @@ class with the specified upper-bound.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L62">View Source</a>
       </span>
   <h4 id="BoundedCapacity">BoundedCapacity</h4>
-  <div class="markdown level1 summary"><p>Gets the bounded capacity of this <a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instance.</p>
+  <div class="markdown level1 summary"><p>Gets the bounded capacity of this System.Collections.Concurrent.BlockingCollection{T} instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -244,7 +244,7 @@ class with the specified upper-bound.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L101">View Source</a>
       </span>
   <h4 id="Count">Count</h4>
-  <div class="markdown level1 summary"><p>Gets the number of items contained in the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a>.</p>
+  <div class="markdown level1 summary"><p>Gets the number of items contained in the System.Collections.Concurrent.BlockingCollection{T}.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -271,7 +271,7 @@ class with the specified upper-bound.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L75">View Source</a>
       </span>
   <h4 id="IsAddingCompleted">IsAddingCompleted</h4>
-  <div class="markdown level1 summary"><p>Gets whether this <a href="">System.Collections.Concurrent.BlockingCollection{T}</a> has been marked as complete for adding.</p>
+  <div class="markdown level1 summary"><p>Gets whether this System.Collections.Concurrent.BlockingCollection{T} has been marked as complete for adding.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -298,7 +298,7 @@ class with the specified upper-bound.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L88">View Source</a>
       </span>
   <h4 id="IsCompleted">IsCompleted</h4>
-  <div class="markdown level1 summary"><p>Gets whether this <a href="">System.Collections.Concurrent.BlockingCollection{T}</a> has been marked as complete for adding and is empty.</p>
+  <div class="markdown level1 summary"><p>Gets whether this System.Collections.Concurrent.BlockingCollection{T} has been marked as complete for adding and is empty.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -325,7 +325,7 @@ class with the specified upper-bound.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L113">View Source</a>
       </span>
   <h4 id="ICollection_IsSynchronized">ICollection.IsSynchronized</h4>
-  <div class="markdown level1 summary"><p>Gets a value indicating whether access to the <a href="System.Collections.ICollection.html">System.Collections.ICollection</a> is synchronized.</p>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether access to the <a href="System.Collections.ICollection.html">ICollection</a> is synchronized.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -352,7 +352,7 @@ class with the specified upper-bound.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L127">View Source</a>
       </span>
   <h4 id="ICollection_SyncRoot">ICollection.SyncRoot</h4>
-  <div class="markdown level1 summary"><p>Gets an object that can be used to synchronize access to the <a href="System.Collections.ICollection.html">System.Collections.ICollection</a>. This property is not supported.</p>
+  <div class="markdown level1 summary"><p>Gets an object that can be used to synchronize access to the <a href="System.Collections.ICollection.html">ICollection</a>. This property is not supported.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -380,12 +380,12 @@ class with the specified upper-bound.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L253">View Source</a>
       </span>
   <h4 id="Add_T_">Add(T)</h4>
-  <div class="markdown level1 summary"><p>Adds the item to the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a>.</p>
+  <div class="markdown level1 summary"><p>Adds the item to the System.Collections.Concurrent.BlockingCollection{T}.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Add_T__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If a bounded capacity was specified when this instance of</p>
-<p><see cref="T:System.Collections.Concurrent.BlockingCollection{T}"></see> was initialized,
+  <div class="markdown level1 remarks"><p>If a bounded capacity was specified when this instance of
+System.Collections.Concurrent.BlockingCollection{T} was initialized,
 a call to Add may block until space is available to store the provided item.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -415,15 +415,15 @@ a call to Add may block until space is available to store the provided item.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L283">View Source</a>
       </span>
   <h4 id="Add_T__CancellationToken_">Add(T, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Adds the item to the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a>.
-A <a href="System.OperationCanceledException.html">System.OperationCanceledException</a> is thrown if the <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> is
+  <div class="markdown level1 summary"><p>Adds the item to the System.Collections.Concurrent.BlockingCollection{T}.
+A <a href="System.OperationCanceledException.html">OperationCanceledException</a> is thrown if the <a href="System.Threading.CancellationToken.html">CancellationToken</a> is
 canceled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Add_T__CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If a bounded capacity was specified when this instance of</p>
-<p><see cref="T:System.Collections.Concurrent.BlockingCollection{T}"></see> was initialized,
-a call to <see cref="M:System.Collections.Concurrent.BlockingCollection`1.Add(`0,System.Threading.CancellationToken)"></see> may block until space is available to store the provided item.</p>
+  <div class="markdown level1 remarks"><p>If a bounded capacity was specified when this instance of
+System.Collections.Concurrent.BlockingCollection{T} was initialized,
+a call to <a href="System.Collections.Concurrent.BlockingCollection`1.html">Add(T, CancellationToken)</a> may block until space is available to store the provided item.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -459,12 +459,12 @@ a call to <see cref="M:System.Collections.Concurrent.BlockingCollection`1.Add(`0
       </span>
   <h4 id="AddToAny_BlockingCollection_T_____T_">AddToAny(BlockingCollection&lt;T&gt;[], T)</h4>
   <div class="markdown level1 summary"><p>Adds the specified item to any one of the specified
-<a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instances.</p>
+System.Collections.Concurrent.BlockingCollection{T} instances.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="AddToAny_BlockingCollection_T_____T__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If a bounded capacity was specified when all of the</p>
-<p><see cref="T:System.Collections.Concurrent.BlockingCollection{T}"></see> instances were initialized,
+  <div class="markdown level1 remarks"><p>If a bounded capacity was specified when all of the
+System.Collections.Concurrent.BlockingCollection{T} instances were initialized,
 a call to AddToAny may block until space is available in one of the collections
 to store the provided item.</p>
 </div>
@@ -483,7 +483,7 @@ to store the provided item.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Concurrent.BlockingCollection&lt;T&gt;[]</td>
+        <td><a href="System.Collections.Concurrent.BlockingCollection`1.html" name="System.Collections.Concurrent.BlockingCollection">BlockingCollection</a>&lt;T&gt;[]</td>
         <td><em>collections</em></td>
         <td><p>The array of collections.</p>
 </td>
@@ -518,14 +518,14 @@ to store the provided item.</p>
       </span>
   <h4 id="AddToAny_BlockingCollection_T_____T__CancellationToken_">AddToAny(BlockingCollection&lt;T&gt;[], T, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Adds the specified item to any one of the specified
-<a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instances.
-A <a href="System.OperationCanceledException.html">System.OperationCanceledException</a> is thrown if the <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> is
+System.Collections.Concurrent.BlockingCollection{T} instances.
+A <a href="System.OperationCanceledException.html">OperationCanceledException</a> is thrown if the <a href="System.Threading.CancellationToken.html">CancellationToken</a> is
 canceled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="AddToAny_BlockingCollection_T_____T__CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If a bounded capacity was specified when all of the</p>
-<p><see cref="T:System.Collections.Concurrent.BlockingCollection{T}"></see> instances were initialized,
+  <div class="markdown level1 remarks"><p>If a bounded capacity was specified when all of the
+System.Collections.Concurrent.BlockingCollection{T} instances were initialized,
 a call to AddToAny may block until space is available in one of the collections
 to store the provided item.</p>
 </div>
@@ -544,7 +544,7 @@ to store the provided item.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Concurrent.BlockingCollection&lt;T&gt;[]</td>
+        <td><a href="System.Collections.Concurrent.BlockingCollection`1.html" name="System.Collections.Concurrent.BlockingCollection">BlockingCollection</a>&lt;T&gt;[]</td>
         <td><em>collections</em></td>
         <td><p>The array of collections.</p>
 </td>
@@ -584,7 +584,7 @@ to store the provided item.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L1473">View Source</a>
       </span>
   <h4 id="CompleteAdding__">CompleteAdding()</h4>
-  <div class="markdown level1 summary"><p>Marks the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instances
+  <div class="markdown level1 summary"><p>Marks the System.Collections.Concurrent.BlockingCollection{T} instances
 as not accepting any more additions.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -601,7 +601,7 @@ and attempts to remove from the collection will not wait when the collection is 
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L1578">View Source</a>
       </span>
   <h4 id="CopyTo_T____Int32_">CopyTo(T[], Int32)</h4>
-  <div class="markdown level1 summary"><p>Copies all of the items in the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instance
+  <div class="markdown level1 summary"><p>Copies all of the items in the System.Collections.Concurrent.BlockingCollection{T} instance
 to a compatible one-dimensional array, starting at the specified index of the target array.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -623,7 +623,7 @@ to a compatible one-dimensional array, starting at the specified index of the ta
         <td>T[]</td>
         <td><em>array</em></td>
         <td><p>The one-dimensional array that is the destination of the elements copied from
-the <see cref="T:System.Collections.Concurrent.BlockingCollection{T}"></see> instance. The array must have zero-based indexing.</p>
+the System.Collections.Concurrent.BlockingCollection{T} instance. The array must have zero-based indexing.</p>
 </td>
       </tr>
       <tr>
@@ -639,7 +639,7 @@ the <see cref="T:System.Collections.Concurrent.BlockingCollection{T}"></see> ins
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L1527">View Source</a>
       </span>
   <h4 id="Dispose__">Dispose()</h4>
-  <div class="markdown level1 summary"><p>Releases resources used by the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instance.</p>
+  <div class="markdown level1 summary"><p>Releases resources used by the System.Collections.Concurrent.BlockingCollection{T} instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -651,7 +651,7 @@ the <see cref="T:System.Collections.Concurrent.BlockingCollection{T}"></see> ins
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L1537">View Source</a>
       </span>
   <h4 id="Dispose_Boolean_">Dispose(Boolean)</h4>
-  <div class="markdown level1 summary"><p>Releases resources used by the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instance.</p>
+  <div class="markdown level1 summary"><p>Releases resources used by the System.Collections.Concurrent.BlockingCollection{T} instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -681,7 +681,7 @@ the <see cref="T:System.Collections.Concurrent.BlockingCollection{T}"></see> ins
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L1639">View Source</a>
       </span>
   <h4 id="GetConsumingEnumerable__">GetConsumingEnumerable()</h4>
-  <div class="markdown level1 summary"><p>Provides a consuming <a href="">System.Collections.Generics.IEnumerable{T}</a> for items in the collection.</p>
+  <div class="markdown level1 summary"><p>Provides a consuming System.Collections.Generics.IEnumerable{T} for items in the collection.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -698,8 +698,8 @@ the <see cref="T:System.Collections.Concurrent.BlockingCollection{T}"></see> ins
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
-        <td><p>An <see cref="T:System.Collections.Generics.IEnumerable{T}"></see> that removes and returns items from the collection.</p>
+        <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;T&gt;</td>
+        <td><p>An System.Collections.Generics.IEnumerable{T} that removes and returns items from the collection.</p>
 </td>
       </tr>
     </tbody>
@@ -709,9 +709,9 @@ the <see cref="T:System.Collections.Concurrent.BlockingCollection{T}"></see> ins
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L1653">View Source</a>
       </span>
   <h4 id="GetConsumingEnumerable_CancellationToken_">GetConsumingEnumerable(CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Provides a consuming <a href="">System.Collections.Generics.IEnumerable{T}</a> for items in the collection.
+  <div class="markdown level1 summary"><p>Provides a consuming System.Collections.Generics.IEnumerable{T} for items in the collection.
 Calling MoveNext on the returned enumerable will block if there is no data available, or will
-throw an <a href="System.OperationCanceledException.html">System.OperationCanceledException</a> if the <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> is canceled.</p>
+throw an <a href="System.OperationCanceledException.html">OperationCanceledException</a> if the <a href="System.Threading.CancellationToken.html">CancellationToken</a> is canceled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -746,8 +746,8 @@ throw an <a href="System.OperationCanceledException.html">System.OperationCancel
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
-        <td><p>An <see cref="T:System.Collections.Generics.IEnumerable{T}"></see> that removes and returns items from the collection.</p>
+        <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;T&gt;</td>
+        <td><p>An System.Collections.Generics.IEnumerable{T} that removes and returns items from the collection.</p>
 </td>
       </tr>
     </tbody>
@@ -757,7 +757,7 @@ throw an <a href="System.OperationCanceledException.html">System.OperationCancel
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L1681">View Source</a>
       </span>
   <h4 id="IEnumerable_T__GetEnumerator__">IEnumerable&lt;T&gt;.GetEnumerator()</h4>
-  <div class="markdown level1 summary"><p>Provides an <a href="">System.Collections.Generics.IEnumerator{T}</a> for items in the collection.</p>
+  <div class="markdown level1 summary"><p>Provides an System.Collections.Generics.IEnumerator{T} for items in the collection.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -774,8 +774,8 @@ throw an <a href="System.OperationCanceledException.html">System.OperationCancel
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Generic.IEnumerator&lt;T&gt;</td>
-        <td><p>An <see cref="T:System.Collections.Generics.IEnumerator{T}"></see> for the items in the collection.</p>
+        <td><a href="System.Collections.Generic.IEnumerator`1.html" name="System.Collections.Generic.IEnumerator">IEnumerator</a>&lt;T&gt;</td>
+        <td><p>An System.Collections.Generics.IEnumerator{T} for the items in the collection.</p>
 </td>
       </tr>
     </tbody>
@@ -785,7 +785,7 @@ throw an <a href="System.OperationCanceledException.html">System.OperationCancel
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L1597">View Source</a>
       </span>
   <h4 id="ICollection_CopyTo_Array__Int32_">ICollection.CopyTo(Array, Int32)</h4>
-  <div class="markdown level1 summary"><p>Copies all of the items in the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instance
+  <div class="markdown level1 summary"><p>Copies all of the items in the System.Collections.Concurrent.BlockingCollection{T} instance
 to a compatible one-dimensional array, starting at the specified index of the target array.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -807,7 +807,7 @@ to a compatible one-dimensional array, starting at the specified index of the ta
         <td><a href="System.Array.html" name="System.Array">Array</a></td>
         <td><em>array</em></td>
         <td><p>The one-dimensional array that is the destination of the elements copied from
-the <see cref="T:System.Collections.Concurrent.BlockingCollection{T}"></see> instance. The array must have zero-based indexing.</p>
+the System.Collections.Concurrent.BlockingCollection{T} instance. The array must have zero-based indexing.</p>
 </td>
       </tr>
       <tr>
@@ -823,7 +823,7 @@ the <see cref="T:System.Collections.Concurrent.BlockingCollection{T}"></see> ins
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L1691">View Source</a>
       </span>
   <h4 id="IEnumerable_GetEnumerator__">IEnumerable.GetEnumerator()</h4>
-  <div class="markdown level1 summary"><p>Provides an <a href="System.Collections.IEnumerator.html">System.Collections.IEnumerator</a> for items in the collection.</p>
+  <div class="markdown level1 summary"><p>Provides an <a href="System.Collections.IEnumerator.html">IEnumerator</a> for items in the collection.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -841,7 +841,7 @@ the <see cref="T:System.Collections.Concurrent.BlockingCollection{T}"></see> ins
     <tbody>
       <tr>
         <td><a href="System.Collections.IEnumerator.html" name="System.Collections.IEnumerator">IEnumerator</a></td>
-        <td><p>An <see cref="T:System.Collections.IEnumerator"></see> for the items in the collection.</p>
+        <td><p>An <a href="System.Collections.IEnumerator.html">IEnumerator</a> for the items in the collection.</p>
 </td>
       </tr>
     </tbody>
@@ -851,11 +851,11 @@ the <see cref="T:System.Collections.Concurrent.BlockingCollection{T}"></see> ins
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L538">View Source</a>
       </span>
   <h4 id="Take__">Take()</h4>
-  <div class="markdown level1 summary"><p>Takes an item from the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a>.</p>
+  <div class="markdown level1 summary"><p>Takes an item from the System.Collections.Concurrent.BlockingCollection{T}.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Take___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>A call to <a href="System.Collections.Concurrent.BlockingCollection`1.html">System.Collections.Concurrent.BlockingCollection`1.Take</a> may block until an item is available to be removed.</p>
+  <div class="markdown level1 remarks"><p>A call to <a href="System.Collections.Concurrent.BlockingCollection`1.html">Take()</a> may block until an item is available to be removed.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -882,11 +882,11 @@ the <see cref="T:System.Collections.Concurrent.BlockingCollection{T}"></see> ins
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L562">View Source</a>
       </span>
   <h4 id="Take_CancellationToken_">Take(CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Takes an item from the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a>.</p>
+  <div class="markdown level1 summary"><p>Takes an item from the System.Collections.Concurrent.BlockingCollection{T}.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Take_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>A call to <a href="System.Collections.Concurrent.BlockingCollection`1.html">System.Collections.Concurrent.BlockingCollection`1.Take(System.Threading.CancellationToken)</a> may block until an item is available to be removed.</p>
+  <div class="markdown level1 remarks"><p>A call to <a href="System.Collections.Concurrent.BlockingCollection`1.html">Take(CancellationToken)</a> may block until an item is available to be removed.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -931,7 +931,7 @@ the <see cref="T:System.Collections.Concurrent.BlockingCollection{T}"></see> ins
       </span>
   <h4 id="TakeFromAny_BlockingCollection_T_____out_T_">TakeFromAny(BlockingCollection&lt;T&gt;[], out T)</h4>
   <div class="markdown level1 summary"><p>Takes an item from any one of the specified
-<a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instances.</p>
+System.Collections.Concurrent.BlockingCollection{T} instances.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="TakeFromAny_BlockingCollection_T_____out_T__remarks">Remarks</h5>
@@ -952,7 +952,7 @@ the <see cref="T:System.Collections.Concurrent.BlockingCollection{T}"></see> ins
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Concurrent.BlockingCollection&lt;T&gt;[]</td>
+        <td><a href="System.Collections.Concurrent.BlockingCollection`1.html" name="System.Collections.Concurrent.BlockingCollection">BlockingCollection</a>&lt;T&gt;[]</td>
         <td><em>collections</em></td>
         <td><p>The array of collections.</p>
 </td>
@@ -988,8 +988,8 @@ the item was removed, or -1 if an item could not be removed.</p>
       </span>
   <h4 id="TakeFromAny_BlockingCollection_T_____out_T__CancellationToken_">TakeFromAny(BlockingCollection&lt;T&gt;[], out T, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Takes an item from any one of the specified
-<a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instances.
-A <a href="System.OperationCanceledException.html">System.OperationCanceledException</a> is thrown if the <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> is
+System.Collections.Concurrent.BlockingCollection{T} instances.
+A <a href="System.OperationCanceledException.html">OperationCanceledException</a> is thrown if the <a href="System.Threading.CancellationToken.html">CancellationToken</a> is
 canceled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1011,7 +1011,7 @@ canceled.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Concurrent.BlockingCollection&lt;T&gt;[]</td>
+        <td><a href="System.Collections.Concurrent.BlockingCollection`1.html" name="System.Collections.Concurrent.BlockingCollection">BlockingCollection</a>&lt;T&gt;[]</td>
         <td><em>collections</em></td>
         <td><p>The array of collections.</p>
 </td>
@@ -1052,7 +1052,7 @@ the item was removed, or -1 if an item could not be removed.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L1559">View Source</a>
       </span>
   <h4 id="ToArray__">ToArray()</h4>
-  <div class="markdown level1 summary"><p>Copies the items from the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instance into a new array.</p>
+  <div class="markdown level1 summary"><p>Copies the items from the System.Collections.Concurrent.BlockingCollection{T} instance into a new array.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ToArray___remarks">Remarks</h5>
@@ -1083,7 +1083,7 @@ the item was removed, or -1 if an item could not be removed.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L305">View Source</a>
       </span>
   <h4 id="TryAdd_T_">TryAdd(T)</h4>
-  <div class="markdown level1 summary"><p>Attempts to add the specified item to the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a>.</p>
+  <div class="markdown level1 summary"><p>Attempts to add the specified item to the System.Collections.Concurrent.BlockingCollection{T}.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1129,7 +1129,7 @@ the item was removed, or -1 if an item could not be removed.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L350">View Source</a>
       </span>
   <h4 id="TryAdd_T__Int32_">TryAdd(T, Int32)</h4>
-  <div class="markdown level1 summary"><p>Attempts to add the specified item to the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a>.</p>
+  <div class="markdown level1 summary"><p>Attempts to add the specified item to the System.Collections.Concurrent.BlockingCollection{T}.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1155,7 +1155,7 @@ the item was removed, or -1 if an item could not be removed.</p>
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
         <td><em>millisecondsTimeout</em></td>
-        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a> (-1) to wait indefinitely.</p>
+        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">Infinite</a> (-1) to wait indefinitely.</p>
 </td>
       </tr>
     </tbody>
@@ -1182,8 +1182,8 @@ the alloted time; otherwise, false.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L376">View Source</a>
       </span>
   <h4 id="TryAdd_T__Int32__CancellationToken_">TryAdd(T, Int32, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Attempts to add the specified item to the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a>.
-A <a href="System.OperationCanceledException.html">System.OperationCanceledException</a> is thrown if the <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> is
+  <div class="markdown level1 summary"><p>Attempts to add the specified item to the System.Collections.Concurrent.BlockingCollection{T}.
+A <a href="System.OperationCanceledException.html">OperationCanceledException</a> is thrown if the <a href="System.Threading.CancellationToken.html">CancellationToken</a> is
 canceled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1210,7 +1210,7 @@ canceled.</p>
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
         <td><em>millisecondsTimeout</em></td>
-        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a> (-1) to wait indefinitely.</p>
+        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">Infinite</a> (-1) to wait indefinitely.</p>
 </td>
       </tr>
       <tr>
@@ -1243,7 +1243,7 @@ the alloted time; otherwise, false.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L328">View Source</a>
       </span>
   <h4 id="TryAdd_T__TimeSpan_">TryAdd(T, TimeSpan)</h4>
-  <div class="markdown level1 summary"><p>Attempts to add the specified item to the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a>.</p>
+  <div class="markdown level1 summary"><p>Attempts to add the specified item to the System.Collections.Concurrent.BlockingCollection{T}.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1269,8 +1269,8 @@ the alloted time; otherwise, false.</p>
       <tr>
         <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
         <td><em>timeout</em></td>
-        <td><p>A <see cref="T:System.TimeSpan"></see> that represents the number of milliseconds
-to wait, or a <see cref="T:System.TimeSpan"></see> that represents -1 milliseconds to wait indefinitely.</p>
+        <td><p>A <a href="System.TimeSpan.html">TimeSpan</a> that represents the number of milliseconds
+to wait, or a <a href="System.TimeSpan.html">TimeSpan</a> that represents -1 milliseconds to wait indefinitely.</p>
 </td>
       </tr>
     </tbody>
@@ -1298,7 +1298,7 @@ the alloted time; otherwise, false.</p>
       </span>
   <h4 id="TryAddToAny_BlockingCollection_T_____T_">TryAddToAny(BlockingCollection&lt;T&gt;[], T)</h4>
   <div class="markdown level1 summary"><p>Attempts to add the specified item to any one of the specified
-<a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instances.</p>
+System.Collections.Concurrent.BlockingCollection{T} instances.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1316,7 +1316,7 @@ the alloted time; otherwise, false.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Concurrent.BlockingCollection&lt;T&gt;[]</td>
+        <td><a href="System.Collections.Concurrent.BlockingCollection`1.html" name="System.Collections.Concurrent.BlockingCollection">BlockingCollection</a>&lt;T&gt;[]</td>
         <td><em>collections</em></td>
         <td><p>The array of collections.</p>
 </td>
@@ -1352,7 +1352,7 @@ array to which the item was added, or -1 if the item could not be added.</p>
       </span>
   <h4 id="TryAddToAny_BlockingCollection_T_____T__Int32_">TryAddToAny(BlockingCollection&lt;T&gt;[], T, Int32)</h4>
   <div class="markdown level1 summary"><p>Attempts to add the specified item to any one of the specified
-<a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instances.</p>
+System.Collections.Concurrent.BlockingCollection{T} instances.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1370,7 +1370,7 @@ array to which the item was added, or -1 if the item could not be added.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Concurrent.BlockingCollection&lt;T&gt;[]</td>
+        <td><a href="System.Collections.Concurrent.BlockingCollection`1.html" name="System.Collections.Concurrent.BlockingCollection">BlockingCollection</a>&lt;T&gt;[]</td>
         <td><em>collections</em></td>
         <td><p>The array of collections.</p>
 </td>
@@ -1384,7 +1384,7 @@ array to which the item was added, or -1 if the item could not be added.</p>
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
         <td><em>millisecondsTimeout</em></td>
-        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a> (-1) to wait indefinitely.</p>
+        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">Infinite</a> (-1) to wait indefinitely.</p>
 </td>
       </tr>
     </tbody>
@@ -1412,8 +1412,8 @@ array to which the item was added, or -1 if the item could not be added.</p>
       </span>
   <h4 id="TryAddToAny_BlockingCollection_T_____T__Int32__CancellationToken_">TryAddToAny(BlockingCollection&lt;T&gt;[], T, Int32, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Attempts to add the specified item to any one of the specified
-<a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instances.
-A <a href="System.OperationCanceledException.html">System.OperationCanceledException</a> is thrown if the <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> is
+System.Collections.Concurrent.BlockingCollection{T} instances.
+A <a href="System.OperationCanceledException.html">OperationCanceledException</a> is thrown if the <a href="System.Threading.CancellationToken.html">CancellationToken</a> is
 canceled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1432,7 +1432,7 @@ canceled.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Concurrent.BlockingCollection&lt;T&gt;[]</td>
+        <td><a href="System.Collections.Concurrent.BlockingCollection`1.html" name="System.Collections.Concurrent.BlockingCollection">BlockingCollection</a>&lt;T&gt;[]</td>
         <td><em>collections</em></td>
         <td><p>The array of collections.</p>
 </td>
@@ -1446,7 +1446,7 @@ canceled.</p>
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
         <td><em>millisecondsTimeout</em></td>
-        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a> (-1) to wait indefinitely.</p>
+        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">Infinite</a> (-1) to wait indefinitely.</p>
 </td>
       </tr>
       <tr>
@@ -1480,7 +1480,7 @@ array to which the item was added, or -1 if the item could not be added.</p>
       </span>
   <h4 id="TryAddToAny_BlockingCollection_T_____T__TimeSpan_">TryAddToAny(BlockingCollection&lt;T&gt;[], T, TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Attempts to add the specified item to any one of the specified
-<a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instances.</p>
+System.Collections.Concurrent.BlockingCollection{T} instances.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1498,7 +1498,7 @@ array to which the item was added, or -1 if the item could not be added.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Concurrent.BlockingCollection&lt;T&gt;[]</td>
+        <td><a href="System.Collections.Concurrent.BlockingCollection`1.html" name="System.Collections.Concurrent.BlockingCollection">BlockingCollection</a>&lt;T&gt;[]</td>
         <td><em>collections</em></td>
         <td><p>The array of collections.</p>
 </td>
@@ -1512,8 +1512,8 @@ array to which the item was added, or -1 if the item could not be added.</p>
       <tr>
         <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
         <td><em>timeout</em></td>
-        <td><p>A <see cref="T:System.TimeSpan"></see> that represents the number of milliseconds
-to wait, or a <see cref="T:System.TimeSpan"></see> that represents -1 milliseconds to wait indefinitely.</p>
+        <td><p>A <a href="System.TimeSpan.html">TimeSpan</a> that represents the number of milliseconds
+to wait, or a <a href="System.TimeSpan.html">TimeSpan</a> that represents -1 milliseconds to wait indefinitely.</p>
 </td>
       </tr>
     </tbody>
@@ -1540,7 +1540,7 @@ array to which the item was added, or -1 if the item could not be added.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L584">View Source</a>
       </span>
   <h4 id="TryTake_out_T_">TryTake(out T)</h4>
-  <div class="markdown level1 summary"><p>Attempts to remove an item from the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a>.</p>
+  <div class="markdown level1 summary"><p>Attempts to remove an item from the System.Collections.Concurrent.BlockingCollection{T}.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1586,7 +1586,7 @@ array to which the item was added, or -1 if the item could not be added.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L627">View Source</a>
       </span>
   <h4 id="TryTake_out_T__Int32_">TryTake(out T, Int32)</h4>
-  <div class="markdown level1 summary"><p>Attempts to remove an item from the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a>.</p>
+  <div class="markdown level1 summary"><p>Attempts to remove an item from the System.Collections.Concurrent.BlockingCollection{T}.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1612,7 +1612,7 @@ array to which the item was added, or -1 if the item could not be added.</p>
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
         <td><em>millisecondsTimeout</em></td>
-        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a> (-1) to wait indefinitely.</p>
+        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">Infinite</a> (-1) to wait indefinitely.</p>
 </td>
       </tr>
     </tbody>
@@ -1639,8 +1639,8 @@ the alloted time; otherwise, false.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L652">View Source</a>
       </span>
   <h4 id="TryTake_out_T__Int32__CancellationToken_">TryTake(out T, Int32, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Attempts to remove an item from the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a>.
-A <a href="System.OperationCanceledException.html">System.OperationCanceledException</a> is thrown if the <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> is
+  <div class="markdown level1 summary"><p>Attempts to remove an item from the System.Collections.Concurrent.BlockingCollection{T}.
+A <a href="System.OperationCanceledException.html">OperationCanceledException</a> is thrown if the <a href="System.Threading.CancellationToken.html">CancellationToken</a> is
 canceled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1667,7 +1667,7 @@ canceled.</p>
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
         <td><em>millisecondsTimeout</em></td>
-        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a> (-1) to wait indefinitely.</p>
+        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">Infinite</a> (-1) to wait indefinitely.</p>
 </td>
       </tr>
       <tr>
@@ -1700,7 +1700,7 @@ the alloted time; otherwise, false.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Collections.Concurrent/src/System/Collections/Concurrent/BlockingCollection.cs/#L606">View Source</a>
       </span>
   <h4 id="TryTake_out_T__TimeSpan_">TryTake(out T, TimeSpan)</h4>
-  <div class="markdown level1 summary"><p>Attempts to remove an item from the <a href="">System.Collections.Concurrent.BlockingCollection{T}</a>.</p>
+  <div class="markdown level1 summary"><p>Attempts to remove an item from the System.Collections.Concurrent.BlockingCollection{T}.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1726,8 +1726,8 @@ the alloted time; otherwise, false.</p>
       <tr>
         <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
         <td><em>timeout</em></td>
-        <td><p>A <see cref="T:System.TimeSpan"></see> that represents the number of milliseconds
-to wait, or a <see cref="T:System.TimeSpan"></see> that represents -1 milliseconds to wait indefinitely.</p>
+        <td><p>A <a href="System.TimeSpan.html">TimeSpan</a> that represents the number of milliseconds
+to wait, or a <a href="System.TimeSpan.html">TimeSpan</a> that represents -1 milliseconds to wait indefinitely.</p>
 </td>
       </tr>
     </tbody>
@@ -1755,7 +1755,7 @@ the alloted time; otherwise, false.</p>
       </span>
   <h4 id="TryTakeFromAny_BlockingCollection_T_____out_T_">TryTakeFromAny(BlockingCollection&lt;T&gt;[], out T)</h4>
   <div class="markdown level1 summary"><p>Attempts to remove an item from any one of the specified
-<a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instances.</p>
+System.Collections.Concurrent.BlockingCollection{T} instances.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="TryTakeFromAny_BlockingCollection_T_____out_T__remarks">Remarks</h5>
@@ -1776,7 +1776,7 @@ the alloted time; otherwise, false.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Concurrent.BlockingCollection&lt;T&gt;[]</td>
+        <td><a href="System.Collections.Concurrent.BlockingCollection`1.html" name="System.Collections.Concurrent.BlockingCollection">BlockingCollection</a>&lt;T&gt;[]</td>
         <td><em>collections</em></td>
         <td><p>The array of collections.</p>
 </td>
@@ -1812,7 +1812,7 @@ the item was removed, or -1 if an item could not be removed.</p>
       </span>
   <h4 id="TryTakeFromAny_BlockingCollection_T_____out_T__Int32_">TryTakeFromAny(BlockingCollection&lt;T&gt;[], out T, Int32)</h4>
   <div class="markdown level1 summary"><p>Attempts to remove an item from any one of the specified
-<a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instances.</p>
+System.Collections.Concurrent.BlockingCollection{T} instances.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="TryTakeFromAny_BlockingCollection_T_____out_T__Int32__remarks">Remarks</h5>
@@ -1833,7 +1833,7 @@ the item was removed, or -1 if an item could not be removed.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Concurrent.BlockingCollection&lt;T&gt;[]</td>
+        <td><a href="System.Collections.Concurrent.BlockingCollection`1.html" name="System.Collections.Concurrent.BlockingCollection">BlockingCollection</a>&lt;T&gt;[]</td>
         <td><em>collections</em></td>
         <td><p>The array of collections.</p>
 </td>
@@ -1847,7 +1847,7 @@ the item was removed, or -1 if an item could not be removed.</p>
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
         <td><em>millisecondsTimeout</em></td>
-        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a> (-1) to wait indefinitely.</p>
+        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">Infinite</a> (-1) to wait indefinitely.</p>
 </td>
       </tr>
     </tbody>
@@ -1875,8 +1875,8 @@ the item was removed, or -1 if an item could not be removed.</p>
       </span>
   <h4 id="TryTakeFromAny_BlockingCollection_T_____out_T__Int32__CancellationToken_">TryTakeFromAny(BlockingCollection&lt;T&gt;[], out T, Int32, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Attempts to remove an item from any one of the specified
-<a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instances.
-A <a href="System.OperationCanceledException.html">System.OperationCanceledException</a> is thrown if the <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> is
+System.Collections.Concurrent.BlockingCollection{T} instances.
+A <a href="System.OperationCanceledException.html">OperationCanceledException</a> is thrown if the <a href="System.Threading.CancellationToken.html">CancellationToken</a> is
 canceled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1898,7 +1898,7 @@ canceled.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Concurrent.BlockingCollection&lt;T&gt;[]</td>
+        <td><a href="System.Collections.Concurrent.BlockingCollection`1.html" name="System.Collections.Concurrent.BlockingCollection">BlockingCollection</a>&lt;T&gt;[]</td>
         <td><em>collections</em></td>
         <td><p>The array of collections.</p>
 </td>
@@ -1912,7 +1912,7 @@ canceled.</p>
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
         <td><em>millisecondsTimeout</em></td>
-        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a> (-1) to wait indefinitely.</p>
+        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">Infinite</a> (-1) to wait indefinitely.</p>
 </td>
       </tr>
       <tr>
@@ -1946,7 +1946,7 @@ the item was removed, or -1 if an item could not be removed.</p>
       </span>
   <h4 id="TryTakeFromAny_BlockingCollection_T_____out_T__TimeSpan_">TryTakeFromAny(BlockingCollection&lt;T&gt;[], out T, TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Attempts to remove an item from any one of the specified
-<a href="">System.Collections.Concurrent.BlockingCollection{T}</a> instances.</p>
+System.Collections.Concurrent.BlockingCollection{T} instances.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="TryTakeFromAny_BlockingCollection_T_____out_T__TimeSpan__remarks">Remarks</h5>
@@ -1967,7 +1967,7 @@ the item was removed, or -1 if an item could not be removed.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Concurrent.BlockingCollection&lt;T&gt;[]</td>
+        <td><a href="System.Collections.Concurrent.BlockingCollection`1.html" name="System.Collections.Concurrent.BlockingCollection">BlockingCollection</a>&lt;T&gt;[]</td>
         <td><em>collections</em></td>
         <td><p>The array of collections.</p>
 </td>
@@ -1981,8 +1981,8 @@ the item was removed, or -1 if an item could not be removed.</p>
       <tr>
         <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
         <td><em>timeout</em></td>
-        <td><p>A <see cref="T:System.TimeSpan"></see> that represents the number of milliseconds
-to wait, or a <see cref="T:System.TimeSpan"></see> that represents -1 milliseconds to wait indefinitely.</p>
+        <td><p>A <a href="System.TimeSpan.html">TimeSpan</a> that represents the number of milliseconds
+to wait, or a <a href="System.TimeSpan.html">TimeSpan</a> that represents -1 milliseconds to wait indefinitely.</p>
 </td>
       </tr>
     </tbody>

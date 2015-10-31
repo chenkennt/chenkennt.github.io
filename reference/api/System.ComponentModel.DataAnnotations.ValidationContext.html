@@ -78,19 +78,19 @@
       <div class="markdown level0 remarks"><p>This class contains information describing the instance on which
 validation is being performed.</p>
 <para>
-It supports <see cref="T:System.IServiceProvider"></see> so that custom validation
+It supports <a href="System.IServiceProvider.html">IServiceProvider</a> so that custom validation
 code can acquire additional services to help it perform its validation.
 </para><para>
-An <see cref="P:System.ComponentModel.DataAnnotations.ValidationContext.Items"></see> property bag is available for additional contextual
-information about the validation.  Values stored in <see cref="P:System.ComponentModel.DataAnnotations.ValidationContext.Items"></see>
-will be available to validation methods that use this <see cref="T:System.ComponentModel.DataAnnotations.ValidationContext"></see></para></div>
+An <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">Items</a> property bag is available for additional contextual
+information about the validation.  Values stored in <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">Items</a>
+will be available to validation methods that use this <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">ValidationContext</a></para></div>
       <h3 id="constructors">Constructors</h3>
 
       <span class="small pull-right mobile-hide">
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationContext.cs/#L46">View Source</a>
       </span>
   <h4 id="ValidationContext_Object_">ValidationContext(Object)</h4>
-  <div class="markdown level1 summary"><p>Construct a <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">System.ComponentModel.DataAnnotations.ValidationContext</a> for a given object instance being validated.</p>
+  <div class="markdown level1 summary"><p>Construct a <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">ValidationContext</a> for a given object instance being validated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -120,7 +120,7 @@ will be available to validation methods that use this <see cref="T:System.Compon
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationContext.cs/#L62">View Source</a>
       </span>
   <h4 id="ValidationContext_Object__IDictionary_Object__Object__">ValidationContext(Object, IDictionary&lt;Object, Object&gt;)</h4>
-  <div class="markdown level1 summary"><p>Construct a <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">System.ComponentModel.DataAnnotations.ValidationContext</a> for a given object instance and an optional
+  <div class="markdown level1 summary"><p>Construct a <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">ValidationContext</a> for a given object instance and an optional
 property bag of <paramref name="items"></paramref>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -145,9 +145,9 @@ property bag of <paramref name="items"></paramref>.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Collections.Generic.IDictionary&lt;System.Object, System.Object&gt;</td>
+        <td><a href="System.Collections.Generic.IDictionary`2.html" name="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="System.Object.html" name="System.Object">Object</a>, <a href="System.Object.html" name="System.Object">Object</a>&gt;</td>
         <td><em>items</em></td>
-        <td><p>Optional set of key/value pairs to make available to consumers via <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">System.ComponentModel.DataAnnotations.ValidationContext.Items</a>.
+        <td><p>Optional set of key/value pairs to make available to consumers via <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">Items</a>.
 If null, an empty dictionary will be created.  If not null, the set of key/value pairs will be copied into a
 new dictionary, preventing consumers from modifying the original dictionary.</p>
 </td>
@@ -159,7 +159,7 @@ new dictionary, preventing consumers from modifying the original dictionary.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationContext.cs/#L83">View Source</a>
       </span>
   <h4 id="ValidationContext_Object__IServiceProvider__IDictionary_Object__Object__">ValidationContext(Object, IServiceProvider, IDictionary&lt;Object, Object&gt;)</h4>
-  <div class="markdown level1 summary"><p>Construct a <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">System.ComponentModel.DataAnnotations.ValidationContext</a> for a given object instance, an optional</p>
+  <div class="markdown level1 summary"><p>Construct a <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">ValidationContext</a> for a given object instance, an optional</p>
 <p><paramref name="serviceProvider"></paramref>, and an optional
 property bag of <paramref name="items"></paramref>.</p>
 </div>
@@ -187,14 +187,14 @@ property bag of <paramref name="items"></paramref>.</p>
       <tr>
         <td><a href="System.IServiceProvider.html" name="System.IServiceProvider">IServiceProvider</a></td>
         <td><em>serviceProvider</em></td>
-        <td><p>Optional <see cref="T:System.IServiceProvider"></see> to use when <see cref="M:System.ComponentModel.DataAnnotations.ValidationContext.GetService(System.Type)"></see> is called.
-If it is null, <see cref="M:System.ComponentModel.DataAnnotations.ValidationContext.GetService(System.Type)"></see> will always return null.</p>
+        <td><p>Optional <a href="System.IServiceProvider.html">IServiceProvider</a> to use when <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">GetService(Type)</a> is called.
+If it is null, <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">GetService(Type)</a> will always return null.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Collections.Generic.IDictionary&lt;System.Object, System.Object&gt;</td>
+        <td><a href="System.Collections.Generic.IDictionary`2.html" name="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="System.Object.html" name="System.Object">Object</a>, <a href="System.Object.html" name="System.Object">Object</a>&gt;</td>
         <td><em>items</em></td>
-        <td><p>Optional set of key/value pairs to make available to consumers via <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">System.ComponentModel.DataAnnotations.ValidationContext.Items</a>.
+        <td><p>Optional set of key/value pairs to make available to consumers via <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">Items</a>.
 If null, an empty dictionary will be created.  If not null, the set of key/value pairs will be copied into a
 new dictionary, preventing consumers from modifying the original dictionary.</p>
 </td>
@@ -251,7 +251,7 @@ new dictionary, preventing consumers from modifying the original dictionary.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Generic.IDictionary&lt;System.Object, System.Object&gt;</td>
+        <td><a href="System.Collections.Generic.IDictionary`2.html" name="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="System.Object.html" name="System.Object">Object</a>, <a href="System.Object.html" name="System.Object">Object</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -349,7 +349,7 @@ updated to their new values.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationContext.cs/#L246">View Source</a>
       </span>
   <h4 id="GetService_Type_">GetService(Type)</h4>
-  <div class="markdown level1 summary"><p>See <a href="System.IServiceProvider.html">System.IServiceProvider.GetService(System.Type)</a>.</p>
+  <div class="markdown level1 summary"><p>See <a href="System.IServiceProvider.html">GetService(Type)</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -395,8 +395,8 @@ updated to their new values.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationContext.cs/#L232">View Source</a>
       </span>
   <h4 id="InitializeServiceProvider_Func_Type__Object__">InitializeServiceProvider(Func&lt;Type, Object&gt;)</h4>
-  <div class="markdown level1 summary"><p>Initializes the <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">System.ComponentModel.DataAnnotations.ValidationContext</a> with a service provider that can return
-service instances by <a href="System.Type.html">System.Type</a> when <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">System.ComponentModel.DataAnnotations.ValidationContext.GetService(System.Type)</a> is called.</p>
+  <div class="markdown level1 summary"><p>Initializes the <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">ValidationContext</a> with a service provider that can return
+service instances by <a href="System.Type.html">Type</a> when <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">GetService(Type)</a> is called.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -414,11 +414,11 @@ service instances by <a href="System.Type.html">System.Type</a> when <a href="Sy
     </thead>
     <tbody>
       <tr>
-        <td>System.Func&lt;System.Type, System.Object&gt;</td>
+        <td><a href="System.Func`2.html" name="System.Func">Func</a>&lt;<a href="System.Type.html" name="System.Type">Type</a>, <a href="System.Object.html" name="System.Object">Object</a>&gt;</td>
         <td><em>serviceProvider</em></td>
-        <td><p>A <see cref="T:System.Func`2"></see> that can return service instances given the
-desired <see cref="T:System.Type"></see> when <see cref="M:System.ComponentModel.DataAnnotations.ValidationContext.GetService(System.Type)"></see> is called.
-If it is <c>null</c>, <see cref="M:System.ComponentModel.DataAnnotations.ValidationContext.GetService(System.Type)"></see> will always return <c>null</c>.</p>
+        <td><p>A <a href="System.Func`2.html">Func</a> that can return service instances given the
+desired <a href="System.Type.html">Type</a> when <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">GetService(Type)</a> is called.
+If it is <c>null</c>, <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">GetService(Type)</a> will always return <c>null</c>.</p>
 </td>
       </tr>
     </tbody>

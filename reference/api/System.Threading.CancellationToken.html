@@ -71,16 +71,16 @@
       </div>
       <h5 id="CancellationToken_remarks"><strong>Remarks<strong></strong></strong></h5>
       <div class="markdown level0 remarks"><para>
-A <see cref="T:System.Threading.CancellationToken"></see> may be created directly in an unchangeable canceled or non-canceled state
+A <a href="System.Threading.CancellationToken.html">CancellationToken</a> may be created directly in an unchangeable canceled or non-canceled state
 using the CancellationToken&#39;s constructors. However, to have a CancellationToken that can change
 from a non-canceled to a canceled state,
-<see cref="T:System.Threading.CancellationTokenSource">CancellationTokenSource</see> must be used.
+<a href="System.Threading.CancellationTokenSource.html">CancellationTokenSource</a> must be used.
 CancellationTokenSource exposes the associated CancellationToken that may be canceled by the source through its
-<see cref="P:System.Threading.CancellationTokenSource.Token">Token</see> property.
+<a href="System.Threading.CancellationTokenSource.html">Token</a> property.
 </para>
 <para>
 Once canceled, a token may not transition to a non-canceled state, and a token whose
-<see cref="P:System.Threading.CancellationToken.CanBeCanceled"></see> is false will never change to one that can be canceled.
+<a href="System.Threading.CancellationToken.html">CanBeCanceled</a> is false will never change to one that can be canceled.
 </para>
 <para>
 All members of this struct are thread-safe and may be used concurrently from multiple threads.
@@ -91,15 +91,15 @@ All members of this struct are thread-safe and may be used concurrently from mul
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationToken.cs/#L155">View Source</a>
       </span>
   <h4 id="CancellationToken_Boolean_">CancellationToken(Boolean)</h4>
-  <div class="markdown level1 summary"><p>Initializes the <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a>.</p>
+  <div class="markdown level1 summary"><p>Initializes the <a href="System.Threading.CancellationToken.html">CancellationToken</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="CancellationToken_Boolean__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Tokens created with this constructor will remain in the canceled state specified
 by the <paramref name="canceled"></paramref> parameter.  If <paramref name="canceled"></paramref> is false,
-both <see cref="P:System.Threading.CancellationToken.CanBeCanceled"></see> and <see cref="P:System.Threading.CancellationToken.IsCancellationRequested"></see> will be false.
+both <a href="System.Threading.CancellationToken.html">CanBeCanceled</a> and <a href="System.Threading.CancellationToken.html">IsCancellationRequested</a> will be false.
 If <paramref name="canceled"></paramref> is true,
-both <see cref="P:System.Threading.CancellationToken.CanBeCanceled"></see> and <see cref="P:System.Threading.CancellationToken.IsCancellationRequested"></see> will be true.</p>
+both <a href="System.Threading.CancellationToken.html">CanBeCanceled</a> and <a href="System.Threading.CancellationToken.html">IsCancellationRequested</a> will be true.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -134,7 +134,7 @@ both <see cref="P:System.Threading.CancellationToken.CanBeCanceled"></see> and <
   <div class="markdown level1 conceptual"></div>
   <h5 id="CanBeCanceled_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>If CanBeCanceled returns false, it is guaranteed that the token will never transition
-into a canceled state, meaning that <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken.IsCancellationRequested</a> will never
+into a canceled state, meaning that <a href="System.Threading.CancellationToken.html">IsCancellationRequested</a> will never
 return true.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -168,8 +168,8 @@ return true.</p>
   <div class="markdown level1 remarks"><para>
 This property indicates whether cancellation has been requested for this token,
 either through the token initially being construted in a canceled state, or through
-calling <see cref="M:System.Threading.CancellationTokenSource.Cancel">Cancel</see>
-on the token&#39;s associated <see cref="T:System.Threading.CancellationTokenSource"></see>.
+calling <a href="System.Threading.CancellationTokenSource.html">Cancel()</a>
+on the token&#39;s associated <a href="System.Threading.CancellationTokenSource.html">CancellationTokenSource</a>.
 </para>
 <para>
 If this property is true, it only guarantees that cancellation has been requested.
@@ -206,7 +206,7 @@ particularly in situations where related objects are being canceled concurrently
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="None_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> value returned by this property will be non-cancelable by default.</p>
+  <div class="markdown level1 remarks"><p>The <a href="System.Threading.CancellationToken.html">CancellationToken</a> value returned by this property will be non-cancelable by default.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -232,13 +232,13 @@ particularly in situations where related objects are being canceled concurrently
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationToken.cs/#L117">View Source</a>
       </span>
   <h4 id="WaitHandle">WaitHandle</h4>
-  <div class="markdown level1 summary"><p>Gets a <a href="System.Threading.WaitHandle.html">System.Threading.WaitHandle</a> that is signaled when the token is canceled.</p>
+  <div class="markdown level1 summary"><p>Gets a <a href="System.Threading.WaitHandle.html">WaitHandle</a> that is signaled when the token is canceled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="WaitHandle_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Accessing this property causes a <see cref="T:System.Threading.WaitHandle">WaitHandle</see>
+  <div class="markdown level1 remarks"><p>Accessing this property causes a <a href="System.Threading.WaitHandle.html">WaitHandle</a>
 to be instantiated.  It is preferable to only use this property when necessary, and to then
-dispose the associated <see cref="T:System.Threading.CancellationTokenSource"></see> instance at the earliest opportunity (disposing
+dispose the associated <a href="System.Threading.CancellationTokenSource.html">CancellationTokenSource</a> instance at the earliest opportunity (disposing
 the source will dispose of this allocated handle).  The handle should not be closed or disposed directly.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -266,8 +266,8 @@ the source will dispose of this allocated handle).  The handle should not be clo
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationToken.cs/#L398">View Source</a>
       </span>
   <h4 id="Equals_Object_">Equals(Object)</h4>
-  <div class="markdown level1 summary"><p>Determines whether the current <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> instance is equal to the
-specified <a href="System.Object.html">System.Object</a>.</p>
+  <div class="markdown level1 summary"><p>Determines whether the current <a href="System.Threading.CancellationToken.html">CancellationToken</a> instance is equal to the
+specified <a href="System.Object.html">Object</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -303,10 +303,10 @@ specified <a href="System.Object.html">System.Object</a>.</p>
     <tbody>
       <tr>
         <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-        <td><p>True if <paramref name="other"></paramref> is a <see cref="T:System.Threading.CancellationToken">CancellationToken</see>
+        <td><p>True if <paramref name="other"></paramref> is a <a href="System.Threading.CancellationToken.html">CancellationToken</a>
 and if the two instances are equal; otherwise, false. Two tokens are equal if they are associated
-with the same <see cref="T:System.Threading.CancellationTokenSource">CancellationTokenSource</see> or if they were both constructed
-from public CancellationToken constructors and their <see cref="P:System.Threading.CancellationToken.IsCancellationRequested"></see> values are equal.</p>
+with the same <a href="System.Threading.CancellationTokenSource.html">CancellationTokenSource</a> or if they were both constructed
+from public CancellationToken constructors and their <a href="System.Threading.CancellationToken.html">IsCancellationRequested</a> values are equal.</p>
 </td>
       </tr>
     </tbody>
@@ -316,7 +316,7 @@ from public CancellationToken constructors and their <see cref="P:System.Threadi
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationToken.cs/#L362">View Source</a>
       </span>
   <h4 id="Equals_CancellationToken_">Equals(CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Determines whether the current <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> instance is equal to the
+  <div class="markdown level1 summary"><p>Determines whether the current <a href="System.Threading.CancellationToken.html">CancellationToken</a> instance is equal to the
 specified token.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -337,7 +337,7 @@ specified token.</p>
       <tr>
         <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
         <td><em>other</em></td>
-        <td><p>The other <see cref="T:System.Threading.CancellationToken">CancellationToken</see> to which to compare this
+        <td><p>The other <a href="System.Threading.CancellationToken.html">CancellationToken</a> to which to compare this
 instance.</p>
 </td>
       </tr>
@@ -355,8 +355,8 @@ instance.</p>
       <tr>
         <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
         <td><p>True if the instances are equal; otherwise, false. Two tokens are equal if they are associated
-with the same <a href="System.Threading.CancellationTokenSource.html">System.Threading.CancellationTokenSource</a> or if they were both constructed
-from public CancellationToken constructors and their <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken.IsCancellationRequested</a> values are equal.</p>
+with the same <a href="System.Threading.CancellationTokenSource.html">CancellationTokenSource</a> or if they were both constructed
+from public CancellationToken constructors and their <a href="System.Threading.CancellationToken.html">IsCancellationRequested</a> values are equal.</p>
 </td>
       </tr>
     </tbody>
@@ -366,7 +366,7 @@ from public CancellationToken constructors and their <a href="System.Threading.C
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationToken.cs/#L412">View Source</a>
       </span>
   <h4 id="GetHashCode__">GetHashCode()</h4>
-  <div class="markdown level1 summary"><p>Serves as a hash function for a <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a>.</p>
+  <div class="markdown level1 summary"><p>Serves as a hash function for a <a href="System.Threading.CancellationToken.html">CancellationToken</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -384,7 +384,7 @@ from public CancellationToken constructors and their <a href="System.Threading.C
     <tbody>
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-        <td><p>A hash code for the current <see cref="T:System.Threading.CancellationToken">CancellationToken</see> instance.</p>
+        <td><p>A hash code for the current <a href="System.Threading.CancellationToken.html">CancellationToken</a> instance.</p>
 </td>
       </tr>
     </tbody>
@@ -394,7 +394,7 @@ from public CancellationToken constructors and their <a href="System.Threading.C
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationToken.cs/#L191">View Source</a>
       </span>
   <h4 id="Register_Action_">Register(Action)</h4>
-  <div class="markdown level1 summary"><p>Registers a delegate that will be called when this <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> is canceled.</p>
+  <div class="markdown level1 summary"><p>Registers a delegate that will be called when this <a href="System.Threading.CancellationToken.html">CancellationToken</a> is canceled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Register_Action__remarks">Remarks</h5>
@@ -404,7 +404,7 @@ delegate will be run immediately and synchronously. Any exception the delegate g
 propagated out of this method call.
 </para>
 <para>
-The current <see cref="T:System.Threading.ExecutionContext">ExecutionContext</see>, if one exists, will be captured
+The current <a href="System.Threading.ExecutionContext.html">ExecutionContext</a>, if one exists, will be captured
 along with the delegate and will be used when executing it.
 </para></div>
   <h5 class="decalaration">Declaration</h5>
@@ -424,7 +424,7 @@ along with the delegate and will be used when executing it.
       <tr>
         <td><a href="System.Action.html" name="undefined">Action</a></td>
         <td><em>callback</em></td>
-        <td><p>The delegate to be executed when the <see cref="T:System.Threading.CancellationToken">CancellationToken</see> is canceled.</p>
+        <td><p>The delegate to be executed when the <a href="System.Threading.CancellationToken.html">CancellationToken</a> is canceled.</p>
 </td>
       </tr>
     </tbody>
@@ -440,7 +440,7 @@ along with the delegate and will be used when executing it.
     <tbody>
       <tr>
         <td><a href="System.Threading.CancellationTokenRegistration.html" name="System.Threading.CancellationTokenRegistration">CancellationTokenRegistration</a></td>
-        <td><p>The <a href="System.Threading.CancellationTokenRegistration.html">System.Threading.CancellationTokenRegistration</a> instance that can
+        <td><p>The <a href="System.Threading.CancellationTokenRegistration.html">CancellationTokenRegistration</a> instance that can
 be used to deregister the callback.</p>
 </td>
       </tr>
@@ -452,7 +452,7 @@ be used to deregister the callback.</p>
       </span>
   <h4 id="Register_Action__Boolean_">Register(Action, Boolean)</h4>
   <div class="markdown level1 summary"><p>Registers a delegate that will be called when this
-<a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> is canceled.</p>
+<a href="System.Threading.CancellationToken.html">CancellationToken</a> is canceled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Register_Action__Boolean__remarks">Remarks</h5>
@@ -462,7 +462,7 @@ delegate will be run immediately and synchronously. Any exception the delegate g
 propagated out of this method call.
 </para>
 <para>
-The current <see cref="T:System.Threading.ExecutionContext">ExecutionContext</see>, if one exists, will be captured
+The current <a href="System.Threading.ExecutionContext.html">ExecutionContext</a>, if one exists, will be captured
 along with the delegate and will be used when executing it.
 </para></div>
   <h5 class="decalaration">Declaration</h5>
@@ -482,14 +482,14 @@ along with the delegate and will be used when executing it.
       <tr>
         <td><a href="System.Action.html" name="undefined">Action</a></td>
         <td><em>callback</em></td>
-        <td><p>The delegate to be executed when the <see cref="T:System.Threading.CancellationToken">CancellationToken</see> is canceled.</p>
+        <td><p>The delegate to be executed when the <a href="System.Threading.CancellationToken.html">CancellationToken</a> is canceled.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
         <td><em>useSynchronizationContext</em></td>
         <td><p>A Boolean value that indicates whether to capture
-the current <a href="System.Threading.SynchronizationContext.html">System.Threading.SynchronizationContext</a> and use it
+the current <a href="System.Threading.SynchronizationContext.html">SynchronizationContext</a> and use it
 when invoking the <paramref name="callback"></paramref>.</p>
 </td>
       </tr>
@@ -506,7 +506,7 @@ when invoking the <paramref name="callback"></paramref>.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.CancellationTokenRegistration.html" name="System.Threading.CancellationTokenRegistration">CancellationTokenRegistration</a></td>
-        <td><p>The <a href="System.Threading.CancellationTokenRegistration.html">System.Threading.CancellationTokenRegistration</a> instance that can
+        <td><p>The <a href="System.Threading.CancellationTokenRegistration.html">CancellationTokenRegistration</a> instance that can
 be used to deregister the callback.</p>
 </td>
       </tr>
@@ -518,7 +518,7 @@ be used to deregister the callback.</p>
       </span>
   <h4 id="Register_Action_Object___Object_">Register(Action&lt;Object&gt;, Object)</h4>
   <div class="markdown level1 summary"><p>Registers a delegate that will be called when this
-<a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> is canceled.</p>
+<a href="System.Threading.CancellationToken.html">CancellationToken</a> is canceled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Register_Action_Object___Object__remarks">Remarks</h5>
@@ -528,7 +528,7 @@ delegate will be run immediately and synchronously. Any exception the delegate g
 propagated out of this method call.
 </para>
 <para>
-The current <see cref="T:System.Threading.ExecutionContext">ExecutionContext</see>, if one exists, will be captured
+The current <a href="System.Threading.ExecutionContext.html">ExecutionContext</a>, if one exists, will be captured
 along with the delegate and will be used when executing it.
 </para></div>
   <h5 class="decalaration">Declaration</h5>
@@ -546,9 +546,9 @@ along with the delegate and will be used when executing it.
     </thead>
     <tbody>
       <tr>
-        <td>System.Action&lt;System.Object&gt;</td>
+        <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;<a href="System.Object.html" name="System.Object">Object</a>&gt;</td>
         <td><em>callback</em></td>
-        <td><p>The delegate to be executed when the <see cref="T:System.Threading.CancellationToken">CancellationToken</see> is canceled.</p>
+        <td><p>The delegate to be executed when the <a href="System.Threading.CancellationToken.html">CancellationToken</a> is canceled.</p>
 </td>
       </tr>
       <tr>
@@ -570,7 +570,7 @@ along with the delegate and will be used when executing it.
     <tbody>
       <tr>
         <td><a href="System.Threading.CancellationTokenRegistration.html" name="System.Threading.CancellationTokenRegistration">CancellationTokenRegistration</a></td>
-        <td><p>The <a href="System.Threading.CancellationTokenRegistration.html">System.Threading.CancellationTokenRegistration</a> instance that can
+        <td><p>The <a href="System.Threading.CancellationTokenRegistration.html">CancellationTokenRegistration</a> instance that can
 be used to deregister the callback.</p>
 </td>
       </tr>
@@ -582,7 +582,7 @@ be used to deregister the callback.</p>
       </span>
   <h4 id="Register_Action_Object___Object__Boolean_">Register(Action&lt;Object&gt;, Object, Boolean)</h4>
   <div class="markdown level1 summary"><p>Registers a delegate that will be called when this
-<a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> is canceled.</p>
+<a href="System.Threading.CancellationToken.html">CancellationToken</a> is canceled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Register_Action_Object___Object__Boolean__remarks">Remarks</h5>
@@ -592,7 +592,7 @@ delegate will be run immediately and synchronously. Any exception the delegate g
 propagated out of this method call.
 </para>
 <para>
-The current <see cref="T:System.Threading.ExecutionContext">ExecutionContext</see>, if one exists,
+The current <a href="System.Threading.ExecutionContext.html">ExecutionContext</a>, if one exists,
 will be captured along with the delegate and will be used when executing it.
 </para></div>
   <h5 class="decalaration">Declaration</h5>
@@ -610,9 +610,9 @@ will be captured along with the delegate and will be used when executing it.
     </thead>
     <tbody>
       <tr>
-        <td>System.Action&lt;System.Object&gt;</td>
+        <td><a href="System.Action`1.html" name="System.Action">Action</a>&lt;<a href="System.Object.html" name="System.Object">Object</a>&gt;</td>
         <td><em>callback</em></td>
-        <td><p>The delegate to be executed when the <see cref="T:System.Threading.CancellationToken">CancellationToken</see> is canceled.</p>
+        <td><p>The delegate to be executed when the <a href="System.Threading.CancellationToken.html">CancellationToken</a> is canceled.</p>
 </td>
       </tr>
       <tr>
@@ -625,7 +625,7 @@ will be captured along with the delegate and will be used when executing it.
         <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
         <td><em>useSynchronizationContext</em></td>
         <td><p>A Boolean value that indicates whether to capture
-the current <a href="System.Threading.SynchronizationContext.html">System.Threading.SynchronizationContext</a> and use it
+the current <a href="System.Threading.SynchronizationContext.html">SynchronizationContext</a> and use it
 when invoking the <paramref name="callback"></paramref>.</p>
 </td>
       </tr>
@@ -642,7 +642,7 @@ when invoking the <paramref name="callback"></paramref>.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.CancellationTokenRegistration.html" name="System.Threading.CancellationTokenRegistration">CancellationTokenRegistration</a></td>
-        <td><p>The <a href="System.Threading.CancellationTokenRegistration.html">System.Threading.CancellationTokenRegistration</a> instance that can
+        <td><p>The <a href="System.Threading.CancellationTokenRegistration.html">CancellationTokenRegistration</a> instance that can
 be used to deregister the callback.</p>
 </td>
       </tr>
@@ -653,7 +653,7 @@ be used to deregister the callback.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationToken.cs/#L463">View Source</a>
       </span>
   <h4 id="ThrowIfCancellationRequested__">ThrowIfCancellationRequested()</h4>
-  <div class="markdown level1 summary"><p>Throws a <a href="System.OperationCanceledException.html">System.OperationCanceledException</a> if
+  <div class="markdown level1 summary"><p>Throws a <a href="System.OperationCanceledException.html">OperationCanceledException</a> if
 this token has had cancellation requested.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -674,7 +674,7 @@ throw new OperationCanceledException(token);
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationToken.cs/#L431">View Source</a>
       </span>
   <h4 id="Equality_CancellationToken__CancellationToken_">Equality(CancellationToken, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Determines whether two <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> instances are equal.</p>
+  <div class="markdown level1 summary"><p>Determines whether two <a href="System.Threading.CancellationToken.html">CancellationToken</a> instances are equal.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -726,7 +726,7 @@ throw new OperationCanceledException(token);
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/CancellationToken.cs/#L444">View Source</a>
       </span>
   <h4 id="Inequality_CancellationToken__CancellationToken_">Inequality(CancellationToken, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Determines whether two <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a> instances are not equal.</p>
+  <div class="markdown level1 summary"><p>Determines whether two <a href="System.Threading.CancellationToken.html">CancellationToken</a> instances are not equal.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

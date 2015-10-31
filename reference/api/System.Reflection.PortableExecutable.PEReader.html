@@ -76,7 +76,7 @@
       </div>
       <h5 id="PEReader_remarks"><strong>Remarks<strong></strong></strong></h5>
       <div class="markdown level0 remarks"><p>The implementation is thread-safe, that is multiple threads can read data from the reader in parallel.
-Disposal of the reader is not thread-safe (see <a href="System.Reflection.PortableExecutable.PEReader.html">System.Reflection.PortableExecutable.PEReader.Dispose</a>).</p>
+Disposal of the reader is not thread-safe (see <a href="System.Reflection.PortableExecutable.PEReader.html">Dispose()</a>).</p>
 </div>
       <h3 id="constructors">Constructors</h3>
 
@@ -88,7 +88,7 @@ Disposal of the reader is not thread-safe (see <a href="System.Reflection.Portab
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="PEReader_ImmutableArray_Byte___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The content of the image is not read during the construction of the <a href="System.Reflection.PortableExecutable.PEReader.html">System.Reflection.PortableExecutable.PEReader</a></p>
+  <div class="markdown level1 remarks"><p>The content of the image is not read during the construction of the <a href="System.Reflection.PortableExecutable.PEReader.html">PEReader</a></p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -105,7 +105,7 @@ Disposal of the reader is not thread-safe (see <a href="System.Reflection.Portab
     </thead>
     <tbody>
       <tr>
-        <td>ImmutableArray&lt;System.Byte&gt;</td>
+        <td>ImmutableArray&lt;<a href="System.Byte.html" name="System.Byte">Byte</a>&gt;</td>
         <td><em>peImage</em></td>
         <td><p>PE image.</p>
 </td>
@@ -121,9 +121,9 @@ Disposal of the reader is not thread-safe (see <a href="System.Reflection.Portab
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="PEReader_Byte___Int32__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The memory is owned by the caller and not released on disposal of the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see>.
-The caller is responsible for keeping the memory alive and unmodified throughout the lifetime of the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see>.
-The content of the image is not read during the construction of the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see></p>
+  <div class="markdown level1 remarks"><p>The memory is owned by the caller and not released on disposal of the <a href="System.Reflection.PortableExecutable.PEReader.html">PEReader</a>.
+The caller is responsible for keeping the memory alive and unmodified throughout the lifetime of the <a href="System.Reflection.PortableExecutable.PEReader.html">PEReader</a>.
+The content of the image is not read during the construction of the <a href="System.Reflection.PortableExecutable.PEReader.html">PEReader</a></p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -140,7 +140,7 @@ The content of the image is not read during the construction of the <see cref="T
     </thead>
     <tbody>
       <tr>
-        <td>System.Byte*</td>
+        <td><a href="System.Byte.html" name="System.Byte">Byte</a>*</td>
         <td><em>peImage</em></td>
         <td><p>Pointer to the start of the PE image.</p>
 </td>
@@ -162,8 +162,8 @@ The content of the image is not read during the construction of the <see cref="T
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="PEReader_Stream__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Ownership of the stream is transferred to the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see> upon successful validation of constructor arguments. It will be
-disposed by the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see> and the caller must not manipulate it.</p>
+  <div class="markdown level1 remarks"><p>Ownership of the stream is transferred to the <a href="System.Reflection.PortableExecutable.PEReader.html">PEReader</a> upon successful validation of constructor arguments. It will be
+disposed by the <a href="System.Reflection.PortableExecutable.PEReader.html">PEReader</a> and the caller must not manipulate it.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -219,14 +219,14 @@ disposed by the <see cref="T:System.Reflection.PortableExecutable.PEReader"></se
         <td><a href="System.Reflection.PortableExecutable.PEStreamOptions.html" name="System.Reflection.PortableExecutable.PEStreamOptions">PEStreamOptions</a></td>
         <td><em>options</em></td>
         <td><p>Options specifying how sections of the PE image are read from the stream.</p>
-<p>Unless <see cref="F:System.Reflection.PortableExecutable.PEStreamOptions.LeaveOpen"></see> is specified, ownership of the stream is transferred to the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see>
-upon successful argument validation. It will be disposed by the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see> and the caller must not manipulate it.</p>
-<p>Unless <see cref="F:System.Reflection.PortableExecutable.PEStreamOptions.PrefetchMetadata"></see> or <see cref="F:System.Reflection.PortableExecutable.PEStreamOptions.PrefetchEntireImage"></see> is specified no data
-is read from the stream during the construction of the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see>. Furthermore, the stream must not be manipulated
-by caller while the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see> is alive and undisposed.</p>
-<p>If <see cref="F:System.Reflection.PortableExecutable.PEStreamOptions.PrefetchMetadata"></see> or <see cref="F:System.Reflection.PortableExecutable.PEStreamOptions.PrefetchEntireImage"></see>, the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see>
-will have read all of the data requested during construction. As such, if <see cref="F:System.Reflection.PortableExecutable.PEStreamOptions.LeaveOpen"></see> is also
-specified, the caller retains full ownership of the stream and is assured that it will not be manipulated by the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see>
+<p>Unless <a href="System.Reflection.PortableExecutable.PEStreamOptions.html">LeaveOpen</a> is specified, ownership of the stream is transferred to the <a href="System.Reflection.PortableExecutable.PEReader.html">PEReader</a>
+upon successful argument validation. It will be disposed by the <a href="System.Reflection.PortableExecutable.PEReader.html">PEReader</a> and the caller must not manipulate it.</p>
+<p>Unless <a href="System.Reflection.PortableExecutable.PEStreamOptions.html">PrefetchMetadata</a> or <a href="System.Reflection.PortableExecutable.PEStreamOptions.html">PrefetchEntireImage</a> is specified no data
+is read from the stream during the construction of the <a href="System.Reflection.PortableExecutable.PEReader.html">PEReader</a>. Furthermore, the stream must not be manipulated
+by caller while the <a href="System.Reflection.PortableExecutable.PEReader.html">PEReader</a> is alive and undisposed.</p>
+<p>If <a href="System.Reflection.PortableExecutable.PEStreamOptions.html">PrefetchMetadata</a> or <a href="System.Reflection.PortableExecutable.PEStreamOptions.html">PrefetchEntireImage</a>, the <a href="System.Reflection.PortableExecutable.PEReader.html">PEReader</a>
+will have read all of the data requested during construction. As such, if <a href="System.Reflection.PortableExecutable.PEStreamOptions.html">LeaveOpen</a> is also
+specified, the caller retains full ownership of the stream and is assured that it will not be manipulated by the <a href="System.Reflection.PortableExecutable.PEReader.html">PEReader</a>
 after construction.</p>
 </td>
       </tr>
@@ -264,14 +264,14 @@ after construction.</p>
         <td><a href="System.Reflection.PortableExecutable.PEStreamOptions.html" name="System.Reflection.PortableExecutable.PEStreamOptions">PEStreamOptions</a></td>
         <td><em>options</em></td>
         <td><p>Options specifying how sections of the PE image are read from the stream.</p>
-<p>Unless <see cref="F:System.Reflection.PortableExecutable.PEStreamOptions.LeaveOpen"></see> is specified, ownership of the stream is transferred to the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see>
-upon successful argument validation. It will be disposed by the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see> and the caller must not manipulate it.</p>
-<p>Unless <see cref="F:System.Reflection.PortableExecutable.PEStreamOptions.PrefetchMetadata"></see> or <see cref="F:System.Reflection.PortableExecutable.PEStreamOptions.PrefetchEntireImage"></see> is specified no data
-is read from the stream during the construction of the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see>. Furthermore, the stream must not be manipulated
-by caller while the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see> is alive and undisposed.</p>
-<p>If <see cref="F:System.Reflection.PortableExecutable.PEStreamOptions.PrefetchMetadata"></see> or <see cref="F:System.Reflection.PortableExecutable.PEStreamOptions.PrefetchEntireImage"></see>, the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see>
-will have read all of the data requested during construction. As such, if <see cref="F:System.Reflection.PortableExecutable.PEStreamOptions.LeaveOpen"></see> is also
-specified, the caller retains full ownership of the stream and is assured that it will not be manipulated by the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see>
+<p>Unless <a href="System.Reflection.PortableExecutable.PEStreamOptions.html">LeaveOpen</a> is specified, ownership of the stream is transferred to the <a href="System.Reflection.PortableExecutable.PEReader.html">PEReader</a>
+upon successful argument validation. It will be disposed by the <a href="System.Reflection.PortableExecutable.PEReader.html">PEReader</a> and the caller must not manipulate it.</p>
+<p>Unless <a href="System.Reflection.PortableExecutable.PEStreamOptions.html">PrefetchMetadata</a> or <a href="System.Reflection.PortableExecutable.PEStreamOptions.html">PrefetchEntireImage</a> is specified no data
+is read from the stream during the construction of the <a href="System.Reflection.PortableExecutable.PEReader.html">PEReader</a>. Furthermore, the stream must not be manipulated
+by caller while the <a href="System.Reflection.PortableExecutable.PEReader.html">PEReader</a> is alive and undisposed.</p>
+<p>If <a href="System.Reflection.PortableExecutable.PEStreamOptions.html">PrefetchMetadata</a> or <a href="System.Reflection.PortableExecutable.PEStreamOptions.html">PrefetchEntireImage</a>, the <a href="System.Reflection.PortableExecutable.PEReader.html">PEReader</a>
+will have read all of the data requested during construction. As such, if <a href="System.Reflection.PortableExecutable.PEStreamOptions.html">LeaveOpen</a> is also
+specified, the caller retains full ownership of the stream and is assured that it will not be manipulated by the <a href="System.Reflection.PortableExecutable.PEReader.html">PEReader</a>
 after construction.</p>
 </td>
       </tr>
@@ -320,7 +320,7 @@ after construction.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="IsEntireImageAvailable_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Returns false if the <a href="System.Reflection.PortableExecutable.PEReader.html">System.Reflection.PortableExecutable.PEReader</a> is constructed from a stream and only part of it is prefetched into memory.</p>
+  <div class="markdown level1 remarks"><p>Returns false if the <a href="System.Reflection.PortableExecutable.PEReader.html">PEReader</a> is constructed from a stream and only part of it is prefetched into memory.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -378,9 +378,9 @@ after construction.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Dispose___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p><see cref="M:System.Reflection.PortableExecutable.PEReader.Dispose"></see>  can be called multiple times (but not in parallel).
-It is not safe to call <see cref="M:System.Reflection.PortableExecutable.PEReader.Dispose"></see> in parallel with any other operation on the <see cref="T:System.Reflection.PortableExecutable.PEReader"></see>
-or reading from <see cref="T:System.Reflection.PortableExecutable.PEMemoryBlock"></see>s retrieved from the reader.</p>
+  <div class="markdown level1 remarks"><p><a href="System.Reflection.PortableExecutable.PEReader.html">Dispose()</a>  can be called multiple times (but not in parallel).
+It is not safe to call <a href="System.Reflection.PortableExecutable.PEReader.html">Dispose()</a> in parallel with any other operation on the <a href="System.Reflection.PortableExecutable.PEReader.html">PEReader</a>
+or reading from <a href="System.Reflection.PortableExecutable.PEMemoryBlock.html">PEMemoryBlock</a>s retrieved from the reader.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -391,7 +391,7 @@ or reading from <see cref="T:System.Reflection.PortableExecutable.PEMemoryBlock"
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEReader.cs/#L392">View Source</a>
       </span>
   <h4 id="GetEntireImage__">GetEntireImage()</h4>
-  <div class="markdown level1 summary"><p>Gets a pointer to and size of the PE image if available (<a href="System.Reflection.PortableExecutable.PEReader.html">System.Reflection.PortableExecutable.PEReader.IsEntireImageAvailable</a>).</p>
+  <div class="markdown level1 summary"><p>Gets a pointer to and size of the PE image if available (<a href="System.Reflection.PortableExecutable.PEReader.html">IsEntireImageAvailable</a>).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

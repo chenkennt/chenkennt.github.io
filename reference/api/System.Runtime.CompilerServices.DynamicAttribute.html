@@ -60,7 +60,7 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="DynamicAttribute">Class DynamicAttribute</h1>
-      <div class="markdown level0 summary"><p>Indicates that the use of <a href="System.Object.html">System.Object</a> on a member is meant to be treated as a dynamically dispatched type.</p>
+      <div class="markdown level0 summary"><p>Indicates that the use of <a href="System.Object.html">Object</a> on a member is meant to be treated as a dynamically dispatched type.</p>
 </div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
@@ -81,14 +81,14 @@
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/DynamicAttribute.cs/#L26">View Source</a>
       </span>
   <h4 id="DynamicAttribute__">DynamicAttribute()</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Runtime.CompilerServices.DynamicAttribute.html">System.Runtime.CompilerServices.DynamicAttribute</a> class.</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Runtime.CompilerServices.DynamicAttribute.html">DynamicAttribute</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="DynamicAttribute___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>When used in an attribute specification, the default constructor is semantically
 equivalent to <c>DynamicAttribute({ true })</c>, and can be considered
 a shorthand for that expression. It should therefore only be used on an element
-of type <a href="System.Object.html">System.Object</a>.</p>
+of type <a href="System.Object.html">Object</a>.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -99,14 +99,14 @@ of type <a href="System.Object.html">System.Object</a>.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/DynamicAttribute.cs/#L46">View Source</a>
       </span>
   <h4 id="DynamicAttribute_Boolean___">DynamicAttribute(Boolean[])</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Runtime.CompilerServices.DynamicAttribute.html">System.Runtime.CompilerServices.DynamicAttribute</a> class.</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Runtime.CompilerServices.DynamicAttribute.html">DynamicAttribute</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="DynamicAttribute_Boolean____remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This constructor is meant to be used on types that are built on an underlying
-occurrence of <a href="System.Object.html">System.Object</a> that is meant to be treated dynamically.
+occurrence of <a href="System.Object.html">Object</a> that is meant to be treated dynamically.
 For instance, if <c>C</c> is a generic type with two type parameters, then a
-use of the constructed type<c>C&lt;<see cref="T:System.Object"></see>, <see cref="T:System.Object"></see>&gt;</c>
+use of the constructed type<c>C&lt;<a href="System.Object.html">Object</a>, <a href="System.Object.html">Object</a>&gt;</c>
 might be intended to treat the first type argument dynamically and the second
 normally, in which case the appropriate attribute specification should
 use a <c>transformFlags</c> value of <c>{ false, true, false }</c>.</p>
@@ -126,10 +126,10 @@ use a <c>transformFlags</c> value of <c>{ false, true, false }</c>.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Boolean[]</td>
+        <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a>[]</td>
         <td><em>transformFlags</em></td>
         <td><p>Specifies, in a prefix traversal of a type&#39;s
-construction, which <see cref="T:System.Object"></see> occurrences are meant to
+construction, which <a href="System.Object.html">Object</a> occurrences are meant to
 be treated as a dynamically dispatched type.</p>
 </td>
       </tr>
@@ -142,7 +142,7 @@ be treated as a dynamically dispatched type.</p>
       </span>
   <h4 id="TransformFlags">TransformFlags</h4>
   <div class="markdown level1 summary"><p>Specifies, in a prefix traversal of a type&#39;s
-construction, which <a href="System.Object.html">System.Object</a> occurrences are meant to
+construction, which <a href="System.Object.html">Object</a> occurrences are meant to
 be treated as a dynamically dispatched type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -160,7 +160,7 @@ be treated as a dynamically dispatched type.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Generic.IList&lt;System.Boolean&gt;</td>
+        <td><a href="System.Collections.Generic.IList`1.html" name="System.Collections.Generic.IList">IList</a>&lt;<a href="System.Boolean.html" name="System.Boolean">Boolean</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

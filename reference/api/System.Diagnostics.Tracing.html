@@ -106,7 +106,7 @@ EventListeners will NOT work. You must call EventListener.Dispose explicitly whe
 longer needed.
 <para>
 Once created, EventListeners can enable or disable on a per-eventSource basis using verbosity levels
-(<see cref="T:System.Diagnostics.Tracing.EventLevel"></see>) and bitfields (<see cref="T:System.Diagnostics.Tracing.EventKeywords"></see>) to further restrict the set of
+(@'System.Diagnostics.Tracing.EventLevel') and bitfields (@'System.Diagnostics.Tracing.EventKeywords') to further restrict the set of
 events to be sent to the dispatcher. The dispatcher can also send arbitrary commands to a particular
 eventSource using the 'SendCommand' method. The meaning of the commands are eventSource specific.
 </para><para>
@@ -142,17 +142,17 @@ or @'System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore(
 is sufficient for many users.
 <para>
 To achieve more control over the ETW provider manifest exposed by the event source type, the
-[<see cref="T:System.Diagnostics.Tracing.EventAttribute"></see>] attributes can be specified for the ETW event methods.
+[@'System.Diagnostics.Tracing.EventAttribute'] attributes can be specified for the ETW event methods.
 </para><para>
 For very advanced EventSources, it is possible to intercept the commands being given to the
 eventSource and change what filtering is done (see EventListener.EnableEvents and
-<see cref="M:System.Diagnostics.Tracing.EventListener.DisableEvents(System.Diagnostics.Tracing.EventSource)"></see>) or cause actions to be performed by the eventSource,
+@'System.Diagnostics.Tracing.EventListener.DisableEvents(System.Diagnostics.Tracing.EventSource)') or cause actions to be performed by the eventSource,
 e.g. dumping a data structure (see EventSource.SendCommand and
-<see cref="M:System.Diagnostics.Tracing.EventSource.OnEventCommand(System.Diagnostics.Tracing.EventCommandEventArgs)"></see>).
+@'System.Diagnostics.Tracing.EventSource.OnEventCommand(System.Diagnostics.Tracing.EventCommandEventArgs)').
 </para><para>
 The eventSources can be turned on with Windows ETW controllers (e.g. logman), immediately.
 It is also possible to control and intercept the data dispatcher programmatically.  See
-<see cref="T:System.Diagnostics.Tracing.EventListener"></see> for more.
+@'System.Diagnostics.Tracing.EventListener' for more.
 </para></section>
               <h4><a href="System.Diagnostics.Tracing.EventSourceAttribute.html" name="System.Diagnostics.Tracing.EventSourceAttribute">EventSourceAttribute</a></h4>
               <section>Allows customizing defaults and specifying localization support for the event source class to which it is applied.</section>

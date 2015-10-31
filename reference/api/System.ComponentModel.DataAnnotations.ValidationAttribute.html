@@ -61,7 +61,7 @@
       </a>
       <h1 id="ValidationAttribute">Class ValidationAttribute</h1>
       <div class="markdown level0 summary"><p>Base class for all validation attributes.</p>
-<para>Override <see cref="M:System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)"></see> to implement validation logic.</para></div>
+<para>Override <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">IsValid(Object, ValidationContext)</a> to implement validation logic.</para></div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
         <h5>Inheritance</h5>
@@ -76,9 +76,9 @@
         <pre><code class="lang-csharp hljs">public abstract class ValidationAttribute : Attribute, _Attribute</code></pre>
       </div>
       <h5 id="ValidationAttribute_remarks"><strong>Remarks<strong></strong></strong></h5>
-      <div class="markdown level0 remarks"><p>The properties <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageResourceType</a> and <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageResourceName</a> are used to
+      <div class="markdown level0 remarks"><p>The properties <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">ErrorMessageResourceType</a> and <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">ErrorMessageResourceName</a> are used to
 provide
-a localized error message, but they cannot be set if <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessage</a> is also used to provide a
+a localized error message, but they cannot be set if <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">ErrorMessage</a> is also used to provide a
 non-localized
 error message.</p>
 </div>
@@ -105,7 +105,7 @@ or supply a better message.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationAttribute.cs/#L63">View Source</a>
       </span>
   <h4 id="ValidationAttribute_Func_String__">ValidationAttribute(Func&lt;String&gt;)</h4>
-  <div class="markdown level1 summary"><p>Allows for providing a resource accessor function that will be used by the <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageString</a>
+  <div class="markdown level1 summary"><p>Allows for providing a resource accessor function that will be used by the <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">ErrorMessageString</a>
 property to retrieve the error message.  An example would be to have something like
 CustomAttribute() : base( () =&gt; MyResources.MyErrorMessage ) {}.</p>
 </div>
@@ -125,9 +125,9 @@ CustomAttribute() : base( () =&gt; MyResources.MyErrorMessage ) {}.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Func&lt;System.String&gt;</td>
+        <td><a href="System.Func`1.html" name="System.Func">Func</a>&lt;<a href="System.String.html" name="System.String">String</a>&gt;</td>
         <td><em>errorMessageAccessor</em></td>
-        <td><p>The <a href="System.Func`1.html">System.Func`1</a> that will return an error message.</p>
+        <td><p>The <a href="System.Func`1.html">Func</a> that will return an error message.</p>
 </td>
       </tr>
     </tbody>
@@ -157,7 +157,7 @@ CustomAttribute() : base( () =&gt; MyResources.MyErrorMessage ) {}.</p>
       <tr>
         <td><a href="System.String.html" name="System.String">String</a></td>
         <td><em>errorMessage</em></td>
-        <td><p>A non-localized error message to use in <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageString</a>.</p>
+        <td><p>A non-localized error message to use in <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">ErrorMessageString</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -249,8 +249,8 @@ CustomAttribute() : base( () =&gt; MyResources.MyErrorMessage ) {}.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationAttribute.cs/#L101">View Source</a>
       </span>
   <h4 id="ErrorMessageString">ErrorMessageString</h4>
-  <div class="markdown level1 summary"><p>Gets the localized error message string, coming either from <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessage</a>, or from evaluating the
-<a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageResourceType</a> and <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageResourceName</a> pair.</p>
+  <div class="markdown level1 summary"><p>Gets the localized error message string, coming either from <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">ErrorMessage</a>, or from evaluating the
+<a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">ErrorMessageResourceType</a> and <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">ErrorMessageResourceName</a> pair.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -314,7 +314,7 @@ in something like &quot;The field &#39;name&#39; has an incorrect value&quot;.</
 <para>
 Derived classes can override this method to customize how errors are generated.
 </para><para>
-The base class implementation will use <see cref="P:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageString"></see> to obtain a localized
+The base class implementation will use <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">ErrorMessageString</a> to obtain a localized
 error message from properties within the current attribute.  If those have not been set, a generic
 error message will be provided.
 </para></div>
@@ -362,13 +362,13 @@ error message will be provided.
       </span>
   <h4 id="GetValidationResult_Object__ValidationContext_">GetValidationResult(Object, ValidationContext)</h4>
   <div class="markdown level1 summary"><p>Tests whether the given <paramref name="value"></paramref> is valid with respect to the current
-validation attribute without throwing a <a href="System.ComponentModel.DataAnnotations.ValidationException.html">System.ComponentModel.DataAnnotations.ValidationException</a></p>
+validation attribute without throwing a <a href="System.ComponentModel.DataAnnotations.ValidationException.html">ValidationException</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="GetValidationResult_Object__ValidationContext__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If this method returns <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">System.ComponentModel.DataAnnotations.ValidationResult.Success</a>, then validation was successful, otherwise
-an instance of <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">System.ComponentModel.DataAnnotations.ValidationResult</a> will be returned with a guaranteed non-null
-<a href="System.ComponentModel.DataAnnotations.ValidationResult.html">System.ComponentModel.DataAnnotations.ValidationResult.ErrorMessage</a>.</p>
+  <div class="markdown level1 remarks"><p>If this method returns <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">Success</a>, then validation was successful, otherwise
+an instance of <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">ValidationResult</a> will be returned with a guaranteed non-null
+<a href="System.ComponentModel.DataAnnotations.ValidationResult.html">ErrorMessage</a>.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -393,7 +393,7 @@ an instance of <a href="System.ComponentModel.DataAnnotations.ValidationResult.h
       <tr>
         <td><a href="System.ComponentModel.DataAnnotations.ValidationContext.html" name="System.ComponentModel.DataAnnotations.ValidationContext">ValidationContext</a></td>
         <td><em>validationContext</em></td>
-        <td><p>A <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">System.ComponentModel.DataAnnotations.ValidationContext</a> instance that provides
+        <td><p>A <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">ValidationContext</a> instance that provides
 context about the validation operation, such as the object and member being validated.</p>
 </td>
       </tr>
@@ -410,9 +410,9 @@ context about the validation operation, such as the object and member being vali
     <tbody>
       <tr>
         <td><a href="System.ComponentModel.DataAnnotations.ValidationResult.html" name="System.ComponentModel.DataAnnotations.ValidationResult">ValidationResult</a></td>
-        <td><p>When validation is valid, <see cref="F:System.ComponentModel.DataAnnotations.ValidationResult.Success"></see>.</p>
+        <td><p>When validation is valid, <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">Success</a>.</p>
 <para>
-When validation is invalid, an instance of <see cref="T:System.ComponentModel.DataAnnotations.ValidationResult"></see>.
+When validation is invalid, an instance of <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">ValidationResult</a>.
 </para></td>
       </tr>
     </tbody>
@@ -426,11 +426,11 @@ When validation is invalid, an instance of <see cref="T:System.ComponentModel.Da
 with respect to the current validation attribute.</p>
 <para>
 Derived classes should not override this method as it is only available for backwards compatibility.
-Instead, implement <see cref="M:System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)"></see>.
+Instead, implement <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">IsValid(Object, ValidationContext)</a>.
 </para></div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="IsValid_Object__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The preferred public entry point for clients requesting validation is the <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute.GetValidationResult(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)</a>
+  <div class="markdown level1 remarks"><p>The preferred public entry point for clients requesting validation is the <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">GetValidationResult(Object, ValidationContext)</a>
 method.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -478,7 +478,7 @@ method.</p>
   <h4 id="IsValid_Object__ValidationContext_">IsValid(Object, ValidationContext)</h4>
   <div class="markdown level1 summary"><p>Protected virtual method to override and implement validation logic.</p>
 <para>
-Derived classes should override this method instead of <see cref="M:System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(System.Object)"></see>, which is deprecated.
+Derived classes should override this method instead of <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">IsValid(Object)</a>, which is deprecated.
 </para></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -504,7 +504,7 @@ Derived classes should override this method instead of <see cref="M:System.Compo
       <tr>
         <td><a href="System.ComponentModel.DataAnnotations.ValidationContext.html" name="System.ComponentModel.DataAnnotations.ValidationContext">ValidationContext</a></td>
         <td><em>validationContext</em></td>
-        <td><p>A <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">System.ComponentModel.DataAnnotations.ValidationContext</a> instance that provides
+        <td><p>A <a href="System.ComponentModel.DataAnnotations.ValidationContext.html">ValidationContext</a> instance that provides
 context about the validation operation, such as the object and member being validated.</p>
 </td>
       </tr>
@@ -521,9 +521,9 @@ context about the validation operation, such as the object and member being vali
     <tbody>
       <tr>
         <td><a href="System.ComponentModel.DataAnnotations.ValidationResult.html" name="System.ComponentModel.DataAnnotations.ValidationResult">ValidationResult</a></td>
-        <td><p>When validation is valid, <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">System.ComponentModel.DataAnnotations.ValidationResult.Success</a>.</p>
+        <td><p>When validation is valid, <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">Success</a>.</p>
 <para>
-When validation is invalid, an instance of <see cref="T:System.ComponentModel.DataAnnotations.ValidationResult"></see>.
+When validation is invalid, an instance of <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">ValidationResult</a>.
 </para></td>
       </tr>
     </tbody>
@@ -533,15 +533,15 @@ When validation is invalid, an instance of <see cref="T:System.ComponentModel.Da
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationAttribute.cs/#L504">View Source</a>
       </span>
   <h4 id="Validate_Object__ValidationContext_">Validate(Object, ValidationContext)</h4>
-  <div class="markdown level1 summary"><p>Validates the specified <paramref name="value"></paramref> and throws <a href="System.ComponentModel.DataAnnotations.ValidationException.html">System.ComponentModel.DataAnnotations.ValidationException</a> if it is not.</p>
+  <div class="markdown level1 summary"><p>Validates the specified <paramref name="value"></paramref> and throws <a href="System.ComponentModel.DataAnnotations.ValidationException.html">ValidationException</a> if it is not.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Validate_Object__ValidationContext__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This method invokes the <see cref="M:System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)"></see> method
+  <div class="markdown level1 remarks"><p>This method invokes the <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">IsValid(Object, ValidationContext)</a> method
 to determine whether or not the <paramref name="value"></paramref> is acceptable given the</p>
 <p><paramref name="validationContext"></paramref>.
-If that method doesn&#39;t return <see cref="F:System.ComponentModel.DataAnnotations.ValidationResult.Success"></see>, this base method will throw
-a <see cref="T:System.ComponentModel.DataAnnotations.ValidationException"></see> containing the <see cref="T:System.ComponentModel.DataAnnotations.ValidationResult"></see> describing the problem.</p>
+If that method doesn&#39;t return <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">Success</a>, this base method will throw
+a <a href="System.ComponentModel.DataAnnotations.ValidationException.html">ValidationException</a> containing the <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">ValidationResult</a> describing the problem.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -576,17 +576,17 @@ a <see cref="T:System.ComponentModel.DataAnnotations.ValidationException"></see>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationAttribute.cs/#L475">View Source</a>
       </span>
   <h4 id="Validate_Object__String_">Validate(Object, String)</h4>
-  <div class="markdown level1 summary"><p>Validates the specified <paramref name="value"></paramref> and throws <a href="System.ComponentModel.DataAnnotations.ValidationException.html">System.ComponentModel.DataAnnotations.ValidationException</a> if it is not.</p>
+  <div class="markdown level1 summary"><p>Validates the specified <paramref name="value"></paramref> and throws <a href="System.ComponentModel.DataAnnotations.ValidationException.html">ValidationException</a> if it is not.</p>
 <para>
-The overloaded <see cref="M:System.ComponentModel.DataAnnotations.ValidationAttribute.Validate(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)"></see> is the recommended entry point as it
-can provide additional context to the <see cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute"></see> being validated.
+The overloaded <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">Validate(Object, ValidationContext)</a> is the recommended entry point as it
+can provide additional context to the <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">ValidationAttribute</a> being validated.
 </para></div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Validate_Object__String__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This base method invokes the <see cref="M:System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(System.Object)"></see> method to determine whether or not the</p>
-<p><paramref name="value"></paramref> is acceptable.  If <see cref="M:System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(System.Object)"></see> returns <c>false</c>, this base
-method will invoke the <see cref="M:System.ComponentModel.DataAnnotations.ValidationAttribute.FormatErrorMessage(System.String)"></see> to obtain a localized message describing
-the problem, and it will throw a <see cref="T:System.ComponentModel.DataAnnotations.ValidationException"></see></p>
+  <div class="markdown level1 remarks"><p>This base method invokes the <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">IsValid(Object)</a> method to determine whether or not the</p>
+<p><paramref name="value"></paramref> is acceptable.  If <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">IsValid(Object)</a> returns <c>false</c>, this base
+method will invoke the <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">FormatErrorMessage(String)</a> to obtain a localized message describing
+the problem, and it will throw a <a href="System.ComponentModel.DataAnnotations.ValidationException.html">ValidationException</a></p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

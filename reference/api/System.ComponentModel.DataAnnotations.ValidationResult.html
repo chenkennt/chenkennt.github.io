@@ -62,7 +62,7 @@
       <h1 id="ValidationResult">Class ValidationResult</h1>
       <div class="markdown level0 summary"><p>Container class for the results of a validation request.</p>
 <para>
-Use the static <see cref="F:System.ComponentModel.DataAnnotations.ValidationResult.Success"></see> to represent successful validation.
+Use the static <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">Success</a> to represent successful validation.
 </para></div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
@@ -113,7 +113,7 @@ Use the static <see cref="F:System.ComponentModel.DataAnnotations.ValidationResu
       </span>
   <h4 id="ValidationResult_String_">ValidationResult(String)</h4>
   <div class="markdown level1 summary"><p>Constructor that accepts an error message.  This error message would override any error message
-provided on the <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute</a>.</p>
+provided on the <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">ValidationAttribute</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -133,8 +133,8 @@ provided on the <a href="System.ComponentModel.DataAnnotations.ValidationAttribu
       <tr>
         <td><a href="System.String.html" name="System.String">String</a></td>
         <td><em>errorMessage</em></td>
-        <td><p>The user-visible error message.  If null, <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute.GetValidationResult(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)</a>
-will use <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute.FormatErrorMessage(System.String)</a> for its error message.</p>
+        <td><p>The user-visible error message.  If null, <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">GetValidationResult(Object, ValidationContext)</a>
+will use <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">FormatErrorMessage(String)</a> for its error message.</p>
 </td>
       </tr>
     </tbody>
@@ -145,7 +145,7 @@ will use <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html
       </span>
   <h4 id="ValidationResult_String__IEnumerable_String__">ValidationResult(String, IEnumerable&lt;String&gt;)</h4>
   <div class="markdown level1 summary"><p>Constructor that accepts an error message as well as a list of member names involved in the validation.
-This error message would override any error message provided on the <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute</a>.</p>
+This error message would override any error message provided on the <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">ValidationAttribute</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -165,12 +165,12 @@ This error message would override any error message provided on the <a href="Sys
       <tr>
         <td><a href="System.String.html" name="System.String">String</a></td>
         <td><em>errorMessage</em></td>
-        <td><p>The user-visible error message.  If null, <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute.GetValidationResult(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)</a>
-will use <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute.FormatErrorMessage(System.String)</a> for its error message.</p>
+        <td><p>The user-visible error message.  If null, <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">GetValidationResult(Object, ValidationContext)</a>
+will use <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">FormatErrorMessage(String)</a> for its error message.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Collections.Generic.IEnumerable&lt;System.String&gt;</td>
+        <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.String.html" name="System.String">String</a>&gt;</td>
         <td><em>memberNames</em></td>
         <td><p>The list of member names affected by this result.
 This list of member names is meant to be used by presentation layers to indicate which fields are in error.</p>
@@ -184,12 +184,12 @@ This list of member names is meant to be used by presentation layers to indicate
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/ValidationResult.cs/#L26">View Source</a>
       </span>
   <h4 id="Success">Success</h4>
-  <div class="markdown level1 summary"><p>Gets a <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">System.ComponentModel.DataAnnotations.ValidationResult</a> that indicates Success.</p>
+  <div class="markdown level1 summary"><p>Gets a <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">ValidationResult</a> that indicates Success.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Success_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The <c>null</c> value is used to indicate success.  Consumers of <see cref="T:System.ComponentModel.DataAnnotations.ValidationResult"></see>s
-should compare the values to <see cref="F:System.ComponentModel.DataAnnotations.ValidationResult.Success"></see> rather than checking for null.</p>
+  <div class="markdown level1 remarks"><p>The <c>null</c> value is used to indicate success.  Consumers of <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">ValidationResult</a>s
+should compare the values to <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">Success</a> rather than checking for null.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -245,7 +245,7 @@ should compare the values to <see cref="F:System.ComponentModel.DataAnnotations.
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Generic.IEnumerable&lt;System.String&gt;</td>
+        <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.String.html" name="System.String">String</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -257,13 +257,13 @@ should compare the values to <see cref="F:System.ComponentModel.DataAnnotations.
       </span>
   <h4 id="ToString__">ToString()</h4>
   <div class="markdown level1 summary"><p>Override the string representation of this instance, returning
-the <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">System.ComponentModel.DataAnnotations.ValidationResult.ErrorMessage</a> if not <c>null</c>, otherwise
-the base <a href="System.Object.html">System.Object.ToString</a> result.</p>
+the <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">ErrorMessage</a> if not <c>null</c>, otherwise
+the base <a href="System.Object.html">ToString()</a> result.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ToString___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If the <see cref="P:System.ComponentModel.DataAnnotations.ValidationResult.ErrorMessage"></see> is empty, it will still qualify
-as being specified, and therefore returned from <see cref="M:System.ComponentModel.DataAnnotations.ValidationResult.ToString"></see>.</p>
+  <div class="markdown level1 remarks"><p>If the <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">ErrorMessage</a> is empty, it will still qualify
+as being specified, and therefore returned from <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">ToString()</a>.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -280,8 +280,8 @@ as being specified, and therefore returned from <see cref="M:System.ComponentMod
     <tbody>
       <tr>
         <td><a href="System.String.html" name="System.String">String</a></td>
-        <td><p>The <see cref="P:System.ComponentModel.DataAnnotations.ValidationResult.ErrorMessage"></see> property value if specified,
-otherwise, the base <see cref="M:System.Object.ToString"></see> result.</p>
+        <td><p>The <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">ErrorMessage</a> property value if specified,
+otherwise, the base <a href="System.Object.html">ToString()</a> result.</p>
 </td>
       </tr>
     </tbody>

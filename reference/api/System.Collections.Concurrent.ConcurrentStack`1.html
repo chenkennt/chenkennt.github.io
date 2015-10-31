@@ -75,7 +75,7 @@
         <pre><code class="lang-csharp hljs">public class ConcurrentStack<t> : IProducerConsumerCollection<t>, ICollection, IReadOnlyCollection<t>, IEnumerable<t>, IEnumerable</t></t></t></t></code></pre>
       </div>
       <h5 id="ConcurrentStack_T__remarks"><strong>Remarks<strong></strong></strong></h5>
-      <div class="markdown level0 remarks"><p>All public and protected members of <a href="System.Collections.Concurrent.ConcurrentStack`1.html">System.Collections.Concurrent.ConcurrentStack`1</a> are thread-safe and may be used
+      <div class="markdown level0 remarks"><p>All public and protected members of <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a> are thread-safe and may be used
 concurrently from multiple threads.</p>
 </div>
       <h3 id="constructors">Constructors</h3>
@@ -84,7 +84,7 @@ concurrently from multiple threads.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs/#L87">View Source</a>
       </span>
   <h4 id="ConcurrentStack__">ConcurrentStack()</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">System.Collections.Concurrent.ConcurrentStack`1</a>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a>
 class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -97,7 +97,7 @@ class.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs/#L99">View Source</a>
       </span>
   <h4 id="ConcurrentStack_IEnumerable_T__">ConcurrentStack(IEnumerable&lt;T&gt;)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">System.Collections.Concurrent.ConcurrentStack`1</a>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a>
 class that contains elements copied from the specified collection</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -116,9 +116,9 @@ class that contains elements copied from the specified collection</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Generic.IEnumerable&lt;T&gt;</td>
+        <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;T&gt;</td>
         <td><em>collection</em></td>
-        <td><p>The collection whose elements are copied to the new <see cref="T:System.Collections.Concurrent.ConcurrentStack`1"></see>.</p>
+        <td><p>The collection whose elements are copied to the new <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -129,12 +129,12 @@ class that contains elements copied from the specified collection</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs/#L199">View Source</a>
       </span>
   <h4 id="Count">Count</h4>
-  <div class="markdown level1 summary"><p>Gets the number of elements contained in the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">System.Collections.Concurrent.ConcurrentStack`1</a>.</p>
+  <div class="markdown level1 summary"><p>Gets the number of elements contained in the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Count_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>For determining whether the collection contains any items, use of the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">System.Collections.Concurrent.ConcurrentStack`1.IsEmpty</a>
-property is recommended rather than retrieving the number of items from the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">System.Collections.Concurrent.ConcurrentStack`1.Count</a>
+  <div class="markdown level1 remarks"><p>For determining whether the collection contains any items, use of the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">IsEmpty</a>
+property is recommended rather than retrieving the number of items from the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">Count</a>
 property and comparing it to 0.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -161,14 +161,14 @@ property and comparing it to 0.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs/#L181">View Source</a>
       </span>
   <h4 id="IsEmpty">IsEmpty</h4>
-  <div class="markdown level1 summary"><p>Gets a value that indicates whether the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">System.Collections.Concurrent.ConcurrentStack`1</a> is empty.</p>
+  <div class="markdown level1 summary"><p>Gets a value that indicates whether the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a> is empty.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="IsEmpty_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>For determining whether the collection contains any items, use of this property is recommended
-rather than retrieving the number of items from the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">System.Collections.Concurrent.ConcurrentStack`1.Count</a> property and comparing it
+rather than retrieving the number of items from the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">Count</a> property and comparing it
 to 0.  However, as this collection is intended to be accessed concurrently, it may be the case
-that another thread will modify the collection after <a href="System.Collections.Concurrent.ConcurrentStack`1.html">System.Collections.Concurrent.ConcurrentStack`1.IsEmpty</a> returns, thus invalidating
+that another thread will modify the collection after <a href="System.Collections.Concurrent.ConcurrentStack`1.html">IsEmpty</a> returns, thus invalidating
 the result.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -195,7 +195,7 @@ the result.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs/#L231">View Source</a>
       </span>
   <h4 id="ICollection_IsSynchronized">ICollection.IsSynchronized</h4>
-  <div class="markdown level1 summary"><p>Gets a value indicating whether access to the <a href="System.Collections.ICollection.html">System.Collections.ICollection</a> is
+  <div class="markdown level1 summary"><p>Gets a value indicating whether access to the <a href="System.Collections.ICollection.html">ICollection</a> is
 synchronized with the SyncRoot.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -223,7 +223,7 @@ synchronized with the SyncRoot.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs/#L245">View Source</a>
       </span>
   <h4 id="ICollection_SyncRoot">ICollection.SyncRoot</h4>
-  <div class="markdown level1 summary"><p>Gets an object that can be used to synchronize access to the <a href="System.Collections.ICollection.html">System.Collections.ICollection</a>. This property is not supported.</p>
+  <div class="markdown level1 summary"><p>Gets an object that can be used to synchronize access to the <a href="System.Collections.ICollection.html">ICollection</a>. This property is not supported.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -251,7 +251,7 @@ synchronized with the SyncRoot.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs/#L256">View Source</a>
       </span>
   <h4 id="Clear__">Clear()</h4>
-  <div class="markdown level1 summary"><p>Removes all objects from the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">System.Collections.Concurrent.ConcurrentStack`1</a>.</p>
+  <div class="markdown level1 summary"><p>Removes all objects from the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -263,7 +263,7 @@ synchronized with the SyncRoot.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs/#L325">View Source</a>
       </span>
   <h4 id="CopyTo_T____Int32_">CopyTo(T[], Int32)</h4>
-  <div class="markdown level1 summary"><p>Copies the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">System.Collections.Concurrent.ConcurrentStack`1</a> elements to an existing one-dimensional <a href="System.Array.html">System.Array</a>, starting at the specified array index.</p>
+  <div class="markdown level1 summary"><p>Copies the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a> elements to an existing one-dimensional <a href="System.Array.html">Array</a>, starting at the specified array index.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -283,9 +283,9 @@ synchronized with the SyncRoot.</p>
       <tr>
         <td>T[]</td>
         <td><em>array</em></td>
-        <td><p>The one-dimensional <see cref="T:System.Array"></see> that is the destination of
-the elements copied from the</p>
-<p><see cref="T:System.Collections.Concurrent.ConcurrentStack`1"></see>. The <see cref="T:System.Array"></see> must have zero-based
+        <td><p>The one-dimensional <a href="System.Array.html">Array</a> that is the destination of
+the elements copied from the
+<a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a>. The <a href="System.Array.html">Array</a> must have zero-based
 indexing.</p>
 </td>
       </tr>
@@ -303,13 +303,13 @@ begins.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs/#L800">View Source</a>
       </span>
   <h4 id="GetEnumerator__">GetEnumerator()</h4>
-  <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">System.Collections.Concurrent.ConcurrentStack`1</a>.</p>
+  <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="GetEnumerator___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The enumeration represents a moment-in-time snapshot of the contents
 of the stack.  It does not reflect any updates to the collection after
-<a href="System.Collections.Concurrent.ConcurrentStack`1.html">System.Collections.Concurrent.ConcurrentStack`1.GetEnumerator</a> was called.  The enumerator is safe to use
+<a href="System.Collections.Concurrent.ConcurrentStack`1.html">GetEnumerator()</a> was called.  The enumerator is safe to use
 concurrently with reads from and writes to the stack.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -326,8 +326,8 @@ concurrently with reads from and writes to the stack.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Generic.IEnumerator&lt;T&gt;</td>
-        <td><p>An enumerator for the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1"></see>.</p>
+        <td><a href="System.Collections.Generic.IEnumerator`1.html" name="System.Collections.Generic.IEnumerator">IEnumerator</a>&lt;T&gt;</td>
+        <td><p>An enumerator for the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -337,7 +337,7 @@ concurrently with reads from and writes to the stack.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs/#L346">View Source</a>
       </span>
   <h4 id="Push_T_">Push(T)</h4>
-  <div class="markdown level1 summary"><p>Inserts an object at the top of the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">System.Collections.Concurrent.ConcurrentStack`1</a>.</p>
+  <div class="markdown level1 summary"><p>Inserts an object at the top of the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -357,7 +357,7 @@ concurrently with reads from and writes to the stack.</p>
       <tr>
         <td>T</td>
         <td><em>item</em></td>
-        <td><p>The object to push onto the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1"></see>. The value can be
+        <td><p>The object to push onto the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a>. The value can be
 a null reference (Nothing in Visual Basic) for reference types.</p>
 </td>
       </tr>
@@ -368,12 +368,12 @@ a null reference (Nothing in Visual Basic) for reference types.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs/#L377">View Source</a>
       </span>
   <h4 id="PushRange_T___">PushRange(T[])</h4>
-  <div class="markdown level1 summary"><p>Inserts multiple objects at the top of the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">System.Collections.Concurrent.ConcurrentStack`1</a> atomically.</p>
+  <div class="markdown level1 summary"><p>Inserts multiple objects at the top of the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a> atomically.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="PushRange_T____remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>When adding multiple items to the stack, using PushRange is a more efficient
-mechanism than using <a href="System.Collections.Concurrent.ConcurrentStack`1.html">System.Collections.Concurrent.ConcurrentStack<code>1.Push(</code>0)</a> one item at a time.  Additionally, PushRange
+mechanism than using <a href="System.Collections.Concurrent.ConcurrentStack`1.html">Push(T)</a> one item at a time.  Additionally, PushRange
 guarantees that all of the elements will be added atomically, meaning that no other threads will
 be able to inject elements between the elements being pushed.  Items at lower indices in
 the <paramref name="items"></paramref> array will be pushed before items at higher indices.</p>
@@ -395,7 +395,7 @@ the <paramref name="items"></paramref> array will be pushed before items at high
       <tr>
         <td>T[]</td>
         <td><em>items</em></td>
-        <td><p>The objects to push onto the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1"></see>.</p>
+        <td><p>The objects to push onto the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -405,12 +405,12 @@ the <paramref name="items"></paramref> array will be pushed before items at high
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs/#L408">View Source</a>
       </span>
   <h4 id="PushRange_T____Int32__Int32_">PushRange(T[], Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Inserts multiple objects at the top of the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">System.Collections.Concurrent.ConcurrentStack`1</a> atomically.</p>
+  <div class="markdown level1 summary"><p>Inserts multiple objects at the top of the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a> atomically.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="PushRange_T____Int32__Int32__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>When adding multiple items to the stack, using PushRange is a more efficient
-mechanism than using <a href="System.Collections.Concurrent.ConcurrentStack`1.html">System.Collections.Concurrent.ConcurrentStack<code>1.Push(</code>0)</a> one item at a time. Additionally, PushRange
+mechanism than using <a href="System.Collections.Concurrent.ConcurrentStack`1.html">Push(T)</a> one item at a time. Additionally, PushRange
 guarantees that all of the elements will be added atomically, meaning that no other threads will
 be able to inject elements between the elements being pushed. Items at lower indices in the</p>
 <p><paramref name="items"></paramref> array will be pushed before items at higher indices.</p>
@@ -432,20 +432,20 @@ be able to inject elements between the elements being pushed. Items at lower ind
       <tr>
         <td>T[]</td>
         <td><em>items</em></td>
-        <td><p>The objects to push onto the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1"></see>.</p>
+        <td><p>The objects to push onto the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a>.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
         <td><em>startIndex</em></td>
         <td><p>The zero-based offset in <paramref name="items"></paramref> at which to begin
-inserting elements onto the top of the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1"></see>.</p>
+inserting elements onto the top of the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a>.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
         <td><em>count</em></td>
-        <td><p>The number of elements to be inserted onto the top of the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1"></see>.</p>
+        <td><p>The number of elements to be inserted onto the top of the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -455,12 +455,12 @@ inserting elements onto the top of the <see cref="T:System.Collections.Concurren
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs/#L502">View Source</a>
       </span>
   <h4 id="IProducerConsumerCollection_T__TryAdd_T_">IProducerConsumerCollection&lt;T&gt;.TryAdd(T)</h4>
-  <div class="markdown level1 summary"><p>Attempts to add an object to the <a href="">System.Collections.Concurrent.IProducerConsumerCollection{T}</a>.</p>
+  <div class="markdown level1 summary"><p>Attempts to add an object to the System.Collections.Concurrent.IProducerConsumerCollection{T}.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="IProducerConsumerCollection_T__TryAdd_T__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>For <see cref="T:System.Collections.Concurrent.ConcurrentStack`1"></see>, this operation
-will always insert the object onto the top of the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1"></see>
+  <div class="markdown level1 remarks"><p>For <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a>, this operation
+will always insert the object onto the top of the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a>
 and return true.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -480,7 +480,7 @@ and return true.</p>
       <tr>
         <td>T</td>
         <td><em>item</em></td>
-        <td><p>The object to add to the <see cref="T:System.Collections.Concurrent.IProducerConsumerCollection{T}"></see>. The value can be a null
+        <td><p>The object to add to the System.Collections.Concurrent.IProducerConsumerCollection{T}. The value can be a null
 reference (Nothing in Visual Basic) for reference types.</p>
 </td>
       </tr>
@@ -507,12 +507,12 @@ reference (Nothing in Visual Basic) for reference types.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs/#L756">View Source</a>
       </span>
   <h4 id="IProducerConsumerCollection_T__TryTake_out_T_">IProducerConsumerCollection&lt;T&gt;.TryTake(out T)</h4>
-  <div class="markdown level1 summary"><p>Attempts to remove and return an object from the <a href="">System.Collections.Concurrent.IProducerConsumerCollection{T}</a>.</p>
+  <div class="markdown level1 summary"><p>Attempts to remove and return an object from the System.Collections.Concurrent.IProducerConsumerCollection{T}.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="IProducerConsumerCollection_T__TryTake_out_T__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>For <see cref="T:System.Collections.Concurrent.ConcurrentStack`1"></see>, this operation will attempt to pope the object at
-the top of the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1"></see>.</p>
+  <div class="markdown level1 remarks"><p>For <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a>, this operation will attempt to pope the object at
+the top of the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a>.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -558,8 +558,8 @@ object removed. If no object was available to be removed, the value is unspecifi
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs/#L290">View Source</a>
       </span>
   <h4 id="ICollection_CopyTo_Array__Int32_">ICollection.CopyTo(Array, Int32)</h4>
-  <div class="markdown level1 summary"><p>Copies the elements of the <see cref="T:System.Collections.ICollection"></see> to an <see cref="T:System.Array"></see>, starting at a particular</p>
-<p><see cref="T:System.Array"></see> index.</p>
+  <div class="markdown level1 summary"><p>Copies the elements of the <a href="System.Collections.ICollection.html">ICollection</a> to an <a href="System.Array.html">Array</a>, starting at a particular
+<a href="System.Array.html">Array</a> index.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -579,9 +579,9 @@ object removed. If no object was available to be removed, the value is unspecifi
       <tr>
         <td><a href="System.Array.html" name="System.Array">Array</a></td>
         <td><em>array</em></td>
-        <td><p>The one-dimensional <see cref="T:System.Array"></see> that is the destination of
-the elements copied from the</p>
-<p><see cref="T:System.Collections.Concurrent.ConcurrentStack`1"></see>. The <see cref="T:System.Array"></see> must
+        <td><p>The one-dimensional <a href="System.Array.html">Array</a> that is the destination of
+the elements copied from the
+<a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a>. The <a href="System.Array.html">Array</a> must
 have zero-based indexing.</p>
 </td>
       </tr>
@@ -605,7 +605,7 @@ begins.</p>
   <h5 id="IEnumerable_GetEnumerator___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The enumeration represents a moment-in-time snapshot of the contents of the stack. It does not
 reflect any updates to the collection after
-<a href="System.Collections.Concurrent.ConcurrentStack`1.html">System.Collections.Concurrent.ConcurrentStack`1.GetEnumerator</a> was called. The enumerator is safe to use concurrently with reads
+<a href="System.Collections.Concurrent.ConcurrentStack`1.html">GetEnumerator()</a> was called. The enumerator is safe to use concurrently with reads
 from and writes to the stack.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -623,7 +623,7 @@ from and writes to the stack.</p>
     <tbody>
       <tr>
         <td><a href="System.Collections.IEnumerator.html" name="System.Collections.IEnumerator">IEnumerator</a></td>
-        <td><p>An <a href="System.Collections.IEnumerator.html">System.Collections.IEnumerator</a> that can be used to iterate through
+        <td><p>An <a href="System.Collections.IEnumerator.html">IEnumerator</a> that can be used to iterate through
 the collection.</p>
 </td>
       </tr>
@@ -634,7 +634,7 @@ the collection.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs/#L766">View Source</a>
       </span>
   <h4 id="ToArray__">ToArray()</h4>
-  <div class="markdown level1 summary"><p>Copies the items stored in the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">System.Collections.Concurrent.ConcurrentStack`1</a> to a new array.</p>
+  <div class="markdown level1 summary"><p>Copies the items stored in the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a> to a new array.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -652,7 +652,7 @@ the collection.</p>
     <tbody>
       <tr>
         <td>T[]</td>
-        <td><p>A new array containing a snapshot of elements copied from the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1"></see>.</p>
+        <td><p>A new array containing a snapshot of elements copied from the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -662,7 +662,7 @@ the collection.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs/#L516">View Source</a>
       </span>
   <h4 id="TryPeek_out_T_">TryPeek(out T)</h4>
-  <div class="markdown level1 summary"><p>Attempts to return an object from the top of the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">System.Collections.Concurrent.ConcurrentStack`1</a>
+  <div class="markdown level1 summary"><p>Attempts to return an object from the top of the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a>
 without removing it.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -684,7 +684,7 @@ without removing it.</p>
         <td>T</td>
         <td><em>result</em></td>
         <td><p>When this method returns, <paramref name="result"></paramref> contains an object from
-the top of the <a href="">System.Collections.Concurrent.ConccurrentStack{T}</a> or an
+the top of the System.Collections.Concurrent.ConccurrentStack{T} or an
 unspecified value if the operation failed.</p>
 </td>
       </tr>
@@ -711,7 +711,7 @@ unspecified value if the operation failed.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs/#L543">View Source</a>
       </span>
   <h4 id="TryPop_out_T_">TryPop(out T)</h4>
-  <div class="markdown level1 summary"><p>Attempts to pop and return the object at the top of the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">System.Collections.Concurrent.ConcurrentStack`1</a>.</p>
+  <div class="markdown level1 summary"><p>Attempts to pop and return the object at the top of the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -748,7 +748,7 @@ object removed. If no object was available to be removed, the value is unspecifi
     <tbody>
       <tr>
         <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-        <td><p>true if an element was removed and returned from the top of the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1"></see>
+        <td><p>true if an element was removed and returned from the top of the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a>
 succesfully; otherwise, false.</p>
 </td>
       </tr>
@@ -759,13 +759,13 @@ succesfully; otherwise, false.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs/#L582">View Source</a>
       </span>
   <h4 id="TryPopRange_T___">TryPopRange(T[])</h4>
-  <div class="markdown level1 summary"><p>Attempts to pop and return multiple objects from the top of the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">System.Collections.Concurrent.ConcurrentStack`1</a>
+  <div class="markdown level1 summary"><p>Attempts to pop and return multiple objects from the top of the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a>
 atomically.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="TryPopRange_T____remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>When popping multiple items, if there is little contention on the stack, using
-TryPopRange can be more efficient than using <a href="System.Collections.Concurrent.ConcurrentStack`1.html">System.Collections.Concurrent.ConcurrentStack<code>1.TryPop(</code>0)</a>
+TryPopRange can be more efficient than using <a href="System.Collections.Concurrent.ConcurrentStack`1.html">TryPop(out T)</a>
 once per item to be removed.  Nodes fill the <paramref name="items"></paramref>
 with the first node to be popped at the startIndex, the second node to be popped
 at startIndex + 1, and so on.</p>
@@ -787,7 +787,7 @@ at startIndex + 1, and so on.</p>
       <tr>
         <td>T[]</td>
         <td><em>items</em></td>
-        <td><p>The <see cref="T:System.Array"></see> to which objects popped from the top of the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1"></see> will be added.</p>
+        <td><p>The <a href="System.Array.html">Array</a> to which objects popped from the top of the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a> will be added.</p>
 </td>
       </tr>
     </tbody>
@@ -803,7 +803,7 @@ at startIndex + 1, and so on.</p>
     <tbody>
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-        <td><p>The number of objects successfully popped from the top of the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1"></see> and inserted in</p>
+        <td><p>The number of objects successfully popped from the top of the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a> and inserted in</p>
 <p><paramref name="items"></paramref>.</p>
 </td>
       </tr>
@@ -814,13 +814,13 @@ at startIndex + 1, and so on.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs/#L620">View Source</a>
       </span>
   <h4 id="TryPopRange_T____Int32__Int32_">TryPopRange(T[], Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Attempts to pop and return multiple objects from the top of the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">System.Collections.Concurrent.ConcurrentStack`1</a>
+  <div class="markdown level1 summary"><p>Attempts to pop and return multiple objects from the top of the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a>
 atomically.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="TryPopRange_T____Int32__Int32__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>When popping multiple items, if there is little contention on the stack, using
-TryPopRange can be more efficient than using <a href="System.Collections.Concurrent.ConcurrentStack`1.html">System.Collections.Concurrent.ConcurrentStack<code>1.TryPop(</code>0)</a>
+TryPopRange can be more efficient than using <a href="System.Collections.Concurrent.ConcurrentStack`1.html">TryPop(out T)</a>
 once per item to be removed.  Nodes fill the <paramref name="items"></paramref>
 with the first node to be popped at the startIndex, the second node to be popped
 at startIndex + 1, and so on.</p>
@@ -842,20 +842,20 @@ at startIndex + 1, and so on.</p>
       <tr>
         <td>T[]</td>
         <td><em>items</em></td>
-        <td><p>The <see cref="T:System.Array"></see> to which objects popped from the top of the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1"></see> will be added.</p>
+        <td><p>The <a href="System.Array.html">Array</a> to which objects popped from the top of the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a> will be added.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
         <td><em>startIndex</em></td>
         <td><p>The zero-based offset in <paramref name="items"></paramref> at which to begin
-inserting elements from the top of the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1"></see>.</p>
+inserting elements from the top of the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a>.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
         <td><em>count</em></td>
-        <td><p>The number of elements to be popped from top of the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1"></see> and inserted into <paramref name="items"></paramref>.</p>
+        <td><p>The number of elements to be popped from top of the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a> and inserted into <paramref name="items"></paramref>.</p>
 </td>
       </tr>
     </tbody>
@@ -872,7 +872,7 @@ inserting elements from the top of the <see cref="T:System.Collections.Concurren
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
         <td><p>The number of objects successfully popped from the top of
-the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1"></see> and inserted in <paramref name="items"></paramref>.</p>
+the <a href="System.Collections.Concurrent.ConcurrentStack`1.html">ConcurrentStack</a> and inserted in <paramref name="items"></paramref>.</p>
 </td>
       </tr>
     </tbody>

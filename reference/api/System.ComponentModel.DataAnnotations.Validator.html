@@ -61,7 +61,7 @@
       </a>
       <h1 id="Validator">Class Validator</h1>
       <div class="markdown level0 summary"><p>Helper class to validate objects, properties and other values using their associated
-<a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute</a>
+<a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">ValidationAttribute</a>
 custom attributes.</p>
 </div>
       <div class="markdown level0 conceptual"></div>
@@ -86,8 +86,8 @@ custom attributes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="TryValidateObject_Object__ValidationContext__ICollection_ValidationResult___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This method evaluates all <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute</a>s attached to the object instance&#39;s type.  It also
-checks to ensure all properties marked with <a href="System.ComponentModel.DataAnnotations.RequiredAttribute.html">System.ComponentModel.DataAnnotations.RequiredAttribute</a> are set.  It does not validate the
+  <div class="markdown level1 remarks"><p>This method evaluates all <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">ValidationAttribute</a>s attached to the object instance&#39;s type.  It also
+checks to ensure all properties marked with <a href="System.ComponentModel.DataAnnotations.RequiredAttribute.html">RequiredAttribute</a> are set.  It does not validate the
 property values of the object.</p>
 <para>
 If <paramref name="validationResults"></paramref> is null, then execution will abort upon the first validation
@@ -121,9 +121,9 @@ evaluated.
 </td>
       </tr>
       <tr>
-        <td>System.Collections.Generic.ICollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt;</td>
+        <td><a href="System.Collections.Generic.ICollection`1.html" name="System.Collections.Generic.ICollection">ICollection</a>&lt;<a href="System.ComponentModel.DataAnnotations.ValidationResult.html" name="System.ComponentModel.DataAnnotations.ValidationResult">ValidationResult</a>&gt;</td>
         <td><em>validationResults</em></td>
-        <td><p>Optional collection to receive <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">System.ComponentModel.DataAnnotations.ValidationResult</a>s for the failures.</p>
+        <td><p>Optional collection to receive <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">ValidationResult</a>s for the failures.</p>
 </td>
       </tr>
     </tbody>
@@ -153,10 +153,10 @@ evaluated.
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="TryValidateObject_Object__ValidationContext__ICollection_ValidationResult___Boolean__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This method evaluates all <see cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute"></see>s attached to the object instance&#39;s type.  It also
-checks to ensure all properties marked with <see cref="T:System.ComponentModel.DataAnnotations.RequiredAttribute"></see> are set.  If</p>
+  <div class="markdown level1 remarks"><p>This method evaluates all <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">ValidationAttribute</a>s attached to the object instance&#39;s type.  It also
+checks to ensure all properties marked with <a href="System.ComponentModel.DataAnnotations.RequiredAttribute.html">RequiredAttribute</a> are set.  If</p>
 <p><paramref name="validateAllProperties"></paramref>
-is <c>true</c>, this method will also evaluate the <see cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute"></see>s for all the immediate
+is <c>true</c>, this method will also evaluate the <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">ValidationAttribute</a>s for all the immediate
 properties
 of this object.  This process is not recursive.</p>
 <para>
@@ -164,7 +164,7 @@ If <paramref name="validationResults"></paramref> is null, then execution will a
 failure.  If <paramref name="validationResults"></paramref> is non-null, then all validation attributes will be
 evaluated.
 </para><para>
-For any given property, if it has a <see cref="T:System.ComponentModel.DataAnnotations.RequiredAttribute"></see> that fails validation, no other validators
+For any given property, if it has a <a href="System.ComponentModel.DataAnnotations.RequiredAttribute.html">RequiredAttribute</a> that fails validation, no other validators
 will be evaluated for that property.
 </para></div>
   <h5 class="decalaration">Declaration</h5>
@@ -194,9 +194,9 @@ will be evaluated for that property.
 </td>
       </tr>
       <tr>
-        <td>System.Collections.Generic.ICollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt;</td>
+        <td><a href="System.Collections.Generic.ICollection`1.html" name="System.Collections.Generic.ICollection">ICollection</a>&lt;<a href="System.ComponentModel.DataAnnotations.ValidationResult.html" name="System.ComponentModel.DataAnnotations.ValidationResult">ValidationResult</a>&gt;</td>
         <td><em>validationResults</em></td>
-        <td><p>Optional collection to receive <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">System.ComponentModel.DataAnnotations.ValidationResult</a>s for the failures.</p>
+        <td><p>Optional collection to receive <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">ValidationResult</a>s for the failures.</p>
 </td>
       </tr>
       <tr>
@@ -233,15 +233,15 @@ recursive over properties of the properties).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="TryValidateProperty_Object__ValidationContext__ICollection_ValidationResult___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This method will test each <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute</a> associated with the property
+  <div class="markdown level1 remarks"><p>This method will test each <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">ValidationAttribute</a> associated with the property
 identified by <paramref name="validationContext"></paramref>.  If <paramref name="validationResults"></paramref> is non-null,
-this method will add a <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">System.ComponentModel.DataAnnotations.ValidationResult</a> to it for each validation failure.</p>
+this method will add a <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">ValidationResult</a> to it for each validation failure.</p>
 <para>
-If there is a <see cref="T:System.ComponentModel.DataAnnotations.RequiredAttribute"></see> found on the property, it will be evaluated before all other
+If there is a <a href="System.ComponentModel.DataAnnotations.RequiredAttribute.html">RequiredAttribute</a> found on the property, it will be evaluated before all other
 validation attributes.  If the required validator fails then validation will abort, adding that single
 failure into the <paramref name="validationResults"></paramref> when applicable, returning a value of <c>false</c>.
 </para><para>
-If <paramref name="validationResults"></paramref> is null and there isn&#39;t a <see cref="T:System.ComponentModel.DataAnnotations.RequiredAttribute"></see> failure,
+If <paramref name="validationResults"></paramref> is null and there isn&#39;t a <a href="System.ComponentModel.DataAnnotations.RequiredAttribute.html">RequiredAttribute</a> failure,
 then all validators will be evaluated.
 </para></div>
   <h5 class="decalaration">Declaration</h5>
@@ -272,9 +272,9 @@ validators.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Collections.Generic.ICollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt;</td>
+        <td><a href="System.Collections.Generic.ICollection`1.html" name="System.Collections.Generic.ICollection">ICollection</a>&lt;<a href="System.ComponentModel.DataAnnotations.ValidationResult.html" name="System.ComponentModel.DataAnnotations.ValidationResult">ValidationResult</a>&gt;</td>
         <td><em>validationResults</em></td>
-        <td><p>Optional collection to receive <see cref="T:System.ComponentModel.DataAnnotations.ValidationResult"></see>s for the failures.</p>
+        <td><p>Optional collection to receive <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">ValidationResult</a>s for the failures.</p>
 </td>
       </tr>
     </tbody>
@@ -300,20 +300,20 @@ validators.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/Validator.cs/#L196">View Source</a>
       </span>
   <h4 id="TryValidateValue_Object__ValidationContext__ICollection_ValidationResult___IEnumerable_ValidationAttribute__">TryValidateValue(Object, ValidationContext, ICollection&lt;ValidationResult&gt;, IEnumerable&lt;ValidationAttribute&gt;)</h4>
-  <div class="markdown level1 summary"><p>Tests whether the given value is valid against a specified list of <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute</a>s.</p>
+  <div class="markdown level1 summary"><p>Tests whether the given value is valid against a specified list of <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">ValidationAttribute</a>s.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="TryValidateValue_Object__ValidationContext__ICollection_ValidationResult___IEnumerable_ValidationAttribute___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This method will test each <see cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute"></see>s specified .  If</p>
-<p><paramref name="validationResults"></paramref> is non-null, this method will add a <see cref="T:System.ComponentModel.DataAnnotations.ValidationResult"></see>
+  <div class="markdown level1 remarks"><p>This method will test each <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">ValidationAttribute</a>s specified .  If</p>
+<p><paramref name="validationResults"></paramref> is non-null, this method will add a <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">ValidationResult</a>
 to it for each validation failure.</p>
 <para>
-If there is a <see cref="T:System.ComponentModel.DataAnnotations.RequiredAttribute"></see> within the <paramref name="validationAttributes"></paramref>, it will
+If there is a <a href="System.ComponentModel.DataAnnotations.RequiredAttribute.html">RequiredAttribute</a> within the <paramref name="validationAttributes"></paramref>, it will
 be evaluated before all other validation attributes.  If the required validator fails then validation will
 abort, adding that single failure into the <paramref name="validationResults"></paramref> when applicable, returning a
 value of <c>false</c>.
 </para><para>
-If <paramref name="validationResults"></paramref> is null and there isn&#39;t a <see cref="T:System.ComponentModel.DataAnnotations.RequiredAttribute"></see> failure,
+If <paramref name="validationResults"></paramref> is null and there isn&#39;t a <a href="System.ComponentModel.DataAnnotations.RequiredAttribute.html">RequiredAttribute</a> failure,
 then all validators will be evaluated.
 </para></div>
   <h5 class="decalaration">Declaration</h5>
@@ -344,15 +344,15 @@ validators.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Collections.Generic.ICollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt;</td>
+        <td><a href="System.Collections.Generic.ICollection`1.html" name="System.Collections.Generic.ICollection">ICollection</a>&lt;<a href="System.ComponentModel.DataAnnotations.ValidationResult.html" name="System.ComponentModel.DataAnnotations.ValidationResult">ValidationResult</a>&gt;</td>
         <td><em>validationResults</em></td>
-        <td><p>Optional collection to receive <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">System.ComponentModel.DataAnnotations.ValidationResult</a>s for the failures.</p>
+        <td><p>Optional collection to receive <a href="System.ComponentModel.DataAnnotations.ValidationResult.html">ValidationResult</a>s for the failures.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Collections.Generic.IEnumerable&lt;System.ComponentModel.DataAnnotations.ValidationAttribute&gt;</td>
+        <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html" name="System.ComponentModel.DataAnnotations.ValidationAttribute">ValidationAttribute</a>&gt;</td>
         <td><em>validationAttributes</em></td>
-        <td><p>The list of <see cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute"></see>s to validate this</p>
+        <td><p>The list of <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">ValidationAttribute</a>s to validate this</p>
 <p><paramref name="value"></paramref> against.</p>
 </td>
       </tr>
@@ -379,11 +379,11 @@ validators.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/Validator.cs/#L260">View Source</a>
       </span>
   <h4 id="ValidateObject_Object__ValidationContext_">ValidateObject(Object, ValidationContext)</h4>
-  <div class="markdown level1 summary"><p>Throws a <a href="System.ComponentModel.DataAnnotations.ValidationException.html">System.ComponentModel.DataAnnotations.ValidationException</a> if the given <paramref name="instance"></paramref> is not valid.</p>
+  <div class="markdown level1 summary"><p>Throws a <a href="System.ComponentModel.DataAnnotations.ValidationException.html">ValidationException</a> if the given <paramref name="instance"></paramref> is not valid.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ValidateObject_Object__ValidationContext__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This method evaluates all <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute</a>s attached to the object&#39;s type.</p>
+  <div class="markdown level1 remarks"><p>This method evaluates all <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">ValidationAttribute</a>s attached to the object&#39;s type.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -419,11 +419,11 @@ validators.  It cannot be <c>null</c>.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/Validator.cs/#L285">View Source</a>
       </span>
   <h4 id="ValidateObject_Object__ValidationContext__Boolean_">ValidateObject(Object, ValidationContext, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Throws a <a href="System.ComponentModel.DataAnnotations.ValidationException.html">System.ComponentModel.DataAnnotations.ValidationException</a> if the given object instance is not valid.</p>
+  <div class="markdown level1 summary"><p>Throws a <a href="System.ComponentModel.DataAnnotations.ValidationException.html">ValidationException</a> if the given object instance is not valid.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ValidateObject_Object__ValidationContext__Boolean__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This method evaluates all <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute</a>s attached to the object&#39;s type.
+  <div class="markdown level1 remarks"><p>This method evaluates all <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">ValidationAttribute</a>s attached to the object&#39;s type.
 If <paramref name="validateAllProperties"></paramref> is <c>true</c> it also validates all the object&#39;s properties.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -466,7 +466,7 @@ validators.  It cannot be <c>null</c>.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/Validator.cs/#L227">View Source</a>
       </span>
   <h4 id="ValidateProperty_Object__ValidationContext_">ValidateProperty(Object, ValidationContext)</h4>
-  <div class="markdown level1 summary"><p>Throws a <a href="System.ComponentModel.DataAnnotations.ValidationException.html">System.ComponentModel.DataAnnotations.ValidationException</a> if the given property <paramref name="value"></paramref> is not valid.</p>
+  <div class="markdown level1 summary"><p>Throws a <a href="System.ComponentModel.DataAnnotations.ValidationException.html">ValidationException</a> if the given property <paramref name="value"></paramref> is not valid.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -503,15 +503,15 @@ validators.  It cannot be <c>null</c>.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/Validator.cs/#L327">View Source</a>
       </span>
   <h4 id="ValidateValue_Object__ValidationContext__IEnumerable_ValidationAttribute__">ValidateValue(Object, ValidationContext, IEnumerable&lt;ValidationAttribute&gt;)</h4>
-  <div class="markdown level1 summary"><p>Throw a <a href="System.ComponentModel.DataAnnotations.ValidationException.html">System.ComponentModel.DataAnnotations.ValidationException</a> if the given value is not valid for the
-<a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">System.ComponentModel.DataAnnotations.ValidationAttribute</a>s.</p>
+  <div class="markdown level1 summary"><p>Throw a <a href="System.ComponentModel.DataAnnotations.ValidationException.html">ValidationException</a> if the given value is not valid for the
+<a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">ValidationAttribute</a>s.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="ValidateValue_Object__ValidationContext__IEnumerable_ValidationAttribute___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This method evaluates the <see cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute"></see>s supplied until a validation error occurs,
-at which time a <see cref="T:System.ComponentModel.DataAnnotations.ValidationException"></see> is thrown.</p>
+  <div class="markdown level1 remarks"><p>This method evaluates the <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">ValidationAttribute</a>s supplied until a validation error occurs,
+at which time a <a href="System.ComponentModel.DataAnnotations.ValidationException.html">ValidationException</a> is thrown.</p>
 <para>
-A <see cref="T:System.ComponentModel.DataAnnotations.RequiredAttribute"></see> within the <paramref name="validationAttributes"></paramref> will always be evaluated
+A <a href="System.ComponentModel.DataAnnotations.RequiredAttribute.html">RequiredAttribute</a> within the <paramref name="validationAttributes"></paramref> will always be evaluated
 first.
 </para></div>
   <h5 class="decalaration">Declaration</h5>
@@ -541,9 +541,9 @@ first.
 </td>
       </tr>
       <tr>
-        <td>System.Collections.Generic.IEnumerable&lt;System.ComponentModel.DataAnnotations.ValidationAttribute&gt;</td>
+        <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html" name="System.ComponentModel.DataAnnotations.ValidationAttribute">ValidationAttribute</a>&gt;</td>
         <td><em>validationAttributes</em></td>
-        <td><p>The list of <see cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute"></see>s to validate against this instance.</p>
+        <td><p>The list of <a href="System.ComponentModel.DataAnnotations.ValidationAttribute.html">ValidationAttribute</a>s to validate against this instance.</p>
 </td>
       </tr>
     </tbody>

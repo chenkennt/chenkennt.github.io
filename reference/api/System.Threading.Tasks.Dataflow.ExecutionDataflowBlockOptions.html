@@ -62,7 +62,7 @@
       <h1 id="ExecutionDataflowBlockOptions">Class ExecutionDataflowBlockOptions</h1>
       <div class="markdown level0 summary"><p>Provides options used to configure the processing performed by dataflow blocks that
 process each message through the invocation of a user-provided delegate, blocks such
-as <a href="System.Threading.Tasks.Dataflow.ActionBlock`1.html">System.Threading.Tasks.Dataflow.ActionBlock`1</a> and <a href="System.Threading.Tasks.Dataflow.TransformBlock`2.html">System.Threading.Tasks.Dataflow.TransformBlock`2</a>.</p>
+as <a href="System.Threading.Tasks.Dataflow.ActionBlock`1.html">ActionBlock</a> and <a href="System.Threading.Tasks.Dataflow.TransformBlock`2.html">TransformBlock</a>.</p>
 </div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
@@ -78,11 +78,11 @@ as <a href="System.Threading.Tasks.Dataflow.ActionBlock`1.html">System.Threading
         <pre><code class="lang-csharp hljs">public class ExecutionDataflowBlockOptions : DataflowBlockOptions</code></pre>
       </div>
       <h5 id="ExecutionDataflowBlockOptions_remarks"><strong>Remarks<strong></strong></strong></h5>
-      <div class="markdown level0 remarks"><p><see cref="T:System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions"></see> is mutable and can be configured through its properties.
+      <div class="markdown level0 remarks"><p><a href="System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions.html">ExecutionDataflowBlockOptions</a> is mutable and can be configured through its properties.
 When specific configuration options are not set, the following defaults are used:</p>
-<p><list type="table"><listheader><term>Options</term><description>Default</description></listheader><item><term>TaskScheduler</term><description><see cref="P:System.Threading.Tasks.TaskScheduler.Default"></see></description></item><item><term>CancellationToken</term><description><see cref="P:System.Threading.CancellationToken.None"></see></description></item><item><term>MaxMessagesPerTask</term><description>DataflowBlockOptions.Unbounded (-1)</description></item><item><term>BoundedCapacity</term><description>DataflowBlockOptions.Unbounded (-1)</description></item><item><term>NameFormat</term><description>&quot;{0} Id={1}&quot;</description></item><item><term>MaxDegreeOfParallelism</term><description>1</description></item><item><term>SingleProducerConstrained</term><description>false</description></item></list>
+<p><list type="table"><listheader><term>Options</term><description>Default</description></listheader><item><term>TaskScheduler</term><description><a href="System.Threading.Tasks.TaskScheduler.html">Default</a></description></item><item><term>CancellationToken</term><description><a href="System.Threading.CancellationToken.html">None</a></description></item><item><term>MaxMessagesPerTask</term><description>DataflowBlockOptions.Unbounded (-1)</description></item><item><term>BoundedCapacity</term><description>DataflowBlockOptions.Unbounded (-1)</description></item><item><term>NameFormat</term><description>&quot;{0} Id={1}&quot;</description></item><item><term>MaxDegreeOfParallelism</term><description>1</description></item><item><term>SingleProducerConstrained</term><description>false</description></item></list>
 Dataflow block captures the state of the options at their construction.  Subsequent changes
-to the provided <see cref="T:System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions"></see> instance should not affect the behavior
+to the provided <a href="System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions.html">ExecutionDataflowBlockOptions</a> instance should not affect the behavior
 of a dataflow block.</p>
 </div>
       <h3 id="constructors">Constructors</h3>
@@ -91,7 +91,7 @@ of a dataflow block.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlockOptions.cs/#L254">View Source</a>
       </span>
   <h4 id="ExecutionDataflowBlockOptions__">ExecutionDataflowBlockOptions()</h4>
-  <div class="markdown level1 summary"><p>Initializes the <a href="System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions.html">System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions</a>.</p>
+  <div class="markdown level1 summary"><p>Initializes the <a href="System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions.html">ExecutionDataflowBlockOptions</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

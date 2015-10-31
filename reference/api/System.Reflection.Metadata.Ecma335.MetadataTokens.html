@@ -657,8 +657,8 @@ to the specified <paramref name="handle"></paramref>.</p>
     <tbody>
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-        <td><p>Zero based offset, or -1 if <paramref name="handle"></paramref> can only be interpreted in a context of a specific <a href="System.Reflection.Metadata.MetadataReader.html">System.Reflection.Metadata.MetadataReader</a>.
-See <a href="System.Reflection.Metadata.Ecma335.MetadataTokens.html">System.Reflection.Metadata.Ecma335.MetadataTokens.GetHeapOffset(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.Handle)</a>.</p>
+        <td><p>Zero based offset, or -1 if <paramref name="handle"></paramref> can only be interpreted in a context of a specific <a href="System.Reflection.Metadata.MetadataReader.html">MetadataReader</a>.
+See <a href="System.Reflection.Metadata.Ecma335.MetadataTokens.html">GetHeapOffset(MetadataReader, Handle)</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -755,8 +755,8 @@ to the specified <paramref name="handle"></paramref>.</p>
     <tbody>
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-        <td><p>One based row number, or -1 if <paramref name="handle"></paramref> can only be interpreted in a context of a specific <a href="System.Reflection.Metadata.MetadataReader.html">System.Reflection.Metadata.MetadataReader</a>.
-See <a href="System.Reflection.Metadata.Ecma335.MetadataTokens.html">System.Reflection.Metadata.Ecma335.MetadataTokens.GetRowNumber(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.EntityHandle)</a>.</p>
+        <td><p>One based row number, or -1 if <paramref name="handle"></paramref> can only be interpreted in a context of a specific <a href="System.Reflection.Metadata.MetadataReader.html">MetadataReader</a>.
+See <a href="System.Reflection.Metadata.Ecma335.MetadataTokens.html">GetRowNumber(MetadataReader, EntityHandle)</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -852,8 +852,8 @@ to the specified <paramref name="handle"></paramref> in the context of <paramref
     <tbody>
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-        <td><p>Metadata token, or 0 if <paramref name="handle"></paramref> can only be interpreted in a context of a specific <a href="System.Reflection.Metadata.MetadataReader.html">System.Reflection.Metadata.MetadataReader</a>.
-See <a href="System.Reflection.Metadata.Ecma335.MetadataTokens.html">System.Reflection.Metadata.Ecma335.MetadataTokens.GetToken(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.Handle)</a>.</p>
+        <td><p>Metadata token, or 0 if <paramref name="handle"></paramref> can only be interpreted in a context of a specific <a href="System.Reflection.Metadata.MetadataReader.html">MetadataReader</a>.
+See <a href="System.Reflection.Metadata.Ecma335.MetadataTokens.html">GetToken(MetadataReader, Handle)</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -1479,7 +1479,7 @@ See <a href="System.Reflection.Metadata.Ecma335.MetadataTokens.html">System.Refl
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/MetadataTokens.cs/#L187">View Source</a>
       </span>
   <h4 id="TryGetHeapIndex_HandleKind__out_HeapIndex_">TryGetHeapIndex(HandleKind, out HeapIndex)</h4>
-  <div class="markdown level1 summary"><p>Gets the <a href="System.Reflection.Metadata.Ecma335.HeapIndex.html">System.Reflection.Metadata.Ecma335.HeapIndex</a> of the heap corresponding to the specified <a href="System.Reflection.Metadata.HandleKind.html">System.Reflection.Metadata.HandleKind</a>.</p>
+  <div class="markdown level1 summary"><p>Gets the <a href="System.Reflection.Metadata.Ecma335.HeapIndex.html">HeapIndex</a> of the heap corresponding to the specified <a href="System.Reflection.Metadata.HandleKind.html">HandleKind</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1531,7 +1531,7 @@ See <a href="System.Reflection.Metadata.Ecma335.MetadataTokens.html">System.Refl
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/MetadataTokens.cs/#L169">View Source</a>
       </span>
   <h4 id="TryGetTableIndex_HandleKind__out_TableIndex_">TryGetTableIndex(HandleKind, out TableIndex)</h4>
-  <div class="markdown level1 summary"><p>Gets the <a href="System.Reflection.Metadata.Ecma335.TableIndex.html">System.Reflection.Metadata.Ecma335.TableIndex</a> of the table corresponding to the specified <a href="System.Reflection.Metadata.HandleKind.html">System.Reflection.Metadata.HandleKind</a>.</p>
+  <div class="markdown level1 summary"><p>Gets the <a href="System.Reflection.Metadata.Ecma335.TableIndex.html">TableIndex</a> of the table corresponding to the specified <a href="System.Reflection.Metadata.HandleKind.html">HandleKind</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

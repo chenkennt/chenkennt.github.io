@@ -76,15 +76,15 @@
       </div>
       <h5 id="Partitioner_TSource__remarks"><strong>Remarks<strong></strong></strong></h5>
       <div class="markdown level0 remarks"><para>
-Inheritors of <see cref="T:System.Collections.Concurrent.Partitioner`1"></see> must adhere to the following rules:
-<ol><li><see cref="M:System.Collections.Concurrent.Partitioner`1.GetPartitions(System.Int32)"></see> should throw a
-<see cref="T:System.ArgumentOutOfRangeException"></see> if the requested partition count is less than or
-equal to zero.</li><li><see cref="M:System.Collections.Concurrent.Partitioner`1.GetPartitions(System.Int32)"></see> should always return a number of enumerables equal to the requested
+Inheritors of <a href="System.Collections.Concurrent.Partitioner`1.html">Partitioner</a> must adhere to the following rules:
+<ol><li><a href="System.Collections.Concurrent.Partitioner`1.html">GetPartitions(Int32)</a> should throw a
+<a href="System.ArgumentOutOfRangeException.html">ArgumentOutOfRangeException</a> if the requested partition count is less than or
+equal to zero.</li><li><a href="System.Collections.Concurrent.Partitioner`1.html">GetPartitions(Int32)</a> should always return a number of enumerables equal to the requested
 partition count. If the partitioner runs out of data and cannot create as many partitions as
 requested, an empty enumerator should be returned for each of the remaining partitions. If this rule
-is not followed, consumers of the implementation may throw a <see cref="T:System.InvalidOperationException"></see>.</li><li><see cref="M:System.Collections.Concurrent.Partitioner`1.GetPartitions(System.Int32)"></see> and <see cref="M:System.Collections.Concurrent.Partitioner`1.GetDynamicPartitions"></see>
+is not followed, consumers of the implementation may throw a <a href="System.InvalidOperationException.html">InvalidOperationException</a>.</li><li><a href="System.Collections.Concurrent.Partitioner`1.html">GetPartitions(Int32)</a> and <a href="System.Collections.Concurrent.Partitioner`1.html">GetDynamicPartitions()</a>
 should never return null. If null is returned, a consumer of the implementation may throw a
-<see cref="T:System.InvalidOperationException"></see>.</li><li><see cref="M:System.Collections.Concurrent.Partitioner`1.GetPartitions(System.Int32)"></see> and <see cref="M:System.Collections.Concurrent.Partitioner`1.GetDynamicPartitions"></see> should always return
+<a href="System.InvalidOperationException.html">InvalidOperationException</a>.</li><li><a href="System.Collections.Concurrent.Partitioner`1.html">GetPartitions(Int32)</a> and <a href="System.Collections.Concurrent.Partitioner`1.html">GetDynamicPartitions()</a> should always return
 partitions that can fully and uniquely enumerate the input data source. All of the data and only the
 data contained in the input source should be enumerated, with no duplication that was not already in
 the input, unless specifically required by the particular partitioner&#39;s design. If this is not
@@ -100,8 +100,8 @@ followed, the output ordering may be scrambled.</li></ol></para></div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="SupportsDynamicPartitions_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><para>
-If a derived class does not override and implement <see cref="M:System.Collections.Concurrent.Partitioner`1.GetDynamicPartitions"></see>,
-<see cref="P:System.Collections.Concurrent.Partitioner`1.SupportsDynamicPartitions"></see> should return false. The value of <see cref="P:System.Collections.Concurrent.Partitioner`1.SupportsDynamicPartitions"></see> should not vary over the lifetime of this instance.
+If a derived class does not override and implement <a href="System.Collections.Concurrent.Partitioner`1.html">GetDynamicPartitions()</a>,
+<a href="System.Collections.Concurrent.Partitioner`1.html">SupportsDynamicPartitions</a> should return false. The value of <a href="System.Collections.Concurrent.Partitioner`1.html">SupportsDynamicPartitions</a> should not vary over the lifetime of this instance.
 </para></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -118,8 +118,8 @@ If a derived class does not override and implement <see cref="M:System.Collectio
     <tbody>
       <tr>
         <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-        <td><p>true if the <see cref="T:System.Collections.Concurrent.Partitioner`1"></see> can create partitions dynamically as they are
-requested; false if the <see cref="T:System.Collections.Concurrent.Partitioner`1"></see> can only allocate
+        <td><p>true if the <a href="System.Collections.Concurrent.Partitioner`1.html">Partitioner</a> can create partitions dynamically as they are
+requested; false if the <a href="System.Collections.Concurrent.Partitioner`1.html">Partitioner</a> can only allocate
 partitions statically.</p>
 </td>
       </tr>
@@ -137,11 +137,11 @@ partitions.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 id="GetDynamicPartitions___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><para>
-The returned object implements the <see cref="T:System.Collections.Generic.IEnumerable{TSource}"></see> interface. Calling <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator">GetEnumerator</see> on the
+The returned object implements the System.Collections.Generic.IEnumerable{TSource} interface. Calling <a href="System.Collections.Generic.IEnumerable`1.html">GetEnumerator()</a> on the
 object creates another partition over the sequence.
 </para>
 <para>
-The <see cref="M:System.Collections.Concurrent.Partitioner`1.GetDynamicPartitions"></see> method is only supported if the <see cref="P:System.Collections.Concurrent.Partitioner`1.SupportsDynamicPartitions"></see>
+The <a href="System.Collections.Concurrent.Partitioner`1.html">GetDynamicPartitions()</a> method is only supported if the <a href="System.Collections.Concurrent.Partitioner`1.html">SupportsDynamicPartitions</a>
 property returns true.
 </para></div>
   <h5 class="decalaration">Declaration</h5>
@@ -158,7 +158,7 @@ property returns true.
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Generic.IEnumerable&lt;TSource&gt;</td>
+        <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;TSource&gt;</td>
         <td><p>An object that can create partitions over the underlying data source.</p>
 </td>
       </tr>
@@ -204,7 +204,7 @@ property returns true.
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Generic.IList&lt;System.Collections.Generic.IEnumerator&lt;TSource&gt;&gt;</td>
+        <td><a href="System.Collections.Generic.IList`1.html" name="System.Collections.Generic.IList">IList</a>&lt;<a href="System.Collections.Generic.IEnumerator`1.html" name="System.Collections.Generic.IEnumerator">IEnumerator</a>&lt;TSource&gt;&gt;</td>
         <td><p>A list containing <paramref name="partitionCount"></paramref> enumerators.</p>
 </td>
       </tr>

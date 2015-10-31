@@ -63,22 +63,22 @@
       <div class="markdown level0 summary"><p>This class is meant to be inherited by a user-defined event source in order to define a managed
 ETW provider.   Please See DESIGN NOTES above for the internal architecture.
 The minimal definition of an EventSource simply specifies a number of ETW event methods that
-call one of the EventSource.WriteEvent overloads, <a href="System.Diagnostics.Tracing.EventSource.html">System.Diagnostics.Tracing.EventSource.WriteEventCore(System.Int32,System.Int32,System.Diagnostics.Tracing.EventSource.EventData*)</a>,
-or <a href="System.Diagnostics.Tracing.EventSource.html">System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore(System.Int32,System.Guid<em>,System.Int32,System.Diagnostics.Tracing.EventSource.EventData</em>)</a> to log them. This functionality
+call one of the EventSource.WriteEvent overloads, <a href="System.Diagnostics.Tracing.EventSource.html">WriteEventCore(Int32, Int32, EventSource.EventData*)</a>,
+or <a href="System.Diagnostics.Tracing.EventSource.html">WriteEventWithRelatedActivityIdCore(Int32, Guid*, Int32, EventSource.EventData*)</a> to log them. This functionality
 is sufficient for many users.</p>
 <para>
 To achieve more control over the ETW provider manifest exposed by the event source type, the
-[<see cref="T:System.Diagnostics.Tracing.EventAttribute"></see>] attributes can be specified for the ETW event methods.
+[<a href="System.Diagnostics.Tracing.EventAttribute.html">EventAttribute</a>] attributes can be specified for the ETW event methods.
 </para><para>
 For very advanced EventSources, it is possible to intercept the commands being given to the
 eventSource and change what filtering is done (see EventListener.EnableEvents and
-<see cref="M:System.Diagnostics.Tracing.EventListener.DisableEvents(System.Diagnostics.Tracing.EventSource)"></see>) or cause actions to be performed by the eventSource,
+<a href="System.Diagnostics.Tracing.EventListener.html">DisableEvents(EventSource)</a>) or cause actions to be performed by the eventSource,
 e.g. dumping a data structure (see EventSource.SendCommand and
-<see cref="M:System.Diagnostics.Tracing.EventSource.OnEventCommand(System.Diagnostics.Tracing.EventCommandEventArgs)"></see>).
+<a href="System.Diagnostics.Tracing.EventSource.html">OnEventCommand(EventCommandEventArgs)</a>).
 </para><para>
 The eventSources can be turned on with Windows ETW controllers (e.g. logman), immediately.
 It is also possible to control and intercept the data dispatcher programmatically.  See
-<see cref="T:System.Diagnostics.Tracing.EventListener"></see> for more.
+<a href="System.Diagnostics.Tracing.EventListener.html">EventListener</a> for more.
 </para></div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
@@ -219,7 +219,7 @@ itself but may be interprated the listeners.  Can be fetched with GetTrait(strin
 </td>
       </tr>
       <tr>
-        <td>System.String[]</td>
+        <td><a href="System.String.html" name="System.String">String</a>[]</td>
         <td><em>traits</em></td>
         <td><p>A collection of key-value strings (must be an even number).</p>
 </td>
@@ -330,7 +330,7 @@ itself but may be interprated the listeners.  Can be fetched with GetTrait(strin
 </td>
       </tr>
       <tr>
-        <td>System.String[]</td>
+        <td><a href="System.String.html" name="System.String">String</a>[]</td>
         <td><em>traits</em></td>
         <td><p>A collection of key-value strings (must be an even number).</p>
 </td>
@@ -771,7 +771,7 @@ It only needs to reflect over the type.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Collections.Generic.IEnumerable&lt;System.Diagnostics.Tracing.EventSource&gt;</td>
+        <td><a href="System.Collections.Generic.IEnumerable`1.html" name="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="System.Diagnostics.Tracing.EventSource.html" name="System.Diagnostics.Tracing.EventSource">EventSource</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1034,7 +1034,7 @@ that point EventSource-specific.</p>
 </td>
       </tr>
       <tr>
-        <td>System.Collections.Generic.IDictionary&lt;System.String, System.String&gt;</td>
+        <td><a href="System.Collections.Generic.IDictionary`2.html" name="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="System.String.html" name="System.String">String</a>, <a href="System.String.html" name="System.String">String</a>&gt;</td>
         <td><em>commandArguments</em></td>
         <td><p>A set of (name-argument, value-argument) pairs associated with the command</p>
 </td>
@@ -1487,7 +1487,7 @@ create the fields of the event.</p>
         <td></td>
       </tr>
       <tr>
-        <td>System.Byte[]</td>
+        <td><a href="System.Byte.html" name="System.Byte">Byte</a>[]</td>
         <td><em>arg1</em></td>
         <td></td>
       </tr>
@@ -1710,7 +1710,7 @@ create the fields of the event.</p>
         <td></td>
       </tr>
       <tr>
-        <td>System.Byte[]</td>
+        <td><a href="System.Byte.html" name="System.Byte">Byte</a>[]</td>
         <td><em>arg2</em></td>
         <td></td>
       </tr>
@@ -1842,8 +1842,8 @@ create the fields of the event.</p>
   <h4 id="WriteEvent_Int32__Object___">WriteEvent(Int32, Object[])</h4>
   <div class="markdown level1 summary"><p>This is the varargs helper for writing an event. It does create an array and box all the arguments so it is
 relatively inefficient and should only be used for relatively rare events (e.g. less than 100 / sec). If your
-rates are faster than that you should use <a href="System.Diagnostics.Tracing.EventSource.html">System.Diagnostics.Tracing.EventSource.WriteEventCore(System.Int32,System.Int32,System.Diagnostics.Tracing.EventSource.EventData*)</a> to create fast helpers for your particular
-method signature. Even if you use this for rare events, this call should be guarded by an <a href="System.Diagnostics.Tracing.EventSource.html">System.Diagnostics.Tracing.EventSource.IsEnabled</a>
+rates are faster than that you should use <a href="System.Diagnostics.Tracing.EventSource.html">WriteEventCore(Int32, Int32, EventSource.EventData*)</a> to create fast helpers for your particular
+method signature. Even if you use this for rare events, this call should be guarded by an <a href="System.Diagnostics.Tracing.EventSource.html">IsEnabled()</a>
 check so that the varargs call is not made when the EventSource is not active.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1867,7 +1867,7 @@ check so that the varargs call is not made when the EventSource is not active.</
         <td></td>
       </tr>
       <tr>
-        <td>System.Object[]</td>
+        <td><a href="System.Object.html" name="System.Object">Object</a>[]</td>
         <td><em>args</em></td>
         <td></td>
       </tr>
@@ -2160,7 +2160,7 @@ WriteEventCore(eventId, 2, descrs);
         <td></td>
       </tr>
       <tr>
-        <td>System.Diagnostics.Tracing.EventSource.EventData*</td>
+        <td><a href="System.Diagnostics.Tracing.EventSource.EventData.html" name="System.Diagnostics.Tracing.EventSource.EventData">EventSource.EventData</a>*</td>
         <td><em>data</em></td>
         <td></td>
       </tr>
@@ -2174,8 +2174,8 @@ WriteEventCore(eventId, 2, descrs);
   <div class="markdown level1 summary"><p>This is the varargs helper for writing an event which also specifies a related activity. It is completely analogous
 to corresponding WriteEvent (they share implementation). It does create an array and box all the arguments so it is
 relatively inefficient and should only be used for relatively rare events (e.g. less than 100 / sec).  If your
-rates are faster than that you should use <a href="System.Diagnostics.Tracing.EventSource.html">System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore(System.Int32,System.Guid<em>,System.Int32,System.Diagnostics.Tracing.EventSource.EventData</em>)</a> to create fast helpers for your
-particular method signature. Even if you use this for rare events, this call should be guarded by an <a href="System.Diagnostics.Tracing.EventSource.html">System.Diagnostics.Tracing.EventSource.IsEnabled</a>
+rates are faster than that you should use <a href="System.Diagnostics.Tracing.EventSource.html">WriteEventWithRelatedActivityIdCore(Int32, Guid*, Int32, EventSource.EventData*)</a> to create fast helpers for your
+particular method signature. Even if you use this for rare events, this call should be guarded by an <a href="System.Diagnostics.Tracing.EventSource.html">IsEnabled()</a>
 check so that the varargs call is not made when the EventSource is not active.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2204,7 +2204,7 @@ check so that the varargs call is not made when the EventSource is not active.</
         <td></td>
       </tr>
       <tr>
-        <td>System.Object[]</td>
+        <td><a href="System.Object.html" name="System.Object">Object</a>[]</td>
         <td><em>args</em></td>
         <td></td>
       </tr>
@@ -2217,7 +2217,7 @@ check so that the varargs call is not made when the EventSource is not active.</
   <h4 id="WriteEventWithRelatedActivityIdCore_Int32__Guid___Int32__EventSource_EventData__">WriteEventWithRelatedActivityIdCore(Int32, Guid*, Int32, EventSource.EventData*)</h4>
   <div class="markdown level1 summary"><p>This routine allows you to create efficient WriteEventWithRelatedActivityId helpers, however the code
 that you use to do this, while straightforward, is unsafe. The only difference from
-<a href="System.Diagnostics.Tracing.EventSource.html">System.Diagnostics.Tracing.EventSource.WriteEventCore(System.Int32,System.Int32,System.Diagnostics.Tracing.EventSource.EventData*)</a> is that you pass the relatedActivityId from caller through to this API</p>
+<a href="System.Diagnostics.Tracing.EventSource.html">WriteEventCore(Int32, Int32, EventSource.EventData*)</a> is that you pass the relatedActivityId from caller through to this API</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="WriteEventWithRelatedActivityIdCore_Int32__Guid___Int32__EventSource_EventData___remarks">Remarks</h5>
@@ -2260,7 +2260,7 @@ WriteEventWithRelatedActivityIdCore(eventId, relatedActivityId, 2, descrs);
         <td></td>
       </tr>
       <tr>
-        <td>System.Guid*</td>
+        <td><a href="System.Guid.html" name="System.Guid">Guid</a>*</td>
         <td><em>relatedActivityId</em></td>
         <td></td>
       </tr>
@@ -2270,7 +2270,7 @@ WriteEventWithRelatedActivityIdCore(eventId, relatedActivityId, 2, descrs);
         <td></td>
       </tr>
       <tr>
-        <td>System.Diagnostics.Tracing.EventSource.EventData*</td>
+        <td><a href="System.Diagnostics.Tracing.EventSource.EventData.html" name="System.Diagnostics.Tracing.EventSource.EventData">EventSource.EventData</a>*</td>
         <td><em>data</em></td>
         <td></td>
       </tr>

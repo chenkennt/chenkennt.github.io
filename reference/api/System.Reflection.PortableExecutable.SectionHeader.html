@@ -186,7 +186,7 @@ This value should be zero for an image because COFF debugging information is dep
       </span>
   <h4 id="PointerToRawData">PointerToRawData</h4>
   <div class="markdown level1 summary"><p>The file pointer to the first page of the section within the COFF file.
-For PE images, this must be a multiple of <a href="System.Reflection.PortableExecutable.PEHeader.html">System.Reflection.PortableExecutable.PEHeader.FileAlignment</a>.
+For PE images, this must be a multiple of <a href="System.Reflection.PortableExecutable.PEHeader.html">FileAlignment</a>.
 For object files, the value should be aligned on a 4 byte boundary for best performance.
 When a section contains only uninitialized data, this field should be zero.</p>
 </div>
@@ -271,10 +271,10 @@ This is set to zero for PE images or if there are no relocations.</p>
       </span>
   <h4 id="SizeOfRawData">SizeOfRawData</h4>
   <div class="markdown level1 summary"><p>The size of the section (for object files) or the size of the initialized data on disk (for image files).
-For PE images, this must be a multiple of <see cref="P:System.Reflection.PortableExecutable.PEHeader.FileAlignment"></see>.
-If this is less than <see cref="P:System.Reflection.PortableExecutable.SectionHeader.VirtualSize"></see>, the remainder of the section is zero-filled.
-Because the <see cref="P:System.Reflection.PortableExecutable.SectionHeader.SizeOfRawData"></see> field is rounded but the <see cref="P:System.Reflection.PortableExecutable.SectionHeader.VirtualSize"></see> field is not,
-it is possible for <see cref="P:System.Reflection.PortableExecutable.SectionHeader.SizeOfRawData"></see> to be greater than <see cref="P:System.Reflection.PortableExecutable.SectionHeader.VirtualSize"></see> as well.
+For PE images, this must be a multiple of <a href="System.Reflection.PortableExecutable.PEHeader.html">FileAlignment</a>.
+If this is less than <a href="System.Reflection.PortableExecutable.SectionHeader.html">VirtualSize</a>, the remainder of the section is zero-filled.
+Because the <a href="System.Reflection.PortableExecutable.SectionHeader.html">SizeOfRawData</a> field is rounded but the <a href="System.Reflection.PortableExecutable.SectionHeader.html">VirtualSize</a> field is not,
+it is possible for <a href="System.Reflection.PortableExecutable.SectionHeader.html">SizeOfRawData</a> to be greater than <a href="System.Reflection.PortableExecutable.SectionHeader.html">VirtualSize</a> as well.
 When a section contains only uninitialized data, this field should be zero.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -333,7 +333,7 @@ it is an arbitrary value that is subtracted from offsets during relocation.</p>
       </span>
   <h4 id="VirtualSize">VirtualSize</h4>
   <div class="markdown level1 summary"><p>The total size of the section when loaded into memory.
-If this value is greater than <a href="System.Reflection.PortableExecutable.SectionHeader.html">System.Reflection.PortableExecutable.SectionHeader.SizeOfRawData</a>, the section is zero-padded.
+If this value is greater than <a href="System.Reflection.PortableExecutable.SectionHeader.html">SizeOfRawData</a>, the section is zero-padded.
 This field is valid only for PE images and should be set to zero for object files.</p>
 </div>
   <div class="markdown level1 conceptual"></div>

@@ -60,7 +60,7 @@
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1 id="MetadataStringDecoder">Class MetadataStringDecoder</h1>
-      <div class="markdown level0 summary"><p>Provides the <a href="System.Reflection.Metadata.MetadataReader.html">System.Reflection.Metadata.MetadataReader</a> with a custom mechanism for decoding
+      <div class="markdown level0 summary"><p>Provides the <a href="System.Reflection.Metadata.MetadataReader.html">MetadataReader</a> with a custom mechanism for decoding
 byte sequences in metadata that represent text.</p>
 </div>
       <div class="markdown level0 conceptual"></div>
@@ -78,7 +78,7 @@ byte sequences in metadata that represent text.</p>
       <h5 id="MetadataStringDecoder_remarks"><strong>Remarks<strong></strong></strong></h5>
       <div class="markdown level0 remarks"><p>This can be used for the following purposes:</p>
 <p>1) To customize the treatment of invalid input. When no decoder is provided,
-the <see cref="T:System.Reflection.Metadata.MetadataReader"></see> uses the default fallback replacement
+the <a href="System.Reflection.Metadata.MetadataReader.html">MetadataReader</a> uses the default fallback replacement
 with \uFFFD)</p>
 <p>2) To reuse existing strings instead of allocating a new one for each decoding
 operation.</p>
@@ -89,11 +89,11 @@ operation.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataStringDecoder.cs/#L45">View Source</a>
       </span>
   <h4 id="MetadataStringDecoder_Encoding_">MetadataStringDecoder(Encoding)</h4>
-  <div class="markdown level1 summary"><p>Creates a <a href="System.Reflection.Metadata.MetadataStringDecoder.html">System.Reflection.Metadata.MetadataStringDecoder</a> for the given encoding.</p>
+  <div class="markdown level1 summary"><p>Creates a <a href="System.Reflection.Metadata.MetadataStringDecoder.html">MetadataStringDecoder</a> for the given encoding.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="MetadataStringDecoder_Encoding__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>To cache and reuse existing strings. Create a derived class and override <a href="System.Reflection.Metadata.MetadataStringDecoder.html">System.Reflection.Metadata.MetadataStringDecoder.GetString(System.Byte*,System.Int32)</a></p>
+  <div class="markdown level1 remarks"><p>To cache and reuse existing strings. Create a derived class and override <a href="System.Reflection.Metadata.MetadataStringDecoder.html">GetString(Byte*, Int32)</a></p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -123,7 +123,7 @@ operation.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataStringDecoder.cs/#L33">View Source</a>
       </span>
   <h4 id="DefaultUTF8">DefaultUTF8</h4>
-  <div class="markdown level1 summary"><p>The default decoder used by <a href="System.Reflection.Metadata.MetadataReader.html">System.Reflection.Metadata.MetadataReader</a> to decode UTF-8 when
+  <div class="markdown level1 summary"><p>The default decoder used by <a href="System.Reflection.Metadata.MetadataReader.html">MetadataReader</a> to decode UTF-8 when
 no decoder is provided to the constructor.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -179,9 +179,9 @@ no decoder is provided to the constructor.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataStringDecoder.cs/#L82">View Source</a>
       </span>
   <h4 id="GetString_Byte___Int32_">GetString(Byte*, Int32)</h4>
-  <div class="markdown level1 summary"><p>The mechanism through which the <a href="System.Reflection.Metadata.MetadataReader.html">System.Reflection.Metadata.MetadataReader</a> obtains strings
+  <div class="markdown level1 summary"><p>The mechanism through which the <a href="System.Reflection.Metadata.MetadataReader.html">MetadataReader</a> obtains strings
 for byte sequences in metadata. Override this to cache strings if required.
-Otherwise, it is implemented by forwarding straight to <a href="System.Reflection.Metadata.MetadataStringDecoder.html">System.Reflection.Metadata.MetadataStringDecoder.Encoding</a>
+Otherwise, it is implemented by forwarding straight to <a href="System.Reflection.Metadata.MetadataStringDecoder.html">Encoding</a>
 and every call will allocate a new string.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -200,7 +200,7 @@ and every call will allocate a new string.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Byte*</td>
+        <td><a href="System.Byte.html" name="System.Byte">Byte</a>*</td>
         <td><em>bytes</em></td>
         <td><p>Pointer to bytes to decode.</p>
 </td>

@@ -61,7 +61,7 @@
       </a>
       <h1 id="TaskExtensions">Class TaskExtensions</h1>
       <div class="markdown level0 summary"><p>Provides a set of static (Shared in Visual Basic) methods for working with specific kinds of
-<a href="System.Threading.Tasks.Task.html">System.Threading.Tasks.Task</a> instances.</p>
+<a href="System.Threading.Tasks.Task.html">Task</a> instances.</p>
 </div>
       <div class="markdown level0 conceptual"></div>
       <div class="inheritance">
@@ -81,12 +81,12 @@
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks/src/System/Threading/Tasks/TaskExtensions.CoreCLR.cs/#L29">View Source</a>
       </span>
   <h4 id="Unwrap_Task_Task__">Unwrap(Task&lt;Task&gt;)</h4>
-  <div class="markdown level1 summary"><p>Creates a proxy <a href="System.Threading.Tasks.Task.html">System.Threading.Tasks.Task</a> that represents the
+  <div class="markdown level1 summary"><p>Creates a proxy <a href="System.Threading.Tasks.Task.html">Task</a> that represents the
 asynchronous operation of a Task{Task}.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Unwrap_Task_Task___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>It is often useful to be able to return a Task from a <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a>, where the inner Task represents work done as part of the outer Task{TResult}.  However,
+  <div class="markdown level1 remarks"><p>It is often useful to be able to return a Task from a <a href="System.Threading.Tasks.Task`1.html">Task</a>, where the inner Task represents work done as part of the outer Task{TResult}.  However,
 doing so results in a Task{Task}, which, if not dealt with carefully, could produce unexpected behavior.  Unwrap
 solves this problem by creating a proxy Task that represents the entire asynchronous operation of such a Task{Task}.</p>
 </div>
@@ -105,7 +105,7 @@ solves this problem by creating a proxy Task that represents the entire asynchro
     </thead>
     <tbody>
       <tr>
-        <td>System.Threading.Tasks.Task&lt;System.Threading.Tasks.Task&gt;</td>
+        <td><a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;<a href="System.Threading.Tasks.Task.html" name="System.Threading.Tasks.Task">Task</a>&gt;</td>
         <td><em>task</em></td>
         <td><p>The Task{Task} to unwrap.</p>
 </td>
@@ -133,7 +133,7 @@ solves this problem by creating a proxy Task that represents the entire asynchro
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Tasks/src/System/Threading/Tasks/TaskExtensions.CoreCLR.cs/#L62">View Source</a>
       </span>
   <h4 id="Unwrap_TResult__Task_Task_TResult___">Unwrap&lt;TResult&gt;(Task&lt;Task&lt;TResult&gt;&gt;)</h4>
-  <div class="markdown level1 summary"><p>Creates a proxy <a href="System.Threading.Tasks.Task`1.html">System.Threading.Tasks.Task`1</a> that represents the
+  <div class="markdown level1 summary"><p>Creates a proxy <a href="System.Threading.Tasks.Task`1.html">Task</a> that represents the
 asynchronous operation of a Task{Task{TResult}}.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -158,7 +158,7 @@ creating a proxy Task{TResult} that represents the entire asynchronous operation
     </thead>
     <tbody>
       <tr>
-        <td>System.Threading.Tasks.Task&lt;System.Threading.Tasks.Task&lt;TResult&gt;&gt;</td>
+        <td><a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;<a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TResult&gt;&gt;</td>
         <td><em>task</em></td>
         <td><p>The Task{Task{TResult}} to unwrap.</p>
 </td>
@@ -175,7 +175,7 @@ creating a proxy Task{TResult} that represents the entire asynchronous operation
     </thead>
     <tbody>
       <tr>
-        <td>System.Threading.Tasks.Task&lt;TResult&gt;</td>
+        <td><a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;TResult&gt;</td>
         <td><p>A Task{TResult} that represents the asynchronous operation of the provided Task{Task{TResult}}.</p>
 </td>
       </tr>

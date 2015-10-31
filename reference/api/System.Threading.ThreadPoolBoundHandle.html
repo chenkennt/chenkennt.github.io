@@ -109,7 +109,7 @@ components to receive notifications for asynchronous I/O operations.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Overlapped/src/System/Threading/ClrThreadPoolBoundHandle.cs/#L150">View Source</a>
       </span>
   <h4 id="AllocateNativeOverlapped_IOCompletionCallback__Object__Object_">AllocateNativeOverlapped(IOCompletionCallback, Object, Object)</h4>
-  <div class="markdown level1 summary"><p>Returns an unmanaged pointer to a <a href="System.Threading.NativeOverlapped.html">System.Threading.NativeOverlapped</a> structure, specifying
+  <div class="markdown level1 summary"><p>Returns an unmanaged pointer to a <a href="System.Threading.NativeOverlapped.html">NativeOverlapped</a> structure, specifying
 a delegate that is invoked when the asynchronous I/O operation is complete, a user-provided
 object providing context, and managed objects that serve as buffers.</p>
 </div>
@@ -117,8 +117,8 @@ object providing context, and managed objects that serve as buffers.</p>
   <h5 id="AllocateNativeOverlapped_IOCompletionCallback__Object__Object__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p><para>
 The unmanaged pointer returned by this method can be passed to the operating system in
-overlapped I/O operations. The <see cref="T:System.Threading.NativeOverlapped"></see> structure is fixed in
-physical memory until <see cref="M:System.Threading.ThreadPoolBoundHandle.FreeNativeOverlapped(System.Threading.NativeOverlapped*)"></see> is called.
+overlapped I/O operations. The <a href="System.Threading.NativeOverlapped.html">NativeOverlapped</a> structure is fixed in
+physical memory until <a href="System.Threading.ThreadPoolBoundHandle.html">FreeNativeOverlapped(NativeOverlapped*)</a> is called.
 </para></p>
 <p><para>
 The buffer or buffers specified in <paramref name="pinData"></paramref> must be the same as those passed
@@ -145,15 +145,15 @@ the I/O operation.
       <tr>
         <td><a href="System.Threading.IOCompletionCallback.html" name="System.Threading.IOCompletionCallback">IOCompletionCallback</a></td>
         <td><em>callback</em></td>
-        <td><p>An <a href="System.Threading.IOCompletionCallback.html">System.Threading.IOCompletionCallback</a> delegate that represents the callback method
+        <td><p>An <a href="System.Threading.IOCompletionCallback.html">IOCompletionCallback</a> delegate that represents the callback method
 invoked when the asynchronous I/O operation completes.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Object.html" name="System.Object">Object</a></td>
         <td><em>state</em></td>
-        <td><p>A user-provided object that distinguishes this <see cref="T:System.Threading.NativeOverlapped"></see> from other</p>
-<p><see cref="T:System.Threading.NativeOverlapped"></see> instances. Can be <see langword="null"></see>.</p>
+        <td><p>A user-provided object that distinguishes this <a href="System.Threading.NativeOverlapped.html">NativeOverlapped</a> from other
+<a href="System.Threading.NativeOverlapped.html">NativeOverlapped</a> instances. Can be <see langword="null"></see>.</p>
 </td>
       </tr>
       <tr>
@@ -175,8 +175,8 @@ object represents a buffer, for example an array of bytes.  Can be <see langword
     </thead>
     <tbody>
       <tr>
-        <td>System.Threading.NativeOverlapped*</td>
-        <td><p>An unmanaged pointer to a <see cref="T:System.Threading.NativeOverlapped"></see> structure.</p>
+        <td><a href="System.Threading.NativeOverlapped.html" name="System.Threading.NativeOverlapped">NativeOverlapped</a>*</td>
+        <td><p>An unmanaged pointer to a <a href="System.Threading.NativeOverlapped.html">NativeOverlapped</a> structure.</p>
 </td>
       </tr>
     </tbody>
@@ -186,15 +186,15 @@ object represents a buffer, for example an array of bytes.  Can be <see langword
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Overlapped/src/System/Threading/ClrThreadPoolBoundHandle.cs/#L191">View Source</a>
       </span>
   <h4 id="AllocateNativeOverlapped_PreAllocatedOverlapped_">AllocateNativeOverlapped(PreAllocatedOverlapped)</h4>
-  <div class="markdown level1 summary"><p>Returns an unmanaged pointer to a <a href="System.Threading.NativeOverlapped.html">System.Threading.NativeOverlapped</a> structure, using the callback,
-state, and buffers associated with the specified <a href="System.Threading.PreAllocatedOverlapped.html">System.Threading.PreAllocatedOverlapped</a> object.</p>
+  <div class="markdown level1 summary"><p>Returns an unmanaged pointer to a <a href="System.Threading.NativeOverlapped.html">NativeOverlapped</a> structure, using the callback,
+state, and buffers associated with the specified <a href="System.Threading.PreAllocatedOverlapped.html">PreAllocatedOverlapped</a> object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="AllocateNativeOverlapped_PreAllocatedOverlapped__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><para>
 The unmanaged pointer returned by this method can be passed to the operating system in
-overlapped I/O operations. The <see cref="T:System.Threading.NativeOverlapped"></see> structure is fixed in
-physical memory until <see cref="M:System.Threading.ThreadPoolBoundHandle.FreeNativeOverlapped(System.Threading.NativeOverlapped*)"></see> is called.
+overlapped I/O operations. The <a href="System.Threading.NativeOverlapped.html">NativeOverlapped</a> structure is fixed in
+physical memory until <a href="System.Threading.ThreadPoolBoundHandle.html">FreeNativeOverlapped(NativeOverlapped*)</a> is called.
 </para></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -213,7 +213,7 @@ physical memory until <see cref="M:System.Threading.ThreadPoolBoundHandle.FreeNa
       <tr>
         <td><a href="System.Threading.PreAllocatedOverlapped.html" name="System.Threading.PreAllocatedOverlapped">PreAllocatedOverlapped</a></td>
         <td><em>preAllocated</em></td>
-        <td><p>A <see cref="T:System.Threading.PreAllocatedOverlapped"></see> object from which to create the NativeOverlapped pointer.</p>
+        <td><p>A <a href="System.Threading.PreAllocatedOverlapped.html">PreAllocatedOverlapped</a> object from which to create the NativeOverlapped pointer.</p>
 </td>
       </tr>
     </tbody>
@@ -228,8 +228,8 @@ physical memory until <see cref="M:System.Threading.ThreadPoolBoundHandle.FreeNa
     </thead>
     <tbody>
       <tr>
-        <td>System.Threading.NativeOverlapped*</td>
-        <td><p>An unmanaged pointer to a <see cref="T:System.Threading.NativeOverlapped"></see> structure.</p>
+        <td><a href="System.Threading.NativeOverlapped.html" name="System.Threading.NativeOverlapped">NativeOverlapped</a>*</td>
+        <td><p>An unmanaged pointer to a <a href="System.Threading.NativeOverlapped.html">NativeOverlapped</a> structure.</p>
 </td>
       </tr>
     </tbody>
@@ -239,7 +239,7 @@ physical memory until <see cref="M:System.Threading.ThreadPoolBoundHandle.FreeNa
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Overlapped/src/System/Threading/ClrThreadPoolBoundHandle.cs/#L77">View Source</a>
       </span>
   <h4 id="BindHandle_SafeHandle_">BindHandle(SafeHandle)</h4>
-  <div class="markdown level1 summary"><p>Returns a <a href="System.Threading.ThreadPoolBoundHandle.html">System.Threading.ThreadPoolBoundHandle</a> for the specific handle,
+  <div class="markdown level1 summary"><p>Returns a <a href="System.Threading.ThreadPoolBoundHandle.html">ThreadPoolBoundHandle</a> for the specific handle,
 which is bound to the system thread pool.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -247,8 +247,8 @@ which is bound to the system thread pool.</p>
   <div class="markdown level1 remarks"><p>This method should be called once per handle.</p>
 <p><para>
 -or-
-</para><see cref="T:System.Threading.ThreadPoolBoundHandle"></see> does not take ownership of <paramref name="handle"></paramref>,
-it remains the responsibility of the caller to call <see cref="M:System.Runtime.InteropServices.SafeHandle.Dispose"></see>.</p>
+</para><a href="System.Threading.ThreadPoolBoundHandle.html">ThreadPoolBoundHandle</a> does not take ownership of <paramref name="handle"></paramref>,
+it remains the responsibility of the caller to call <a href="System.Runtime.InteropServices.SafeHandle.html">Dispose()</a>.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -267,7 +267,7 @@ it remains the responsibility of the caller to call <see cref="M:System.Runtime.
       <tr>
         <td><a href="System.Runtime.InteropServices.SafeHandle.html" name="System.Runtime.InteropServices.SafeHandle">SafeHandle</a></td>
         <td><em>handle</em></td>
-        <td><p>A <a href="System.Runtime.InteropServices.SafeHandle.html">System.Runtime.InteropServices.SafeHandle</a> object that holds the operating system handle. The
+        <td><p>A <a href="System.Runtime.InteropServices.SafeHandle.html">SafeHandle</a> object that holds the operating system handle. The
 handle must have been opened for overlapped I/O on the unmanaged side.</p>
 </td>
       </tr>
@@ -284,7 +284,7 @@ handle must have been opened for overlapped I/O on the unmanaged side.</p>
     <tbody>
       <tr>
         <td><a href="System.Threading.ThreadPoolBoundHandle.html" name="System.Threading.ThreadPoolBoundHandle">ThreadPoolBoundHandle</a></td>
-        <td><p><see cref="T:System.Threading.ThreadPoolBoundHandle"></see> for <paramref name="handle"></paramref>, which
+        <td><p><a href="System.Threading.ThreadPoolBoundHandle.html">ThreadPoolBoundHandle</a> for <paramref name="handle"></paramref>, which
 is bound to the system thread pool.</p>
 </td>
       </tr>
@@ -306,18 +306,18 @@ is bound to the system thread pool.</p>
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Overlapped/src/System/Threading/ClrThreadPoolBoundHandle.cs/#L241">View Source</a>
       </span>
   <h4 id="FreeNativeOverlapped_NativeOverlapped__">FreeNativeOverlapped(NativeOverlapped*)</h4>
-  <div class="markdown level1 summary"><p>Frees the unmanaged memory associated with a <a href="System.Threading.NativeOverlapped.html">System.Threading.NativeOverlapped</a> structure
-allocated by the <a href="System.Threading.ThreadPoolBoundHandle.html">System.Threading.ThreadPoolBoundHandle.AllocateNativeOverlapped(System.Threading.IOCompletionCallback,System.Object,System.Object)</a> method.</p>
+  <div class="markdown level1 summary"><p>Frees the unmanaged memory associated with a <a href="System.Threading.NativeOverlapped.html">NativeOverlapped</a> structure
+allocated by the <a href="System.Threading.ThreadPoolBoundHandle.html">AllocateNativeOverlapped(IOCompletionCallback, Object, Object)</a> method.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="FreeNativeOverlapped_NativeOverlapped___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><note type="caution">
-You must call the <see cref="M:System.Threading.ThreadPoolBoundHandle.FreeNativeOverlapped(System.Threading.NativeOverlapped*)"></see> method exactly once
-on every <see cref="T:System.Threading.NativeOverlapped"></see> unmanaged pointer allocated using the
-<see cref="M:System.Threading.ThreadPoolBoundHandle.AllocateNativeOverlapped(System.Threading.IOCompletionCallback,System.Object,System.Object)"></see> method.
-If you do not call the <see cref="M:System.Threading.ThreadPoolBoundHandle.FreeNativeOverlapped(System.Threading.NativeOverlapped*)"></see> method, you will
-leak memory. If you call the <see cref="M:System.Threading.ThreadPoolBoundHandle.FreeNativeOverlapped(System.Threading.NativeOverlapped*)"></see> method more
-than once on the same <see cref="T:System.Threading.NativeOverlapped"></see> unmanaged pointer, memory will be corrupted.
+You must call the <a href="System.Threading.ThreadPoolBoundHandle.html">FreeNativeOverlapped(NativeOverlapped*)</a> method exactly once
+on every <a href="System.Threading.NativeOverlapped.html">NativeOverlapped</a> unmanaged pointer allocated using the
+<a href="System.Threading.ThreadPoolBoundHandle.html">AllocateNativeOverlapped(IOCompletionCallback, Object, Object)</a> method.
+If you do not call the <a href="System.Threading.ThreadPoolBoundHandle.html">FreeNativeOverlapped(NativeOverlapped*)</a> method, you will
+leak memory. If you call the <a href="System.Threading.ThreadPoolBoundHandle.html">FreeNativeOverlapped(NativeOverlapped*)</a> method more
+than once on the same <a href="System.Threading.NativeOverlapped.html">NativeOverlapped</a> unmanaged pointer, memory will be corrupted.
 </note></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -334,9 +334,9 @@ than once on the same <see cref="T:System.Threading.NativeOverlapped"></see> unm
     </thead>
     <tbody>
       <tr>
-        <td>System.Threading.NativeOverlapped*</td>
+        <td><a href="System.Threading.NativeOverlapped.html" name="System.Threading.NativeOverlapped">NativeOverlapped</a>*</td>
         <td><em>overlapped</em></td>
-        <td><p>An unmanaged pointer to the <see cref="T:System.Threading.NativeOverlapped"></see> structure to be freed.</p>
+        <td><p>An unmanaged pointer to the <a href="System.Threading.NativeOverlapped.html">NativeOverlapped</a> structure to be freed.</p>
 </td>
       </tr>
     </tbody>
@@ -346,7 +346,7 @@ than once on the same <see cref="T:System.Threading.NativeOverlapped"></see> unm
       <a href="https://github.com/chenkennt/corefx/blob/master/src/System.Threading.Overlapped/src/System/Threading/ClrThreadPoolBoundHandle.cs/#L276">View Source</a>
       </span>
   <h4 id="GetNativeOverlappedState_NativeOverlapped__">GetNativeOverlappedState(NativeOverlapped*)</h4>
-  <div class="markdown level1 summary"><p>Returns the user-provided object specified when the <a href="System.Threading.NativeOverlapped.html">System.Threading.NativeOverlapped</a> instance was
+  <div class="markdown level1 summary"><p>Returns the user-provided object specified when the <a href="System.Threading.NativeOverlapped.html">NativeOverlapped</a> instance was
 allocated using the <see cref="!:AllocateNativeOverlapped(IOCompletionCallback, object, byte[])"></see>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -365,9 +365,9 @@ allocated using the <see cref="!:AllocateNativeOverlapped(IOCompletionCallback, 
     </thead>
     <tbody>
       <tr>
-        <td>System.Threading.NativeOverlapped*</td>
+        <td><a href="System.Threading.NativeOverlapped.html" name="System.Threading.NativeOverlapped">NativeOverlapped</a>*</td>
         <td><em>overlapped</em></td>
-        <td><p>An unmanaged pointer to the <see cref="T:System.Threading.NativeOverlapped"></see> structure from which to return the
+        <td><p>An unmanaged pointer to the <a href="System.Threading.NativeOverlapped.html">NativeOverlapped</a> structure from which to return the
 asscociated user-provided object.</p>
 </td>
       </tr>
@@ -384,9 +384,9 @@ asscociated user-provided object.</p>
     <tbody>
       <tr>
         <td><a href="System.Object.html" name="System.Object">Object</a></td>
-        <td><p>A user-provided object that distinguishes this <see cref="T:System.Threading.NativeOverlapped"></see>
-from other <see cref="T:System.Threading.NativeOverlapped"></see> instances, otherwise, <see langword="null"></see> if one was
-not specified when the instance was allocated using <see cref="M:System.Threading.ThreadPoolBoundHandle.AllocateNativeOverlapped(System.Threading.IOCompletionCallback,System.Object,System.Object)"></see>.</p>
+        <td><p>A user-provided object that distinguishes this <a href="System.Threading.NativeOverlapped.html">NativeOverlapped</a>
+from other <a href="System.Threading.NativeOverlapped.html">NativeOverlapped</a> instances, otherwise, <see langword="null"></see> if one was
+not specified when the instance was allocated using <a href="System.Threading.ThreadPoolBoundHandle.html">AllocateNativeOverlapped(IOCompletionCallback, Object, Object)</a>.</p>
 </td>
       </tr>
     </tbody>

@@ -76,13 +76,13 @@
       </div>
       <h5 id="SemaphoreSlim_remarks"><strong>Remarks<strong></strong></strong></h5>
       <div class="markdown level0 remarks"><para>
-The <see cref="T:System.Threading.SemaphoreSlim"></see> provides a lightweight semaphore class that doesn&#39;t
+The <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a> provides a lightweight semaphore class that doesn&#39;t
 use Windows kernel semaphores.
 </para>
 <para>
-All public and protected members of <see cref="T:System.Threading.SemaphoreSlim"></see> are thread-safe and may be used
+All public and protected members of <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a> are thread-safe and may be used
 concurrently from multiple threads, with the exception of Dispose, which
-must only be used when all other operations on the <see cref="T:System.Threading.SemaphoreSlim"></see> have
+must only be used when all other operations on the <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a> have
 completed.
 </para></div>
       <h3 id="constructors">Constructors</h3>
@@ -91,7 +91,7 @@ completed.
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SemaphoreSlim.cs/#L159">View Source</a>
       </span>
   <h4 id="SemaphoreSlim_Int32_">SemaphoreSlim(Int32)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Threading.SemaphoreSlim.html">System.Threading.SemaphoreSlim</a> class, specifying
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a> class, specifying
 the initial number of requests that can be granted concurrently.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -123,7 +123,7 @@ concurrently.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SemaphoreSlim.cs/#L176">View Source</a>
       </span>
   <h4 id="SemaphoreSlim_Int32__Int32_">SemaphoreSlim(Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Threading.SemaphoreSlim.html">System.Threading.SemaphoreSlim</a> class, specifying
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a> class, specifying
 the initial and maximum number of requests that can be granted concurrently.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -163,13 +163,13 @@ concurrently.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SemaphoreSlim.cs/#L124">View Source</a>
       </span>
   <h4 id="AvailableWaitHandle">AvailableWaitHandle</h4>
-  <div class="markdown level1 summary"><p>Returns a <a href="System.Threading.WaitHandle.html">System.Threading.WaitHandle</a> that can be used to wait on the semaphore.</p>
+  <div class="markdown level1 summary"><p>Returns a <a href="System.Threading.WaitHandle.html">WaitHandle</a> that can be used to wait on the semaphore.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="AvailableWaitHandle_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>A successful wait on the <see cref="P:System.Threading.SemaphoreSlim.AvailableWaitHandle"></see> does not imply a successful wait on
-the <see cref="T:System.Threading.SemaphoreSlim"></see> itself, nor does it decrement the semaphore&#39;s
-count. <see cref="P:System.Threading.SemaphoreSlim.AvailableWaitHandle"></see> exists to allow a thread to block waiting on multiple
+  <div class="markdown level1 remarks"><p>A successful wait on the <a href="System.Threading.SemaphoreSlim.html">AvailableWaitHandle</a> does not imply a successful wait on
+the <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a> itself, nor does it decrement the semaphore&#39;s
+count. <a href="System.Threading.SemaphoreSlim.html">AvailableWaitHandle</a> exists to allow a thread to block waiting on multiple
 semaphores, but such a wait should be followed by a true wait on the target semaphore.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -196,7 +196,7 @@ semaphores, but such a wait should be followed by a true wait on the target sema
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SemaphoreSlim.cs/#L106">View Source</a>
       </span>
   <h4 id="CurrentCount">CurrentCount</h4>
-  <div class="markdown level1 summary"><p>Gets the current count of the <a href="System.Threading.SemaphoreSlim.html">System.Threading.SemaphoreSlim</a>.</p>
+  <div class="markdown level1 summary"><p>Gets the current count of the <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -224,11 +224,11 @@ semaphores, but such a wait should be followed by a true wait on the target sema
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SemaphoreSlim.cs/#L845">View Source</a>
       </span>
   <h4 id="Dispose__">Dispose()</h4>
-  <div class="markdown level1 summary"><p>Releases all resources used by the current instance of <a href="System.Threading.SemaphoreSlim.html">System.Threading.SemaphoreSlim</a>.</p>
+  <div class="markdown level1 summary"><p>Releases all resources used by the current instance of <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Dispose___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Unlike most of the members of <see cref="T:System.Threading.SemaphoreSlim"></see>, <see cref="M:System.Threading.SemaphoreSlim.Dispose"></see> is not
+  <div class="markdown level1 remarks"><p>Unlike most of the members of <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a>, <a href="System.Threading.SemaphoreSlim.html">Dispose()</a> is not
 thread-safe and may not be used concurrently with other members of this instance.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -241,11 +241,11 @@ thread-safe and may not be used concurrently with other members of this instance
       </span>
   <h4 id="Dispose_Boolean_">Dispose(Boolean)</h4>
   <div class="markdown level1 summary"><p>When overridden in a derived class, releases the unmanaged resources used by the
-<a href="System.Threading.ManualResetEventSlim.html">System.Threading.ManualResetEventSlim</a>, and optionally releases the managed resources.</p>
+<a href="System.Threading.ManualResetEventSlim.html">ManualResetEventSlim</a>, and optionally releases the managed resources.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 id="Dispose_Boolean__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Unlike most of the members of <a href="System.Threading.SemaphoreSlim.html">System.Threading.SemaphoreSlim</a>, <a href="System.Threading.SemaphoreSlim.html">System.Threading.SemaphoreSlim.Dispose(System.Boolean)</a> is not
+  <div class="markdown level1 remarks"><p>Unlike most of the members of <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a>, <a href="System.Threading.SemaphoreSlim.html">Dispose(Boolean)</a> is not
 thread-safe and may not be used concurrently with other members of this instance.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -276,7 +276,7 @@ false to release only unmanaged resources.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SemaphoreSlim.cs/#L739">View Source</a>
       </span>
   <h4 id="Release__">Release()</h4>
-  <div class="markdown level1 summary"><p>Exits the <a href="System.Threading.SemaphoreSlim.html">System.Threading.SemaphoreSlim</a> once.</p>
+  <div class="markdown level1 summary"><p>Exits the <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a> once.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -294,7 +294,7 @@ false to release only unmanaged resources.</p>
     <tbody>
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-        <td><p>The previous count of the <see cref="T:System.Threading.SemaphoreSlim"></see>.</p>
+        <td><p>The previous count of the <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -304,7 +304,7 @@ false to release only unmanaged resources.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SemaphoreSlim.cs/#L755">View Source</a>
       </span>
   <h4 id="Release_Int32_">Release(Int32)</h4>
-  <div class="markdown level1 summary"><p>Exits the <a href="System.Threading.SemaphoreSlim.html">System.Threading.SemaphoreSlim</a> a specified number of times.</p>
+  <div class="markdown level1 summary"><p>Exits the <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a> a specified number of times.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -340,7 +340,7 @@ false to release only unmanaged resources.</p>
     <tbody>
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
-        <td><p>The previous count of the <see cref="T:System.Threading.SemaphoreSlim"></see>.</p>
+        <td><p>The previous count of the <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -350,7 +350,7 @@ false to release only unmanaged resources.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SemaphoreSlim.cs/#L203">View Source</a>
       </span>
   <h4 id="Wait__">Wait()</h4>
-  <div class="markdown level1 summary"><p>Blocks the current thread until it can enter the <a href="System.Threading.SemaphoreSlim.html">System.Threading.SemaphoreSlim</a>.</p>
+  <div class="markdown level1 summary"><p>Blocks the current thread until it can enter the <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -362,7 +362,7 @@ false to release only unmanaged resources.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SemaphoreSlim.cs/#L291">View Source</a>
       </span>
   <h4 id="Wait_Int32_">Wait(Int32)</h4>
-  <div class="markdown level1 summary"><p>Blocks the current thread until it can enter the <a href="System.Threading.SemaphoreSlim.html">System.Threading.SemaphoreSlim</a>, using a 32-bit
+  <div class="markdown level1 summary"><p>Blocks the current thread until it can enter the <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a>, using a 32-bit
 signed integer to measure the time interval.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -383,7 +383,7 @@ signed integer to measure the time interval.</p>
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
         <td><em>millisecondsTimeout</em></td>
-        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a>(-1) to wait indefinitely.</p>
+        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">Infinite</a>(-1) to wait indefinitely.</p>
 </td>
       </tr>
     </tbody>
@@ -399,7 +399,7 @@ signed integer to measure the time interval.</p>
     <tbody>
       <tr>
         <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-        <td><p>true if the current thread successfully entered the <see cref="T:System.Threading.SemaphoreSlim"></see>;
+        <td><p>true if the current thread successfully entered the <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a>;
 otherwise, false.</p>
 </td>
       </tr>
@@ -410,9 +410,9 @@ otherwise, false.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SemaphoreSlim.cs/#L309">View Source</a>
       </span>
   <h4 id="Wait_Int32__CancellationToken_">Wait(Int32, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Blocks the current thread until it can enter the <a href="System.Threading.SemaphoreSlim.html">System.Threading.SemaphoreSlim</a>,
+  <div class="markdown level1 summary"><p>Blocks the current thread until it can enter the <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a>,
 using a 32-bit signed integer to measure the time interval,
-while observing a <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a>.</p>
+while observing a <a href="System.Threading.CancellationToken.html">CancellationToken</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -432,14 +432,14 @@ while observing a <a href="System.Threading.CancellationToken.html">System.Threa
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
         <td><em>millisecondsTimeout</em></td>
-        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a>(-1) to
+        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">Infinite</a>(-1) to
 wait indefinitely.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
         <td><em>cancellationToken</em></td>
-        <td><p>The <see cref="T:System.Threading.CancellationToken"></see> to observe.</p>
+        <td><p>The <a href="System.Threading.CancellationToken.html">CancellationToken</a> to observe.</p>
 </td>
       </tr>
     </tbody>
@@ -455,7 +455,7 @@ wait indefinitely.</p>
     <tbody>
       <tr>
         <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-        <td><p>true if the current thread successfully entered the <see cref="T:System.Threading.SemaphoreSlim"></see>; otherwise, false.</p>
+        <td><p>true if the current thread successfully entered the <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a>; otherwise, false.</p>
 </td>
       </tr>
     </tbody>
@@ -465,8 +465,8 @@ wait indefinitely.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SemaphoreSlim.cs/#L219">View Source</a>
       </span>
   <h4 id="Wait_CancellationToken_">Wait(CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Blocks the current thread until it can enter the <a href="System.Threading.SemaphoreSlim.html">System.Threading.SemaphoreSlim</a>, while observing a
-<a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a>.</p>
+  <div class="markdown level1 summary"><p>Blocks the current thread until it can enter the <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a>, while observing a
+<a href="System.Threading.CancellationToken.html">CancellationToken</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -486,7 +486,7 @@ wait indefinitely.</p>
       <tr>
         <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
         <td><em>cancellationToken</em></td>
-        <td><p>The <see cref="T:System.Threading.CancellationToken"></see> token to
+        <td><p>The <a href="System.Threading.CancellationToken.html">CancellationToken</a> token to
 observe.</p>
 </td>
       </tr>
@@ -497,7 +497,7 @@ observe.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SemaphoreSlim.cs/#L237">View Source</a>
       </span>
   <h4 id="Wait_TimeSpan_">Wait(TimeSpan)</h4>
-  <div class="markdown level1 summary"><p>Blocks the current thread until it can enter the <a href="System.Threading.SemaphoreSlim.html">System.Threading.SemaphoreSlim</a>, using a <a href="System.TimeSpan.html">System.TimeSpan</a> to measure the time interval.</p>
+  <div class="markdown level1 summary"><p>Blocks the current thread until it can enter the <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a>, using a <a href="System.TimeSpan.html">TimeSpan</a> to measure the time interval.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -517,8 +517,8 @@ observe.</p>
       <tr>
         <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
         <td><em>timeout</em></td>
-        <td><p>A <see cref="T:System.TimeSpan"></see> that represents the number of milliseconds
-to wait, or a <see cref="T:System.TimeSpan"></see> that represents -1 milliseconds to wait indefinitely.</p>
+        <td><p>A <a href="System.TimeSpan.html">TimeSpan</a> that represents the number of milliseconds
+to wait, or a <a href="System.TimeSpan.html">TimeSpan</a> that represents -1 milliseconds to wait indefinitely.</p>
 </td>
       </tr>
     </tbody>
@@ -534,7 +534,7 @@ to wait, or a <see cref="T:System.TimeSpan"></see> that represents -1 millisecon
     <tbody>
       <tr>
         <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-        <td><p>true if the current thread successfully entered the <see cref="T:System.Threading.SemaphoreSlim"></see>;
+        <td><p>true if the current thread successfully entered the <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a>;
 otherwise, false.</p>
 </td>
       </tr>
@@ -545,7 +545,7 @@ otherwise, false.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SemaphoreSlim.cs/#L267">View Source</a>
       </span>
   <h4 id="Wait_TimeSpan__CancellationToken_">Wait(TimeSpan, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Blocks the current thread until it can enter the <a href="System.Threading.SemaphoreSlim.html">System.Threading.SemaphoreSlim</a>, using a <a href="System.TimeSpan.html">System.TimeSpan</a> to measure the time interval, while observing a <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a>.</p>
+  <div class="markdown level1 summary"><p>Blocks the current thread until it can enter the <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a>, using a <a href="System.TimeSpan.html">TimeSpan</a> to measure the time interval, while observing a <a href="System.Threading.CancellationToken.html">CancellationToken</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -565,14 +565,14 @@ otherwise, false.</p>
       <tr>
         <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
         <td><em>timeout</em></td>
-        <td><p>A <see cref="T:System.TimeSpan"></see> that represents the number of milliseconds
-to wait, or a <see cref="T:System.TimeSpan"></see> that represents -1 milliseconds to wait indefinitely.</p>
+        <td><p>A <a href="System.TimeSpan.html">TimeSpan</a> that represents the number of milliseconds
+to wait, or a <a href="System.TimeSpan.html">TimeSpan</a> that represents -1 milliseconds to wait indefinitely.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
         <td><em>cancellationToken</em></td>
-        <td><p>The <see cref="T:System.Threading.CancellationToken"></see> to
+        <td><p>The <a href="System.Threading.CancellationToken.html">CancellationToken</a> to
 observe.</p>
 </td>
       </tr>
@@ -589,7 +589,7 @@ observe.</p>
     <tbody>
       <tr>
         <td><a href="System.Boolean.html" name="System.Boolean">Boolean</a></td>
-        <td><p>true if the current thread successfully entered the <see cref="T:System.Threading.SemaphoreSlim"></see>;
+        <td><p>true if the current thread successfully entered the <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a>;
 otherwise, false.</p>
 </td>
       </tr>
@@ -600,7 +600,7 @@ otherwise, false.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SemaphoreSlim.cs/#L478">View Source</a>
       </span>
   <h4 id="WaitAsync__">WaitAsync()</h4>
-  <div class="markdown level1 summary"><p>Asynchronously waits to enter the <a href="System.Threading.SemaphoreSlim.html">System.Threading.SemaphoreSlim</a>.</p>
+  <div class="markdown level1 summary"><p>Asynchronously waits to enter the <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -628,7 +628,7 @@ otherwise, false.</p>
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SemaphoreSlim.cs/#L515">View Source</a>
       </span>
   <h4 id="WaitAsync_Int32_">WaitAsync(Int32)</h4>
-  <div class="markdown level1 summary"><p>Asynchronously waits to enter the <a href="System.Threading.SemaphoreSlim.html">System.Threading.SemaphoreSlim</a>,
+  <div class="markdown level1 summary"><p>Asynchronously waits to enter the <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a>,
 using a 32-bit signed integer to measure the time interval.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -649,7 +649,7 @@ using a 32-bit signed integer to measure the time interval.</p>
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
         <td><em>millisecondsTimeout</em></td>
-        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a>(-1) to wait indefinitely.</p>
+        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">Infinite</a>(-1) to wait indefinitely.</p>
 </td>
       </tr>
     </tbody>
@@ -664,9 +664,9 @@ using a 32-bit signed integer to measure the time interval.</p>
     </thead>
     <tbody>
       <tr>
-        <td>System.Threading.Tasks.Task&lt;System.Boolean&gt;</td>
+        <td><a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;<a href="System.Boolean.html" name="System.Boolean">Boolean</a>&gt;</td>
         <td><p>A task that will complete with a result of true if the current thread successfully entered
-the <see cref="T:System.Threading.SemaphoreSlim"></see>, otherwise with a result of false.</p>
+the <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a>, otherwise with a result of false.</p>
 </td>
       </tr>
     </tbody>
@@ -676,9 +676,9 @@ the <see cref="T:System.Threading.SemaphoreSlim"></see>, otherwise with a result
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SemaphoreSlim.cs/#L596">View Source</a>
       </span>
   <h4 id="WaitAsync_Int32__CancellationToken_">WaitAsync(Int32, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Asynchronously waits to enter the <a href="System.Threading.SemaphoreSlim.html">System.Threading.SemaphoreSlim</a>,
+  <div class="markdown level1 summary"><p>Asynchronously waits to enter the <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a>,
 using a 32-bit signed integer to measure the time interval,
-while observing a <a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a>.</p>
+while observing a <a href="System.Threading.CancellationToken.html">CancellationToken</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -698,13 +698,13 @@ while observing a <a href="System.Threading.CancellationToken.html">System.Threa
       <tr>
         <td><a href="System.Int32.html" name="System.Int32">Int32</a></td>
         <td><em>millisecondsTimeout</em></td>
-        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">System.Threading.Timeout.Infinite</a>(-1) to wait indefinitely.</p>
+        <td><p>The number of milliseconds to wait, or <a href="System.Threading.Timeout.html">Infinite</a>(-1) to wait indefinitely.</p>
 </td>
       </tr>
       <tr>
         <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
         <td><em>cancellationToken</em></td>
-        <td><p>The <see cref="T:System.Threading.CancellationToken"></see> to observe.</p>
+        <td><p>The <a href="System.Threading.CancellationToken.html">CancellationToken</a> to observe.</p>
 </td>
       </tr>
     </tbody>
@@ -719,9 +719,9 @@ while observing a <a href="System.Threading.CancellationToken.html">System.Threa
     </thead>
     <tbody>
       <tr>
-        <td>System.Threading.Tasks.Task&lt;System.Boolean&gt;</td>
+        <td><a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;<a href="System.Boolean.html" name="System.Boolean">Boolean</a>&gt;</td>
         <td><p>A task that will complete with a result of true if the current thread successfully entered
-the <see cref="T:System.Threading.SemaphoreSlim"></see>, otherwise with a result of false.</p>
+the <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a>, otherwise with a result of false.</p>
 </td>
       </tr>
     </tbody>
@@ -731,8 +731,8 @@ the <see cref="T:System.Threading.SemaphoreSlim"></see>, otherwise with a result
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SemaphoreSlim.cs/#L494">View Source</a>
       </span>
   <h4 id="WaitAsync_CancellationToken_">WaitAsync(CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Asynchronously waits to enter the <a href="System.Threading.SemaphoreSlim.html">System.Threading.SemaphoreSlim</a>, while observing a
-<a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a>.</p>
+  <div class="markdown level1 summary"><p>Asynchronously waits to enter the <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a>, while observing a
+<a href="System.Threading.CancellationToken.html">CancellationToken</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -752,7 +752,7 @@ the <see cref="T:System.Threading.SemaphoreSlim"></see>, otherwise with a result
       <tr>
         <td><a href="System.Threading.CancellationToken.html" name="System.Threading.CancellationToken">CancellationToken</a></td>
         <td><em>cancellationToken</em></td>
-        <td><p>The <see cref="T:System.Threading.CancellationToken"></see> token to observe.</p>
+        <td><p>The <a href="System.Threading.CancellationToken.html">CancellationToken</a> token to observe.</p>
 </td>
       </tr>
     </tbody>
@@ -778,8 +778,8 @@ the <see cref="T:System.Threading.SemaphoreSlim"></see>, otherwise with a result
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SemaphoreSlim.cs/#L543">View Source</a>
       </span>
   <h4 id="WaitAsync_TimeSpan_">WaitAsync(TimeSpan)</h4>
-  <div class="markdown level1 summary"><p>Asynchronously waits to enter the <a href="System.Threading.SemaphoreSlim.html">System.Threading.SemaphoreSlim</a>, using a <a href="System.TimeSpan.html">System.TimeSpan</a> to measure the time interval, while observing a
-<a href="System.Threading.CancellationToken.html">System.Threading.CancellationToken</a>.</p>
+  <div class="markdown level1 summary"><p>Asynchronously waits to enter the <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a>, using a <a href="System.TimeSpan.html">TimeSpan</a> to measure the time interval, while observing a
+<a href="System.Threading.CancellationToken.html">CancellationToken</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -799,8 +799,8 @@ the <see cref="T:System.Threading.SemaphoreSlim"></see>, otherwise with a result
       <tr>
         <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
         <td><em>timeout</em></td>
-        <td><p>A <see cref="T:System.TimeSpan"></see> that represents the number of milliseconds
-to wait, or a <see cref="T:System.TimeSpan"></see> that represents -1 milliseconds to wait indefinitely.</p>
+        <td><p>A <a href="System.TimeSpan.html">TimeSpan</a> that represents the number of milliseconds
+to wait, or a <a href="System.TimeSpan.html">TimeSpan</a> that represents -1 milliseconds to wait indefinitely.</p>
 </td>
       </tr>
     </tbody>
@@ -815,9 +815,9 @@ to wait, or a <see cref="T:System.TimeSpan"></see> that represents -1 millisecon
     </thead>
     <tbody>
       <tr>
-        <td>System.Threading.Tasks.Task&lt;System.Boolean&gt;</td>
+        <td><a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;<a href="System.Boolean.html" name="System.Boolean">Boolean</a>&gt;</td>
         <td><p>A task that will complete with a result of true if the current thread successfully entered
-the <see cref="T:System.Threading.SemaphoreSlim"></see>, otherwise with a result of false.</p>
+the <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a>, otherwise with a result of false.</p>
 </td>
       </tr>
     </tbody>
@@ -827,7 +827,7 @@ the <see cref="T:System.Threading.SemaphoreSlim"></see>, otherwise with a result
       <a href="https://github.com/chenkennt/coreclr/blob/master/src/mscorlib/src/System/Threading/SemaphoreSlim.cs/#L564">View Source</a>
       </span>
   <h4 id="WaitAsync_TimeSpan__CancellationToken_">WaitAsync(TimeSpan, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Asynchronously waits to enter the <a href="System.Threading.SemaphoreSlim.html">System.Threading.SemaphoreSlim</a>, using a <a href="System.TimeSpan.html">System.TimeSpan</a> to measure the time interval.</p>
+  <div class="markdown level1 summary"><p>Asynchronously waits to enter the <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a>, using a <a href="System.TimeSpan.html">TimeSpan</a> to measure the time interval.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -847,8 +847,8 @@ the <see cref="T:System.Threading.SemaphoreSlim"></see>, otherwise with a result
       <tr>
         <td><a href="System.TimeSpan.html" name="System.TimeSpan">TimeSpan</a></td>
         <td><em>timeout</em></td>
-        <td><p>A <see cref="T:System.TimeSpan"></see> that represents the number of milliseconds
-to wait, or a <see cref="T:System.TimeSpan"></see> that represents -1 milliseconds to wait indefinitely.</p>
+        <td><p>A <a href="System.TimeSpan.html">TimeSpan</a> that represents the number of milliseconds
+to wait, or a <a href="System.TimeSpan.html">TimeSpan</a> that represents -1 milliseconds to wait indefinitely.</p>
 </td>
       </tr>
       <tr>
@@ -868,9 +868,9 @@ to wait, or a <see cref="T:System.TimeSpan"></see> that represents -1 millisecon
     </thead>
     <tbody>
       <tr>
-        <td>System.Threading.Tasks.Task&lt;System.Boolean&gt;</td>
+        <td><a href="System.Threading.Tasks.Task`1.html" name="System.Threading.Tasks.Task">Task</a>&lt;<a href="System.Boolean.html" name="System.Boolean">Boolean</a>&gt;</td>
         <td><p>A task that will complete with a result of true if the current thread successfully entered
-the <see cref="T:System.Threading.SemaphoreSlim"></see>, otherwise with a result of false.</p>
+the <a href="System.Threading.SemaphoreSlim.html">SemaphoreSlim</a>, otherwise with a result of false.</p>
 </td>
       </tr>
     </tbody>
